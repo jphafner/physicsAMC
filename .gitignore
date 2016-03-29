@@ -23,6 +23,9 @@
 *.out
 *.synctex.gz
 
+# Testing
+testing.tex
+testing-numeric.tex
 
 # Project specific
 /qbank/aapt/
