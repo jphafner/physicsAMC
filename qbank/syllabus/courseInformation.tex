@@ -1,0 +1,477 @@
+
+
+%% This defines my custom lua functions
+\directlua{require('./qbank/lua/common.lua')}
+
+%% Course Information
+%%----------------------------------------
+
+
+%% Course Grading Policy
+\element{course}{
+\begin{question}{info-Q01}
+    Participation is worth how much of your grade?
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{\SI{10.1756}{\percent}}
+        \wrongchoice{\SI{12.4539}{\percent}}
+        \wrongchoice{\SI{16.0558}{\percent}}
+        \wrongchoice{\SI{22.6294}{\percent}}
+        \wrongchoice{\SI{38.6853}{\percent}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{course}{
+\begin{question}{info-Q02}
+    Homework is worth how much of your grade?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{10.1756}{\percent}}
+      \correctchoice{\SI{12.4539}{\percent}}
+        \wrongchoice{\SI{16.0558}{\percent}}
+        \wrongchoice{\SI{22.6294}{\percent}}
+        \wrongchoice{\SI{38.6853}{\percent}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{course}{
+\begin{question}{info-Q03}
+    Reports are worth how much of your grade?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{10.1756}{\percent}}
+        \wrongchoice{\SI{12.4539}{\percent}}
+      \correctchoice{\SI{16.0558}{\percent}}
+        \wrongchoice{\SI{22.6294}{\percent}}
+        \wrongchoice{\SI{38.6853}{\percent}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{course}{
+\begin{question}{info-Q04}
+    Quizzes are worth how much of your grade?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{10.1756}{\percent}}
+        \wrongchoice{\SI{12.4539}{\percent}}
+        \wrongchoice{\SI{16.0558}{\percent}}
+      \correctchoice{\SI{22.6294}{\percent}}
+        \wrongchoice{\SI{38.6853}{\percent}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{course}{
+\begin{question}{info-Q05}
+    Examinations are worth how much of your grade?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{10.1756}{\percent}}
+        \wrongchoice{\SI{12.4539}{\percent}}
+        \wrongchoice{\SI{16.0558}{\percent}}
+        \wrongchoice{\SI{22.6294}{\percent}}
+      \correctchoice{\SI{38.6853}{\percent}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{course}{
+\begin{questionmult}{info-Q06}
+    Your course letter grade will be determined by the weighted
+        fractional score on which assessed elements?
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{Examinations}
+      \correctchoice{Quizzes}
+      \correctchoice{Reports}
+      \correctchoice{Homework}
+      \correctchoice{Participation}
+        \wrongchoice{Extra Credit Work}
+    \end{choices}
+    \end{multicols}
+\end{questionmult}
+}
+
+\element{course}{
+\begin{questionmult}{info-Q07}
+    The lowest score in which assessed categories will be dropped?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{Homework}
+        \wrongchoice{Report}
+        \wrongchoice{Quizzes}
+        \wrongchoice{Examination}
+    \end{choices}
+    \end{multicols}
+\end{questionmult}
+}
+
+%% Participation Policy
+\element{course}{
+\begin{questionmult}{info-Q08}
+    Which of the following is necessary to score a perfect 10
+        on the course participation rubric?
+    \begin{choices}
+      \correctchoice{Arrives to class promptly and begins bell work immediately.}
+      \correctchoice{Is fully prepared to learn with a positive attitude.}
+      \correctchoice{Actively supports, engages and listens to his/her peers.}
+      \correctchoice{Plays an active role in all classroom activities.}
+      \correctchoice{Advanced the level and depth of classroom dialogue.}
+        \wrongchoice{Flagrantly violates one of the classroom expectations
+                (i.e using electronic devices, being disrespectful to teacher/peers,
+                disrupting the learning environment).}
+    \end{choices}
+\end{questionmult}
+}
+
+%% Homework Policy
+\element{course}{
+\begin{questionmult}{info-Q09}
+    Homework will be graded using which of the following criteria?
+    \begin{choices}
+      \correctchoice{Useful Description}
+      \correctchoice{Physics Approach}
+      \correctchoice{Specific Application of Physics}
+      \correctchoice{Mathematical Procedures}
+      \correctchoice{Logical Progression}
+        \wrongchoice{Correct Solution}
+    \end{choices}
+\end{questionmult}
+}
+
+\element{course}{
+\begin{questionmult}{info-Q10}
+    I will be able to turn in late homework.
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{True}
+      \correctchoice{False}
+    \end{choices}
+    \end{multicols}
+\end{questionmult}
+}
+
+%% Report Policy
+\element{course}{
+\begin{questionmult}{info-Q11}
+    Reports will be graded using which of the following criteria?
+    \begin{choices}
+      \correctchoice{Length and Completeness}
+      \correctchoice{Clarity and Professionalism}
+      \correctchoice{Validity of Analysis}
+      \correctchoice{Understanding}
+      % \wrongchoice{Correct Solution}
+    \end{choices}
+\end{questionmult}
+}
+
+%% Quiz Policies
+\element{course}{
+\begin{questionmult}{info-Q12}
+    Which of the following are necessary prerequisites
+        for retaking or redoing a quiz?
+    \begin{choices}
+        \wrongchoice{Provide a written solution to every question on the exam.}
+        \wrongchoice{Provide a written reflection about quiz preparations.}
+        \wrongchoice{Schedule a mutually agreeable time after school with the course instructor.}
+      \correctchoice{Nothing, quiz redos are not allowed.}
+        \wrongchoice{Nothing, there are no prerequisites for quiz redos.}
+    \end{choices}
+\end{questionmult}
+}
+
+\element{course}{
+\begin{questionmult}{info-Q13}
+    Which of the following materials are allowed on all quizzes?
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{Ruler of any scale.}
+      \correctchoice{Black or blue ink pen.}
+      \correctchoice{\#2 or HB pencil.}
+      \correctchoice{Your course notebook.}
+      \correctchoice{A scientific calculator.}
+        \wrongchoice{The course textbook.}
+        \wrongchoice{Your cellular phone.}
+    \end{choices}
+    \end{multicols}
+\end{questionmult}
+}
+
+%% Exam Policies
+\element{course}{
+\begin{questionmult}{info-Q14}
+    Which of the following are necessary prerequisites
+        for retaking or redoing an examination?
+    \begin{choices}
+      \correctchoice{Provide a written solution to every question on the exam.}
+      \correctchoice{Provide a written reflection about exam preparations.}
+      \correctchoice{Schedule a mutually agreeable time after school with the course instructor.}
+        \wrongchoice{Nothing, exam redos are not allowed.}
+        \wrongchoice{Nothing, there are no prerequisites for exam redos.}
+    \end{choices}
+\end{questionmult}
+}
+
+\element{course}{
+\begin{questionmult}{info-Q15}
+    Which of the following materials are allowed on all examinations?
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{Ruler of any scale.}
+      \correctchoice{Black or blue ink pen.}
+      \correctchoice{\#2 or HB pencil.}
+      \correctchoice{A scientific calculator.}
+        \wrongchoice{Your course notebook.}
+        \wrongchoice{The course textbook.}
+        \wrongchoice{Your cellular phone.}
+    \end{choices}
+    \end{multicols}
+\end{questionmult}
+}
+
+\element{course}{
+\begin{question}{info-Q16}
+    How many unit examinations will be contained in this course?
+    \begin{choices}
+      \correctchoice{Eight topic examinations.}
+        \wrongchoice{Sixteen Topic examinations.}
+        \wrongchoice{Four Topic examinations.}
+        \wrongchoice{Two Topic examinations.}
+        \wrongchoice{An Innumerable amount of topic examinations.}
+    \end{choices}
+\end{question}
+}
+
+\element{course}{
+\begin{question}{info-Q17}
+    I will be able to make up an exam.
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{True}
+        \wrongchoice{False}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{course}{
+\begin{question}{info-Q18}
+    How will exams be taken?
+    \begin{choices}
+        \wrongchoice{Online}
+        \wrongchoice{We don't have exams in this class}
+      \correctchoice{Proctored/invigilated}
+    \end{choices}
+\end{question}
+}
+
+
+%% Coach Class
+\element{course}{
+\begin{questionmult}{info-Q19}
+    Coach class is available on which days of the week?
+    \begin{choices}
+        \wrongchoice{Monday, in either Room 3318, 3313 or 2310.}
+      \correctchoice{Tuesday, in Mr. Eshelman's classroom.}
+      \correctchoice{Wednesday, in Mr. Frisina's classroom.}
+      \correctchoice{Thursday, in Dr. Hafner's classroom.}
+        \wrongchoice{Friday, in either Room 3318, 3313 or 2310.}
+    \end{choices}
+\end{questionmult}
+}
+
+
+%% Course Materials
+\element{course}{
+\begin{questionmult}{info-Q20}
+    Which materials are all students required to bring to class?
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{A composition notebook}
+      \correctchoice{A folder with loose leaf paper}
+      \correctchoice{Black or blue pens}
+      \correctchoice{\#2 or HB pencils}
+      \correctchoice{A scientific calculator}
+        \wrongchoice{A cellular phone}
+      %\correctchoice{A metric ruler}
+    \end{choices}
+    \end{multicols}
+\end{questionmult}
+}
+
+\element{course}{
+\begin{question}{info-Q21}
+    The principle course textbook is written by which author?
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{Thomas Hsu}
+        \wrongchoice{Benjamin Franklin}
+        \wrongchoice{Barack Obama}
+        \wrongchoice{Richard Feynman}
+        \wrongchoice{Isaac Newton}
+        \wrongchoice{Benjamin Crowell}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+%% Academic Dishonesty
+
+% Plagiarism: The adoption or reproduction of original creations of another author (person, collective, organization, community or other type of author, including anonymous authors) without due acknowledgment.
+% Fabrication: The falsification of data, information, or citations in any formal academic exercise.
+% Deception: Providing false information to an instructor concerning a formal academic exercise---e.g., giving a false excuse for missing a deadline or falsely claiming to have submitted work.
+% Cheating: Any attempt to give or obtain assistance in a formal academic exercise (like an examination) without due acknowledgment.
+% Bribery: or paid services. Giving assignment answers or test answers for money.
+% Sabotage: Acting to prevent others from completing their work.
+%  This includes cutting pages out of library books or willfully disrupting the experiments of others.
+% Professorial misconduct: Professorial acts that are academically fraudulent equate to academic fraud and/or grade fraud.
+
+\element{course}{
+\begin{questionmult}{info-Q22}
+    Academic dishonesty includes which of the following?
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{Plagiarism}
+      \correctchoice{Misuse of sources}
+      \correctchoice{Cheating}
+        \wrongchoice{Giving proper attribution.}
+        \wrongchoice{Basketball}
+        \wrongchoice{Baseball}
+    \end{choices}
+    \end{multicols}
+\end{questionmult}
+}
+
+\element{course}{
+\begin{question}{info-Q23}
+    All acts of academic dishonesty will result minimally with a zero for that assignment.
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{True}
+        \wrongchoice{False.}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+%% http://serc.carleton.edu/NAGTWorkshops/online/activities/46956.html
+\element{course}{
+\begin{question}{info-Q24}
+    Pasting in text from a web site to answer written questions is
+    \begin{choices}
+        \wrongchoice{a great time-saver.}
+        \wrongchoice{OK if it's from a credible or a recommended site.}
+        \wrongchoice{allowed if you give credit to the author.}
+      \correctchoice{explicitly not allowed, and will result in zero points being awarded.}
+    \end{choices}
+\end{question}
+}
+
+\element{course}{
+\begin{question}{info-Q25}
+    Pasting in text from a web site to answer written questions is
+    \begin{choices}
+        \wrongchoice{helpful if it answers the question exactly.}
+        \wrongchoice{OK if you put quotations around the text.}
+      \correctchoice{explicitly not allowed, and will result in zero points being awarded.}
+    \end{choices}
+\end{question}
+}
+
+\element{course}{
+\begin{question}{info-Q26}
+    Answers to written assignment questions have to be composed entirely in your own words.
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{True}
+        \wrongchoice{False}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+     
+\element{course}{
+\begin{question}{info-Q27}
+    If you use information (not exact text) from the textbook or web sites
+        to answer written assignment questions, you need to
+    \begin{choices}
+        \wrongchoice{be thankful that you found the answers.}
+      \correctchoice{give the URL of the website and the page number from the textbook.}
+    \end{choices}
+\end{question}
+}
+
+\element{course}{
+\begin{question}{info-Q28}
+    If you don't like science you should
+    \begin{choices}
+        \wrongchoice{suffer through this course and hope for a C.}
+        \wrongchoice{try to change your personality so that you do like science.}
+      \correctchoice{understand that even though this is a science course,
+        it mostly deals with aspects of everyday life that most people find to be quite interesting.}
+    \end{choices}
+\end{question}
+}
+
+\element{course}{
+\begin{question}{info-Q29}
+    Attendance in this course is
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{optional.}
+        \wrongchoice{required once per week.}
+        \wrongchoice{required once per unit.}
+      \correctchoice{required.}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+%% Course Rules
+\element{course}{
+\begin{questionmult}{info-Q30}
+    Which materials are all students forbidden from use in class?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{composition notebook.}
+        \wrongchoice{scientific calculator.}
+        \wrongchoice{\emph{Physics, A First Course} textbook.}
+      \correctchoice{headphones.}
+      \correctchoice{outerwear.}
+      \correctchoice{cellphone.}
+      \correctchoice{food or drink, excepting water.}
+    \end{choices}
+    \end{multicols}
+\end{questionmult}
+}
+
+\element{course}{
+\begin{questionmult}{info-Q31}
+    Which of the following are one of the classroom rules?
+    \begin{choices}
+        \correctchoice{\emph{Respect, respect, respect} yourself and others at all times.}
+        \correctchoice{\emph{No} profanity or inappropriate language.}
+        \correctchoice{\emph{Be on time}.}
+        \correctchoice{\emph{No} Outerwear is allowed, \emph{NO} exceptions.}
+        \correctchoice{\emph{No} Cellphones or headphones.}
+        \correctchoice{Be organized and prepared for class.}
+        \correctchoice{\emph{Stay on task}.}
+        \correctchoice{Leave the furniture where it is.
+            Desk and chairs are to be on all 4 legs at all times.}
+        \correctchoice{Absolutely No food or drink in the classroom}
+        \correctchoice{No matter what, \emph{Keep moving forward}. Everyone makes mistakes}
+    \end{choices}
+\end{questionmult}
+}
+
+\endinput
+

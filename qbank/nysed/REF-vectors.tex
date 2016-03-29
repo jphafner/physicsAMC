@@ -1,0 +1,44 @@
+
+\begin{minipage}{0.50\linewidth}
+    \renewcommand{\arraystretch}{1.66}
+    \begin{center}
+        \begin{tabu}{X[l]X[l]}
+            \multicolumn{2}{c}{\LARGE Geometry and Trigonometry} \\
+            \toprule
+            \multicolumn{1}{l}{Rectangle}       & \\
+            \quad$A = bh$                       & $A = \text{area}$ \\
+            \multicolumn{1}{l}{Triangle}        & $C = \text{circumference}$ \\
+            \quad$A = \sfrac{1}{2}bh$           & $b = \text{base}$ \\
+            \multicolumn{1}{l}{Circle}          & $h = \text{height}$ \\
+            \quad$A = \pi r^2$                  & $r = \text{radius}$ \\
+            \quad$C = 2 \pi r$                  &  \\
+            \multicolumn{1}{l}{Right Triangle}  &  \\
+            \quad$c^2 = a^2 + b^2$              & $\tan\theta = \sfrac{a}{b}$ \\
+            \quad$\sin\theta = \sfrac{a}{c}$    & $\cos\theta = \sfrac{b}{c}$ \\
+            \bottomrule
+        \end{tabu}
+    \end{center}
+\end{minipage}
+\begin{minipage}{0.50\linewidth}
+    \begin{center}
+        \begin{tikzpicture}[scale=1.25,font=\large]
+            \coordinate[] (A) at (0,0);
+            \coordinate[] (B) at (0,3);
+            \coordinate[] (C) at (4,0);
+
+            \coordinate[label=left:$a$]  (c) at ($ (A)!.5!(B) $);
+            \coordinate[label=below:$b$] (b) at ($ (A)!.5!(C) $);
+            \coordinate[label=above:$c$] (a) at ($ (B)!.5!(C) $);
+
+            \draw [color=black!90!white] (A) rectangle ++(0.5,0.5);
+            \draw (A) +(15:1.0) node[rotate=0] {\ang{90}};
+            \draw [color=black!90!white] (C) +(180:1) arc (180:143.1:1);
+            \draw (C) +(165:1.2) node[rotate=0] {$\theta$};
+
+            \draw [line width=1pt] (A) -- (B) -- (C) -- cycle;
+        \end{tikzpicture}
+    \end{center}
+\end{minipage}
+
+\endinput
+

@@ -1,0 +1,206 @@
+
+
+%% This defines the lua function mycommand()
+%\directlua{require('./qbank/lua/common.lua')}
+
+
+%% Objectives
+%%--------------------------------------------------
+
+%% 1. Construct an empirical test to falsify a scientific claim
+
+
+%% Falsification
+%%--------------------------------------------------
+
+%% Consider differentiating the letter O from the number 0
+
+\element{wrong}{
+\begin{questionmult}{WrongQ01}
+\luaexec{
+    local Q = [[
+        Each of the four figures below represents a card.
+        There is always a letter on one side of the card and a number on the other side.
+        Your job is to verify whether or not the following rule is true:
+            If there is a vowel on one side of the card,
+            then there must be an odd number on the other side. 
+        Which cards must you turn over to test the truth of the rule?
+    ]]
+    local vowel = {[[A]], [[E]], [[I]], [[O]], [[U]],}
+    local consonant = {[[H]],[[J]], [[K]], [[M]], [[N]],}
+    local odd = {1, 3, 5, 7, 9,}
+    local even = {2, 4, 6, 8, 10,}
+    local n = {
+        math.random(1,5),
+        math.random(1,5),
+        math.random(1,5),
+        math.random(1,5),
+    }
+    tex.print( Q )
+    tex.print( BeginMulticolsFour )
+        tex.print( BeginChoices )
+            tex.print( string.format( CorrectChoice, vowel[n[1]]) )
+            tex.print( string.format( WrongChoice, consonant[n[2]]) )
+            tex.print( string.format( CorrectChoice, even[n[3]] ) )
+            tex.print( string.format( WrongChoice, odd[n[4]] ) )
+        tex.print( EndChoices )
+    tex.print( EndMulticols )
+}
+\end{questionmult}
+}
+
+%% NOTE: Changed Q01 odd to even
+\element{wrong}{
+\begin{questionmult}{WrongQ02}
+\luaexec{
+    local Q = [[
+        Each of the four figures below represents a card.
+        There is always a letter on one side of the card and a number on the other side.
+        Your job is to verify whether or not the following rule is true:
+            If there is a vowel on one side of the card,
+            then there must be an even number on the other side. 
+        Which cards must you turn over to test the truth of the rule?
+    ]]
+    local vowel = {[[A]], [[E]], [[I]], [[O]], [[U]],}
+    local consonant = {[[H]],[[J]], [[K]], [[M]], [[N]],}
+    local odd = {1, 3, 5, 7, 9,}
+    local even = {2, 4, 6, 8, 10,}
+    local n = {
+        math.random(1,5),
+        math.random(1,5),
+        math.random(1,5),
+        math.random(1,5),
+    }
+    tex.print( Q )
+    tex.print( BeginMulticolsFour )
+        tex.print( BeginChoices )
+            tex.print( string.format( CorrectChoice, vowel[n[1]]) )
+            tex.print( string.format( WrongChoice, consonant[n[2]]) )
+            tex.print( string.format( WrongChoice, even[n[3]] ) )
+            tex.print( string.format( CorrectChoice, odd[n[4]] ) )
+        tex.print( EndChoices )
+    tex.print( EndMulticols )
+}
+\end{questionmult}
+}
+
+%% NOTE: Changed Q01 vowel to consonant
+\element{wrong}{
+\begin{questionmult}{WrongQ03}
+\luaexec{
+    local Q = [[
+        Each of the four figures below represents a card.
+        There is always a letter on one side of the card and a number on the other side.
+        Your job is to verify whether or not the following rule is true:
+            If there is a consonant on one side of the card,
+            then there must be an odd number on the other side. 
+        Which cards must you turn over to test the truth of the rule?
+    ]]
+    local vowel = {[[A]], [[E]], [[I]], [[O]], [[U]],}
+    local consonant = {[[H]],[[J]], [[K]], [[M]], [[N]],}
+    local odd = {1, 3, 5, 7, 9,}
+    local even = {2, 4, 6, 8, 10,}
+    local n = {
+        math.random(1,5),
+        math.random(1,5),
+        math.random(1,5),
+        math.random(1,5),
+    }
+    tex.print( Q )
+    tex.print( BeginMulticolsFour )
+        tex.print( BeginChoices )
+            tex.print( string.format( WrongChoice, vowel[n[1]]) )
+            tex.print( string.format( CorrectChoice, consonant[n[2]]) )
+            tex.print( string.format( CorrectChoice, even[n[3]] ) )
+            tex.print( string.format( WrongChoice, odd[n[4]] ) )
+        tex.print( EndChoices )
+    tex.print( EndMulticols )
+}
+\end{questionmult}
+}
+
+%% NOTE: Changed Q01 odd to even and vowel to consonant
+\element{wrong}{
+\begin{questionmult}{WrongQ04}
+\luaexec{
+    local Q = [[
+        Each of the four figures below represents a card.
+        There is always a letter on one side of the card and a number on the other side.
+        Your job is to verify whether or not the following rule is true:
+            If there is a consonant on one side of the card,
+            then there must be an odd number on the other side. 
+        Which cards must you turn over to test the truth of the rule?
+    ]]
+    local vowel = {[[A]], [[E]], [[I]], [[O]], [[U]],}
+    local consonant = {[[H]],[[J]], [[K]], [[M]], [[N]],}
+    local odd = {1, 3, 5, 7, 9,}
+    local even = {2, 4, 6, 8, 10,}
+    local n = {
+        math.random(1,5),
+        math.random(1,5),
+        math.random(1,5),
+        math.random(1,5),
+    }
+    tex.print( Q )
+    tex.print( BeginMulticolsFour )
+        tex.print( BeginChoices )
+            tex.print( string.format( WrongChoice, vowel[n[1]]) )
+            tex.print( string.format( CorrectChoice, consonant[n[2]]) )
+            tex.print( string.format( CorrectChoice, odd[n[3]] ) )
+            tex.print( string.format( WrongChoice, even[n[4]] ) )
+        tex.print( EndChoices )
+    tex.print( EndMulticols )
+}
+\end{questionmult}
+}
+
+\begin{comment}
+\element{wrong}{
+\begin{questionmult}{WrongQ05}
+    You are serving as the chaperon and bouncer
+        at a local student bar and coffee house.
+    Rather than standing at the door checking IDs all the time,
+        you have occupied a table so you can do some work.
+    When patrons come in and give their order,
+        the servers bring you cards with the patron's order
+        on one side and their best guess of the patron's age on the other.
+    You then decide whether to go and check IDs.
+    (The servers can be assumed to be trustworthy and are pretty good guessers.)
+    %% Need to word so you know what the q wants
+    \begin{multicols}{2}
+        \begin{choices}
+          \correctchoice{16}
+            \wrongchoice{Coke}
+            \wrongchoice{52}
+          \correctchoice{Gin}
+        \end{choices}
+    \end{multicols}
+\end{questionmult}
+}
+
+\element{wrong}{
+\begin{questionmult}{WrongQ06}
+    %Now consider another version. 
+    You are an officer at the border of a country. 
+    Each of the four cards that follow represents a traveler. 
+    One side of the card lists whether the person is entering the
+        country or is in transit (just passing through). 
+    The other side of the card shows what vaccinations the person has received.
+    You must make sure that any person who is entering the country is
+        vaccinated against cholera.
+    %% Reword so question is more clear
+    Which cards must you turn over to test the truth of the rule?
+    %(Cheng & Holyoak, 1985)
+    %% TODO: CHeck
+    \begin{multicols}{2}
+        \begin{choices}
+          \correctchoice{\fbox{\LARGE Entering}}
+            \wrongchoice{\fbox{\LARGE Transit}}
+            \wrongchoice{\fbox{\LARGE Cholera Mumps Typhoid}}
+          \correctchoice{\fbox{\LARGE Flu Mumps}}
+        \end{choices}
+    \end{multicols}
+\end{questionmult}
+}
+\end{comment}
+

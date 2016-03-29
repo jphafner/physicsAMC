@@ -1,0 +1,948 @@
+
+
+%% NJCTL: PSI AP Physics C
+%%----------------------------------------
+
+
+%% Kinematics 1D
+%%----------------------------------------
+\element{njctl}{
+\begin{question}{kinematics-1d-q01}
+    In the absence of air resistance,
+        a ball dropped near the surface of the Earth experiences a constant acceleration of \SI{9.8}{\meter\per\second\squared}.
+    This means that the:
+    \begin{choices}
+      \correctchoice{speed of the object increases \SI{9.8}{\meter\per\second} during each second}
+        \wrongchoice{speed of the object as it falls is \SI{9.8}{\meter\per\second}}
+        \wrongchoice{object falls \SI{9.8}{\meter} during each second}
+        \wrongchoice{object falls \SI{9.8}{\meter} during the first second only}
+        \wrongchoice{derivative of the distance with respect to time for the object equals \SI{9.8}{\meter\per\second\squared}}
+    \end{choices}
+\end{question}
+}
+
+\element{njctl}{
+\begin{question}{kinematics-1d-q02}
+    A \SI{1000}{\kilo\gram} truck accelerates uniformly from rest,
+        reaching a speed of \SI{50}{\meter\per\second} in \SI{10}{\second}.
+    During the \SI{10}{\second},
+        the truck has traveled a distance of
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{85}{\meter}}
+        \wrongchoice{\SI{175}{\meter}}
+        \wrongchoice{\SI{200}{\meter}}
+      \correctchoice{\SI{250}{\meter}}
+        \wrongchoice{\SI{300}{\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{njctl}{
+\begin{question}{kinematics-1d-q03}
+    The velocity as a function of time of a moving object is presented by the graph below.
+    \begin{center}
+    \begin{tikzpicture}
+        \begin{axis}[
+            axis y line=left,
+            axis x line=middle,
+            axis line style={->},
+            xlabel={time},
+            xtick=\empty,
+            ylabel={velocity},
+            ytick=\empty,
+            xmin=0,xmax=12,
+            ymin=-6,ymax=6,
+            width=0.8\columnwidth,
+            height=0.5\columnwidth,
+            grid=major,
+            very thin,
+        ]
+        \addplot[line width=1pt,mark=\empty] plot coordinates {(0,-5) (4,-5) (8,5) (12,5)};
+        \end{axis}
+    \end{tikzpicture}
+    \end{center}
+    The object moves in one dimension and at time $t=0$, $x_0=0$.
+    Which of the following graphs best represents the displacement as a function of time for the same time intervals?
+    \begin{multicols}{2}
+    \begin{choices}
+        \AMCboxDimensions{down=-1.5em}
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=middle,
+                    axis line style={->},
+                    xlabel={time},
+                    xtick=\empty,
+                    ylabel={position},
+                    ytick=\empty,
+                    xmin=0,xmax=12,
+                    ymin=-6,ymax=6,
+                    width=0.95\columnwidth,
+                    very thin,
+                ]
+                \addplot[line width=1pt,mark=\empty] plot coordinates {(0,0) (4,0) (6,5) (8,0) (12,0)};
+                \end{axis}
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=middle,
+                    axis line style={->},
+                    xlabel={time},
+                    xtick=\empty,
+                    ylabel={position},
+                    ytick=\empty,
+                    xmin=0,xmax=12,
+                    ymin=-6,ymax=6,
+                    width=0.95\columnwidth,
+                    very thin,
+                ]
+                \addplot[line width=1pt,mark=\empty] plot coordinates {(0,0) (2,5) (4,0) (8,0) (10,-5) (12,0)};
+                \end{axis}
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=middle,
+                    axis line style={->},
+                    xlabel={time},
+                    xtick=\empty,
+                    ylabel={position},
+                    ytick=\empty,
+                    xmin=0,xmax=12,
+                    ymin=-6,ymax=6,
+                    width=0.95\columnwidth,
+                    very thin,
+                ]
+                \addplot[line width=1pt,domain=0:4] {0};
+                \addplot[line width=1pt,domain=4:8] {(x-4) *(x-8)};
+                \addplot[line width=1pt,domain=8:12] {0};
+                \end{axis}
+            \end{tikzpicture}
+        }
+        %% ANS is D
+        \correctchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=middle,
+                    axis line style={->},
+                    xlabel={time},
+                    xtick=\empty,
+                    ylabel={position},
+                    ytick=\empty,
+                    xmin=0,xmax=12,
+                    ymin=-6,ymax=6,
+                    width=0.95\columnwidth,
+                    very thin,
+                ]
+                \addplot[line width=1pt,domain=0:4] {-x};
+                \addplot[line width=1pt,domain=4:8] {-4 + 0.3*(x-4) *(x-8)};
+                \addplot[line width=1pt,domain=8:12] {-4+(x-8)};
+                \end{axis}
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=middle,
+                    axis line style={->},
+                    xlabel={time},
+                    xtick=\empty,
+                    ylabel={position},
+                    ytick=\empty,
+                    xmin=0,xmax=12,
+                    ymin=-6,ymax=6,
+                    width=0.95\columnwidth,
+                    very thin,
+                ]
+                \addplot[line width=1pt,mark=\empty] plot coordinates {(0,0) (4,-5) (8,-5) (12,0)};
+                \end{axis}
+            \end{tikzpicture}
+        }
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\newcommand{\njctlapcKinematicsOneDQFour}{
+\begin{tikzpicture}
+    \begin{axis}[
+        axis y line=left,
+        axis x line=bottom,
+        axis line style={->},
+        ytick={0,5,10},
+        yticklabels={,$v_0$,$v$},
+        xlabel={time},
+        x unit=\si{\second},
+        xtick={0,5,10,15,20},
+        xmin=0,xmax=21,
+        ymin=0,ymax=11,
+        width=0.8\columnwidth,
+        height=0.5\columnwidth,
+        very thin,
+    ]
+    \addplot[line width=1pt,mark=\empty] plot coordinates {(0,0) (20,10)} node[pos=0.10,anchor=south] {$B$};
+    \addplot[line width=1pt,mark=\empty] plot coordinates {(0,5) (20,5)} node[pos=0.14,anchor=south east] {$A$};;
+    \end{axis}
+\end{tikzpicture}
+}
+
+\element{njctl}{
+\begin{question}{kinematics-1d-q04}
+    At time $t=\text{zero}$, car $A$ traveling with speed $v_0$ passes car $B$,
+        which is just starting to move.
+    Both cars then travel on two parallel lanes of the same straight road.
+    The graphs of speed versus time for both cars are shown below.
+    \begin{center}
+        \njctlapcKinematicsOneDQFour
+    \end{center}
+    %% Start question
+    Which of the following is true at time $t=\SI{10}{\second}$?
+    \begin{choices}
+      \correctchoice{Car $B$ is behind car $A$.}
+        \wrongchoice{Car $B$ is passing car $A$.}
+        \wrongchoice{Car $B$ is in front of car $A$.}
+        \wrongchoice{Both cars have the same acceleration.}
+        \wrongchoice{Car $A$ is accelerating faster then car $B$.}
+    \end{choices}
+\end{question}
+}
+
+\element{njctl}{
+\begin{question}{kinematics-1d-q05}
+    At time $t=0$, car $A$ traveling with speed $v_0$ passes car $B$,
+        which is just starting to move.
+    Both cars then travel on two parallel lanes of the same straight road.
+    The graphs of speed versus time for both cars are shown below.
+    \begin{center}
+        \njctlapcKinematicsOneDQFour
+    \end{center}
+    %% Start question
+    From time $t=0$ to time $t=\SI{20}{\second}$,
+        the areas under both curves are equal.
+    Therefore, which of the following is true at time $t=\SI{20}{\second}$?
+    \begin{choices}
+        \wrongchoice{Car $B$ is behind car $A$. }
+      \correctchoice{Car $B$ is passing car $A$.}
+        \wrongchoice{Car $B$ is in front of car $A$.}
+        \wrongchoice{Both cars have the same acceleration.}
+        \wrongchoice{Car $A$ is accelerating faster than car $B$.}
+    \end{choices}
+\end{question}
+}
+
+\element{njctl}{
+\begin{question}{kinematics-1d-q06}
+    A runner moving in the $+x$ direction passes the origin at time $t=0$.
+    Between $t=0$ and $t=\SI{2}{\second}$,
+    the runner has a constant speed of \SI{8}{\meter\per\second} and at $t=\SI{2}{\second}$ is accelerating at a constant rate of \SI{4}{\meter\per\second\squared} in the $-x$ direction.
+    The runner location at $t=\SI{5}{\second}$ is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{+14}{\meter}}
+        \wrongchoice{\SI{+94}{\meter}}
+      \correctchoice{\SI{+22}{\meter}}
+        \wrongchoice{\SI{-74}{\meter}}
+        \wrongchoice{\SI{-94}{\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{njctl}{
+\begin{question}{kinematics-1d-q07}
+    Starting from rest,
+        an object accelerates on a straight level surface at the rate of \SI{2}{\meter\per\second\squared} for \SI{10}{\second}.
+    %% Start question
+    What is the speed of the object at the end of \SI{10}{\second}?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{5}{\meter\per\second}}
+        \wrongchoice{\SI{10}{\meter\per\second}}
+      \correctchoice{\SI{20}{\meter\per\second}}
+        \wrongchoice{\SI{30}{\meter\per\second}}
+        \wrongchoice{\SI{40}{\meter\per\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{njctl}{
+\begin{question}{kinematics-1d-q08}
+    Starting from rest,
+        an object accelerates on a straight level surface at the rate of \SI{2}{\meter\per\second\squared} for \SI{10}{\second}.
+    %% Start question
+    What is the total distance of the object during \SI{10}{\second}?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{20}{\meter}}
+        \wrongchoice{\SI{40}{\meter}}
+        \wrongchoice{\SI{80}{\meter}}
+      \correctchoice{\SI{100}{\meter}}
+        \wrongchoice{\SI{120}{\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{njctl}{
+\begin{question}{kinematics-1d-q09}
+    A stomp rocket is projected from the ground level in two different trials,
+        with two different initial velocities.
+    It was found that the total time the rocket stays in air is $t$ in the first trial and $2t$ in the second trial.
+    What is the difference between the maximum heights in this experiment?
+    (Ignore air resistance)
+    \begin{choices}
+        \wrongchoice{The maximum height in the second trial is two times greater of that in the first trial}
+      \correctchoice{The maximum height in the second trial is four times greater of that in the first trial}
+        \wrongchoice{The maximum height in the second trial is eight times greater of that in the first trial}
+        \wrongchoice{The maximum height in the second trial is sixteen times greater of that in the first trial}
+        \wrongchoice{The maximum height is the same in both trials}
+    \end{choices}
+\end{question}
+}
+
+\element{njctl}{
+\begin{question}{kinematics-1d-q10}
+    A particle moves along the x-axis with an acceleration described by $a=6t$,
+        where $a$ is in meters per second squared and $t$ is in seconds.
+    If at time $t_0=0$, $x_0=0$ and $v_0=0$,
+        how fast does the particle move when $t=\SI{2}{\second}$?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{$v=\SI{4}{\meter\per\second}$}
+        \wrongchoice{$v=\SI{8}{\meter\per\second}$}
+        \wrongchoice{$v=\SI{16}{\meter\per\second}$}
+        \wrongchoice{$v=\SI{24}{\meter\per\second}$}
+      \correctchoice{$v=\SI{12}{\meter\per\second}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{njctl}{
+\begin{question}{kinematics-1d-q11}
+    A particle moves along the $x$-axis with an acceleration described by $a=6t$,
+        where $a$ is in meters per second squared and $t$ is in seconds.
+    If at time $t_0=0$, $x_0=0$ and $v_0=0$,
+        where is the particle located when $t=\SI{2}{\second}$?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{$x=\SI{4}{\meter}$}
+      \correctchoice{$x=\SI{8}{\meter}$}
+        \wrongchoice{$x=\SI{16}{\meter}$}
+        \wrongchoice{$x=\SI{24}{\meter}$}
+        \wrongchoice{$x=\SI{36}{\meter}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{njctl}{
+\begin{question}{kinematics-1d-q12}
+    An object starts from rest at time $t_0=0$.
+    The velocity $v$ as a function of time is given by $v=2t+3t^2$.
+    How far does the object travel in first \SI{5}{\second}?
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{\SI{150}{\meter}}
+        \wrongchoice{\SI{300}{\meter}}
+        \wrongchoice{\SI{450}{\meter}}
+        \wrongchoice{\SI{500}{\meter}}
+        \wrongchoice{\SI{625}{\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{njctl}{
+\begin{question}{kinematics-1d-q13}
+    %% Questions 13-14
+    An object moving in a straight line has a velocity $v$ in meters per second that varies with time $t$ in seconds according to the following function.
+    \begin{equation*}
+        v = 8 + 2.5 t^2
+    \end{equation*}
+    %% Start question
+    The instantaneous acceleration of the object at $t=\SI{2}{\second}$ is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{2}{\meter\per\second\squared}}
+        \wrongchoice{\SI{4}{\meter\per\second\squared}}
+        \wrongchoice{\SI{6}{\meter\per\second\squared}}
+        \wrongchoice{\SI{8}{\meter\per\second\squared}}
+      \correctchoice{\SI{10}{\meter\per\second\squared}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{njctl}{
+\begin{question}{kinematics-1d-q14}
+    %% Questions 13-14
+    An object moving in a straight line has a velocity $v$ in meters per second that varies with time $t$ in seconds according to the following function.
+    \begin{equation*}
+        v = 8 + 2.5 t^2
+    \end{equation*}
+    %% Start question
+    The displacement of the object between $t=0$ and $t=\SI{6}{\second}$ is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{120}{\meter}}
+        \wrongchoice{\SI{180}{\meter}}
+      \correctchoice{\SI{228}{\meter}}
+        \wrongchoice{\SI{242}{\meter}}
+        \wrongchoice{\SI{260}{\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{njctl}{
+\begin{question}{kinematics-1d-q15}
+    A rocket is shot vertically upward into the air with a positive initial velocity.
+    Which of the following correctly describes the velocity and acceleration of the object at its maximum elevation?
+    \begin{choices}
+        \wrongchoice{$\text{velocity}>0$, $\text{acceleration}<0$}
+        \wrongchoice{$\text{velocity}=0$, $\text{acceleration}=0$}
+        \wrongchoice{$\text{velocity}<0$, $\text{acceleration}<0$}
+      \correctchoice{$\text{velocity}=0$, $\text{acceleration}<0$}
+        \wrongchoice{$\text{velocity}>0$, $\text{acceleration}>0$}
+    \end{choices}
+\end{question}
+}
+
+\element{njctl}{
+\begin{question}{kinematics-1d-q16}
+    %% Questions 16-17
+    The acceleration of a moving object is given by the function:
+    \begin{equation*}
+        a = 8t + 4\, ,
+    \end{equation*}
+    where all quantities are in base SI units.
+    The object is initially \SI{2}{\meter} from the origin and moving to the right with a speed of \SI{2}{\meter\per\second}.
+    %% Start question
+    Find the velocity at $t=\SI{3}{\second}$.
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{37}{\meter\per\second}}
+        \wrongchoice{\SI{43}{\meter\per\second}}
+      \correctchoice{\SI{50}{\meter\per\second}}
+        \wrongchoice{\SI{62}{\meter\per\second}}
+        \wrongchoice{\SI{78}{\meter\per\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{njctl}{
+\begin{question}{kinematics-1d-q17}
+    %% Questions 16-17
+    The acceleration of a moving object is given by the function:
+    \begin{equation*}
+        a = 8t + 4\, ,
+    \end{equation*}
+    where all quantities are in base SI units.
+    The object is initially \SI{2}{\meter} from the origin and moving to the right with a speed of \SI{2}{\meter\per\second}.
+    %% Start question
+    Find the displacement of the object during first \SI{3}{\second}.
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{15}{\meter}}
+        \wrongchoice{\SI{20}{\meter}}
+        \wrongchoice{\SI{25}{\meter}}
+        \wrongchoice{\SI{30}{\meter}}
+      \correctchoice{\SI{60}{\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{njctl}{
+\begin{question}{kinematics-1d-q18}
+    An object in free fall has a velocity of \SI{5}{\meter\per\second} in the upward direction.
+    What is the instantaneous velocity of the object one second later?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{10}{\meter\per\second} down}
+        \wrongchoice{\SI{5}{\meter\per\second} up }
+        \wrongchoice{\SI{10}{\meter\per\second} up }
+      \correctchoice{\SI{5}{\meter\per\second} down }
+        \wrongchoice{\SI{14}{\meter\per\second} down}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{njctl}{
+\begin{question}{kinematics-1d-q19}
+    At what vertical velocity should an object be launched at in order to achieve a height of \SI{20}{\meter}?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{10}{\meter\per\second}}
+        \wrongchoice{\SI{14}{\meter\per\second}}
+      \correctchoice{\SI{20}{\meter\per\second}}
+        \wrongchoice{\SI{23}{\meter\per\second}}
+        \wrongchoice{\SI{29}{\meter\per\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{njctl}{
+\begin{question}{kinematics-1d-q20}
+    How long will it take for an object accelerating at a constant rate of \SI{5}{\meter\per\second\squared} to change its velocity from \SI{0}{\meter\per\second} to \SI{6}{\meter\per\second}?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{0.6}{\second}}
+      \correctchoice{\SI{1.2}{\second}}
+        \wrongchoice{\SI{2.4}{\second}}
+        \wrongchoice{\SI{3.6}{\second}}
+        \wrongchoice{\SI{4.8}{\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{njctl}{
+\begin{question}{kinematics-1d-q21}
+    An object is thrown straight downward on Earth with an initial velocity of \SI{10}{\meter\per\second} from a position of \SI{20}{\meter} above the ground.
+    The speed of the object when it reaches the ground is about:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{13.2}{\meter\per\second}}
+        \wrongchoice{\SI{16.1}{\meter\per\second}}
+        \wrongchoice{\SI{19.5}{\meter\per\second}}
+      \correctchoice{\SI{22.2}{\meter\per\second}}
+        \wrongchoice{\SI{31.7}{\meter\per\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{njctl}{
+\begin{question}{kinematics-1d-q22}
+    A ball is dropped from a height $h$ without air resistance.
+    If the ball falls a distance of $h/2$ in a time $t$,
+        how much time is required to fall the remaining $h/2$?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$0.25 t$}
+      \correctchoice{$0.40 t$}
+        \wrongchoice{$0.50 t$}
+        \wrongchoice{$0.71 t$}
+        \wrongchoice{$1.00 t$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{njctl}{
+\begin{question}{kinematics-1d-q23}
+    The following function represents the path taken by an object:
+    \begin{equation*}
+        x=4t^2 - 3t + 2 \, ,
+    \end{equation*}
+    where $x$ is the object's position in meters and $t$ is time in seconds.
+    How far does the object travel during first \SI{3}{\second}?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{16}{\meter}}
+        \wrongchoice{\SI{23}{\meter}}
+        \wrongchoice{\SI{29}{\meter}}
+      \correctchoice{\SI{27}{\meter}}
+        \wrongchoice{\SI{32}{\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{njctl}{
+\begin{question}{kinematics-1d-q24}
+    The following function represents the path taken by an object:
+    \begin{equation*}
+        x=4t^2 - 3t + 2 \, ,
+    \end{equation*}
+    where $x$ is the object's position in meters and $t$ is time in seconds.
+    How far away from the origin is the object at $t=\SI{3}{\second}$?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{8}{\meter}}
+        \wrongchoice{\SI{12}{\meter}}
+        \wrongchoice{\SI{16}{\meter}}
+        \wrongchoice{\SI{20}{\meter}}
+      \correctchoice{\SI{29}{\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{njctl}{
+\begin{question}{kinematics-1d-q25}
+    The following function represents the path taken by an object:
+    \begin{equation*}
+        x = 4t^2 - 3t + 2\, ,
+    \end{equation*}
+    where $x$ is the object's position in meters and $t$ is time in seconds.
+    What is the instantaneous velocity of the object at $t=\SI{3}{\meter}$?
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{\SI{21}{\meter\per\second}}
+        \wrongchoice{\SI{18}{\meter\per\second}}
+        \wrongchoice{\SI{23}{\meter\per\second}}
+        \wrongchoice{\SI{28}{\meter\per\second}}
+        \wrongchoice{\SI{33}{\meter\per\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{njctl}{
+\begin{question}{kinematics-1d-q26}
+    The following function represents the path taken by an object:
+    \begin{equation*}
+        x = 4t^2 - 3t + 2\, ,
+    \end{equation*}
+    where $x$ is the object's position in meters and $t$ is time in seconds.
+    At what time is the velocity of the object about \SI{29}{\meter\per\second}?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{2}{\second}}
+      \correctchoice{\SI{4}{\second}}
+        \wrongchoice{\SI{5}{\second}}
+        \wrongchoice{\SI{6}{\second}}
+        \wrongchoice{\SI{8}{\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{njctl}{
+\begin{question}{kinematics-1d-q27}
+    The following function represents the path taken by an object:
+    \begin{equation*}
+        x = 4t^2 - 3t + 2\, ,
+    \end{equation*}
+    where $x$ is the object's position in meters and $t$ is time in seconds.
+    What is the instantaneous acceleration of the object at $t=\SI{3}{\second}$?
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{\SI{8}{\meter\per\second\squared}}
+        \wrongchoice{\SI{12}{\meter\per\second\squared}}
+        \wrongchoice{\SI{20}{\meter\per\second\squared}}
+        \wrongchoice{\SI{24}{\meter\per\second\squared}}
+        \wrongchoice{\SI{30}{\meter\per\second\squared}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{njctl}{
+\begin{question}{kinematics-1d-q28}
+    The following function represents the path taken by an object:
+    \begin{equation*}
+        x = 4t^2 - 3t + 2\, ,
+    \end{equation*}
+    where $x$ is the object's position in meters and $t$ is time in seconds.
+    At what time is the acceleration of the object \SI{10}{\meter\per\second\squared}?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{0}{\second}}
+        \wrongchoice{\SI{2}{\second}}
+        \wrongchoice{\SI{4}{\second}}
+        \wrongchoice{\SI{8}{\second}}
+      \correctchoice{none are correct}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{njctl}{
+\begin{question}{kinematics-1d-q29}
+    The acceleration of a moving object is represented by the function
+    \begin{equation*}
+        a = 9t^2 +2 \, .
+    \end{equation*}
+    where $a$ is the object's acceleration in meter per second squared and $t$ is time in seconds.
+    At $t=0$ the object at $x_0=\SI{-2}{\meter}$ and is traveling with a velocity of \SI{3}{\meter\per\second} in the negative $x$ direction.
+    How fast is the object moving at $t=\SI{2}{\second}$?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{13}{\meter\per\second}}
+      \correctchoice{\SI{25}{\meter\per\second}}
+        \wrongchoice{\SI{38}{\meter\per\second}}
+        \wrongchoice{\SI{47}{\meter\per\second}}
+        \wrongchoice{\SI{65}{\meter\per\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{njctl}{
+\begin{question}{kinematics-1d-q30}
+    The acceleration of a moving object is represented by the function
+    \begin{equation*}
+        a = 9t^2 +2 \, .
+    \end{equation*}
+    where $a$ is the object's acceleration in meter per second squared and $t$ is time in seconds.
+    At $t=0$ the object at $x_0=\SI{-2}{\meter}$ and is traveling with a velocity of \SI{3}{\meter\per\second} in the negative $x$ direction.
+    What is the instantaneous acceleration at $t=\SI{3}{\second}$?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{9}{\meter\per\second\squared}}
+        \wrongchoice{\SI{19}{\meter\per\second\squared}}
+        \wrongchoice{\SI{41}{\meter\per\second\squared}}
+        \wrongchoice{\SI{54}{\meter\per\second\squared}}
+      \correctchoice{\SI{83}{\meter\per\second\squared}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{njctl}{
+\begin{question}{kinematics-1d-q31}
+    The acceleration of a moving object is represented by the function
+    \begin{equation*}
+        a = 9t^2 +2 \, .
+    \end{equation*}
+    where $a$ is the object's acceleration in meter per second squared and $t$ is time in seconds.
+    At $t=0$ the object at $x_0=\SI{-2}{\meter}$ and is traveling with a velocity of \SI{3}{\meter\per\second} in the negative $x$ direction.
+    At what time is the acceleration approximately \SI{38}{\meter\per\second\squared}?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{1}{\second}}
+      \correctchoice{\SI{2}{\second}}
+        \wrongchoice{\SI{3}{\second}}
+        \wrongchoice{\SI{4}{\second}}
+        \wrongchoice{none (acceleration is constant)}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{njctl}{
+\begin{question}{kinematics-1d-q32}
+    The acceleration of a moving object is represented by the function
+    \begin{equation*}
+        a = 9t^2 +2 \, .
+    \end{equation*}
+    where $a$ is the object's acceleration in meter per second squared and $t$ is time in seconds.
+    At $t=0$ the object at $x_0=\SI{-2}{\meter}$ and is traveling with a velocity of \SI{3}{\meter\per\second} in the negative $x$ direction.
+    How far from the origin is the object at $t=\SI{2}{\second}$?
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{\SI{8}{\meter}}
+        \wrongchoice{\SI{4}{\meter}}
+        \wrongchoice{\SI{6}{\meter}}
+        \wrongchoice{\SI{12}{\meter}}
+        \wrongchoice{\SI{17}{\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+%\newcommand{\njctlapcKinematicsOneDQThirtyThree}{
+%\begin{tikzpicture}
+%    %% NOTE:
+%\end{tikzpicture}
+%}
+%
+%\element{njctl}{
+%\begin{question}{kinematics-1d-q33}
+%    %% Question 33 – 34 tikz
+%    A car starting from rest uniformly accelerates in a straight line as shown below
+%    \begin{center}
+%        \njctlapcKinematicsOneDQThirtyThree
+%    \end{center}
+%    What was the acceleration during the entire \SI{3}{\second} interval?
+%    \begin{multicols}{2}
+%    \begin{choices}
+%        \wrongchoice{\SI{1}{\meter\per\second\squared}}
+%        \wrongchoice{\SI{3}{\meter\per\second\squared}}
+%      \correctchoice{\SI{4}{\meter\per\second\squared}}
+%        \wrongchoice{\SI{6}{\meter\per\second\squared}}
+%        \wrongchoice{\SI{12}{\meter\per\second\squared}}
+%    \end{choices}
+%    \end{multicols}
+%\end{question}
+%}
+%
+%\element{njctl}{
+%\begin{question}{kinematics-1d-q34}
+%    %% Question 33 – 34 tikz
+%    A car starting from rest uniformly accelerates in a straight line as shown below
+%    \begin{center}
+%        \njctlapcKinematicsOneDQThirtyThree
+%    \end{center}
+%    What was the average velocity of the car during the first two seconds?
+%    \begin{multicols}{2}
+%    \begin{choices}
+%        \wrongchoice{\SI{2}{\meter\per\second}}
+%      \correctchoice{\SI{4}{\meter\per\second}}
+%        \wrongchoice{\SI{6}{\meter\per\second}}
+%        \wrongchoice{\SI{8}{\meter\per\second}}
+%        \wrongchoice{\SI{10}{\meter\per\second}}
+%    \end{choices}
+%    \end{multicols}
+%\end{question}
+%}
+
+\element{njctl}{
+\begin{question}{kinematics-1d-q35}
+    The velocity as a function of time of a moving object along a straight line is presented by the graph below.
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE:
+        \begin{axis}[
+            axis y line=left,
+            axis x line=middle,
+            axis line style={->},
+            xlabel={time},
+            xtick=\empty,
+            ylabel={velocity},
+            ytick=\empty,
+            xmin=0,xmax=16,
+            ymin=-6,ymax=6,
+            width=0.8\columnwidth,
+            height=0.5\columnwidth,
+            grid=major,
+            very thin,
+        ]
+        \addplot[line width=1pt,mark=\empty] plot coordinates {(0,-4) (3,-4) (6,5) (10,5)};
+        \end{axis}
+    \end{tikzpicture}
+    \end{center}
+    For which of the following sections of the graph the does object move at nonzero constant acceleration?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$AB$}
+      \correctchoice{$BC$}
+        \wrongchoice{$CD$}
+        \wrongchoice{$DE$}
+        \wrongchoice{$EF$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{njctl}{
+\begin{question}{kinematics-1d-q36}
+    An object is dropped from a height $H$ and it reaches the ground with a velocity $v$.
+    The same object is thrown down from the same height $H$ with the initial velocity $v$.
+    When it reaches the ground it has a velocity $v_2$.
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE:
+    \end{tikzpicture}
+    \end{center}
+    Which of the following is correct relationship between $v_2$ and $v$?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$v_2=2 v$}
+        \wrongchoice{$v_2=4 v$}
+        \wrongchoice{$v_2=v$}
+      \correctchoice{$v_2=\sqrt{2} v$}
+        \wrongchoice{$v_2=\sqrt{3} v$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\newcommand{\njctlapcKinematicsOneDQThirtySeven}{
+\begin{tikzpicture}
+    %% NOTE:
+\end{tikzpicture}
+}
+
+\element{njctl}{
+\begin{question}{kinematics-1d-q37}
+    A ball is dropped from a height $H$ and a second ball is thrown from the ground with an initial velocity $v_0$.
+    \begin{center}
+        \njctlapcKinematicsOneDQThirtySeven
+    \end{center}
+    At what do time the balls pass each other?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\sqrt{\dfrac{H}{2v_0}}$}
+        \wrongchoice{$\sqrt{\dfrac{2H}{v_0}}$}
+        \wrongchoice{$\dfrac{2H}{v_0}$}
+        \wrongchoice{$\dfrac{H}{4v_0}$}
+      \correctchoice{$\dfrac{H}{v_0}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{njctl}{
+\begin{question}{kinematics-1d-q38}
+    A ball is dropped from a height $H$ and a second ball is thrown from the ground with an initial velocity $v_0$.
+    \begin{center}
+        \njctlapcKinematicsOneDQThirtySeven
+    \end{center}
+    How fast does the first ball move when they pass each other?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\sqrt{\dfrac{gH}{2v_0}}$}
+        \wrongchoice{$\sqrt{\dfrac{2gH}{v_0}}$}
+        \wrongchoice{$\dfrac{2gH}{v_0}$}
+      \correctchoice{$\dfrac{gH}{v_0}$}
+        \wrongchoice{$\dfrac{gH}{4v_0}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{njctl}{
+\begin{question}{kinematics-1d-q39}
+    The velocity in meters per second as a function of time
+        of a moving particle is given:
+    \begin{equation*}
+        v = \alpha + \beta t^2 \, ,
+    \end{equation*}
+    where $\alpha$ and $\beta$ are constants and $t$ is time in seconds.
+    How far does the particle move during the first \SI{3}{\second}?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{$3\alpha + 3\beta$}
+      \correctchoice{$3\alpha + 9\beta$}
+        \wrongchoice{$9\alpha + 3\beta$}
+        \wrongchoice{$3\alpha + 27\beta$}
+        \wrongchoice{$9\alpha + 27\beta$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{njctl}{
+\begin{question}{kinematics-1d-q40}
+    The velocity in meters per second as a function of time
+        of a moving particle is given:
+    \begin{equation*}
+        v = \alpha + \beta t^2 \, ,
+    \end{equation*}
+    where $\alpha$ and $\beta$ are constants and $t$ is time in seconds.
+    What is the acceleration of the particle at \SI{3}{\second}?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$3\beta$}
+        \wrongchoice{$9\beta$}
+      \correctchoice{$6\beta$}
+        \wrongchoice{$27\beta$}
+        \wrongchoice{$18\beta$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+\endinput
+
+

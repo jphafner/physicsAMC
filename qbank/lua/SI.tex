@@ -1,0 +1,110 @@
+
+
+%% This defines the lua function mycommand()
+\directlua{require('./qbank/lua/common.lua')}
+
+
+%% Objectives
+%%--------------------------------------------------
+
+%% 1. Name and define all base SI units
+%% 2. Differentiate between defined and derives SI units
+
+
+%% SI Base Units
+%% length       meter       m
+%% mass         kilogram    kg
+%% time         second      s
+%% current      ampere      A
+%% temperature  kelvin      K
+%% amount       mole        mol
+%% luminosity   candela     cd
+
+
+%% The international System of Units
+%%--------------------------------------------------
+
+
+%% Defined Units
+%%--------------------
+\element{SI}{
+\begin{questionmult}{SI-Q01}
+\luaexec{
+    %% Question
+    local Q = [[
+        Which of the following are \string\emph{defined}
+            units in the International System of Units?
+    ]]
+    %% Random Permutations
+    local tab1 = {}
+    for i=1,22 do
+        tab1[i] = i
+    end
+    local tab2 = {}
+    for i=1,7 do
+        tab2[i] = i
+    end
+    tab1 = permute(tab1,22,22)
+    tab2 = permute(tab2,7,7)
+    %% Random correct vs wrong
+    local n1 = math.random(1,3)
+    local n2 = 4 - n1
+    %% Print Question
+    tex.print( Q )
+    %% Print MC Options
+    tex.print( BeginMulticolsTwo )
+        tex.print( BeginChoices )
+            for i=1,n2 do
+                tex.print( string.format(CorrectChoice,defined[tab2[i]]) )
+            end
+            for i=1,n1 do
+                tex.print( string.format(WrongChoice,derived[tab1[i]]) )
+            end
+        tex.print( EndChoices )
+    tex.print( EndMulticolsTwo )
+}
+\end{questionmult}
+}
+
+
+%% Derived Units
+%%--------------------
+\element{SI}{
+\begin{questionmult}{SI-Q02}
+\luaexec{
+    %% Question
+    local Q = [[
+        Which of the following are \string\emph{derived}
+            units in the International System of Units?
+    ]]
+    %% Random Permutations
+    local tab1 = {}
+    for i=1,22 do
+        tab1[i] = i
+    end
+    local tab2 = {}
+    for i=1,7 do
+        tab2[i] = i
+    end
+    tab1 = permute(tab1,22,22)
+    tab2 = permute(tab2,7,7)
+    %% Random correct vs wrong
+    local n1 = math.random(1,3)
+    local n2 = 4 - n1
+    %% Print Question
+    tex.print( Q )
+    %% Print MC Options
+    tex.print( BeginMulticolsTwo )
+        tex.print( BeginChoices )
+            for i=1,n1 do
+                tex.print( string.format(CorrectChoice,derived[tab1[i]]) )
+            end
+            for i=1,n2 do
+                tex.print( string.format(WrongChoice,defined[tab2[i]]) )
+            end
+        tex.print( EndChoices )
+    tex.print( EndMulticolsTwo )
+}
+\end{questionmult}
+}
+

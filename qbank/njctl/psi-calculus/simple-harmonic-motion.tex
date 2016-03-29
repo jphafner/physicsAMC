@@ -1,0 +1,703 @@
+
+
+%% NJCTL: PSI AP Physics C
+%%----------------------------------------
+
+
+%% Simple Harmonic Motion
+%%----------------------------------------
+\element{njctl}{
+\begin{question}{simple-harmonic-motion-q01}
+    What is the period of an object?
+    \begin{choices}
+      \correctchoice{The time it takes for an object to complete one cycle}
+        \wrongchoice{How many times the object passes a specific point every second}
+        \wrongchoice{The number of revolutions that an object completes in a given amount of time}
+        \wrongchoice{How long it takes to make 2 complete oscillations or revolutions}
+    \end{choices}
+\end{question}
+}
+
+\element{njctl}{
+\begin{question}{simple-harmonic-motion-q02}
+    What is frequency?
+    \begin{choices}
+        \wrongchoice{The time it takes for an object to complete one cycle}
+        \wrongchoice{How many times the object passes a specific point every second}
+      \correctchoice{The number of revolutions that an object completes in a unit of time}
+        \wrongchoice{How long it takes to make 2 complete oscillations or revolutions}
+    \end{choices}
+\end{question}
+}
+
+\element{njctl}{
+\begin{question}{simple-harmonic-motion-q03}
+    What is the period of an object that completes five oscillations in thirty seconds?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{5/30}{\second}}
+        \wrongchoice{\SI{5}{\second}}
+      \correctchoice{\SI{6}{\second}}
+        \wrongchoice{\SI{30}{\second}}
+        \wrongchoice{\SI{150}{\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{njctl}{
+\begin{question}{simple-harmonic-motion-q04}
+    What is the frequency of an object that completes 64 oscillations in 16 seconds?
+    \begin{multicols}{3}
+    \begin{choices}
+        %\wrongchoice{\SI{16/64}{\hertz}}
+        \wrongchoice{\SI{1/4}{\hertz}}
+      \correctchoice{\SI{4}{\hertz}}
+        \wrongchoice{\SI{16}{\hertz}}
+        \wrongchoice{\SI{64}{\hertz}}
+        \wrongchoice{\SI{1024}{\hertz}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{njctl}{
+\begin{question}{simple-harmonic-motion-q05}
+    If an object has a frequency of \SI{0.25}{\hertz},
+        what is its period?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{1}{\second}}
+        \wrongchoice{\SI{2}{\second}}
+      \correctchoice{\SI{4}{\second}}
+        \wrongchoice{\SI{0.5}{\second}}
+        \wrongchoice{\SI{0.25}{\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{njctl}{
+\begin{question}{simple-harmonic-motion-q06}
+    If an object has a period of \SI{8}{\second},
+        what is its frequency?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{0.0625}{\hertz}}
+      \correctchoice{\SI{0.125}{\hertz}}
+        \wrongchoice{\SI{0.25}{\hertz}}
+        \wrongchoice{\SI{0.5}{\hertz}}
+        \wrongchoice{\SI{0.75}{\hertz}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{njctl}{
+\begin{question}{simple-harmonic-motion-q07}
+    What is the term for the maximum displacement in Simple Harmonic Motion?
+    \begin{choices}
+      \correctchoice{The Amplitude}
+        \wrongchoice{The Cycle}
+        \wrongchoice{The Period}
+        \wrongchoice{The Frequency}
+        \wrongchoice{The Equilibrium Point}
+    \end{choices}
+\end{question}
+}
+
+\element{njctl}{
+\begin{question}{simple-harmonic-motion-q08}
+    An ideal spring has a spring constant $K$.
+    If the spring was cut in half,
+        what would be the spring constant of one of the halves?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\dfrac{K}{4}$}
+        \wrongchoice{$\dfrac{K}{2}$}
+        \wrongchoice{$K$}
+      \correctchoice{$2K$}
+        \wrongchoice{$4K$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{njctl}{
+\begin{question}{simple-harmonic-motion-q09}
+    %% For Questions 9-10:
+    A \SI{2}{\kilo\gram} block is hanging from an un-stretched spring with a spring constant of \SI{50}{\newton\per\meter}.
+    %% start question
+    What is the amplitude of the objects oscillation?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{0.04}{\meter}}
+        \wrongchoice{\SI{0.40}{\centi\meter}}
+      \correctchoice{\SI{40}{\centi\meter}}
+        \wrongchoice{\SI{4}{\meter}}
+        \wrongchoice{\SI{40}{\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{njctl}{
+\begin{question}{simple-harmonic-motion-q10}
+    %% For Questions 9-10:
+    A \SI{2}{\kilo\gram} block is hanging from an un-stretched spring with a spring constant of \SI{50}{\newton\per\meter}.
+    %% start question
+    When will the object complete \num{1/4} of a full cycle?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{$t = 2\pi\sqrt{\dfrac{2}{50}}$}
+        \wrongchoice{$t = \pi\sqrt{\dfrac{2}{50}}$}
+      \correctchoice{$t = \dfrac{\pi}{10}$}
+        \wrongchoice{$t = \dfrac{3\pi}{10}$}
+        \wrongchoice{$t = \pi$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{njctl}{
+\begin{question}{simple-harmonic-motion-q11}
+    A spring on the earth is sent into Simple Harmonic Motion and has a period $T$.
+    If that same spring is brought to another planet with \num{1/5} the surface gravity,
+        what will be the new period?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\dfrac{T}{25}$}
+        \wrongchoice{$\dfrac{T}{5}$}
+      \correctchoice{$T$}
+        \wrongchoice{$\dfrac{2T}{5}$}
+        \wrongchoice{$5T$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{njctl}{
+\begin{question}{simple-harmonic-motion-q12}
+    %% For Questions 12-13:
+    An object is undergoing Simple Harmonic Motion and its position is given by $x = 2\cos(5t)$.
+    %% start question
+    What is the amplitude of the object's motion?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\dfrac{\pi}{4}$}
+        \wrongchoice{$\dfrac{\pi}{2}$}
+        \wrongchoice{$\pi$}
+      \correctchoice{$2\pi$}
+        \wrongchoice{$4\pi$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{njctl}{
+\begin{question}{simple-harmonic-motion-q13}
+    %% For Questions 12-13:
+    An object is undergoing Simple Harmonic Motion and its position is given by $x = 2\cos(5t)$.
+    %% start question
+    At which of these points in time is the object at its amplitude?
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{\SI{0}{\second}}
+        \wrongchoice{\SI{\pi/10}{\second}}
+        \wrongchoice{\SI{\pi/8}{\second}}
+        \wrongchoice{\SI{\pi/4}{\second}}
+        \wrongchoice{\SI{\pi/2}{\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\newcommand{\njctlSimpleHarmonicMotionQForteen}{
+\begin{tikzpicture}
+    \begin{axis}[
+        axis y line=left,
+        axis x line=middle,
+        axis line style={->},
+        xlabel={$t$},
+        x label style={
+            at={(current axis.right of origin)},
+            anchor=west,
+        },
+        xtick={0.25,0.50,0.75,1.00,1.25},
+        ylabel={$x$},
+        y label style={
+            at={(current axis.above origin)},
+            anchor=south,
+            rotate=-90,
+        },
+        ytick={-2,0,2},
+        xmin=0,xmax=1.3,
+        ymin=-2.5,ymax=2.5,
+        width=0.8\columnwidth,
+        height=0.5\columnwidth,
+    ]
+    \addplot[line width=1pt,domain=0:1.25,samples=25]{2*cos(360*x)};
+    \end{axis}
+\end{tikzpicture}
+}
+
+\element{njctl}{
+\begin{question}{simple-harmonic-motion-q14}
+    %% For Questions 14-16:
+    Use the following graph to answer this question.
+    \begin{center}
+        \njctlSimpleHarmonicMotionQForteen
+    \end{center}
+    What is the equation for the position of the object?
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{$x = 2\cos\left(2\pi t\right)$}
+        \wrongchoice{$x = \cos\left(\dfrac{\pi}{2} t\right)$}
+        \wrongchoice{$x = 2\sin\left(\dfrac{\pi}{4} t\right)$}
+        \wrongchoice{$x = \sin\left(2\pi t\right)$}
+        \wrongchoice{$x = -2\sin\left(4\pi t\right)$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{njctl}{
+\begin{question}{simple-harmonic-motion-q15}
+    %% For Questions 14-16:
+    Use the following graph to answer this question.
+    \begin{center}
+        \njctlSimpleHarmonicMotionQForteen
+    \end{center}
+    What is the equation for the velocity?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{$v = 2\sin\left(\dfrac{\pi}{4} t\right)$}
+        \wrongchoice{$v = -2\pi\sin\left(\pi t\right)$}
+        \wrongchoice{$v = -4\sin\left(2\pi t\right)$}
+      \correctchoice{$v = -4\pi\sin\left(2\pi t\right)$}
+        \wrongchoice{$v = 2\cos\left(\dfrac{\pi}{4} t\right)$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{njctl}{
+\begin{question}{simple-harmonic-motion-q16}
+    %% For Questions 14-16:
+    Use the following graph to answer this question.
+    \begin{center}
+        \njctlSimpleHarmonicMotionQForteen
+    \end{center}
+    What is the acceleration of the object?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{$a = -4\pi\sin\left(2\pi t\right)$}
+        \wrongchoice{$a = -8\sin\left(2\pi t\right)$}
+        \wrongchoice{$a = -2\cos\left(\dfrac{\pi}{4} t\right)$}
+        \wrongchoice{$a = 2\sin\left(\dfrac{\pi}{4} t\right)$}
+      \correctchoice{$a = -8\pi^2\cos\left(2\pi t\right)$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{njctl}{
+\begin{question}{simple-harmonic-motion-q17}
+    %% For Questions 17-19:
+    A block with a mass of \SI{4}{\kilo\gram} is attached to a horizontal spring whose value of k is \SI{64}{\newton\per\meter}.
+    The block is displaced 50cm from its initial position.
+    %% start question
+    What is the total amount of energy stored in the spring?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{16}{\joule}}
+      \correctchoice{\SI{8}{\joule}}
+        \wrongchoice{\SI{32}{\joule}}
+        \wrongchoice{\SI{2}{\joule}}
+        \wrongchoice{\SI{4}{\joule}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{njctl}{
+\begin{question}{simple-harmonic-motion-q18}
+    %% For Questions 17-19:
+    A block with a mass of \SI{4}{\kilo\gram} is attached to a horizontal spring whose value of k is \SI{64}{\newton\per\meter}.
+    The block is displaced 50cm from its initial position.
+    %% start question
+    What is the maximum velocity the block reaches?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\sqrt{2}⁡\,\si{\meter\per\second}$}
+      \correctchoice{$2\,\si{\meter\per\second}$}
+        \wrongchoice{$2\sqrt{2}⁡\,\si{\meter\per\second}$}
+        \wrongchoice{$4\,\si{\meter\per\second}$}
+        \wrongchoice{$6\,\si{\meter\per\second}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{njctl}{
+\begin{question}{simple-harmonic-motion-q19}
+    %% For Questions 17-19:
+    A block with a mass of \SI{4}{\kilo\gram} is attached to a horizontal spring whose value of k is \SI{64}{\newton\per\meter}.
+    The block is displaced 50cm from its initial position.
+    %% start question
+    What is the period of this object's oscillation?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{\pi/4}{\second}}
+        \wrongchoice{\SI{3\pi/4}{\second}}
+      \correctchoice{\SI{\pi/2}{\second}}
+        \wrongchoice{\SI{\pi}{\second}}
+        \wrongchoice{\SI{\pi/8}{\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\newcommand{\njctlSimpleHarmonicMotionQTwenty}{
+\begin{tikzpicture}
+    %% Ceiling
+    \draw (-2,0) -- (2,0);
+    \node[anchor=south,fill,pattern=north east lines,minimum width=4cm, minimum height=0.05cm] at (0,0) {};
+    %% Top
+    \draw[thick] (0,0) -- (230:2.8) node[pos=0.6,anchor=south east] {$L$};
+    \draw[thick,fill=white!75!black] (230:3) circle (0.2cm);
+    %% Bottom
+    \draw[dashed] (0,0) -- (270:2.8);
+    \draw[dashed] (270:3) circle (0.2cm);
+    %% angle
+    \draw[<->] (270:1) arc (270:230:1) node[pos=0.5,anchor=north] {$\theta$};
+\end{tikzpicture}
+}
+
+\element{njctl}{
+\begin{question}{simple-harmonic-motion-q20}
+    %% For Questions 20-23: tikz
+    A ball is attached to a string of length $L$ and is held at an angle $\theta$.
+    The ball is then released.
+    \begin{center}
+        \njctlSimpleHarmonicMotionQTwenty
+    \end{center}
+    %% start question
+    What is the objects potential energy in terms of $m$, $g$, and $L$?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{$mgL$}
+        \wrongchoice{$mg\left(L - Lsin\theta\right)$}
+        \wrongchoice{$mg\left(L + Lsin\theta\right)$}
+      \correctchoice{$mg\left(L - Lcos\theta\right)$}
+        \wrongchoice{$mgL - L\sin\theta$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{njctl}{
+\begin{question}{simple-harmonic-motion-q21}
+    %% For Questions 20-23: tikz
+    A ball is attached to a string of length $L$ and is held at an angle $\theta$.
+    The ball is then released.
+    \begin{center}
+        \njctlSimpleHarmonicMotionQTwenty
+    \end{center}
+    %% start question
+    What is the objects velocity at the bottom of its path?
+    %\begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{$v = \sqrt{2gL}$}
+        \wrongchoice{$v = \sqrt{2gL \left(1 - \sin\theta\right)}$}
+        \wrongchoice{$v = \sqrt{2gL \left(1 + \sin\theta\right)}$}
+      \correctchoice{$v = \sqrt{2gL \left(1 - \cos\theta\right)}$}
+        \wrongchoice{$v = \sqrt{gL \left(1 - \cos\theta\right)}$}
+    \end{choices}
+    %\end{multicols}
+\end{question}
+}
+
+\element{njctl}{
+\begin{question}{simple-harmonic-motion-q22}
+    %% For Questions 20-23: tikz
+    A ball is attached to a string of length $L$ and is held at an angle $\theta$.
+    The ball is then released.
+    \begin{center}
+        \njctlSimpleHarmonicMotionQTwenty
+    \end{center}
+    %% start question
+    Which graph below shows the change in the Gravitational Potential energy?
+    %% with respect to position or angle ??
+    (The origin is the lowest point in the objects swing)
+    \begin{multicols}{2}
+    \begin{choices}
+        \AMCboxDimensions{down=-2.5em}
+        %% ANS is A
+        \correctchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=middle,
+                    axis x line=middle,
+                    axis line style={->},
+                    xtick=\empty,
+                    ytick=\empty,
+                    xmin=-11,xmax=11,
+                    ymin=-11,ymax=11,
+                    width=0.95\columnwidth,
+                    very thin,
+                ]
+                \addplot[line width=1pt,domain=-10:10]{0.1*x*x};
+                \end{axis}
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=middle,
+                    axis x line=middle,
+                    axis line style={->},
+                    xtick=\empty,
+                    ytick=\empty,
+                    xmin=-11,xmax=11,
+                    ymin=-11,ymax=11,
+                    width=0.95\columnwidth,
+                    very thin,
+                ]
+                \addplot[line width=1pt,domain=-10:10]{-0.1*x*x};
+                \end{axis}
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=middle,
+                    axis x line=middle,
+                    axis line style={->},
+                    xtick=\empty,
+                    ytick=\empty,
+                    xmin=-11,xmax=11,
+                    ymin=-11,ymax=11,
+                    width=0.95\columnwidth,
+                    very thin,
+                ]
+                \addplot[line width=1pt,domain=-10:10]{-abs(x)};
+                \end{axis}
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=middle,
+                    axis x line=middle,
+                    axis line style={->},
+                    xtick=\empty,
+                    ytick=\empty,
+                    xmin=-11,xmax=11,
+                    ymin=-11,ymax=11,
+                    width=0.95\columnwidth,
+                    very thin,
+                ]
+                \addplot[line width=1pt,domain=-10:10]{abs(x)};
+                \end{axis}
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=middle,
+                    axis x line=middle,
+                    axis line style={->},
+                    xtick=\empty,
+                    ytick=\empty,
+                    xmin=-11,xmax=11,
+                    ymin=-11,ymax=11,
+                    width=0.95\columnwidth,
+                    very thin,
+                ]
+                \addplot[line width=1pt,domain=-10:10]{-x};
+                \end{axis}
+            \end{tikzpicture}
+        }
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{njctl}{
+\begin{question}{simple-harmonic-motion-q23}
+    %% For Questions 20-23: tikz
+    A ball is attached to a string of length $L$ and is held at an angle $\theta$.
+    The ball is then released.
+    \begin{center}
+        \njctlSimpleHarmonicMotionQTwenty
+    \end{center}
+    %% start question
+    What is the period of the pendulum?
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{$2\pi \sqrt{\dfrac{L}{g}}$}
+        \wrongchoice{$\pi \sqrt{\dfrac{g}{L}}$}
+        \wrongchoice{$\dfrac{\pi}{2} \sqrt{\dfrac{L}{g}}$}
+        \wrongchoice{$\dfrac{1}{2\pi} \sqrt{\dfrac{g}{L}}$}
+        \wrongchoice{$2\pi \sqrt{L}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{njctl}{
+\begin{question}{simple-harmonic-motion-q24}
+    What would happen to the period of a pendulum if the object were to be moved to another planet with less gravity?
+    \begin{choices}
+        \wrongchoice{Nothing}
+      \correctchoice{Period increases}
+        \wrongchoice{Period Decreases}
+        \wrongchoice{Not enough information is given}
+    \end{choices}
+\end{question}
+}
+
+\element{njctl}{
+\begin{question}{simple-harmonic-motion-q25}
+    A spring of initial length $L_0$ supports a mass of weight $m$ which extends the spring a distance $x$.
+    \begin{center}
+    \begin{tikzpicture}
+        \draw[white!90!black,dashed] (-1.6,0.5) rectangle (1.8,-5);
+        %% Ceiling
+        \draw (-1.5,0) -- (1.5,0);
+        \node[anchor=south,fill,pattern=north east lines,minimum width=3cm, minimum height=0.05cm] at (0,0) {};
+        %% Mass
+        \node[draw,fill=white!90!black,anchor=north,minimum size=1.5cm] (M) at (0,-3) {$m$};
+        %% Spring
+        \draw[thick,decoration={aspect=0.2,segment length=3mm,amplitude=2mm,coil},decorate] (0,0) -- (M.north) node[pos=0.5,anchor=west,xshift=2mm] {$L_0$};
+    \end{tikzpicture}
+    \hspace{2em}
+    \begin{tikzpicture}
+        \draw[white!90!black,dashed] (-1.6,0.5) rectangle (1.8,-5);
+        %% Ceiling
+        \draw (-1.5,0) -- (1.5,0);
+        \node[anchor=south,fill,pattern=north east lines,minimum width=3cm, minimum height=0.05cm] at (0,0) {};
+        %% Mass
+        \node[draw,fill=white!90!black,anchor=north,minimum size=1.5cm] (M) at (0,-1.5) {$m$};
+        %% Spring (I scaled segment length correctly)
+        \draw[thick,decoration={aspect=0.2,segment length=2.3mm,amplitude=2mm,coil},decorate] (+0.5,0) -- (+0.5,-1.5) node[pos=0.5,anchor=west,xshift=2mm] {$L_0/2$};
+        \draw[thick,decoration={aspect=0.2,segment length=2.3mm,amplitude=2mm,coil},decorate] (-0.5,0) -- (-0.5,-1.5);
+    \end{tikzpicture}
+    \end{center}
+    If the spring were cut in half and both parts were used to hold up the mass in parallel what would be the new $x$?
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{$\dfrac{x}{4}$}
+        \wrongchoice{$\dfrac{x}{2}$}
+        \wrongchoice{$x$}
+        \wrongchoice{$2x$}
+        \wrongchoice{$4x$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{njctl}{
+\begin{question}{simple-harmonic-motion-q26}
+    A pendulum of length $L$ has a period $T$.
+    What would have to be done to the length in order to make the new period $T/3$?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$9L$}
+        \wrongchoice{$3L$}
+        \wrongchoice{$\dfrac{L}{3}$}
+      \correctchoice{$\dfrac{L}{9}$}
+        \wrongchoice{$\dfrac{m}{9}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{njctl}{
+\begin{question}{simple-harmonic-motion-q27}
+    An object of mass \SI{5}{\kilo\gram} is pivoted about point $P$ which is \SI{25}{\centi\meter} away from its center of gravity.
+    The object has a moment of inertia of \SI{50}{\kilo\gram\meter\squared} and is on the surface of the Earth.
+    What is the physical pendulum's period?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{\pi/4}{\second}}
+        \wrongchoice{\SI{\pi/2}{\second}}
+        \wrongchoice{\SI{\pi}{\second}}
+        \wrongchoice{\SI{2\pi}{\second}}
+      \correctchoice{\SI{4\pi}{\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{njctl}{
+\begin{question}{simple-harmonic-motion-q28}
+    If the physical pendulum from Question 27 were brought to a planet with twice the gravity as of the earth,
+        what would be its period?
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{\SI[parse-numbers=false]{\dfrac{2\pi}{\sqrt{2}}}{\second}}
+        \wrongchoice{\SI{2\pi}{\second}}
+        \wrongchoice{\SI[parse-numbers=false]{\sqrt{8}\pi}{\second}}
+        \wrongchoice{\SI{8\pi}{\second}}
+        \wrongchoice{\SI{6\pi}{\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{njctl}{
+\begin{question}{simple-harmonic-motion-q29}
+    In a horizontal mass spring system,
+        the maximum displacement is $x$.
+    When is the velocity the greatest?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$x$}
+        \wrongchoice{$-x$}
+      \correctchoice{zero}
+        \wrongchoice{$x/2$}
+        \wrongchoice{$-x/2$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{njctl}{
+\begin{question}{simple-harmonic-motion-q29}
+    In a horizontal mass spring system,
+        the maximum displacement is $x$.
+    When is the velocity the greatest?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$x$}
+        \wrongchoice{$-x$}
+      \correctchoice{zero}
+        \wrongchoice{$\dfrac{x}{2}$}
+        \wrongchoice{$\dfrac{-x}{2}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{njctl}{
+\begin{question}{simple-harmonic-motion-q30}
+    For a simple pendulum the total energy
+    \begin{choices}
+        \wrongchoice{decreases as the object falls}
+        \wrongchoice{increases as the object rises}
+      \correctchoice{remains the same}
+        \wrongchoice{is always zero}
+        \wrongchoice{not enough information is given}
+    \end{choices}
+\end{question}
+}
+
+%% Answers:
+%% 1 A 2 C 3 C 4 B 5 C 6 B 7 A 8 D 9 C 10 C 11 C 12 D 13 A 14 A 15 D 16 E 17 B 18 B 19 C 20 D 21 D 22 A 23 A 24 B 25 A 26 D 27 E 28 A 29 C 30 C
+
+
+\endinput
+
+

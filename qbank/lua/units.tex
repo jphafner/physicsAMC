@@ -1,0 +1,946 @@
+
+
+%% This defines the lua function mycommand()
+%\directlua{require('./qbank/lua/common.lua')}
+
+%% Objectives
+%%----------------------------------------
+
+%% 1. Convert between various units
+
+
+%% Measurement Topic: Unit Conversion
+%%----------------------------------------
+
+%% Break topics into
+%% one dimensional conversion (time, length)
+%% two dimensional conversion (area, density)
+%% three dimensional conversion (volume)
+
+%% Types
+%% prefix changes (1d,2d,3d)
+%% metric to customary (1d,2d,3d)
+
+
+%% Customary to Metric
+%%------------------------------
+\element{units}{
+\begin{question}{UnitsQ01}
+\luaexec{
+    %% Question
+    local Q = [[
+        A rectangular building lot measures
+            \string\SI{\%d}{\string\foot} by
+            \string\SI{\%d}{\string\foot}.
+        What is the area of the lot?
+    ]]
+    %% Random Values
+    local length = math.random(90,110)
+    local width = math.random(60,90)
+    %% Random Permutations
+    local tab = {}
+    for i=1,8 do
+        tab[i] = i
+    end
+    tab = permute(tab,8,8)
+    %% Convert Units
+    local foot = 0.3048
+    local right = length * width * foot * foot
+    local wrong = {
+        right * foot, 
+        right / foot, 
+        right * foot * foot, 
+        right / foot / foot, 
+        right * length,
+        right / length,
+        right * width,
+        right / width,
+    }
+    %% Formatting
+    local SI = [[\string\SI[retain-zero-exponent]{\%.2e}{\string\meter\string\squared}]]
+    %% Print Question
+    tex.print( string.format(Q,length,width) )
+    %% Print MC Options
+    %tex.print( string.format( BeginMulticolsN, ncol ) )
+    %tex.print( BeginMulticolsThree )
+    tex.print( BeginMulticolsTwo )
+        tex.print( BeginChoices )
+            tex.print( string.format( CorrectChoice,string.format(SI,right) ) )
+            for i=1,nwrong do
+                tex.print( string.format( WrongChoice,string.format(SI,wrong[tab[i]]) ) )
+            end
+        tex.print( EndChoices )
+    tex.print( EndMulticols )
+}
+\end{question}
+}
+
+
+\element{units}{
+\begin{question}{UnitsQ02}
+\luaexec{
+    %% Question
+    local Q = [[
+        A fish tank has internal dimension of
+            \string\SI{\%d}{\string\inch} long,
+            \string\SI{\%d}{\string\inch} wide,
+            and \string\SI{\%d}{\string\inch} high.
+        What is the maximum amount of water
+            that the fish tank can hold?
+    ]]
+    %% Random Values
+    local long = math.random(24,32)
+    local wide = math.random(12,18)
+    local high = math.random(18,24)
+    %% Random Permutations
+    local tab = {}
+    for i=1,10 do
+        tab[i] = i
+    end
+    tab = permute(tab,10,10)
+    %% Convert Units
+    local foot = 0.3048
+    local inch = 0.0254
+    local right = long * wide * high * inch * inch * inch
+    local wrong = {
+        right * inch,
+        right / inch,
+        right * inch * inch,
+        right / inch / inch,
+        right * inch * inch * inch,
+        right / inch / inch / inch,
+        right * foot,
+        right / foot,
+        right * foot * foot,
+        right / foot / foot,
+    }
+    %% Formatting
+    local SI = [[\string\SI[retain-zero-exponent]{\%.2e}{\string\meter\string\cubed}]]
+    %% Print Question
+    tex.print( string.format(Q,long,wide,high) )
+    %% Print MC Options
+    %tex.print( string.format( BeginMulticolsN, ncol ) )
+    %tex.print( BeginMulticolsThree )
+    tex.print( BeginMulticolsTwo )
+        tex.print( BeginChoices )
+            tex.print( string.format( CorrectChoice,string.format(SI,right) ) )
+            for i=1,nwrong do
+                tex.print( string.format( WrongChoice,string.format(SI,wrong[tab[i]]) ) )
+            end
+        tex.print( EndChoices )
+    tex.print( EndMulticols )
+}
+\end{question}
+}
+
+
+\element{units}{
+\begin{question}{UnitsQ03}
+\luaexec{
+    %% Question
+    local Q = [[
+        You observe a speedlimit sign for
+            \string\SI{\%d}{\string\mile\string\per\string\hour}.
+        What is the maximum speed that you
+            can lawfully drive at?
+    ]]
+    %% Random Values
+    local speed = 35 + 5 * math.random(0,6)
+    %% Random Permutations
+    local tab = {}
+    for i=1,17 do
+        tab[i] = i
+    end
+    tab = permute(tab,17,17)
+    %% Convert Units
+    local mile = 5280
+    local hour = 3600
+    local foot = 0.3048
+    local right = speed * mile * foot / hour
+    local wrong = {
+        right - 10.0,
+        right - 5.0,
+        right + 5.0,
+        right + 10.0,
+        right * hour,
+        right / hour,
+        right * mile,
+        right / mile,
+        right * foot,
+        right / foot,
+        right * 1e3,
+        right / 1e3,
+        right * mile * foot,
+        right / mile / foot,
+        right * 2.54,
+        right / 2.54,
+        speed,
+    }
+    %% Formatting
+    local SI = [[\string\SI[retain-zero-exponent]{\%.2e}{\string\meter\string\per\string\second}]]
+    %% Print Question
+    tex.print( string.format(Q,speed) )
+    %% Print MC Options
+    %tex.print( string.format( BeginMulticolsN, ncol ) )
+    %tex.print( BeginMulticolsThree )
+    tex.print( BeginMulticolsTwo )
+        tex.print( BeginChoices )
+            tex.print( string.format( CorrectChoice,string.format(SI,right) ) )
+            for i=1,nwrong do
+                tex.print( string.format( WrongChoice,string.format(SI,wrong[tab[i]]) ) )
+            end
+        tex.print( EndChoices )
+    tex.print( EndMulticols )
+}
+\end{question}
+}
+
+
+%% NOTE: consider adding numbers to correct so they are close, forcing student to calculate
+\element{units}{
+\begin{question}{UnitsQ04}
+\luaexec{
+    %% Question
+    local Q = [[
+        You drive a Canadian made car in
+            the United States and observe
+            a speedlimit sign for
+            \string\SI{\%d}{\string\mile\string\per\string\hour}.
+        What is that equivalent to on your
+            Canadian made speedometer?
+    ]]
+    %% Random Values
+    local speed = 35 + 5 * math.random(0,6)
+    %% Random Permutations
+    local tab = {}
+    for i=1,15 do
+        tab[i] = i
+    end
+    tab = permute(tab,15,15)
+    %% Convert Units
+    local foot = 0.3048
+    local mile = 5280
+    local right = speed * (mile * foot) / (1e3)
+    local wrong = {
+        right - 10.0,
+        right - 5.0,
+        right + 5.0,
+        right + 10.0,
+        right * mile,
+        right / mile,
+        right * foot,
+        right / foot,
+        right * 1e3,
+        right / 1e3,
+        right * 3600,
+        right / 3600,
+        right * 2.54,
+        right / 2.54,
+        speed,
+    }
+    %% Formatting
+    local SI = [[ \string\SI{\%d}{\string\kilo\string\meter\string\per\string\hour} ]]
+    %% Print Question
+    tex.print( string.format(Q,speed) )
+    %% Print MC Options
+    %tex.print( string.format( BeginMulticolsN, ncol ) )
+    %tex.print( BeginMulticolsThree )
+    tex.print( BeginMulticolsTwo )
+        tex.print( BeginChoices )
+            tex.print( string.format( CorrectChoice,string.format(SI,right) ) )
+            for i=1,nwrong do
+                tex.print( string.format( WrongChoice,string.format(SI,wrong[tab[i]]) ) )
+            end
+        tex.print( EndChoices )
+    tex.print( EndMulticols )
+}
+\end{question}
+}
+
+
+\element{units}{
+\begin{question}{UnitsQ05}
+\luaexec{
+    %% Question
+    local Q = [[
+        You drive an American made car in Canada
+        and observe a speedlimit sign for
+            \string\SI{\%d}{\string\kilo\string\meter\string\per\string\hour}.
+        What is that equivalent to on your
+            American made speedometer?
+    ]]
+    %% Random Values
+    local speed = 30 + 10 * math.random(0,9)
+    %% Random Permutations
+    local tab = {}
+    for i=1,15 do
+        tab[i] = i
+    end
+    tab = permute(tab,15,15)
+    %% Convert Units
+    local foot = 0.3048
+    local inch = 0.0254
+    local mile = 5280
+    local right = speed * 1e3 / (mile * foot)
+    local wrong = {
+        right - 10.0,
+        right - 5.0,
+        right + 5.0,
+        right + 10.0,
+        right * mile,
+        right / mile,
+        right * foot,
+        right / foot,
+        right * inch,
+        right / inch,
+        right * 1e3,
+        right / 1e3,
+        right * 2.54,
+        right / 2.54,
+        speed,
+    }
+    %% Formatting
+    local SI = [[ \string\SI{\%d}{\string\mile\string\per\string\hour} ]]
+    %% Print Question
+    tex.print( string.format(Q,speed) )
+    %% Print MC Options
+    %tex.print( string.format( BeginMulticolsN, ncol ) )
+    %tex.print( BeginMulticolsThree )
+    tex.print( BeginMulticolsTwo )
+        tex.print( BeginChoices )
+            tex.print( string.format( CorrectChoice,string.format(SI,right) ) )
+            for i=1,nwrong do
+                tex.print( string.format( WrongChoice,string.format(SI,wrong[tab[i]]) ) )
+            end
+        tex.print( EndChoices )
+    tex.print( EndMulticols )
+}
+\end{question}
+}
+
+
+\element{units}{
+\begin{question}{UnitsQ06}
+\luaexec{
+    %% Question
+    local Q = [[
+        A fish tank with internal dimension of
+            \string\SI{\%d}{\string\centi\string\meter} long,
+            \string\SI{\%d}{\string\centi\string\meter} wide, and
+            \string\SI{\%d}{\string\centi\string\meter} high
+            is filled with water to a depth of
+            \string\SI{\%d}{\string\centi\string\meter}.
+        How much water is in the fish tank?
+    ]]
+    %% Random Values
+    local long = math.random(50,80)
+    local wide = math.random(20,30)
+    local high = math.random(30,40)
+    local depth = math.random(20,30)
+    %% Random Permutations
+    local tab = {}
+    for i=1,12 do
+        tab[i] = i
+    end
+    tab = permute(tab,12,12)
+    %% Convert Units
+    %% 1000 cc = 1 L
+    local right = long * wide * depth / 1e3
+    local wrong = {
+        right * wide,
+        right / wide,
+        right * long,
+        right / long,
+        right * depth,
+        right / depth,
+        right * 1e2,
+        right / 1e2,
+        right * 1e3,
+        right / 1e3,
+        right * 1e1,
+        right / 1e1,
+    }
+    %% Formatting
+    local SI = [[ \string\SI{\%.1f}{\string\liter} ]]
+    %% Print Question
+    tex.print( string.format(Q,long,wide,high,depth) )
+    %% Print MC Options
+    %tex.print( string.format( BeginMulticolsN, ncol ) )
+    %tex.print( BeginMulticolsThree )
+    tex.print( BeginMulticolsTwo )
+        tex.print( BeginChoices )
+            tex.print( string.format( CorrectChoice,string.format(SI,right) ) )
+            for i=1,nwrong do
+                tex.print( string.format( WrongChoice,string.format(SI,wrong[tab[i]]) ) )
+            end
+        tex.print( EndChoices )
+    tex.print( EndMulticols )
+}
+\end{question}
+}
+
+
+\element{units}{
+\begin{question}{UnitsQ07}
+\luaexec{
+    %% Question
+    local Q = [[
+        A rectangular plate has a length of
+            \string\SI{\%d}{\string\inch} and a width of
+            \string\SI{\%d}{\string\inch}.
+        What is the area of the plate?
+    ]]
+    %% Random Values
+    local length = math.random(10,50)
+    local width = math.random(5,35)
+    %% Random Permutations
+    local tab = {}
+    for i=1,8 do
+        tab[i] = i
+    end
+    tab = permute(tab,8,8)
+    %% Convert Units
+    local inch = 0.0254
+    local right = length * width * inch * inch
+    local wrong = {
+        right * width,
+        right / width,
+        right * length,
+        right / length,
+        right * inch,
+        right / inch,
+        right * inch * inch,
+        right / inch / inch,
+    }
+    %% Formatting
+    local SI = [[\string\SI[retain-zero-exponent]{\%.2e}{\string\meter\string\squared}]]
+    %% Print Question
+    tex.print( string.format(Q,length,width) )
+    %% Print MC Options
+    %tex.print( string.format( BeginMulticolsN, ncol ) )
+    %tex.print( BeginMulticolsThree )
+    tex.print( BeginMulticolsTwo )
+        tex.print( BeginChoices )
+            tex.print( string.format( CorrectChoice,string.format(SI,right) ) )
+            for i=1,nwrong do
+                tex.print( string.format( WrongChoice,string.format(SI,wrong[tab[i]]) ) )
+            end
+        tex.print( EndChoices )
+    tex.print( EndMulticols )
+}
+\end{question}
+}
+
+
+\element{units}{
+\begin{question}{UnitsQ08}
+\luaexec{
+    %% Question
+    local Q = [[
+        A farmer measures the perimeter of a rectangular field.
+        The length of each long side of the rectangle is found to be 
+            \string\SI{\%d}{\string\yard},
+            and the length of each short side is found to be
+            \string\SI{\%d}{\string\yard}.
+        What is the perimeter of the field?
+    ]]
+    %% Random Values
+    local long  = math.random(90,110)
+    local short = math.random(60,90)
+    %% Random Permutations
+    local tab = {}
+    for i=1,10 do
+        tab[i] = i
+    end
+    tab = permute(tab,10,10)
+    %% Convert Units
+    local foot = 0.3048
+    local right = 2 * (long+short) * 3 * foot
+    local wrong = {
+        right * foot,
+        right / foot,
+        right * 3,
+        right / 3,
+        right * 3 * foot,
+        right / 3 / foot,
+        right * 2,
+        right / 2,
+        right * 2 * foot,
+        right / 2 / foot,
+    }
+    %% Formatting
+    local SI = [[\string\SI[retain-zero-exponent]{\%.2e}{\string\meter}]]
+    %% Print Question
+    tex.print( string.format(Q,long,short) )
+    %% Print MC Options
+    %tex.print( string.format( BeginMulticolsN, ncol ) )
+    %tex.print( BeginMulticolsThree )
+    tex.print( BeginMulticolsTwo )
+        tex.print( BeginChoices )
+            tex.print( string.format( CorrectChoice,string.format(SI,right) ) )
+            for i=1,nwrong do
+                tex.print( string.format( WrongChoice,string.format(SI,wrong[tab[i]]) ) )
+            end
+        tex.print( EndChoices )
+    tex.print( EndMulticols )
+}
+\end{question}
+}
+
+
+\element{units}{
+\begin{question}{UnitsQ09}
+\luaexec{
+    %% Question
+    local Q = [[
+        A gas station in Canada is selling
+            gasoline for \string\num{\%.2f}
+            Canadian dollars per liter.
+        How much is that in US dollars (USD)
+            per gallon?
+        [On 21 August 2014, \string\num{1.00} U.S. dollar = \string\num{1.09} Canadian dollar.
+            Source: Bank of Canada.]
+    ]]
+    %% Random Values
+    local price  = 1 + round(math.random(),2)
+    %% Random Permutations
+    local tab = {}
+    for i=1,8 do
+        tab[i] = i
+    end
+    tab = permute(tab,8,8)
+    %% Convert Units
+    local gallon = 3.785411784
+    local right = price * gallon / 1.09
+    local wrong = {
+        right * gallon,
+        right / gallon,
+        right * gallon * gallon,
+        right / gallon / gallon,
+        right * 1.09,
+        right / 1.09,
+        right * 1.09 * 1.09,
+        right / 1.09 / 1.09,
+    }
+    %% Formatting
+    local SI = [[ \string\SI{\%.2f}{USD\string\per\string\gallon} ]]
+    %% Print Question
+    tex.print( string.format(Q,price) )
+    %% Print MC Options
+    %tex.print( BeginMulticolsThree )
+    tex.print( BeginMulticolsTwo )
+        tex.print( BeginChoices )
+            tex.print( string.format( CorrectChoice,string.format(SI,right) ) )
+            for i=1,nwrong do
+                tex.print( string.format( WrongChoice,string.format(SI,wrong[tab[i]]) ) )
+            end
+        tex.print( EndChoices )
+    tex.print( EndMulticols )
+}
+\end{question}
+}
+
+
+\element{units}{
+\begin{question}{UnitsQ10}
+\luaexec{
+    %% Question
+    local Q = [[
+        A swimming pool holds
+            \string\SI{\%d}{gallons}
+            of water.
+        How much water is that equivalent to
+            in SI units?
+    ]]
+    %% Random Values
+    local size  = (1e4 * math.random(1,9)) + (1e5 * math.random(0,9) )
+    %% Random Permutations
+    local tab = {}
+    for i=1,10 do
+        tab[i] = i
+    end
+    tab = permute(tab,10,10)
+    %% 1 gallon = 0.134 cubic feet
+    %% 1 gallon = 3.785411784 liter
+    %% Convert Units
+    local gallon = 3.785411784
+    local right = size * gallon * 1e-3
+    local wrong = {
+        right * gallon,
+        right / gallon,
+        right * gallon * gallon,
+        right / gallon / gallon,
+        right * 1e4,
+        right / 1e4,
+        right * 1e3,
+        right / 1e3,
+        right * 1e2,
+        right / 1e2,
+    }
+    %% Formatting
+    local SI = [[ \string\SI[retain-zero-exponent]{\%.2e}{\string\meter\string\cubed}]]
+    %% Print Question
+    tex.print( string.format(Q,size) )
+    %% Print MC Options
+    %tex.print( string.format( BeginMulticolsN, ncol ) )
+    %tex.print( BeginMulticolsThree )
+    tex.print( BeginMulticolsTwo )
+        tex.print( BeginChoices )
+            tex.print( string.format( CorrectChoice,string.format(SI,right) ) )
+            for i=1,nwrong do
+                tex.print( string.format( WrongChoice,string.format(SI,wrong[tab[i]]) ) )
+            end
+        tex.print( EndChoices )
+    tex.print( EndMulticols )
+}
+\end{question}
+}
+
+
+%% Odd Customary Units
+%%------------------------------
+\element{units}{
+\begin{question}{UnitsQ51}
+\luaexec{
+    %% Question
+    local Q = [[
+        There is \string\SI{3}{teaspoon} (tsp)
+            in a tablespoon (tbsp),
+            \string\SI{16}{tbsp} in a cup,
+            and \string\SI{16}{cup} in a gallon.
+        How much is \string\SI{\%d}{tsp}
+            in SI units?
+    ]]
+    %% Random Values
+    local tsp  = math.random(2,128)
+    %% Random Permutations
+    local tab = {}
+    for i=1,12 do
+        tab[i] = i
+    end
+    tab = permute(tab,12,12)
+    %% 1 gallon = 3.785411784 liter
+    %% 3*16*16 = 768
+    %% Convert Units
+    local liter = 3.785411784
+    local right = tsp * 1e-3 * liter / (768) 
+    local wrong = {
+        right * liter,
+        right / liter,
+        right * 768,
+        right / 768,
+        right * 1e3,
+        right / 1e3,
+        right * 3,
+        right / 3,
+        right * 16,
+        right / 16,
+        right * tsp,
+        right / tsp,
+    }
+    %% Formatting
+    local SI = [[ \string\SI[retain-zero-exponent]{\%.2e}{\string\meter\string\cubed}]]
+    %% Print Question
+    tex.print( string.format(Q,tsp) )
+    %% Print MC Options
+    %tex.print( string.format( BeginMulticolsN, ncol ) )
+    %tex.print( BeginMulticolsThree )
+    tex.print( BeginMulticolsTwo )
+        tex.print( BeginChoices )
+            tex.print( string.format( CorrectChoice,string.format(SI,right) ) )
+            for i=1,nwrong do
+                tex.print( string.format( WrongChoice,string.format(SI,wrong[tab[i]]) ) )
+            end
+        tex.print( EndChoices )
+    tex.print( EndMulticols )
+}
+\end{question}
+}
+
+\element{units}{
+\begin{question}{UnitsQ52}
+\luaexec{
+    %% Question
+    local Q = [[
+        There is \string\SI{875/32}{grain} in a dram,
+            \string\SI{16}{dram} in an ounce,
+            and \string\SI{16}{ounce} in a pound.
+        How much is \string\SI{\%d}{grain} in SI units?
+    ]]
+    %% Random Values
+    local grain  = math.random(2,32)
+    %% Random Permutations
+    local tab = {}
+    for i=1,12 do
+        tab[i] = i
+    end
+    tab = permute(tab,12,12)
+    %% 7000 grain = 1 pound
+    %% Convert Units
+    local pound = 0.45359237
+    local right = grain * pound / 7000
+    local wrong = {
+        right * grain,
+        right / grain,
+        right * pound,
+        right / pound,
+        right / pound / pound,
+        right * 7000,
+        right * 7000 * 7000,
+        right / 7000,
+        right * 32,
+        right / 32,
+        right * 16,
+        right / 16,
+    }
+    %% Formatting
+    local SI = [[ \string\SI[retain-zero-exponent]{\%.2e}{\string\kilo\string\gram}]]
+    %% Print Question
+    tex.print( string.format(Q,grain) )
+    %% Print MC Options
+    %tex.print( string.format( BeginMulticolsN, ncol ) )
+    %tex.print( BeginMulticolsThree )
+    tex.print( BeginMulticolsTwo )
+        tex.print( BeginChoices )
+            tex.print( string.format( CorrectChoice,string.format(SI,right) ) )
+            for i=1,nwrong do
+                tex.print( string.format( WrongChoice,string.format(SI,wrong[tab[i]]) ) )
+            end
+        tex.print( EndChoices )
+    tex.print( EndMulticols )
+}
+\end{question}
+}
+
+
+\element{units}{
+\begin{question}{UnitsQ53}
+\luaexec{
+    %% Question
+    local Q = [[
+        There is \string\SI{25}{link} in a rod,
+            \string\SI{4}{rod} in a chain,
+            \string\SI{10}{chain} in a furlong,
+            and \string\SI{8}{furlong} in a mile?
+        How much is \string\SI{\%d}{link} in SI units?
+    ]]
+    %% Random Values
+    local link  = math.random(2,32)
+    %% Random Permutations
+    local tab = {}
+    for i=1,14 do
+        tab[i] = i
+    end
+    tab = permute(tab,14,14)
+    %% 8000 links = 1 mile
+    %% Convert Units
+    local right = link * 0.3048 * 5280 / 8000
+    local wrong = {
+        %% NOTE: add link to wrongs 
+        right * 0.3048,
+        right / 0.3048,
+        right * 5280,
+        right / 5280,
+        right * 8000,
+        right / 8000,
+        right * 25,
+        right / 25,
+        right * 10,
+        right / 10,
+        right * 8,
+        right / 8,
+        right * 4,
+        right / 4,
+    }
+    %% Formatting
+    local SI = [[ \string\SI[retain-zero-exponent]{\%.2e}{\string\meter}]]
+    %% Print Question
+    tex.print( string.format(Q,link) )
+    %% Print MC Options
+    %tex.print( string.format( BeginMulticolsN, ncol ) )
+    %tex.print( BeginMulticolsThree )
+    tex.print( BeginMulticolsTwo )
+        tex.print( BeginChoices )
+            tex.print( string.format( CorrectChoice,string.format(SI,right) ) )
+            for i=1,nwrong do
+                tex.print( string.format( WrongChoice,string.format(SI,wrong[tab[i]]) ) )
+            end
+        tex.print( EndChoices )
+    tex.print( EndMulticols )
+}
+\end{question}
+}
+
+
+\element{units}{
+\begin{question}{UnitsQ54}
+\luaexec{
+    %% Question
+    local Q = [[
+        There is \string\SI{12}{point} in a pica,
+            and \string\SI{6}{pica} in an inch,
+            and \string\SI{12}{inch} in a foot.
+        How much is \string\SI{\%d}{point} in SI units?
+    ]]
+    %% Random Values
+    local point  = math.random(1,144)
+    %% Random Permutations
+    local tab = {}
+    for i=1,10 do
+        tab[i] = i
+    end
+    tab = permute(tab,10,10)
+    %% Convert Units
+    %% 864 point = 1 foot
+    local right = point * 0.3048 / 864
+    local wrong = {
+        %% NOTE: add point to wrongs 
+        right * 0.3048,
+        right / 0.3048,
+        right * 864,
+        right / 864,
+        right * 72,
+        right / 72,
+        right * 12,
+        right / 12,
+        right * 6,
+        right / 6,
+    }
+    %% Formatting
+    local SI = [[ \string\SI[retain-zero-exponent]{\%.2e}{\string\meter}]]
+    %% Print Question
+    tex.print( string.format(Q,point) )
+    %% Print MC Options
+    %tex.print( string.format( BeginMulticolsN, ncol ) )
+    %tex.print( BeginMulticolsThree )
+    tex.print( BeginMulticolsTwo )
+        tex.print( BeginChoices )
+            tex.print( string.format( CorrectChoice,string.format(SI,right) ) )
+            for i=1,nwrong do
+                tex.print( string.format( WrongChoice,string.format(SI,wrong[tab[i]]) ) )
+            end
+        tex.print( EndChoices )
+    tex.print( EndMulticols )
+}
+\end{question}
+}
+
+
+%% Fixed correct, random wrong
+%%------------------------------
+\element{units}{
+\begin{question}{UnitsQ71}
+\luaexec{
+    %% Question
+    local Q = [[
+        The speed of light is \string\SI{3.00e8}{\string\meter\string\per\string\second}.
+        Convert this to furlongs per fortnight.
+        A furlong is \string\SI{220}{\string\yard}, and a fortnight
+            is \string\SI{14}{\string\day}.
+    ]]
+    %% Random Permutations
+    local tab = {}
+    for i=1,14 do
+        tab[i] = i
+    end
+    tab = permute(tab,14,14)
+    %% 1 furlong = 220 yards
+    %% 0.9144 m = 1 yard
+    %% 60s 60min 24hr 14day = 1209600
+    %% Convert Units
+    local fortnight = 1209600
+    local yard = 0.9144
+    local furlong = 220
+    local right = 3.00e8 * fortnight / yard / furlong
+    local wrong = {
+        right * furlong,
+        right / furlong,
+        right * fortnight,
+        right / fortnight,
+        right * yard,
+        right / yard,
+        right * 24,
+        right / 24,
+        right * 60,
+        right / 60,
+        right * 7,
+        right / 7,
+        right * 14,
+        right / 14,
+    }
+    %% Formatting
+    local SI = [[ \string\SI[retain-zero-exponent]{\%.2e}{furlong per fortnight}]]
+    %% Print Question
+    tex.print( Q )
+    %% Print MC Options
+    %tex.print( BeginMulticolsTwo )
+        tex.print( BeginChoices )
+            tex.print( string.format( CorrectChoice,string.format(SI,right) ) )
+            for i=1,nwrong do
+                tex.print( string.format( WrongChoice,string.format(SI,wrong[tab[i]]) ) )
+            end
+        tex.print( EndChoices )
+    %tex.print( EndMulticols )
+}
+\end{question}
+}
+
+%% Name             kcal    kJ
+%% Protein          4       16.7
+%% Fat              9       37.7
+%% Carbohydrate     4       16.7
+\element{units}{
+\begin{question}{UnitsQ72}
+\luaexec{
+    %% Question
+    local Q = [[
+        If fat has an energy density of
+            \string\SI{9}{\string\kilo\string\calorie\string\per\string\gram}.
+        How many kilocalories must you burn to lose
+            \string\SI{\%d}{\string\pound} of body fat?
+    ]]
+    %% Random Value
+    local lbs = math.random(2,30)
+    %% Random Permutations
+    local tab = {}
+    for i=1,10 do
+        tab[i] = i
+    end
+    tab = permute(tab,10,10)
+    %% Convert Units
+    local pound = 453.59237
+    local right = lbs * 9 * pound
+    local wrong = {
+        right / pound,
+        right * pound,
+        right / 9,
+        right * 9,
+        right / lbs,
+        right * lbs,
+        right / 1e3,
+        right * 1e3,
+        right / 1e2,
+        right * 1e2,
+    }
+    %% Formatting
+    local SI = [[ \string\SI[retain-zero-exponent]{\%.2e}{\string\kilo\string\calorie}]]
+    %% Print Question
+    tex.print( string.format(Q,lbs) )
+    %% Print MC Options
+    %tex.print( string.format( BeginMulticolsN, ncol ) )
+    %tex.print( BeginMulticolsThree )
+    tex.print( BeginMulticolsTwo )
+        tex.print( BeginChoices )
+            tex.print( string.format( CorrectChoice,string.format(SI,right) ) )
+            for i=1,nwrong do
+                tex.print( string.format( WrongChoice,string.format(SI,wrong[tab[i]]) ) )
+            end
+        tex.print( EndChoices )
+    tex.print( EndMulticols )
+}
+\end{question}
+}
+
+
+%% NOTE: Moved Dimensional Analysis to Motion in 1D and 3D
+

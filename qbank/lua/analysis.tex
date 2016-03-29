@@ -1,0 +1,76 @@
+
+%% Dimensional Analysis
+%%------------------------------
+
+\element{analysis}{
+\begin{question}{AnalysisQ01}
+    You are presented with a mathematical expression which supposedly results in
+        a value for one of the physical properties of an object.
+    The expression is given as
+    \begin{equation*}
+        \pi h \left( r_1^2 + r_1 r_2 + r_2^2 \right)
+    \end{equation*}
+    where $h$, $r_1$, and $r_2$ all have dimensionality of length.
+    Which physical property is this most likely to represent?
+    \begin{choices}
+      \correctchoice{volume}
+        \wrongchoice{distance}
+        \wrongchoice{area}
+        \wrongchoice{angle}
+    \end{choices}
+\end{question}
+}
+
+
+%% Dimensional Analysis
+%%------------------------------
+
+\element{analysis}{
+\begin{question}{AnalysisQ01}
+\luaexec{
+    %% Question
+    local Q = [[
+        Which equation is dimensionally not possible?
+        %% list what letters represent
+        %% to make question answerable
+    ]]
+    %% Possibilities
+    local wrong = {
+        [[ $\frac{1}{2}mv^2 = \sqrt{mgh} $ ]],
+        [[ $v = v_0 + at^2 $ ]],
+        [[ $ = v_0 + at^2 $ ]],
+    }
+    local right = {
+        [[ $x =  $ ]],
+    }
+    %% Random Permutations
+    local tab1 = {}
+    for i=1,5 do
+        tab1[i] = i
+    end
+    local tab2 = {}
+    for i=1,5 do
+        tab2[i] = i
+    end
+    tab1 = permute(tab1,22,22)
+    tab2 = permute(tab2,7,7)
+    %% Random amount of right vs wrong
+    local n1 = math.random(2,3)
+    local n2 = 4 - n1
+    %% Print Question
+    tex.print( Q )
+    %% Print MC Options
+    tex.print( BeginMulticols )
+        tex.print( BeginChoices )
+            for i=1,n2 do
+                tex.print( string.format(CorrectChoice,defined[right[i]]) )
+            end
+            for i=1,n1 do
+                tex.print( string.format(WrongChoice,derived[wrong[i]]) )
+            end
+        tex.print( EndChoices )
+    tex.print( EndMulticols )
+}
+\end{question}
+}
+
