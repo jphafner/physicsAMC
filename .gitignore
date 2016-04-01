@@ -24,8 +24,12 @@
 *.synctex.gz
 
 # Testing
+testing.pdf
 testing.tex
 testing-numeric.tex
+
+# AMC specific
+*.amc
 
 # Project specific
 /qbank/aapt/

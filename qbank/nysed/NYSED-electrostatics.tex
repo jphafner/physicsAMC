@@ -3,7 +3,7 @@
 %% NYSED Physics Regents Examination
 %%--------------------------------------------------
 
-%% this section contains 136 problems
+%% this section contains 163 problems
 
 
 %% Section June2015
@@ -3157,6 +3157,11 @@
     \begin{multicols}{2}
     \begin{choices}
         \AMCboxDimensions{down=-2.5em}
+        %\wrongchoice{
+        %    \begin{tikzpicture}
+        %        %% NOTE: TODO: draw tikz
+        %    \end{tikzpicture}
+        %}
         \wrongchoice{\includegraphics[keepaspectratio,scale=0.60]{June2000-Q22-A}}
         \wrongchoice{\includegraphics[keepaspectratio,scale=0.60]{June2000-Q22-B}}
         \wrongchoice{\includegraphics[keepaspectratio,scale=0.60]{June2000-Q22-C}}
@@ -3358,6 +3363,7 @@
     Two plastic rods, $A$ and $B$, each posses a net negative charge of \SI{1.0e-3}{\coulomb}.
     The rods and a positively charged sphere are positioned as shown below.
     \begin{center}
+    %% NOTE: TODO: fix charges on rod A
     \begin{tikzpicture}
         %% rod A
         \begin{scope}[xshift=-1cm]
@@ -3494,8 +3500,8 @@
         \wrongchoice{
             \begin{tikzpicture}[scale=1.33]
             \begin{scope}[decoration={markings,mark=at position 0.5 with {\arrow{latex}}}]
-                \clip (-1,-1) rectangle (1,1);
                 \draw[dashed,white!60!black] (-1,-1) rectangle (1,1);
+                \clip (-1,-1) rectangle (1,1);
                 \draw (0,0) circle (0.25);
                 \foreach \x in {0,90,180,270} \draw[thick] (0,0) -- ++(\x:0.5ex);
                 %% +/- 30
@@ -4030,7 +4036,8 @@
         \draw (-2,0) -- (2,0);
         \node[anchor=south,minimum width=4cm,pattern=north east lines] at (0,0) {};
         %% Pith Ball
-        \draw[fill=white!60!black] (0,0) -- (240:3) circle (1ex) node[anchor=west,xshift=1ex] {Pith Ball};
+        \draw (0,0) -- (240:3);
+        \draw[fill=white!60!black] (240:3) circle (1ex) node[anchor=west,xshift=1ex] {Pith Ball};
         %% Rod
         \begin{scope}[shift={(240:4)}]
             \draw (-0.3,-1) rectangle (0.3,2);

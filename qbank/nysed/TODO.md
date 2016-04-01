@@ -15,6 +15,7 @@
 -[ ] split use Group 4---Atomic and Nuclear Physics into nuclear and atomic
 
 -[ ] split NYSED-light -> lightRayModel and lightWaveModel (color) and lightPhoton (move from atomic)
+-[ ] split NYSED-light -> color 
 
 -[ ] split NYSED-newton -> newton1, newton2, newton3, freeBody 
 -[ ] split NYSED-newton -> newton1 and freeBody (with friction)
