@@ -3157,6 +3157,193 @@
 }
 
 
+%% Section June1985
+%%--------------------
+\element{nysed}{
+\begin{question}{June1985-Q35}
+    Electrical conductivity in liquid solutions depends on the presence of free:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{neutrons}
+        \wrongchoice{protons}
+        \wrongchoice{molecules}
+      \correctchoice{ions}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{nysed}{
+\begin{question}{June1985-Q39}
+    Which graph best represents a material behaving according to Ohm's law?
+    \begin{multicols}{2}
+    \begin{choices}
+        \AMCboxDimensions{down=-2.5em}
+        %% ANS is 1
+        \correctchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=bottom,
+                    axis line style={->},
+                    xlabel={potential},
+                    x unit=\si{\volt},
+                    xtick=\empty,
+                    ylabel={current},
+                    y unit=\si{\ampere},
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=0,ymax=11,
+                    width=\columnwidth,
+                    very thin,
+                ]
+                \addplot[line width=1pt,domain=0:10] {x};
+                \end{axis}
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=bottom,
+                    axis line style={->},
+                    xlabel={potential},
+                    x unit=\si{\volt},
+                    xtick=\empty,
+                    ylabel={current},
+                    y unit=\si{\ampere},
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=0,ymax=11,
+                    width=\columnwidth,
+                    very thin,
+                ]
+                \addplot[line width=1pt,domain=0:10] {sqrt(10)*sqrt(x)};
+                \end{axis}
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=bottom,
+                    axis line style={->},
+                    xlabel={potential},
+                    x unit=\si{\volt},
+                    xtick=\empty,
+                    ylabel={current},
+                    y unit=\si{\ampere},
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=0,ymax=11,
+                    width=\columnwidth,
+                    very thin,
+                ]
+                \addplot[line width=1pt,domain=0:10] {10-x};
+                \end{axis}
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=bottom,
+                    axis line style={->},
+                    xlabel={potential},
+                    x unit=\si{\volt},
+                    xtick=\empty,
+                    ylabel={current},
+                    y unit=\si{\ampere},
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=0,ymax=11,
+                    width=\columnwidth,
+                    very thin,
+                ]
+                \addplot[line width=1pt,domain=0:10] {10/x};
+                \end{axis}
+            \end{tikzpicture}
+        }
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{nysed}{
+\begin{question}{June1985-Q58}
+    As the temperature of a metallic conductor increases,
+        its resistance usually:
+    \begin{choices}
+        \wrongchoice{decreases}
+      \correctchoice{increases}
+        \wrongchoice{remains the same}
+    \end{choices}
+\end{question}
+}
+
+\element{nysed}{
+\begin{question}{June1985-Q97}
+    An electric heater rated at \SI{4 800}{\watt} is operated on \SI{120}{\volt}.
+    %% start question
+    What is the resistance of the heater?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{576 000}{\ohm}}
+        \wrongchoice{\SI{120}{\ohm}}
+      \correctchoice{\SI{3.0}{\ohm}}
+        \wrongchoice{\SI{40}{\ohm}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{nysed}{
+\begin{question}{June1985-Q98}
+    An electric heater rated at \SI{4 800}{\watt} is operated on \SI{120}{\volt}.
+    %% start question
+    How much energy is used by this heater in \SI{10.0}{\second}?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{1.15}{\joule}}
+        \wrongchoice{\SI{40}{\joule}}
+        \wrongchoice{\SI{4.8e3}{\joule}}
+      \correctchoice{\SI{4.8e4}{\joule}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{nysed}{
+\begin{question}{June1985-Q99}
+    An electric heater rated at \SI{4 800}{\watt} is operated on \SI{120}{\volt}.
+    %% start question
+    If the heater were replaced by one having a greater resistance,
+        the amount of heat produced each second would:
+    \begin{choices}
+      \correctchoice{decrease}
+        \wrongchoice{increase}
+        \wrongchoice{remain the same}
+    \end{choices}
+\end{question}
+}
+
+\element{nysed}{
+\begin{question}{June1985-Q101}
+    An electric heater rated at \SI{4 800}{\watt} is operated on \SI{120}{\volt}.
+    %% start question
+    If the original heater were operated at less than \SI{120}{\volt},
+        the amount of heat produced would:
+    \begin{choices}
+        \wrongchoice{decrease}
+      \correctchoice{increase}
+        \wrongchoice{remain the same}
+    \end{choices}
+\end{question}
+}
+
+
+
+
 \endinput
 
 

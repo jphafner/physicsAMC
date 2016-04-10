@@ -1377,7 +1377,46 @@
 }
 
 
-
+%% Section June1985
+%%--------------------
+\element{nysed}{
+\begin{question}{June1985-Q10}
+    A \SI{2}{\kilo\gram} car and a \SI{3}{\kilo\gram} car are originally at rest on a horizontal frictionless surface as shown in the diagram below.
+    A compressed spring is released,
+        causing the cars to separate.
+    \begin{center}
+    \begin{tikzpicture}
+        %% Ground
+        \draw (-3.5,0) -- (3.5,0);
+        \node[anchor=north,minimum width=7cm,pattern=north east lines] at (0,0) {};
+        %% left
+        \node[anchor=south,draw,minimum width=1.5cm,minimum height=1cm] (L) at (-2,0.2) {\SI{2}{\kilo\gram}};
+        \draw[fill=white] (L.south west) ++(+0.3,0) circle (0.2);
+        \draw[fill=black] (L.south west) ++(+0.3,0) circle (1.5pt);
+        \draw[fill=white] (L.south east) ++(-0.3,0) circle (0.2);
+        \draw[fill=black] (L.south east) ++(-0.3,0) circle (1.5pt);
+        %% right
+        \node[anchor=south,draw,minimum width=2cm,minimum height=1cm] (R) at (+2,0.2) {\SI{3}{\kilo\gram}};
+        \draw[fill=white] (R.south west) ++(+0.3,0) circle (0.2);
+        \draw[fill=black] (R.south west) ++(+0.3,0) circle (1.5pt);
+        \draw[fill=white] (R.south east) ++(-0.3,0) circle (0.2);
+        \draw[fill=black] (R.south east) ++(-0.3,0) circle (1.5pt);
+        %% spring
+        \draw[decoration={aspect=0.2,segment length=1.5mm,amplitude=2mm,coil},decorate] (L.east) -- (R.west);
+    \end{tikzpicture}
+    \end{center}
+    The \SI{3}{\kilo\gram} car reaches a maximum speed of \SI{2}{\meter\per\second}.
+    What is the maximum speed of the \SI{2}{\kilo\gram} car?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{1}{\meter\per\second}}
+        \wrongchoice{\SI{2}{\meter\per\second}}
+      \correctchoice{\SI{3}{\meter\per\second}}
+        \wrongchoice{\SI{6}{\meter\per\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
 
 
 \endinput

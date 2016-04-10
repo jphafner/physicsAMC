@@ -3147,7 +3147,271 @@
 }
 
 
+%% Section June1985
+%%--------------------
+\element{nysed}{
+\begin{question}{June1985-Q16}
+    A change in the average kinetic energy of the molecules of an object may best be detected by measuring a change in the object's:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{mass}
+        \wrongchoice{speed}
+        \wrongchoice{weight}
+      \correctchoice{temperature}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
 
+\element{nysed}{
+\begin{question}{June1985-Q17}
+    Which graph best represents the relationship between the Kelvin temperature scale the degree Celsius temperature scale?
+    \begin{multicols}{2}
+    \begin{choices}
+        \AMCboxDimensions{down=-2.5em}
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=bottom,
+                    axis line style={->},
+                    xlabel={Celsius},
+                    x label style={
+                        at={(current axis.right of origin)},
+                        anchor=north east,
+                    },
+                    xtick=\empty,
+                    ylabel={kelvin},
+                    y label style={
+                        at={(current axis.above origin)},
+                        anchor=south east,
+                    },
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=0,ymax=11,
+                    width=\columnwidth,
+                    very thin,
+                ]
+                \addplot[line width=1pt,domain=0:10]{x};
+                \end{axis}
+            \end{tikzpicture}
+        }
+        %% ANS is 2
+        \correctchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=bottom,
+                    axis line style={->},
+                    xlabel={Celsius},
+                    x label style={
+                        at={(current axis.right of origin)},
+                        anchor=north east,
+                    },
+                    xtick=\empty,
+                    ylabel={kelvin},
+                    ytick={2},
+                    %% corrected error
+                    yticklabels={\num{273}},
+                    y tick label style={rotate=90,anchor=south},
+                    y label style={
+                        at={(current axis.above origin)},
+                        anchor=south east,
+                    },
+                    xmin=0,xmax=11,
+                    ymin=0,ymax=11,
+                    width=\columnwidth,
+                    very thin,
+                ]
+                \addplot[line width=1pt,domain=0:8]{0.9*x+2};
+                \end{axis}
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=bottom,
+                    axis line style={->},
+                    xlabel={Celsius},
+                    x label style={
+                        at={(current axis.right of origin)},
+                        anchor=north east,
+                    },
+                    xtick=\empty,
+                    ylabel={kelvin},
+                    y label style={
+                        at={(current axis.above origin)},
+                        anchor=south east,
+                    },
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=0,ymax=11,
+                    width=\columnwidth,
+                    very thin,
+                ]
+                \addplot[line width=1pt,domain=0:10]{1+0.09*x*x};
+                \end{axis}
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=bottom,
+                    axis line style={->},
+                    xlabel={Celsius},
+                    x label style={
+                        at={(current axis.right of origin)},
+                        anchor=north east,
+                    },
+                    xtick={2},
+                    xticklabels={\ang{273}},
+                    ylabel={kelvin},
+                    y label style={
+                        at={(current axis.above origin)},
+                        anchor=south east,
+                    },
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=0,ymax=11,
+                    width=\columnwidth,
+                    very thin,
+                ]
+                \addplot[line width=1pt,domain=2:10]{x-2};
+                \end{axis}
+            \end{tikzpicture}
+        }
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\newcommand{\nysedJuneNineteenEightyFiveQSeventyOne}{
+\begin{tikzpicture}
+    \begin{axis}[
+        axis y line=left,
+        axis x line=middle,
+        axis line style={->},
+        xlabel={heat},
+        x unit=\si{\kilo\calorie},
+        xtick={0,20,40,60,80,100,120},
+        minor x tick num=1,
+        ylabel={temperature},
+        y unit=\si{\degreeCelsius},
+        ytick={40,60,80,100},
+        minor y tick num=3,
+        xmin=0,xmax=120,
+        ymin=40,ymax=100,
+        width=0.95\columnwidth,
+        height=0.6\columnwidth,
+        grid=major,
+        clip=false,
+        very thin,
+    ]
+    \addplot[line width=1pt,mark=\empty] plot coordinates {(0,40) (10,60) (30,60) (50,80) (100,80) (120,90)};
+    %% phase labels
+    \node[anchor=north west] at (axis cs:5,50) {solid};
+    \node[anchor=south east] at (axis cs:40,70) {liquid};
+    \node[anchor=south east] at (axis cs:110,85) {gas};
+    %% letter labels
+    \fill (axis cs:0,40) circle (1.5pt) node[anchor=north] {$A$};
+    \fill (axis cs:10,60) circle (1.5pt) node[anchor=north west] {$B$};
+    \fill (axis cs:30,60) circle (1.5pt) node[anchor=north] {$C$};
+    \fill (axis cs:50,80) circle (1.5pt) node[anchor=north west] {$D$};
+    \fill (axis cs:100,80) circle (1.5pt) node[anchor=north] {$E$};
+    \fill (axis cs:120,90) circle (1.5pt) node[anchor=north] {$F$};
+    \end{axis}
+\end{tikzpicture}
+}
+
+\element{nysed}{
+\begin{question}{June1985-Q71}
+    The graph below which represents the temperature of \SI{1}{\kilo\gram} of an unidentified substance as heat is added.
+    \begin{center}
+        \nysedJuneNineteenEightyFiveQSeventyOne
+    \end{center}
+    What is the boiling point of the substance?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{40}{\degreeCelsius}}
+        \wrongchoice{\SI{60}{\degreeCelsius}}
+      \correctchoice{\SI{80}{\degreeCelsius}}
+        \wrongchoice{\SI{90}{\degreeCelsius}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{nysed}{
+\begin{question}{June1985-Q72}
+    The graph below which represents the temperature of \SI{1}{\kilo\gram} of an unidentified substance as heat is added.
+    \begin{center}
+        \nysedJuneNineteenEightyFiveQSeventyOne
+    \end{center}
+    What is the heat of fusion of the substance?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{10}{\kilo\calorie\per\kilo\gram}}
+      \correctchoice{\SI{20}{\kilo\calorie\per\kilo\gram}}
+        \wrongchoice{\SI{30}{\kilo\calorie\per\kilo\gram}}
+        \wrongchoice{\SI{50}{\kilo\calorie\per\kilo\gram}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{nysed}{
+\begin{question}{June1985-Q73}
+    The graph below which represents the temperature of \SI{1}{\kilo\gram} of an unidentified substance as heat is added.
+    \begin{center}
+        \nysedJuneNineteenEightyFiveQSeventyOne
+    \end{center}
+    During which interval does the average kinetic energy of the molecules of the substance remain constant?
+    \begin{multicols}{4}
+    \begin{choices}
+        \wrongchoice{$AB$}
+        \wrongchoice{$EF$}
+        \wrongchoice{$CD$}
+      \correctchoice{$DE$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{nysed}{
+\begin{question}{June1985-Q74}
+    The graph below which represents the temperature of \SI{1}{\kilo\gram} of an unidentified substance as heat is added.
+    \begin{center}
+        \nysedJuneNineteenEightyFiveQSeventyOne
+    \end{center}
+    During which interval is the specific heat of the substance greatest?
+    \begin{multicols}{4}
+    \begin{choices}
+        \wrongchoice{$AB$}
+      \correctchoice{$EF$}
+        \wrongchoice{$CD$}
+        \wrongchoice{$DE$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{nysed}{
+\begin{question}{June1985-Q75}
+    The graph below which represents the temperature of \SI{1}{\kilo\gram} of an unidentified substance as heat is added.
+    \begin{center}
+        \nysedJuneNineteenEightyFiveQSeventyOne
+    \end{center}
+    As the temperature of a constant volume of an ideal gas is increased,
+        its pressure will:
+    \begin{choices}
+        \wrongchoice{decrease}
+      \correctchoice{increase}
+        \wrongchoice{remain the same}
+    \end{choices}
+\end{question}
+}
 
 
 

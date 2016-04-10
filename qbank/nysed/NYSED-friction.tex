@@ -1611,6 +1611,76 @@
 }
 
 
+%% Section June1985
+%%--------------------
+\element{nysed}{
+\begin{question}{June1985-Q06}
+    In the diagram below, the numbers 1,2,3, and 4 represent possible directions in which a force could be applied to a cart.
+    \begin{center}
+    \begin{tikzpicture}
+        %% Cart
+        \node[minimum width=2.5cm,minimum height=1cm,draw,fill=white!90!black] (A) at (0,0) {};
+        %% Wheels
+        \draw[fill=white] (A.south west) ++ (+0.4,0) circle (0.3);
+        \draw[fill=black] (A.south west) ++ (+0.4,0) circle (1.5pt);
+        \draw[fill=white] (A.south east) ++ (-0.4,0) circle (0.3);
+        \draw[fill=black] (A.south east) ++ (-0.4,0) circle (1.5pt);
+        %% options
+        \foreach \x/\y in {90/A,120/B,150/C,180/D}
+            \draw[thick,-latex,shorten <=1pt] (A.north west) -- ++(\x:2) node[anchor=center,shift={(\x:0.5em)}] {$\y$};
+    \end{tikzpicture}
+    \end{center}
+    If the force applied in each direction has the same magnitude,
+        in which direction will the vertical component of the force be the \emph{least}?
+    \begin{multicols}{4}
+    \begin{choices}[o]
+        \wrongchoice{$A$}
+        \wrongchoice{$B$}
+        \wrongchoice{$C$}
+      \correctchoice{$D$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{nysed}{
+\begin{question}{June1985-Q07}
+    The diagram below represents two forces acting concurrently on an object.
+    \begin{center}
+    \begin{tikzpicture}
+        \fill (0,0) circle (1.5pt);
+        \draw (0,1em) -- (1em,1em) -- (1em,0);
+        \draw[thick,-latex] (0,0) -- (0:4) node[pos=0.5,anchor=south] {\SI{40}{\newton}};
+        \draw[thick,-latex] (0,0) -- (90:2) node[pos=0.5,anchor=south,rotate=90] {\SI{20}{\newton}};
+    \end{tikzpicture}
+    \end{center}
+    The magnitude of the resultant force is closest to:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{20}{\newton}}
+        \wrongchoice{\SI{40}{\newton}}
+      \correctchoice{\SI{45}{\newton}}
+        \wrongchoice{\SI{60}{\newton}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{nysed}{
+\begin{question}{June1985-Q55}
+    As the vector sum of all the forces acting on an object increases,
+        the acceleration of the object:
+    \begin{choices}
+        \wrongchoice{decreases}
+      \correctchoice{increases}
+        \wrongchoice{remains the same}
+    \end{choices}
+\end{question}
+}
+
+
+
+
 
 \endinput
 

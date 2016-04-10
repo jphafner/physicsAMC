@@ -2344,6 +2344,112 @@
 \end{question}
 }
 
+\newcommand{\nysedJuneNineteenEightySixQEightyFive}{
+\begin{tikzpicture}[scale=0.9]
+    \draw[thick,-latex] (-4.2,0) -- (4.2,0);
+    %% lens
+    \draw (0,1.5) arc({asin(1.5/6)}:{-asin(1.6/6)}:6);
+    \draw (0,1.5) arc({180-asin(1.5/6)}:{180+asin(1.6/6)}:6);
+    %% object
+    \draw[very thick,-latex] (-4,0) -- (-4,1);
+    \draw (0,-0.1) -- (0,0.1) node[anchor=south] {$A$};
+    %% labels
+    \foreach \x/\y in {-4/O,-3/B,-2/F,-1/D,2/F\prime,4/2F\prime}
+        \draw (\x,0.1) -- (\x,-0.1) node[anchor=north] {$\y$};
+\end{tikzpicture}
+}
+
+\element{nysed}{
+\begin{question}{June1986-Q85}
+    The diagram below represents an object placed at point $O$,
+        located \SI{1.0}{\meter} from a lens of focal length \SI{0.5}{\meter}.
+    \begin{center}
+        \nysedJuneNineteenEightySixQEightyFive
+    \end{center}
+    The distance between the lens and the image is:
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{\SI{1.0}{\meter}}
+        \wrongchoice{\SI{0.50}{\meter}}
+        \wrongchoice{\SI{0.25}{\meter}}
+        \wrongchoice{\SI{1.5}{\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{nysed}{
+\begin{question}{June1986-Q86}
+    The diagram below represents an object placed at point $O$,
+        located \SI{1.0}{\meter} from a lens of focal length \SI{0.5}{\meter}.
+    \begin{center}
+        \nysedJuneNineteenEightySixQEightyFive
+    \end{center}
+    Compared to the size of the object,
+        the size of the image is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{smaller}
+        \wrongchoice{larger}
+      \correctchoice{the same}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{nysed}{
+\begin{question}{June1986-Q87}
+    The diagram below represents an object placed at point $O$,
+        located \SI{1.0}{\meter} from a lens of focal length \SI{0.5}{\meter}.
+    \begin{center}
+        \nysedJuneNineteenEightySixQEightyFive
+    \end{center}
+    Compared to the image when the object is at point $O$,
+        the image when the object is moved to point $B$ will be:
+    \begin{choices}
+        \wrongchoice{smaller}
+        \wrongchoice{changed from inverted to erect}
+        \wrongchoice{nearer the lens}
+      \correctchoice{farther from the lens}
+    \end{choices}
+\end{question}
+}
+
+\element{nysed}{
+\begin{question}{June1986-Q88}
+    The diagram below represents an object placed at point $O$,
+        located \SI{1.0}{\meter} from a lens of focal length \SI{0.5}{\meter}.
+    \begin{center}
+        \nysedJuneNineteenEightySixQEightyFive
+    \end{center}
+    The original lens is replaced with one having a shorter focal length.
+    If the object remains at point $O$,
+        compared to the original image distance, the new image distance:
+    \begin{choices}
+      \correctchoice{is smaller}
+        \wrongchoice{is larger}
+        \wrongchoice{remains the same}
+    \end{choices}
+\end{question}
+}
+
+
+%% Section June1985
+%%--------------------
+\element{nysed}{
+\begin{question}{June1985-Q27}
+    The image formed by a diverging lens is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{enlarged}
+        \wrongchoice{inverted}
+        \wrongchoice{real}
+      \correctchoice{virtual}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
 
 
 \endinput

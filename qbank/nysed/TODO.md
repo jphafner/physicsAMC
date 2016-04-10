@@ -1,4 +1,6 @@
 
+-[ ] Check physics labs for categorization??
+
 -[ ] modern should have relativity and standard model, or split relativity into separate??
 
 -[ ] make NYSED-atomic, take from modern, also NYSED_nuclear
@@ -10,7 +12,11 @@
 
 -[ ] why no fluids??
 
+-[ ] split gravity into gravity and orbits
+
 -[ ] split NYSED-momentum into impulse and momentum (conservation principle) ??
+
+-[ ] nuclearEnergy into nuclearEnergy and nuclear.
 
 -[ ] split use Group 4---Atomic and Nuclear Physics into nuclear and atomic
 

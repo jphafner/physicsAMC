@@ -1469,6 +1469,175 @@
 }
 
 
+%% Section June1985
+%%--------------------
+\element{nysed}{
+\begin{question}{June1985-Q61}
+    A toy projectile is fired from the ground vertically upward with an initial velocity of \SI{+29}{\meter\per\second}.
+    The projectile arrives at its maximum altitude in \SI{3.0}{\second}.
+    [Neglect air resistance]
+    %% start question
+    The greatest height the projectile reaches is approximately:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{23}{\meter}}
+      \correctchoice{\SI{44}{\meter}}
+        \wrongchoice{\SI{87}{\meter}}
+        \wrongchoice{\SI{260}{\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{nysed}{
+\begin{question}{June1985-Q62}
+    A toy projectile is fired from the ground vertically upward with an initial velocity of \SI{+29}{\meter\per\second}.
+    The projectile arrives at its maximum altitude in \SI{3.0}{\second}.
+    [Neglect air resistance]
+    %% start question
+    What is the velocity of the projectile when it hits the ground?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{0}{\meter\per\second}}
+        \wrongchoice{\SI{-9.8}{\meter\per\second}}
+      \correctchoice{\SI{-29}{\meter\per\second}}
+        \wrongchoice{\SI{+29}{\meter\per\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{nysed}{
+\begin{question}{June1985-Q63}
+    A toy projectile is fired from the ground vertically upward with an initial velocity of \SI{+29}{\meter\per\second}.
+    The projectile arrives at its maximum altitude in \SI{3.0}{\second}.
+    [Neglect air resistance]
+    %% start question
+    What is the displacement of the projectile from the time it left the ground until it returned to the ground?
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{\SI{0}{\meter}}
+        \wrongchoice{\SI{9.8}{\meter}}
+        \wrongchoice{\SI{44}{\meter}}
+        \wrongchoice{\SI{88}{\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{nysed}{
+\begin{question}{June1985-Q64}
+    A toy projectile is fired from the ground vertically upward with an initial velocity of \SI{+29}{\meter\per\second}.
+    The projectile arrives at its maximum altitude in \SI{3.0}{\second}.
+    [Neglect air resistance]
+    %% start question
+    Which graph best represents the relationship between velocity and time for the projectile?
+    \begin{multicols}{2}
+    \begin{choices}
+        \AMCboxDimensions{down=-2.5em}
+        %% ANS is 1
+        \correctchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=middle,
+                    axis line style={->},
+                    xlabel={time},
+                    xtick=\empty,
+                    ylabel={velocity},
+                    %% NOTE: ytikc labels + and -
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=-6,ymax=6,
+                    width=\columnwidth,
+                    very thin,
+                ]
+                \addplot[line width=1pt,domain=0:10] {5-x};
+                \end{axis}
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=middle,
+                    axis line style={->},
+                    xlabel={time},
+                    xtick=\empty,
+                    ylabel={velocity},
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=-6,ymax=6,
+                    width=\columnwidth,
+                    very thin,
+                ]
+                %% NOTE: write function
+                \addplot[line width=1pt,domain=0:10] {5-x};
+                \end{axis}
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=middle,
+                    axis line style={->},
+                    xlabel={time},
+                    xtick=\empty,
+                    ylabel={velocity},
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=-6,ymax=6,
+                    width=\columnwidth,
+                    very thin,
+                ]
+                \addplot[line width=1pt,mark=\empty] plot coordinates {(0,5) (5,0) (10,5)};
+                \end{axis}
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=middle,
+                    axis line style={->},
+                    xlabel={time},
+                    xtick=\empty,
+                    ylabel={velocity},
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=-6,ymax=6,
+                    width=\columnwidth,
+                    very thin,
+                ]
+                \addplot[line width=1pt,domain=0:10] {-4};
+                \end{axis}
+            \end{tikzpicture}
+        }
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{nysed}{
+\begin{question}{June1985-Q65}
+    A toy projectile is fired from the ground vertically upward with an initial velocity of \SI{+29}{\meter\per\second}.
+    The projectile arrives at its maximum altitude in \SI{3.0}{\second}.
+    [Neglect air resistance]
+    %% start question
+    As the projectile rises and then falls back to the ground,
+        its acceleration
+    \begin{choices}
+        \wrongchoice{decreases, then increases}
+        \wrongchoice{increases, then decreases}
+        \wrongchoice{increases, only}
+      \correctchoice{remains the same}
+    \end{choices}
+\end{question}
+}
+
+
+
 
 \endinput
 

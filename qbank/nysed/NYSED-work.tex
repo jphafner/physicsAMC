@@ -3298,7 +3298,116 @@
 }
 
 
+%% Section June1985
+%%--------------------
+\element{nysed}{
+\begin{question}{June1985-Q11}
+    A \SI{1.0}{\kilo\gram} mass falls a distance of \SI{0.50}{\meter},
+        causing a \SI{2.0}{\kilo\gram} mass to slide the same distance along a table top,
+        as represented in the diagram below.
+    \begin{center}
+    \begin{tikzpicture}
+        %% Floor
+        \draw[thick] (-4,0) -- (0,0) -- (0,-2);
+        \node[anchor=north,minimum width=4cm,pattern=north east lines] at (-2,0) {};
+        %% Mass
+        \node[draw,fill=white!90!black,rectangle,rounded corners=1ex,minimum size=1.22cm,anchor=south] (A) at (-3,0) {\SI{2.0}{\kilo\gram}};
+        \node[draw,fill=white!90!black,rectangle,rounded corners=1ex,minimum size=1.00cm,anchor=north] (B) at (1,-0.5) {\SI{1.0}{\kilo\gram}};
+        %% Rope and Pulley
+        \draw[thick] (A.south east) ++(90:0.5) -- (0.75,0.5) arc(90:0:0.25) -- (B.north);
+        \draw[thick,fill=white!90!black] (0.75,0.25) circle (0.25);
+        \draw[thick,fill=white] (0,0) -- (0.75,0.35) arc (90:-60:0.1) -- (0,-0.5) -- cycle;
+        \draw[fill] (0.75,0.25) circle (1pt);
+        %% distance
+        \draw[<->] (B.south) -- ++(270:2) node[pos=0.5,anchor=center,fill=white] {\SI{0.50}{\meter}};
+        \draw (B.south) ++ (270:2) -- ++(0:1) -- ++(180:2);
+        \path (B.south) ++ (270:2) node[anchor=north,minimum width=2cm,pattern=north east lines] {};
+    \end{tikzpicture}
+    \end{center}
+    How much work is done by the falling mass?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{1.5}{\joule}}
+      \correctchoice{\SI{4.9}{\joule}}
+        \wrongchoice{\SI{9.8}{\joule}}
+        \wrongchoice{\SI{14.7}{\joule}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
 
+\element{nysed}{
+\begin{question}{June1985-Q12}
+    Which quantities are measured in the same units?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{mass and weight}
+        \wrongchoice{heat and temperature}
+        \wrongchoice{power and work}
+      \correctchoice{work and energy}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{nysed}{
+\begin{question}{June1985-Q13}
+    The diagram below represents a cart traveling from left to right along a frictionless surface with an initial speed of $v$.
+    \begin{center}
+    \begin{tikzpicture}[font=\small]
+        %% Path
+        \draw[very thick] (-4,3) -- (-2,3) to[out=0,in=180] (0,1) to[out=0,in=180] (2,2) -- (4,2);
+        \node[anchor=south east] at (4,2) {Earth's Surface};
+        %% Cart
+        \node[draw,fill=white!90!black,minimum width=1.25cm,minimum height=0.75cm,anchor=south] (M) at (-3,3.2) {};
+        \draw[fill=white] (M.south west) ++(+0.3,0) circle (0.2);
+        \draw[fill=black] (M.south west) ++(+0.3,0) circle (1pt);
+        \draw[fill=white] (M.south east) ++(-0.3,0) circle (0.2);
+        \draw[fill=black] (M.south east) ++(-0.3,0) circle (1pt);
+        \draw[thick,-latex] (M.north west) ++(90:2ex) -- ++(0:1.25cm) node[pos=0.5,anchor=south] {$v$};
+        %% Labels
+        \fill (-2,3) circle (2pt) node[anchor=north] {$A$};
+        \fill (0,1) circle (2pt) node[anchor=north] {$B$};
+        \fill (1,1.5) circle (2pt) node[anchor=north west] {$C$};
+        \fill (2,2) circle (2pt) node[anchor=north] {$D$};
+    \end{tikzpicture}
+    \end{center}
+    At which point is the gravitational potential energy of the car \emph{least}?
+    \begin{multicols}{4}
+    \begin{choices}[o]
+        \wrongchoice{$A$}
+      \correctchoice{$B$}
+        \wrongchoice{$C$}
+        \wrongchoice{$D$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{nysed}{
+\begin{question}{June1985-Q14}
+    If the velocity of an automobile is doubled,
+        its kinetic energy:
+    \begin{choices}
+        \wrongchoice{decrease to one-half}
+        \wrongchoice{doubles}
+        \wrongchoice{decrease to one-fourth}
+      \correctchoice{quadruples}
+    \end{choices}
+\end{question}
+}
+
+\element{nysed}{
+\begin{question}{June1985-Q57}
+    As an object falls freely in a vacuum,
+        its total energy:
+    \begin{choices}
+        \wrongchoice{decreases}
+        \wrongchoice{increases}
+      \correctchoice{remains the same}
+    \end{choices}
+\end{question}
+}
 
 
 \endinput

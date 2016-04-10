@@ -2679,6 +2679,78 @@
 }
 
 
+%% Section June1985
+%%--------------------
+\element{nysed}{
+\begin{question}{June1985-Q40}
+    Three resistors of \SI{2}{\ohm}, \SI{4}{\ohm}, and \SI{6}{\ohm} are connected in parallel.
+    The equivalent resistance of the three resistors is:
+    \begin{choices}
+      \correctchoice{less than \SI{2}{\ohm}}
+        \wrongchoice{between \SI{2}{\ohm} and \SI{4}{\ohm}}
+        \wrongchoice{between \SI{4}{\ohm} and \SI{6}{\ohm}}
+        \wrongchoice{greater than \SI{6}{\ohm}}
+    \end{choices}
+\end{question}
+}
+
+\element{nysed}{
+\begin{question}{June1985-Q41}
+    The circuit represented in the diagram below is a series circuit.
+    \begin{center}
+    \ctikzset{bipoles/length=0.75cm}
+    \begin{circuitikz}
+        \draw (0,0) to [battery,v=\SI{8}{\volt}] (0,2) to [ammeter,i=\SI{5}{\ampere}] (4,2) to [R,l=$R$] (4,0) to (0,0);
+    \end{circuitikz}
+    \end{center}
+    The electrical energy expended in resistor $R$ in \SI{2.0}{\second} is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{20}{\joule}}
+        \wrongchoice{\SI{40}{\joule}}
+      \correctchoice{\SI{80}{\joule}}
+        \wrongchoice{\SI{120}{\joule}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{nysed}{
+\begin{question}{June1985-Q54}
+    In the diagram below, which of the switches must be closed in order for the lamp to light?
+    \begin{center}
+    \ctikzset{bipoles/length=0.75cm}
+    \begin{circuitikz}
+        \draw (0,0) to [cspst,l=$A$] (0,2) to [battery,v=$ $] (4,2) to [cspst,l=$B$] (4,0) to [european resistor,l=lamp] (0,0);
+    \end{circuitikz}
+    \end{center}
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{$A$, only}
+        \wrongchoice{$B$, only}
+      \correctchoice{both $A$ and $B$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{nysed}{
+\begin{question}{June1985-Q100}
+    An electric heater rated at \SI{4 800}{\watt} is operated on \SI{120}{\volt}.
+    %% start question
+    If another heater is connected in parallel with the first one and both operate at \SI{120}{\volt},
+        the current in the first heater will:
+    \begin{choices}
+        \wrongchoice{decrease}
+        \wrongchoice{increase}
+      \correctchoice{remain the same}
+    \end{choices}
+\end{question}
+}
+
+
+
+
 
 \endinput
 

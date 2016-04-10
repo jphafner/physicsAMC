@@ -4597,6 +4597,106 @@
 }
 
 
+%% Section June1985
+%%--------------------
+\element{nysed}{
+\begin{question}{June1985-Q18}
+    What is the period of a wave with a frequency of \SI{250}{\hertz}?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{1.2e-3}{\second}}
+        \wrongchoice{\SI{2.5e-3}{\second}}
+        \wrongchoice{\SI{9.0e-3}{\second}}
+      \correctchoice{\SI{4.0e-3}{\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{nysed}{
+\begin{question}{June1985-Q19}
+    A wave is generated in a rope which is represented by the solid line in the diagram below.
+    \begin{center}
+    \begin{tikzpicture}[x=0.06\linewidth]
+        \draw[dashed] (-1.57,0) -- (14.13,0);
+        \draw[line width=1pt,domain=0:4*pi,samples=50] plot (\x, {sin(\x r)});
+        %% vector
+        \draw[thick,-latex] (10,1) -- ++(0:3.14);
+        %% options
+        \fill (6.5,{sin(deg(6.5))}) circle (1.5pt) node[anchor=south east] {$P$};
+        \foreach \x/\y in {0/B,90/A,180/D,270/C}
+            \fill (6.5,{sin(deg(6.5))}) ++(\x:1.57) circle (1.5pt)  node[anchor=center,shift={(\x:0.66em)}] {$\y$};
+    \end{tikzpicture}
+    \end{center}
+    As the wave moves to the right,
+        point $P$ on the rope is moving toward which position?
+    \begin{multicols}{4}
+    \begin{choices}[o]
+        \wrongchoice{$A$}
+        \wrongchoice{$B$}
+      \correctchoice{$C$}
+        \wrongchoice{$D$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{nysed}{
+\begin{question}{June1985-Q21}
+    Which distance on the diagram below identifies the amplitude of the given wave?
+    \begin{center}
+    \begin{tikzpicture}[x=0.15\linewidth]
+        \draw[dashed,white!60!black,xstep=1.57,ystep=1.0] (0,-1) grid (6.28,1);
+        \draw (0,-1) -- (0,1);
+        \draw (0,0) -- (6.28,0);
+        \draw[line width=1pt,domain=0:2*pi,samples=25] plot (\x, {sin(\x r)});
+        %% options
+        \fill (1.57,1) circle (2pt) node[anchor=south] {$A$};
+        \fill (1.57,0) circle (2pt) node[anchor=south east] {$B$};
+        \fill (3.14,0) circle (2pt) node[anchor=south west] {$C$};
+        \fill (1.57,-1) circle (2pt) node[anchor=north] {$E$};
+        \fill (4.71,-1) circle (2pt) node[anchor=north] {$D$};
+    \end{tikzpicture}
+    \end{center}
+    \begin{multicols}{4}
+    \begin{choices}[o]
+        \wrongchoice{$AE$}
+      \correctchoice{$AB$}
+        \wrongchoice{$AC$}
+        \wrongchoice{$AD$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{nysed}{
+\begin{question}{June1985-Q26}
+    Standing waves are produced by the interference of two waves with the same:
+    \begin{choices}
+      \correctchoice{frequency and amplitude, but opposite directions}
+        \wrongchoice{frequency and direction, but different amplitude}
+        \wrongchoice{amplitude and direction, but different frequencies}
+        \wrongchoice{frequency, amplitude, and direction}
+    \end{choices}
+\end{question}
+}
+
+\element{nysed}{
+\begin{question}{June1985-Q30}
+    Only coherent wave sources produce waves that:
+    \begin{choices}
+        \wrongchoice{are the same in frequency}
+        \wrongchoice{have the same speed}
+      \correctchoice{have a constant phase relation}
+        \wrongchoice{are polarized in the same plane}
+    \end{choices}
+\end{question}
+}
+
+
+
+
+
 
 \endinput
 

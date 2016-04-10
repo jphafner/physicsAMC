@@ -1,14 +1,26 @@
 
-%% this section contains 33 problems
 
-%% NOTE: do globally
-%%------------------------------
-%\sisetup{
-%    fraction-function = \sfrac,
-%}
+%% this file contains 33 problems
+
+
+%% Custom written motion graph question
+%%----------------------------------------
+
+
+%% Table of contents
+%%----------------------------------------
+
+%% Section: Graphing Displacement
+%% Section: Graphing Velocity
+%% Section: Graphing Acceleration
+
+%% Section: Descriptive graphs
+%% Section: Matching graphs
+
+
 
 %% PGFplots Customization
-%%------------------------------
+%%----------------------------------------
 \pgfplotsset{
     myaxis/.style={
         axis y line=left,
@@ -90,7 +102,7 @@
 %    }}
 
 %% Custom Graphs
-%%--------------------
+%%----------------------------------------
 \newcommand{\myDisplacementGraph}{
     \begin{tikzpicture}
         \begin{axis}[
@@ -167,16 +179,14 @@
 }
 
 %% Section: Graphing Displacement
-%%------------------------------
+%%----------------------------------------
 \element{graphs}{
 \begin{question}{graphs-Q01-A}
-    Consider the motion of an object whose
-        displacement-time graph is provided below.
+    Consider the motion of an object whose displacement-time graph is provided below.
     \begin{center}
         \myDisplacementGraph
     \end{center}
-    What is the instantaneous velocity of the object at
-        $t=\SI{4}{\second}$?
+    What is the instantaneous velocity of the object at $t=\SI{4}{\second}$?
     \begin{multicols}{3}
     \begin{choices}
         \wrongchoice{\SI{2}{\meter\per\second}}
@@ -192,13 +202,11 @@
 
 \element{graphs}{
 \begin{question}{graphs-Q01-B}
-    Consider the motion of an object whose
-        displacement-time graph is provided below.
+    Consider the motion of an object whose displacement-time graph is provided below.
     \begin{center}
         \myDisplacementGraph
     \end{center}
-    What is the instantaneous velocity of the object at
-        $t=\SI{8}{\second}$?
+    What is the instantaneous velocity of the object at $t=\SI{8}{\second}$?
     \begin{multicols}{3}
     \begin{choices}
       \correctchoice{\SI{0}{\meter\per\second}}
@@ -214,13 +222,11 @@
 
 \element{graphs}{
 \begin{question}{graphs-Q01-C}
-    Consider the motion of an object whose
-        displacement-time graph is provided below.
+    Consider the motion of an object whose displacement-time graph is provided below.
     \begin{center}
         \myDisplacementGraph
     \end{center}
-    What is the instantaneous velocity of the object at
-        $t=\SI{12}{\second}$?
+    What is the instantaneous velocity of the object at $t=\SI{12}{\second}$?
     \begin{multicols}{3}
     \begin{choices}
       \correctchoice{\SI{-10}{\meter\per\second}}
@@ -236,13 +242,11 @@
 
 \element{graphs}{
 \begin{question}{graphs-Q01-D}
-    Consider the motion of an object whose
-        displacement-time graph is provided below.
+    Consider the motion of an object whose displacement-time graph is provided below.
     \begin{center}
         \myDisplacementGraph
     \end{center}
-    What is the average velocity of the object
-        between $t=\SI{0}{\second}$ and $t=\SI{4}{\second}$?
+    What is the average velocity of the object between $t=\SI{0}{\second}$ and $t=\SI{4}{\second}$?
     \begin{multicols}{3}
     \begin{choices}
         \wrongchoice{\SI{2}{\meter\per\second}}
@@ -258,13 +262,11 @@
 
 \element{graphs}{
 \begin{question}{graphs-Q01-E}
-    Consider the motion of an object whose
-        displacement-time graph is provided below.
+    Consider the motion of an object whose displacement-time graph is provided below.
     \begin{center}
         \myDisplacementGraph
     \end{center}
-    What is the average velocity of the object
-        between $t=\SI{0}{\second}$ and $t=\SI{8}{\second}$?
+    What is the average velocity of the object between $t=\SI{0}{\second}$ and $t=\SI{8}{\second}$?
     \begin{multicols}{3}
     \begin{choices}
         \wrongchoice{\SI{0}{\meter\per\second}}
@@ -280,13 +282,11 @@
 
 \element{graphs}{
 \begin{question}{graphs-Q01-F}
-    Consider the motion of an object whose
-        displacement-time graph is provided below.
+    Consider the motion of an object whose displacement-time graph is provided below.
     \begin{center}
         \myDisplacementGraph
     \end{center}
-    What is the average velocity of the object
-        between $t=\SI{0}{\second}$ and $t=\SI{12}{\second}$?
+    What is the average velocity of the object between $t=\SI{0}{\second}$ and $t=\SI{12}{\second}$?
     \begin{multicols}{3}
     \begin{choices}
         \wrongchoice{\SI{-10}{\meter\per\second}}
@@ -301,16 +301,14 @@
 }
 
 %% Section: Graphing Velocity
-%%------------------------------
+%%----------------------------------------
 \element{graphs}{
 \begin{question}{graphs-Q02-A}
-    Consider the motion of an object whose
-        velocity-time graph is provided below.
+    Consider the motion of an object whose velocity-time graph is provided below.
     \begin{center}
         \myVelocityGraph
     \end{center}
-    What is the acceleration of the object at
-        $t=\SI{2}{\second}$?
+    What is the acceleration of the object at $t=\SI{2}{\second}$?
     \begin{multicols}{3}
     \begin{choices}
         \wrongchoice{\SI{-1}{\meter\per\second\squared}}
@@ -326,13 +324,11 @@
 
 \element{graphs}{
 \begin{question}{graphs-Q02-B}
-    Consider the motion of an object whose
-        velocity-time graph is provided below.
+    Consider the motion of an object whose velocity-time graph is provided below.
     \begin{center}
         \myVelocityGraph
     \end{center}
-    What is the acceleration of the object at
-        $t=\SI{6}{\second}$?
+    What is the acceleration of the object at $t=\SI{6}{\second}$?
     \begin{multicols}{3}
     \begin{choices}
         \wrongchoice{\SI{-1}{\meter\per\second\squared}}
@@ -348,13 +344,11 @@
 
 \element{graphs}{
 \begin{question}{graphs-Q02-C}
-    Consider the motion of an object whose
-        velocity-time graph is provided below.
+    Consider the motion of an object whose velocity-time graph is provided below.
     \begin{center}
         \myVelocityGraph
     \end{center}
-    What is the acceleration of the object at
-        $t=\SI{10}{\second}$?
+    What is the acceleration of the object at $t=\SI{10}{\second}$?
     \begin{multicols}{3}
     \begin{choices}
         \wrongchoice{\SI{-2}{\meter\per\second\squared}}
@@ -370,13 +364,11 @@
 
 \element{graphs}{
 \begin{question}{graphs-Q02-D}
-    Consider the motion of an object whose
-        velocity-time graph is provided below.
+    Consider the motion of an object whose velocity-time graph is provided below.
     \begin{center}
         \myVelocityGraph
     \end{center}
-    What is the acceleration of the object at
-        $t=\SI{14}{\second}$?
+    What is the acceleration of the object at $t=\SI{14}{\second}$?
     \begin{multicols}{3}
     \begin{choices}
         \wrongchoice{\SI{-1}{\meter\per\second\squared}}
@@ -392,13 +384,11 @@
 
 \element{graphs}{
 \begin{question}{graphs-Q02-E}
-    Consider the motion of an object whose
-        velocity-time graph is provided below.
+    Consider the motion of an object whose velocity-time graph is provided below.
     \begin{center}
         \myVelocityGraph
     \end{center}
-    What is the displacement of the object between
-        $t=\SI{0}{\second}$ and $t=\SI{10}{\second}$?
+    What is the displacement of the object between $t=\SI{0}{\second}$ and $t=\SI{10}{\second}$?
     \begin{multicols}{3}
     \begin{choices}
         \wrongchoice{\SI{6}{\meter}}
@@ -414,13 +404,11 @@
 
 \element{graphs}{
 \begin{question}{graphs-Q02-F}
-    Consider the motion of an object whose
-        velocity-time graph is provided below.
+    Consider the motion of an object whose velocity-time graph is provided below.
     \begin{center}
         \myVelocityGraph
     \end{center}
-    What is the displacement of the object between
-        $t=\SI{0}{\second}$ and $t=\SI{14}{\second}$?
+    What is the displacement of the object between $t=\SI{0}{\second}$ and $t=\SI{14}{\second}$?
     \begin{multicols}{3}
     \begin{choices}
         \wrongchoice{\SI{0}{\meter}}
@@ -436,13 +424,11 @@
 
 \element{graphs}{
 \begin{question}{graphs-Q02-G}
-    Consider the motion of an object whose
-        velocity-time graph is provided below.
+    Consider the motion of an object whose velocity-time graph is provided below.
     \begin{center}
         \myVelocityGraph
     \end{center}
-    What is the average velocity between
-        $t=\SI{0}{\second}$ and $t=\SI{10}{\second}$?
+    What is the average velocity between $t=\SI{0}{\second}$ and $t=\SI{10}{\second}$?
     \begin{multicols}{3}
     \begin{choices}
         \wrongchoice{\SI{-1}{\meter\per\second}}
@@ -458,13 +444,11 @@
 
 \element{graphs}{
 \begin{question}{graphs-Q02-H}
-    Consider the motion of an object whose
-        velocity-time graph is provided below.
+    Consider the motion of an object whose velocity-time graph is provided below.
     \begin{center}
         \myVelocityGraph
     \end{center}
-    What is the average velocity between
-        $t=\SI{0}{\second}$ and $t=\SI{14}{\second}$?
+    What is the average velocity between $t=\SI{0}{\second}$ and $t=\SI{14}{\second}$?
     \begin{multicols}{3}
     \begin{choices}
         \wrongchoice{\SI{4}{\meter\per\second}}
@@ -480,16 +464,14 @@
 
 
 %% Section: Graphing Acceleration
-%%------------------------------
+%%----------------------------------------
 \element{graphs}{
 \begin{question}{graphs-Q03-A}
-    Consider the motion of an object that starts from rest
-        and whose acceleration-time graph is provided below.
+    Consider the motion of an object that starts from rest and whose acceleration-time graph is provided below.
     \begin{center}
         \myAccelerationGraph
     \end{center}
-    What is the average velocity between
-        $t=\SI{0}{\second}$ and $t=\SI{8}{\second}$?
+    What is the average velocity between $t=\SI{0}{\second}$ and $t=\SI{8}{\second}$?
     \begin{multicols}{3}
     \begin{choices}
         \wrongchoice{\SI{0}{\meter\per\second}}
@@ -505,13 +487,11 @@
 
 \element{graphs}{
 \begin{question}{graphs-Q03-B}
-    Consider the motion of an object that starts from rest
-        and whose acceleration-time graph is provided below.
+    Consider the motion of an object that starts from rest and whose acceleration-time graph is provided below.
     \begin{center}
         \myAccelerationGraph
     \end{center}
-    What is the average velocity between
-        $t=\SI{0}{\second}$ and $t=\SI{16}{\second}$?
+    What is the average velocity between $t=\SI{0}{\second}$ and $t=\SI{16}{\second}$?
     \begin{multicols}{3}
     \begin{choices}
         \wrongchoice{\SI{16}{\meter\per\second}}
@@ -527,13 +507,11 @@
 
 \element{graphs}{
 \begin{question}{graphs-Q03-C}
-    Consider the motion of an object that starts from rest
-        and whose acceleration-time graph is provided below.
+    Consider the motion of an object that starts from rest and whose acceleration-time graph is provided below.
     \begin{center}
         \myAccelerationGraph
     \end{center}
-    What is the total displacement between
-        $t=\SI{0}{\second}$ and $t=\SI{8}{\second}$?
+    What is the total displacement between $t=\SI{0}{\second}$ and $t=\SI{8}{\second}$?
     \begin{multicols}{3}
     \begin{choices}
         \wrongchoice{\SI{0}{\meter}}
@@ -549,13 +527,11 @@
 
 \element{graphs}{
 \begin{question}{graphs-Q03-D}
-    Consider the motion of an object that starts from rest
-        and whose acceleration-time graph is provided below.
+    Consider the motion of an object that starts from rest and whose acceleration-time graph is provided below.
     \begin{center}
         \myAccelerationGraph
     \end{center}
-    What is the total displacement between
-        $t=\SI{0}{\second}$ and $t=\SI{16}{\second}$?
+    What is the total displacement between $t=\SI{0}{\second}$ and $t=\SI{16}{\second}$?
     \begin{multicols}{3}
     \begin{choices}
         \wrongchoice{\SI{96}{\meter}}
@@ -605,7 +581,7 @@
 
 
 %% Section: Descriptive graphs
-%%------------------------------
+%%----------------------------------------
 \element{graphs}{
 \begin{question}{graphs-Q11}
     Consider the motion of an object whose motion is shown in the diagram below.
@@ -727,8 +703,7 @@
 
 \element{graphs}{
 \begin{question}{graphs-Q12}
-    Which velocity-time graph best describes the
-        motion shown in the displacement-time graph below?
+    Which velocity-time graph best describes the motion shown in the displacement-time graph below?
     \begin{center}
     \begin{tikzpicture}
         \begin{axis}[
@@ -779,7 +754,6 @@
                     xmin=0,xmax=10,
                     ymin=-10,ymax=10,
                     width=\columnwidth,
-                    %height=0.618\columnwidth,
                 ]
                 \addplot[mystyle,domain=0:4]{-8};
                 \addplot[mystyle,domain=4:10]{-(40/3) + (4/3)*x};
@@ -797,7 +771,6 @@
                     xmin=0,xmax=10,
                     ymin=-10,ymax=10,
                     width=\columnwidth,
-                    %height=0.618\columnwidth,
                 ]
                 \addplot[mystyle,domain=0:4]{-8 + 2*x};
                 \addplot[mystyle,domain=4:10]{2*(x-4) - (2/12)*(x-4)^2};
@@ -815,7 +788,6 @@
                     xmin=0,xmax=10,
                     ymin=-10,ymax=10,
                     width=\columnwidth,
-                    %height=0.618\columnwidth,
                 ]
                 \addplot[mystyle,domain=0:4]{8 - 2*x};
                 \addplot[mystyle,domain=4:10]{-2*(x-4) + (2/12)*(x-4)^2};
@@ -833,7 +805,6 @@
                     xmin=0,xmax=10,
                     ymin=-10,ymax=10,
                     width=\columnwidth,
-                    %height=0.618\columnwidth,
                 ]
                 \addplot[mystyle,domain=0:4]{-4 + 0.25 * x^2};
                 \addplot[mystyle,domain=4:10]{2*(x-4)};
@@ -851,7 +822,6 @@
                     xmin=0,xmax=10,
                     ymin=-10,ymax=10,
                     width=\columnwidth,
-                    %height=0.618\columnwidth,
                 ]
                 \addplot[mystyle,domain=0:4]{4 - 0.25 *x^2};
                 \addplot[mystyle,domain=4:10]{-2*(x-4)};
@@ -865,8 +835,7 @@
 
 \element{graphs}{
 \begin{question}{graphs-Q13}
-    Which velocity-time graph best describes the
-        motion shown in the displacement-time graph below?
+    Which velocity-time graph best describes the motion shown in the displacement-time graph below?
     \begin{center}
     \begin{tikzpicture}
         \begin{axis}[
@@ -902,7 +871,6 @@
                     xmin=0,xmax=12,
                     ymin=0,ymax=5,
                     width=\columnwidth,
-                    %height=0.618\columnwidth,
                 ]
                 \addplot[mystyle,domain=0:4]{0.5 * x};
                 \addplot[mystyle,domain=4:8]{2};
@@ -921,7 +889,6 @@
                     xmin=0,xmax=12,
                     ymin=0,ymax=5,
                     width=\columnwidth,
-                    %height=0.618\columnwidth,
                 ]
                 \addplot[mystyle,domain=0:4]{5 - 0.5 *x};
                 \addplot[mystyle,domain=4:8]{3};
@@ -940,7 +907,6 @@
                     xmin=0,xmax=12,
                     ymin=0,ymax=5,
                     width=\columnwidth,
-                    %height=0.618\columnwidth,
                 ]
                 \addplot[mystyle,domain=0:4]{1};
                 \addplot[mystyle,domain=4:8]{1 + 0.75*(x-4)};
@@ -959,7 +925,6 @@
                     xmin=0,xmax=12,
                     ymin=0,ymax=5,
                     width=\columnwidth,
-                    %height=0.618\columnwidth,
                 ]
                 \addplot[mystyle,domain=0:4]{4};
                 \addplot[mystyle,domain=4:8]{4 - 0.75*(x-4)};
@@ -978,7 +943,6 @@
                     xmin=0,xmax=12,
                     ymin=0,ymax=5,
                     width=\columnwidth,
-                    %height=0.618\columnwidth,
                 ]
                 \addplot[mystyle,domain=0:4]{0.5 * x};
                 \addplot[mystyle,domain=4:8]{2};
@@ -997,7 +961,6 @@
                     xmin=0,xmax=12,
                     ymin=0,ymax=5,
                     width=\columnwidth,
-                    %height=0.618\columnwidth,
                 ]
                 \addplot[mystyle,domain=0:4]{0.125 * x};
                 \addplot[mystyle,domain=4:8]{0.5 + 0.75*(x-4)};
@@ -1012,8 +975,7 @@
 
 \element{graphs}{
 \begin{question}{graphs-Q14}
-    Which displacement-time graph best describes the
-        motion shown in the velocity-time graph below?
+    Which displacement-time graph best describes the motion shown in the velocity-time graph below?
     \begin{center}
     \begin{tikzpicture}
         \begin{axis}[
@@ -1038,8 +1000,7 @@
         \end{axis}
     \end{tikzpicture}
     \end{center}
-    The particle's position at $t_i=\SI{0}{\second}$ is
-        $x_i=\SI{-10}{\meter}$.
+    The particle's position at $t_i=\SI{0}{\second}$ is $x_i=\SI{-10}{\meter}$.
     \begin{multicols}{2}
     \begin{choices}
         \AMCboxDimensions{down=-2.30em}
@@ -1141,10 +1102,8 @@
 
 \element{graphs}{
 \begin{question}{graphs-Q15}
-    Which velocity-time graph best describes the
-        motion shown in the acceleration-time graph below?
-    The particle is initially moving to the right
-        and eventually to the left.
+    Which velocity-time graph best describes the motion shown in the acceleration-time graph below?
+    The particle is initially moving to the right and eventually to the left.
     \begin{center}
     \begin{tikzpicture}
         \begin{axis}[
@@ -1161,10 +1120,8 @@
         \addplot[mystyle,domain=0:4]{0};
         \addplot[mystyle,domain=4:8]{-4};
         \addplot[mystyle,domain=8:12]{0};
-        \addplot[mystyle,dashed,mark=\empty]
-            plot coordinates{ (4,0) (4,-4) };
-        \addplot[mystyle,dashed,mark=\empty]
-            plot coordinates{ (8,0) (8,-4) };
+        \addplot[mystyle,dashed,mark=\empty] plot coordinates{ (4,0) (4,-4) };
+        \addplot[mystyle,dashed,mark=\empty] plot coordinates{ (8,0) (8,-4) };
         \end{axis}
     \end{tikzpicture}
     \end{center}
@@ -1240,10 +1197,8 @@
                 \addplot[mystyle,domain=0:4]{12};
                 \addplot[mystyle,domain=4:8]{0};
                 \addplot[mystyle,domain=8:12]{12};
-                \addplot[mystyle,dashed,mark=\empty]
-                    plot coordinates{ (4,12) (4,0) };
-                \addplot[mystyle,dashed,mark=\empty]
-                    plot coordinates{ (8,12) (8,0) };
+                \addplot[mystyle,dashed,mark=\empty] plot coordinates {(4,12) (4,0)};
+                \addplot[mystyle,dashed,mark=\empty] plot coordinates {(8,12) (8,0)};
                 \end{axis}
             \end{tikzpicture}
         }
@@ -1262,10 +1217,8 @@
                 \addplot[mystyle,domain=0:4]{-12};
                 \addplot[mystyle,domain=4:8]{0};
                 \addplot[mystyle,domain=8:12]{-12};
-                \addplot[mystyle,dashed,mark=\empty]
-                    plot coordinates{ (4,-12) (4,0) };
-                \addplot[mystyle,dashed,mark=\empty]
-                    plot coordinates{ (8,-12) (8,0) };
+                \addplot[mystyle,dashed,mark=\empty] plot coordinates {(4,-12) (4,0)};
+                \addplot[mystyle,dashed,mark=\empty] plot coordinates {(8,-12) (8,0)};
                 \end{axis}
             \end{tikzpicture}
         }
@@ -1284,10 +1237,8 @@
                 \addplot[mystyle,domain=0:4]{0};
                 \addplot[mystyle,domain=4:8]{-12};
                 \addplot[mystyle,domain=8:12]{0};
-                \addplot[mystyle,dashed,mark=\empty]
-                    plot coordinates{ (4,0) (4,-12) };
-                \addplot[mystyle,dashed,mark=\empty]
-                    plot coordinates{ (8,0) (8,-12) };
+                \addplot[mystyle,dashed,mark=\empty] plot coordinates {(4,0) (4,-12)};
+                \addplot[mystyle,dashed,mark=\empty] plot coordinates {(8,0) (8,-12)};
                 \end{axis}
             \end{tikzpicture}
         }
@@ -1351,8 +1302,7 @@
                 ]
                 \addplot[mystyle,domain=0:5]{-8};
                 \addplot[mystyle,domain=5:10]{8};
-                \addplot[mystyle,dashed,mark=\empty]
-                    plot coordinates{ (5,-8) (5,8) };
+                \addplot[mystyle,dashed,mark=\empty] plot coordinates {(5,-8) (5,8)};
                 \end{axis}
             \end{tikzpicture}
         }
@@ -1387,10 +1337,8 @@
                 \addplot[mystyle,domain=0:4.5]{-8};
                 \addplot[mystyle,domain=4.5:5.5]{0};
                 \addplot[mystyle,domain=5.5:10]{-8};
-                \addplot[mystyle,dashed,mark=\empty]
-                    plot coordinates{ (5.5,0) (5.5,-8) };
-                \addplot[mystyle,dashed,mark=\empty]
-                    plot coordinates{ (4.5,0) (4.5,-8) };
+                \addplot[mystyle,dashed,mark=\empty] plot coordinates {(5.5,0) (5.5,-8)};
+                \addplot[mystyle,dashed,mark=\empty] plot coordinates {(4.5,0) (4.5,-8)};
                 \end{axis}
             \end{tikzpicture}
         }
@@ -1409,10 +1357,8 @@
                 \addplot[mystyle,domain=0:4.5]{8};
                 \addplot[mystyle,domain=4.5:5.5]{0};
                 \addplot[mystyle,domain=5.5:10]{8};
-                \addplot[mystyle,dashed,mark=\empty]
-                    plot coordinates{ (5.5,0) (5.5,8) };
-                \addplot[mystyle,dashed,mark=\empty]
-                    plot coordinates{ (4.5,0) (4.5,8) };
+                \addplot[mystyle,dashed,mark=\empty] plot coordinates {(5.5,0) (5.5,8)};
+                \addplot[mystyle,dashed,mark=\empty] plot coordinates {(4.5,0) (4.5,8)};
                 \end{axis}
             \end{tikzpicture}
         }
@@ -1476,8 +1422,7 @@
                 ]
                 \addplot[mystyle,domain=0:5]{-8};
                 \addplot[mystyle,domain=5:10]{8};
-                \addplot[mystyle,dashed,mark=\empty]
-                    plot coordinates{ (5,-8) (5,8) };
+                \addplot[mystyle,dashed,mark=\empty] plot coordinates {(5,-8) (5,8)};
                 \end{axis}
             \end{tikzpicture}
         }
@@ -1512,10 +1457,8 @@
                 \addplot[mystyle,domain=0:4.5]{-8};
                 \addplot[mystyle,domain=4.5:5.5]{0};
                 \addplot[mystyle,domain=5.5:10]{-8};
-                \addplot[mystyle,dashed,mark=\empty]
-                    plot coordinates{ (5.5,0) (5.5,-8) };
-                \addplot[mystyle,dashed,mark=\empty]
-                    plot coordinates{ (4.5,0) (4.5,-8) };
+                \addplot[mystyle,dashed,mark=\empty] plot coordinates {(5.5,0) (5.5,-8)};
+                \addplot[mystyle,dashed,mark=\empty] plot coordinates {(4.5,0) (4.5,-8)};
                 \end{axis}
             \end{tikzpicture}
         }
@@ -1534,10 +1477,8 @@
                 \addplot[mystyle,domain=0:4.5]{8};
                 \addplot[mystyle,domain=4.5:5.5]{0};
                 \addplot[mystyle,domain=5.5:10]{8};
-                \addplot[mystyle,dashed,mark=\empty]
-                    plot coordinates{ (5.5,0) (5.5,8) };
-                \addplot[mystyle,dashed,mark=\empty]
-                    plot coordinates{ (4.5,0) (4.5,8) };
+                \addplot[mystyle,dashed,mark=\empty] plot coordinates {(5.5,0) (5.5,8)};
+                \addplot[mystyle,dashed,mark=\empty] plot coordinates {(4.5,0) (4.5,8)};
                 \end{axis}
             \end{tikzpicture}
         }
@@ -1548,15 +1489,14 @@
 
 
 %% Section: Matching graphs
-%%--------------------
+%%----------------------------------------
 
 %% NOTE: 21A--23A original
 %% NOTE: make 21B--23B alternative, where sinusoudal are correct answers!!
 %% NOTE: make 21C--23C are x-v, x-a, v-a, listed backwards for integration
 \element{graphs}{
 \begin{question}{graphs-Q21A}
-    Which pair of displacement ($x$) and acceleration ($a$)
-        graphs below describe the same motion?
+    Which pair of displacement ($x$) and acceleration ($a$) graphs below describe the same motion?
     \begin{choices}
         \AMCboxDimensions{down=-1.0em}
         \correctchoice{
@@ -1743,8 +1683,7 @@
 
 \element{graphs}{
 \begin{question}{graphs-Q23C}
-    Which pair of velocity ($v$) and acceleration ($a$)
-        graphs below describe the same motion?
+    Which pair of velocity ($v$) and acceleration ($a$) graphs below describe the same motion?
     \begin{choices}
         \AMCboxDimensions{down=-1.0em}
         \correctchoice{
@@ -1837,8 +1776,7 @@
 
 \element{graphs}{
 \begin{question}{graphs-Q21B}
-    Which pair of displacement ($x$) and acceleration ($a$)
-        graphs below describe the same motion?
+    Which pair of displacement ($x$) and acceleration ($a$) graphs below describe the same motion?
     \begin{choices}
         \AMCboxDimensions{down=-1.0em}
         \correctchoice{
@@ -1931,8 +1869,7 @@
 
 \element{graphs}{
 \begin{question}{graphs-Q22B}
-    Which pair of displacement ($x$) and velocity ($v$)
-        graphs below describe the same motion?
+    Which pair of displacement ($x$) and velocity ($v$) graphs below describe the same motion?
     \begin{choices}
         \AMCboxDimensions{down=-1.0em}
         \correctchoice{
@@ -2025,8 +1962,7 @@
 
 \element{graphs}{
 \begin{question}{graphs-Q23B}
-    Which pair of velocity ($v$) and acceleration ($a$)
-        graphs below describe the same motion?
+    Which pair of velocity ($v$) and acceleration ($a$) graphs below describe the same motion?
     \begin{choices}
         \AMCboxDimensions{down=-1.0em}
         \correctchoice{
@@ -2120,9 +2056,7 @@
 
 \element{graphs}{
 \begin{question}{graphs-Q24}
-    Which of the following displacement-time
-        graphs best represents a moving object
-        with constant velocity?
+    Which of the following displacement-time graphs best represents a moving object with constant velocity?
     \begin{multicols}{2}
     \begin{choices}
         \AMCboxDimensions{down=-2.5em}
@@ -2150,7 +2084,6 @@
                     xmin=0,xmax=10,
                     ymin=0,ymax=10,
                     width=\columnwidth,
-                    %height=\columnwidth,
                 ]
                 \addplot[mystyle,domain=0:10]{0.1 * x^2};
                 \end{axis}
@@ -2165,7 +2098,6 @@
                     xmin=0,xmax=10,
                     ymin=0,ymax=10,
                     width=\columnwidth,
-                    %height=\columnwidth,
                 ]
                 \addplot[mystyle,domain=0:10]{10 - 0.1*x*x};
                 \end{axis}
@@ -2180,7 +2112,6 @@
                     xmin=0,xmax=10,
                     ymin=-5,ymax=5,
                     width=\columnwidth,
-                    %height=\columnwidth,
                 ]
                 \addplot[mystyle,domain=0:10,smooth]{3*sin(deg(x))};
                 \end{axis}
@@ -2193,9 +2124,7 @@
 
 \element{graphs}{
 \begin{question}{graphs-Q25}
-    Which of the following displacement-time graphs
-        best represents a moving object with
-        non-zero constant acceleration?
+    Which of the following displacement-time graphs best represents a moving object with non-zero constant acceleration?
     \begin{multicols}{2}
     \begin{choices}
         \AMCboxDimensions{down=-2.5em}
@@ -2266,9 +2195,7 @@
 
 \element{graphs}{
 \begin{question}{graphs-Q26}
-    Which pair of velocity and acceleration graphs best
-        represent the motion of an object falling freely
-        from rest near Earth's surface?
+    Which pair of velocity and acceleration graphs best represent the motion of an object falling freely from rest near Earth's surface?
     \begin{choices}
         \AMCboxDimensions{down=-2.5em}
         \correctchoice{
