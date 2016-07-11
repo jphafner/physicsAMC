@@ -10176,7 +10176,7 @@
                 \draw (0,0) circle (1ex);
                 \foreach \x in {0,90,180,270}
                     \draw[thick] (0,0) -- ++(\x:0.66ex);
-                \foreach \x in {0,4,8,12}
+                \foreach \x in {4,8,12}
                     \draw[thick,-latex] (135:\x mm) arc(135:480:\x mm);
             \end{tikzpicture}
         }
@@ -10186,7 +10186,7 @@
                 \draw (0,0) circle (1ex);
                 \foreach \x in {0,90,180,270}
                     \draw[thick] (0,0) -- ++(\x:0.66ex);
-                \foreach \x in {0,4,8,12}
+                \foreach \x in {4,8,12}
                     \draw[thick,-latex] (420:\x mm) arc(420:80:\x mm);
             \end{tikzpicture}
         }
@@ -15763,7 +15763,7 @@
 \end{question}
 }
 
-\newcommand{\nysedJuneNineteenEightyTwoQEigthyOne}{
+\newcommand{\nysedJuneNineteenEightyTwoQEightyOne}{
 \begin{tikzpicture}
     %% NOTE: draw wave
 \end{tikzpicture}
@@ -15816,7 +15816,7 @@
         \nysedJuneNineteenEightyTwoQEightyOne
     \end{center}
     Which two angles must be equal?
-    \begin{multicols}{4}
+    \begin{multicols}{2}
     \begin{choices}
         \wrongchoice{1 and 2}
         \wrongchoice{2 and 3}
@@ -15862,7 +15862,7 @@
 \end{question}
 }
 
-\newcommand{\nysedJuneNineteenEightyTwoQEigthySix}{
+\newcommand{\nysedJuneNineteenEightyTwoQEightySix}{
 \begin{tikzpicture}
     %% NOTE: draw tikz
 \end{tikzpicture}
@@ -15978,10 +15978,10 @@
     What is the potential difference of teh source?
     \begin{multicols}{2}
     \begin{choices}
-        \wrongchoice{\sI{9.38e5}{\volt}}
-        \wrongchoice{\sI{4.00e3}{\volt}}
-        \wrongchoice{\sI{3.75e2}{\volt}}
-        \wrongchoice{\sI{1.50e2}{\volt}}
+        \wrongchoice{\SI{9.38e5}{\volt}}
+        \wrongchoice{\SI{4.00e3}{\volt}}
+        \wrongchoice{\SI{3.75e2}{\volt}}
+        \wrongchoice{\SI{1.50e2}{\volt}}
     \end{choices}
     \end{multicols}
 \end{question}
@@ -16084,7 +16084,7 @@
         \wrongchoice{
             \begin{tikzpicture}
                 \draw[dashed,white!60!black] (0,0) rectangle (1,1);
-                \draw[thick,latex] (0,0.5) -- (1,0.5);
+                \draw[thick,-latex] (0,0.5) -- (1,0.5);
             \end{tikzpicture}
         }
     \end{choices}
@@ -16179,6 +16179,7 @@
     \begin{center}
         \nysedJuneNineteenEightyTwoQOneHundredOne
     \end{center}
+    %% start question
     What is the net combined charge on both spheres?
     \begin{multicols}{2}
     \begin{choices}
@@ -16198,19 +16199,348 @@
     \begin{center}
         \nysedJuneNineteenEightyTwoQOneHundredOne
     \end{center}
+    %% start question
     The force between these spheres is:
     \begin{multicols}{2}
     \begin{choices}
-        \wrongchoice{\SI{1.8e-2}{\newton}}
-        \wrongchoice{\SI{3.60-2}{\newton}}
-        \wrongchoice{\SI{4.50-2}{\newton}}
-        \wrongchoice{\SI{9.00-2}{\newton}}
+        \wrongchoice{\SI{1.80e-2}{\newton}}
+        \wrongchoice{\SI{3.60e-2}{\newton}}
+        \wrongchoice{\SI{4.50e-2}{\newton}}
+        \wrongchoice{\SI{9.00e-2}{\newton}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{nysed}{
+\begin{question}{June1982-Q103}
+    The diagram below represents two small, charged conducting spheres,
+        identical in size, located \SI{2.00}{\meter} apart.
+    \begin{center}
+        \nysedJuneNineteenEightyTwoQOneHundredOne
+    \end{center}
+    %% start question
+    Which diagram best represents the electric field between the two spheres?
+    \begin{multicols}{2}
+    \begin{choices}
+        \AMCboxDimensions{down=-0.4cm}
+        \wrongchoice{
+            \begin{tikzpicture}
+                %% NOTE: TODO: draw field lines
+            \end{tikzpicture}
+        }
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{nysed}{
+\begin{question}{June1982-Q104}
+    The diagram below represents two small, charged conducting spheres,
+        identical in size, located \SI{2.00}{\meter} apart.
+    \begin{center}
+        \nysedJuneNineteenEightyTwoQOneHundredOne
+    \end{center}
+    A conductor is connected between spheres $A$ and $B$ and then removes after charge has transfered.
+    %% start question
+    During the period of the conductor was attached,
+        what was the direction of the flow of the charged particles?
+    \begin{choices}
+        \wrongchoice{Protons flowed from $A$ to $B$, only.}
+        \wrongchoice{Electrons flowed from $B$ to $A$, only.}
+        \wrongchoice{Protons flowed from $A$ to $B$ as electrons flowed from $B$ to $A$.}
+        \wrongchoice{Protons flowed from $B$ to $A$ as electrons flowed from $A$ to $B$.}
+    \end{choices}
+\end{question}
+}
+
+\element{nysed}{
+\begin{question}{June1982-Q105}
+    The diagram below represents two small, charged conducting spheres,
+        identical in size, located \SI{2.00}{\meter} apart.
+    \begin{center}
+        \nysedJuneNineteenEightyTwoQOneHundredOne
+    \end{center}
+    A conductor is connected between spheres $A$ and $B$ and then removes after charge has transfered.
+    %% start question
+    What is the net charge on each sphere?
+    \begin{choices}
+        \wrongchoice{Each has a charge of \SI{+5.0e-7}{\coulomb}.}
+        \wrongchoice{Each has a charge of \SI{-5.0e-7}{\coulomb}.}
+        \wrongchoice{Each has a charge of \SI{-4.5e-6}{\coulomb}.}
+        \wrongchoice{Sphere $A$ has a charge of \SI{+1.0e-6}{\coulomb},
+            and $B$ has a charge of \SI{-1.0e-6}{\coulomb}.}
+    \end{choices}
+\end{question}
+}
+
+\element{nysed}{
+\begin{question}{June1982-Q106}
+    How many beta particles are given off when on atom of U-238 completely disintegrates to Pb-206?
+    \begin{multicols}{4}
+    \begin{choices}
+        \wrongchoice{6}
+        \wrongchoice{8}
+        \wrongchoice{10}
+        \wrongchoice{14}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{nysed}{
+\begin{question}{June1982-Q107}
+    Which isotope is used in definiting the atomic mass unit?
+    \begin{multicols}{4}
+    \begin{choices}
+        \wrongchoice{\ce{^{1}_{1}H}}
+        \wrongchoice{\ce{^{238}_{92}U}}
+        \wrongchoice{\ce{^{16}_{8}O}}
+        \wrongchoice{\ce{^{12}_{6}C}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{nysed}{
+\begin{question}{June1982-Q108}
+    If \SI{100}{\mega\eV} of energy is released by an atom during fission,
+        the amount of mass that is converted to energy is approximately:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{1}{\amu}}
+        \wrongchoice{\SI{0.1}{\amu}}
+        \wrongchoice{\SI{9}{\amu}}
+        \wrongchoice{\SI{9e4}{\amu}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{nysed}{
+\begin{question}{June1982-Q109}
+    The function of the moderator in a nuclear reactor is to:
+    \begin{choices}
+        \wrongchoice{absorb neutrons}
+        \wrongchoice{slow down neutrons}
+        \wrongchoice{speed up neutrons}
+        \wrongchoice{produce extra neutrons}
+    \end{choices}
+\end{question}
+}
+
+\element{nysed}{
+\begin{question}{June1982-Q110}
+    In the Rutherford scattering experiment,
+        metal foils were bombarded with:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{alpha particles}
+        \wrongchoice{beta particles}
+        \wrongchoice{protons}
+        \wrongchoice{neutrons}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+%% Q111 to Q115
+\element{nysed}{
+\begin{question}{June1982-Q112}
+    When nitrogen is bombarded with protons,
+        the first reaction that occurs is \ce{^{14}_{7}N + ^{1}_{1}H -> ^{15}_{8}O + $X$}.
+    The oxygen produced is radioactive,
+        with a half-life of \SI{0.10}{\second},
+        and decays in the following manner:
+        \ce{^{15}_{8}O -> ^{15}_{7}N + $Y$}.
+    %% start question
+    The first reaction is an example of:
+    \begin{choices}
+        \wrongchoice{alpha decay}
+        \wrongchoice{beta decay}
+        \wrongchoice{induced transmutation}
+        \wrongchoice{natural radioactivity}
+    \end{choices}
+\end{question}
+}
+
+\element{nysed}{
+\begin{question}{June1982-Q113}
+    When nitrogen is bombarded with protons,
+        the first reaction that occurs is \ce{^{14}_{7}N + ^{1}_{1}H -> ^{15}_{8}O + $X$}.
+    The oxygen produced is radioactive,
+        with a half-life of \SI{0.10}{\second},
+        and decays in the following manner:
+        \ce{^{15}_{8}O -> ^{15}_{7}N + $Y$}.
+    %% start question
+    In the second reaction, $Y$ repressents:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{an electon}
+        \wrongchoice{a neutron}
+        \wrongchoice{a positron}
+        \wrongchoice{a proton}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{nysed}{
+\begin{question}{June1982-Q114}
+    When nitrogen is bombarded with protons,
+        the first reaction that occurs is \ce{^{14}_{7}N + ^{1}_{1}H -> ^{15}_{8}O + $X$}.
+    The oxygen produced is radioactive,
+        with a half-life of \SI{0.10}{\second},
+        and decays in the following manner:
+        \ce{^{15}_{8}O -> ^{15}_{7}N + $Y$}.
+    %% start question
+    If a \SI{4.0}{\kilo\gram} sample of \ce{^{15}_{8}O} decays for \SI{0.40}{\second},
+        the mass of \ce{^{15}_{8}O} remaining will be:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{1.0}{\kilo\gram}}
+        \wrongchoice{\SI{2.0}{\kilo\gram}}
+        \wrongchoice{\SI{0.50}{\kilo\gram}}
+        \wrongchoice{\SI{0.25}{\kilo\gram}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{nysed}{
+\begin{question}{June1982-Q115}
+    When nitrogen is bombarded with protons,
+        the first reaction that occurs is \ce{^{14}_{7}N + ^{1}_{1}H -> ^{15}_{8}O + $X$}.
+    The oxygen produced is radioactive,
+        with a half-life of \SI{0.10}{\second},
+        and decays in the following manner:
+        \ce{^{15}_{8}O -> ^{15}_{7}N + $Y$}.
+    %% start question
+    As the amount of \ce{^{15}_{8}O} decreases, the half-life:
+    \begin{choices}
+        \wrongchoice{decreases}
+        \wrongchoice{increases}
+        \wrongchoice{remains the same}
+    \end{choices}
+\end{question}
+}
+
+\newcommand{\nysedJuneNineteenEightyTwoQOneHundredSixteen}{
+\begin{tikzpicture}
+    %% NOTE: draw tikz
+\end{tikzpicture}
+}
+
+\element{nysed}{
+\begin{question}{June1982-Q116}
+    The graph below represents the maximum kinetic energy of photoelectrons as a function of incident electromagnetic frequencies for two different photoemissive metals, $A$ and $B$.
+    \begin{center}
+        \nysedJuneNineteenEightyTwoQOneHundredSixteen
+    \end{center}
+    %% start question
+    The slope of the each line is known as:
+    \begin{choices}
+        \wrongchoice{Bohr's constant}
+        \wrongchoice{the photoelectric constant}
+        \wrongchoice{Compton's constant}
+        \wrongchoice{Planck's constant}
+    \end{choices}
+\end{question}
+}
+
+\element{nysed}{
+\begin{question}{June1982-Q117}
+    The graph below represents the maximum kinetic energy of photoelectrons as a function of incident electromagnetic frequencies for two different photoemissive metals, $A$ and $B$.
+    \begin{center}
+        \nysedJuneNineteenEightyTwoQOneHundredSixteen
+    \end{center}
+    %% start question
+    The threshold frequency for metal $A$ is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{1.0e14}{\hertz}}
+        \wrongchoice{\SI{2.0e14}{\hertz}}
+        %% Double check 3, e11 or e14?
+        \wrongchoice{\SI{3.0e11}{\hertz}}
+        \wrongchoice{\SI{0.0}{\hertz}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{nysed}{
+\begin{question}{June1982-Q118}
+    The graph below represents the maximum kinetic energy of photoelectrons as a function of incident electromagnetic frequencies for two different photoemissive metals, $A$ and $B$.
+    \begin{center}
+        \nysedJuneNineteenEightyTwoQOneHundredSixteen
+    \end{center}
+    %% start question
+    The work function for metal $B$ is closest to:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{0.0}{\joule}}
+        \wrongchoice{\SI{2.0e-19}{\joule}}
+        \wrongchoice{\SI{3.0e-19}{\joule}}
+        \wrongchoice{\SI{1.5e-14}{\joule}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{nysed}{
+\begin{question}{June1982-Q119}
+    The graph below represents the maximum kinetic energy of photoelectrons as a function of incident electromagnetic frequencies for two different photoemissive metals, $A$ and $B$.
+    \begin{center}
+        \nysedJuneNineteenEightyTwoQOneHundredSixteen
+    \end{center}
+    %% start question
+    Compared to the work function for metal $B$,
+        the work function for metal $B$ is:
+    The work function for metal $B$ is closest to:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{less}
+        \wrongchoice{greater}
+        \wrongchoice{the same}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{nysed}{
+\begin{question}{June1982-Q120}
+    The graph below represents the maximum kinetic energy of photoelectrons as a function of incident electromagnetic frequencies for two different photoemissive metals, $A$ and $B$.
+    \begin{center}
+        \nysedJuneNineteenEightyTwoQOneHundredSixteen
+    \end{center}
+    %% start question
+    Monochromatic light with a period of \SI{2.0e-5}{\second} is incident on both of the metals.
+    Compared to the energy of the photoelectrons emitted by metal $A$,
+        the energy of the photoelectrons emitted by metal $B$ is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{less}
+        \wrongchoice{greater}
+        \wrongchoice{the same}
     \end{choices}
     \end{multicols}
 \end{question}
 }
 
 
+%% Section June1981
+%%--------------------
+
+%% part I
+\element{nysed}{
+\begin{question}{June1981-Q01}
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
 
 
 \endinput

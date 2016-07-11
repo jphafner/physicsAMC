@@ -3,7 +3,159 @@
 %% NYSED Physics Regents Examination
 %%--------------------------------------------------
 
-%% this section contains 110 problems
+%% this section contains 115 problems
+
+
+%% Section June2016
+%%--------------------
+\element{nysed}{
+\begin{question}{June2016-Q38}
+    A hair dryer with a resistance of \SI{9.6}{\ohm} operates at \SI{120}{\volt} for \SI{2.5}{\minute}.
+    The total electrical energy used by the dryer during this time interval is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{2.9e3}{\joule}}
+        \wrongchoice{\SI{3.8e3}{\joule}}
+        \wrongchoice{\SI{1.7e5}{\joule}}
+      \correctchoice{\SI{2.3e5}{\joule}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{nysed}{
+\begin{question}{June2016-Q42}
+    A \SI{2700}{\ohm} resistor in an electric circuit draws a current of \SI{2.4}{\milli\ampere}.
+    The total charge that passes through the resistor in \SI{15}{\second} is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{1.6e-4}{\coulomb}}
+      \correctchoice{\SI{1.6e-1}{\coulomb}}
+        \wrongchoice{\SI{3.6e-2}{\coulomb}}
+        \wrongchoice{\SI{3.6e1}{\coulomb}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{nysed}{
+\begin{question}{June2016-Q44}
+    Which graph represents the relationship between the potential difference applied to a copper wire and the resulting current in the wire at constant temperature?
+    \begin{multicols}{2}
+    \begin{choices}
+        \AMCboxDimensions{down=-2.5em}
+        %% ANS is 1
+        \correctchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=bottom,
+                    axis line style={->},
+                    xlabel={current},
+                    xtick=\empty,
+                    ylabel={potential},
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=0,ymax=11,
+                    width=0.95\columnwidth,
+                    very thin,
+                ]
+                \addplot[line width=1pt,domain=0:10]{x};
+                \end{axis}
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=bottom,
+                    axis line style={->},
+                    xlabel={current},
+                    xtick=\empty,
+                    ylabel={potential},
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=0,ymax=11,
+                    width=0.95\columnwidth,
+                    very thin,
+                ]
+                \addplot[line width=1pt,domain=0:10]{0.1*x*x};
+                \end{axis}
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=bottom,
+                    axis line style={->},
+                    xlabel={current},
+                    xtick=\empty,
+                    ylabel={potential},
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=0,ymax=11,
+                    width=0.95\columnwidth,
+                    very thin,
+                ]
+                \addplot[line width=1pt,domain=0:10]{10-x};
+                \end{axis}
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=bottom,
+                    axis line style={->},
+                    xlabel={current},
+                    xtick=\empty,
+                    ylabel={potential},
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=0,ymax=11,
+                    width=0.95\columnwidth,
+                    very thin,
+                ]
+                \addplot[line width=1pt,domain=0:10]{10/x};
+                \end{axis}
+            \end{tikzpicture}
+        }
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{nysed}{
+\begin{question}{June2016-Q45}
+    A tungsten wire has resistance $R$ at \SI{20}{\degreeCelsius}.
+    A second tungsten wire at \SI{20}{\degreeCelsius} has twice the length and half the cross-sectional area of the first wire. 
+    In terms of $R$, the resistance of the second wire is:
+    \begin{multicols}{4}
+    \begin{choices}
+        \wrongchoice{$\dfrac{R}{2}$}
+        \wrongchoice{$R$}
+        \wrongchoice{$2R$}
+      \correctchoice{$4R$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{nysed}{
+\begin{question}{June2016-Q46}
+    After an incandescent lamp is turned on,
+        the temperature of its filament rapidly increases from room temperature to its operating temperature.
+    As the temperature of the filament increases,
+        what happens to the resistance of the filament and the current through the filament?
+    \begin{choices}
+      \correctchoice{The resistance increases and the current decreases.}
+        \wrongchoice{The resistance increases and the current increases.}
+        \wrongchoice{The resistance decreases and the current decreases.}
+        \wrongchoice{The resistance decreases and the current increases.}
+    \end{choices}
+\end{question}
+}
 
 
 %% Section June2015
@@ -3340,8 +3492,6 @@
     \end{choices}
 \end{question}
 }
-
-
 
 
 \endinput

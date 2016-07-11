@@ -3,7 +3,7 @@
 
 -[ ] modern should have relativity and standard model, or split relativity into separate??
 
--[ ] make NYSED-atomic, take from modern, also NYSED_nuclear
+-[ ] make NYSED-atomic, take from modern, also NYSED-nuclear
 -[ ] NYSED-atomic: electron orbitals, chemistry, spectroscopy, and photoelectric effect??
 
 -[ ] make NYSED-oscillations?? is this harmonic??
