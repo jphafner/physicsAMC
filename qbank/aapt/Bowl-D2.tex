@@ -1,0 +1,870 @@
+
+
+%% AAPT Physics Bowl Exams Questions
+%%----------------------------------------
+
+
+%% This section has XX problems
+
+
+%% PhysicsBowl 2015
+%%----------------------------------------
+\element{aapt}{ %% Bowl-D2
+\begin{question}{bowl-2015-q10}
+    For the circuit shown, the three light bulbs have identical resistance $R$,
+        the battery is ideal, and all wires have no resistance.
+    \begin{center}
+    \ctikzset{bipoles/length=0.75cm}
+    \begin{circuitikz}[scale=1.33]
+        %% Parallel Circuit
+        \draw (0,0) to [battery,l=$\xi$] (2,0)
+                    to (2,1) to [R,l_=$\#3$] (0,1);
+        \draw (2,1) to (2,2)
+                    to [R,l_=$\#1$] (1,2)
+                    to [R,l_=$\#2$] (0,2)
+                    to (0,0);
+        \draw (0,0.5) to (-0.5,0.5)
+                    to [cspst,l=$S$] (-0.5,1.5)
+                    to (0,1.5);
+    \end{circuitikz}
+    \end{center}
+    Which one of the following choices correctly identifies the light bulbs
+        that either become dimmer or go out completely when the switch,
+        $S$, in the circuit is closed?
+    \begin{choices}
+        \wrongchoice{All 3 bulbs}
+        \wrongchoice{Bulbs $\#1$ and $\#2$ only}
+        \wrongchoice{Bulb $\#3$ only}
+        \wrongchoice{Bulb $\#1$ only}
+      \correctchoice{None of the bulbs}
+    \end{choices}
+\end{question}
+}
+
+\element{aapt}{ %% Bowl-D2
+\begin{question}{bowl-2015-q39}
+    For the circuit shown, the four light bulbs have identical resistance,
+        the battery is ideal and all wires have no resistance.
+    \begin{center}
+    \ctikzset{bipoles/length=0.75cm}
+    \begin{circuitikz}[scale=1.5]
+        \draw (0,0) to [battery,l=$\xi$] (0,2)
+                    to (2,2) to [R] (2,1)
+                    to [R] (2,0) to (0,0);
+        \draw (2,2) to (4,2) to (4,1) to [R] (4,0) to (2,0);
+        \draw (2,1) to [cspst,l=$S$] (3,1) to [R] (4,1);
+        \draw[fill] (0,0) circle (1pt) node[anchor=east] {$P$};
+        \draw[fill] (4,1) circle (1pt) node[anchor=west] {$X$};
+        \draw[fill] (2,1) circle (1pt) node[anchor=east] {$W$};
+    \end{circuitikz}
+    \end{center}
+    After the switch, $S$, in the circuit is closed,
+        which one of the following choices correctly describes what happens to the magnitude of the current at the point labeled $P$ and to the magnitude of the potential difference from $W$ to $X$?
+    \begin{center}
+    \begin{tabu}{cX[c]X[c]}
+        \toprule
+        \makebox[1.5em][c]{\textnumero}
+            & Current at $P$ & $\Delta V_{XW}$ \\
+        \bottomrule
+    \end{tabu}
+    \end{center}
+    \begin{choices}
+        \wrongchoice{\begin{tabu}{X[c]X[c]} No Change & Increases \\ \end{tabu}}
+        \wrongchoice{\begin{tabu}{X[c]X[c]} Decreases & Increases \\ \end{tabu}}
+        \wrongchoice{\begin{tabu}{X[c]X[c]} Increases & Increases \\ \end{tabu}}
+        \wrongchoice{\begin{tabu}{X[c]X[c]} Decreases & Decreases \\ \end{tabu}}
+      \correctchoice{\begin{tabu}{X[c]X[c]} Increases & Decreases \\ \end{tabu}}
+    \end{choices}
+\end{question}
+}
+
+
+%% PhysicsBowl 2014
+%%----------------------------------------
+\element{aapt}{ %% Bowl-D2
+\begin{question}{bowl-2014-q22}
+    For the circuit shown, all three light bulbs have the same resistance.
+    \begin{center}
+    \ctikzset{bipoles/length=0.75cm}
+    \begin{circuitikz}[scale=1.33]
+        \draw (0,0) to (0,2) to [battery,l=$\xi$] (2,2) to [R,l=\#1] (3,2) to (3,0) to (2,0) to [R,l_=\#3] (0,0);
+        \draw (2,2) to [R,l=\#2] (2,0);
+    \end{circuitikz}
+    \end{center}
+    The battery and wires have no resistance.
+    What is the proper ranking of the bulbs' brightness?
+    \begin{choices}
+        \wrongchoice{Bulb 1 $=$ Bulb 2 $=$ Bulb 3}
+        \wrongchoice{Bulb 3 $<$ Bulb 2 $=$ Bulb 1}
+        \wrongchoice{Bulb 2 $<$ Bulb 1 $<$ Bulb 3}
+      \correctchoice{Bulb 1 $=$ Bulb 2 $<$ Bulb 3}
+        \wrongchoice{Bulb 1 $=$ Bulb 3 $<$ Bulb 2}
+    \end{choices}
+\end{question}
+}
+
+\element{aapt}{ %% Bowl-D2
+\begin{question}{bowl-2014-q38}
+    In the circuit shown, the switch $S$ has been left open for a very long time.
+    \begin{center}
+    \ctikzset{bipoles/length=0.75cm}
+    \begin{circuitikz}[scale=1.00]
+        \draw (0,0) to [battery,l=\SI{9}{\volt}] (0,2) to [R,l=\SI{3}{\kilo\ohm}] (2,2) to [R,l=\SI{1}{\kilo\ohm}] (4,2) to (4,0);
+        \draw (0,0) to (2,0) to [C,l=\SI{10}{\micro\farad}] (4,0);
+        \draw (2,0) to [cspst,l=$S$] (2,2);
+    \end{circuitikz}
+    \end{center}
+    All circuit elements are considered to be ideal.
+    Which one of the following statements best describes the behavior of the current
+        through the switch $S$ once it is closed?
+    \begin{choices}
+      \correctchoice{The current initially is \SI{12}{\milli\ampere} and decreases to a steady \SI{3}{\milli\ampere}.}
+        \wrongchoice{The current initially is \SI{3}{\milli\ampere} and increases to a steady \SI{12}{\milli\ampere}.}
+        \wrongchoice{The current initially is \SI{9}{\milli\ampere} and decreases to a steady \SI{3}{\milli\ampere}.}
+        \wrongchoice{The current initially is \SI{6}{\milli\ampere} and decreases to a steady \SI{3}{\milli\ampere}.}
+        \wrongchoice{The current is a steady \SI{3}{\milli\ampere}.}
+    \end{choices}
+\end{question}
+}
+
+
+%% PhysicsBowl 2013
+%%----------------------------------------
+\element{aapt}{ %% Bowl-D2
+\begin{question}{bowl-2013-q15}
+    In a circuit, the flow of electrons in a horizontal wire produces a constant current of \SI{3.2}{\ampere} for a time of \SI{3.0}{\hour}.
+    Which one of the following choices best represents the number of electrons that pass through a vertical cross-section of the wire during this time?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\num{9.60}}
+        \wrongchoice{\num{6.00e19}}
+        \wrongchoice{\num{7.20e22}}
+      \correctchoice{\num{2.16e23}}
+        \wrongchoice{\num{6.02e23}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{aapt}{ %% Bowl-D2
+\begin{question}{bowl-2013-q22}
+    Four resistors, each of resistance $R$,
+        are connected to a battery in the following way: ``Two resistors are connected in series.
+    This combination of two resistors is connected in parallel to a third resistor.
+    This set of three resistors is connected in series to a fourth resistor.''
+    What is the equivalent resistance of this arrangement of four resistors?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\dfrac{5}{2}R$}
+      \correctchoice{$\dfrac{5}{3}R$}
+        \wrongchoice{$\dfrac{4}{3}R$}
+        \wrongchoice{$\dfrac{3}{5}R$}
+        \wrongchoice{$\dfrac{2}{5}R$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{aapt}{ %% Bowl-D2
+\begin{question}{bowl-2013-q38}
+    Five identical light bulbs are connected into a circuit as shown.
+    \begin{center}
+    \ctikzset{bipoles/length=0.75cm}
+    \begin{circuitikz}[scale=1.00]
+        \draw (0,4) to [battery,l=$\xi$] (3,4) to (4,4)
+                    to [R,l=\#1] (4,3)
+                    to [R,l=\#3] (4,0)
+                    to (0,0)
+                    to [R,l=\#4] (0,3) to (0,4);
+        \draw (0,3) to (2,3) to [R,l=\#2] (4,3);
+        \draw (2,3) to [R,l=\#5](2,2) to [cspst,l=$S$] (2,0);
+    \end{circuitikz}
+    \end{center}
+    All wires are ideal with no resistance,
+        and the ideal battery has emf $\xi$.
+    When the switch $S$ in the circuit is closed,
+        aside from bulb \#5, which of the other bulbs brighten?
+    \begin{choices}
+        \wrongchoice{Only Bulb \#4}
+      \correctchoice{Only Bulb \#1 and \#3}
+        \wrongchoice{Only Bulb \#3 and \#4}
+        \wrongchoice{Only Bulb \#2, \#3, and \#4}
+        \wrongchoice{Only Bulb \#1, \#3, and \#4}
+    \end{choices}
+\end{question}
+}
+
+
+%% PhysicsBowl 2012
+%%----------------------------------------
+\element{aapt}{ %% Bowl-D2
+\begin{question}{bowl-2012-q09}
+    A constant current of \SI{4.00}{\ampere} through a light bulb results in a power of \SI{24.0}{\watt} associated with the bulb.
+    Which one of the following choices best represents the resistance of the light bulb?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{96.0}{\ohm}}
+        \wrongchoice{\SI{6.00}{\ohm}}
+        \wrongchoice{\SI{2.45}{\ohm}}
+      \correctchoice{\SI{1.50}{\ohm}}
+        \wrongchoice{\SI{0.67}{\ohm}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{aapt}{ %% Bowl-D2
+\begin{question}{bowl-2012-q14}
+    For the circuit shown below,
+        what is the equivalent resistance?
+    \begin{center}
+    \ctikzset{bipoles/length=0.75cm}
+    \begin{circuitikz}
+        \draw (0,0) to (0,2) to [battery,l=$\xi$] (2,2)
+                    to [R,l=$R$] (4,2) to [R,l=$R$] (6,2) to (6,0) to (0,0);
+        \draw (4,2) to [R,l=$R$] (4,0);
+    \end{circuitikz}
+    \end{center}
+    Assume that all wires are ideal, the battery has no
+        internal resistance, and all three resistors have
+        identical resistance $R$.
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$3R$}
+      \correctchoice{$\dfrac{3}{2}R$}
+        \wrongchoice{$\dfrac{2}{3}R$}
+        \wrongchoice{$\dfrac{1}{3}R$}
+        \wrongchoice{$R$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{aapt}{ %% Bowl-D2
+\begin{question}{bowl-2012-q39}
+    For the circuit shown, all wires have no resistance,
+        the battery has a constant internal resistance of $r=\SI{8.0}{\ohm}$ and the two light bulbs (\#1 and \#2) are identical,
+        each with resistance $R_{bulb}$.
+    \begin{center}
+    \ctikzset{bipoles/length=0.75cm}
+    \begin{circuitikz}[yscale=0.66]
+        \draw (0,0) to [battery] (0,2) to [R,l=$r$] (0,4) to [vR,l=$R$] (3,4) to [R,l=\#1] (3,0) to (0,0);
+        \draw (3,4) to (5,4) to [R,l=\#2] (5,2) to [cspst,l=$S$] (5,0) to (3,0);
+    \end{circuitikz}
+    \end{center}
+    The variable resistor is initially set to $R=\SI{26.0}{\ohm}$.
+    The switch $S$ in the circuit now is closed.
+    To what resistance must the variable resistor be set if bulb \#1 is to have the same brightness after the switch is closed as it did with the switch open?
+    \begin{choices}
+      \correctchoice{\SI{9.0}{\ohm}}
+        \wrongchoice{\SI{13.0}{\ohm}}
+        \wrongchoice{\SI{16.0}{\ohm}}
+        \wrongchoice{\SI{22.0}{\ohm}}
+        \wrongchoice{The answer can be computed only if the bulbs' resistance $R_{bulb}$ is known.}
+    \end{choices}
+\end{question}
+}
+
+
+%% PhysicsBowl 2011
+%%----------------------------------------
+\element{aapt}{ %% Bowl-D2
+\begin{question}{bowl-2011-q38}
+    For the circuit shown,
+        the four light bulbs have identical resistance.
+    \begin{center}
+    \ctikzset{bipoles/length=0.8cm}
+    \begin{circuitikz}
+        \draw (0,0) to [battery,l=$\xi$] (0,4) to (2,4) to [R,l=\#1] (2,2) to [R,l=\#2] (2,0) to (0,0);
+        \draw (2,4) to (4,4) to [R,l=\#3] (4,2) to (4,0) to [cspst,l_=$S$] (2,0);
+        \draw (2,2) to [R,l=\#4] (4,2);
+    \end{circuitikz}
+    \end{center}
+    All wires have zero resistance,
+        and the battery is assume to be ideal with emf $\xi$.
+    When the switch, $S$,  in the circuit is closed,
+        a wire of zero resistance is added into the circuit.
+    Which one of the light bulbs will be dimmer after the switch is closed?
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{Only bulb \#2}
+        \wrongchoice{Only bulb \#4}
+        \wrongchoice{Only bulb \#1 and \#4}
+        \wrongchoice{Only bulb \#2 and \#4}
+        \wrongchoice{Only bulb \#1, \#2, and \#4}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% PhysicsBowl 2009
+%%----------------------------------------
+\element{aapt}{ %% Bowl-D2
+\begin{question}{bowl-2009-q30}
+    In terms of the seven fundamental SI units in the MKS system,
+        the Ohm (\si{\ohm}) is written as:
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{$\dfrac{\si{\kilo\gram\meter\squared}}{\si{\ampere\squared\second\cubed}}$}
+        \wrongchoice{$\dfrac{\si{\kilo\gram\meter\squared\second}}{\si{\coulomb\squared}}$}
+        \wrongchoice{$\dfrac{\si{\kilo\gram\meter}}{\si{\coulomb\second}}$}
+        \wrongchoice{$\dfrac{\si{\kilo\gram\meter\squared}}{\si{\ampere\second\squared}}$}
+        \wrongchoice{$\dfrac{\si{\kilo\gram\second\squared}}{\si{\ampere\squared\meter\squared}}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% PhysicsBowl 2008
+%%----------------------------------------
+\element{aapt}{ %% Bowl-D4
+\begin{question}{bowl-2008-q05}
+    Approximately how much would it cost to keep a \SI{100}{\watt}
+        light bulb lit continuously for 1 year at a rate of \$\num{0.10} \si{\per\kilo\watt\per\hour}.
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\$\num{1}}
+        \wrongchoice{\$\num{10}}
+      \correctchoice{\$\num{100}}
+        \wrongchoice{\$\num{1 000}}
+        \wrongchoice{\$\num{100 000}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% PhysicsBowl 2007
+%%----------------------------------------
+\element{aapt}{ %% Bowl-D2
+\begin{question}{bowl-2007-q27}
+    A junior Thomas Edison wants to make a brighter light bulb.
+    He decides to modify the filament.
+    How should the filament of a light bulb be modified in order to make the light bulb produce more light at a given voltage?
+    \begin{choices}
+        \wrongchoice{Increase the resistivity only.}
+      \correctchoice{Increase the diameter only.}
+        \wrongchoice{Decrease the diameter only.}
+        \wrongchoice{Decrease the diameter and increase the resistivity.}
+        \wrongchoice{Increase the length only.}
+    \end{choices}
+\end{question}
+}
+
+
+%% PhysicsBowl 2006
+%%----------------------------------------
+\element{aapt}{ %% Bowl-D2
+\begin{question}{bowl-2006-q33}
+    A current through the thin filament wire of a light bulb causes the filament to become white hot,
+        while the larger wires connected to the light bulb remain much cooler.
+    This happens because
+    \begin{choices}
+        \wrongchoice{the larger connecting wires have more resistance than the filament.}
+      \correctchoice{the thin filament has more resistance than the larger connecting wires.}
+        \wrongchoice{the filament wire is not insulated.}
+        \wrongchoice{the current in the filament is greater than that through the connecting wires.}
+        \wrongchoice{the current in the filament is less than that through the connecting wires.}
+    \end{choices}
+\end{question}
+}
+
+\element{aapt}{ %% Bowl-D2
+\begin{question}{bowl-2006-q34}
+    How much charge will pass through the identified resistor in 5 seconds once the circuit is closed?
+    \begin{center}
+    \ctikzset{bipoles/length=0.75cm}
+    \begin{circuitikz}[scale=0.8]
+        \draw (0,0) to [battery,l=\SI{24}{\volt}] (0,3) to [R,l=\SI{4}{\ohm}] (3,3) to [R,l=\SI{4}{\ohm}] (3,0) to [R,l=\SI{4}{\ohm}] (0,0);
+        \draw (3,3) to (5,3) to [R,l=\SI{4}{\ohm}] (5,0) to (3,0);
+        \node[pin={[text width=3em,pin distance=6mm,pin edge={<-,shorten <=1mm}]60:this resistor}] at (5,1.5) {};
+    \end{circuitikz}
+    \end{center}
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{1.2}{\coulomb}}
+        \wrongchoice{\SI{2.4}{\coulomb}}
+      \correctchoice{\SI{6}{\coulomb}}
+        \wrongchoice{\SI{12}{\coulomb}}
+        \wrongchoice{\SI{24}{\coulomb}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% PhysicsBowl 2005
+%%----------------------------------------
+\element{aapt}{ %% Bowl-D2
+\begin{question}{bowl-2005-q16}
+    A cylindrical graphite resistor has length $L$ and cross-sectional area $A$.
+    It is to be placed into a circuit,
+        but it first must be cut in half so that the new length is $\frac{1}{2} L$.
+    What is the ratio of the new resistivity to the old resistivity of the cylindrical resistor?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\num{4}}
+        \wrongchoice{\num{2}}
+      \correctchoice{\num{1}}
+        \wrongchoice{\num{1/2}}
+        \wrongchoice{\num{1/4}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{aapt}{ %% Bowl-D2
+\begin{question}{bowl-2005-q21}
+    A household iron used to press clothes is marked ``\SI{120}{\volt}, \SI{600}{\watt}.''
+    In normal use, the current in it is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{0.2}{\ampere}}
+        \wrongchoice{\SI{2}{\ampere}}
+        \wrongchoice{\SI{4}{\ampere}}
+      \correctchoice{\SI{5}{\ampere}}
+        \wrongchoice{\SI{7.2}{\ampere}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{aapt}{ %% Bowl-D2
+\begin{question}{bowl-2005-q37}
+    For the circuit shown, a shorting wire of negligible resistance is added to the circuit between points $A$ and $B$.
+    \begin{center}
+    \ctikzset{bipoles/length=0.75cm}
+    \begin{circuitikz}
+        %% circuit
+        \draw (0,0) to [battery,l=$\xi$] (0,3) to [R,l=\#1] (3,3) to [R,l=\#2] (3,0) to (0,0);
+        \draw (3,3) to (6,3) to [R,l=\#3] (6,1.5) to [R,l=\#4] (6,0) to (3,0);
+        %% point A and B
+        \fill (4.5,3) circle (2pt) node[anchor=south,yshift=2pt] {$A$};
+        \fill (6,1.5) circle (2pt) node[anchor=west,xshift=2pt] {$B$};
+    \end{circuitikz}
+    \end{center}
+    When this shorting wire is added, bulb \#3 goes out.
+    Which bulbs (all identical) in the circuit brighten?
+    \begin{choices}
+        \wrongchoice{Only Bulb 2.}
+        \wrongchoice{Only Bulb 4}
+      \correctchoice{Only Bulbs 1 and 4.}
+        \wrongchoice{Only Bulbs 2 and 4}
+        \wrongchoice{Bulbs 1,2 ,and 4}
+    \end{choices}
+\end{question}
+}
+
+
+%% PhysicsBowl 2000
+%%----------------------------------------
+\element{aapt}{ %% Bowl-D2
+\begin{question}{bowl-2000-q03}
+    Which of the following statements is \emph{not} true concerning the simple circuit shown where resistors $R_1$, $R_2$ and $R_3$ all have equal resistances?
+    \begin{center}
+    \ctikzset{bipoles/length=0.75cm}
+    \begin{circuitikz}
+        \draw (0,0) to[battery,l=\SI{5}{\volt}] (0,3) to (2,3) to [R,l=$R_1$] (2,0) to (0,0);
+        \draw (2,3) to (4,3) to [R,l=$R_2$] (4,0) to (2,0);
+        \draw (4,3) to (6,3) to [R,l=$R_3$] (6,0) to (4,0);
+    \end{circuitikz}
+    \end{center}
+    \begin{choices}
+      \correctchoice{the largest current will pass through $R_1$}
+        \wrongchoice{the voltage across $R_2$ is \SI{5}{\volt}}
+        \wrongchoice{the power dissipated in $R_3$ could be \SI{10}{\watt}}
+        \wrongchoice{if $R_2$ were to burn out, current would still flow through both $R_1$ and $R_3$}
+        \wrongchoice{the net resistance of the circuit is less than $R_1$}
+    \end{choices}
+\end{question}
+}
+
+\element{aapt}{ %% Bowl-D2
+\begin{question}{bowl-2000-q23}
+    If all of the resistors in the following simple circuit have the same resistance,
+        which would dissipate the greatest power?
+    \begin{center}
+    \ctikzset{bipoles/length=0.75cm}
+    \begin{circuitikz}
+        \draw (0,0) to [R,l=$A$] (0,2) to [R,l=$B$] (2,2) to [R,l=$D$] (2,0) to [R,l=$C$] (0,0);
+        \draw (2,2) to (4,2) to [battery] (4,0) to (2,0);
+    \end{circuitikz}
+    \end{center}
+    \begin{multicols}{2}
+    \begin{choices}[o]
+        \wrongchoice{resistor $A$}
+        \wrongchoice{resistor $B$}
+        \wrongchoice{resistor $C$}
+      \correctchoice{resistor $D$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% PhysicsBowl 1999
+%%----------------------------------------
+\element{aapt}{ %% Bowl-D2
+\begin{question}{bowl-1999-q13}
+    A heating coil is rated \SI{1200}{\watt} and \SI{120}{\volt}.
+    What is the maximum value of the current under these conditions?
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{\SI{10.0}{\ampere}}
+        \wrongchoice{\SI{12.0}{\ampere}}
+        \wrongchoice{\SI{14.1}{\ampere}}
+        \wrongchoice{\SI{0.100}{\ampere}}
+        \wrongchoice{\SI{0.141}{\ampere}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{aapt}{ %% Bowl-D2
+\begin{question}{bowl-1999-q23}
+    What is the resistance of a \SI{60}{\watt} light bulb
+        designed to operate at \SI{120}{\volt}?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{5}{\ohm}}
+        \wrongchoice{\SI{2}{\ohm}}
+        \wrongchoice{\SI{60}{\ohm}}
+      \correctchoice{\SI{240}{\ohm}}
+        \wrongchoice{\SI{7200}{\ohm}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{aapt}{ %% Bowl-D2
+\begin{question}{bowl-1999-q30}
+    Given the simple electrical circuit below.
+    \begin{center}
+    \ctikzset{bipoles/length=0.75cm}
+    \begin{circuitikz}
+        \draw (0,0) to [battery] (4,0) to (4,2) to [R,l=$Y$] (2,2) to [R,l=$X$] (0,2) to (0,0);
+        \draw (4,2) to (4,4) to [R,l=$Z$] (0,4) to (0,2);
+    \end{circuitikz}
+    \end{center}
+    If the current in all three resistors is equal,
+        which of the following statements must be true?
+    \begin{choices}
+        \wrongchoice{$X$, $Y$, and $Z$ all have equal resistance}
+        \wrongchoice{$X$ and $Y$ have equal resistance}
+      \correctchoice{$X$ and $Y$ added together have the same resistance as $Z$}
+        \wrongchoice{$X$ and $Y$ each have more resistance than $Z$}
+        \wrongchoice{none of the provided are true}
+    \end{choices}
+\end{question}
+}
+
+\element{aapt}{ %% Bowl-D2
+\begin{question}{bowl-1999-q31}
+    Wire $Y$ is made of the same material but has twice the diameter and half the length of wire $X$.
+    If wire $X$ has a resistance of $R$ then wire $Y$ would have a resistance of:
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{$\dfrac{R}{8}$}
+        \wrongchoice{$\dfrac{R}{2}$}
+        \wrongchoice{$R$}
+        \wrongchoice{$2R$}
+        \wrongchoice{$8R$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{aapt}{ %% Bowl-D2
+\begin{question}{bowl-1999-q40}
+    Three different resistors $R_1$, $R_2$ and $R_3$ are connected in parallel to a battery.
+    Suppose $R_1$ has \SI{2}{\volt} across is, $R_2=\SI{4}{\volt}$,
+        and $R_3$ dissipates \SI{6}{\watt}.
+    What is the current in $R_3$?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{0.33}{\ampere}}
+        \wrongchoice{\SI{0.5}{\ampere}}
+        \wrongchoice{\SI{2}{\ampere}}
+      \correctchoice{\SI{3}{\ampere}}
+        \wrongchoice{\SI{12}{\ampere}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% PhysicsBowl 1998
+%%----------------------------------------
+\element{aapt}{ %% Bowl-D2
+\begin{question}{bowl-1998-q06}
+    When any four resistors are connected in parallel,
+        the \rule[-0.1pt]{4em}{0.1pt} each resistors is the same.
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{charge on}
+        \wrongchoice{current through}
+        \wrongchoice{power from}
+        \wrongchoice{resistance of}
+      \correctchoice{voltage across}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{aapt}{ %% Bowl-D2
+\begin{question}{bowl-1998-q20}
+    Wire I and wire II are made of the same material.
+    Wire II has twice the diameter and twice the length of wire I.
+    If wire I has resistance $R$, wire II has resistance:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\dfrac{R}{8}$}
+        \wrongchoice{$\dfrac{R}{4}$}
+      \correctchoice{$\dfrac{R}{2}$}
+        \wrongchoice{$R$}
+        \wrongchoice{$2R$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\newcommand{\BowlNineteenNinetyEightQTwentySeven}{
+\ctikzset{bipoles/length=0.8cm}
+\begin{circuitikz}
+    \draw (0,0) to (0,4) to [battery] (0,6) to (2,6) to [R,l=$K$] (2,2) to (3,2) to [R,l=$N$] (3,0) -- (0,0);
+    \draw (2,6) to (4,6) to [R,l=$L$] (4,4) to [R,l=$M$] (4,2) to (3,2);
+\end{circuitikz}
+}
+
+\element{aapt}{ %% Bowl-D2
+\begin{question}{bowl-1998-q27}
+    Four identical light bulbs $K$, $L$, $M$, and $N$ are connected in the electrical circuit shown in the accompanying diagram.
+    \begin{center}
+        \BowlNineteenNinetyEightQTwentySeven
+    \end{center}
+    Rank the current through the bulbs.
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{$K>L>M>N$}
+        \wrongchoice{$L=M>K=N$}
+        \wrongchoice{$L>M>K>N$}
+      \correctchoice{$N>K>L=M$}
+        \wrongchoice{$N>L=M>K$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% PhysicsBowl 1997
+%%----------------------------------------
+\element{aapt}{ %% Bowl-D2
+\begin{question}{bowl-1997-q27}
+    Three resistors---$R_1$, $R_2$, and $R_3$---are connected in series to a battery.
+    Suppose $R_1$ carries a current of \SI{2.0}{\ampere},
+        $R_2$ has a resistance of \SI{3.0}{\ohm},
+        and $R_3$ dissipates \SI{6.0}{\watt} of power.
+    What is the voltage across $R_3$?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{1.0}{\volt}}
+        \wrongchoice{\SI{2.0}{\volt}}
+      \correctchoice{\SI{3.0}{\volt}}
+        \wrongchoice{\SI{6.0}{\volt}}
+        \wrongchoice{\SI{12}{\volt}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{aapt{ %% Bowl-D2
+\begin{question}{bowl-1997-q35}
+    When a single resistor is connected to a battery,
+        a total power $P$ is dissipated in the circuit.
+    How much total power is dissipated in a circuit if $n$ identical resistors are connected in series using the same battery?
+    Assume the internal resistance of the battery is zero.
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$n^2 P$}
+        \wrongchoice{$n P$}
+        \wrongchoice{$P$}
+      \correctchoice{$\dfrac{P}{n}$}
+        \wrongchoice{$\dfrac{P}{n^2}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{aapt}{ %% Bowl-D2
+\begin{questionmult}{bowl-1997-q37}
+    Consider the compound circuit shown below.
+    \begin{center}
+    \ctikzset{bipoles/length=0.75cm}
+    \begin{circuitikz}
+        \draw (0,0) to [battery] (4,0) to (4,2) to [R,l=$3$] (0,2) to (0,0);
+        \draw (4,2) to (4,4) to [R,l=$2$] (2,4) to [R,l=$2$] (0,4) to (0,2);
+    \end{circuitikz}
+    \end{center}
+    The three bulbs 1, 2, and 3---represented as resistors in the diagram---are identical.
+    Which of the following statements are true?
+    \begin{choices}
+      \correctchoice{Bulb 3 is brighter than bulb 1 or 2.}
+      \correctchoice{Bulb 3 has more current passing through it than bulb 1 or 2.}
+      \correctchoice{Bulb 3 has a greater voltage drop across it than bulb 1 or 2.}
+    \end{choices}
+\end{questionmult}
+}
+
+
+%% PhysicsBowl 1996
+%%----------------------------------------
+\element{aapt}{ %% Bowl-D2
+\begin{question}{bowl-1996-q16}
+    When two resistors, having resistance $R_1$ and $R_2$,
+        are connected in parallel,
+        the equivalent resistance of the combination is \SI{5}{\ohm}.
+    Which of the following statements about the resistances is correct?
+    \begin{choices}
+      \correctchoice{Both $R_1$ and $R_2$ are greater than \SI{5}{\ohm}.}
+        \wrongchoice{Both $R_1$ and $R_2$ are equal to \SI{5}{\ohm}.}
+        \wrongchoice{Both $R_1$ and $R_2$ are less than \SI{5}{\ohm}.}
+        \wrongchoice{The sum of $R_1$ and $R_2$ is \SI{5}{\ohm}.}
+        \wrongchoice{One of the resistances is greater than \SI{5}{\ohm},
+            one of the resistances is less than \SI{5}{\ohm}.}
+    \end{choices}
+\end{question}
+}
+
+\element{aapt}{ %% Bowl-D2
+\begin{question}{bowl-1996-q37}
+    Four identical light bulbs $K$, $L$, $M$, and $N$ are connected
+        in the electrical circuit shown in the accompanying figure.
+    \begin{center}
+        \BowlNineteenNinetyEightQTwentySeven
+    \end{center}
+    Bulb $M$ burns out.
+    Which of the following statements is true?
+    \begin{choices}
+        \wrongchoice{All the light bulbs go out.}
+        \wrongchoice{Only bulb M goes out.}
+        \wrongchoice{Bulb N goes out but at least one other bulb remains lit.}
+        \wrongchoice{The brightness of bulb N remains the same.}
+      \correctchoice{Bulb N becomes dimmer but does not go out.}
+    \end{choices}
+\end{question}
+}
+
+
+
+%% PhysicsBowl 1995
+%%----------------------------------------
+\element{aapt}{ %% Bowl-D2
+\begin{question}{bowl-1995-q32}
+    Four identical light bulbs $K$, $L$, $M$, and $N$ are connected in the electrical circuit shown in the accompanying figure.
+    \begin{center}
+        \BowlNineteenNinetyEightQTwentySeven
+    \end{center}
+    Bulb $K$ burns out.
+    Which of the following statements is true?
+    \begin{choices}
+        \wrongchoice{All the light bulbs go out.}
+        \wrongchoice{Only bulb $N$ goes out.}
+        \wrongchoice{Bulb $N$ becomes brighter.}
+        \wrongchoice{The brightness of bulb $N$ remains the same.}
+      \correctchoice{Bulb $N$ becomes dimmer but does not go out.}
+    \end{choices}
+\end{question}
+}
+
+\element{aapt}{ %% Bowl-D2
+\begin{question}{bowl-1995-q35}
+    The voltmeter in the accompanying circuit diagram has internal resistance \SI{10.0}{\kilo\ohm} and the ammeter has internal resistance \SI{25.0}{\ohm}.
+    The ammeter reading is \SI{1.00}{\milli\ampere}.
+    The voltmeter reading is most nearly:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{1.0}{\volt}}
+        \wrongchoice{\SI{2.0}{\volt}}
+        \wrongchoice{\SI{3.0}{\volt}}
+      \correctchoice{\SI{4.0}{\volt}}
+        \wrongchoice{\SI{5.0}{\volt}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% PhysicsBowl 1994
+%%----------------------------------------
+\element{aapt}{ %% Bowl-D2
+\begin{question}{bowl-1994-q28}
+    Four identical light bulbs $K$, $L$, $M$, and $N$ are connected
+        in the electrical circuit shown in the accompanying figure.
+    \begin{center}
+        \BowlNineteenNinetyEightQTwentySeven
+    \end{circuitikz}
+    \end{center}
+    In order of decreasing brightness (starting with the brightest), the bulbs are:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{$K = L > M > N$}
+        \wrongchoice{$K = L = M > N$}
+        \wrongchoice{$K > L = M > N$}
+      \correctchoice{$N > K > L = M$}
+        \wrongchoice{$N > K = L = M$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{aapt}{ %% Bowl-D2
+\begin{question}{bowl-1994-q36}
+    What is the current through the \SI{6.0}{\ohm}
+        resistor shown in the accompanying circuit diagram?
+    \begin{center}
+    \ctikzset{bipoles/length=0.75cm}
+    \begin{circuitikz}
+        \draw (0,0) to [battery,l=$\SI{10}{\volt}$] (0,2)
+                    to (0,4) to [battery,l=$\SI{4.0}{\volt}$] (2,4) to (2,2)
+                    to [R,l=$\SI{6}{\ohm}$] (2,1)
+                    to [battery,l=$\SI{6}{\volt}$] (2,0) to (0,0);
+        \draw (0,2) to [R,l=$\SI{4}{\ohm}$] (2,2)
+                    to [R,l=$\SI{11}{\ohm}$] (4,2)
+                    to [R,l=$\SI{3}{\ohm}$] (4,0) to (2,0);
+    \end{circuitikz}
+    \end{center}
+    Assume all batteries have negligible resistance.
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{\SI{0.0}{\ampere}}
+        \wrongchoice{\SI{0.40}{\ampere}}
+        \wrongchoice{\SI{0.50}{\ampere}}
+        \wrongchoice{\SI{1.3}{\ampere}}
+        \wrongchoice{\SI{1.5}{\ampere}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{aapt}{ %% Bowl-D2
+\begin{question}{bowl-1994-q37}
+    You are given three \SI{1.0}{\ohm} resistors.
+    Which of the following equivalent resistances \emph{cannot} be produced using all three resistors?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{1/3}{\ohm}}
+        \wrongchoice{\SI{2/3}{\ohm}}
+      \correctchoice{\SI{1.0}{\ohm}}
+        \wrongchoice{\SI{1.5}{\ohm}}
+        \wrongchoice{\SI{3.0}{\ohm}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+\endinput
+
+

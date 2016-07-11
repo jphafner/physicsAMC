@@ -1,0 +1,81 @@
+
+
+%% AAPT Physics Bowl Exams Questions
+%%----------------------------------------
+
+
+%% This section has XX problems
+
+
+%% PhysicsBowl 2015
+%%----------------------------------------
+
+
+%% PhysicsBowl 2013
+%%----------------------------------------
+\element{aapt}{ %% Bowl-E1
+\begin{question}{bowl-2013-q36}
+    The principal quantum number of an electron is $n=5$.
+    How many possible values of the orbital magnetic quantum number $m_l$ are there for this electron?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\num{25}}
+        \wrongchoice{\num{11}}
+      \correctchoice{\num{9}}
+        \wrongchoice{\num{5}}
+        \wrongchoice{\num{4}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% PhysicsBowl 1997
+%%----------------------------------------
+\element{aapt}{ %% Bowl-E1
+\begin{question}{bowl-1997-q36}
+    A student performs the Photoelectric Effect Experiment and obtains the data depicted in the accompanying graph of $E_{Km}$,
+        the maximum kinetic energy of the photoelectrons in \si{\eV}, versus $f$, the frequency of the photons in \SI{10e14}{\hertz}.
+    \begin{center}
+    \begin{tikzpicture}
+        \begin{axis}[
+            axis y line=left,
+            axis x line=middle,
+            axis line style={->},
+            xlabel={frequency},
+            x unit=\SI{e14}{\hertz},
+            xtick={0,2,4,6,8,10},
+            x label style={anchor=north east,yshift=-2.5em},
+            ylabel={$E_{Km}$},
+            y unit=\si{\eV},
+            ytick={-1,0,1,2},
+            grid=major,
+            xmin=0,xmax=10,
+            ymin=-1.5,ymax=2.5,
+            width=0.8\columnwidth,
+            height=0.5\columnwidth,
+        ]
+        %% NOTE: \phi = 3.63e14 * 6.63e-34 / 1.6e-19
+        \addplot[line width=1pt,mark=\empty] plot coordinates { (3.63,0) (10,2.64) };
+        \end{axis}
+    \end{tikzpicture}
+    \end{center}
+    What is the approximate work function for this material?
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{\SI{1.5}{\eV}}
+        \wrongchoice{\SI{2.0}{\eV}}
+        \wrongchoice{\SI{2.7}{\eV}}
+        \wrongchoice{\SI{4.0}{\eV}}
+        \wrongchoice{\SI{6.0}{\eV}}
+        %% NOTE: is this distractor too much?
+        \wrongchoice{\SI{3.6}{\eV}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+\endinput
+
+

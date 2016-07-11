@@ -1,0 +1,165 @@
+
+
+%% AAPT Physics Bowl Exams Questions
+%%----------------------------------------
+
+
+%% This section has XX problems
+
+
+%% PhysicsBowl 2015
+%%----------------------------------------
+
+
+%% PhysicsBowl 2013
+%%----------------------------------------
+\element{aapt}{ %% Bowl-D3
+\begin{question}{bowl-2013-q45}
+    The switch $S$ in the RC circuit shown is closed at time
+        $t=\SI{0}{\second}$.
+    \begin{center}
+    \ctikzset{bipoles/length=0.75cm}
+    \begin{circuitikz}[scale=1.00]
+        \draw (0,0) to [battery,l=$\xi$] (0,2)
+                    to [cspst,l=$S$] (2,2)
+                    to [C,l=$C$] (4,2)
+                    to (4,0)
+                    to [R,l=$R$] (0,0);
+    \end{circuitikz}
+    \end{center}
+    All circuit elements are ideal and $R=\SI{10.0}{\ohm}$, $C=\SI{2.2}{\farad}$ and $\xi=\SI{12.0}{\volt}$.
+    The capacitor is initially uncharged.
+    How long after the switch is closed is the voltage across the capacitor three times as large as the voltage across the resistor?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{22.0}{\second}}
+        \wrongchoice{\SI{24.2}{\second}}
+      \correctchoice{\SI{30.5}{\second}}
+        \wrongchoice{\SI{36.0}{\second}}
+        \wrongchoice{\SI{54.7}{\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% PhysicsBowl 2009
+%%----------------------------------------
+\element{aapt}{ %% Bowl-D3
+\begin{question}{bowl-2009-q44}
+    In an ideal $LC$ circuit, what is the time difference
+        between all of the energy in the circuit being
+        stored in the inductor and all of the energy being
+        stored in the capacitor?
+    \begin{choices}
+        \wrongchoice{No time difference}
+        \wrongchoice{One-eight of a period of oscillation}
+      \correctchoice{One-quarter of a period of oscillation}
+        \wrongchoice{One-half of a period of oscillation}
+        \wrongchoice{After one full period of oscillation has passed}
+    \end{choices}
+\end{question}
+}
+
+
+%% PhysicsBowl 2008
+%%----------------------------------------
+\element{aapt}{ %% Bowl-D3
+\begin{question}{bowl-2008-q31}
+    For the circuit shown, $\xi=\SI{6.0}{\volt}$, $R_1=\SI{7.0}{\ohm}$,
+        $R_2=\SI{3.0}{\ohm}$, $R_3=\SI{6.0}{\ohm}$, and $R_4=\SI{12.0}{\ohm}$.
+    \begin{center}
+    \ctikzset{bipoles/length=1.0cm}
+    \begin{circuitikz}
+        \draw (0,0) to [battery,l=$\xi$] (0,3) to (3,3) to [R,l=$R_1$] (3,1.5) to [R,l=$R_2$] (3,0) to (0,0);
+        \draw (3,1.5) to [C,l=$C$] (6,1.5);
+        \draw (3,3) to (6,3) to [R,l=$R_3$] (6,1.5) to [R,l=$R_4$] (6,0) to (3,0);
+    \end{circuitikz}
+    \end{center}
+    After operating for a long time, equilibrium is established.
+    What value is the voltage across the capacitor at equilibrium?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{6.0}{\volt}}
+        \wrongchoice{\SI{4.2}{\volt}}
+        \wrongchoice{\SI{3.0}{\volt}}
+      \correctchoice{\SI{2.2}{\volt}}
+        \wrongchoice{\SI{0.2}{\volt}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{aapt}{ %% Bowl-D3
+\begin{question}{bowl-2008-q49}
+    A circuit consists of a resistor, capacitor,
+        and inductor connected in series to an AC source.
+    As the source frequency increases, the current in the circuit decreases.
+    Which statement about the circuit is \emph{not} correct as the source frequency increases?
+    \begin{choices}
+        \wrongchoice{The impedance of the circuit increases.}
+      \correctchoice{The circuit is said to become more capacitive than inductive.}
+        \wrongchoice{The phase angle for the circuit becomes more positive.}
+        \wrongchoice{The inductive reactance increases.}
+        \wrongchoice{The total power from the source decreases.}
+    \end{choices}
+\end{question}
+}
+
+
+%% PhysicsBowl 1998
+%%----------------------------------------
+\element{aapt}{ %% Bowl-D3
+\begin{question}{bowl-1998-q39}
+    In the circuit diagrammed below,
+        the \SI{3.00}{\micro\farad} capacitor is fully charged at \SI{18.0}{\micro\coulomb}.
+    \begin{center}
+    \ctikzset{bipoles/length=0.75cm}
+    \begin{circuitikz}
+        \draw (0,0) to [battery,l=$V$] (0,3) to [R,l=\SI{100}{\ohm}] (2,3) to [R,l=\SI{300}{\ohm}] (2,0) to (0,0);
+        \draw (2,3) to (4,3) to [R,l=\SI{200}{\ohm}] (4,1.5) to [C,l=\SI{3.00}{\micro\farad}] (4,0) to (2,0);
+    \end{circuitikz}
+    \end{center}
+    What is the value of the power supply voltage $V$?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{4.40}{\volt}}
+        \wrongchoice{\SI{6.00}{\volt}}
+      \correctchoice{\SI{8.00}{\volt}}
+        \wrongchoice{\SI{10.4}{\volt}}
+        \wrongchoice{\SI{11.0}{\volt}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% PhysicsBowl 1996
+%%----------------------------------------
+\element{aapt}{ %% Bowl-D3
+\begin{question}{bowl-1996-q31}
+    See the accompanying figure.
+    \begin{center}
+    \ctikzset{bipoles/length=0.75cm}
+    \begin{circuitikz}
+        \draw (0,0) to [battery,l=\SI{10.0}{\volt}] (0,3) to [R,l=\SI{100}{\ohm}] (3,3) to [R,l=\SI{300}{\ohm}] (3,0) to (0,0);
+        \draw (3,3) to (5,3) to [R,l=\SI{200}{\ohm}] (5,1.5) to [C,l=\SI{3.00}{\micro\farad}] (5,0) to (3,0);
+    \end{circuitikz}
+    \end{center}
+    What is the current through the \SI{300}{\ohm} resistor when the capacitor is fully charged?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{zero}
+        \wrongchoice{\SI{0.020}{\ampere}}
+      \correctchoice{\SI{0.025}{\ampere}}
+        \wrongchoice{\SI{0.033}{\ampere}}
+        \wrongchoice{\SI{0.100}{\ampere}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+\endinput
+
+

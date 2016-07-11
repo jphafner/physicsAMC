@@ -1,0 +1,376 @@
+
+
+%% AAPT Physics Olympiad F=ma Questions
+%%----------------------------------------
+
+
+%% PhysicsOlympiad 2015
+%%----------------------------------------
+
+
+%% PhysicsOlympiad 2000
+%%----------------------------------------
+\element{aapt}{ %% Olympiad-D2
+\begin{question}{olympiad-2000-q03}
+    Given four identical resistors of resistance $R$,
+        which of the following circuits would have an equivalent resistance of $4/3 R$?
+    \begin{choices}
+        \AMCboxDimensions{down=-1.5cm}
+        \ctikzset{bipoles/length=1.00cm}
+        \correctchoice{
+            \begin{circuitikz}
+                \draw[white] (0,-1.6) rectangle (6,1.6);
+                \draw node[circ] at (0,0) {}
+                      node[circ] at (6,0) {};
+                \draw (0,0) to [R] (2,0) to [R] (5,0) to (6,0);
+                \draw (2,0) to (2,+1) to [R] (5,+1) to (5,0);
+                \draw (2,0) to (2,-1) to [R] (5,-1) to (5,0);
+            \end{circuitikz}
+        }
+        \wrongchoice{
+            \begin{circuitikz}
+                \draw[white] (0,-1.6) rectangle (6,1.6);
+                \draw node[circ] at (0,0) {}
+                      node[circ] at (6,0) {};
+                \draw (0,0) to (1,0);
+                \draw (5,0) to (6,0);
+                \draw (1,0) to (1,+1) to [R] (3,+1) to [R] (5,+1) to (5,0);
+                \draw (1,0) to [R] (5,0);
+                \draw (1,0) to (1,-1) to [R] (5,-1) to (5,0);
+            \end{circuitikz}
+        }
+        \wrongchoice{
+            \begin{circuitikz}
+                \draw[white] (0,-1.6) rectangle (6,1.6);
+                \draw node[circ] at (0,0) {}
+                      node[circ] at (6,0) {};
+                \draw (0,0) to (1,0);
+                \draw (1,0) to (1,+0.5) to [R] (3,+0.5) to [R] (5.5,+0.5) to (5.5,0);
+                \draw (1,0) to (1,-0.5) to [R] (3,-0.5) to [R] (5.5,-0.5) to (5.5,0);
+                \draw (5.5,0) to (6,0);
+            \end{circuitikz}
+        }
+        \wrongchoice{
+            \begin{circuitikz}
+                \draw[white] (0,-1.6) rectangle (6,1.6);
+                \draw node[circ] at (0,0) {}
+                      node[circ] at (6,0) {};
+                \draw (0,0) to [R] (1.5,0);
+                \draw (1.5,0) to (1.5,0.5) to [R] (3.5,+0.5) to [R] (5.5,0.5) to (5.5,0);
+                \draw (1.5,0) to (1.5,-0.5) to [R] (5.5,-0.5) to (5.5,0) to (6,0);
+            \end{circuitikz}
+        }
+        %% replaced no option
+        %\wrongchoice{None of the provided}
+        \wrongchoice{
+            \begin{circuitikz}
+                \draw[white] (0,-1.6) rectangle (6,1.6);
+                \draw node[circ] at (0,0) {}
+                      node[circ] at (6,0) {};
+                \draw (0,0) to [R] (1.5,0) to [R] (3,0);
+                \draw (3,0) to (3,+0.5) to [R] (5.5,0.5) to (5.5,0);
+                \draw (3,0) to (3,-0.5) to [R] (5.5,-0.5) to (5.5,0) to (6,0);
+            \end{circuitikz}
+        }
+    \end{choices}
+\end{question}
+}
+
+\element{aapt}{ %% Olympiad-D2
+\begin{question}{olympiad-2000-q12}
+    The circuit diagrammed below is setup to measure the resistance $R$.
+    The voltmeter has an internal resistance of \SI{100e3}{\ohm} and the ammeter has an internal resistance of \SI{0.10}{\ohm}.
+    \begin{center}
+    \begin{circuitikz}
+        \ctikzset{bipoles/length=1.00cm}
+        \draw (0,0) to [battery] (0,2) to (1,2) to [R,l=$R$] (3,2) to [ammeter] (5,2)
+                    to (5,0) to (0,0);
+        \draw (1,2) to (1,4) to [voltmeter] (3,4) to (3,2);
+    \end{circuitikz}
+    \end{center}
+    If the true value of $R$ is \SI{10e3}{\ohm},
+        what is the percent error in the calculated resistance found by dividing the reading on the voltmeter by the reading on the ammeter?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{0.5}{\percent}}
+        \wrongchoice{\SI{1}{\percent}}
+      \correctchoice{\SI{9}{\percent}}
+        \wrongchoice{\SI{27}{\percent}}
+        \wrongchoice{\SI{50}{\percent}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{aapt}{ %% Olympiad-D2
+\begin{question}{olympiad-2000-q20}
+    What would be the equivalent capacitance of the circuit shown if each capacitor has a capacitance of $C$?
+    \begin{center}
+    \begin{circuitikz}
+        \ctikzset{bipoles/length=1.00cm}
+        \draw node[circ] (A) at (-1,+1) {}
+              node[circ] (B) at (-1,-1) {}
+              (A) to (0,+1) to [C] (2,+1)
+                  to (2,+1) to [C] (2,-1)
+                  to (2,-1) to [C] (0,-1)
+              (B) to (0,-1) to [C] (0,+1);
+    \end{circuitikz}
+    \end{center}
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\dfrac{1}{4} C$}
+        \wrongchoice{$\dfrac{3}{4} C$}
+      \correctchoice{$\dfrac{4}{3} C$}
+        \wrongchoice{$3 C$}
+        \wrongchoice{$4 C$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% PhysicsOlympiad 1999
+%%----------------------------------------
+\element{aapt}{ %% Olympiad-D2
+\begin{question}{olympiad-1999-q25}
+    Consider a simple circuit containing a battery and three light bulbs.
+    Bulb $A$ is wired in parallel with bulb $B$ and this combination is wired in series with bulb $C$.
+    What would happen to the brightness of the other two bulbs if bulb $A$ were to burn out?
+    \begin{choices}
+        \wrongchoice{only bulb $B$ would get brighter.}
+        \wrongchoice{both would get brighter.}
+      \correctchoice{bulb $B$ would get brighter and bulb $C$ would get dimmer.}
+        \wrongchoice{bulb $B$ would get dimmer and bulb $C$ would get brighter.}
+        \wrongchoice{There would be no change in the brightness of either bulb $B$ or bulb $C$.}
+    \end{choices}
+\end{question}
+}
+
+\element{aapt}{ %% Olympiad-D2
+\begin{question}{olympiad-1999-q24}
+    What would be the total current being supplied by the battery in the circuit shown?
+    \begin{center}
+    \ctikzset{bipoles/length=1.00cm}
+    \begin{circuitikz}
+        \draw (0,0) to [battery,l=\SI{9}{\volt}] (2,0) to [R,l=\SI{4}{\ohm}] (4,0) to (4,4) to [R,l=\SI{3}{\ohm}] (0,4) to (0,0);
+        \draw (4,3) to [R,l=\SI{6}{\ohm}] (2,3) to [R,l=\SI{4}{\ohm}] (0,3);
+        \draw (4,0) to [R,l=\SI{3}{\ohm}] (2,3);
+    \end{circuitikz}
+    \end{center}
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{3.0}{\ampere}}
+        \wrongchoice{\SI{2.25}{\ampere}}
+        \wrongchoice{\SI{2.0}{\ampere}}
+      \correctchoice{\SI{1.5}{\ampere}}
+        \wrongchoice{\SI{1.0}{\ampere}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% PhysicsOlympiad 1998
+%%----------------------------------------
+\element{aapt}{ %% Olympiad-D2
+\begin{question}{olympiad-1998-q27}
+    In the electrical circuit shown to the right,
+        the current through the \SI{2.0}{\ohm} resistor is \SI{3.0}{\ampere}.
+    \begin{center}
+    \ctikzset{bipoles/length=1.00cm}
+    \begin{circuitikz}[scale=0.66]
+        \draw (0,0) to (0,4) to [battery] (2,4) to [R,l=\SI{6.00}{\ohm}] (4,4) to (4,0) to [R,l=\SI{2.00}{\ohm}] (1,0) to (0,0);
+        \draw (4,2) to [R,l=\SI{6.00}{\ohm}] (1,2) to (1,0);
+        \draw (4,0) to (4,-2) to [R,l=\SI{3.00}{\ohm}] (1,-2) to (1,0);
+    \end{circuitikz}
+    \end{center}
+    The emf of the battery is about:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{51}{\volt}}
+      \correctchoice{\SI{42}{\volt}}
+        \wrongchoice{\SI{36}{\volt}}
+        \wrongchoice{\SI{24}{\volt}}
+        \wrongchoice{\SI{21}{\volt}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% PhysicsOlympiad 1996
+%%----------------------------------------
+\element{aapt}{ %% Olympiad-D2
+\begin{question}{olympiad-1996-q27}
+    The switch, $S$, is closed in the circuit shown below.
+    \begin{center}
+    \ctikzset{bipoles/length=1.00cm}
+    \begin{circuitikz}
+        \draw (0,0) to [battery,l=\SI{6.0}{\volt}] (0,2) to [cspst,l=$S$] (0,4)
+                    to [R,l=\SI{100}{\ohm}] (2,4) to (4,4) to [C,l=\SI{10.0}{\micro\farad}] (4,0) to (0,0);
+        \draw (2,4) to [R,l=\SI{200}{\ohm}] (2,0);
+    \end{circuitikz}
+    \end{center}
+    What is the charge on the capacitor when it is fully charged?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{5.0}{\micro\coulomb}}
+        \wrongchoice{\SI{10}{\micro\coulomb}}
+        \wrongchoice{\SI{20}{\micro\coulomb}}
+      \correctchoice{\SI{40}{\micro\coulomb}}
+        \wrongchoice{\SI{60}{\micro\coulomb}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{aapt}{ %% Olympiad-D2
+\begin{question}{olympiad-1996-q28}
+    Two identical resistors with resistance $R$ are connected in the two circuits drawn below. 
+    \begin{center}
+    \ctikzset{bipoles/length=1.00cm}
+    \begin{circuitikz}
+        %% NOTE: Place label inside circuit??
+        \begin{scope}[yshift=+1.5cm]
+            \draw (0,0) to [battery,l=\SI{12}{\volt}] (0,2) to [R,l=$R$] (4,2) to (4,0) to [R,l_=$R$] (0,0);
+            \node[anchor=north] at (-1.5,2) {I};
+            %\node[anchor=north] at (0.5,1) {I};
+        \end{scope}
+        \begin{scope}[yshift=-1.5cm]
+            \draw (0,0) to [battery,l=\SI{12}{\volt}] (0,2) to (2,2) to [R,l=$R$] (2,0);
+            \draw (2,2) to (4,2) to [R,l=$R$] (4,0) to (0,0);
+            \node[anchor=north] at (-1.5,2) {II};
+        \end{scope}
+    \end{circuitikz}
+    \end{center}
+    The battery in both circuits is a \SI{12}{\volt} battery. 
+    Which statement is correct?
+    \begin{choices}
+        \wrongchoice{More current will flow through each R in circuit I than in circuit II.}
+      \correctchoice{More total power will be delivered by the battery in circuit II than in circuit I.}
+        \wrongchoice{The potential drop across each R will be greater in circuit I than in circuit II.}
+        \wrongchoice{The equivalent resistance will be greater in circuit II than in circuit I.}
+        \wrongchoice{The power dissipated in each R will be greater in circuit I than in circuit II.}
+    \end{choices}
+\end{question}
+}
+
+\element{aapt}{ %% Olympiad-D2
+\begin{question}{olympiad-1996-q29}
+    The resistors---$R_1$, $R_2$, and $R_3$---have been adjusted so that the current in the ammeter (labeled $A$ in the accompanying circuit diagram) is zero. 
+    \begin{center}
+    \ctikzset{bipoles/length=0.75cm}
+    \begin{circuitikz}
+        \draw (0,0) to [battery,l=$V$] (4,0) to (4,2) to [R,l=$R_2$] (2,2) to [R,l=$R_1$] (0,2);
+        \draw (4,2) to (4,6) to [R,l=$R$] (2,6) to [R,l=$R_3$] (0,6) to (0,0);
+        \draw (2,6) to [ammeter,l=$A$] (2,2);
+    \end{circuitikz}
+    \end{center}
+    What is $R$?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$R_2$}
+        \wrongchoice{$R_3$}
+        \wrongchoice{$\dfrac{R_1 R_2}{R_3}$}
+        \wrongchoice{$\dfrac{R_1 R_3}{R_2}$}
+      \correctchoice{$\dfrac{R_2 R_3}{R_1}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% PhysicsOlympiad 1995
+%%----------------------------------------
+\element{aapt}{ %% Olympiad-D2
+\begin{question}{olympiad-1995-q27}
+    In the circuit represented below,
+    \begin{center}
+    \ctikzset{bipoles/length=0.75cm}
+    \begin{circuitikz}
+        \draw[ultra thick,-latex] (0,0.5) -- (0,1.5) node[pos=0.5,anchor=east] {$I$};
+        \draw (0,0) to (0,1.5) to [battery,l=$V$] (0,3) to [R,l=$R$] (2,3) to [R,l=$R$] (4,3) to [R,l=$R$] (4,0) to (0,0);
+        \draw (2,0) to [battery,l=$V$] (2,1.5) to [R,l=$R$] (2,3);
+    \end{circuitikz}
+    \end{center}
+    the current $I$ equals:
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{$\dfrac{V}{5R}$}
+        \wrongchoice{$\dfrac{V}{4R}$}
+        \wrongchoice{$\dfrac{2V}{5R}$}
+        \wrongchoice{$\dfrac{V}{2R}$}
+        \wrongchoice{$\dfrac{2V}{R}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% PhysicsOlympiad 1994
+%%----------------------------------------
+\element{aapt}{ %% Olympiad-D2
+\begin{question}{olympiad-1994-q27}
+    Resistor $R_4$, as shown in the figure, is a variable resistor.
+    \begin{center}
+    \ctikzset{bipoles/length=1.00cm}
+    \begin{tikzpicture}[scale=1.2]
+        \draw (0,0) to[battery,l=$V$] (-2,0) to (-2,3)
+                    to [R,l=$R_1$] (0,5) to [R,l=$R_2$] (2,3)
+                    to (2,0) -- (0,0);
+        \draw (2,3) to[vR,l=$R_4$] (0,1)
+                    to[R,l=$R_3$] (-2,3);
+        \draw (0,5) to[ammeter] (0,1);
+    \end{tikzpicture}
+    \end{center}
+    In order for there to be no current through the ammeter,
+        $R_4$ must be equal to:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$R_2$}
+        \wrongchoice{$R_3$}
+        \wrongchoice{$\dfrac{R_1 R_2}{R_3}$}
+        \wrongchoice{$\dfrac{R_1 R_3}{R_2}$}
+      \correctchoice{$\dfrac{R_2 R_3}{R_1}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{aapt}{ %% Olympiad-D2
+\begin{question}{olympiad-1994-q28}
+    A resistor $R$ dissipates power $P$ when connected directly to a voltage source $V$,
+        as shown in the accompanying figures.
+    \begin{center}
+    \ctikzset{bipoles/length=0.75cm}
+    ~\hfill
+    \begin{circuitikz}
+        \draw[white] (0,-0.5) -- (2.5,0);
+        \draw (0,0) to [battery,l=$V$] (0,2) to (2,2) to [R,l_=$R$] (2,0) to (0,0);
+        \node[anchor=west] at (2.1,1) {$P$}; 
+    \end{circuitikz}
+    \hfill
+    \begin{circuitikz}
+        \draw (0,0) to (0,1.5) to [battery,l=$V$] (0,3) to (2,3) to [R,l_=$R$] (2,1.5) to [R,l_=$R^{\prime}$] (2,0) to (0,0);
+        \node[anchor=west] at (2.1,2.25) {$P/2$}; 
+    \end{circuitikz}
+    \hfill~
+    \end{center}
+    What resistance $R^{\prime}$ must be connected in series with $R$ to decrease the power dissipated in $R$ to $\frac{1}{2}P$?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{$\dfrac{R}{2}$}
+        \wrongchoice{$\dfrac{R}{\sqrt{2}}$}
+        \wrongchoice{$R$}
+      \correctchoice{$R\left(\sqrt{2}-1\right)$}
+        \wrongchoice{$R\sqrt{2}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+
+\endinput
+
+

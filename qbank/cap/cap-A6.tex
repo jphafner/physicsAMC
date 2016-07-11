@@ -1,0 +1,175 @@
+
+
+%% CAP High School Prize Examination
+%%----------------------------------------
+
+
+%% this section contains 40 problems
+
+
+%% CAP Exam 2015
+%%----------------------------------------
+
+
+%% CAP Exam 2013
+%%----------------------------------------
+\element{cap}{ %% cap-A6
+\begin{question}{CAP-A-2013-q10}
+    A uniform rod is suspended on two thin strings as shown below. 
+    \begin{center}
+    \begin{tikzpicture}
+        %% ceiling
+        \draw (-3,0) -- (3,0);
+        \node[anchor=south,fill,pattern=north east lines,minimum width=6cm, minimum height=0.05cm] at (0,0) {};
+        %% large rod
+        \draw[line width=3pt] (-2,-3) -- (2,-1.5);
+        %% strings
+        \draw (-2,-3) -- (-2,0);
+        \draw (2,-1.5) -- (2,0);
+    \end{tikzpicture}
+    \end{center}
+    Which string has a larger tension force?
+    \begin{choices}
+        \wrongchoice{The right one}
+        \wrongchoice{The left one}
+      \correctchoice{The tension force is the same on both}
+        \wrongchoice{It depends on the angle}
+    \end{choices}
+\end{question}
+}
+
+\element{cap}{ %% cap-A6
+\begin{question}{CAP-A-2013-q21}
+    A spinning ice skater has an initial kinetic energy $\frac{1}{2} I\omega^2$.
+    She pulls in her outstretched arms,
+        decreasing her moment of inertia to $\frac{1}{4} I$.
+    What is her new angular speed?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\dfrac{\omega}{4}$}
+        \wrongchoice{$\dfrac{\omega}{2}$}
+        \wrongchoice{$\omega$}
+        \wrongchoice{$2\omega$}
+      \correctchoice{$4\omega$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% CAP Exam 2012
+%%----------------------------------------
+\element{cap}{ %% cap-A6
+\begin{question}{CAP-A-2012-q16}
+    A rod ($AB$) is attached to a fixed point ($C$) using a light rope ($AC$). 
+    The other end of the rod ($B$) is sitting on ice with negligible friction and the system is in stationary position. 
+    Which of the following can be the equilibrium configuration of this system?
+    \begin{multicols}{2}
+    \begin{choices}
+        \AMCboxDimensions{down=-1cm}
+        \wrongchoice{
+            \begin{tikzpicture}
+                %% floor
+                \draw (0,0) -- (3,0);
+                \node[anchor=north,fill,pattern=north east lines,minimum width=3cm, minimum height=0.05cm] at (1.5,0) {};
+                %% coordinate A, B, C
+                \coordinate (A) at (0.5,2);
+                \coordinate (B) at (+2,0);
+                \coordinate (C) at (+2,2);
+                %% lables
+                \draw[fill] (A) circle (1.5pt) node[anchor=east] {$A$};
+                \draw[fill] (B) circle (1.5pt) node[anchor=south west] {$B$};
+                \draw[fill] (C) circle (1.5pt) node[anchor=west] {$C$};
+                %% Rod AB, rope AC
+                \draw[very thick] (A) -- (B);
+                \draw[thin] (A) -- (C);
+                \draw[dashed] (C) -- (B);
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                %% floor
+                \draw (0,0) -- (3,0);
+                \node[anchor=north,fill,pattern=north east lines,minimum width=3cm, minimum height=0.05cm] at (1.5,0) {};
+                %% coordinate A, B, C
+                \coordinate (A) at (0.5,1.5);
+                \coordinate (B) at (+2.5,0);
+                \coordinate (C) at (1.5,2);
+                %% lables
+                \draw[fill] (A) circle (1.5pt) node[anchor=east] {$A$};
+                \draw[fill] (B) circle (1.5pt) node[anchor=south west] {$B$};
+                \draw[fill] (C) circle (1.5pt) node[anchor=west] {$C$};
+                %% Rod AB, rope AC
+                \draw[dashed] (C) -- (1.5,0);
+                \draw[very thick] (A) -- (B);
+                \draw[thin] (A) -- (C);
+            \end{tikzpicture}
+        }
+        %% ANS: is C
+        \correctchoice{
+            \begin{tikzpicture}
+                %% floor
+                \draw (0,0) -- (3,0);
+                \node[anchor=north,fill,pattern=north east lines,minimum width=3cm, minimum height=0.05cm] at (1.5,0) {};
+                %% coordinate A, B, C
+                \coordinate (A) at (0.5,1.25);
+                \coordinate (B) at (+2.75,0);
+                \coordinate (C) at (0.5,2);
+                %% lables
+                \draw[fill] (A) circle (1.5pt) node[anchor=east] {$A$};
+                \draw[fill] (B) circle (1.5pt) node[anchor=south] {$B$};
+                \draw[fill] (C) circle (1.5pt) node[anchor=west] {$C$};
+                %% Rod AB, rope AC
+                \draw[dashed] (C) -- (0.5,0);
+                \draw[very thick] (A) -- (B);
+                \draw[thin] (A) -- (C);
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                %% floor
+                \draw (0,0) -- (3,0);
+                \node[anchor=north,fill,pattern=north east lines,minimum width=3cm, minimum height=0.05cm] at (1.5,0) {};
+                %% coordinate A, B, C
+                \coordinate (A) at (1,1);
+                \coordinate (B) at (+2.75,0);
+                \coordinate (C) at (0.25,2);
+                %% lables
+                \draw[fill] (A) circle (1.5pt) node[anchor=south west] {$A$};
+                \draw[fill] (B) circle (1.5pt) node[anchor=south] {$B$};
+                \draw[fill] (C) circle (1.5pt) node[anchor=west] {$C$};
+                %% Rod AB, rope AC
+                \draw[dashed] (C) -- (0.25,0);
+                \draw[very thick] (A) -- (B);
+                \draw[thin] (A) -- (C);
+            \end{tikzpicture}
+        }
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% CAP Exam 2010
+%%----------------------------------------
+\element{cap}{ %% cap-A6
+\begin{question}{CAP-A-2010-q20}
+    Two gear wheels of the same thickness, but with one twice the diameter of the other,
+        are mounted on parallel light axles far enough apart not to mesh the teeth of the wheels. 
+    The larger wheel is spun with angular velocity $\Omega$ and the wheels are then moved together so they mesh. 
+    What is the subsequent angular velocity of the larger wheel?
+    \begin{multicols}{4}
+    \begin{choices}
+        \wrongchoice{$\dfrac{\Omega}{2}$}
+        \wrongchoice{$\dfrac{\Omega}{5}$}
+        \wrongchoice{$\dfrac{2\Omega}{5}$}
+      \correctchoice{$\dfrac{4\Omega}{5}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+\endinput
+
+

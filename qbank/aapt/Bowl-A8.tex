@@ -1,0 +1,386 @@
+
+
+%% AAPT Physics Bowl Exams Questions
+%%----------------------------------------
+
+
+%% this section contains 9 problems
+
+
+%% PhysicsBowl 2015
+%%----------------------------------------
+\element{aapt}{ %% Bowl-A8
+\begin{question}{bowl-2015-q26}
+    The position of a mass connected to a spring obeys $x(t) = A\cos\left(\omega t\right)$.
+    What is the average speed of the mass for one full oscillation
+        in terms of the mass's maximum speed during oscillation, $v_{max}$?
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{$\dfrac{2}{\pi} v_{max}$}
+        \wrongchoice{$\dfrac{1}{\sqrt{2}} v_{max}$}
+        \wrongchoice{$\dfrac{1}{2} v_{max}$}
+        \wrongchoice{$\dfrac{\sqrt{2}}{\pi} v_{max}$}
+        \wrongchoice{$\dfrac{1}{2\pi\sqrt{2}} v_{max}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% PhysicsBowl 2014
+%%----------------------------------------
+\element{aapt}{ %% Bowl-A8
+\begin{question}{bowl-2014-q05}
+    A simple pendulum consists of a massive bob connected to the end of a very light string.
+    Which one of the following changes should be made in order to increase the period of the pendulum?
+    Ignore air resistance.
+    \begin{choices}
+        \wrongchoice{Increase the mass of the bob.}
+        \wrongchoice{Decrease the mass of the bob.}
+      \correctchoice{Increase the length of the string.}
+        \wrongchoice{Decrease the length of the string.}
+        \wrongchoice{Decrease the maximum angle of the pendulum's oscillation.}
+    \end{choices}
+\end{question}
+}
+
+\element{aapt}{ %% Bowl-A8
+\begin{question}{bowl-2014-q08}
+    A \SI{2.5}{\kilo\gram} mass connected to the end of an ideal spring oscillates in simple harmonic motion.
+    The mass''s position is described as a function of time by $x(t) = 0.20 \cos\left(8.00 t + 0.50\right)$ where all quantities are in base SI units.
+    Which of the following choices gives the numerical value of the oscillation's amplitude in base SI units?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\num{8.00}}
+        \wrongchoice{\num{4.00}}
+        \wrongchoice{\num{1.60}}
+        \wrongchoice{\num{0.50}}
+      \correctchoice{\num{0.20}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{aapt-A8}{ %% Bowl-A8
+\begin{question}{bowl-2014-q45}
+    A long thin rod of mass $M$ and length $L$ is pivoted at one end so that it swings as a pendulum.
+    The rod is set into simple harmonic oscillation and has a period of motion $T$.
+    A second thin rod with mass $2M$ and length $2L$ also is pivoted at one end to swing as a pendulum.  
+    When this second rod is set into simple harmonic oscillation,
+        what is its period?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$2T$}
+      \correctchoice{$\sqrt{2}T$}
+        \wrongchoice{$T$}
+        \wrongchoice{$\dfrac{1}{\sqrt{2}}T$}
+        \wrongchoice{$\dfrac{1}{2}T$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% PhysicsBowl 2013
+%%----------------------------------------
+\element{aapt}{ %% Bowl-A8
+\begin{question}{bowl-2013-q06}
+    A \SI{1.50}{\meter} long string clamped at both ends is vibrating at its second harmonic.
+    What is the wavelength associated with the string for this scenario?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{3.00}{\meter}}
+        \wrongchoice{\SI{2.25}{\meter}}
+      \correctchoice{\SI{1.50}{\meter}}
+        \wrongchoice{\SI{1.00}{\meter}}
+        \wrongchoice{\SI{0.75}{\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{aapt}{ %% Bowl-A8
+\begin{question}{bowl-2013-q09}
+    A simple pendulum oscillated with period of \SI{2.0}{\second}.
+    \begin{center}
+    \begin{tikzpicture}
+        \draw[dashed] (0,0) -- ++ (270:3cm);
+        \draw[thick] (0,0) -- ++ (240:3cm);
+        \draw[fill] (240:3cm) circle (3pt);
+        \draw[dashed] (300:3cm) arc (300:240:3cm);
+        \draw[<-] (240:1cm) arc (240:270:1cm)
+            node[font=\small,anchor=north,pos=0.5] {\ang{4}};
+    \end{tikzpicture}
+    \end{center}
+    If the maximum oscillation of the pendulum is \ang{4.0} from equilibrium,
+        what is the length of the string for this pendulum?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{6.4}{\meter}}
+        \wrongchoice{\SI{3.2}{\meter}}
+        \wrongchoice{\SI{1.6}{\meter}}
+      \correctchoice{\SI{1.0}{\meter}}
+        \wrongchoice{\SI{0.5}{\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% PhysicsBowl 2010
+%%----------------------------------------
+\newcommand{\BowlTwentyTenQEight}{
+\begin{tikzpicture}
+    \begin{axis}[
+        axis y line=left,
+        axis x line=middle,
+        axis line style={->},
+        xlabel={time},
+        x unit=\si{\second},
+        xtick={0,2,4,6,8,10},
+        minor x tick num=1,
+        ylabel={position},
+        y unit=\si{\meter},
+        ytick={0,2,4,6},
+        minor y tick num=1,
+        grid=both,
+        xmin=0,xmax=10,
+        ymin=0,ymax=6,
+        width=0.8\columnwidth,
+        height=0.5\columnwidth,
+    ]
+    \addplot[line width=1pt,domain=0:10] { 4 + sin(45*x) };
+    \end{axis}
+\end{tikzpicture}
+}
+
+\element{aapt}{ %% Bowl-A8
+\begin{question}{bowl-2010-q08}
+    A mass is connected to the end of a spring and
+        undergoes simple harmonic oscillation.
+    The graph provided shows the position of the mass
+        as measured from the floor as a function of time.
+    \begin{center}
+        \BowlTwentyTenQEight
+    \end{center}
+    What is the period of the mass's oscillation?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{2.0}{\second}}
+        \wrongchoice{\SI{4.0}{\second}}
+        \wrongchoice{\SI{5.0}{\second}}
+      \correctchoice{\SI{8.0}{\second}}
+        \wrongchoice{\SI{10.0}{\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{aapt}{ %% Bowl-A8
+\begin{question}{bowl-2010-q09}
+    A mass is connected to the end of a spring and
+        undergoes simple harmonic oscillating.
+    The graph provided shows the position of the mass
+        as measured from the floor as a function of time.
+    \begin{center}
+        \BowlTwentyTenQEight
+    \end{center}
+    What is the amplitude of the mass's oscillation?
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{\SI{1.0}{\meter}}
+        \wrongchoice{\SI{2.0}{\meter}}
+        \wrongchoice{\SI{3.0}{\meter}}
+        \wrongchoice{\SI{4.0}{\meter}}
+        \wrongchoice{\SI{5.0}{\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{aapt}{ %% Bowl-A8
+\begin{question}{bowl-2010-q23}
+    A point object of mass $M$ is connected to the end
+        of a long string of negligible mass and the system
+        swings as a simple pendulum with period $T$.
+    The point object of mass $M$ is now replaced with a
+        point object of mass $4M$.
+    When this new system swings as a simple pendulum,
+        what is its period?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$4T$}
+        \wrongchoice{$2T$}
+      \correctchoice{$T$}
+        \wrongchoice{$\dfrac{T}{2}$}
+        \wrongchoice{$\dfrac{T}{4}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% PhysicsBowl 2009
+%%----------------------------------------
+\element{aapt}{ %% Bowl-A8
+\begin{question}{bowl-2009-q22}
+    A point object is connected to the end of a long string
+        of negligible mass and the system swings as a simple
+        pendulum with period $T$.
+    What is the period of the pendulum if the string is made
+        to have one-quarter of its original length?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$4T$}
+        \wrongchoice{$2T$}
+        \wrongchoice{$T$}
+      \correctchoice{$\dfrac{T}{2}$}
+        \wrongchoice{$\dfrac{T}{4}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% PhysicsBowl 2007
+%%----------------------------------------
+\element{aapt}{ %% Bowl-A8
+\begin{question}{bowl-2007-q23}
+    The period of a mass-spring system undergoing simple harmonic oscillation is $T$.
+    If the amplitude of the mass-spring system's motion is doubled,
+        the period will be:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\dfrac{1}{4}T$}
+        \wrongchoice{$\dfrac{1}{2}T$}
+      \correctchoice{$T$}
+        \wrongchoice{$2T$}
+        \wrongchoice{$4T$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% PhysicsBowl 2006
+%%----------------------------------------
+\element{aapt}{ %% Bowl-A8
+\begin{question}{bowl-2006-q29}
+    Two separate strings of the same thickness are stretched so that they experience the same tension.
+    String $B$ is twice as dense as String $A$.
+    String $A$, of length $L$, is vibrated at the fundamental frequency.
+    How long is String $B$ if it has the same fundamental frequency as String $A$?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\dfrac{1}{2} L$}
+      \correctchoice{$\dfrac{1}{\sqrt{2}} L$}
+        \wrongchoice{$L$}
+        \wrongchoice{$\sqrt{2} L$}
+        \wrongchoice{$2 L$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% PhysicsBowl 2005
+%%----------------------------------------
+\element{aapt}{ %% Bowl-A8
+\begin{question}{bowl-2005-q12}
+    A mass on the end of a spring oscillates with the
+        displacement versus time graph shown below.
+    \begin{center}
+    \begin{tikzpicture}
+        \begin{axis}[
+            axis y line=left,
+            axis x line=middle,
+            axis line style={->},
+            xlabel={time},
+            x unit=\si{\second},
+            xtick={0,0.5,1.0,1.5,2.0},
+            ylabel={displacement},
+            y unit=\si{\meter},
+            ytick={-0.04,0,0.04},
+            grid=major,
+            xmin=0,xmax=2.1,
+            ymin=-0.05,ymax=0.05,
+            width=0.8\columnwidth,
+            height=0.5\columnwidth,
+        ]
+        \addplot[line width=1pt,domain=0:2] {0.04 * sin(180*x)};
+        \end{axis}
+    \end{tikzpicture}
+    \end{center}
+    Which of the following statements about its motion is \emph{incorrect}?
+    \begin{choices}
+      \correctchoice{The amplitude of the oscillations is \SI{0.08}{\meter}.}
+        \wrongchoice{The frequency of oscillations is \SI{0.5}{\hertz}.}
+        \wrongchoice{The mass achieves a maximum in speed at $t = \SI{1.0}{\second}$.}
+        \wrongchoice{The period of oscillations is \SI{2.0}{\second}.}
+        \wrongchoice{The mass experiences a maximum in the size of the acceleration at $t = \SI{1.5}{\second}$.}
+    \end{choices}
+\end{question}
+}
+
+\element{aapt}{ %% Bowl-A8
+\begin{question}{bowl-2005-q27}
+    What is the period of a simple pendulum if the length
+        of the cord is \SI{67.0}{\centi\meter} and the
+        pendulum bob has a mass of \SI{2.4}{\kilo\gram}?
+    %% NOTE: diamgram is not needed
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{0.259}{\second}}
+      \correctchoice{\SI{1.63}{\second}}
+        \wrongchoice{\SI{3.86}{\second}}
+        \wrongchoice{\SI{16.3}{\second}}
+        \wrongchoice{\SI{24.3}{\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% PhysicsBowl 1996
+%%----------------------------------------
+\element{aapt}{ %% Bowl-A8
+\begin{question}{bowl-1996-q11}
+    A simple pendulum of mass $m$ and length $L$ has a period of oscillation $T$ at angular amplitude $\theta=\ang{5}$ measured from its equilibrium position.
+    If the amplitude is changed to \ang{10} and everything else remains constant,
+        the new period of the pendulum would be approximately:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$2T$}
+        \wrongchoice{$\sqrt{2}T$}
+      \correctchoice{$T$}
+        \wrongchoice{$\dfrac{T}{\sqrt{2}}$}
+        \wrongchoice{$\dfrac{T}{2}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% PhysicsBowl 1995
+%%----------------------------------------
+\element{aapt}{ %% Bowl-A8
+\begin{question}{bowl-1995-q18}
+    The period of a spring-mass system undergoing simple harmonic motion is $T$.
+    If the amplitude of the spring-mass system's motion is doubled,
+        the period will be:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\frac{1}{4}T$}
+        \wrongchoice{$\frac{1}{2}T$}
+      \correctchoice{$T$}
+        \wrongchoice{$2T$}
+        \wrongchoice{$4T$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+\endinput
+
+

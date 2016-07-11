@@ -32,13 +32,10 @@ testing-numeric.tex
 *.amc
 
 # Project specific
-/qbank/aapt/
 /qbank/apPhysics/
 /qbank/astronomy/
-/qbank/cap/
 /qbank/collegeBoard/
 /qbank/cpo/
-/qbank/GREPhysics/
 /qbank/halliday/
 /qbank/holt/
 /qbank/jpierce/
