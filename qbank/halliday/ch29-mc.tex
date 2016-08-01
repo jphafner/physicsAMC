@@ -1,0 +1,827 @@
+
+%%--------------------------------------------------
+%% Halliday: Fundamentals of Physics
+%%--------------------------------------------------
+
+
+%% Chapter 29: Magnetic Fields Due to Currents
+%%--------------------------------------------------
+
+
+%% Learning Objectives
+%%--------------------------------------------------
+
+%% 29.01: Sketch a current-length element in a wire and indicate the direction of the magnetic field that it sets up at a given point near the wire.
+%% 29.02: For a given point near a wire and a given current-element in the wire, determine the magnitude and direction of the magnetic field due to that element.
+%% 29.03: Identify the magnitude of the magnetic field set up by a current-length element at a point in line with the direction of that element.
+%% 29.04: For a point to one side of a long straight wire carrying current, apply the relationship between the magnetic field magnitude, the current, and the distance to the point.
+%% 29.05: For a point to one side of a long straight wire carrying current, use a right-hand rule to determine the direction of the field vector.
+%% 29.06: Identify that around a long straight wire carrying current, the magnetic field lines form circles.
+%% 29.07: For a point to one side of the end of a semi-infinite wire carrying current, apply the relationship between the magnetic field magnitude, the current, and the distance to the point.
+%% 29.08: For the center of curvature of a circular arc of wire carrying current, apply the relationship between the magnetic field magnitude, the current, the radius of curvature, and the angle subtended by the arc (in radians).
+%% 29.09: For a point to one side of a short straight wire carrying current, integrate the Biot--Savart law to find the magnetic field set up at the point by the current.
+
+
+%% Halliday Multiple Choice Questions
+%%--------------------------------------------------
+\element{halliday-mc}{
+\begin{question}{halliday-ch29-q01}
+    Suitable units for $\mu_0$ are:
+    \begin{choices}
+        \wrongchoice{tesla (\si{\tesla})}
+        \wrongchoice{newton per ampere squared (\si{\newton\per\ampere\squared})}
+        \wrongchoice{weber per meter (\si{\weber\per\meter})}
+        \wrongchoice{kilogram ampere per meter (\si{\kilo\gram\ampere\per\meter})}
+      \correctchoice{tesla meter per ampere (\si{\tesla\meter\per\ampere})}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch29-q02}
+    A ``coulomb'' is:
+    \begin{choices}
+        \wrongchoice{one ampere per second}
+        \wrongchoice{the quantity of charge that will exert a force of \SI{1}{\newton} on a similar charge at a distance of \SI{1}{\meter}}
+        \wrongchoice{the amount of current in each of two long parallel wires, separated by \SI{1}{\meter}, that produces a force of \SI{2e-7}{\newton\per\meter}}
+      \correctchoice{the amount of charge that flows past a point in one second when the current is \SI{1}{\ampere}}
+        \wrongchoice{an abbreviation for a certain combination of kilogram, meter and second}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch29-q03}
+    Electrons are going around a circle in a counterclockwise direction as shown. 
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: tikz
+    \end{tikzpicture}
+    \end{center}
+    At the center of the circle they produce a magnetic field that is:
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{into the page}
+        \wrongchoice{out of the page}
+        \wrongchoice{to the left}
+        \wrongchoice{to the right}
+        \wrongchoice{zero}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch29-q04}
+    In the figure, the current element $i\,\mathrm{d}\vec{l}$, the point $P$,
+        and the three vectors (1, 2, 3) are all in the plane of the page. 
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: tikz
+    \end{tikzpicture}
+    \end{center}
+    The direction of $\mathrm{d}\vec{B}$,
+        due to this current element, at the point $P$ is:
+    \begin{choices}
+        \wrongchoice{in the direction marked ``1''}
+        \wrongchoice{in the direction marked ``2''}
+        \wrongchoice{in the direction marked ``3''}
+        \wrongchoice{out of the page}
+      \correctchoice{into the page}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch29-q05}
+    The magnitude of the magnetic field at point $P$,
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: tikz
+    \end{tikzpicture}
+    \end{center}
+        at the center of the semicircle shown, is given by:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\dfrac{2\mu_0 i}{R}$}
+        \wrongchoice{$\dfrac{\mu_0 i}{R}$}
+        \wrongchoice{$\dfrac{\mu_0 i}{4\pi R}$}
+        \wrongchoice{$\dfrac{\mu_0 i}{2R}$}
+      \correctchoice{$\dfrac{\mu_0 i}{4R}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch29-q06}
+    The diagrams show three circuits consisting of concentric circular arcs (either half or quarter circles of radii $r$, $2r$, and $3r$) and radial lengths. 
+    The circuits carry the same current.
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: tikz
+    \end{tikzpicture}
+    \end{center}
+    Rank them according to the magnitudes of the magnetic fields they produce at $C$,
+        least to greatest.
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{1, 2, 3}
+      \correctchoice{3, 2, 1}
+        \wrongchoice{1, 3, 2}
+        \wrongchoice{2, 3, 1}
+        \wrongchoice{2, 1, 3}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch29-q07}
+    Lines of the magnetic field produced by a long straight wire carrying a current are:
+    \begin{choices}
+        \wrongchoice{in the direction of the current}
+        \wrongchoice{opposite to the direction of the current}
+        \wrongchoice{radially outward from the wire}
+        \wrongchoice{radially inward toward the wire}
+      \correctchoice{circles that are concentric with the wire}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch29-q08}
+    In an overhead straight wire, the current is north. 
+    The magnetic field due to this current,
+        at our point of observation, is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{east}
+        \wrongchoice{up}
+        \wrongchoice{north}
+        \wrongchoice{down}
+      \correctchoice{west}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch29-q09}
+    A wire carrying a large current $i$ from east to west is placed over an ordinary magnetic compass.
+    The end of the compass needle marked ``N'' will point:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{north}
+      \correctchoice{south}
+        \wrongchoice{east}
+        \wrongchoice{west}
+        \wrongchoice{the compass will act as an electric motor,
+            hence the needle will keep rotating}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch29-q10}
+    The magnetic field outside a long straight current-carrying wire depends on the distance $R$ from the wire axis according to:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$R$}
+      \correctchoice{$\dfrac{1}{R}$}
+        \wrongchoice{$\dfrac{1}{R^2}$}
+        \wrongchoice{$\dfrac{1}{R^3}$}
+        \wrongchoice{$\dfrac{1}{R^{3/2}}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch29-q11}
+    Which graph correctly gives the magnitude of the magnetic field outside an infinitely long straight current-carrying wire as a function of the distance $r$ from the wire?
+    \begin{multicols}{2}
+    \begin{choices}
+        %% NOTE: ANS is D
+        \wrongchoice{
+            \begin{tikzpicture}
+                %% NOTE: pgfplots
+            \end{tikzpicture}
+        }
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch29-q12}
+    The magnetic field a distance \SI{2}{\centi\meter} from a long straight current-carrying wire is \SI{2.0e-5}{\tesla}.
+    The current in the wire is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{0.16}{\ampere}}
+        \wrongchoice{\SI{1.0}{\ampere}}
+      \correctchoice{\SI{2.0}{\ampere}}
+        \wrongchoice{\SI{4.0}{\ampere}}
+        \wrongchoice{\SI{25}{\ampere}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch29-q13}
+    Two long parallel straight wires carry equal currents in opposite directions. 
+    At a point midway between the wires,
+        the magnetic field they produce is:
+    \begin{choices}
+        \wrongchoice{zero}
+        \wrongchoice{non-zero and along a line connecting the wires}
+        \wrongchoice{non-zero and parallel to the wires}
+      \correctchoice{non-zero and perpendicular to the plane of the two wires}
+        \wrongchoice{none of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch29-q14}
+    Two long straight wires are parallel and carry current in the same direction. 
+    The currents are \SI{8.0}{\ampere} and \SI{12}{\ampere} and the wires are separated by \SI{0.40}{\centi\meter}. 
+    The magnetic field at a point midway between the wires is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{zero}
+      \correctchoice{\SI{4.0e-4}{\tesla}}
+        \wrongchoice{\SI{8.0e-4}{\tesla}}
+        \wrongchoice{\SI{12e-4}{\tesla}}
+        \wrongchoice{\SI{20e-4}{\tesla}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch29-q15}
+    Two long straight wires are parallel and carry current in opposite directions. 
+    The currents are \SI{8.0}{\ampere} and \SI{12}{\ampere} and the wires are separated by \SI{0.40}{\centi\meter}. 
+    The magnetic field at a point midway between the wires is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{zero}
+        \wrongchoice{\SI{4.0e-4}{\tesla}}
+        \wrongchoice{\SI{8.0e-4}{\tesla}}
+        %% normalized scientific notation
+        \wrongchoice{\SI{1.2e-3}{\tesla}}
+      \correctchoice{\SI{2.0e-3}{\tesla}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch29-q16}
+    Two long straight current-carrying parallel wires cross the $x$ axis and carry currents $I$ and $3I$ in the same direction,
+        as shown. 
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: tikz
+    \end{tikzpicture}
+    \end{center}
+    At what value of $x$ is the net magnetic field zero?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\num{0}}
+        \wrongchoice{\num{1}}
+      \correctchoice{\num{3}}
+        \wrongchoice{\num{5}}
+        \wrongchoice{\num{7}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch29-q17}
+    Two long straight wires pierce the plane of the paper at vertices of an equilateral triangle as shown below. 
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: tikz
+    \end{tikzpicture}
+    \end{center}
+    They each carry \SI{2}{\ampere}, out of the paper. 
+    The magnetic field at the third vertex ($P$) has magnitude:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{1.0e-5}{\tesla}}
+      \correctchoice{\SI{1.7e-5}{\tesla}}
+        \wrongchoice{\SI{2.0e-5}{\tesla}}
+        \wrongchoice{\SI{5.0e-6}{\tesla}}
+        \wrongchoice{\SI{8.7e-6}{\tesla}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch29-q18}
+    The diagram shows three equally spaced wires that are perpendicular to the page. 
+    The currents are all equal,
+        two being out of the page and one being into the page. 
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: tikz
+    \end{tikzpicture}
+    \end{center}
+    Rank the wires according to the magnitudes of the magnetic forces on them,
+        from least to greatest.
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{1, 2, 3}
+      \correctchoice{2, 1 and 3 tie}
+        \wrongchoice{2 and 3 tie, then 1}
+        \wrongchoice{1 and 3 tie, then 2}
+        \wrongchoice{3, 2, 1}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch29-q19}
+    Two parallel wires carrying equal currents of \SI{10}{\ampere} attract each other with a force of \SI{1}{\milli\newton}.
+    If both currents are doubled,
+        the force of attraction will be:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{1}{\milli\newton}}
+      \correctchoice{\SI{4}{\milli\newton}}
+        \wrongchoice{\SI{0.5}{\milli\newton}}
+        \wrongchoice{\SI{0.25}{\milli\newton}}
+        \wrongchoice{\SI{2}{\milli\newton}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch29-q20}
+    Two parallel long wires carry the same current and repel each other with a force $F$ per unit length. 
+    If both these currents are doubled and the wire separation tripled,
+        the force per unit length becomes:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\dfrac{2F}{9}$}
+        \wrongchoice{$\dfrac{4F}{9}$}
+        \wrongchoice{$\dfrac{2F}{3}$}
+      \correctchoice{$\dfrac{4F}{3}$}
+        \wrongchoice{$6F$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch29-q21}
+    Two parallel wires, \SI{4}{\centi\meter} apart,
+        carry currents of \SI{2}{\ampere} and \SI{4}{\ampere} respectively,
+        in the same direction.
+    The force per unit length of one wire on the other is:
+    \begin{choices}
+        \wrongchoice{\SI{1e-3}{\newton\per\meter}, repulsive}
+        \wrongchoice{\SI{1e-3}{\newton\per\meter}, attractive}
+        \wrongchoice{\SI{4e-5}{\newton\per\meter}, repulsive}
+      \correctchoice{\SI{4e-5}{\newton\per\meter}, attractive}
+        \wrongchoice{none of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch29-q22}
+    Two parallel wires, \SI{4}{\centi\meter} apart,
+        carry currents of \SI{2}{\ampere} and \SI{4}{\ampere} respectively,
+        in opposite directions.
+    The force per unit length of one wire on the other is:
+    \begin{choices}
+        \wrongchoice{\SI{1e-3}{\newton\per\meter}, repulsive}
+        \wrongchoice{\SI{1e-3}{\newton\per\meter}, attractive}
+      \correctchoice{\SI{4e-5}{\newton\per\meter}, repulsive}
+        \wrongchoice{\SI{4e-5}{\newton\per\meter}, attractive}
+        \wrongchoice{none of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch29-q23}
+    Four long straight wires carry equal currents into the page as shown. 
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: tikz
+    \end{tikzpicture}
+    \end{center}
+    The magnetic force exerted on wire $F$ is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{north}
+      \correctchoice{east}
+        \wrongchoice{south}
+        \wrongchoice{west}
+        \wrongchoice{zero}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch29-q24}
+    A constant current is sent through a helical coil. 
+    The coil:
+    \begin{choices}
+      \correctchoice{tends to get shorter}
+        \wrongchoice{tends to get longer}
+        \wrongchoice{tends to rotate about its axis}
+        \wrongchoice{produces zero magnetic field at its center}
+        \wrongchoice{none of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch29-q25}
+    The diagram shows three arrangements of circular loops,
+        centered on vertical axes and carrying identical currents in the directions indicated.
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: tikz
+    \end{tikzpicture}
+    \end{center}
+    Rank the arrangements according to the magnitudes of the magnetic fields at the midpoints between the loops on the central axes.
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{1, 2, 3}
+        \wrongchoice{2, 1, 3}
+      \correctchoice{2, 3, 1}
+        \wrongchoice{3, 2, 1}
+        \wrongchoice{3, 1, 2}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch29-q26}
+    Helmholtz coils are commonly used in the laboratory because the magnetic field between them:
+    \begin{choices}
+        \wrongchoice{can be varied more easily than the fields of other current arrangements}
+        \wrongchoice{is especially strong}
+        \wrongchoice{nearly cancels Earth's magnetic field}
+        \wrongchoice{is parallel to the plane of the coils}
+      \correctchoice{is nearly uniform}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch29-q27}
+    If the radius of a pair of Helmholtz coils is $R$ then the distance between the coils is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\dfrac{R}{4}$}
+        \wrongchoice{$\dfrac{R}{2}$}
+      \correctchoice{$R$}
+        \wrongchoice{$2R$}
+        \wrongchoice{$4R$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch29-q28}
+    If $R$ is the distance from a magnetic dipole,
+        then the magnetic field it produces is proportional to:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$R$}
+        \wrongchoice{$\dfrac{1}{R}$}
+        \wrongchoice{$R^2$}
+        \wrongchoice{$\dfrac{1}{R^2}$}
+      \correctchoice{$\dfrac{1}{R^3}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch29-q29}
+    A square loop of current-carrying wire with edge length $a$ is in the $xy$ plane,
+        the origin being at its center. 
+    Along which of the following lines can a charge move without experiencing a magnetic force?
+    \begin{choices}
+        \wrongchoice{$x=\text{zero}$,   $y=\dfrac{a}{2}$}
+        \wrongchoice{$x=\dfrac{a}{2}$,  $y=\dfrac{a}{2}$}
+        \wrongchoice{$x=\dfrac{a}{2}$,  $y=\text{zero}$}
+        \wrongchoice{$x=\text{zero}$,   $y=\text{zero}$}
+        \wrongchoice{$x=\text{zero}$,   $z=\text{zero}$}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch29-q30}
+    In Ampere's law, $\oint \vec{B}\cdot\mathrm{d}\vec{s} = \mu_0 i$,
+        the integration must be over any:
+    \begin{choices}
+        \wrongchoice{surface}
+        \wrongchoice{closed surface}
+        \wrongchoice{path}
+      \correctchoice{closed path}
+        \wrongchoice{closed path that surrounds all the current producing $\vec{B}$}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch29-q31}
+    In Ampere's law, $\oint \vec{B}\cdot\mathrm{d}\vec{s} = \mu_0 i$,
+        the symbol $\mathrm{d}\vec{s}$ is:
+    \begin{choices}
+        \wrongchoice{an infinitesimal piece of the wire that carries current $i$}
+        \wrongchoice{in the direction of $\vec{B}$}
+        \wrongchoice{perpendicular to $\vec{B}$}
+        \wrongchoice{a vector whose magnitude is the length of the wire that carries current $i$}
+      \correctchoice{none of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch29-q32}
+    In Ampere's law, $\oint \vec{B}\cdot\mathrm{d}\vec{s} = \mu_0 i$,
+        the direction of the integration around the path:
+    \begin{choices}
+        \wrongchoice{must be clockwise}
+        \wrongchoice{must be counterclockwise}
+        \wrongchoice{must be such as to follow the magnetic field lines}
+        \wrongchoice{must be along the wire in the direction of the current}
+        \wrongchoice{none of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch29-q33}
+    A long straight wire carrying a \SI{3.0}{\ampere} current enters a room through a window \SI{1.5}{\meter} high and \SI{1.0}{\meter} wide. 
+    The path integral $\oint \vec{B}\cdot\mathrm{d}\vec{s}$ around the window frame has the value:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{0.20}{\tesla\meter}}
+        \wrongchoice{\SI{2.5e-7}{\tesla\meter}}
+        \wrongchoice{\SI{3.0e-7}{\tesla\meter}}
+      \correctchoice{\SI{3.8e-6}{\tesla\meter}}
+        \wrongchoice{none of the provided}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch29-q34}
+    Two long straight wires enter a room through a door. 
+    One carries a current of \SI{3.0}{\ampere} into the room while the other carries a current of \SI{5.0}{\ampere} out. 
+    The magnitude of the path integral $\oint \vec{B}\cdot\mathrm{d}\vec{s}$ around the door frame is:
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{\SI{2.5e-6}{\tesla\meter}}
+        \wrongchoice{\SI{3.8e-6}{\tesla\meter}}
+        \wrongchoice{\SI{6.3e-6}{\tesla\meter}}
+        \wrongchoice{\SI{1.0e-5}{\tesla\meter}}
+        \wrongchoice{none of the provided}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch29-q35}
+    If the magnetic field $\vec{B}$ is uniform over the area bounded by a circle with radius $R$,
+        the net current through the circle is:
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{zero}
+        \wrongchoice{$\dfrac{2\pi RB}{\mu_0}$}
+        \wrongchoice{$\dfrac{\pi R^2 B}{\mu_0}$}
+        \wrongchoice{$\dfrac{RB}{2\mu_0}$}
+        \wrongchoice{$\dfrac{2RB}{\mu_0}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch29-q36}
+    The magnetic field at any point is given by $\vec{B} = A\vec{r}\times\vec{k}$,
+        where $\vec{r}$ is the position vector of the point and $A$ is a constant. 
+    The net current through a circle of radius $R$,
+        in the $xy$ plane and centered at the origin is given by:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\dfrac{\pi AR^2}{\mu_0}$}
+        \wrongchoice{$\dfrac{2\pi AR}{\mu_0}$}
+        \wrongchoice{$\dfrac{4\pi AR^3}{3\mu_0}$}
+      \correctchoice{$\dfrac{2\pi AR^2}{\mu_0}$}
+        \wrongchoice{$\dfrac{\pi AR^2}{2\mu_0}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch29-q37}
+    A hollow cylindrical conductor (inner radius = $a$, outer radius = $b$)
+        carries a current $i$ uniformly spread over its cross section. 
+    Which graph below correctly gives $B$ as a function of the distance $r$ from the center of the cylinder?
+    \begin{multicols}{2}
+    \begin{choices}
+        %% NOTE: ANS is C
+        \wrongchoice{
+            \begin{tikzpicture}
+                %% NOTE: pgfplots
+            \end{tikzpicture}
+        }
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch29-q38}
+    A long straight cylindrical shell carries current $i$ parallel to its axis and uniformly distributed over its cross section. 
+    The magnitude of the magnetic field is greatest:
+    \begin{choices}
+        \wrongchoice{at the inner surface of the shell}
+      \correctchoice{at the outer surface of the shell}
+        \wrongchoice{inside the shell near the middle}
+        \wrongchoice{in hollow region near the inner surface of the shell}
+        \wrongchoice{near the center of the hollow region}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch29-q39}
+    A long straight cylindrical shell has inner radius $R_i$ and outer radius $R_o$.
+    It carries current $i$, uniformly distributed over its cross section. 
+    A wire is parallel to the cylinder axis,
+        in the hollow region ($r<R_i$). 
+    The magnetic field is zero everywhere outside the shell ($r>R_o$). 
+    We conclude that the wire:
+    \begin{choices}
+        \wrongchoice{is on the cylinder axis and carries current $i$ in the same direction as the current in the shell}
+        \wrongchoice{may be anywhere in the hollow region but must be carrying current $i$ in the direction opposite to that of the current in the shell}
+        \wrongchoice{may be anywhere in the hollow region but must be carrying current $i$ in the same direction as the current in the shell}
+      \correctchoice{is on the cylinder axis and carries current $i$ in the direction opposite to that of the current in the shell}
+        \wrongchoice{does not carry any current}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch29-q40}
+    A long straight cylindrical shell has inner radius $R_i$ and outer radius $R_o$.
+    It carries a current $i$,
+        uniformly distributed over its cross section. 
+    A wire is parallel to the cylinder axis,
+        in the hollow region ($r<R_i$). 
+    The magnetic field is zero everywhere in the hollow region. 
+    We conclude that the wire:
+    \begin{choices}
+        \wrongchoice{is on the cylinder axis and carries current i in the same direction as the current in the shell}
+        \wrongchoice{may be anywhere in the hollow region but must be carrying current i in the direction opposite to that of the current in the shell}
+        \wrongchoice{may be anywhere in the hollow region but must be carrying current i in the same direction as the current in the shell}
+        \wrongchoice{is on the cylinder axis and carries current i in the direction opposite to that of the current in the shell}
+      \correctchoice{does not carry any current}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch29-q41}
+    The magnetic field B inside a long ideal solenoid is independent of:
+    \begin{choices}
+        \wrongchoice{the current}
+        \wrongchoice{the core material}
+        \wrongchoice{the spacing of the windings}
+      \correctchoice{the cross-sectional area of the solenoid}
+        \wrongchoice{the direction of the current}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch29-q42}
+    Two long ideal solenoids 
+        (with radii \SI{20}{\milli\meter} and \SI{30}{\milli\meter}, respectively)
+        have the same number of turns of wire per unit length. 
+    The smaller solenoid is mounted inside the larger,
+        along a common axis. 
+    The magnetic field within the inner solenoid is zero. 
+    The current in the inner solenoid must be:
+    \begin{choices}
+        \wrongchoice{two-thirds the current in the outer solenoid}
+        \wrongchoice{one-third the current in the outer solenoid}
+        \wrongchoice{twice the current in the outer solenoid}
+        \wrongchoice{half the current in the outer solenoid}
+      \correctchoice{the same as the current in the outer solenoid}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch29-q43}
+    Magnetic field lines inside the solenoid shown are:
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: tikz
+    \end{tikzpicture}
+    \end{center}
+    \begin{choices}
+        \wrongchoice{clockwise circles as one looks down the axis from the top of the page}
+        \wrongchoice{counterclockwise circles as one looks down the axis from the top of the page}
+      \correctchoice{toward the top of the page}
+        \wrongchoice{toward the bottom of the page}
+        \wrongchoice{in no direction since $B=0$}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch29-q44}
+    Solenoid 2 has twice the radius and six times the number of turns per unit length as solenoid 1.
+    The ratio of the magnetic field in the interior of 2 to that in the interior of 1 is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\num{2}}
+        \wrongchoice{\num{4}}
+      \correctchoice{\num{6}}
+        \wrongchoice{\num{1}}
+        \wrongchoice{\num{1/3}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch29-q45}
+    A solenoid is \SI{3.0}{\centi\meter} long and has a radius of \SI{0.50}{\centi\meter}.
+    It is wrapped with \num{500} turns of wire carrying a current of \SI{2.0}{\ampere}.
+    The magnetic field at the center of the solenoid is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{9.9e-8}{\tesla}}
+        \wrongchoice{\SI{1.3e-3}{\tesla}}
+      \correctchoice{\SI{4.2e-2}{\tesla}}
+        \wrongchoice{\SI{16}{\tesla}}
+        \wrongchoice{\SI{20}{\tesla}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch29-q46}
+    A toroid with a square cross section carries current $i$. 
+    The magnetic field has its largest magnitude:
+    \begin{choices}
+        \wrongchoice{at the center of the hole}
+      \correctchoice{just inside the toroid at its inner surface}
+        \wrongchoice{just inside the toroid at its outer surface}
+        \wrongchoice{at any point inside (the field is uniform)}
+        \wrongchoice{none of the above}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch29-q47}
+    A toroid has a square cross section with the length of an edge equal to the radius of the inner surface. 
+    The ratio of the magnitude of the magnetic field at the inner surface to the magnitude of the field at the outer surface is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\num{1/4}}
+        \wrongchoice{\num{1/2}}
+        \wrongchoice{\num{1}}
+      \correctchoice{\num{2}}
+        \wrongchoice{\num{4}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+\endinput
+
+

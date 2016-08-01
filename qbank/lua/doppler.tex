@@ -1,0 +1,177 @@
+
+\sisetup{
+    scientific-notation = true,
+    %fixed-exponent = 2,
+    round-mode = figures,
+    round-precision = 3,
+    %output-product = \cdot,
+    %quotient-mode = fraction,
+    %fraction-function = \sfrac, %%\dfrac, \tfrac
+    %per-mode=symbol,            %% fraction
+}
+
+\element{quizNumber}{
+    \begin{question}{Q1}
+        \directlua{freq = math.random(455,475)}
+        If a siren emits sound at a frequency of
+            \SI{\directlua{tex.print(freq)}}{\hertz}.
+        What is the wavelength of the sound if the speed of
+            sound in air is \SI{340}{\meter\per\second}?
+        \directlua{
+            CC = (340 / freq)
+            W1 = (freq / 340)
+            W2 = (340)
+            W3 = (340 * freq)
+            W4 = (340 * freq / 2)
+            W5 = (340 * freq / 4)
+        }
+        \begin{multicols}{3}
+        \begin{choices}
+          \correctchoice{\SI{\directlua{tex.print(CC)}}{\meter}}
+            \wrongchoice{\SI{\directlua{tex.print(W1)}}{\meter}}
+            \wrongchoice{\SI{\directlua{tex.print(W2)}}{\meter}}
+            \wrongchoice{\SI{\directlua{tex.print(W3)}}{\meter}}
+            \wrongchoice{\SI{\directlua{tex.print(W4)}}{\meter}}
+            \wrongchoice{\SI{\directlua{tex.print(W5)}}{\meter}}
+        \end{choices}
+        \end{multicols}
+    \end{question}
+}
+
+%%
+%% f = \frac{ c + v_r }{ c + v_s } f_0
+%%
+%% f_1 is approaching, f_2 is receiding
+%%
+%% v = c * \frac{ f_2 - f_1  }{ f_1 + f_2 }
+%%
+\element{quizNumber}{
+    \begin{question}{Q2}
+        \directlua{
+            freq1 = math.random(455,475)
+            freq2 = math.random(425,445)
+        }
+        An ambulance approaches a stationary pedestrian.
+        The pedestrian hears the siren at
+            \SI{\directlua{tex.print(freq1)}}{\hertz}
+            as the ambulance approaches.
+        The pedestrian hears the siren at
+            \SI{\directlua{tex.print(freq2)}}{\hertz}
+            after the ambulance has passed and is moving away.
+        How fast is the ambulance driving if the speed of sound in air is
+            \SI{340}{\meter\per\second}?
+        \directlua{
+            CC = math.abs(340 * (freq2-freq1)/(freq1+freq2))
+            W1 = math.abs(340 * (freq2+freq1)/(freq1+freq2))
+            W2 = math.abs(340 * (freq2+freq1)/(freq1-freq2))
+            W3 = math.abs(340 * (freq2-freq1)/(freq1-freq2))
+            W4 = math.abs(330 * (freq2-freq1)/(freq1+freq2))
+            W5 = math.abs(330 * (freq2-freq1)/(freq1-freq2))
+        }
+        \begin{multicols}{3}
+        \begin{choices}
+          \correctchoice{\SI{\directlua{tex.print(CC)}}{\meter\per\second}}
+            \wrongchoice{\SI{\directlua{tex.print(W1)}}{\meter\per\second}}
+            \wrongchoice{\SI{\directlua{tex.print(W2)}}{\meter\per\second}}
+            \wrongchoice{\SI{\directlua{tex.print(W3)}}{\meter\per\second}}
+            \wrongchoice{\SI{\directlua{tex.print(W4)}}{\meter\per\second}}
+            \wrongchoice{\SI{\directlua{tex.print(W5)}}{\meter\per\second}}
+        \end{choices}
+        \end{multicols}
+    \end{question}
+}
+
+\element{quizNumber}{
+    \begin{question}{Q3}
+        \directlua{
+            lambda = 1e-2*math.random()
+            speed = 10*math.random()
+        }
+        An ambulance drives toward a stationary pedestrian emmiting
+            a sound with wavelength
+            \SI{\directlua{tex.print(lambda)}}{\meter}.
+        If the ambulance is moving at
+            \SI{\directlua{tex.print(speed)}}{\meter\per\second}.
+        How much less is the wavelength measured by the pedestrian
+            than by the ambulance?
+        \directlua{
+            CC = (speed * 340 / lambda)
+            W1 = (340 * lambda / speed)
+            W2 = (lambda / speed)
+            W3 = (lambda * speed )
+            W4 = (speed / lambda)
+            W5 = (speed / lambda)
+            W5 = (340 * lambda/ speed)
+        }
+        \begin{multicols}{3}
+        \begin{choices}
+          \correctchoice{\SI{\directlua{tex.print(CC)}}{\meter}}
+            \wrongchoice{\SI{\directlua{tex.print(W1)}}{\meter}}
+            \wrongchoice{\SI{\directlua{tex.print(W2)}}{\meter}}
+            \wrongchoice{\SI{\directlua{tex.print(W3)}}{\meter}}
+            \wrongchoice{\SI{\directlua{tex.print(W4)}}{\meter}}
+            \wrongchoice{\SI{\directlua{tex.print(W5)}}{\meter}}
+        \end{choices}
+        \end{multicols}
+    \end{question}
+}
+
+\element{quizNumber}{
+    \begin{question}{Q4}
+        \directlua{
+            lambda = 1e-2*math.random()
+            speed = 10*math.random()
+        }
+        An ambulance drives toward a stationary pedestrian emmiting
+            a sound with wavelength
+            \SI{\directlua{tex.print(lambda)}}{\meter}.
+        If the ambulance is moving at
+            \SI{\directlua{tex.print(speed)}}{\meter\per\second}.
+        How much less is the wavelength measured by the pedestrian
+            than by the ambulance?
+        \directlua{
+            CC = (speed * 340 / lambda)
+            W1 = (340 * lambda / speed)
+            W2 = (lambda / speed)
+            W3 = (lambda * speed )
+            W4 = (speed / lambda)
+            W5 = (speed / lambda)
+            W5 = (340 * lambda/ speed)
+        }
+        \begin{multicols}{3}
+        \begin{choices}
+          \correctchoice{\SI{\directlua{tex.print(CC)}}{\meter}}
+            \wrongchoice{\SI{\directlua{tex.print(W1)}}{\meter}}
+            \wrongchoice{\SI{\directlua{tex.print(W2)}}{\meter}}
+            \wrongchoice{\SI{\directlua{tex.print(W3)}}{\meter}}
+            \wrongchoice{\SI{\directlua{tex.print(W4)}}{\meter}}
+            \wrongchoice{\SI{\directlua{tex.print(W5)}}{\meter}}
+        \end{choices}
+        \end{multicols}
+    \end{question}
+}
+
+%\element{quizNumber}{
+%    \begin{question}{Q4}
+%        \begin{choiceshoriz}
+%            \correctchoice{}
+%            \wrongchoice{}
+%            \wrongchoice{}
+%            \wrongchoice{}
+%            \wrongchoice{}
+%        \end{choiceshoriz}
+%    \end{question}
+%}
+%
+%\element{quizNumber}{
+%    \begin{question}{Q5}
+%        \begin{choiceshoriz}
+%            \correctchoice{}
+%            \wrongchoice{}
+%            \wrongchoice{}
+%            \wrongchoice{}
+%            \wrongchoice{}
+%        \end{choiceshoriz}
+%    \end{question}
+%}
+

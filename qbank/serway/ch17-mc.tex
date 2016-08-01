@@ -1,0 +1,794 @@
+
+%%--------------------------------------------------
+%% Serway: Physics for Scientists and Engineers
+%%--------------------------------------------------
+
+
+%% NOTE: provide threshold of hearing in REF.tex
+%%--------------------------------------------------
+
+
+%% Chapter 17: Sound Waves
+%%--------------------------------------------------
+
+
+%% Table of Contents
+%%--------------------------------------------------
+
+%% 17.1 Speed of Sound Waves
+%% 17.2 Periodic Sound Waves
+%% 17.3 Intensity of Periodic Sound Waves
+%% 17.4 The Doppler Effect
+%% 17.5 Digital Sound Recording
+%% 17.6 Motion Picture Sound
+
+
+%% Serway Multiple Choice Questions
+%%--------------------------------------------------
+\element{serway-mc}{
+\begin{question}{serway-ch17-q01}
+    The velocity of sound in sea water is \SI{1533}{\meter\per\second}.
+    Find the bulk modulus of sea water if its density is \SI{1.025e3}{\kilo\gram\per\meter\cubed}.
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{2.6e9}{\newton\per\meter\squared}}
+        \wrongchoice{\SI{2.2e9}{\newton\per\meter\squared}}
+        \wrongchoice{\SI{2.0e9}{\newton\per\meter\squared}}
+      \correctchoice{\SI{2.4e9}{\newton\per\meter\squared}}
+        \wrongchoice{\SI{2.8e9}{\newton\per\meter\squared}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch17-q02}
+    A sculptor strikes a piece of marble with a hammer.
+    Find the speed of sound through the marble.
+    (The Young's modulus is \SI{50e9}{\newton\per\meter\squared}
+        and its density is \SI{2.7e3}{\kilo\gram\per\meter\cubed}.)
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{5.1}{\kilo\meter\per\second}}
+      \correctchoice{\SI{4.3}{\kilo\meter\per\second}}
+        \wrongchoice{\SI{3.5}{\kilo\meter\per\second}}
+        \wrongchoice{\SI{1.3}{\kilo\meter\per\second}}
+        \wrongchoice{\SI{1.8}{\kilo\meter\per\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch17-q03}
+    The Young's modulus for aluminum is \SI{7.02e10}{\newton\per\meter\squared}.
+    If the speed of sound in aluminum is measured to be \SI{5.10}{\kilo\meter\per\second},
+        find its density.
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{11.3e3}{\kilo\gram\per\meter\cubed}}
+        \wrongchoice{\SI{7.80e3}{\kilo\gram\per\meter\cubed}}
+      \correctchoice{\SI{2.70e3}{\kilo\gram\per\meter\cubed}}
+        \wrongchoice{\SI{29.3e3}{\kilo\gram\per\meter\cubed}}
+        \wrongchoice{\SI{1.40e3}{\kilo\gram\per\meter\cubed}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch17-q04}
+    It is possible to hear an approaching train before you can see it by listening to the sound wave through the track.
+    If the elastic modulus is \SI{2.0e11}{\newton\per\meter\squared} and the density of steel is \SI{7.8e3}{\kilo\gram\per\meter\cubed},
+        approximately how many times faster is the speed of sound in the track than in air?
+    ($v_{\text{air}}\approx\SI{340}{\meter\per\second}$.)
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\num{20}}
+        \wrongchoice{\num{5}}
+        \wrongchoice{\num{10}}
+      \correctchoice{\num{15}}
+        \wrongchoice{\num{25}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch17-q05}
+    A harmonic longitudinal wave propagating down a tube filled with a compressible gas has the form $s(x,t)= s_{\mathrm{m}}\cos\left(kx-\omega t\right)$.
+    Its velocity can be obtained from
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{$\omega$}
+        \wrongchoice{$\omega k$}
+        \wrongchoice{$k$}
+        \wrongchoice{$\dfrac{\omega}{k}$}
+        \wrongchoice{$\dfrac{k}{\omega}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch17-q06}
+    Calculate the pressure amplitude of a \SI{500}{\hertz}
+        sound wave in helium if the displacement amplitude is equal to \SI{5e-8}{\meter}.
+    ($\rho=\SI{0.179}{\kilo\gram\per\meter\cubed}$, $v=\SI{972}{\meter\per\second}$.)
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{3.5e-2}{\newton\per\meter\squared}}
+        \wrongchoice{\SI{1.6e-2}{\newton\per\meter\squared}}
+      \correctchoice{\SI{2.7e-2}{\newton\per\meter\squared}}
+        \wrongchoice{\SI{4.2e-2}{\newton\per\meter\squared}}
+        \wrongchoice{\SI{2.0e-2}{\newton\per\meter\squared}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch17-q07}
+    Calculate the displacement amplitude of a \SI{20}{\kilo\hertz}
+        sound wave in helium if it has a pressure amplitude of \SI{8e-3}{\newton\per\meter\squared}. ($\rho=\SI{0.179}{\kilo\gram\per\meter\cubed}$, $v=\SI{972}{\meter\per\second}$.)
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{2.9e-10}{\meter}}
+      \correctchoice{\SI{3.7e-10}{\meter}}
+        \wrongchoice{\SI{7.8e-9}{\meter}}
+        \wrongchoice{\SI{2.4e-9}{\meter}}
+        \wrongchoice{\SI{1.9e-10}{\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch17-q08}
+    The variation in the pressure of helium gas,
+        measured from its equilibrium value,
+        is given by $\Delta P=\num{2.9e-5}\cos\left(6.2x-3000t\right)$ where $x$ and $t$ have units \si{\meter} and \si{\second},
+        and $\Delta P$ is measured in \si{\newton\per\meter\squared}.
+    Determine the frequency of the wave.
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{1500}{\hertz}}
+      \correctchoice{\SI{477}{\hertz}}
+        \wrongchoice{\SI{1.01}{\hertz}}
+        \wrongchoice{\SI{0.32}{\hertz}}
+        \wrongchoice{\SI{239}{\hertz}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch17-q09}
+    The variation in the pressure of helium gas,
+        measured from its equilibrium value,
+        is given by $\Delta P=\num{2.9e-5}\cos\left(6.2x-3000t\right)$ where $x$ and $t$ have units \si{\meter} and \si{\second},
+        and $\Delta P$ is measured in \si{\newton\per\meter\squared}.
+    Determine the wavelength of the wave.
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{1500}{\meter}}
+        \wrongchoice{\SI{0.32}{\meter}}
+        \wrongchoice{\SI{477}{\meter}}
+      \correctchoice{\SI{1.01}{\meter}}
+        \wrongchoice{\SI{0.50}{\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch17-q10}
+    The variation in the pressure of helium gas,
+        measured from its equilibrium value,
+        is given by $\Delta P=\num{2.9e-5}\cos\left(6.2x-3000t\right)$ where $x$ and $t$ have units \si{\meter} and \si{\second}.
+    Determine the speed of the wave.
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{1515}{\meter\per\second}}
+        \wrongchoice{\SI{153}{\meter\per\second}}
+      \correctchoice{\SI{484}{\meter\per\second}}
+        \wrongchoice{\SI{828}{\meter\per\second}}
+        \wrongchoice{\SI{101}{\meter\per\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch17-q11}
+    Determine the intensity of a harmonic longitudinal wave with a pressure amplitude of \SI{8e-3}{\newton\per\meter\squared} propagating down a tube filled with helium.
+    ($\rho=\SI{0.179}{\kilo\gram\per\meter\cubed}$, $v=\SI{972}{\meter\per\second}$.)
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{3.7e-7}{\watt\per\meter\squared}}
+      \correctchoice{\SI{1.8e-7}{\watt\per\meter\squared}}
+        \wrongchoice{\SI{9.2e-8}{\watt\per\meter\squared}}
+        \wrongchoice{\SI{4.6e-8}{\watt\per\meter\squared}}
+        \wrongchoice{\SI{1.5e-9}{\watt\per\meter\squared}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch17-q12}
+    Calculate the intensity level in \si{\decibel} a sound wave that has an intensity of \SI{15e-4}{\watt\per\meter\squared}.
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{20}{\decibel}}
+        \wrongchoice{\SI{200}{\decibel}}
+      \correctchoice{\SI{92}{\decibel}}
+        \wrongchoice{\SI{9}{\decibel}}
+        \wrongchoice{\SI{10}{\decibel}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch17-q13}
+    A jet plane has a sound level of \SI{150}{\decibel}.
+    What is the intensity?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{1}{\watt\per\meter\squared}}
+        \wrongchoice{\SI{100}{\watt\per\meter\squared}}
+        \wrongchoice{\SI{10}{\watt\per\meter\squared}}
+      \correctchoice{\SI{1000}{\watt\per\meter\squared}}
+        \wrongchoice{\SI{10000}{\watt\per\meter\squared}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch17-q14}
+    By what factor will an intensity change when the corresponding sound level increases by \SI{3}{\decibel}?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\num{3}}
+        \wrongchoice{\num{0.5}}
+      \correctchoice{\num{2}}
+        \wrongchoice{\num{4}}
+        \wrongchoice{\num{0.3}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch17-q15}
+    By what factor is the intensity of sound at a rock concert louder than that
+        of a whisper when the two intensity levels are \SI{120}{\decibel} and \SI{20}{\decibel} respectively?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\num{e12}}
+        \wrongchoice{\num{e8}}
+        \wrongchoice{\num{e6}}
+      \correctchoice{\num{e10}}
+        \wrongchoice{\num{e11}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch17-q16}
+    A point source emits sound with a power output of \SI{100}{\watt}.
+    What is the intensity at a distance of \SI{10.0}{\meter} from the source?
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{\SI{7.96e-2}{\watt\per\meter\squared}}
+        \wrongchoice{\SI{7.96e-1}{\watt\per\meter\squared}}
+        \wrongchoice{\SI{7.96e0}{\watt\per\meter\squared}}
+        \wrongchoice{\SI{7.96e1}{\watt\per\meter\squared}}
+        \wrongchoice{\SI{7.96e-3}{\watt\per\meter\squared}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch17-q17}
+    A point source emits sound waves with a power output of \SI{100}{\watt}.
+    What is the sound level at a distance of \SI{10}{\meter}?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{139}{\decibel}}
+        \wrongchoice{\SI{119}{\decibel}}
+        \wrongchoice{\SI{129}{\decibel}}
+      \correctchoice{\SI{109}{\decibel}}
+        \wrongchoice{\SI{10}{\decibel}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch17-q18}
+    A car approaches a stationary police car at \SI{36}{\meter\per\second}.
+    The frequency of the siren (relative to the police car) is \SI{500}{\hertz}.
+    What is the frequency heard by an observer in the moving car as he approaches the police car?
+    (Assume the velocity of sound in air is \SI{343}{\meter\per\second}.)
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{220}{\hertz}}
+        \wrongchoice{\SI{448}{\hertz}}
+        \wrongchoice{\SI{5264}{\hertz}}
+      \correctchoice{\SI{552}{\hertz}}
+        \wrongchoice{\SI{383}{\hertz}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch17-q19}
+    A car moving at \SI{36}{\meter\per\second} passes a stationary police car whose siren has a frequency of \SI{500}{\hertz}.
+    What is the change in the frequency heard by an observer in the moving car as he passes the police car?
+    (The speed of sound in air is \SI{343}{\meter\per\second}.)
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{416}{\hertz}}
+        \wrongchoice{\SI{208}{\hertz}}
+      \correctchoice{\SI{105}{\hertz}}
+        \wrongchoice{\SI{52}{\hertz}}
+        \wrongchoice{\SI{552}{\hertz}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch17-q20}
+    A truck moving at \SI{36}{\meter\per\second} passes a police car moving at \SI{45}{\meter\per\second} in the opposite direction.
+    If the frequency of the siren relative to the police car is \SI{500}{\hertz},
+        what is the frequency heard by an observer in the truck as the police car approaches the truck?
+    (The speed of sound in air is \SI{343}{\meter\per\second}.)
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{396}{\hertz}}
+      \correctchoice{\SI{636}{\hertz}}
+        \wrongchoice{\SI{361}{\hertz}}
+        \wrongchoice{\SI{393}{\hertz}}
+        \wrongchoice{\SI{617}{\hertz}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch17-q21}
+    A truck moving at \SI{36}{\meter\per\second} passes a police car moving at \SI{45}{\meter\per\second} in the opposite direction. 
+    If the frequency of the siren is \SI{500}{\hertz} relative to the police car,
+        what is the frequency heard by an observer in the truck after the police car passes the truck? 
+    (The speed of sound in air is \SI{343}{\meter\per\second}.)
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{361}{\hertz}}
+        \wrongchoice{\SI{636}{\hertz}}
+        \wrongchoice{\SI{393}{\hertz}}
+      \correctchoice{\SI{396}{\hertz}}
+        \wrongchoice{\SI{383}{\hertz}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch17-q22}
+    A truck moving at \SI{36}{\meter\per\second} passes a police car moving at \SI{45}{\meter\per\second} in the opposite direction. 
+    If the frequency of the siren is \SI{500}{\hertz} relative to the police car,
+        what is the change in frequency heard by an observer in the truck as the two vehicles pass each other?
+    (The speed of sound in air is \SI{343}{\meter\per\second}.)
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{242}{\hertz}}
+        \wrongchoice{\SI{238}{\hertz}}
+      \correctchoice{\SI{240}{\hertz}}
+        \wrongchoice{\SI{236}{\hertz}}
+        \wrongchoice{\SI{234}{\hertz}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch17-q23}
+    How fast is the Concorde moving if it reaches Mach 1.5? 
+    (The speed of sound in air is \SI{344}{\meter\per\second}.)
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{229}{\meter\per\second}}
+      \correctchoice{\SI{516}{\meter\per\second}}
+        \wrongchoice{\SI{416}{\meter\per\second}}
+        \wrongchoice{\SI{728}{\meter\per\second}}
+        \wrongchoice{\SI{858}{\meter\per\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch17-q24}
+    A stone is thrown into a quiet pool of water. 
+    With no fluid friction,
+        the amplitude of the waves falls off with distance $r$ from the impact point as:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\dfrac{1}{r^3}$}
+        \wrongchoice{$\dfrac{1}{r^2}$}
+        \wrongchoice{$\dfrac{1}{r^{\frac{3}{2}}}$}
+      \correctchoice{$\dfrac{1}{r^{\frac{1}{2}}}$}
+        \wrongchoice{$\dfrac{1}{r}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch17-q25}
+    A wave generated in a medium is a longitudinal wave when:
+    \begin{choices}
+        \wrongchoice{there is a net transport of matter by the wave.}
+        \wrongchoice{the molecules of the medium are unable to exert forces on each other.}
+      \correctchoice{molecular displacements are parallel to the wave velocity.}
+        \wrongchoice{molecular displacements are perpendicular to the wave velocity.}
+        \wrongchoice{the density of the medium is less than the density of water.}
+    \end{choices}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch17-q26}
+    When you hear the horn of a car that is approaching you,
+        the frequency that you hear is larger than that heard by a person in the car because:
+    \begin{choices}
+        \wrongchoice{wave crests are farther apart by the distance the car travels in one period.}
+      \correctchoice{wave crests are closer together by the distance the car travels in one period.}
+        \wrongchoice{the car gets ahead of each wave crest before it emits the next one.}
+        \wrongchoice{the speed of sound in air is increased by the speed of the car.}
+        \wrongchoice{a speeding car emits more wavecrests in each period.}
+    \end{choices}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch17-q27}
+    While you are sounding a tone on a toy whistle,
+        you notice a friend running toward you. 
+    If you want her to hear the same frequency that you hear even though she is approaching,
+        you must:
+    \begin{choices}
+        \wrongchoice{stay put.}
+        \wrongchoice{run towards her at the same speed.}
+      \correctchoice{run away from her at the same speed.}
+        \wrongchoice{stay put and play a note of higher frequency.}
+        \wrongchoice{run towards her and play a note of higher frequency.}
+    \end{choices}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch17-q28}
+    To decrease the intensity of the sound you are hearing from your speaker system by a factor of \num{36},
+        you can:
+    \begin{choices}
+        \wrongchoice{reduce the amplitude by a factor of \num{12} and increase your distance from the speaker by a factor of \num{3}.}
+        \wrongchoice{reduce the amplitude by a factor of \num{4} and increase your distance from the speaker by a factor of \num{3}.}
+      \correctchoice{reduce the amplitude by a factor of \num{2} and increase your distance from the speaker by a factor of \num{3}.}
+        \wrongchoice{reduce the amplitude by a factor of \num{3} and increase your distance from the speaker by a factor of \num{4}.}
+        \wrongchoice{reduce the amplitude by a factor of \num{3} and increase your distance from the speaker by a factor of \num{12}.}
+    \end{choices}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch17-q29}
+    Drummers like to have high-pitched cymbals that vibrate at high frequencies. 
+    To obtain the highest frequencies,
+        a cymbal of a fixed size should be made of a material:
+    \begin{choices}
+        \wrongchoice{with a low Young's modulus and a low density.}
+        \wrongchoice{with a low Young's modulus and a high density.}
+      \correctchoice{with a high Young's modulus and a low density.}
+        \wrongchoice{with a high Young's modulus and a high density.}
+        \wrongchoice{composed of a metal-plastic laminate.}
+    \end{choices}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch17-q30}
+    A person standing in the street is unaware of an bird dropping that is falling from a point directly above him with increasing velocity. 
+    If the dropping were producing sound of a fixed frequency,
+        as it approaches the person would hear the sound:
+    \begin{choices}
+        \wrongchoice{drop in frequency.}
+        \wrongchoice{stay at the same frequency.}
+      \correctchoice{increase in frequency.}
+        \wrongchoice{decrease in loudness.}
+        \wrongchoice{stay at the same loudness.}
+    \end{choices}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch17-q31}
+    (Do not try the following: it could kill you. 
+    This question is only about a hypothetical possibility.) 
+    If you were standing below an object falling at terminal velocity,
+        as it approached you, you would hear the sound:
+    \begin{choices}
+        \wrongchoice{drop in frequency.}
+      \correctchoice{stay at the same frequency.}
+        \wrongchoice{increase in frequency.}
+        \wrongchoice{decrease in loudness.}
+        \wrongchoice{stay at the same loudness.}
+    \end{choices}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch17-q32}
+    A plane wave propagating along the $x$-axis has the form
+    \begin{equation*}
+        \Psi(r,t) = \left(\dfrac{\SI{0.002}{\centi\meter}}{r}\right) \sin\left(\dfrac{8\pi}{\si{\meter}}x-\dfrac{2720\pi}{\si{\second}}t\right).
+    \end{equation*}
+    The wavelength is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{0.0398}{\meter}}
+        \wrongchoice{\SI{0.125}{\meter}}
+      \correctchoice{\SI{0.250}{\meter}}
+        \wrongchoice{\SI{4.00}{\meter}}
+        \wrongchoice{\SI{8.00}{\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch17-q33}
+    A plane wave propagating along the $x$-axis has the form
+    \begin{equation*}
+        \Psi(r,t) = \left(\dfrac{\SI{0.002}{\centi\meter}}{r}\right) \sin\left(\dfrac{8\pi}{\si{\meter}}x-\dfrac{2720\pi}{\si{\second}}t\right).
+    \end{equation*}
+    The frequency of the wave is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{3.68e-2}{\hertz}}
+        \wrongchoice{\SI{7.35e-2}{\hertz}}
+      \correctchoice{\SI{1360}{\hertz}}
+        \wrongchoice{\SI{2720}{\hertz}}
+        \wrongchoice{\SI[parse-numbers=false]{2720\pi}{\hertz}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch17-q34}
+    A spherical wave has the form
+    \begin{equation*}
+        \Psi(r,t) = \left(\dfrac{\SI{0.002}{\centi\meter}}{r}\right) \sin\left(\dfrac{8\pi}{\si{\meter}}x-\dfrac{2720\pi}{\si{\second}}t\right).
+    \end{equation*}
+    The amplitude of the wave a distance $r$ from the source is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{0.002}{\centi\meter}}
+        \wrongchoice{$\dfrac{\SI{0.002}{\centi\meter}}{\sqrt{r}}$}
+      \correctchoice{$\dfrac{\SI{0.002}{\centi\meter}}{r}$}
+        \wrongchoice{$\dfrac{\left(\SI{0.002}{\centi\meter}\right)^2}{r}$}
+        \wrongchoice{$\dfrac{\SI{0.002}{\centi\meter}}{r^2}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch17-q35}
+    A spherical wave has the form
+    \begin{equation*}
+        \Psi(r,t) = \left(\dfrac{\SI{0.002}{\centi\meter}}{r}\right) \sin\left(\dfrac{8\pi}{\si{\meter}}x-\dfrac{2720\pi}{\si{\second}}t\right).
+    \end{equation*}
+    The wavelength of the wave is:
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{\SI{0.25}{\meter}}
+        \wrongchoice{\SI{0.50}{\meter}}
+        \wrongchoice{\SI{4}{\meter}}
+        \wrongchoice{\SI{8}{\meter}}
+        \wrongchoice{\SI[parse-numbers=false]{4\pi}{\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch17-q36}
+    A spherical wave has the form
+    \begin{equation*}
+        \Psi(r,t) = \left(\dfrac{\SI{0.002}{\centi\meter}}{r}\right) \sin\left(\dfrac{8\pi}{\si{\meter}}x-\dfrac{2720\pi}{\si{\second}}t\right).
+    \end{equation*}
+    The frequency of the wave is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{3.68e-4}{\hertz}}
+        \wrongchoice{\SI{7.35e-4}{\hertz}}
+      \correctchoice{\SI{1360}{\hertz}}
+        \wrongchoice{\SI{2720}{\hertz}}
+        \wrongchoice{\SI[parse-numbers=false]{2720\pi}{\hertz}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch17-q37}
+    A spherical wave has the form
+    \begin{equation*}
+        \Psi(r,t) = \left(\dfrac{\SI{0.002}{\centi\meter}}{r}\right) \sin\left(\dfrac{8\pi}{\si{\meter}}x-\dfrac{2720\pi}{\si{\second}}t\right).
+    \end{equation*}
+    The velocity of the wave is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{0.00588}{\meter\per\second}}
+        \wrongchoice{\SI{16}{\meter\per\second}}
+      \correctchoice{\SI{340}{\meter\per\second}}
+        \wrongchoice{\SI{1360}{\meter\per\second}}
+        \wrongchoice{\SI{2720}{\meter\per\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch17-q38}
+    A boy has climbed to the top of a \SI{6.00}{\meter} tall tree. 
+    When he shouts, the sound waves have an intensity of \SI{0.250}{\watt\per\meter\squared} at a \SI{1.00}{\meter} distance from the top of the tree. 
+    The ratio of intensity at the base of the tree to the intensity \SI{1.00}{\meter} from the top of the tree is:
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{$\dfrac{1}{36}$}
+        \wrongchoice{$\dfrac{1}{25}$}
+        \wrongchoice{$\dfrac{1}{6}$}
+        \wrongchoice{$\dfrac{1}{5}$}
+        \wrongchoice{$\dfrac{1}{\sqrt{6}}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch17-q39}
+    Which of the following does not have a precise definition in terms of the physical properties of sound waves?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{frequency}
+        \wrongchoice{intensity}
+      \correctchoice{loudness}
+        \wrongchoice{sound level}
+        \wrongchoice{wavelength}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch17-q40}
+    A friend hands you an equation sheet with the following equation for the Doppler effect:
+    \begin{equation*}
+        f^{\prime} = \dfrac{v-v_0}{v+v_S} f\, .
+    \end{equation*}
+    This version of the equation is correct with signs as given only if:
+    \begin{choices}
+        \wrongchoice{the observer and source are approaching each other.}
+        \wrongchoice{the observer is approaching the source while the source is moving away from the observer.}
+        \wrongchoice{the observer is moving away from the source while the source is approaching the observer.}
+      \correctchoice{the observer and source are moving away from each other.}
+        \wrongchoice{the observer and source are moving in perpendicular directions.}
+    \end{choices}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch17-q41}
+    A boat sounds a fog horn on a day when both the sea water and the air temperature are \SI{25.0}{\degreeCelsius}. 
+    The speed of sound in sea water is \SI{1533}{\meter\per\second}. 
+    How much earlier does a dolphin \SI{1000}{\meter} from the source hear the sound than a person in a boat that is also \SI{1000}{\meter} distant? 
+    (Ignore the time it takes the sound to reach the water surface.)
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{0.652}{\second}}
+        \wrongchoice{\SI{2.12}{\second}}
+      \correctchoice{\SI{2.24}{\second}}
+        \wrongchoice{\SI{2.77}{\second}}
+        \wrongchoice{\SI{2.90}{\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch17-q42}
+    A source of sound waves is placed at the center of a very large sound-reflecting wall.
+    The source emits \SI{0.500}{\watt} of power. 
+    Two meters from the source, the intensity is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{9.95e-3}{\watt\per\meter\squared}}
+      \correctchoice{\SI{1.99e-2}{\watt\per\meter\squared}}
+        \wrongchoice{\SI{0.313}{\watt\per\meter\squared}}
+        \wrongchoice{\SI{0.399}{\watt\per\meter\squared}}
+        \wrongchoice{\SI{0.625}{\watt\per\meter\squared}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch17-q43}
+    On a day when the speed of sound in the upper air is \SI{320}{\meter\per\second},
+        you fly coast to coast in the United States,
+        a distance of about \SI{4850}{\kilo\meter},
+        in about one hour,
+        if the Mach number for the speed of your airplane is about
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\num{1}}
+        \wrongchoice{\num{2}}
+        \wrongchoice{\num{3}}
+      \correctchoice{\num{4}}
+        \wrongchoice{\num{5}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch17-q44}
+    A fire engine approaches a wall at \SI{5}{\meter\per\second} while the siren emits a tone of \SI{500}{\hertz} frequency. 
+    At the time, the speed of sound in air is \SI{340}{\meter\per\second}.
+    How many beats per second do the people on the fire engine hear?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{zero}
+      \correctchoice{\num{15}}
+        \wrongchoice{\num{29}}
+        \wrongchoice{\num{63}}
+        \wrongchoice{\num{250}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch17-q45}
+    The figure below shows the positions of particles in a longitudinal standing wave.
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: TODO: draw tikz
+    \end{tikzpicture}
+    \end{center}
+    One quarter period later the particle distribution is shown in:
+    \begin{choices}
+        %% NOTE: ANS is E
+        \wrongchoice{
+            \begin{tikzpicture}
+                %% NOTE: TODO: draw tikz
+            \end{tikzpicture}
+        }
+    \end{choices}
+\end{question}
+}
+
+
+\endinput
+
+

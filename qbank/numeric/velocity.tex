@@ -1,0 +1,99 @@
+
+%% This defines the lua function mycommand()
+%\directlua{require('./qbank/lua/common.lua')}
+
+
+%% Numeric Difficulty A
+%%--------------------------------------
+\element{numeric}{
+\begin{questionmultx}{velocity-A-Q01}
+\luaexec{
+    %% Question
+    local Q = [[
+        Except for a \string\SI{\%d}{\string\minute} rest stop,
+            Emily drives with a constant velocity of
+            \string\SI{\%0.1f}{\string\kilo\string\meter\string\per\string\hour} north.
+        If Emily's average velocity is
+            \string\SI{\%0.1f}{\string\kilo\string\meter\string\per\string\hour} north.
+        What is the length in time of Emily's trip divided by
+            \string\SI{1}{\string\hour}?
+    ]]
+    %% Random Values
+    local tim = math.random(10,35)
+    local vel = 60 + round((30*math.random()),1)
+    local ave = vel - round((20 * math.random()),1)
+    local ans = (tim/60) * ave / (vel-ave)
+    %% Print Question
+    tex.print( string.format(Q, tim, vel, ave) )
+    %% Print AMCnumeric
+    options = [[ digits=4, decimals=2, sign=True, approx=1 ]]
+    tex.print( BeginCenter )
+    tex.print( string.format(AMCnumeric, ans, options ) )
+    tex.print( EndCenter )
+}
+\end{questionmultx}
+}
+
+\element{numeric}{
+\begin{questionmultx}{velocity-A-Q02}
+\luaexec{
+    %% Question
+    local Q = [[
+        Two cities are \string\SI{\%d}{\string\kilo\string\meter} apart.
+        Car A starts at City A and heads towards City B at a constant
+            speed of \string\SI{\%d}{\string\kilo\string\meter\string\per\string\hour}.
+        Car B starts at City B and heads towards City A at a constant
+            speed of \string\SI{\%d}{\string\kilo\string\meter\string\per\string\hour}.
+        What is the distance from City A divided by \string\SI{1}{\string\kilo\string\meter},
+            where the two cars pass each other
+    ]]
+    %% Random Values
+    local len = math.random(10,35)
+    local va = 50 + (100 * math.random())
+    local vb = 50 + (100 * math.random())
+    local ans = (va * len ) / (va+vb)
+    %% Print Question
+    tex.print( string.format(Q, len, va, vb) )
+    %% Print AMCnumeric
+    options = [[ digits=4, decimals=2, sign=True, approx=1 ]]
+    tex.print( BeginCenter )
+    tex.print( string.format(AMCnumeric, ans, options ) )
+    tex.print( EndCenter )
+}
+\end{questionmultx}
+}
+
+%% Numeric Difficulty B
+%%--------------------------------------
+
+
+%% Numeric Difficulty C
+%%--------------------------------------
+\element{numeric}{
+\begin{questionmultx}{velocity-C-Q01}
+\luaexec{
+    %% Question
+    local Q = [[
+        The fastest airplane is the Lockheed SR-71.
+        If an SR-71 flied \string\SI{\%d}{\string\kilo\string\meter}
+            west in \string\SI{\%0.1f}{\string\second},
+            what is its average velocity divided by 
+            \string\SI{1}{\string\kilo\string\meter\string\per\string\hour}?
+    ]]
+    %% Random Values
+    local dis = math.random(15,40)
+    local tim = 10 + round(50 * math.random(),1)
+    local ans = dis / tim
+    %% Print Question
+    tex.print( string.format(Q, dis, tim) )
+    %% Print AMCnumeric
+    options = [[ digits=4, decimals=3, sign=True, approx=1 ]]
+    tex.print( BeginCenter )
+    tex.print( string.format(AMCnumeric, ans, options ) )
+    tex.print( EndCenter )
+}
+\end{questionmultx}
+}
+
+\endinput
+

@@ -1,0 +1,901 @@
+
+%%--------------------------------------------------
+%% Halliday: Fundamentals of Physics
+%%--------------------------------------------------
+
+
+%% Chapter 25: Capacitance
+%%--------------------------------------------------
+
+
+%% Learning Objectives
+%%--------------------------------------------------
+
+%% 25.01: Sketch a schematic diagram of a circuit with a parallel-plate capacitor, a battery, and an open or closed switch.
+%% 25.02: In a circuit with a battery, an open switch, and an uncharged capacitor, explain what happens to the conduction electrons when the switch is closed.
+%% 25.03: For a capacitor, apply the relationship between the magnitude of charge $q$ on either plate (``the charge on the capacitor''), the potential difference $V$ between the plates (``the potential across the capacitor''), and the capacitance $C$ of the capacitor.
+
+
+%% Halliday Multiple Choice Questions
+%%--------------------------------------------------
+\element{halliday-mc}{
+\begin{question}{halliday-ch25-q01}
+    The units of capacitance are equivalent to:
+    \begin{choices}
+        \wrongchoice{joule per coulomb (\si{\joule\per\coulomb})}
+        \wrongchoice{volt per coulomb (\si{\volt\per\coulomb})}
+        \wrongchoice{joule squared per coulomb (\si{\joule\squared\per\coulomb})}
+        \wrongchoice{coulomb per joule (\si{\coulomb\per\joule})}
+      \correctchoice{coulomb squared per joule (\si{\coulomb\squared\per\joule})}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch25-q02}
+    A farad (\si{\farad}) is the same as a:
+    \begin{choices}
+        \wrongchoice{joule per volt (\si{\joule\per\volt})}
+        \wrongchoice{volt per joule (\si{\volt\per\joule})}
+      \correctchoice{coulomb per volt (\si{\coulomb\per\volt})}
+        \wrongchoice{volt per coulomb (\si{\volt\per\coulomb})}
+        \wrongchoice{newton per coulomb (\si{\newton\per\coulomb})}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch25-q03}
+    A capacitor $C$ ``has a charge $Q$''.
+    The actual charges on its plates are:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$Q$, $Q$}
+        \wrongchoice{$\dfrac{Q}{2}$, $\dfrac{Q}{2}$}
+      \correctchoice{$Q$, $-Q$}
+        \wrongchoice{$\dfrac{Q}{2}$, $\dfrac{-Q}{2}$}
+        \wrongchoice{$Q$, zero}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch25-q04}
+    Each plate of a capacitor stores a charge of magnitude \SI{1}{\milli\coulomb} when a \SI{100}{\volt} potential difference is applied. 
+    The capacitance is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{5}{\micro\farad}}
+      \correctchoice{\SI{10}{\micro\farad}}
+        \wrongchoice{\SI{50}{\micro\farad}}
+        \wrongchoice{\SI{100}{\micro\farad}}
+        \wrongchoice{none of the provided}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch25-q05}
+    To charge a \SI{1}{\farad} capacitor with \SI{2}{\coulomb} requires a potential difference of:
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{\SI{2}{\volt}}
+        \wrongchoice{\SI{0.2}{\volt}}
+        \wrongchoice{\SI{5}{\volt}}
+        \wrongchoice{\SI{0.5}{\volt}}
+        \wrongchoice{none of the provided}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch25-q06}
+    The capacitance of a parallel-plate capacitor with plate area $A$ and plate separation $d$ is given by:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\dfrac{\epsilon_0 d}{A}$}
+        \wrongchoice{$\dfrac{\epsilon_0 d}{2A}$}
+      \correctchoice{$\dfrac{\epsilon_0 A}{d}$}
+        \wrongchoice{$\dfrac{\epsilon_0 A}{2d}$}
+        \wrongchoice{$\dfrac{Ad}{\epsilon_0}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch25-q07}
+    The capacitance of a parallel-plate capacitor is:
+    \begin{choices}
+      \correctchoice{proportional to the plate area}
+        \wrongchoice{proportional to the charge stored}
+        \wrongchoice{independent of any material inserted between the plates}
+        \wrongchoice{proportional to the potential difference of the plates}
+        \wrongchoice{proportional to the plate separation}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch25-q08}
+    The plate areas and plate separations of five parallel plate capacitors are
+    \begin{description}
+        \item[capacitor 1:] area $A_0$, separation $d_0$
+        \item[capacitor 2:] area $2A_0$, separation $2d_0$
+        \item[capacitor 3:] area $2A_0$, separation $d_0/2$
+        \item[capacitor 4:] area $A_0/2$, separation $2d_0$
+        \item[capacitor 5:] area $A_0$, separation $d_0/2$
+    \end{description}
+    Rank these according to their capacitances, least to greatest.
+    \begin{choices}
+        \wrongchoice{1, 2, 3, 4, 5}
+        \wrongchoice{5, 4, 3, 2, 1}
+        \wrongchoice{5, 3 and 4 tie, then 1, 2}
+      \correctchoice{4, 1 and 2 tie, then 5, 3}
+        \wrongchoice{3, 5, 1 and 2 tie, 1, 4}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch25-q09}
+    The capacitance of a parallel-plate capacitor can be increased by:
+    \begin{choices}
+        \wrongchoice{increasing the charge}
+        \wrongchoice{decreasing the charge}
+        \wrongchoice{increasing the plate separation}
+      \correctchoice{decreasing the plate separation}
+        \wrongchoice{decreasing the plate area}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch25-q10}
+    If both the plate area and the plate separation of a parallel-plate capacitor are doubled,
+        the capacitance is:
+    \begin{choices}
+        \wrongchoice{doubled}
+        \wrongchoice{halved}
+      \correctchoice{unchanged}
+        \wrongchoice{tripled}
+        \wrongchoice{quadrupled}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch25-q11}
+    If the plate area of an isolated charged parallel-plate capacitor is doubled:
+    \begin{choices}
+        \wrongchoice{the electric field is doubled}
+      \correctchoice{the potential difference is halved}
+        \wrongchoice{the charge on each plate is halved}
+        \wrongchoice{the surface charge density on each plate is doubled}
+        \wrongchoice{none of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch25-q12}
+    If the plate separation of an isolated charged parallel-plate capacitor is doubled:
+    \begin{choices}
+        \wrongchoice{the electric field is doubled}
+        \wrongchoice{the potential difference is halved}
+        \wrongchoice{the charge on each plate is halved}
+        \wrongchoice{the surface charge density on each plate is doubled}
+      \correctchoice{none of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch25-q13}
+    Pulling the plates of an isolated charged capacitor apart:
+    \begin{choices}
+        \wrongchoice{increases the capacitance}
+      \correctchoice{increases the potential difference}
+        \wrongchoice{does not affect the potential difference}
+        \wrongchoice{decreases the potential difference}
+        \wrongchoice{does not affect the capacitance}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch25-q14}
+    If the charge on a parallel-plate capacitor is doubled:
+    \begin{choices}
+        \wrongchoice{the capacitance is halved}
+        \wrongchoice{the capacitance is doubled}
+        \wrongchoice{the electric field is halved}
+      \correctchoice{the electric field is doubled}
+        \wrongchoice{the surface charge density is not changed on either plate}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch25-q15}
+    A parallel-plate capacitor has a plate area of \SI{0.2}{\meter\squared} and a plate separation of \SI{0.1}{\milli\meter}.
+    To obtain an electric field of \SI{2.0e6}{\volt\per\meter} between the plates,
+        the magnitude of the charge on each plate should be:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{8.9e-7}{\coulomb}}
+        \wrongchoice{\SI{1.8e-6}{\coulomb}}
+        \wrongchoice{\SI{3.5e-6}{\coulomb}}
+      \correctchoice{\SI{7.1e-6}{\coulomb}}
+        \wrongchoice{\SI{1.4e-5}{\coulomb}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch25-q16}
+    A parallel-plate capacitor has a plate area of \SI{0.2}{\meter\squared} and a plate separation of \SI{0.1}{\milli\meter}.
+    If the charge on each plate has a magnitude of \SI{4e-6}{\coulomb} the potential difference across the plates is approximately:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{zero}
+        \wrongchoice{\SI{4e-2}{\volt}}
+        \wrongchoice{\SI{1e2}{\volt}}
+      \correctchoice{\SI{2e2}{\volt}}
+        \wrongchoice{\SI{4e8}{\volt}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch25-q17}
+    The capacitance of a spherical capacitor with inner radius $a$ and outer radius $b$ is proportional to:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\dfrac{a}{b}$}
+        \wrongchoice{$b-a$}
+        \wrongchoice{$b^2-a^2$}
+      \correctchoice{$\dfrac{ab}{b-a}$}
+        \wrongchoice{$\dfrac{ab}{b^2-a^2}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch25-q18}
+    The capacitance of a single isolated spherical conductor with radius $R$ is proportional to:
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{$R$}
+        \wrongchoice{$R^2$}
+        \wrongchoice{$\dfrac{1}{R}$}
+        \wrongchoice{$\dfrac{1}{R^2}$}
+        \wrongchoice{none of the provided}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch25-q19}
+    Two conducting spheres have radii of $R_1$ and $R_2$,
+        with $R_1$ greater than $R_2$. 
+    If they are far apart the capacitance is proportional to:
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{$\dfrac{R_1 R_2}{R_1-R_2}$}
+        \wrongchoice{$R_1^2-R_2^2$}
+        \wrongchoice{$\dfrac{R_1-R_2}{R_1 R_2}$}
+        \wrongchoice{$R_1^2+R_2^2$}
+        \wrongchoice{none of the provided}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch25-q20}
+    The capacitance of a cylindrical capacitor can be increased by:
+    \begin{choices}
+        \wrongchoice{decreasing both the radius of the inner cylinder and the length}
+      \correctchoice{increasing both the radius of the inner cylinder and the length}
+        \wrongchoice{increasing the radius of the outer cylindrical shell and decreasing the length}
+        \wrongchoice{decreasing the radius of the inner cylinder and increasing the radius of the outer cylindrical shell}
+        \wrongchoice{only by decreasing the length}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch25-q21}
+    A battery is used to charge a series combination of two identical capacitors. 
+    If the potential difference across the battery terminals is $V$ and total charge $Q$ flows through the battery during the charging process then the charge on the positive plate of each capacitor and the potential difference across each capacitor are:
+    \begin{choices}
+        \wrongchoice{$Q/2$ and $V/2$, respectively}
+        \wrongchoice{$Q$ and $V$ , respectively}
+        \wrongchoice{$Q/2$ and $V$ , respectively}
+      \correctchoice{$Q$ and $V/2$, respectively}
+        \wrongchoice{$Q$ and $2V$, respectively}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch25-q22}
+    A battery is used to charge a parallel combination of two identical capacitors. 
+    If the potential difference across the battery terminals is $V$ and total charge $Q$ flows through the battery during the charging process then the charge on the positive plate of each capacitor and the potential difference across each capacitor are:
+    \begin{choices}
+        \wrongchoice{$Q/2$ and $V/2$, respectively}
+        \wrongchoice{$Q$ and $V$ , respectively}
+      \correctchoice{$Q/2$ and $V$ , respectively}
+        \wrongchoice{$Q$ and $V/2$, respectively}
+        \wrongchoice{$Q$ and $2V$, respectively}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch25-q23}
+    A \SI{2}{\micro\farad} and a \SI{1}{\micro\farad} capacitor are connected in series and a potential difference is applied across the combination. 
+    The \SI{2}{\micro\farad} capacitor has:
+    \begin{choices}
+        \wrongchoice{twice the charge of the \SI{1}{\micro\farad} capacitor}
+        \wrongchoice{half the charge of the \SI{1}{\micro\farad} capacitor}
+        \wrongchoice{twice the potential difference of the \SI{1}{\micro\farad} capacitor}
+      \correctchoice{half the potential difference of the \SI{1}{\micro\farad} capacitor}
+        \wrongchoice{none of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch25-q24}
+    A \SI{2}{\micro\farad} and a \SI{1}{\micro\farad} capacitor are connected in parallel and a potential difference is applied across the combination. 
+    The \SI{2}{\micro\farad} capacitor has:
+    \begin{choices}
+      \correctchoice{twice the charge of the \SI{1}{\micro\farad} capacitor}
+        \wrongchoice{half the charge of the \SI{1}{\micro\farad} capacitor}
+        \wrongchoice{twice the potential difference of the \SI{1}{\micro\farad} capacitor}
+        \wrongchoice{half the potential difference of the \SI{1}{\micro\farad} capacitor}
+        \wrongchoice{none of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch25-q25}
+    Let $Q$ denote charge, $V$ denote potential difference, and $U$ denote stored energy. 
+    Of these quantities, capacitors in series must have the same:
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{$Q$ only}
+        \wrongchoice{$V$ only}
+        \wrongchoice{$U$ only}
+        \wrongchoice{$Q$ and $U$ only}
+        \wrongchoice{$V$ and $U$ only}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch25-q26}
+    Let $Q$ denote charge, $V$ denote potential difference, and $U$ denote stored energy. 
+    Of these quantities, capacitors in parallel must have the same:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{$Q$ only}
+      \correctchoice{$V$ only}
+        \wrongchoice{$U$ only}
+        \wrongchoice{$Q$ and $U$ only}
+        \wrongchoice{$V$ and $U$ only}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch25-q27}
+    Capacitors $C_1$ and $C_2$ are connected in parallel. 
+    The equivalent capacitance is given by:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\dfrac{C_1 C_2}{(C_1+C_2}$}
+        \wrongchoice{$\dfrac{(C_1+C_2}{C_1 C_2}$}
+        \wrongchoice{$\dfrac{1}{C_1+C_2}$}
+        \wrongchoice{$\dfrac{C_1}{C_2}$}
+      \correctchoice{$C_1+C_2$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch25-q28}
+    Capacitors $C_1$ and $C_2$ are connected in series. 
+    The equivalent capacitance is given by:
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{$\dfrac{C_1 C_2}{(C_1+C_2}$}
+        \wrongchoice{$\dfrac{(C_1+C_2}{C_1 C_2}$}
+        \wrongchoice{$\dfrac{1}{C_1+C_2}$}
+        \wrongchoice{$\dfrac{C_1}{C_2}$}
+        \wrongchoice{$C_1+C_2$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch25-q29}
+    Capacitors $C_1$ and $C_2$ are connected in series and a potential difference is applied to the combination. 
+    If the capacitor that is equivalent to the combination has the same potential difference,
+        then the charge on the equivalent capacitor is the same as:
+    \begin{choices}
+      \correctchoice{the charge on $C_1$}
+        \wrongchoice{the sum of the charges on $C_1$ and $C_2$}
+        \wrongchoice{the difference of the charges on $C_1$ and $C_2$}
+        \wrongchoice{the product of the charges on $C_1$ and $C_2$}
+        \wrongchoice{none of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch25-q30}
+    Capacitors $C_1$ and $C_2$ are connected in parallel and a potential difference is applied to the combination. 
+    If the capacitor that is equivalent to the combination has the same potential difference,
+        then the charge on the equivalent capacitor is the same as:
+    \begin{choices}
+        \wrongchoice{the charge on $C_1$}
+      \correctchoice{the sum of the charges on $C_1$ and $C_2$}
+        \wrongchoice{the difference of the charges on $C_1$ and $C_2$}
+        \wrongchoice{the product of the charges on $C_1$ and $C_2$}
+        \wrongchoice{none of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch25-q31}
+    Two identical capacitors are connected in series and two,
+        each identical to the first, are connected in parallel. 
+    The equivalent capacitance of the series connection is \rule[-0.1pt]{4em}{0.1pt} the equivalent capacitance of parallel connection.
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{twice}
+        \wrongchoice{four times}
+        \wrongchoice{half}
+      \correctchoice{one-fourth}
+        \wrongchoice{the same as}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch25-q32}
+    Two identical capacitors, each with capacitance $C$,
+        are connected in parallel and the combination is connected in series to a third identical capacitor. 
+    The equivalent capacitance of this arrangement is:
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{$\dfrac{2C}{3}$}
+        \wrongchoice{$C$}
+        \wrongchoice{$\dfrac{3C}{2}$}
+        \wrongchoice{$2C$}
+        \wrongchoice{$3C$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch25-q33}
+    A \SI{2}{\micro\farad} and a \SI{1}{\micro\farad} capacitor are connected in series and charged from a battery. 
+    They store charges $P$ and $Q$, respectively. 
+    When disconnected and charged separately using the same battery,
+        they have charges $R$ and $S$, respectively. 
+    Then:
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{$R > S > Q = P$}
+        \wrongchoice{$P > Q > R = S$}
+        \wrongchoice{$R > P = Q > S$}
+        \wrongchoice{$R = P > S = Q$}
+        \wrongchoice{$R > P > S = Q$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch25-q34}
+    Capacitor $C_1$ is connected alone to a battery and charged until the magnitude of the charge on each plate is \SI{4.0e-8}{\coulomb}.
+    Then it is removed from the battery and connected to two other capacitors $C_2$ and $C_3$,
+        as shown. 
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: circuitikz
+    \end{tikzpicture}
+    \end{center}
+    The charge on the positive plate of $C_1$ is then \SI{1.0e-8}{\coulomb}.
+    The charges on the positive plates of $C_2$ and $C_3$ are:
+    \begin{choices}
+      \correctchoice{$q_2=\SI{3.0e-8}{\coulomb}$ and $q_3=\SI{3.0e-8}{\coulomb}$}
+        \wrongchoice{$q_2=\SI{2.0e-8}{\coulomb}$ and $q_3=\SI{2.0e-8}{\coulomb}$}
+        \wrongchoice{$q_2=\SI{5.0e-8}{\coulomb}$ and $q_3=\SI{1.0e-8}{\coulomb}$}
+        \wrongchoice{$q_2=\SI{3.0e-8}{\coulomb}$ and $q_3=\SI{1.0e-8}{\coulomb}$}
+        \wrongchoice{$q_2=\SI{1.0e-8}{\coulomb}$ and $q_3=\SI{3.0e-8}{\coulomb}$}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch25-q35}
+    Each of the four capacitors shown is \SI{500}{\micro\farad}.
+    The voltmeter reads \SI{1000}{\volt}.
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: circuitikz
+    \end{tikzpicture}
+    \end{center}
+    The magnitude of the charge on each capacitor plate is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{0.2}{\coulomb}}
+      \correctchoice{\SI{0.5}{\coulomb}}
+        \wrongchoice{\SI{20}{\coulomb}}
+        \wrongchoice{\SI{50}{\coulomb}}
+        \wrongchoice{none of the provided}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch25-q36}
+    The diagram shows four \SI{6}{\micro\farad} capacitors. 
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: circuitikz
+    \end{tikzpicture}
+    \end{center}
+    The capacitance between points $a$ and $b$ is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{3}{\micro\farad}}
+        \wrongchoice{\SI{4}{\micro\farad}}
+      \correctchoice{\SI{6}{\micro\farad}}
+        \wrongchoice{\SI{9}{\micro\farad}}
+        \wrongchoice{\SI{1}{\micro\farad}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch25-q37}
+    Each of the two \SI{25}{\micro\farad} capacitors shown is initially uncharged. 
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: circuitikz
+    \end{tikzpicture}
+    \end{center}
+    How many coulombs of charge pass through the ammeter $A$ after the switch $S$ is closed?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{0.10}{\coulomb}}
+      \correctchoice{\SI{0.20}{\coulomb}}
+        \wrongchoice{\SI{10}{\coulomb}}
+        \wrongchoice{\SI{0.05}{\coulomb}}
+        \wrongchoice{none of the provided}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch25-q38}
+    A \SI{20}{\farad} capacitor is charged to \SI{200}{\volt}.
+    Its stored energy is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{4000}{\joule}}
+        \wrongchoice{\SI{4}{\joule}}
+      \correctchoice{\SI{0.4}{\joule}}
+        \wrongchoice{\SI{2000}{\joule}}
+        \wrongchoice{\SI{0.1}{\joule}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch25-q39}
+    A charged capacitor stores \SI{10}{\coulomb} at \SI{40}{\volt}.
+    Its stored energy is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{400}{\joule}}
+        \wrongchoice{\SI{4}{\joule}}
+        \wrongchoice{\SI{0.2}{\joule}}
+        \wrongchoice{\SI{2.5}{\joule}}
+      \correctchoice{\SI{200}{\joule}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch25-q40}
+    A \SI{2}{\micro\farad} and a \SI{1}{\micro\farad} capacitor are connected in series and charged by a battery. 
+    They store energies $P$ and $Q$, respectively. 
+    When disconnected and charged separately using the same battery,
+        they store energies $R$ and $S$, respectively. Then:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{$R > P > S > Q$}
+        \wrongchoice{$P > Q > R > S$}
+        \wrongchoice{$R > P > Q > S$}
+        \wrongchoice{$P > R > S > Q$}
+      \correctchoice{$R > S > Q > P$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch25-q41}
+    The quantity $\dfrac{1}{2}\epsilon_0 E^2$ has the significance of:
+    \begin{choices}
+        \wrongchoice{energy divided by capacitance}
+        \wrongchoice{energy divided by charge}
+        \wrongchoice{energy}
+      \correctchoice{energy divided by volume}
+        \wrongchoice{energy dividied by electric potential}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch25-q42}
+    Capacitors $A$ and $B$ are identical. 
+    Capacitor $A$ is charged so it stores \SI{4}{\joule} of energy and capacitor $B$ is uncharged. 
+    The capacitors are then connected in parallel. 
+    The total stored energy in the capacitors is now:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{16}{\joule}}
+        \wrongchoice{\SI{8}{\joule}}
+        \wrongchoice{\SI{4}{\joule}}
+      \correctchoice{\SI{2}{\joule}}
+        \wrongchoice{\SI{1}{\joule}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch25-q43}
+    To store a total of \SI{0.040}{\joule} of energy in the two identical capacitors shown,
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: circuitikz
+    \end{tikzpicture}
+    \end{center}
+        each should have a capacitance of:
+    \begin{multicols}{3}
+    \begin{choices}
+        %% NOTE: double check this
+        \wrongchoice{\SI{0.10}{\micro\farad}}
+        \wrongchoice{\SI{0.50}{\micro\farad}}
+      \correctchoice{\SI{1.0}{\micro\farad}}
+        \wrongchoice{\SI{1.5}{\micro\farad}}
+        \wrongchoice{\SI{2.0}{\micro\farad}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch25-q44}
+    A battery is used to charge a parallel-plate capacitor,
+        after which it is disconnected. 
+    Then the plates are pulled apart to twice their original separation. 
+    This process will double the:
+    \begin{choices}
+        \wrongchoice{capacitance}
+        \wrongchoice{surface charge density on each plate}
+      \correctchoice{stored energy}
+        \wrongchoice{electric field between the two places}
+        \wrongchoice{charge on each plate}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch25-q45}
+    A parallel-plate capacitor has a plate area of \SI{0.3}{\meter\squared} and a plate separation of \SI{0.1}{\milli\meter}.
+    If the charge on each plate has a magnitude of \SI{5e-6}{\coulomb} then the force exerted by one plate on the other has a magnitude of about:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{zero}
+      \correctchoice{\SI{5}{\newton}}
+        \wrongchoice{\SI{9}{\newton}}
+        \wrongchoice{\SI{1e4}{\newton}}
+        \wrongchoice{\SI{9e5}{\newton}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch25-q46}
+    A certain capacitor has a capacitance of \SI{5.0}{\micro\farad}.
+    After it is charged to \SI{5.0}{\micro\coulomb} and isolated,
+        the plates are brought closer together so its capacitance becomes \SI{10}{\micro\farad}.
+    The work done by the agent is about:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{zero}
+        \wrongchoice{\SI{1.25e-6}{\joule}}
+      \correctchoice{\SI{-1.25e-6}{\joule}}
+        \wrongchoice{\SI{8.3e-7}{\joule}}
+        \wrongchoice{\SI{-8.3e-7}{\joule}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch25-q47}
+    A dielectric slab is slowly inserted between the plates of a parallel plate capacitor,
+        while the potential difference between the plates is held constant by a battery. 
+    As it is being inserted:
+    \begin{choices}
+        \wrongchoice{the capacitance, the potential difference between the plates, and the charge on the positive plate all increase}
+        \wrongchoice{the capacitance, the potential difference between the plates, and the charge on the positive plate all decrease}
+        \wrongchoice{the potential difference between the plates increases, the charge on the positive plate decreases, and the capacitance remains the same}
+        \wrongchoice{the capacitance and the charge on the positive plate decrease but the potential difference between the plates remains the same}
+      \correctchoice{the capacitance and the charge on the positive plate increase but the potential difference between the plates remains the same}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch25-q48}
+    An air-filled parallel-plate capacitor has a capacitance of \SI{1}{\pico\farad}.
+    The plate separation is then doubled and a wax dielectric is inserted,
+        completely filling the space between the plates. 
+    As a result, the capacitance becomes \SI{2}{\pico\farad}.
+    The dielectric constant of the wax is:
+    \begin{multicols}{3}
+    \begin{choices}
+        %% NOTE: check units
+        \wrongchoice{\num{0.25}}
+        \wrongchoice{\num{0.5}}
+        \wrongchoice{\num{2.0}}
+      \correctchoice{\num{4.0}}
+        \wrongchoice{\num{8.0}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch25-q49}
+    One of materials listed below is to be placed between two identical metal sheets,
+        with no, air gap, to form a parallel-plate capacitor. 
+    Which produces the greatest capacitance?
+    \begin{choices}
+        \wrongchoice{material of thickness \SI{0.1}{\milli\meter} and dielectric constant 2}
+        \wrongchoice{material of thickness \SI{0.2}{\milli\meter} and dielectric constant 3}
+        \wrongchoice{material of thickness \SI{0.3}{\milli\meter} and dielectric constant 2}
+        \wrongchoice{material of thickness \SI{0.4}{\milli\meter} and dielectric constant 8}
+      \correctchoice{material of thickness \SI{0.5}{\milli\meter} and dielectric constant 11}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch25-q50}
+    Two capacitors are identical except that one is filled with air and the other with oil. 
+    Both capacitors carry the same charge. 
+    The ratio of the electric fields $E_{\text{air}}/E_{\text{oil}}$ is:
+    \begin{choices}
+        \wrongchoice{between 0 and 1}
+        \wrongchoice{0}
+        \wrongchoice{1}
+      \correctchoice{between 1 and infinity}
+        \wrongchoice{infinite}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch25-q51}
+    A parallel-plate capacitor, with air dielectric, is charged by a battery,
+        after which the battery is disconnected. 
+    A slab of glass dielectric is then slowly inserted between the plates. 
+    As it is being inserted:
+    \begin{choices}
+        \wrongchoice{a force repels the glass out of the capacitor}
+      \correctchoice{a force attracts the glass into the capacitor}
+        \wrongchoice{no force acts on the glass}
+        \wrongchoice{a net charge appears on the glass}
+        \wrongchoice{the glass makes the plates repel each other}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch25-q52}
+    Two parallel-plate capacitors with the same plate separation but different capacitance are connected in parallel to a battery. 
+    Both capacitors are filled with air. 
+    The quantity that is \emph{not} the same for both capacitors when they are fully charged is:
+    \begin{choices}
+        \wrongchoice{potential difference}
+        \wrongchoice{energy density}
+        \wrongchoice{electric field between the plates}
+      \correctchoice{charge on the positive plate}
+        \wrongchoice{dielectric constant}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch25-q53}
+    Two parallel-plate capacitors with the same plate area but different capacitance are connected in parallel to a battery.
+    Both capacitors are filled with air. 
+    The quantity that is the same for both capacitors when they are fully charged is:
+    \begin{choices}
+      \correctchoice{potential difference}
+        \wrongchoice{energy density}
+        \wrongchoice{electric field between the plates}
+        \wrongchoice{charge on the positive plate}
+        \wrongchoice{plate separation}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch25-q54}
+    Two parallel-plate capacitors with different plate separation but the same capacitance are connected in series to a battery. 
+    Both capacitors are filled with air. 
+    The quantity that is \emph{not} the same for both capacitors when they are fully charged is:
+    \begin{choices}
+        \wrongchoice{potential difference}
+        \wrongchoice{stored energy}
+      \correctchoice{electric field between the plates}
+        \wrongchoice{charge on the positive plate}
+        \wrongchoice{dielectric constant}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch25-q55}
+    Two parallel-plate capacitors with different capacitance but the same plate separation are connected in series to a battery. 
+    Both capacitors are filled with air. 
+    The quantity that is the same for both capacitors when they are fully charged is:
+    \begin{choices}
+        \wrongchoice{potential difference}
+        \wrongchoice{stored energy}
+        \wrongchoice{energy density}
+        \wrongchoice{electric field between the plates}
+      \correctchoice{charge on the positive plate}
+    \end{choices}
+\end{question}
+}
+
+
+\endinput
+
+

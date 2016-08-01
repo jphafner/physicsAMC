@@ -1,0 +1,255 @@
+Part I:  Multiple Choice Questions.
+         There are 30 multiple choice questions worth 2 points each.
+         Choose the best answer and record it on the scan sheet.
+
+1.   Stars twinkle more than planets because 
+        A. starlight scatters differently from atmospheric dust particles 
+           than light from planets. 
+        B. of an optical illusion that makes all dim light sources flicker. 
+        C. refraction of light by irregularities in our atmosphere affects 
+           small sources more than large ones. 
+        D. the light output from stars are intrinsically more variable than 
+           from planets. 
+
+2.   If all the asteroids in the asteroid belt were assembled into a planet, 
+     it would have a mass 
+        A. About the same mass as Jupiter. 
+        B. Much greater than Jupiter's mass. 
+        C. Much less than that of the Earth. 
+        D. About the same mass as the Earth. 
+
+3.   As the solar nebula collapsed, 
+        A. all of the other answers. 
+        B. the amount of angular momentum remained the same. 
+        C. the bulk of the gas ended up in the Sun. 
+        D. it gradually flattened to a disk-shaped cloud. 
+
+4.   Which of the following main-sequence stars would have the highest 
+     surface temperature? 
+        A. M1 
+        B. G2 
+        C. A0 
+        D. B5 
+
+5.   The mass of a main-sequence star determines all of the following 
+     properties EXCEPT 
+        A. composition. 
+        B. luminosity. 
+        C. radius. 
+        D. lifetime. 
+
+6.   The two main reasons we use large telescopes for observations in 
+     astronomy are: 
+        A. Light gathering power and resolution. 
+        B. Magnfication and optical quality. 
+        C. Magnification and clarity. 
+        D. Magnification and resolution. 
+
+7.   Wien's law relates 
+        A. the color of radiation to the temperature of the body emitting 
+           it. 
+        B. the wavelength of light to its velocity. 
+        C. the shape of an orbit to its distance from the Sun. 
+        D. an object's speed to its mass. 
+
+8.   What is a star's source of energy during its main-sequence phase? 
+        A. Gravitational contraction 
+        B. Hydrogen fusion 
+        C. Convection 
+        D. Uranium fission 
+
+9.   Why are the terrestrial planets so much smaller than the Jovian ones? 
+        A. Near the Sun, only hard to melt substances which are rare 
+           compared to hydrogen could condense. Thus, there was less material 
+           to build them. 
+        B. They are formed from highly compressible material such as hydrogen 
+           and helium so they could be squeezed to a very small size. 
+        C. They spin so fast they flung off most of their original matter 
+           which has ended up in the comet cloud. 
+        D. The Sun has pulled material off of them. 
+
+10.  Main sequence stars obey a relation between 
+        A. composition and surface temperature. 
+        B. mass and luminosity. 
+        C. age and spectral type. 
+        D. none of these. 
+
+11.  Electromagnetic radiation can be described 
+        A. only as what our eyes can see. 
+        B. only as a particle. 
+        C. only as a wave. 
+        D. both as a wave and as a particle. 
+
+12.  Comets differ from asteroids in that 
+        A. they have low densities. 
+        B. they are composed of ice as well as rock. 
+        C. there are not many of them. 
+        D. they do not have cratered surfaces. 
+
+13.  Which statement below concerning the Jovian planets is INCORRECT? 
+        A. All the Jovian planets have rings encircling them. 
+        B. The Jovian planets are composed primarily of hydrogen and helium. 
+        C. The Jovian planets have shorter orbital periods than terrestrial 
+           planets. 
+        D. The Jovian planets have more satellites than the terrestrial 
+           planets. 
+
+14.  As a star like the Sun evolves into a red giant, its core 
+        A. expands and heats. 
+        B. contracts and heats. 
+        C. contracts and cools. 
+        D. expands and cools. 
+
+
+
+
+
+
+
+15.  Close up images of asteroids obtained by space probes show that 
+     asteroids have 
+        A. cratered surfaces. 
+        B. volcanic activity. 
+        C. atmospheres. 
+        D. spherical shapes. 
+
+16.  The Hubble Space Telescope (HST) is more powerful than ground-based 
+     telescopes for many astronomical studies because 
+        A. it uses electronic detectors, not photographic film 
+        B. it has a larger mirror than any ground-based telescope 
+        C. it can go close to the stars 
+        D. its images are not blurred by the earth's atmosphere 
+
+17.  In order to begin nuclear fusion, a high temperature is required in the 
+     center of a star to overcome the 
+        A. electrical repulsion between protons. 
+        B. nuclear force between protons. 
+        C. nuclear force between neutrons. 
+        D. gravitational force between particles. 
+
+18.  In order from the hottest to the coolest stars, the order of the stellar 
+     spectral sequence is 
+        A. MKGFABO 
+        B. OBFGAMK 
+        C. OBAFGKM 
+        D. ABFGKMO 
+
+19.  The composition of solid objects in the outer solar system differs from 
+     those inside the frost line in that 
+        A. they are composed of ices instead of rock. 
+        B. there is no difference. 
+        C. they are composed of ices as well as rocks and metals. 
+        D. they are composed of rock. 
+
+20.  The Hertzsprung-Russell (H-R) diagram is a plot of stellar 
+        A. temperature vs. mass. 
+        B. luminosity vs. temperature. 
+        C. spectral type vs. color. 
+        D. mass vs. age. 
+
+21.  An optical spectrum of a star it would be a(n) _______ spectrum. 
+        A. emission 
+        B. continuous 
+        C. filtergram 
+        D. absorption 
+
+22.  What is the energy source of brown dwarfs? 
+        A. Gravitational contraction 
+        B. Hydrogen fusion 
+        C. Convection 
+        D. Uranium fission 
+
+
+23.  Which of the following is NOT one of Kirchoff's Laws? 
+        A. The peak wavelength of light emitted by a thermal source 
+           decreases with increasing temperature. 
+        B. A cool medium obscuring a continuum source results in an 
+           absorption line spectrum. 
+        C. Hot, diffuse gas produces an emission line spectrum. 
+        D. Hot, dense objects emit a continuous spectrum. 
+
+24.  Globular clusters are 
+        A. gravitationally bound aggregates of millions of stars. 
+        B. diffuse stellar systems held together by unseen dark matter. 
+        C. loose associations of young stars. 
+        D. dark patches ("globules") of dust in interstellar space. 
+
+25.  Fusion reactions can occur in 
+        A. brown dwarfs. 
+        B. test tube mixtures of palladium and heavy water. 
+        C. Jupiter mass exoplanets. 
+        D. stars with masses exceeding 8% of the sun's mass. 
+
+26.  The map of solar system in order of distance from the sun would read 
+        A. terrestrial planets, asteroid belt, Kuiper belt, jovian planets. 
+        B. jovian planets, asteroid belt, terrestrial planets, Kuiper belt. 
+        C. terrestrial planets, asteroid belt, jovian planets, Kuiper belt. 
+        D. terrestrial planets, jovian planets, asteroid belt, Kuiper belt. 
+
+27.  Most of the stars in our galaxy (about 90%) are now on the main sequence 
+     in the HR diagram. That is because 
+        A. it is the longest lived phase of life for most stars. 
+        B. red giants only form from the relatively rare highly massive 
+           stars. 
+        C. it is the only stable configuration for a star. 
+        D. there are no old stars in our galaxy. 
+
+28.  What is the primary energy transport mechanism in stars? 
+        A. A combination of convection and conduction. 
+        B. Radiation. 
+        C. A combination of radiation and convection. 
+        D. Convection. 
+
+29.  The main sequence is primarily a sequence in stellar 
+        A. composition. 
+        B. mass. 
+        C. age. 
+        D. size. 
+
+30.  Which of the following types of observations must be done above the 
+     Earth's atmosphere? 
+        A. Radio 
+        B. Optical 
+        C. All of these can be done on the earth. 
+        D. X-ray 
+
+
+
+
+31. (Extra credit) Jupiter has been near opposition for much of the
+     semester.  Does this mean it has been moving
+        A. prograde, or
+        B. retrograde?
+
+
+   1. C.
+   2. C.
+   3. A.
+   4. D.
+   5. A.
+   6. A.
+   7. A.
+   8. B.
+   9. A.
+  10. B.
+  11. D.
+  12. B.
+  13. C.
+  14. B.
+  15. A.
+  16. D.
+  17. A.
+  18. C.
+  19. C.
+  20. B.
+  21. D.
+  22. A.
+  23. A.
+  24. A.
+  25. D.
+  26. C.
+  27. A.
+  28. C.
+  29. B.
+  30. D.
+  31. B.

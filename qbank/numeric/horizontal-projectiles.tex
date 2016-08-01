@@ -1,0 +1,211 @@
+
+%% This defines the lua function mycommand()
+%\directlua{require('./qbank/lua/common.lua')}
+
+
+%% Numeric Difficulty A
+%%--------------------------------------
+\element{numeric}{
+\begin{questionmultx}{horizontal-A-Q01}
+\luaexec{
+    %% Question
+    local Q = [[
+        An ogre stands on the top of a
+            \string\SI{\%d}{\string\meter}
+            high bridge and kicks a rock horizontally off of the bridge.
+        The rocks lands in the water below,
+            \string\SI{\%d}{\string\meter}
+            down range of the bridge.
+        What is the velocity of the rock as it enters the water
+            divided by \string\SI{1}{\string\meter\string\per\string\second}?
+    ]]
+    %% Random Values
+    local h = math.random(10,40)
+    local d = math.random(10,40)
+    %% Print Question
+    local v = 
+    local ans = dis/1000
+    tex.print( string.format(Q, vel, tim0, acc, tim1, -1*dec ))
+    %tex.print( ans )
+    %% Print AMCnumeric
+    options = [[ digits=4, decimals=1, sign=True, approx=1 ]]
+    tex.print( BeginCenter )
+    tex.print( string.format(AMCnumeric, ans, options ) )
+    tex.print( EndCenter )
+}
+\end{questionmultx}
+}
+
+
+\begin{question}[ID=horizontal-A-Q02,topic=projectiles,difficulty=easy]
+    An evil overlord stands on the top of his evil perch
+        \SI{47}{\meter} above his evil minions.
+    He casually throws a spear horizontally at a speed of
+        \SI{3.2}{\meter\per\second} and watches as it
+        sticks in the ground at the feet of his evil
+        workers.
+    At what angle does the spear stick out of the ground and
+        at what speed does it hit the ground?
+\end{question}
+\begin{solution}
+    N/A
+\end{solution}
+
+
+\begin{question}[ID=horizontal-A-Q03,topic=projectiles,difficulty=A]
+    An evil overlord stands on the top of his evil perch and
+        throws his spear horizontally at his evil minions.
+    He casually tosses a spear horizontally at a speed of
+        \SI{7.3}{\meter\per\second} and watches as it sticks
+        in the ground at the feet of his evil workers.
+    The spear makes an angle of \SI{62}{\degree} with respect
+        to the ground.
+    How high is the evil overlord's perch?
+\end{question}
+\begin{solution}
+    N/A
+\end{solution}
+
+
+\begin{question}[ID=horizontal-A-Q04,topic=projectiles,difficulty=A]
+    An evil overlord stands on the top of his evil perch and
+        throws his spear horizontally at a height of \SI{33}{\meter}
+        and watches it land at the feet of his evil minions
+        at an angle of \ang{58} with respect to the ground.
+    At what speed did he throw his spear?
+\end{question}
+\begin{solution}
+    N/A
+\end{solution}
+
+
+\begin{question}[ID=horizontal-A-Q05,topic=projectiles,difficulty=A]
+    The evil overlord stands on top of his evil perch
+        \SI{36}{\meter} above his evil minions.
+    He casually tosses a spear horizontally at a speed
+        of \SI{4.1}{\meter\per\second} and watches as it
+        sticks in the ground at the feet of his evil workers.
+    At what angle does the spear stick out of the ground and
+        at what speed does it hit the ground?
+\end{question}
+\begin{solution}
+    N/A
+\end{solution}
+
+
+\begin{question}[ID=horizontal-B-Q01,topic=projectiles,difficulty=easy]
+    The bad guys in Car A are chasing the good guys in Car B
+        as they come around the turn and approach a cliff.
+    Car B is moving at \SI{31.7}{\meter\per\second} and 
+        Car A is moving at \SI{35.2}{\meter\per\second}.
+    They both go horizontally off of the \SI{17}{\meter}
+        high cliff.
+    Which car lands first and how far apart do they land?
+\end{question}
+\begin{solution}
+    N/A
+\end{solution}
+
+
+\begin{question}[ID=horizontal-B-Q02,topic=projectiles,difficulty=B]
+    An archer and a pistol marksman are standing side-by-side
+        on a hill.
+    The both fire their weapons horizontally at the same instant
+        from a height of \SI{2.5}{\meter} above the ground.
+    The arrow travels at a speed of \SI{65}{\meter\per\second}
+        and the bullet travels at a speed of \SI{140}{\meter\per\second}.
+    Which projectile hits the ground first and how far apart do they land?
+\end{question}
+\begin{solution}
+    N/A
+\end{solution}
+
+
+\begin{question}[ID=horizontal-B-Q03,topic=projectiles,difficulty=B]
+    A sniper is on the roof of a \SI{22}{\meter} high building
+        standing next to a cannon.
+    The sniper fires his rifle horizontally at the same
+        time the cannon is also fired horizontally.
+    The sniper's bullet leaves the rifle at a speed of 
+        \SI{750}{\meter\per\second} and the cannonball
+        leaves the cannon at \SI{220}{\meter\per\second}.
+    Which projectile hits the ground first and how far
+        apart do they land?
+    (Ignore air resistance)
+\end{question}
+\begin{solution}
+    N/A
+\end{solution}
+
+
+\begin{question}[ID=horizontal-B-Q04,topic=projectiles,difficulty=easy]
+    The bad guys in Car A are chasing the good guys in Car B
+        as they come around the turn and approach a cliff.
+    Car B is moving at \SI{33.5}{\meter\per\second} and 
+        Car A is moving at \SI{45.6}{\meter\per\second}.
+    They both go horizontally off of the \SI{13}{\meter}
+        high cliff.
+    How far apart do they land?
+\end{question}
+\begin{solution}
+    N/A
+\end{solution}
+
+
+\begin{question}[ID=horizontal-C-Q01,topic=projectiles,difficulty=C]
+    A rock is kicked horizontally at a speed of \SI{13.5}{\meter\per\second}
+        from teh top of a \SI{142}{\meter} high cliff.
+    How far down range does the rock travel?
+\end{question}
+\begin{solution}
+    N/A
+\end{solution}
+
+
+\begin{question}[ID=horizontal-C-Q03,topic=projectiles,difficulty=C]
+    A woman stands on the top of a \SI{112}{\meter} bridge
+        and kicks a rock horizontally off of the bridge.
+    The rock lands in the water below, \SI{88}{\meter}
+        down range of the bridge.
+    What was the initial velocity of the rock that she
+        kicked?
+\end{question}
+\begin{solution}
+    N/A
+\end{solution}
+
+
+\begin{question}[ID=horizontal-C-Q04,topic=projectiles,difficulty=C]
+    A ball is kicked horizontally off of a \SI{78}{\meter}
+        high bridge at a speed of \SI{6.3}{\meter\per\second}.
+    How far down range down the ball land?
+\end{question}
+\begin{solution}
+    N/A
+\end{solution}
+
+
+\begin{question}[ID=horizontal-C-Q05,topic=projectiles,difficulty=C]
+    A ball is kicked horizontally off a cliff at a speed of
+        \SI{9.12}{\meter\per\second} and lands
+        \SI{43.7}{\meter\per\second} down range.
+    How high is the cliff?
+\end{question}
+\begin{solution}
+    N/A
+\end{solution}
+
+
+\begin{question}[ID=horizontal-C-Q06,topic=projectiles,difficulty=C]
+    A golfer stands on a cliff \SI{72}{\meter} high and
+        hits a gold ball horizontally off the cliff.
+    The ball lands on the green \SI{575}{\meter} away.
+    What was the initial velocity of the gold ball?
+\end{question}
+\begin{solution}
+    N/A
+\end{solution}
+
+
+\endinput
+

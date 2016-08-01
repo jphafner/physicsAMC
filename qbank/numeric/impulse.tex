@@ -1,0 +1,146 @@
+
+%% This defines the lua function mycommand()
+%\directlua{require('./qbank/lua/common.lua')}
+
+
+%% Numeric Difficulty A
+%%--------------------------------------
+\element{numeric}{
+\begin{questionmultx}{impulse-A-Q01}
+\luaexec{
+    %% Question
+    local Q = [[
+        A \string\SI{\%0.1f}{\string\gram}
+            bullet is fired into a
+            \string\SI{\%0.1f}{\string\kilo\string\gram}
+            pendulum bob,
+            which is initially at rest and becomes embedded in the bob.
+        The pendulum then rises a vertical distance of
+            \string\SI{\%0.1f}{\string\centi\string\meter}.
+        What was the initial speed of the bullet divided by
+            \string\SI{1}{\string\kilo\string\meter\string\per\string\second}?
+        [$g=\string\SI{9.80665}{\string\meter\string\per\string\second\string\squared}$]
+    ]]
+    %% Random Values
+    local m1 = 1 + round(10 * math.random(),1)
+    local m2 = 1 + round(10 * math.random(),1)
+    local d  = 1 + round(10*math.random(),1)
+    local g  = 9.80665
+    local ans = ((1e-3*m1)+m2) * math.sqrt(2*g*d) / (1e-3*m1)
+    %% Print Question
+    tex.print( string.format(Q, m1, m2, d))
+    %% Print AMCnumeric
+    options = [[ digits=4, decimals=2, sign=True, approx=1 ]]
+    tex.print( BeginCenter )
+    tex.print( string.format(AMCnumeric, ans, options ) )
+    tex.print( EndCenter )
+}
+\end{questionmultx}
+}
+
+
+\element{numeric}{
+\begin{questionmultx}{impulse-A-Q02}
+\luaexec{
+    %% Question
+    local Q = [[
+        A \string\SI{\%0.1f}{\string\gram}
+            dart is fired into a block of wood with a
+            mass of \string\SI{\%0.1f}{\string\gram}.
+        The wood block is initially at rest on a
+            \string\SI{\%0.1f}{\string\meter} tall post.
+        After the collision, the wood block and dart land 
+            \string\SI{\%0.1f}{\string\meter}
+            from the base of the post.
+        What is the initial speed of the dart
+            divided by \string\SI{1}{\string\meter\per\second}?
+        [$g=\string\SI{9.80665}{\string\meter\string\per\string\second\string\squared}$]
+    ]]
+    %% Random Values
+    local m1 = 1 + round(10 * math.random(),1)
+    local m2 = 1 + round(10 * math.random(),1)
+    local h  = 1 + round(10*math.random(),1)
+    local x  = 1 + round(10*math.random(),1)
+    local g  = 9.80665
+    local ans = x * (m1+m2) * math.sqrt(g/2/h) / m1
+    %% Print Question
+    tex.print( string.format(Q, m1, m2, h, x))
+    %% Print AMCnumeric
+    options = [[ digits=4, decimals=2, sign=True, approx=1 ]]
+    tex.print( BeginCenter )
+    tex.print( string.format(AMCnumeric, ans, options ) )
+    tex.print( EndCenter )
+}
+\end{questionmultx}
+}
+
+
+\element{numeric}{
+\begin{questionmultx}{impulse-A-Q03}
+\luaexec{
+    %% Question
+    local Q = [[
+        A \string\SI{\%d}{\string\kilo\string\gram}
+            car, heading north at
+            \string\SI{\%d}{\string\kilo\string\meter\string\per\string\hour},
+            collides inelastically with a
+            \string\SI{\%d}{\string\kilo\string\gram}
+            truck traveling east at
+            \string\SI{\%d}{\string\kilo\string\meter\string\per\string\hour}.
+        What is the vehicle's final velocity divided by
+            \string\SI{1}{\string\kilo\string\meter\string\per\string\hour}?
+    ]]
+    %% Random Values
+    local m1 = math.random(1000,1600)
+    local v1 = math.random(25,70)
+    local m2 = math.random(2000,3000)
+    local v2 = math.random(25,70)
+    local ans = math.sqrt( (m1*m1*v1*v1) + (m2*m2*v2*v2) ) / (m1+m2)
+    %% Print Question
+    tex.print( string.format(Q, m1, v1, m2, v2))
+    %% Print AMCnumeric
+    options = [[ digits=4, decimals=2, sign=True, approx=1 ]]
+    tex.print( BeginCenter )
+    tex.print( string.format(AMCnumeric, ans, options ) )
+    tex.print( EndCenter )
+}
+\end{questionmultx}
+}
+
+
+%% Numeric Difficulty B
+%%--------------------------------------
+\element{numeric}{
+\begin{questionmultx}{impulse-B-Q01}
+\luaexec{
+    %% Question
+    local Q = [[
+        Two carts with masses of
+            \string\SI{\%0.1f}{\string\kilo\string\gram}
+            and \string\SI{\%0.1f}{\string\kilo\string\gram}
+            move towards each other on a frictionless track with speeds of
+            \string\SI{\%0.1f}{\string\meter\string\per\string\second} and
+            \string\SI{\%0.1f}{\string\meter\string\per\string\second} respectively.
+        The cars stick together after colliding head-on.
+        What is the final speed of the two masses divided by
+            \string\SI{1}{\string\meter\string\per\string\second}?
+    ]]
+    %% Random Values
+    local m1 = 1 + round(4*math.random(),1)
+    local m2 = 1 + round(4*math.random(),1)
+    local v1 = 1 + round(4*math.random(),1)
+    local v2 = 1 + round(4*math.random(),1)
+    local ans = math.abs( m1*v1 - m2*v2 ) / (m1+m2)
+    %% Print Question
+    tex.print( string.format(Q, m1, m2, v1, v2))
+    %% Print AMCnumeric
+    options = [[ digits=4, decimals=2, sign=True, approx=1 ]]
+    tex.print( BeginCenter )
+    tex.print( string.format(AMCnumeric, ans, options ) )
+    tex.print( EndCenter )
+}
+\end{questionmultx}
+}
+
+\endinput
+

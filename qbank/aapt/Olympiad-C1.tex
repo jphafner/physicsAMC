@@ -1,0 +1,180 @@
+
+
+%% AAPT Physics Olympiad F=ma Questions
+%%----------------------------------------
+
+
+%% PhysicsOlympiad 2015
+%%----------------------------------------
+
+
+%% PhysicsOlympiad 2000
+%%----------------------------------------
+\element{aapt}{ %% Olympiad-C1
+\begin{question}{olympiad-2000-q08}
+    How much heat is lost by a lake with a mass of \SI{1.0e10}{\kilo\gram} when it is cooled from a summer temperature of \SI{25}{\degreeCelsius} to \SI{5}{\degreeCelsius} in the winter.
+    Assume the specific heat of water is \SI{4180}{\joule\per\kilo\gram\per\degreeCelsius}.
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{1.20e5}{\joule}}
+        \wrongchoice{\SI{4.78e7}{\joule}}
+        \wrongchoice{\SI{2.09e14}{\joule}}
+      \correctchoice{\SI{8.36e14}{\joule}}
+        \wrongchoice{\SI{1.05e15}{\joule}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% PhysicsOlympiad 1999
+%%----------------------------------------
+\element{aapt}{ %% Olympiad-C1
+\begin{question}{olympiad-1999-q18}
+    If \SI{100}{\gram} of ice at \SI{0}{\degreeCelsius} is mixed with \SI{100}{\gram} of boiling water at \SI{100}{\degreeCelsius},
+        which of the following graphs would best represent the temperature vs time of the two components of the mixture?
+    \begin{multicols}{2}
+    \begin{choices}
+        \AMCboxDimensions{down=-2.0em}
+        \wrongchoice{
+            ~\hspace{-2em}
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=middle,
+                    axis line style={->},
+                    xlabel={time},
+                    xtick=\empty,
+                    x label style={anchor=north east},
+                    ylabel=\empty,
+                    ytick={0,100},
+                    xmin=0,xmax=10,
+                    ymin=-35,ymax=110,
+                    width=1.00\columnwidth,
+                    very thin,
+                ]
+                \addplot[line width=1pt,mark=\empty] plot coordinates { (0,100) (7,50) (10,50) };
+                \addplot[line width=1pt,mark=\empty] plot coordinates { (0,0) (7,50) (10,50) };
+                \end{axis}
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            ~\hspace{-2em}
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=middle,
+                    axis line style={->},
+                    xlabel={time},
+                    xtick=\empty,
+                    x label style={anchor=north east},
+                    ylabel=\empty,
+                    ytick={0,100},
+                    xmin=0,xmax=10,
+                    ymin=-35,ymax=110,
+                    width=1.00\columnwidth,
+                    very thin,
+                ]
+                \addplot[line width=1pt,mark=\empty] plot coordinates { (0,100) (7,30) (10,30) };
+                \addplot[line width=1pt,mark=\empty] plot coordinates { (0,-30) (2,0) (5,0) (7,30) };
+                \end{axis}
+            \end{tikzpicture}
+        }
+        %% NOTE: ANS is C
+        \correctchoice{
+            ~\hspace{-2em}
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=middle,
+                    axis line style={->},
+                    xlabel={time},
+                    xtick=\empty,
+                    x label style={anchor=north east},
+                    ylabel=\empty,
+                    ytick={0,100},
+                    xmin=0,xmax=10,
+                    ymin=-35,ymax=110,
+                    width=1.00\columnwidth,
+                    very thin,
+                ]
+                \addplot[line width=1pt,mark=\empty] plot coordinates { (0,100) (7,20) (10,20) };
+                \addplot[line width=1pt,mark=\empty] plot coordinates { (0,0) (6,0) (7,20) };
+                \end{axis}
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            ~\hspace{-2em}
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=middle,
+                    axis line style={->},
+                    xlabel={time},
+                    xtick=\empty,
+                    x label style={anchor=north east},
+                    ylabel=\empty,
+                    ytick={0,100},
+                    xmin=0,xmax=10,
+                    ymin=-35,ymax=110,
+                    width=1.00\columnwidth,
+                    very thin,
+                ]
+                \addplot[line width=1pt,mark=\empty] plot coordinates { (0,100) (8,0) (10,0) };
+                \addplot[line width=1pt,mark=\empty] plot coordinates { (0,-30) (8,0)};
+                \end{axis}
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            ~\hspace{-2em}
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=middle,
+                    axis line style={->},
+                    xlabel={time},
+                    xtick=\empty,
+                    x label style={anchor=north east},
+                    ylabel=\empty,
+                    ytick={0,100},
+                    xmin=0,xmax=10,
+                    ymin=-35,ymax=110,
+                    width=1.00\columnwidth,
+                    very thin,
+                ]
+                \addplot[line width=1pt,mark=\empty] plot coordinates { (0,100) (8,0) (10,0) };
+                \addplot[line width=1pt,mark=\empty] plot coordinates { (0,0) (8,100) (10,100) };
+                \end{axis}
+            \end{tikzpicture}
+        }
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% PhysicsOlympiad 1998
+%%----------------------------------------
+\element{aapt}{ %% Olympiad-C1
+\begin{questionmult}{olympiad-1998-q19}
+    One end of a metal rod of length $L$ and cross-sectional area $A$ is held at a constant temperature $T_1$.
+    The other end is held at a constant $T_2$.
+    Which of the following statements about the amount of heat transferred through the rod per unit time are true?
+    \begin{choices}
+        \wrongchoice{The rate of heat transfer is proportional to $\dfrac{1}{T_1 - T_2}$.}
+      \correctchoice{The rate of heat transfer is proportional to $A$.}
+        \wrongchoice{The rate of heat transfer is proportional to $L$.}
+        %% A. II only B. III only C. I and II only D. I and III only E. II and III only
+    \end{choices}
+\end{questionmult}
+}
+
+
+%% PhysicsOlympiad 1994
+%%----------------------------------------
+
+
+
+\endinput
+
+

@@ -1,0 +1,205 @@
+%% This defines the lua function mycommand()
+%\directlua{require('./qbank/lua/common.lua')}
+
+
+%% Numeric Difficulty A
+%%------------------------------------------------
+
+%\element{numeric}{
+%\begin{questionmultx}{work-A-Q01}
+%\luaexec{
+%    %% Question
+%    local Q = [[
+%        A crate weighing \string\SI{\%d}{\string\newton}
+%            sits at the bottom of an incline.
+%        A worker pushes horizontally on the crate,
+%            parallel to the ground with a force of
+%            \string\SI{\%d}{\string\newton}.
+%        The coefficient of friction between the crate and the floor is
+%            \string\num{\%0.2f}.
+%        What is the work done by the friction divided by
+%            \string\SI{1}{\string\joule}?
+%    ]]
+%    %% Random Values
+%    local w = math.random(80,150)
+%    local f = math.random(50,150)
+%    local c = round(math.random(),2)
+%    local ans = 
+%    %% Print Question
+%    tex.print( string.format(Q, vel, tim) )
+%    %tex.print( ans )
+%    %% Print AMCnumeric
+%    options = [[ digits=4, decimals=2, sign=True, approx=1 ]]
+%    tex.print( BeginCenter )
+%    tex.print( string.format(AMCnumeric, ans, options ) )
+%    tex.print( EndCenter )
+%}
+%\end{questionmultx}
+%}
+
+\element{numeric}{
+\begin{questionmultx}{work-A-Q02}
+\luaexec{
+    %% Question
+    local Q = [[
+        A shuffleboard player pushes a
+            \string\SI{\%0.2f}{\string\kilo\string\gram}
+            puck that is initially at rest such that a
+            constant horizontal force of
+            \string\SI{\%0.1f}{\string\newton}
+            acts on it through a distance of
+            \string\SI{\%0.1f}{\string\meter}.
+        What is the speed of the puck when the force is removed
+            divided by \string\SI{1}{\string\meter\string\per\string\second}?
+        Ignore friction.
+    ]]
+    %% Random Values
+    local m = 0.10 + round( math.random(),2 )
+    local f = 1 + round( 8*math.random(),1 )
+    local d = 1 + round( 8*math.random(),1 )
+    local ans = math.sqrt( 2*f*d / m )
+    %% Print Question
+    tex.print( string.format(Q, m, f, d) )
+    %tex.print( ans )
+    %% Print AMCnumeric
+    options = [[ digits=4, decimals=2, sign=True, approx=1 ]]
+    tex.print( BeginCenter )
+    tex.print( string.format(AMCnumeric, ans, options ) )
+    tex.print( EndCenter )
+}
+\end{questionmultx}
+}
+
+\element{numeric}{
+\begin{questionmultx}{work-A-Q03}
+\luaexec{
+    %% Question
+    local Q = [[
+        A shuffleboard player pushes a
+            \string\SI{\%0.2f}{\string\kilo\string\gram}
+            puck that is initially at rest such that a
+            constant horizontal force of
+            \string\SI{\%0.1f}{\string\newton}
+            acts on it through a distance of
+            \string\SI{\%0.1f}{\string\meter}.
+        How much work would be required to bring the puck
+            back to rest divided by \string\SI{1}{\string\joule}?
+        Ignore friction.
+    ]]
+    %% Random Values
+    local m = 0.10 + round( math.random(),2 )
+    local f = 1 + round( 8*math.random(),1 )
+    local d = 1 + round( 8*math.random(),1 )
+    local ans = f * d
+    %% Print Question
+    tex.print( string.format(Q, m, f, d) )
+    %tex.print( ans )
+    %% Print AMCnumeric
+    options = [[ digits=4, decimals=2, sign=True, approx=1 ]]
+    tex.print( BeginCenter )
+    tex.print( string.format(AMCnumeric, ans, options ) )
+    tex.print( EndCenter )
+}
+\end{questionmultx}
+}
+
+
+\element{numeric}{
+\begin{questionmultx}{work-A-Q04}
+\luaexec{
+    %% Question
+    local Q = [[
+        A \string\SI{\%d}{\string\kilo\string\gram}
+            bicyclist rides his
+            \string\SI{\%d}{\string\kilo\string\gram}
+            bicycle with a speed of
+            \string\SI{\%d}{\string\meter\string\per\string\second}.
+        How much work must be done by the brakes to bring the bike
+            and rider to a stop divided by
+            \string\SI{1}{\string\joule}?
+    ]]
+    %% Random Values
+    local m1 = math.random(40,150)
+    local m2 = math.random(5,25)
+    local v = math.random(5,20)
+    local ans = 0.5 * (m1+m2) * v*v
+    %% Print Question
+    tex.print( string.format(Q, m1, m2, v) )
+    %tex.print( ans )
+    %% Print AMCnumeric
+    options = [[ digits=4, decimals=2, sign=True, approx=1 ]]
+    tex.print( BeginCenter )
+    tex.print( string.format(AMCnumeric, ans, options ) )
+    tex.print( EndCenter )
+}
+\end{questionmultx}
+}
+
+
+\element{numeric}{
+\begin{questionmultx}{work-B-Q01}
+\luaexec{
+    %% Question
+    local Q = [[
+        In \string\SI{\%0.3f}{\string\second},
+            through a distance of \string\SI{\%0.2f}{\string\meter},
+            a test pilot's speed decreases from
+            \string\SI{\%0.1f}{\string\meter\string\per\string\second} to
+            \string\SI{\%0.1f}{\string\meter\string\per\string\second}.
+        If the pilot's mass is
+            \string\SI{\%0.1f}{\string\kilo\string\gram}.
+        How much work is done against his body divided by
+            \string\SI{1}{\string\joule}?
+    ]]
+    %% Random Values
+    local t = 0.1 + round( math.random(), 3)
+    local d = 5.0 + round( 3*math.random(), 2)
+    local v1 = 50.0 + round( 50*math.random(), 1)
+    local v2 = v1 - round( 20*math.random(), 1)
+    local m  = 50.0 + round( 50*math.random(), 1)
+    local ans = 0.5 * (m) * ( (v1*v1) - (v2*v2) )
+    %% Print Question
+    tex.print( string.format(Q, t, d, v1, v2, m) )
+    %% Print AMCnumeric
+    options = [[ digits=4, decimals=2, sign=True, approx=1 ]]
+    tex.print( BeginCenter )
+    tex.print( string.format(AMCnumeric, ans, options ) )
+    tex.print( EndCenter )
+}
+\end{questionmultx}
+}
+
+
+\begin{comment}
+\begin{question}[ID=work-B-Q04,topic=work,difficulty=B]
+    A flight attendant pulls her \SI{70}{\newton} flight bag
+        a distance of \SI{253}{\meter} along a level airport floor
+        at a constant velocity.
+    The force she exerts is \SI{40.0}{\newton} at an angle
+        \ang{52} above the horizontal.
+    Find the work done by the \emph{force of friction} on the flight bag.
+\end{question}
+
+
+\begin{question}[ID=work-B-Q05,topic=work,difficulty=B]
+    A skier of mass \SI{70.0}{\kilo\gram} is pulled up a ski
+        slope by a motor-driven cable.
+    How much work is required to pul the skier \SI{60.0}{\meter}
+        up a \ang{35} frictionless slope at a constant
+        speed of \SI{2.0}{\meter\per\second}?
+\end{question}
+
+
+\begin{question}[ID=work-B-Q06,topic=work,difficulty=B]
+    A stunt man crashes a car into a wall,
+        starting at a speed of \SI{75}{\kilo\meter}.
+    It takes \SI{0.212}{\second} for the vehicle to come to a stop.
+    In that time, the car travels \SI{1.13}{\meter}.
+    If the car has a mass of \SI{690}{\kilo\gram},
+        how much work is done stopping the car?
+\end{question}
+\end{comment}
+
+
+\endinput
+

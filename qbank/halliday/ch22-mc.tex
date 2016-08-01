@@ -1,0 +1,770 @@
+
+%%--------------------------------------------------
+%% Halliday: Fundamentals of Physics
+%%--------------------------------------------------
+
+
+%% Chapter 22: Electric Fields
+%%--------------------------------------------------
+
+
+%% Learning Objectives
+%%--------------------------------------------------
+
+%% 22.01: Identify that at every point in the space surrounding a charged particle, the particle sets up an electric field $\vec{E}$, which is a vector quantity and thus has both magnitude and direction.
+%% 22.02: Identify how an electric field $\vec{E}$ can be used to explain how a charged particle can exert an electrostatic force $\vec{F}$ on a second charged particle even though there is no contact between the particles.
+%% 22.03: Explain how a small positive test charge is used (in principle) to measure the electric field at any given point.
+%% 22.04: Explain electric field lines, including where they originate and terminate and what their spacing represents.
+
+
+%% Halliday Multiple Choice Questions
+%%--------------------------------------------------
+\element{halliday-mc}{
+\begin{question}{halliday-ch22-q01}
+    An electric field is most directly related to:
+    \begin{choices}
+        \wrongchoice{the momentum of a test charge}
+        \wrongchoice{the kinetic energy of a test charge}
+        \wrongchoice{the potential energy of a test charge}
+      \correctchoice{the force acting on a test charge}
+        \wrongchoice{the charge carried by a test charge}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch22-q02}
+    As used in the definition of electric field, a ``test charge'':
+    \begin{choices}
+        \wrongchoice{has zero charge}
+        \wrongchoice{has charge of magnitude \SI{1}{\coulomb}}
+        \wrongchoice{has charge of magnitude \SI{1.6e-19}{\coulomb}}
+        \wrongchoice{must be an electron}
+      \correctchoice{none of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch22-q03}
+    Experimenter $A$ uses a test charge $q_0$ and experimenter $B$ uses a test charge $-2q_0$ to measure an electric field produced by stationary charges. 
+    A finds a field that is:
+    \begin{choices}
+      \correctchoice{the same in both magnitude and direction as the field found by $B$}
+        \wrongchoice{greater in magnitude than the field found by $B$}
+        \wrongchoice{less in magnitude than the field found by $B$}
+        \wrongchoice{opposite in direction to the field found by $B$}
+        \wrongchoice{either greater or less than the field found by $B$, depending on the accelerations of the test charges}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch22-q04}
+    The units of the electric field are:
+    \begin{choices}
+        \wrongchoice{newton coulomb squared (\si{\newton\coulomb\squared})}
+        \wrongchoice{coulomb per newton (\si{\coulomb\per\newton})}
+        \wrongchoice{newton (\si{\newton})}
+      \correctchoice{newton per coulomb squared (\si{\newton\per\coulomb\squared})}
+        \wrongchoice{coulomb per meter (\si{\coulomb\per\meter})}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch22-q05}
+    The units of the electric field are:
+    \begin{choices}
+      \correctchoice{joule per coulomb per meter (\si{\joule\per\coulomb\per\meter})}
+        \wrongchoice{joule per coulomb (\si{\joule\per\coulomb})}
+        \wrongchoice{joule coulomb (\si{\joule\coulomb})}
+        \wrongchoice{joule per meter (\si{\joule\per\meter})}
+        \wrongchoice{none of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch22-q06}
+    Electric field lines:
+    \begin{choices}
+        \wrongchoice{are trajectories of a test charge}
+        \wrongchoice{are vectors in the direction of the electric field}
+        \wrongchoice{form closed loops}
+        \wrongchoice{cross each other in the region between two point charges}
+      \correctchoice{are none of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch22-q07}
+    Two thin spherical shells, one with radius $R$ and the other with radius $2R$,
+        surround an isolated charged point particle. 
+    The ratio of the number of field lines through the larger sphere to the number through the smaller is:
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{\num{1}}
+        \wrongchoice{\num{2}}
+        \wrongchoice{\num{4}}
+        \wrongchoice{\num{1/2}}
+        \wrongchoice{\num{1/4}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch22-q08}
+    A certain physics textbook shows a region of space in which two electric field lines cross each other.
+    We conclude that:
+    \begin{choices}
+        \wrongchoice{at least two point charges are present}
+        \wrongchoice{an electrical conductor is present}
+        \wrongchoice{an insulator is present}
+        \wrongchoice{the field points in two directions at the same place}
+      \correctchoice{the author made a mistake}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch22-q09}
+    Choose the correct statement concerning electric field lines:
+    \begin{choices}
+        \wrongchoice{field lines may cross}
+      \correctchoice{field lines are close together where the field is large}
+        \wrongchoice{field lines point away from a negatively charged particle}
+        \wrongchoice{a charged point particle released from rest moves along a field line}
+        \wrongchoice{none of these are correct}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch22-q10}
+    The diagram shows the electric field lines due to two charged parallel metal plates. 
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE:
+    \end{tikzpicture}
+    \end{center}
+    We conclude that:
+    \begin{choices}
+        \wrongchoice{the upper plate is positive and the lower plate is negative}
+      \correctchoice{a proton at $X$ would experience the same force if it were placed at $Y$}
+        \wrongchoice{a proton at $X$ experiences a greater force than if it were placed at $Z$}
+        \wrongchoice{a proton at $X$ experiences less force than if it were placed at $Z$}
+        \wrongchoice{an electron at $X$ could have its weight balanced by the electrical force}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch22-q11}
+    The diagram shows the electric field lines due to two charged parallel metal plates. 
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE:
+    \end{tikzpicture}
+    \end{center}
+    Let $k$ denote $\dfrac{1}{4\pi\epsilon_0}$.
+    The magnitude of the electric field at a distance $r$ from an isolated point particle with charge $q$ is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\dfrac{kq}{r}$}
+        \wrongchoice{$\dfrac{kr}{q}$}
+        \wrongchoice{$\dfrac{kq}{r^3}$}
+      \correctchoice{$\dfrac{kq}{r^2}$}
+        \wrongchoice{$\dfrac{kq^2}{r^2}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch22-q12}
+    The diagram shows the electric field lines in a region of space containing two small charged spheres ($Y$ and $Z$).
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE:
+    \end{tikzpicture}
+    \end{center}
+    Then:
+    \begin{choices}
+        \wrongchoice{$Y$ is negative and $Z$ is positive}
+        \wrongchoice{the magnitude of the electric field is the same everywhere}
+        \wrongchoice{the electric field is strongest midway between $Y$ and $Z$}
+      \correctchoice{the electric field is not zero anywhere (except infinitely far from the spheres)}
+        \wrongchoice{$Y$ and $Z$ must have the same sign}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch22-q13}
+    The diagram shows the electric field lines in a region of space containing two small charged spheres ($Y$ and $Z$).
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE:
+    \end{tikzpicture}
+    \end{center}
+    Then:
+    \begin{choices}
+        \wrongchoice{$Y$ is negative and $Z$ is positive}
+        \wrongchoice{the magnitude of the electric field is the same everywhere}
+        \wrongchoice{the electric field is strongest midway between $Y$ and $Z$}
+      \correctchoice{$Y$ is positive and $Z$ is negative}
+        \wrongchoice{$Y$ and $Z$ must have the same sign}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch22-q14}
+    The electric field at a distance of \SI{10}{\centi\meter} from an isolated point particle with a charge of \SI{2e-9}{\coulomb} is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{1.8}{\newton\per\coulomb}}
+        \wrongchoice{\SI{180}{\newton\per\coulomb}}
+        \wrongchoice{\SI{18}{\newton\per\coulomb}}
+      \correctchoice{\SI{1800}{\newton\per\coulomb}}
+        \wrongchoice{none of these}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch22-q15}
+    An isolated charged point particle produces an electric field with magnitude $E$ at a point \SI{2}{\meter} away from the charge. 
+    A point at which the field magnitude is $\dfrac{E}{4}$ is:
+    \begin{choices}
+        \wrongchoice{\SI{1}{\meter} away from the particle}
+        \wrongchoice{\SI{0.5}{\meter} away from the particle}
+        \wrongchoice{\SI{2}{\meter} away from the particle}
+      \correctchoice{\SI{4}{\meter} away from the particle}
+        \wrongchoice{\SI{8}{\meter} away from the particle}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch22-q16}
+    An isolated charged point particle produces an electric field with magnitude $E$ at a point \SI{2}{\meter} away. 
+    At a point \SI{1}{\meter} from the particle the magnitude of the field is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$E$}
+        \wrongchoice{$2E$}
+      \correctchoice{$4E$}
+        \wrongchoice{$\dfrac{E}{2}$}
+        \wrongchoice{$\dfrac{E}{4}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch22-q17}
+    Two protons ($p_1$ and $p_2$) are on the $x$ axis, as shown below. 
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: diagram
+    \end{tikzpicture}
+    \end{center}
+    The directions of the electric field at points 1, 2, and 3, respectively, are:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{
+            \begin{tikzpicture}
+                %% NOTE: vector options
+            \end{tikzpicture}
+        }
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch22-q18}
+    Two point particles, with a charges of $q_1$ and $q_2$,
+        are placed a distance $r$ apart. 
+    The electric field is zero at a point $P$ between the particles on the line segment connecting them. 
+    We conclude that:
+    \begin{choices}
+        \wrongchoice{$q_1$ and $q_2$ must have the same magnitude and sign}
+        \wrongchoice{P must be midway between the particles}
+      \correctchoice{$q_1$ and $q_2$ must have the same sign but may have different magnitudes}
+        \wrongchoice{$q_1$ and $q_2$ must have equal magnitudes and opposite signs}
+        \wrongchoice{$q_1$ and $q_2$ must have opposite signs and may have different magnitudes}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch22-q19}
+    %% NOTE: This could be altered in many ways???
+    The diagrams below depict four different charge distributions. 
+    The charge particles are all the same distance from the origin. 
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE:
+    \end{tikzpicture}
+    \end{center}
+    The electric field at the origin:
+    \begin{choices}
+        \wrongchoice{is greatest for situation 1}
+        \wrongchoice{is greatest for situation 3}
+      \correctchoice{is zero for situation 4}
+        \wrongchoice{is downward for situation 1}
+        \wrongchoice{is downward for situation 3}
+    \end{choices}
+\end{question}
+}
+
+\newcommand{\hallidayChTwentyTwoQTwenty}{
+\begin{tikzpicture}
+    %% NOTE:
+\end{tikzpicture}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch22-q20}
+    The diagram shows a particle with positive charge $Q$ and a particle with negative charge $-Q$.
+    \begin{center}
+        \hallidayChTwentyTwoQTwenty
+    \end{center}
+    The electric field at point $P$ on the perpendicular bisector of the line joining them is:
+    \begin{multicols}{3}
+    \begin{choices}
+        %% ANS ia A
+        \wrongchoice{
+            \begin{tikzpicture}
+            \end{tikzpicture}
+        }
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch22-q21}
+    The diagram shows two identical particles, each with positive charge $Q$. 
+    \begin{center}
+        \hallidayChTwentyTwoQTwenty
+    \end{center}
+    The electric field at point $P$ on the perpendicular bisector of the line joining them is:
+    \begin{multicols}{3}
+    \begin{choices}
+        %% ANS ia C
+        \wrongchoice{
+            \begin{tikzpicture}
+            \end{tikzpicture}
+        }
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch22-q22}
+    Two point particles, one with charge \SI{+8e-9}{\coulomb} and the other with charge \SI{-2e-9}{\coulomb},
+        are separated by \SI{4}{\meter}.
+    The electric field midway between them is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{9e9}{\newton\per\coulomb}}
+        \wrongchoice{\SI{13 500}{\newton\per\coulomb}}
+        \wrongchoice{\SI{135 000}{\newton\per\coulomb}}
+        \wrongchoice{\SI{36e-9}{\newton\per\coulomb}}
+      \correctchoice{\SI{22.5}{\newton\per\coulomb}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch22-q23}
+    Two charged point particles are located at two vertices of an equilateral triangle and the electric field is zero at the third vertex. 
+    We conclude:
+    \begin{choices}
+        \wrongchoice{the two particles have charges with opposite signs and the same magnitude}
+        \wrongchoice{the two particles have charges with opposite signs and different magnitudes}
+        \wrongchoice{the two particles have identical charges}
+        \wrongchoice{the two particles have charges with the same sign but different magnitudes}
+      \correctchoice{at least one other charged particle is present}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch22-q24}
+    Two point particles, with the same charge,
+        are located at two vertices of an equilateral triangle.
+    A third charged particle is placed so the electric field at the third vertex is zero. 
+    The third particle must:
+    \begin{choices}
+      \correctchoice{be on the perpendicular bisector of the line joining the first two charges}
+        \wrongchoice{be on the line joining the first two charges}
+        \wrongchoice{have the same charge as the first two particles}
+        \wrongchoice{have charge of the same magnitude as the first two charges but its charge may have a different sign}
+        \wrongchoice{be at the center of the triangle}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch22-q25}
+    Positive charge $Q$ is uniformly distributed on a semicircular rod. 
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE:
+    \end{tikzpicture}
+    \end{center}
+    What is the direction of the electric field at point $P$,
+        the center of the semicircle?
+    \begin{multicols}{2}
+    \begin{choices}
+        %% ANS is D
+        \wrongchoice{
+            \begin{tikzpicture}
+                %% NOTE: vector options
+            \end{tikzpicture}
+        }
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch22-q26}
+    Positive charge $+Q$ is uniformly distributed on the upper half a semicircular rod and negative charge $-Q$ is uniformly distributed on the lower half.
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE:
+    \end{tikzpicture}
+    \end{center}
+    What is the direction of the electric field at point $P$,
+        the center of the semicircle?
+    \begin{multicols}{2}
+    \begin{choices}
+        %% ANS is B
+        \wrongchoice{
+            \begin{tikzpicture}
+                %% NOTE: vector options
+            \end{tikzpicture}
+        }
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch22-q27}
+    Positive charge $+Q$ is uniformly distributed on the upper half a rod and negative charge $-Q$ is uniformly distributed on the lower half. 
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE:
+    \end{tikzpicture}
+    \end{center}
+    What is the direction of the electric field at point $P$,
+        on the perpendicular bisector of the rod?
+    \begin{multicols}{2}
+    \begin{choices}
+        %% ANS is B
+        \wrongchoice{
+            \begin{tikzpicture}
+                %% NOTE: vector options
+            \end{tikzpicture}
+        }
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch22-q28}
+    The electric field due to a uniform distribution of charge on a spherical shell is zero:
+    \begin{choices}
+        \wrongchoice{everywhere}
+        \wrongchoice{nowhere}
+        \wrongchoice{only at the center of the shell}
+      \correctchoice{only inside the shell}
+        \wrongchoice{only outside the shell}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch22-q29}
+    A charged particle is placed in an electric field that varies with location. 
+    No force is exerted on this charge:
+    \begin{choices}
+      \correctchoice{at locations where the electric field is zero}
+        \wrongchoice{at locations where the electric field strength is $\dfrac{1}{\num{1.6e-19}}\si{\newton\per\coulomb}$}
+        \wrongchoice{if the particle is moving along a field line}
+        \wrongchoice{if the particle is moving perpendicularly to a field line}
+        \wrongchoice{if the field is caused by an equal amount of positive and negative charge}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch22-q30}
+    The magnitude of the force of a \SI{400}{\newton\per\coulomb} electric field on a \SI{0.02}{\coulomb} point charge is:
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{\SI{8.0}{\newton}}
+        \wrongchoice{\SI{8e-5}{\newton}}
+        \wrongchoice{\SI{8e-3}{\newton}}
+        \wrongchoice{\SI{0.08}{\newton}}
+        \wrongchoice{\SI{2e11}{\newton}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch22-q31}
+    A \SI{200}{\newton\per\coulomb} electric field is in the positive $x$ direction. 
+    The force on an electron in this field is:
+    \begin{choices}
+        \wrongchoice{\SI{200}{\newton} in the positive $x$ direction}
+        \wrongchoice{\SI{200}{\newton} in the negative $x$ direction}
+        \wrongchoice{\SI{3.2e-17}{\newton} in the positive $x$ direction}
+      \correctchoice{\SI{3.2e-17}{\newton} in the negative $x$ direction}
+        \wrongchoice{zero}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch22-q32}
+    An electron traveling north enters a region where the electric field is uniform and points north.
+    The electron:
+    \begin{choices}
+        \wrongchoice{speeds up}
+      \correctchoice{slows down}
+        \wrongchoice{veers east}
+        \wrongchoice{veers west}
+        \wrongchoice{continues with the same speed in the same direction}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch22-q33}
+    An electron traveling north enters a region where the electric field is uniform and points west.
+    The electron:
+    \begin{choices}
+        \wrongchoice{speeds up}
+        \wrongchoice{slows down}
+      \correctchoice{veers east}
+        \wrongchoice{veers west}
+        \wrongchoice{continues with the same speed in the same direction}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch22-q34}
+    Two charged particles are arranged as shown. 
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE:
+    \end{tikzpicture}
+    \end{center}
+    In which region could a third particle,
+        with charge \SI{+1}{\coulomb},
+        be placed so that the net electrostatic force on it is zero?
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{I only}
+        \wrongchoice{I and II only}
+        \wrongchoice{lII only}
+        \wrongchoice{I and III only}
+        \wrongchoice{II only}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch22-q35}
+    An electric dipole consists of a particle with a charge of \SI{+6e-6}{\coulomb} at the origin and a particle with a charge of \SI{-6e-6}{\coulomb} on the $x$ axis at $x=\SI{3e-3}{\meter}$. 
+    Its dipole moment is:
+    \begin{choices}
+        \wrongchoice{\SI{1.8e-8}{\coulomb\meter}, in the positive $x$ direction}
+      \correctchoice{\SI{1.8e-8}{\coulomb\meter}, in the negative $x$ direction}
+        \wrongchoice{zero because the net charge is zero}
+        \wrongchoice{\SI{1.8e-8}{\coulomb\meter}, in the positive $y$ direction}
+        \wrongchoice{\SI{1.8e-8}{\coulomb\meter}, in the negative $y$ direction}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch22-q36}
+    The force exerted by a uniform electric field on a dipole is:
+    \begin{choices}
+        \wrongchoice{parallel to the dipole moment}
+        \wrongchoice{perpendicular to the dipole moment}
+        \wrongchoice{parallel to the electric field}
+        \wrongchoice{perpendicular to the electric field}
+      \correctchoice{none of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch22-q37}
+    An electric field exerts a torque on a dipole only if:
+    \begin{choices}
+        \wrongchoice{the field is parallel to the dipole moment}
+      \correctchoice{the field is not parallel to the dipole moment}
+        \wrongchoice{the field is perpendicular to the dipole moment}
+        \wrongchoice{the field is not perpendicular to the dipole moment}
+        \wrongchoice{the field is uniform}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch22-q38}
+    The torque exerted by an electric field on a dipole is:
+    \begin{choices}
+        \wrongchoice{parallel to the field and perpendicular to the dipole moment}
+        \wrongchoice{parallel to both the field and dipole moment}
+      \correctchoice{perpendicular to both the field and dipole moment}
+        \wrongchoice{parallel to the dipole moment and perpendicular to the field}
+        \wrongchoice{not related to the directions of the field and dipole moment}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch22-q39}
+    The diagrams show four possible orientations of an electric dipole in a uniform electric field $E$.
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE:
+    \end{tikzpicture}
+    \end{center}
+    Rank them according to the magnitude of the torque exerted on the dipole by the field,
+        least to greatest.
+    \begin{choices}
+        \wrongchoice{1, 2, 3, 4}
+        \wrongchoice{4, 3, 2, 1}
+        \wrongchoice{1, 2, 4, 3}
+        \wrongchoice{3, 2 and 4 tie, then 1}
+      \correctchoice{1, 2 and 4 tie, then 3}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch22-q40}
+    A uniform electric field of \SI{300}{\newton\per\coulomb} makes an angle of \ang{25} with the dipole moment of an electric dipole. 
+    If the torque exerted by the field has a magnitude of \SI{2.5e-7}{\newton\meter},
+        the dipole moment must be:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{8.3e-10}{\coulomb\meter}}
+        \wrongchoice{\SI{9.2e-10}{\coulomb\meter}}
+      \correctchoice{\SI{2.0e-9}{\coulomb\meter}}
+        \wrongchoice{\SI{8.3e-5}{\coulomb\meter}}
+        \wrongchoice{\SI{1.8e-4}{\coulomb\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch22-q41}
+    When the dipole moment of a dipole in a uniform electric field rotates to become more nearly aligned with the field:
+    \begin{choices}
+        \wrongchoice{the field does positive work and the potential energy increases}
+      \correctchoice{the field does positive work and the potential energy decreases}
+        \wrongchoice{the field does negative work and the potential energy increases}
+        \wrongchoice{the field does negative work and the potential energy decreases}
+        \wrongchoice{the field does no work}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch22-q42}
+    The dipole moment of a dipole in a \SI{300}{\newton\per\coulomb} electric field is initially perpendicular to the field,
+        but it rotates so it is in the same direction as the field. 
+    If the moment has a magnitude of \SI{2e-9}{\coulomb\meter},
+        the work done by the field is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{-12e-7}{\joule}}
+        \wrongchoice{\SI{-6e-7}{\joule}}
+        \wrongchoice{zero}
+      \correctchoice{\SI{6e-7}{\joule}}
+        \wrongchoice{\SI{12e-7}{\joule}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch22-q43}
+    An electric dipole is oriented parallel to a uniform electric field, as shown.
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE:
+    \end{tikzpicture}
+    \end{center}
+    It is rotated to one of the five orientations shown below. 
+    Rank the final orientations according to the change in the potential energy of the dipole-field system,
+        most negative to most positive.
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{1, 2, 3, 4}
+        \wrongchoice{4, 3, 2, 1}
+        \wrongchoice{1, 2, 4, 3}
+        \wrongchoice{3, 2 and 4 tie, then 1}
+        \wrongchoice{1, 2 and 4 tie, then 3}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch22-q44}
+    The purpose of Milliken's oil drop experiment was to determine:
+    \begin{choices}
+        \wrongchoice{the mass of an electron}
+      \correctchoice{the charge of an electron}
+        \wrongchoice{the ratio of charge to mass for an electron}
+        \wrongchoice{the sign of the charge on an electron}
+        \wrongchoice{viscosity}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch22-q45}
+    A charged oil drop with a mass of \SI{2e-4}{\kilo\gram} is held suspended by a downward electric field of \SI{300}{\newton\per\coulomb}. 
+    The charge on the drop is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{+1.5e-6}{\coulomb}}
+        \wrongchoice{\SI{-1.5e-6}{\coulomb}}
+        \wrongchoice{\SI{+6.5e-6}{\coulomb}}
+      \correctchoice{\SI{-6.5e-6}{\coulomb}}
+        \wrongchoice{zero}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+\endinput
+
+

@@ -1,0 +1,123 @@
+%%
+%% Copyright (C) 2014 Jeffrey P. Hafner <jphafner@buffalo.edu>
+%%  
+%%  This program is free software: you can redistribute it and/or modify
+%%  it under the terms of the GNU General Public License as published by
+%%  the Free Software Foundation, either version 3 of the License, or
+%%  (at your option) any later version.
+%%  
+%%  This program is distributed in the hope that it will be useful,
+%%  but WITHOUT ANY WARRANTY; without even the implied warranty of
+%%  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+%%  GNU General Public License for more details.
+%%  
+%%  You should have received a copy of the GNU General Public License
+%%  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+%%
+
+
+\documentclass[
+    11pt,
+]{scrartcl}
+
+\usepackage{AMChalf}
+\newlength{\mylen}
+\setlength{\parskip}{0pt} % 1ex plus 0.5ex minus 0.2ex}
+\setlength{\parindent}{0pt}
+
+\graphicspath{{./qbank/cpo/examView/gfx/}{./qbank/nysed/gfx/}}
+
+%% Begin Document
+%%------------------------------------------------
+\begin{document}
+
+%% NYSED Questions
+
+%\input{./qbank/nysed/NYSED-estimation.tex}
+%\input{./qbank/nysed/NYSED-constantVelocity.tex}
+%\input{./qbank/nysed/NYSED-constantAcceleration.tex}
+%\input{./qbank/nysed/NYSED-newton.tex}
+%\input{./qbank/nysed/NYSED-momentum.tex}
+%\input{./qbank/nysed/NYSED-energy.tex}
+%\input{./qbank/nysed/NYSED-work.tex}
+%\input{./qbank/nysed/NYSED-power.tex}
+%\input{./qbank/nysed/NYSED-hooke.tex}
+%\input{./qbank/nysed/NYSED-vectors.tex}
+%\input{./qbank/nysed/NYSED-friction.tex}
+%\input{./qbank/nysed/NYSED-2DKinematics.tex}
+%\input{./qbank/nysed/NYSED-circular.tex}
+%\input{./qbank/nysed/NYSED-internalEnergy.tex}
+%\input{./qbank/nysed/NYSED-nuclearEnergy.tex}
+%\input{./qbank/nysed/NYSED-modern.tex}
+%\input{./qbank/nysed/NYSED-circuits.tex}
+%\input{./qbank/nysed/NYSED-electrostatics.tex}
+%\input{./qbank/nysed/NYSED-electromagneticApplications.tex}
+%\input{./qbank/nysed/NYSED-magnetism.tex}
+%\input{./qbank/nysed/NYSED-gravity.tex}
+%\input{./qbank/nysed/NYSED-harmonic.tex}
+%\input{./qbank/nysed/NYSED-sound.tex}
+%\input{./qbank/nysed/NYSED-geometricOptics.tex}
+%\input{./qbank/nysed/NYSED-light.tex}
+
+%% Custom
+%\input{./qbank/kinematics/motion-graphs.tex}
+
+%% Lua Questions
+%\input{/qbank/lua/wrong.tex}
+%\input{/qbank/lua/units.tex}
+
+%% Holt Questions
+\input{./qbank/holt/ch01-mc.tex}
+
+%% Begin Quiz
+%%------------------------------------------------
+\begin{examcopy}[1]
+
+\setlength{\mylen}{\linewidth}
+\addtolength{\mylen}{-16em}
+\begin{minipage}{\linewidth}
+    \begin{minipage}{16em}
+        \AMCcodeH{StudentNum}{3}
+    \end{minipage}
+    \begin{minipage}{\mylen}
+        \namefield{\fbox{\small
+            \begin{minipage}{\linewidth}
+                \hfill Last and First Name: \hfill
+                \vspace*{3.3em}
+            \end{minipage}
+        }}
+    \end{minipage}
+\end{minipage}
+
+\null\hfill\parbox[c]{0.9\linewidth}{\small
+Questions using the sign \multiSymbole{} may have zero, one or several correct answers.
+Other questions have a single correct answer.
+% NOTE: if numeric answer
+%Please ask for assistance if you do not know how to bubble in your answer.
+%\emph{Good Luck!}
+}\hfill\null
+
+\rule[0pt]{\linewidth}{0.5pt} \\
+
+%\cleargroup{all}
+
+%\shufflegroup{nysed}
+%\shufflegroup{cpo-mc}
+%\shufflegroup{units}
+%\shufflegroup{wrong}
+
+%\copygroup[5]{nysed}{all}
+%\copygroup[5]{cpo-mc}{all}
+%\copygroup[5]{units}{all}
+%\copygroup[1]{wrong}{all}
+
+%\shufflegroup{all}
+%\insertgroup{all}
+
+\insertgroup{holt-mc}
+
+\AMCcleardoublepage
+\end{examcopy}
+
+\end{document}
+

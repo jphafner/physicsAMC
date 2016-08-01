@@ -1,0 +1,203 @@
+
+
+%% CAP High School Prize Examination
+%%----------------------------------------
+
+
+%% this section contains 40 problems
+
+
+%% CAP Exam 2015
+%%----------------------------------------
+\element{cap}{ %% cap-A1
+\begin{question}{CAP-A-2015-q13}
+    A passenger of a train that is moving with the speed of \SI{25}{\meter\per\second} sees from his seat far from a window that it takes 6 seconds for another train to pass the window completely. 
+    If the length of the second train is \SI{300}{\meter} and it is going in the opposite direction,
+        what is its velocity?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{15}{\meter\per\second}}
+        \wrongchoice{\SI{20}{\meter\per\second}}
+      \correctchoice{\SI{25}{\meter\per\second}}
+        \wrongchoice{\SI{30}{\meter\per\second}}
+        \wrongchoice{\SI{35}{\meter\per\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% CAP Exam 2014
+%%----------------------------------------
+\element{cap}{ %% cap-A1
+\begin{question}{CAP-A-2014-q15}
+    In 1929, Edwin Hubble discovered that the universe is expanding. 
+    He observed that galaxies far away from us are moving away at a speed that is proportional to their distance from us 
+        (you can assume the constant of proportionality is time-independent). 
+    For a galaxy that obeys Hubble's law,
+        which of the following can be the graph of distance (from Earth) versus time? 
+    For each plot, $t=0$ corresponds to the present.
+    \begin{multicols}{2}
+    \begin{choices}
+        \AMCboxDimensions{down=-2.5em}
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left, 
+                    axis x line=bottom, 
+                    axis line style={->},
+                    xlabel={time},
+                    xtick=\empty,
+                    ylabel={distance},
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=0,ymax=11,
+                    width=1.0\columnwidth,
+                ]
+                \addplot[line width=1pt] plot coordinates { (0,2) (10,10) };
+                \end{axis}
+            \end{tikzpicture}
+        }
+        %% NOTE: ANS is B
+        \correctchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left, 
+                    axis x line=bottom, 
+                    axis line style={->},
+                    xlabel={time},
+                    xtick=\empty,
+                    ylabel={distance},
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=0,ymax=11,
+                    width=1.0\columnwidth,
+                ]
+                \addplot[line width=1pt,domain=0:10] { 2 + 0.08*x*x };
+                \end{axis}
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left, 
+                    axis x line=bottom, 
+                    axis line style={->},
+                    xlabel={time},
+                    xtick=\empty,
+                    ylabel={distance},
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=0,ymax=11,
+                    width=1.0\columnwidth,
+                ]
+                \addplot[line width=1pt,domain=0:10] { 10 - 0.08*(x-10)*(x-10) };
+                \end{axis}
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left, 
+                    axis x line=bottom, 
+                    axis line style={->},
+                    xlabel={time},
+                    xtick=\empty,
+                    ylabel={distance},
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=0,ymax=11,
+                    width=1.0\columnwidth,
+                ]
+                %\addplot[line width=1pt,domain=0:10] { 2 + exp(x)/2200 };
+                \addplot[line width=1pt,domain=0:10] { 2 + 0.0008*x*x*x*x };
+                \end{axis}
+            \end{tikzpicture}
+        }
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% CAP Exam 2013
+%%----------------------------------------
+\element{cap}{ %% cap-A1
+\begin{question}{CAP-A-2013-q19}
+    Car $A$ and car $B$ are both traveling down a straight highway at \SI{90}{\kilo\meter\per\hour}.
+    Car $A$ is only \SI{6.0}{\meter} behind car $B$.
+    The driver of car $B$ brakes,
+        slowing down with a constant deceleration of \SI{2.0}{\meter\per\second\squared}.
+    After \SI{1.2}{\second},
+        the driver of car $A$ begins to brake,
+        also at \SI{2.0}{\meter\per\second\squared},
+        but this is insufficient and the cars eventually collide,
+        both still moving forward. 
+    What is the relative velocity of the two cars at the moment of the collision?
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{\SI{2.4}{\meter\per\second}}
+        \wrongchoice{\SI{5.0}{\meter\per\second}}
+        \wrongchoice{\SI{9.5}{\meter\per\second}}
+        \wrongchoice{\SI{21}{\meter\per\second}}
+        \wrongchoice{\SI{24}{\meter\per\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% CAP Exam 2012
+%%----------------------------------------
+\element{cap}{ %% cap-A1
+\begin{question}{CAP-A-2012-q09}
+    A detector far away from the source of a wave is detecting pulses of that wave every 0.2 second. 
+    If the detector starts to move towards the source at a speed of \SI{6.0}{\kilo\meter\per\hour},
+        then it would detect a total of 18200 pulses per hour. 
+    What is the speed of the wave?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{100}{\meter\per\second}}
+      \correctchoice{\SI{150}{\meter\per\second}}
+        \wrongchoice{\SI{200}{\meter\per\second}}
+        \wrongchoice{\SI{300}{\meter\per\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{cap}{ %% cap-A1
+\begin{question}{CAP-A-2012-q15}
+    Assume that you videotaped the fall of a ball due to gravity in vacuum,
+        and are now playing the video in reverse at the same speed. 
+    Which of the following statements is correct about the acceleration of the ball seen in these conditions,
+        compared to that of the actual falling ball?
+    \begin{choices}
+      \correctchoice{The accelerations are the same in both cases.}
+        \wrongchoice{They have the same value but opposite directions.}
+        \wrongchoice{They have different values but the same direction.}
+        \wrongchoice{Both the values and directions differ.}
+    \end{choices}
+\end{question}
+}
+
+
+%% CAP Exam 2011
+%%----------------------------------------
+\element{cap}{ %% cap-A1
+\begin{questionmult}{CAP-A-2011-q21}
+    If you toss a ball up, at the highest point:
+    \begin{choices}
+      \correctchoice{The velocity changes direction.}
+        \wrongchoice{The acceleration changes direction.}
+        \wrongchoice{The acceleration is zero.}
+        \wrongchoice{Both velocity and acceleration are zero.}
+        %\wrongchoice{More than one of the above is correct.}
+    \end{choices}
+\end{questionmult}
+}
+
+
+\endinput
+
+

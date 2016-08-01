@@ -1,0 +1,609 @@
+
+
+%% this section contains 13 problems
+%%----------------------------------------
+
+
+%% Jacobs 5 steps to a 5
+%%------------------------------
+\element{AP}{
+\begin{question}{Jacobs-Q01}
+    Which of the following must be true of an object
+        that is slowing down?
+    \begin{choices}
+      \correctchoice{Its acceleration and its velocity must be in opposite directions.}
+        \wrongchoice{Its acceleration must be negative}
+        \wrongchoice{Its velocity must be smaller than its acceleration}
+        \wrongchoice{It must experience more than one force.}
+        \wrongchoice{Its velocity must be negative.}
+    \end{choices}
+\end{question}
+}
+
+\element{AP}{
+\begin{question}{Jacobs-Q02}
+    A baseball is thrown straight up.
+    It reaches a peak height of \SI{15}{\meter},
+        measured from the ground, in a time of
+        \SI{1.7}{\second}.
+    Treating ``up'' as the positive direction,
+        what is the acceleration of the ball
+        when it reaches its peak height?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{0}{\meter\per\second\squared}}
+        \wrongchoice{\SI[retain-explicit-plus]{+8.8}{\meter\per\second\squared}}
+        \wrongchoice{\SI[retain-explicit-plus]{-8.8}{\meter\per\second\squared}}
+        \wrongchoice{\SI[retain-explicit-plus]{+9.8}{\meter\per\second\squared}}
+      \correctchoice{\SI[retain-explicit-plus]{-9.8}{\meter\per\second\squared}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{AP}{
+\begin{question}{Jacobs-APB-Q01}
+    A ball is thrown off of a \SI{25}{\meter} high cliff.
+    Its initial velocity is \SI{25}{\meter\per\second},
+        directed at an angle of \ang{53} above the
+        horizontal.
+    How much time elapses before the ball hits the ground?
+        ($\sin\ang{53} = 0.80$; $\cos\ang{53}=0.60$; $\tan\ang{53}=1.3$)
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{3.0}{\second}}
+      \correctchoice{\SI{5.0}{\second}}
+        \wrongchoice{\SI{7.0}{\second}}
+        \wrongchoice{\SI{9.0}{\second}}
+        \wrongchoice{\SI{11.0}{\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{AP}{
+\begin{question}{Jacobs-APB-Q02}
+    A ball is dropped off of a cliff of height $h$.
+    Its velocity upon hitting the ground is $v$.
+    %At what height above the ground is the ball's velocity equal to $v/2$?
+    At what height should the ball be dropped to have a velocity of $v/2$ upon hitting the ground?
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{$\dfrac{h}{4}$}
+        \wrongchoice{$\dfrac{h}{2}$}
+        \wrongchoice{$\dfrac{h}{\sqrt{2}}$}
+        \wrongchoice{$\dfrac{h}{8}$}
+        \wrongchoice{$\dfrac{h}{2\sqrt{2}}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{AP}{
+\begin{question}{Jacobs-APB-Q03}
+    A golf cart moves with moderate speed as it reaches the
+        base of a short but steep hill.
+    The cart coasts up the hill (without using its brake or gas pedal).
+    At the top of the hill the car just about comes to rest;
+        but then the car starts to coast down the other side of the hill.
+    Consider the forward motion of the cart to be positive.
+    Which of the following velocity-time graphs best represent the
+        motion of the cart?
+    \begin{multicols}{2}
+    \begin{choices}
+        \AMCboxDimensions{down=-1.5em}
+        \correctchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=middle,
+                    axis line style={->},
+                    x label style={
+                        at={(current axis.right of origin)},
+                        anchor=west,
+                    },
+                    xlabel={$t$},
+                    xtick=\empty,
+                    y label style={
+                        at={(current axis.above origin)},
+                        anchor=south,
+                        rotate=270,
+                    },
+                    ylabel={$v$},
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=-11,ymax=11,
+                    width=\columnwidth,
+                    height=0.618\columnwidth,
+                ]
+                \addplot[line width=1pt,domain=0:10]{10 - 2*x};
+                \end{axis}
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=middle,
+                    axis line style={->},
+                    x label style={
+                        at={(current axis.right of origin)},
+                        anchor=west,
+                    },
+                    xlabel={$t$},
+                    xtick=\empty,
+                    y label style={
+                        at={(current axis.above origin)},
+                        anchor=south,
+                        rotate=270,
+                    },
+                    ylabel={$v$},
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=-11,ymax=11,
+                    width=\columnwidth,
+                    height=0.618\columnwidth,
+                ]
+                \addplot[line width=1pt,domain=0:10]{-10 + 2*x};
+                \end{axis}
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=middle,
+                    axis line style={->},
+                    x label style={
+                        at={(current axis.right of origin)},
+                        anchor=west,
+                    },
+                    xlabel={$t$},
+                    xtick=\empty,
+                    y label style={
+                        at={(current axis.above origin)},
+                        anchor=south,
+                        rotate=270,
+                    },
+                    ylabel={$v$},
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=-11,ymax=11,
+                    width=\columnwidth,
+                    height=0.618\columnwidth,
+                ]
+                \addplot[line width=1pt,domain=0:5]{10 - 2*x};
+                \addplot[line width=1pt,domain=5:10]{-10 + 2*x};
+                \end{axis}
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=middle,
+                    axis line style={->},
+                    x label style={
+                        at={(current axis.right of origin)},
+                        anchor=west,
+                    },
+                    xlabel={$t$},
+                    xtick=\empty,
+                    y label style={
+                        at={(current axis.above origin)},
+                        anchor=south,
+                        rotate=270,
+                    },
+                    ylabel={$v$},
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=-11,ymax=11,
+                    width=\columnwidth,
+                    height=0.618\columnwidth,
+                ]
+                %\addplot[line width=1pt,domain=0:10]{8 * sin(18*x)};
+                \addplot[line width=1pt,domain=0:10]{-0.40 * x * (x-10)};
+                \end{axis}
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=middle,
+                    axis line style={->},
+                    x label style={
+                        at={(current axis.right of origin)},
+                        anchor=west,
+                    },
+                    xlabel={$t$},
+                    xtick=\empty,
+                    y label style={
+                        at={(current axis.above origin)},
+                        anchor=south,
+                        rotate=270,
+                    },
+                    ylabel={$v$},
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=-11,ymax=11,
+                    width=\columnwidth,
+                    height=0.618\columnwidth,
+                ]
+                \addplot[line width=1pt,domain=0:5]{0.5 * (x-5)*(x-5)};
+                \addplot[line width=1pt,domain=5:10]{-0.5 * (x-5)*(x-5)};
+                \end{axis}
+            \end{tikzpicture}
+        }
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{AP}{
+\begin{question}{Jacobs-APB-Q04}
+    The velocity-time graph below represents a car on
+        a freeway.
+    \begin{center}
+    \begin{tikzpicture}
+        \begin{axis}[
+            axis y line=left, 
+            axis x line=middle, 
+            axis line style={->},
+            xlabel={time},
+            xtick=\empty,
+            ylabel={velocity},
+            ytick=\empty,
+            xmin=0,xmax=11,
+            ymin=-11,ymax=11,
+            width=\columnwidth,
+            height=0.618\columnwidth,
+        ]
+        \addplot[line width=1pt,domain=0:10]{-10 + 0.8*x};
+        \end{axis}
+    \end{tikzpicture}
+    \end{center}
+    North is defined as the positive direction.
+    Which of the following describes the motion
+        of the car?
+    \begin{choices}
+        \wrongchoice{The car is traveling north and slowing down.}
+      \correctchoice{The car is traveling south and slowing down.}
+        \wrongchoice{The car is traveling north and speeding up.}
+        \wrongchoice{The car is traveling south and speeding up.}
+        \wrongchoice{The car is traveling northeast and speeding up.}
+    \end{choices}
+\end{question}
+}
+
+\element{AP}{
+\begin{question}{Jacobs-APB-Q05}
+    A car was caught in heavy traffic.
+    After \SI{20}{\second} of moving at constant speed,
+        traffic cleared a bit, allowing the car to speed up.
+    The car's motion is represented by the velocity-time graph below.
+    \begin{center}
+        \begin{tikzpicture}
+            \begin{axis}[
+                axis y line=left, 
+                axis x line=bottom, 
+                axis line style={->},
+                xlabel={time},
+                x unit=\si{\second},
+                xtick={0,20,30},
+                ylabel={velocity},
+                y unit=\si{\meter\per\second},
+                ytick={0,10,30},
+                grid=major,
+                xmin=0,xmax=31,
+                ymin=0,ymax=31,
+                width=\columnwidth,
+                height=0.618\columnwidth,
+            ]
+            \addplot[line width=1pt,domain=0:20]{10};
+            \addplot[line width=1pt,domain=20:30]{-30 + 2*x};
+            \end{axis}
+        \end{tikzpicture}
+    \end{center}
+    What was the car's acceleration while it was speeding up?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{0.5}{\meter\per\second\squared}}
+        \wrongchoice{\SI{1.0}{\meter\per\second\squared}}
+        \wrongchoice{\SI{1.5}{\meter\per\second\squared}}
+      \correctchoice{\SI{2.0}{\meter\per\second\squared}}
+        \wrongchoice{\SI{3.0}{\meter\per\second\squared}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{AP}{
+\begin{question}{Jacobs-APB-Q13}
+    A ball rolls horizontally with speed $v$ off of a table
+        a height $h$ above the ground.
+    Just before the ball hits the ground, what is its speed?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{$\sqrt{2gh}$}
+        \wrongchoice{$v\sqrt{2gh}$}
+      \correctchoice{$\sqrt{v^2 + 2gh}$}
+        \wrongchoice{$v$}
+        \wrongchoice{$v + \sqrt{2gh}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{AP}{
+\begin{question}{Jacobs-APC-Q01}
+    A cannon is mounted on a truck that moves forward
+        at a speed of \SI{5}{\meter\per\second}.
+    The operator wants to launch a ball from a
+        cannon so the ball goes as far as possible
+        before hitting the level surface.
+    The muzzle velocity of the cannon is \SI{50}{\meter\per\second}.
+    What angle from the horizontal should the operator
+        point the cannon?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\ang{5}}
+        \wrongchoice{\ang{41}}
+        \wrongchoice{\ang{45}}
+      \correctchoice{\ang{49}}
+        \wrongchoice{\ang{85}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{AP}{
+\begin{question}{Jacobs-APC-Q02}
+    A car moving with speed $v$ reaches the foot
+        of an incline of angle $\theta$.
+    The car coasts up the incline without using
+        the engine.
+    Neglecting friction and air resistance,
+        which of the following is correct
+        about the magnitude of the car's horizontal
+        acceleration $a_x$ and vertical acceleration $a_y$?
+    %\begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{$a_x=0$; $a_y<g$}
+        \wrongchoice{$a_x=0$; $a_y=g$}
+      \correctchoice{$a_x<g$; $a_y<g$}
+        \wrongchoice{$a_x<g$; $a_y=g$}
+        \wrongchoice{$a_x<g$; $a_y>g$}
+    \end{choices}
+    %\end{multicols}
+\end{question}
+}
+
+\element{AP}{
+\begin{question}{Jacobs-APC-Q03}
+    A bicycle slows down with an acceleration whose magnitude
+        increases linearly with time.
+    Which of the following velocity-time graphs could
+        represent the motion of the bicycle?
+    \begin{multicols}{2}
+    \begin{choices}
+        \AMCboxDimensions{down=-2.5em}
+        \correctchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=middle,
+                    axis line style={->},
+                    x label style={
+                        at={(current axis.right of origin)},
+                        anchor=west,
+                    },
+                    xlabel={$t$},
+                    xtick=\empty,
+                    y label style={
+                        at={(current axis.above origin)},
+                        anchor=south,
+                        rotate=270,
+                    },
+                    ylabel={$v$},
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=-11,ymax=11,
+                    width=\columnwidth,
+                    height=0.618\columnwidth,
+                ]
+                \addplot[line width=1pt,domain=0:10]{10 - 0.1*x*x};
+                \end{axis}
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=middle,
+                    axis line style={->},
+                    x label style={
+                        at={(current axis.right of origin)},
+                        anchor=west,
+                    },
+                    xlabel={$t$},
+                    xtick=\empty,
+                    y label style={
+                        at={(current axis.above origin)},
+                        anchor=south,
+                        rotate=270,
+                    },
+                    ylabel={$v$},
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=-11,ymax=11,
+                    width=\columnwidth,
+                    height=0.618\columnwidth,
+                ]
+                \addplot[line width=1pt,domain=0:10]{0.1*x*x};
+                \end{axis}
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=middle,
+                    axis line style={->},
+                    x label style={
+                        at={(current axis.right of origin)},
+                        anchor=west,
+                    },
+                    xlabel={$t$},
+                    xtick=\empty,
+                    y label style={
+                        at={(current axis.above origin)},
+                        anchor=south,
+                        rotate=270,
+                    },
+                    ylabel={$v$},
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=-11,ymax=11,
+                    width=\columnwidth,
+                    height=0.618\columnwidth,
+                ]
+                \addplot[line width=1pt,domain=0:10]{-0.1*x*x};
+                \end{axis}
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=middle,
+                    axis line style={->},
+                    x label style={
+                        at={(current axis.right of origin)},
+                        anchor=west,
+                    },
+                    xlabel={$t$},
+                    xtick=\empty,
+                    y label style={
+                        at={(current axis.above origin)},
+                        anchor=south,
+                        rotate=270,
+                    },
+                    ylabel={$v$},
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=-11,ymax=11,
+                    width=\columnwidth,
+                    height=0.618\columnwidth,
+                ]
+                \addplot[line width=1pt,domain=0:10]{10 -x};
+                \end{axis}
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=middle,
+                    axis line style={->},
+                    x label style={
+                        at={(current axis.right of origin)},
+                        anchor=west,
+                    },
+                    xlabel={$t$},
+                    xtick=\empty,
+                    y label style={
+                        at={(current axis.above origin)},
+                        anchor=south,
+                        rotate=270,
+                    },
+                    ylabel={$v$},
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=-11,ymax=11,
+                    width=\columnwidth,
+                    height=0.618\columnwidth,
+                ]
+                \addplot[line width=1pt,domain=0:10]{x};
+                \end{axis}
+            \end{tikzpicture}
+        }
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% Sample AP 1 Questions
+%%------------------------------
+\element{AP}{
+\begin{question}{sample-AP1-Q03}
+    A person driving a car suddenly applies the brakes.
+    The car takes \SI{4}{\second} to come to rest while traveling
+        \SI{20}{\meter} at constant acceleration.
+    Can the speed of the car immediately before the brakes were
+        applied be determined without first determining the car's acceleration?
+    \begin{choices}
+      \correctchoice{Yes, by determining the average speed while braking and doubling it.}
+        \wrongchoice{Yes, by diving the distance (\SI{20}{\meter}) by the time (\SI{4}{\second}).}
+        \wrongchoice{No, because the acceleration is needed to use standard equations such as $\Delta x = v_0 t + \tfrac{1}{2} a t^2$.}
+        \wrongchoice{No, because the fundamental relationship that defines velocity contains acceleration.}
+    \end{choices}
+\end{question}
+}
+
+\element{AP}{
+\begin{question}{sample-AP1-Q05}
+    The graphs below represent the position $x$, velocity $v$,
+        and acceleration $a$ as a function of time $t$ for a marble moving in one dimension.
+    \begin{center}
+    \begin{tikzpicture}
+        \begin{groupplot}[
+                group style={group size=3 by 1},
+                axis lines=middle,
+                axis line style={->},
+                x label style={
+                    at={(current axis.right of origin)},
+                    anchor=west
+                },
+                y label style={
+                    at={(current axis.above origin)},
+                    anchor=south
+                },
+                label style={font=\large},
+                ytick=\empty,
+                xtick=\empty,
+                xlabel={$t$},
+                domain=0:10,
+                xmin=0,xmax=10,
+                ymin=-10,ymax=10,
+                width=0.40\linewidth,
+                %height=0.618\columnwidth,
+                %very thin,
+            ]
+            \nextgroupplot[ylabel={$x$}]
+                \addplot[dashed,very thick]{-4*x+0.4*x^2};
+            \nextgroupplot[ylabel={$v$}]
+                \addplot[dashed,very thick]{2*x-10};
+            \nextgroupplot[ylabel={$a$}]
+                \addplot[dashed,very thick]{5};
+        \end{groupplot}
+    \end{tikzpicture}
+    \end{center}
+    Which of the following could describe the motion of the marble?
+    \begin{choices}
+      \correctchoice{Rolling up a ramp and then rolling back down.}
+        \wrongchoice{Falling and then bouncing elastically off a hard floor}
+        \wrongchoice{Rolling along the floor and then bouncing off a wall.}
+        \wrongchoice{Rolling down one side of a bowl and then rolling up the other side.}
+    \end{choices}
+\end{question}
+}
+
+%% 2004-APB
+%%------------------------------
+
+
+%% 1998-APB
+%%------------------------------
+

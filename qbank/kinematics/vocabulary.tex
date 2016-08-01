@@ -1,0 +1,84 @@
+
+
+%% Vocabulary
+%%------------------------------
+
+
+%% QuestionMult
+%%------------------------------
+\element{vocab}{
+\begin{questionmult}{vocab-Q01}
+\luaexec{
+    %% Question
+    local Q = [[
+        Which of following units could be used
+            to expressed a velocity quantity?
+    ]]
+    %% Random Values
+    local length = math.random(90,110)
+    local width = math.random(60,90)
+    %% Random Permutations
+    local tab = {}
+    for i=1,8 do
+        tab[i] = i
+    end
+    tab = permute(tab,8,8)
+    %% Convert Units
+    local foot = 0.3048
+    local right = length * width * foot * foot
+    local wrong = {
+        right * foot, 
+        right / foot, 
+        right * foot * foot, 
+        right / foot / foot, 
+        right * length,
+        right / length,
+        right * width,
+        right / width,
+    }
+    %% Formatting
+    local SI = [[\string\SI[retain-zero-exponent]{\%.2e}{\string\meter\string\squared}]]
+    %% Print Question
+    tex.print( string.format(Q,length,width) )
+    %% Print MC Options
+    tex.print( BeginMulticols )
+        tex.print( BeginChoices )
+            tex.print( string.format( CorrectChoice,string.format(SI,right) ) )
+            for i=1,nwrong do
+                tex.print( string.format( WrongChoice,string.format(SI,wrong[tab[i]]) ) )
+            end
+        tex.print( EndChoices )
+    tex.print( EndMulticols )
+}
+\end{questionmult}
+}
+
+
+%% Definitions
+%%------------------------------
+
+\element{vocab}{
+\begin{question}{vocab-Q02}
+    To locate the position of the particle we need\dots{}
+    \begin{choices}
+      \correctchoice{a frame of reference}
+        \wrongchoice{size of the particle}
+        \wrongchoice{direction of the particle}
+        \wrongchoice{mass of the particle}
+    \end{choices}
+\end{question}
+}
+
+\element{vocab}{
+\begin{question}{vocab-Q03}
+    Frame of reference is a\ldots{} and a \ldots{} from
+        where an observer takes his observation,
+    \begin{choices}
+      \correctchoice{place, size}
+        \wrongchoice{size, situation}
+        \wrongchoice{situation, size}
+        \wrongchoice{place, situation}
+    \end{choices}
+\end{question}
+}
+

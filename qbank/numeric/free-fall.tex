@@ -1,0 +1,199 @@
+
+
+%% Numeric Difficulty A
+%%--------------------------------------
+\element{numeric}{
+\begin{questionmultx}{free-fall-A-Q01}
+\luaexec{
+    %% Question
+    local Q = [[
+        A man is standing on top of a
+            \string\SI{\%d}{\string\meter} tower.
+        He throws a baseball straight up at a speed of
+            \string\SI{\%0.1f}{\string\meter\string\per\string\second}.
+        How long does it take to reach the ground
+            divided by \string\SI{1}{\string\second}?
+        [Ignore air resistance,
+            $g=\string\SI{9.80665}{\string\meter\string\per\string\second\string\squared}$]
+    ]]
+    %% Random Values
+    local h = math.random(50,85)
+    local v = 10 + round(20*math.random(),1)
+    local g = 9.80665
+    local ans = (v + math.sqrt( (v*v) + (2*g*h) ) ) / g
+    %% Print Question
+    tex.print( string.format(Q, h, v) )
+    %% Print AMCnumeric
+    options = [[ digits=4, decimals=2, sign=True, approx=1 ]]
+    tex.print( BeginCenter )
+    tex.print( string.format(AMCnumeric, ans, options ) )
+    tex.print( EndCenter )
+}
+\end{questionmultx}
+}
+
+\element{numeric}{
+\begin{questionmultx}{free-fall-A-Q02}
+\luaexec{
+    %% Question
+    local Q = [[
+        A man is standing on top of a
+            \string\SI{\%d}{\string\meter} tower.
+        He throws a baseball straight up at a speed of
+            \string\SI{\%0.1f}{\string\meter\string\per\string\second}.
+        How fast is the ball going when it hits the ground
+            divided by \string\SI{1}{\string\meter\string\per\string\second}?
+        [Ignore air resistance,
+            $g=\string\SI{9.80665}{\string\meter\string\per\string\second\string\squared}$]
+    ]]
+    %% Random Values
+    local h = math.random(50,85)
+    local v = 10 + round(20*math.random(),1)
+    local g = 9.80665
+    local ans = math.sqrt( (v*v) + (2*g*h) )
+    %% Print Question
+    tex.print( string.format(Q, h, v) )
+    %% Print AMCnumeric
+    options = [[ digits=4, decimals=2, sign=True, approx=1 ]]
+    tex.print( BeginCenter )
+    tex.print( string.format(AMCnumeric, ans, options ) )
+    tex.print( EndCenter )
+}
+\end{questionmultx}
+}
+
+
+\element{numeric}{
+\begin{questionmultx}{free-fall-A-Q03}
+\luaexec{
+    %% Question
+    local Q = [[
+        A woman is standing on top of a
+            \string\SI{\%d}{\string\meter} cliff.
+        She throws a rock straight down at a speed of
+            \string\SI{\%0.1f}{\string\meter\string\per\string\second}.
+        How long does it take to reach the ground
+            divided by \string\SI{1}{\string\second}?
+        [Ignore air resistance,
+            $g=\string\SI{9.80665}{\string\meter\string\per\string\second\string\squared}$]
+    ]]
+    %% Random Values
+    local h = math.random(50,85)
+    local v = 10 + round(20*math.random(),1)
+    local g = 9.80665
+    local ans = ( math.sqrt( (v*v) + (2*g*h) ) - v ) / g
+    %% Print Question
+    tex.print( string.format(Q, h, v) )
+    %% Print AMCnumeric
+    options = [[ digits=4, decimals=2, sign=True, approx=1 ]]
+    tex.print( BeginCenter )
+    tex.print( string.format(AMCnumeric, ans, options ) )
+    tex.print( EndCenter )
+}
+\end{questionmultx}
+}
+
+\element{numeric}{
+\begin{questionmultx}{free-fall-A-Q04}
+\luaexec{
+    %% Question
+    local Q = [[
+        A woman is standing on top of a
+            \string\SI{\%d}{\string\meter} cliff.
+        She throws a rock straight down at a speed of
+            \string\SI{\%0.1f}{\string\meter\string\per\string\second}.
+        How fast is the ball going when it hits the ground
+            divided by \string\SI{1}{\string\meter\string\per\string\second}?
+        [Ignore air resistance,
+            $g=\string\SI{9.80665}{\string\meter\string\per\string\second\string\squared}$]
+    ]]
+    %% Random Values
+    local h = math.random(50,85)
+    local v = 10 + round(20*math.random(),1)
+    local g = 9.80665
+    local ans = math.sqrt( (v*v) + (2*g*h) )
+    %% Print Question
+    tex.print( string.format(Q, h, v) )
+    %% Print AMCnumeric
+    options = [[ digits=4, decimals=2, sign=True, approx=1 ]]
+    tex.print( BeginCenter )
+    tex.print( string.format(AMCnumeric, ans, options ) )
+    tex.print( EndCenter )
+}
+\end{questionmultx}
+}
+
+
+\begin{comment}
+\element{numeric}{
+\begin{questionmultx}{free-fall-A-Q05}
+\luaexec{
+    %% Question
+    local Q = [[
+        A man is sitting on top of a large palm tree that is
+            \string\SI{\%0.1f}{\string\meter} high.
+        He throws a coconut straight down at a passing
+            tourist at a speed of
+            \string\SI{\%0.1f}{\string\meter\string\per\string\second}.
+        How long does it take to reach the ground and how fast
+            is it going when it hits the ground?
+        [Ignore air resistance,
+            $g=\string\SI{9.80665}{\string\meter\string\per\string\second\string\squared}$]
+    ]]
+    %% Random Values
+    local h = math.random(50,85)
+    local v = 10 + round(20*math.random(),1)
+    local g = 9.80665
+    local ans = math.sqrt( (v*v) + (2*g*h) )
+    %% Print Question
+    tex.print( string.format(Q, h, v) )
+    %% Print AMCnumeric
+    options = [[ digits=4, decimals=2, sign=True, approx=1 ]]
+    tex.print( BeginCenter )
+    tex.print( string.format(AMCnumeric, ans, options ) )
+    tex.print( EndCenter )
+}
+\end{questionmultx}
+}
+
+\begin{question}[ID=falling-B-Q01,topic=kinematics,difficulty=B]
+    A water balloon is dropped from the top of a
+        \SI{1000}{\meter} tower.
+    How fast is it going when it is exactly
+        \SI{250}{\meter} above the ground?
+    (Ignore air resistance)
+\end{question}
+
+
+\begin{question}[ID=falling-B-Q02,topic=kinematics,difficulty=B]
+    A hot air balloon is at a height of \SI{1370}{\meter}
+        and descending at a constant rate of \SI{520}{\meter\per\minute}
+        when a water balloon is dropped from the basket of the balloon.
+    How long does it take the water balloon to hit the ground
+        and how fast is it going when it hits?
+\end{question}
+
+
+\begin{question}[ID=falling-B-Q03,topic=kinematics,difficulty=B]
+    A skydiver at \SI{1250}{\meter} is falling at a terminal velocity
+        of \SI{56}{\meter\per\second} when he retrieves a rock from
+        his back and throws it straight down at \SI{11}{\meter\per\second}.
+    Assume the rock never reaches terminal velocity.
+    How long does it take the rock to hit the ground and how fast
+        is the rock going when it hits?
+\end{question}
+
+\begin{question}[ID=falling-B-Q04,topic=kinematics,difficulty=B]
+    %% Breaking sound barrier
+    A jet plane launches a weapon by flying straight up at a speed
+        of \SI{330}{\meter\per\second}.
+    When it reaches an altitude of \SI{3200}{\meter}, the bomb
+        is released and the jet flies off.
+    How long does it take the bomb to hit the ground and how
+        fast is it going at the moment of impact.
+\end{question}
+\end{comment}
+
+
+\endinput
+

@@ -1,0 +1,521 @@
+
+%% Test of Understandin of vectors: A reliable multiple-choice vector concept test
+%% Pablo Barniol and Genearo Zavala
+%% Phys. Rev. ST Phys. Educ. Res. 10, 010121--Published 17 June 2014
+
+
+%% Test of Understanding Vectors
+%%--------------------------------------------------
+\element{vectors}{
+\begin{question}{vectors-Q01}
+    The figure below shows vectors $\vec{\mathbf{A}}$ and $\vec{\mathbf{B}}$.
+    \begin{center}
+    \begin{tikzpicture}
+        \draw[white!66!black,step=0.50cm] (0,0) grid (4,4);
+        \draw[line width=1.5pt,->] (3,1) -- (0.5,2.5) node[pos=0.5,anchor=south west] {$\vec{\mathbf{A}}$};
+        \draw[line width=1.5pt,->] (3,1) -- (1,0.5) node[pos=0.5,anchor=north west] {$\vec{\mathbf{B}}$};
+    \end{tikzpicture}
+    \end{center}
+    Choose the option that shows the vector sum 
+        $\vec{\mathbf{A}} + \vec{\mathbf{B}}$.
+    \begin{multicols}{2}
+    \begin{choices}
+        \AMCboxDimensions{down=-1.5cm}
+        \wrongchoice{
+            \begin{tikzpicture}[scale=0.8]
+                \draw[white!66!black,step=0.50cm] (0,0) grid (4,4);
+                \draw[line width=1.5pt,->] (3,1) -- (0.5,1.5);
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}[scale=0.8]
+                \draw[white!66!black,step=0.50cm] (0,0) grid (4,4);
+                \draw[line width=1.5pt,->] (3,1) -- (0.5,1);
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}[scale=0.8]
+                \draw[white!66!black,step=0.50cm] (0,0) grid (4,4);
+                \draw[line width=1.5pt,<-] (3,1) -- (0.5,1.5);
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}[scale=0.8]
+                \draw[white!66!black,step=0.50cm] (0,0) grid (4,4);
+                %% B head to A head
+                \draw[line width=1.5pt,->] (1,0.5) -- (0.5,2.5);
+            \end{tikzpicture}
+        }
+        \correctchoice{
+            \begin{tikzpicture}[scale=0.8]
+                \draw[white!66!black,step=0.50cm] (0,0) grid (4,4);
+                \draw[line width=1.5pt,->] (3,1) -- (0,1.5);
+            \end{tikzpicture}
+        }
+        %% NOTE: six for symmetry
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{vectors}{
+\begin{question}{vectors-Q02}
+    The figure below shows vector $\vec{\mathbf{A}}$.
+    \begin{center}
+    \begin{tikzpicture}
+        \draw[white] (-0.5,-0.5) rectangle (3.5,3.5);
+        \draw[white!66!black,step=0.5cm] (0,0) grid (3,3);
+        \draw[thick,->] (-0.25,0) -- (3.25,0) node[anchor=south] {$x$};
+        \draw[thick,->] (0,-0.25) -- (0,3.25) node[anchor=west] {$y$};
+        \foreach \i in {1,2,3}{
+            \draw (0.05,\i) -- (-0.05,\i) node[anchor=east] {$\i$};
+            \draw (\i,0.05) -- (\i,-0.05) node[anchor=north] {$\i$};
+        }
+        \draw[line width=1.5pt,->] (0,0) -- (2,2) node[pos=0.5,anchor=north west] {$\vec{\mathbf{A}}$};
+    \end{tikzpicture}
+    \end{center}
+    Choose the option that shows the unit vector in the direction of vector $\vec{\mathbf{A}}$.
+    \begin{multicols}{2}
+    \begin{choices}
+        \AMCboxDimensions{down=-1.25cm}
+        \wrongchoice{
+            \begin{tikzpicture}[scale=0.75]
+                \draw[white] (-0.5,-0.5) rectangle (3.5,3.5);
+                \draw[white!66!black,step=0.5cm] (0,0) grid (3,3);
+                \draw[thick,->] (-0.25,0) -- (3.25,0) node[anchor=south] {$x$};
+                \draw[thick,->] (0,-0.25) -- (0,3.25) node[anchor=west] {$y$};
+                \foreach \i in {1,2,3}{
+                    \draw (0.05,\i) -- (-0.05,\i) node[anchor=east] {$\i$};
+                    \draw (\i,0.05) -- (\i,-0.05) node[anchor=north] {$\i$};
+                }
+                \draw[line width=2.0pt,->] (0,0) -- (0,2);
+                \draw[line width=2.0pt,->] (0,0) -- (2,0);
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}[scale=0.75]
+                \draw[white] (-0.5,-0.5) rectangle (3.5,3.5);
+                \draw[white!66!black,step=0.5cm] (0,0) grid (3,3);
+                \draw[thick,->] (-0.25,0) -- (3.25,0) node[anchor=south] {$x$};
+                \draw[thick,->] (0,-0.25) -- (0,3.25) node[anchor=west] {$y$};
+                \foreach \i in {1,2,3}{
+                    \draw (0.05,\i) -- (-0.05,\i) node[anchor=east] {$\i$};
+                    \draw (\i,0.05) -- (\i,-0.05) node[anchor=north] {$\i$};
+                }
+                \draw[line width=2.0pt,->] (0,0) -- (1,1);
+            \end{tikzpicture}
+        }
+        %% ANS unit vector has length 1
+        \correctchoice{
+            \begin{tikzpicture}[scale=0.75]
+                \draw[white] (-0.5,-0.5) rectangle (3.5,3.5);
+                \draw[white!66!black,step=0.5cm] (0,0) grid (3,3);
+                \draw[thick,->] (-0.25,0) -- (3.25,0) node[anchor=south] {$x$};
+                \draw[thick,->] (0,-0.25) -- (0,3.25) node[anchor=west] {$y$};
+                \foreach \i in {1,2,3}{
+                    \draw (0.05,\i) -- (-0.05,\i) node[anchor=east] {$\i$};
+                    \draw (\i,0.05) -- (\i,-0.05) node[anchor=north] {$\i$};
+                }
+                \draw[line width=2.0pt,->] (0,0) -- (0.71,0.71);
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}[scale=0.75]
+                \draw[white] (-0.5,-0.5) rectangle (3.5,3.5);
+                \draw[white!66!black,step=0.5cm] (0,0) grid (3,3);
+                \draw[thick,->] (-0.25,0) -- (3.25,0) node[anchor=south] {$x$};
+                \draw[thick,->] (0,-0.25) -- (0,3.25) node[anchor=west] {$y$};
+                \foreach \i in {1,2,3}{
+                    \draw (0.05,\i) -- (-0.05,\i) node[anchor=east] {$\i$};
+                    \draw (\i,0.05) -- (\i,-0.05) node[anchor=north] {$\i$};
+                }
+                \draw[line width=2.0pt,->] (0,0) -- (2,0);
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}[scale=0.75]
+                \draw[white] (-0.5,-0.5) rectangle (3.5,3.5);
+                \draw[white!66!black,step=0.5cm] (0,0) grid (3,3);
+                \draw[thick,->] (-0.25,0) -- (3.25,0) node[anchor=south] {$x$};
+                \draw[thick,->] (0,-0.25) -- (0,3.25) node[anchor=west] {$y$};
+                \foreach \i in {1,2,3}{
+                    \draw (0.05,\i) -- (-0.05,\i) node[anchor=east] {$\i$};
+                    \draw (\i,0.05) -- (\i,-0.05) node[anchor=north] {$\i$};
+                }
+                \draw[line width=2.0pt,->] (0,0) -- (2,2);
+            \end{tikzpicture}
+        }
+        %% NOTE: six for symmetry
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{vectors}{
+\begin{question}{vectors-Q03}
+    The figure below shows a vector $\vec{\mathbf{C}}$ and $\vec{\mathbf{D}}$.
+    \begin{center}
+    \begin{tikzpicture}
+        \draw[help lines] ( -1,-1) rectangle (4,2.47);
+        \draw[line width=1.5pt,->] (0,0) -- (1.5,2) node[pos=0.5,anchor=south east] {$\vec{\mathbf{C}}$};
+        \draw[line width=1.5pt,->] (0,0) -- (3,0) node[pos=0.5,anchor=north] {$\vec{\mathbf{D}}$};
+    \end{tikzpicture}
+    \end{center}
+    Which option is the best interpretation of the dot product $\vec{\mathbf{C}}\cdot\vec{\mathbf{D}}$?
+    \begin{choices}
+        \wrongchoice{The magnitude of a vector between $\vec{\mathbf{C}}$ and $\vec{\mathbf{D}}$ pointing up to the right.}
+        \wrongchoice{The projection of vector $\vec{\mathbf{C}}$ onto vector $\vec{\mathbf{D}}$ multplied by teh magnitude of vector $\vec{\mathbf{D}}$.}
+        \wrongchoice{A vector between $\vec{\mathbf{C}}$ and $\vec{\mathbf{D}}$ pointing up to the right.}
+        \wrongchoice{A vector perpendicular to both vectors.}
+        \wrongchoice{A vector in the direction of $\vec{\mathbf{D}}$.}
+    \end{choices}
+\end{question}
+}
+
+\element{vectors}{
+\begin{question}{vectors-Q04}
+    The figure below shows a vector $\vec{\mathbf{A}}$ that forms an angle $\phi$ with the vertical axis.
+    \begin{center}
+    \begin{tikzpicture}
+        \draw[white] (-0.5,-0.2) rectangle (4.5,4.5);
+        \draw[white!66!black,step=0.5cm] (0,0) grid (4,4);
+        \draw[thick,->] (-0.25,0) -- (4.25,0) node[anchor=south] {$x$};
+        \draw[thick,->] (0,-0.25) -- (0,4.25) node[anchor=west] {$y$};
+        \draw[line width=2pt,->] (0,0) -- (2,3) node[pos=0.5,anchor=north west] {$\vec{\mathbf{A}}$};
+        \draw[<->] (0,3) arc (90:57:3) node[anchor=south,pos=0.5] {$\phi$};
+    \end{tikzpicture}
+    \end{center}
+    Choose the option that shows the $y$-component vector of $\vec{\mathbf{A}}$, (i.e. $\vec{\mathbf{A}}_y$).
+    \begin{multicols}{2}
+    \begin{choices}
+        %% NOTE: mix x and y components in x and y direction
+        \AMCboxDimensions{down=-1.25cm}
+        \wrongchoice{
+            \begin{tikzpicture}[scale=0.8]
+                \draw[white!66!black,step=0.5cm] (0,0) grid (4,4);
+                \draw[thick,->] (-0.25,0) -- (4.25,0) node[anchor=south] {$x$};
+                \draw[thick,->] (0,-0.25) -- (0,4.25) node[anchor=west] {$y$};
+                \draw[line width=2pt,->] (2,0) -- (2,3);
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}[scale=0.8]
+                \draw[white!66!black,step=0.5cm] (0,0) grid (4,4);
+                \draw[thick,->] (-0.25,0) -- (4.25,0) node[anchor=south] {$x$};
+                \draw[thick,->] (0,-0.25) -- (0,4.25) node[anchor=west] {$y$};
+                \draw[line width=2pt,->] (2,1) -- (2,3);
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}[scale=0.8]
+                \draw[white!66!black,step=0.5cm] (0,0) grid (4,4);
+                \draw[thick,->] (-0.25,0) -- (4.25,0) node[anchor=south] {$x$};
+                \draw[thick,->] (0,-0.25) -- (0,4.25) node[anchor=west] {$y$};
+                \draw[line width=2pt,->] (1,0.5) -- (1.5,3);
+            \end{tikzpicture}
+        }
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{vectors}{
+\begin{question}{vectors-Q05}
+    The figure below shows vector $\vec{\mathbf{A}}$ and a list of vectors.
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: grid
+    \end{tikzpicture}
+    \end{center}
+    Which vector(s) has/have the same direction as vector $\vec{\mathbf{A}}$?
+    %% NOTE: multichoice
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{
+            \begin{tikzpicture}
+            \end{tikzpicture}
+        }
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{vectors}{
+\begin{question}{vectors-Q06}
+    The figure below shows vectors $\vec{\mathbf{A}}$ and $\vec{\mathbf{B}}$ that form an angle $\theta$.
+    \begin{center}
+    \begin{tikzpicture}
+        \draw[help lines] (-1,-1) rectangle (4,2.47);
+        \draw[line width=1.5pt,->] (0,0) -- (60:2) node[pos=0.5,anchor=south east] {$\vec{\mathbf{A}}$};
+        \draw[line width=1.5pt,->] (0,0) -- (0:3) node[pos=0.5,anchor=north] {$\vec{\mathbf{B}}$};
+        \draw[<->] (1:60) arc (60:0:1.0) node[pos=0.5,anchor=west] {$\theta$}; 
+    \end{tikzpicture}
+    \end{center}
+    $|\vec{\mathbf{A}}|$ is the magnitude of vector $\vec{\mathbf{A}}$ and $|\vec{\mathbf{B}}|$ is the magnitude of vector $\vec{\mathbf{B}}$.
+    Which option is the dot product $\left(\vec{\mathbf{A}}\cdot\vec{\mathbf{B}}\right)$?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{$|\vec{\mathbf{A}}| |\vec{\mathbf{B}}|$}
+        \wrongchoice{$|\vec{\mathbf{A}}| |\vec{\mathbf{B}}| \cos\theta$}
+        \wrongchoice{$|\vec{\mathbf{A}}|\cos\theta +|\vec{\mathbf{B}}|\sin\theta$}
+        \wrongchoice{$|\vec{\mathbf{A}}| |\vec{\mathbf{B}}| \sin\theta$}
+        \wrongchoice{$|\vec{\mathbf{A}}|\cos\theta |\vec{\mathbf{B}}|\sin\theta$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{vectors}{
+\begin{question}{vectors-Q07}
+    The figure below shows vectors $\vec{\mathbf{A}}$ and $\vec{\mathbf{B}}$ that have the same magnitude.
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: grid
+    \end{tikzpicture}
+    \end{center}
+    Which of the following statements about the magnitude of the vector sum of these two vectors is true?
+    \begin{choices}
+        \wrongchoice{The magnitude of the vector sum is equal to the magnitude of vector. The vector sum only changes direction.}
+        \wrongchoice{The magnitude of the vector sum is greater than the magnitude of vector, and it is demonstrated by the direct application of the Pythagorean theorem.}
+        \wrongchoice{The magnitude of the vector sum is equal to the magnitude of vector, because vectors and have the same magnitude.}
+        \wrongchoice{The magnitude of the vector sum is equal to the magnitude of vector, and it is demonstrated by the direct application of the Pythagorean theorem.}
+        \wrongchoice{The magnitude of the vector sum is smaller than the magnitude of vector, because the two vectors are at a \ang{90} angle.}
+    \end{choices}
+\end{question}
+}
+
+\element{vectors}{
+\begin{question}{vectors-Q08}
+    Consider the vector $\vec{\mathbf{A}} = 1\hat{\imath} + 3\hat{\jmath}$
+        and $\vec{\mathbf{B}} = 5\hat{\imath}$.
+    Which option is the dot product $\left(\vec{\mathbf{A}}\cdot\vec{\mathbf{B}}\right)$?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{$5$}
+        \wrongchoice{$-15\hat{k}$}
+        \wrongchoice{$5\hat{\imath} + 3\hat{\jmath}$}
+        \wrongchoice{$6\hat{\imath} + 3\hat{\jmath}$}
+        \wrongchoice{$5\hat{\imath}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{vectors}{
+\begin{question}{vectors-Q09}
+    The figure below shows vectors $\vec{\mathbf{A}}$ that forms an angle $\phi$ with the vertcial axis.
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: grid
+    \end{tikzpicture}
+    \end{center}
+    Choose the option that shows the $x$-component vector $\vec{\mathbf{A}}$ (i.e. $\vec{\mathbf{A}_x}$).
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{
+            \begin{tikzpicture}
+            \end{tikzpicture}
+        }
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{vectors}{
+\begin{question}{vectors-Q10}
+    Choose the option that shows the vector $\vec{\mathbf{A}} = -2\hat{\imath} + 3\hat{\jmath}$.
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{
+            \begin{tikzpicture}
+            \end{tikzpicture}
+        }
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{vectors}{
+\begin{question}{vectors-Q11}
+    The figure below shows vector $\vec{\mathbf{A}}$.
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: grid
+    \end{tikzpicture}
+    \end{center}
+    Choose the option that shows vector $-3\vec{\mathbf{A}}$.
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{
+            \begin{tikzpicture}
+            \end{tikzpicture}
+        }
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{vectors}{
+\begin{question}{vectors-Q12}
+    The figure below shows vectors $\vec{\mathbf{C}}$ and $\vec{\mathbf{A}}$.
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: grid
+    \end{tikzpicture}
+    \end{center}
+    Which option is the best interpretation of the cross product
+        $\left(\vec{\mathbf{C}}\times\vec{\mathbf{D}}\right)$.
+    \begin{choices}
+        \wrongchoice{A vector between $\vec{\mathbf{C}}$ and $\vec{\mathbf{D}}$ pointing up to the right.}
+        \wrongchoice{A vector perpendicular to both vectors with a direction out of the page.}
+        \wrongchoice{The magnitude of a vector between $\vec{\mathbf{C}}$ and $\vec{\mathbf{D}}$ pointing up to the right.}
+        \wrongchoice{A quantity in the clock-wise direction.}
+        \wrongchoice{A vector perpendicular to both vectors with a direction into the page.}
+    \end{choices}
+\end{question}
+}
+
+\element{vectors}{
+\begin{question}{vectors-Q13}
+    The figure below shows vectors $\vec{\mathbf{A}}$ and $\vec{\mathbf{B}}$.
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: grid
+    \end{tikzpicture}
+    \end{center}
+    Choose the option that shows the vector difference $\vec{\mathbf{A}}-\vec{\mathbf{B}}$.
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{
+            \begin{tikzpicture}
+            \end{tikzpicture}
+        }
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{vectors}{
+\begin{question}{vectors-Q14}
+    The figure below shows vector $\vec{\mathbf{A}}$ that forms an angle $\phi$ with the vertical axis.
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: grid
+    \end{tikzpicture}
+    \end{center}
+    $|\vec{\mathbf{A}}$ is the magnitude of vector $\vec{\mathbf{A}}$.
+    Which option shows the magnitude of the $x$-component of vector $\vec{\mathbf{A}}$, (i.e. $\vec{\mathbf{A}_x}$)?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{$|\vec{\mathbf{A}_x}| = \vec{\mathbf{A}_x} \tan\phi$}
+        \wrongchoice{$|\vec{\mathbf{A}_x}| = \dfrac{\vec{\mathbf{A}_x}}{\cos\phi}$}
+        \wrongchoice{$|\vec{\mathbf{A}_x}| = \vec{\mathbf{A}_x} \sin\phi$}
+        \wrongchoice{$|\vec{\mathbf{A}_x}| = \vec{\mathbf{A}_x}_x \cos\phi$}
+        \wrongchoice{$|\vec{\mathbf{A}_x}| = \dfrac{\vec{\mathbf{A}_x}}{\sin\phi}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{vectors}{
+\begin{question}{vectors-Q15}
+    Consider the vector $\vec{\mathbf{A}} = 1\hat{\imath} + 3\hat{\jmath}$ and the vector $\vec{\mathbf{B}}=5\hat{k}$.
+    Which option is the cross produce $\left(\vec{\mathbf{A}}\times\vec{\mathbf{B}}\right)$?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{$-15\hat{k}$}
+        \wrongchoice{$5\hat{\imath} + 15\hat{k}$}
+        \wrongchoice{$5\hat{\imath} + 3\hat{k}$}
+        \wrongchoice{$15\hat{k}$}
+        \wrongchoice{$6\hat{\imath} + 3\hat{k}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{vectors}{
+\begin{question}{vectors-Q16}
+    The figure below shows vectors $\vec{\mathbf{A}}$ and $\vec{\mathbf{A}}$ that have the same magnitude. 
+    Which of the following statements about the magnitude of the vector sum of these two vectors is true?
+    \begin{choices}
+        \wrongchoice{The magnitude of the vector sum is greater than the magnitude of vector, and it is demonstrated by the direct application of the Pythagorean theorem.}
+        \wrongchoice{The magnitude of the vector sum is smaller than the magnitude of vector, because if we do the graphical addition of the two vectors we note that the vector sum is smaller.}
+        \wrongchoice{The magnitude of the vector sum is greater than the magnitude of vector, because the addition of two vectors always gives a resultant vector with a greater magnitude than the vectors that are added up.}
+        \wrongchoice{The magnitude of the vector sum is equal to the magnitude of vector, and it is demonstrated by the direct application of the Pythagorean theorem.}
+        \wrongchoice{The magnitude of the vector sum is greater than the magnitude of vector, because the distance between the tips of the arrows is longer than the magnitude of vector.}
+    \end{choices}
+\end{question}
+}
+
+\element{vectors}{
+\begin{question}{vectors-Q17}
+    Consider the vector $\vec{\mathbf{A}} = 3\hat{\imath} + 4\hat{\jmath}$.
+    Which option shows the direction of this vector as measured from the positive $x$-direction?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\ang{126.87}}
+        \wrongchoice{\ang{53.13}}
+        \wrongchoice{\ang{143.13}}
+        \wrongchoice{\ang{135}}
+        \wrongchoice{\ang{-53.13}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{vectors}{
+\begin{question}{vectors-Q18}
+    The figure below shows vectors $\vec{\mathbf{A}}$ and $\vec{\mathbf{B}}$ that forms an angle $\theta$.
+    $|\vec{\mathbf{A}}|$ is the magnitude of vector $\vec{\mathbf{A}}$ and $|\vec{\mathbf{B}}|$ is the magnitude of vector $\vec{\mathbf{B}}$.
+    Which option is the magnitude of the cross product $\left(\vec{\mathbf{A}}\times\vec{\mathbf{B}}\right)$?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{$|\vec{\mathbf{A}}|\cos\theta |\vec{\mathbf{B}}|\sin\theta$}
+        \wrongchoice{$|\vec{\mathbf{A}}| |\vec{\mathbf{B}}|$}
+        \wrongchoice{$|\vec{\mathbf{A}}| |\vec{\mathbf{B}}|\sin\left(\ang{90}-\theta\right)$}
+        \wrongchoice{$|\vec{\mathbf{A}}| |\vec{\mathbf{B}}|\sin\theta$}
+        \wrongchoice{$|\vec{\mathbf{A}}| |\vec{\mathbf{B}}|\cos\theta$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{vectors}{
+\begin{question}{vectors-Q19}
+    The figure below shows vectors $\vec{\mathbf{A}}$ and $\vec{\mathbf{B}}$.
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: grid
+    \end{tikzpicture}
+    \end{center}
+    Choose the option that shows the vector difference $\vec{\mathbf{A}}-\vec{\mathbf{B}}$.
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{
+            \begin{tikzpicture}
+            \end{tikzpicture}
+        }
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{vectors}{
+\begin{question}{vectors-Q20}
+    Consider the vector $\vec{\mathbf{A}} = 2\hat{\imath} + 2\hat{\jmath}$.
+    Which option shows the magnitude of this vector?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{$2$}
+        \wrongchoice{$\sqrt{8}$} %% Also: 2\sqrt{2}
+        \wrongchoice{$4$}
+        \wrongchoice{$\dfrac{2}{\sqrt{8}}\hat{\imath} + \dfrac{2}{\sqrt{8}}\hat{\jmath}$}
+        \wrongchoice{$8$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\endinput
+
+

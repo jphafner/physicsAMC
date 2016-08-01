@@ -1,0 +1,100 @@
+
+%% Scientific Notation Problems
+%%------------------------------------------------
+
+\sisetup{
+    retain-zero-exponent,
+}
+
+\begin{question}[ID=SN01,topic=units,difficulty=easy]
+    Write the following using scientific notation
+    \luaexec{
+        beginTasks = [[\string\begin{tasks}(1)]]
+        endTasks = [[\string\end{tasks}]]
+        task = [[
+            \string\task
+                \string\begin{equation*}
+                    \string\frac{(\string\num{\%.1e}) (\string\num{\%.1e})}
+                                {(\string\num{\%.1e}) (\string\num{\%.1e})}
+                \string\end{equation*}
+        ]]
+        local val1, val2, val3, val4 = 0,0,0,0
+        tex.print(beginTasks)
+        for i = 1,3 do 
+            val1 = math.random(1,9) * math.pow( 10, math.random(-10,10) )
+            val2 = math.random(1,9) * math.pow( 10, math.random(-10,10) )
+            val3 = math.random(1,9) * math.pow( 10, math.random(-10,10) )
+            val4 = math.random(1,9) * math.pow( 10, math.random(-10,10) )
+            tex.print(string.format(task,val1,val2,val3,val4))
+        end
+        tex.print(endTasks)
+    }
+\end{question}
+\begin{solution}
+    use calculator
+\end{solution}
+
+
+%% Physical Quantities
+%%------------------------------------------------
+
+\begin{question}[ID=SN11-Sun,topic=units,difficulty=easy]
+    The speed of light is \SI{3.00e8}{\meter\per\second}.
+    If the sun is \SI{1.50e11}{\meter} from earth,
+        how many seconds does it take light to reach the earth?
+    Express your answer in scientific notation.
+\end{question}
+\begin{solution}
+    \SI{5e2}{\second}
+\end{solution}
+
+
+\begin{question}[ID=SN12-Earth,topic=units,difficulty=easy]
+    Given that the Earth's radius is \SI{6.3e6}{\meter} and
+        its mass is \SI{5.97e24}{\kilo\gram}, calculate the
+        average density of our planet?
+    Express your answer using scientific notation.
+    (Note: The volume of a sphere is $V=\frac{4}{3} \pi{} r^3$)
+\end{question}
+\begin{solution}
+    \SI{5.7068e3}{\kilo\gram\per\meter\cubed}
+\end{solution}
+
+
+\begin{question}[ID=SN13-Saturn,topic=units,difficulty=easy]
+    Given that Saturn's radius is \SI{5.85e7}{\meter} and
+        its mass is \SI{5.68e26}{\kilo\gram}.
+    Calculate the average density of Saturn.
+    Express your answer using scientific notation.
+    (Note: The volume of a sphere is $V=\frac{4}{3} \pi{} r^3$)
+\end{question}
+\begin{solution}
+    \SI{712}{\kilo\gram\per\meter\cubed}
+\end{solution}
+
+
+\begin{question}[ID=SN14-MilkyWay,topic=units,difficulty=easy]
+    What is the ratio of Milky Way radius to our solar system radius given that,
+        the distance from pluto to the sun is \SI{5.9e12}{\meter}
+        and the Milky Way disk radius is \SI{3.9e20}{\meter}.
+    Round the coefficient to the nearest tenth using scientific notation.
+\end{question}
+\begin{solution}
+    \num{0.0000000151} or \num{1.5e-8}
+\end{solution}
+
+
+\begin{question}[ID=SN16-Light,topic=units,difficulty=easy]
+    The speed of light is now defined to be
+        \SI{2.99792458e8}{\meter\per\second}.
+    Express the speed of light using three, five and seven
+        significant figures in scientific notation.
+\end{question}
+\begin{solution}
+    \SI{3.00e8}{\meter\per\second},
+    \SI{2.9979e8}{\meter\per\second},
+    \SI{2.997925e8}{\meter\per\second},
+\end{solution}
+
+\endinput
+

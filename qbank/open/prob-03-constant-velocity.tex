@@ -1,0 +1,287 @@
+
+\AMCopenOpts{
+    %annotate=true,
+    lineheight=1.0em,
+    dots=true,
+    hspace=0.5em,         % sets the space between boxes in the marking area
+    backgroundcol=white,  % sets the background color of the marking area.
+    foregroundcol=black,  % sets the foreground color of the marking area.
+    width=0.95\linewidth, % sets the width of the frame enclosing the answering area
+    framerule=1pt,        % sets the line width for the frame enclosing the answering area.
+    framerulecol=black,   % sets the frame color for the answering area.
+    boxmargin=0.25em,     % sets the margin around the scoring boxes.
+    boxframerule=1pt,     % sets the line width for the frame around the scoring boxes.
+    boxframerulecol=black,% sets the color of the frame around the scoring boxes.
+    lineup=true,          % if true, place answering area and scoring boxes on the same line
+    lines=1,              % set the number of lines for the answer
+    contentcommand=\vfill,% customize the answer area
+}
+
+%% Constant Velocity or Non-accelerating systems
+%%------------------------------------------------
+
+\element{openNumber}{
+\begin{question}{velocity-A-Q01}
+    Except for a \SI{22}{\minute} rest stop, Emily drives with a
+        constant velocity of \SI{89.5}{\kilo\meter\per\hour} north.
+    How long does the trip take if Emily's average velocity is
+        \SI{77.8}{\kilo\meter\per\hour} north?
+    \AMCOpen{lines=1}{
+        \wrongchoice[0]{0}\scoring{0}
+        \wrongchoice[1]{1}\scoring{1}
+        \wrongchoice[2]{2}\scoring{2}
+        \wrongchoice[3]{3}\scoring{3}
+        \wrongchoice[4]{4}\scoring{4}
+      \correctchoice[5]{5}\scoring{5}
+    }
+\end{question}
+}
+
+\element{openNumber}{
+\begin{question}{velocity-A-Q02}
+    Two cities are \SI{550}{\kilo\meter} apart.
+    Car A starts at City A and heads towards City B at a constant
+        speed of \SI{110}{\kilo\meter\per\hour}.
+    Car B starts at City B and heads towards City A at a constant
+        speed of \SI{75}{\kilo\meter\per\hour}.
+    How far are the two cars from City A when they pass each other?
+    \AMCOpen{lines=1}{
+        \wrongchoice[0]{0}\scoring{0}
+        \wrongchoice[1]{1}\scoring{1}
+        \wrongchoice[2]{2}\scoring{2}
+        \wrongchoice[3]{3}\scoring{3}
+        \wrongchoice[4]{4}\scoring{4}
+      \correctchoice[5]{5}\scoring{5}
+    }
+\end{question}
+}
+
+
+\element{openNumber}{
+\begin{question}{velocity-B-Q01}
+    Plot a graph of the following data.
+    \begin{center}
+        \begin{tabu}{rrrrrrr}
+            time [\si{\second}]:        & 0 & 1 & 2 & 3 & 4 & 5 \\
+            displacement [\si{\meter}]: & 0 & 5 & 20 & 45 & 80 & 125 \\
+        \end{tabu}
+    \end{center}
+    \begin{enumerate*}
+        \itemsep0pt
+        \item Use the graph to determine the position at \SI{1.5}{\second}.
+        \item Use the graph to determine the speed at \SI{3.0}{\second}.
+        \item Use the graph to find the average speed for
+            the first \SI{4.0}{\second}.
+    \end{enumerate*}
+    %% Maybe include a small tikz graph?
+    \AMCOpen{lines=1}{
+        \wrongchoice[0]{0}\scoring{0}
+        \wrongchoice[1]{1}\scoring{1}
+        \wrongchoice[2]{2}\scoring{2}
+        \wrongchoice[3]{3}\scoring{3}
+        \wrongchoice[4]{4}\scoring{4}
+      \correctchoice[5]{5}\scoring{5}
+    }
+\end{question}
+}
+
+
+\element{openNumber}{
+\begin{question}{velocity-B-Q02}
+    A car moves based on the data below.
+    Plot a graph of the data.
+    Divide the graph into regions and explain the motion
+        and velocity in each region.
+    \begin{center}
+        \begin{tabu}{rrrrrrrrr}
+            time [\si{\second}]:        & 0 & 5 & 10 & 15 & 20 & 25 & 30 & 35 \\
+            displacement [\si{\meter}]: & 0 & 25 & 35 & 35 & 20 & 5 & 5 & 0 \\
+        \end{tabu}
+    \end{center}
+    \AMCOpen{lines=1}{
+        \wrongchoice[0]{0}\scoring{0}
+        \wrongchoice[1]{1}\scoring{1}
+        \wrongchoice[2]{2}\scoring{2}
+        \wrongchoice[3]{3}\scoring{3}
+        \wrongchoice[4]{4}\scoring{4}
+      \correctchoice[5]{5}\scoring{5}
+    }
+\end{question}
+}
+
+
+\element{openNumber}{
+\begin{question}{velocity-B-Q03}
+    A car moves based on the data below.
+    Plot a graph of the data.
+    Divide the graph into regions and explain the motion
+        and velocity in each region.
+    \begin{center}
+        \begin{tabu}{rrrrrrrrr}
+            time [\si{\second}]:        & 0 & 5 & 10 & 15 & 20 & 25 & 30 & 35 & 40 & 45 & 50 \\
+            displacement [\si{\meter}]: & 10& 15& 25 & 40 & 40 & 20 & 10 & 5  & -5 &-15 &-20 \\
+        \end{tabu}
+    \end{center}
+    %% Maybe include a small tikz graph?
+    \AMCOpen{lines=1}{
+        \wrongchoice[0]{0}\scoring{0}
+        \wrongchoice[1]{1}\scoring{1}
+        \wrongchoice[2]{2}\scoring{2}
+        \wrongchoice[3]{3}\scoring{3}
+        \wrongchoice[4]{4}\scoring{4}
+      \correctchoice[5]{5}\scoring{5}
+    }
+\end{question}
+}
+
+
+\element{openNumber}{
+\begin{question}{velocity-B-Q04}
+    A car moves based on the data below.
+    Plot a graph of the data.
+    Divide the graph into regions and explain the motion
+        and velocity in each region.
+    \begin{center}
+        \begin{tabu}{rrrrrrrrr}
+            time [\si{\second}]:        & 0 & 5 & 10 & 15 & 20 & 25 & 30 & 35 \\
+            displacement [\si{\meter}]: & 1 &-10&-10 & 10 & 20 & 40 & 30 & 30 \\
+        \end{tabu}
+    \end{center}
+    %% Maybe include a small tikz graph?
+    \AMCOpen{lines=1}{
+        \wrongchoice[0]{0}\scoring{0}
+        \wrongchoice[1]{1}\scoring{1}
+        \wrongchoice[2]{2}\scoring{2}
+        \wrongchoice[3]{3}\scoring{3}
+        \wrongchoice[4]{4}\scoring{4}
+      \correctchoice[5]{5}\scoring{5}
+    }
+\end{question}
+}
+
+\element{openNumber}{
+\begin{question}{velocity-C-Q01}
+    The fastest airplane is the Lockheed SR-71.
+    If an SR-71 flied \SI{15}{\kilo\meter} west in \SI{15.3}{\second},
+        what is its average velocity in \si{\kilo\meter\per\hour}?
+    \AMCOpen{lines=1}{
+        \wrongchoice[0]{0}\scoring{0}
+        \wrongchoice[1]{1}\scoring{1}
+        \wrongchoice[2]{2}\scoring{2}
+        \wrongchoice[3]{3}\scoring{3}
+        \wrongchoice[4]{4}\scoring{4}
+      \correctchoice[5]{5}\scoring{5}
+    }
+\end{question}
+}
+
+\element{openNumber}{
+\begin{question}{velocity-C-Q02}
+    A school bus takes \SI{0.530}{\hour} to reach the school from your house.
+    If the average velocity of the bus is \SI{19.0}{\kilo\meter\per\hour} east.
+    What is the displacement?
+    \AMCOpen{lines=1}{
+        \wrongchoice[0]{0}\scoring{0}
+        \wrongchoice[1]{1}\scoring{1}
+        \wrongchoice[2]{2}\scoring{2}
+        \wrongchoice[3]{3}\scoring{3}
+        \wrongchoice[4]{4}\scoring{4}
+      \correctchoice[5]{5}\scoring{5}
+    }
+\end{question}
+}
+
+\element{openNumber}{
+\begin{question}{velocity-C-Q03}
+    A driver maintains a steady speed of \SI{27.5}{\meter\per\second}
+        for \SI{1.50}{\hour} and then slows down to
+        \SI{14.3}{\meter\per\second} for the next
+        \SI{12.0}{\minute}.
+    Determine:
+    \begin{enumerate*}
+        \item the total distance traveled
+        \item the average speed for the trip
+    \end{enumerate*}
+    \AMCOpen{lines=1}{
+        \wrongchoice[0]{0}\scoring{0}
+        \wrongchoice[1]{1}\scoring{1}
+        \wrongchoice[2]{2}\scoring{2}
+        \wrongchoice[3]{3}\scoring{3}
+        \wrongchoice[4]{4}\scoring{4}
+      \correctchoice[5]{5}\scoring{5}
+    }
+\end{question}
+}
+
+
+\element{openNumber}{
+\begin{question}{velocity-C-Q04}
+    A bus travels for \SI{2.4}{\hour} at a steady speed of
+        \SI{26.0}{\meter\per\second} and then stops at a rest
+        stop for \SI{25}{\minute}.
+    The bus then finishes the rest of the trip in \SI{1.6}{\hour}
+        at a steady speed of \SI{23.0}{\meter\per\second}.
+    Determine:
+    \begin{enumerate*}
+        \item the total distance traveled
+        \item the average speed for the trip in \si{\meter\per\second}
+    \end{enumerate*}
+    \AMCOpen{lines=1}{
+        \wrongchoice[0]{0}\scoring{0}
+        \wrongchoice[1]{1}\scoring{1}
+        \wrongchoice[2]{2}\scoring{2}
+        \wrongchoice[3]{3}\scoring{3}
+        \wrongchoice[4]{4}\scoring{4}
+      \correctchoice[5]{5}\scoring{5}
+    }
+\end{question}
+}
+
+\element{openNumber}{
+\begin{question}{velocity-C-Q05}
+    You drive on the turnpike at a constant speed of
+        \SI{32}{\meter\per\second} for \SI{1.2}{\hour}.
+    You then stop at a totally awesome rest stop and hang
+        out there for \SI{40}{\minute}.
+    You then get back in the car and once again drive at
+        a constant speed of \SI{32}{\meter\per\second} for
+        another \SI{1.5}{\hour}.
+    Determine:
+    \begin{enumerate*}
+        \item the total distance traveled
+        \item your average speed for the trip in \si{\meter\per\second}
+    \end{enumerate*}
+    \AMCOpen{lines=1}{
+        \wrongchoice[0]{0}\scoring{0}
+        \wrongchoice[1]{1}\scoring{1}
+        \wrongchoice[2]{2}\scoring{2}
+        \wrongchoice[3]{3}\scoring{3}
+        \wrongchoice[4]{4}\scoring{4}
+      \correctchoice[5]{5}\scoring{5}
+    }
+\end{question}
+}
+
+\element{openNumber}{
+\begin{question}{velocity-C-Q06}
+    A driver maintains a steady speed of \SI{20.0}{\meter\per\second}
+        for \SI{45}{\minute} and then slows to \SI{10}{\meter\per\second}
+        for the next \SI{15.0}{\minute}.
+    Determine:
+    \begin{enumerate*}
+        \item the total distance traveled
+        \item the average speed for the trip in \si{\meter\per\second}
+    \end{enumerate*}
+    \AMCOpen{lines=1}{
+        \wrongchoice[0]{0}\scoring{0}
+        \wrongchoice[1]{1}\scoring{1}
+        \wrongchoice[2]{2}\scoring{2}
+        \wrongchoice[3]{3}\scoring{3}
+        \wrongchoice[4]{4}\scoring{4}
+      \correctchoice[5]{5}\scoring{5}
+    }
+\end{question}
+}
+
+\endinput
+

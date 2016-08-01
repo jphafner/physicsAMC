@@ -1,0 +1,266 @@
+
+%%--------------------------------------------------
+%% CPO: AMC Open Free Response Questions
+%%--------------------------------------------------
+
+
+%% Chapter 13: Electric Circuits
+%%--------------------------------------------------
+
+
+%% CPO Short Answer Questions
+%%--------------------------------------------------
+\element{cpo-short}{
+\begin{question}{ch13-short-q01}
+    why are circuit diagrams drawn?
+    %\AMCOpen{lines=3}{
+    \AMCOpen{}{
+        \wrongchoice[W]{w}\scoring{0}
+        \wrongchoice[P]{p}\scoring{1}
+        \correctchoice[C]{c}\scoring{2}
+    }
+\end{question}
+}
+
+\element{cpo-short}{
+\begin{question}{ch13-short-q02}
+    To read the voltage, you accidentally connect the positive lead
+        of a voltmeter to a negative terminal of a \SI{1.5}{\volt}
+        battery and the negative lead to the positive terminal.
+    What is the result?
+    \AMCOpen{lines=3}{
+        \wrongchoice[W]{w}\scoring{0}
+        \wrongchoice[P]{p}\scoring{1}
+        \correctchoice[C]{c}\scoring{2}
+    }
+    %% ANS: \SI{-1.5}{\volt}
+\end{question}
+}
+
+\element{cpo-short}{
+\begin{question}{ch13-short-q03}
+    You install two batteries in a flashlight so that their positive
+        ends are facing each other.
+    Will the flashlight work?
+    Why or why not?
+    \AMCOpen{lines=3}{
+        \wrongchoice[W]{w}\scoring{0}
+        \wrongchoice[P]{p}\scoring{1}
+        \correctchoice[C]{c}\scoring{2}
+    }
+    %% ANS: No!
+\end{question}
+}
+
+\element{cpo-short}{
+\begin{question}{ch13-short-q04}
+    Explain how a potentiometer is different from a fixed resistor?
+    \AMCOpen{lines=3}{
+        \wrongchoice[W]{w}\scoring{0}
+        \wrongchoice[P]{p}\scoring{1}
+        \correctchoice[C]{c}\scoring{2}
+    }
+    %% ANS: a potentiometer can varry its resistance
+\end{question}
+}
+
+%% CPO Problem Questions
+%%--------------------------------------------------
+%\element{cpo-problem}{
+%\begin{question}{ch13-problem-q01}
+%    which of the circuits pictures below is an open circiut?
+%    \begin{center}
+%        %% NOTE: add diagrams
+%    \end{center}
+%    \AMCOpen{lines=3}{
+%        \wrongchoice[W]{w}\scoring{0}
+%        \wrongchoice[P]{p}\scoring{1}
+%        \correctchoice[C]{c}\scoring{2}
+%    }
+%\end{question}
+%}
+
+%\element{cpo-problem}{
+%\begin{question}{ch13-problem-q02}
+%    What should the voltmeter read (approximately)?
+%    \begin{center}
+%        %% NOTE: add diagrams
+%    \end{center}
+%    \AMCOpen{lines=3}{
+%        \wrongchoice[W]{w}\scoring{0}
+%        \wrongchoice[P]{p}\scoring{1}
+%        \correctchoice[C]{c}\scoring{2}
+%    }
+%    %% ANS: \SI{3.0}{\volt}
+%\end{question}
+%}
+
+\element{cpo-problem}{
+\begin{question}{ch13-problem-q03}
+    A miniature light bulb with resistance of \SI{3}{\ohm} is connected
+        to a \SI{6}{\volt} source.
+    How much current will flow through the bulb?
+    \AMCOpen{lines=3}{
+        \wrongchoice[W]{w}\scoring{0}
+        \wrongchoice[P]{p}\scoring{1}
+        \correctchoice[C]{c}\scoring{2}
+    }
+    %% ANS: \SI{2}{\ampere}
+\end{question}
+}
+
+\element{cpo-problem}{
+\begin{question}{ch13-problem-q04}
+    If the current moving through the filament of a light bulb is \SI{0.5}{\ampere}
+        When the voltage across the bulb is \SI{120}{\volt},
+        what is the resistance of the bulb?
+    \AMCOpen{lines=3}{
+        \wrongchoice[W]{w}\scoring{0}
+        \wrongchoice[P]{p}\scoring{1}
+        \correctchoice[C]{c}\scoring{2}
+    }
+    %% ANS: \SI{240}{\ohm}
+\end{question}
+}
+
+\element{cpo-problem}{
+\begin{question}{ch13-problem-q05}
+    Typically, household appliances operate at \SI{120}{\volt}.
+    What is the current flowing in the circuit of a microwave when the
+        resistance of the microwave oven is \SI{30}{\ohm}?
+    \AMCOpen{lines=3}{
+        \wrongchoice[W]{w}\scoring{0}
+        \wrongchoice[P]{p}\scoring{1}
+        \correctchoice[C]{c}\scoring{2}
+    }
+    %% ANS: \SI{4}{\ampere}
+\end{question}
+}
+
+\newcommand{\myThirteenCircuit}{
+    \ctikzset{bipoles/length=0.75cm}
+    \begin{circuitikz}[scale=1.20]
+        \draw (0,0) to [battery,l=\SI{9}{\volt}] (0,2)
+                    to [ammeter,i=\SI{3}{\ampere}] (2,2)
+                    to [R] (2,0)
+                    to (0,0);
+    \end{circuitikz}
+}
+
+\element{cpo-problem}{
+\begin{question}{ch13-problem-q06}
+    A light bulb is connected to a \SI{9}{\volt} battery that causes
+        \SI{3}{\ampere} of current to flow through the bulb.
+    \begin{center}
+        \myThirteenCircuit
+    \end{center}
+    What is the resistance of the light bulb in the circuit diagram?
+    \AMCOpen{lines=3}{
+        \wrongchoice[W]{w}\scoring{0}
+        \wrongchoice[P]{p}\scoring{1}
+        \correctchoice[C]{c}\scoring{2}
+    }
+    %% ANS: \SI{3}{\ohm}
+\end{question}
+}
+
+\element{cpo-problem}{
+\begin{question}{ch13-problem-q07}
+    A light bulb is connected to a \SI{9}{\volt} battery that causes
+        \SI{3}{\ampere} of current to flow through the bulb.
+    \begin{center}
+        \myThirteenCircuit
+    \end{center}
+    If the lightbulb in the circiut is replaced with a lightbulb having
+        a resistance of \SI{9}{\ohm}, what would be the new current in
+        the circuit?
+    \AMCOpen{lines=3}{
+        \wrongchoice[W]{w}\scoring{0}
+        \wrongchoice[P]{p}\scoring{1}
+        \correctchoice[C]{c}\scoring{2}
+    }
+    %% ANS: \SI{1}{\ampere}
+\end{question}
+}
+
+\element{cpo-problem}{
+\begin{question}{ch13-problem-q08}
+    A light bulb is connected to a \SI{9}{\volt} battery that causes
+        \SI{3}{\ampere} of current to flow through the bulb.
+    \begin{center}
+        \myThirteenCircuit
+    \end{center}
+    If a second \SI{9}{\volt} batter is stacked with the battery shown,
+        what would be the new current in the circuit?
+    \AMCOpen{lines=3}{
+        \wrongchoice[W]{w}\scoring{0}
+        \wrongchoice[P]{p}\scoring{1}
+        \correctchoice[C]{c}\scoring{2}
+    }
+    %% ANS: \SI{2}{\ampere}
+\end{question}
+}
+
+%\element{cpo-problem}{
+%\begin{question}{ch13-problem-q09}
+%    This is a graph of the current that flows through a mini-bulb
+%        as the voltage is changed.
+%    Use the graph and  your knowledge of Ohm's Law to determine the
+%        resistance of the bulb.
+%    \begin{center}
+%        %% NOTE add pgfpltos
+%    \end{center}
+%    \AMCOpen{lines=3}{
+%        \wrongchoice[W]{w}\scoring{0}
+%        \wrongchoice[P]{p}\scoring{1}
+%        \correctchoice[C]{c}\scoring{2}
+%    }
+%    %% ANS: \SI{2}{\ohm}
+%\end{question}
+%}
+
+\element{cpo-problem}{
+\begin{question}{ch13-problem-q10}
+    A \SI{120}{\volt} household circuit has a fuse that breaks
+        the circuit if more than \SI{10}{\ampere} of current passes
+        through it.
+    What is the minimum amount of resistance in the circuit to keep
+        the fuse from blowing?
+    \AMCOpen{lines=3}{
+        \wrongchoice[W]{w}\scoring{0}
+        \wrongchoice[P]{p}\scoring{1}
+        \correctchoice[C]{c}\scoring{2}
+    }
+    %% ANS: \SI{12}{\ohm}
+\end{question}
+}
+
+
+%% CPO Essay Questions
+%%--------------------------------------------------
+\element{cpo-essay}{
+\begin{question}{ch13-essay-q01}
+    Describe a resistor and its function in a circuit?
+    \AMCOpen{lines=3}{
+        \wrongchoice[W]{w}\scoring{0}
+        \wrongchoice[P]{p}\scoring{1}
+        \correctchoice[C]{c}\scoring{2}
+    }
+\end{question}
+}
+
+\element{cpo-essay}{
+\begin{question}{ch13-essay-q02}
+    According to Ohm's law, how is current related to the resistance in a circuit?
+    \AMCOpen{lines=3}{
+        \wrongchoice[W]{w}\scoring{0}
+        \wrongchoice[P]{p}\scoring{1}
+        \correctchoice[C]{c}\scoring{2}
+    }
+\end{question}
+}
+
+
+\endinput
+
+

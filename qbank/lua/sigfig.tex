@@ -1,0 +1,133 @@
+
+
+%% This defines the lua function mycommand()
+\directlua{require('./qbank/lua/common.lua')}
+
+%%----------------------------------------
+%% Significant Figures
+%%----------------------------------------
+
+
+%% Multiplication
+%%----------------------------------------
+\element{sigfig}{
+\begin{question}{multQ01}
+\luaexec{
+    %% Question
+    local Q = [[
+        A farmer measures the perimeter of a rectangular field.
+        The length of each long side of the rectangle is found to be 
+            \string\SI{\%d}{\string\yard},
+            and the length of each short side is found to be
+            \string\SI{\%d}{\string\yard}.
+        What is the area enclosed by the field?
+        [Answer to correct significant figures]
+    ]]
+    %% Random Values
+    local n = math.random(-3,1)
+    local m = math.random(-2,2)
+    local long = 100*(math.random()+1)
+    local short = 100*(math.random()+1)
+    %% Random Permutations
+    local tab = {}
+    for i=1,10 do
+        tab[i] = i
+    end
+    tab = permute(tab,10,10)
+    %% Convert Units
+    local foot = 0.3048
+    local right = long * short
+    local wrong = {
+        right * foot,
+        right / foot,
+        right * 3,
+        right / 3,
+        right * 3 * foot,
+        right / 3 / foot,
+        right * 2,
+        right / 2,
+        right * 2 * foot,
+        right / 2 / foot,
+    }
+    %% Formatting
+    local SI = [[\string\SI[retain-zero-exponent]{\%.2e}{\string\meter}]]
+    %% Print Question
+    tex.print( string.format(Q,long,short) )
+    %% Print MC Options
+    %tex.print( string.format( BeginMulticolsN, ncol ) )
+    %tex.print( BeginMulticolsThree )
+    tex.print( BeginMulticolsTwo )
+        tex.print( BeginChoices )
+            tex.print( string.format( CorrectChoice,string.format(SI,right) ) )
+            for i=1,nwrong do
+                tex.print( string.format( WrongChoice,string.format(SI,wrong[tab[i]]) ) )
+            end
+        tex.print( EndChoices )
+    tex.print( EndMulticols )
+}
+\end{question}
+}
+
+
+%% Addition
+%%----------------------------------------
+\element{sigfig}{
+\begin{question}{addQ01}
+\luaexec{
+    %% Question
+    local Q = [[
+        A farmer measures the perimeter of a rectangular field.
+        The length of each long side of the rectangle is found to be 
+            \string\SI{\%d}{\string\yard},
+            and the length of each short side is found to be
+            \string\SI{\%d}{\string\yard}.
+        What is the perimeter of the field?
+        [Answer to correct significant figures]
+    ]]
+    %% Random Values
+    local n = math.random(-3,1)
+    local m = math.random(-2,2)
+    local long = 100*(math.random()+1)
+    local short = 100*(math.random()+1)
+    %% Random Permutations
+    local tab = {}
+    for i=1,10 do
+        tab[i] = i
+    end
+    tab = permute(tab,10,10)
+    %% Convert Units
+    local foot = 0.3048
+    local right = 2 * (long+short) * 3 * foot
+    local wrong = {
+        right * foot,
+        right / foot,
+        right * 3,
+        right / 3,
+        right * 3 * foot,
+        right / 3 / foot,
+        right * 2,
+        right / 2,
+        right * 2 * foot,
+        right / 2 / foot,
+    }
+    %% Formatting
+    local SI = [[\string\SI[retain-zero-exponent]{\%.2e}{\string\meter}]]
+    %% Print Question
+    tex.print( string.format(Q,long,short) )
+    %% Print MC Options
+    %tex.print( string.format( BeginMulticolsN, ncol ) )
+    %tex.print( BeginMulticolsThree )
+    tex.print( BeginMulticolsTwo )
+        tex.print( BeginChoices )
+            tex.print( string.format( CorrectChoice,string.format(SI,right) ) )
+            for i=1,nwrong do
+                tex.print( string.format( WrongChoice,string.format(SI,wrong[tab[i]]) ) )
+            end
+        tex.print( EndChoices )
+    tex.print( EndMulticols )
+}
+\end{question}
+}
+
+
+

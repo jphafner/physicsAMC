@@ -1,0 +1,227 @@
+
+%%--------------------------------------------------
+%% Holt: Multiple Choice Questions
+%%--------------------------------------------------
+
+
+%% Chapter 01: The Science of Physics
+%%--------------------------------------------------
+
+
+%% Holt Multiple Choice Questions
+%%--------------------------------------------------
+\element{holt-mc}{
+\begin{question}{holt-ch01-Q01}
+    What area of physics deals with the subjects of heat and temperature?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{mechanics}
+      \correctchoice{thermodynamics}
+        \wrongchoice{electrodynamics}
+        \wrongchoice{quantum mechanics}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{holt-mc}{
+\begin{question}{holt-ch01-Q02}
+    What area of physics deals with the behavior of subatomic particles?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{mechanics}
+        \wrongchoice{thermodynamics}
+        \wrongchoice{electrodynamics}
+      \correctchoice{quantum mechanics}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{holt-mc}{
+\begin{question}{holt-ch01-Q03}
+    What term describes a set of particles or interacting
+        components considered to be a distinct physical
+        entity for the purpose of study?
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{system}
+        \wrongchoice{model}
+        \wrongchoice{hypothesis}
+        \wrongchoice{controlled experiment}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{holt-mc}{
+\begin{question}{holt-ch01-Q04}
+    What is the SI base unit for length?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{inch (\si{\inch})}
+        \wrongchoice{foot (\si{\foot})}
+      \correctchoice{meter (\si{\meter})}
+        \wrongchoice{kilometer (\si{\kilo\meter})}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{holt-mc}{
+\begin{question}{holt-ch01-Q05}
+    A light-year (ly) is a unit of distance defined as
+        the distance light travels in one year.
+    Numerically, \SI{1}{ly}=\SI{9 500 000 000 000}{\kilo\meter}.
+    How many meters are in a light year?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{9.5e10}{\meter}}
+        \wrongchoice{\SI{9.5e12}{\meter}}
+      \correctchoice{\SI{9.5e15}{\meter}}
+        \wrongchoice{\SI{9.5e18}{\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{holt-mc}{
+\begin{question}{holt-ch01-Q06}
+    If you do not keep your line of sight directly over a length measurement,
+        how will your measurement most likely be affected?
+    \begin{choices}
+        \wrongchoice{Your measurement will be less precise.}
+      \correctchoice{Your measurement will be less accurate.}
+        \wrongchoice{Your measurement will have fewer significant figures.}
+        \wrongchoice{Your measurement will suffer from instrument error.}
+    \end{choices}
+\end{question}
+}
+
+%\element{holt-mc}{
+%\begin{question}{holt-ch01-Q07}
+%    If you measured the length of a pencil by using the meterstick shown in the figure below and you report your measurement in centimeters,
+%        how many significant figures should your reported measurement have?  
+%    \begin{center}
+%        %% NOTE: 
+%    \end{center}
+%    If you do not keep your line of sight directly over a length measurement,
+%        how will your measurement most likely be affected?
+%    \begin{multicols}{2}
+%    \begin{choices}
+%        \wrongchoice{one}
+%        \wrongchoice{two}
+%        \wrongchoice{three}
+%        \wrongchoice{four}
+%    \end{choices}
+%    \end{multicols}
+%\end{question}
+%}
+
+\element{holt-mc}{
+\begin{question}{holt-ch01-Q08}
+    A room is measured to be \SI{3.6}{\meter} by \SI{5.8}{\meter}.
+    What is the area of the room?
+    (Keep significant figures in mind.)
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{20.88}{\meter\squared}}
+        \wrongchoice{\SI{2e1}{\meter\squared}}
+        \wrongchoice{\SI{2.0e1}{\meter\squared}}
+      \correctchoice{\SI{21}{\meter\squared}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{holt-mc}{
+\begin{question}{holt-ch01-Q09}
+    What technique can help you determine the power of 10
+        closest to the actual numerical value of a quantity?
+    \begin{choices}
+        \wrongchoice{rounding}
+      \correctchoice{order-of-magnitude estimation}
+        \wrongchoice{dimensional analysis}
+        \wrongchoice{graphical analysis}
+    \end{choices}
+\end{question}
+}
+
+\element{holt-mc}{
+\begin{question}{holt-ch01-Q10}
+    Which of the following statements is true of \emph{any} valid physical equation?
+    \begin{choices}
+      \correctchoice{Both sides have the same dimensions}
+        \wrongchoice{Both sides have the same variables}
+        \wrongchoice{There are variables but no numbers}
+        \wrongchoice{There are numbers but no variables}
+    \end{choices}
+\end{question}
+}
+
+\newcommand{\holtChOneQEleven}{
+\begin{tikzpicture}
+    \begin{axis}[
+        axis y line=left,
+        axis x line=bottom,
+        axis line style={->},
+        xlabel={time},
+        x unit=\si{\second},
+        xtick={0.0,0.1,0.2,0.3},
+        minor x tick num=4,
+        ylabel={distance},
+        y unit=\si{\centi\meter},
+        ytick={0,20,40,60,80},
+        minor y tick num=1,
+        xmin=0,xmax=0.32,
+        ymin=0,ymax=80,
+        grid=both,
+        width=0.85\columnwidth,
+        height=0.40\columnwidth,
+        very thin,
+    ]
+    \addplot[line width=1pt,dashed,domain=0:0.32]{500*x*x};
+    \addplot[mark=*,only marks] plot coordinates{ (0.1,5) (0.15,11.25) (0.2,20) (0.25,31.25) (0.3,45) };
+    \end{axis}
+\end{tikzpicture}
+}
+
+\element{holt-mc}{
+\begin{question}{holt-ch01-Q11}
+    The graph below shows the relationship between
+        time and distance for a ball dropped vertically from rest.
+    \begin{center}
+        \holtChOneQEleven
+    \end{center}
+    About how far has the ball fallen after \SI{0.200}{\second}?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{5.00}{\centi\meter}}
+        \wrongchoice{\SI{10.00}{\centi\meter}}
+      \correctchoice{\SI{20.00}{\centi\meter}}
+        \wrongchoice{\SI{30.00}{\centi\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{holt-mc}{
+\begin{question}{holt-ch01-Q12}
+    The graph below shows the relationship between
+        time and distance for a ball dropped vertically from rest.
+    \begin{center}
+        \holtChOneQEleven
+    \end{center}
+    Which of the following statements best describes the relationship between the variables?
+    \begin{choices}
+      \correctchoice{For equal time intervals, the change in position is increasing.}
+        \wrongchoice{For equal time intervals, the change in position is decreasing.}
+        \wrongchoice{For equal time intervals, the change in position is constant.}
+        \wrongchoice{There is no clear relationship between time and change in position.}
+    \end{choices}
+\end{question}
+}
+
+
+\endinput
+

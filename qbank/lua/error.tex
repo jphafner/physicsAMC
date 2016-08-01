@@ -1,0 +1,527 @@
+
+
+%% This defines the lua function mycommand()
+\directlua{require('./qbank/lua/common.lua')}
+
+%%----------------------------------------
+%% Error Analysis
+%%----------------------------------------
+
+%% Objectives
+%%----------------------------------------
+
+%% 1. Propogate error for calculated values
+%% 2. Calculate the expectation and variance of any distribution
+
+
+%% Propogation of Error
+%%----------------------------------------
+\element{error}{
+\begin{question}{ErrorQ01}
+\luaexec{
+    %% Question
+    local Q = [[
+        A circle has a radius of
+            \string\SI{\%.2f \string\pm \%.2f}{\string\centi\string\meter}.
+        What is the absolute uncertainty in the area
+            of the circle?
+        [Area of circle is $A = \pi r^2$]
+    ]]
+    %% Random Values
+    local radius = round(100 * math.random(),2)
+    local delta = round(math.sqrt(math.random()),2)
+    %% Random Permutations
+    local tab = {}
+    for i=1,7 do
+        tab[i] = i
+    end
+    tab = permute(tab,7,7)
+    %% 1 foot = .3048 meter
+    local area = math.pi * math.pow(radius,2)
+    local right = area * math.sqrt(2) *  (delta/radius)
+    local wrong = {
+        right * delta,
+        right / delta,
+        right * radius,
+        right / radius,
+        right * math.sqrt(2),
+        right / math.sqrt(2),
+        area,
+    }
+    %% Print Question
+    tex.print( string.format(Q,radius,delta) )
+    %% Formatting
+    local SI = [[\string\SI[retain-zero-exponent]{\%.2e}{\string\centi\string\meter\string\squared}]]
+    %% Print MC Options
+    tex.print( BeginMulticolsTwo )
+        tex.print( BeginChoices )
+            tex.print( string.format( CorrectChoice,string.format(SI,right) ) )
+            for i=1,nwrong do
+                tex.print( string.format( WrongChoice,string.format(SI,wrong[tab[i]]) ) )
+            end
+        tex.print( EndChoices )
+    tex.print( EndMulticols )
+}
+\end{question}
+}
+
+\element{error}{
+\begin{question}{ErrorQ02}
+\luaexec{
+    %% Question
+    local Q = [[
+        A rectangular slab of metal has dimensions
+            \string\SI{\%.2f \string\pm \%.2f}{\string\centi\string\meter}
+            by \string\SI{\%.2f \string\pm \%.2f}{\string\centi\string\meter}.
+        What is the absolute uncertainty in the area
+            of the metal slab?
+    ]]
+    %% Random Values
+    local w  = round(100 * math.random(),2)
+    local dw = round(math.sqrt(math.random()),2)
+    local l  = round(100 * math.random(),2)
+    local dl = round(math.sqrt(math.random()),2)
+    %% Random Permutations
+    local tab = {}
+    for i=1,9 do
+        tab[i] = i
+    end
+    tab = permute(tab,9,9)
+    %% 1 foot = .3048 meter
+    local area = w * l
+    local right = area * math.sqrt( math.pow((dw/w),2) + math.pow((dl/l),2) )
+    local wrong = {
+        area / math.sqrt( math.pow((dw/w),2) + math.pow((dl/l),2) ),
+        area * math.sqrt( math.pow((w/dw),2) + math.pow((l/dl),2) ),
+        area / math.sqrt( math.pow((w/dw),2) + math.pow((l/dl),2) ),
+        right * area,
+        right / area,
+        area * math.sqrt( (w/dw) + (l/dl) ),
+        area / math.sqrt( (w/dw) + (l/dl) ),
+        area * math.sqrt( (dw/w) + (dl/l) ),
+        area / math.sqrt( (dw/w) + (dl/l) ),
+    }
+    %% Print Question
+    tex.print( string.format(Q,w,dw,l,dl) )
+    %% Formatting
+    local SI = [[\string\SI{\%.2e}{\string\centi\string\meter\string\squared}]]
+    %% Print MC Options
+    tex.print( BeginMulticolsTwo )
+        tex.print( BeginChoices )
+            tex.print( string.format( CorrectChoice,string.format(SI,right) ) )
+            for i=1,nwrong do
+                tex.print( string.format( WrongChoice,string.format(SI,wrong[tab[i]]) ) )
+            end
+        tex.print( EndChoices )
+    tex.print( EndMulticols )
+}
+\end{question}
+}
+
+
+%% Marble Problems
+%%----------------------------------------
+\element{error}{
+\begin{question}{ErrorQ03}
+\luaexec{
+    %% Question
+    local Q = [[
+        A single marble has a mass of
+            \string\SI{\%.2f \string\pm \%.2f}{\string\kilo\string\gram}.
+        What is the absolute uncertainty in the mass of
+            \string\num{\%d} marbles?
+    ]]
+    %% Random Values
+    local m  = round(100 * math.random(),2)
+    local dm = round(math.sqrt(math.random()),2)
+    local n  = math.random(15,100)
+    %% Random Permutations
+    local tab = {}
+    for i=1,8 do
+        tab[i] = i
+    end
+    tab = permute(tab,8,8)
+    %% 1 foot = .3048 meter
+    local right = dm * math.sqrt( n )
+    local wrong = {
+        right * n,
+        right / n,
+        right * dm,
+        right / dm,
+        right * m,
+        right / m,
+        right * math.sqrt(n),
+        right / math.sqrt(n),
+    }
+    %% Print Question
+    tex.print( string.format(Q,m,dm,n) )
+    %% Formatting
+    local SI = [[\string\SI[retain-zero-exponent]{\%.2e}{\string\kilo\string\gram}]]
+    %% Print MC Options
+    tex.print( BeginMulticolsTwo )
+        tex.print( BeginChoices )
+            tex.print( string.format( CorrectChoice,string.format(SI,right) ) )
+            for i=1,nwrong do
+                tex.print( string.format( WrongChoice,string.format(SI,wrong[tab[i]]) ) )
+            end
+        tex.print( EndChoices )
+    tex.print( EndMulticols )
+}
+\end{question}
+}
+
+
+\element{error}{
+\begin{question}{ErrorQ04}
+\luaexec{
+    %% Question
+    local Q = [[
+        The mass of \string\num{\%d} identical marbles are
+            measured to have a mass of
+            \string\SI{\%.2f \string\pm \%.2f}{\string\gram}.
+        What is the absolute uncertainty in the mass of
+            \string\num{1} marble?
+    ]]
+    %% Random Values
+    local n  = math.random(15,100)
+    local m  = round(100 * math.random(),2)
+    local dm = round(math.sqrt(math.random()),2)
+    %% Random Permutations
+    local tab = {}
+    for i=1,8 do
+        tab[i] = i
+    end
+    tab = permute(tab,8,8)
+    %% 1 foot = .3048 meter
+    local right = dm / math.sqrt( n )
+    local wrong = {
+        right * math.sqrt(n),
+        right / math.sqrt(n),
+        right * dm,
+        right / dm,
+        right * n,
+        right / n,
+        right * m,
+        right / m,
+    }
+    %% Print Question
+    tex.print( string.format(Q,n,m,dm) )
+    %% Formatting
+    local SI = [[\string\SI[retain-zero-exponent]{\%.2e}{\string\gram}]]
+    %% Print MC Options
+    tex.print( BeginMulticolsTwo )
+        tex.print( BeginChoices )
+            tex.print( string.format( CorrectChoice,string.format(SI,right) ) )
+            for i=1,nwrong do
+                tex.print( string.format( WrongChoice,string.format(SI,wrong[tab[i]]) ) )
+            end
+        tex.print( EndChoices )
+    tex.print( EndMulticols )
+}
+\end{question}
+}
+
+
+\element{error}{
+\begin{question}{ErrorQ05}
+\luaexec{
+    %% Question
+    local Q = [[
+        A single marble has a volume of
+            \string\SI{\%.2f \string\pm \%.2f}{\string\milli\string\liter}.
+        What is the absolute uncertainty in the volume of
+            \string\num{\%d} marbles?
+    ]]
+    %% Random Values
+    local v  = round(100 * math.random(),2)
+    local dv = round(math.sqrt(math.random()),2)
+    local n  = math.random(15,100)
+    %% Random Permutations
+    local tab = {}
+    for i=1,8 do
+        tab[i] = i
+    end
+    tab = permute(tab,8,8)
+    %% 1 foot = .3048 meter
+    local right = math.sqrt(n) * dv
+    local wrong = {
+        right * dv,
+        right / dv,
+        right * n,
+        right / n,
+        right * v,
+        right / v,
+        right * math.sqrt(n),
+        right / math.sqrt(n),
+    }
+    %% Print Question
+    tex.print( string.format(Q,v,dv,n) )
+    %% Formatting
+    local SI = [[\string\SI[retain-zero-exponent]{\%.2e}{\string\milli\string\liter}]]
+    %% Print MC Options
+    tex.print( BeginMulticolsTwo )
+        tex.print( BeginChoices )
+            tex.print( string.format( CorrectChoice,string.format(SI,right) ) )
+            for i=1,nwrong do
+                tex.print( string.format( WrongChoice,string.format(SI,wrong[tab[i]]) ) )
+            end
+        tex.print( EndChoices )
+    tex.print( EndMulticols )
+}
+\end{question}
+}
+
+
+\element{error}{
+\begin{question}{ErrorQ06}
+\luaexec{
+    %% Question
+    local Q = [[
+        The volume of \string\num{\%d} identical marbles are
+            measured to have a volume of
+            \string\SI{\%.2f \string\pm \%.2f}{\string\milli\string\liter}.
+        What is the absolute uncertainty in the volume of
+            \string\SI{1}{marble}?
+    ]]
+    %% Random Values
+    local v  = round(100 * math.random(),2)
+    local dv = round(math.sqrt(math.random()),2)
+    local n  = math.random(15,100)
+    %% Random Permutations
+    local tab = {}
+    for i=1,8 do
+        tab[i] = i
+    end
+    tab = permute(tab,8,8)
+    %% 1 foot = .3048 meter
+    local right = dv / math.sqrt( n )
+    local wrong = {
+        dv,
+        dv / n,
+        right * n,
+        right / n,
+        right * dv,
+        right / dv,
+        right * v,
+        right / v,
+    }
+    %% Print Question
+    tex.print( string.format(Q,n,v,dv) )
+    %% Formatting
+    local SI = [[\string\SI[retain-zero-exponent]{\%.2e}{\string\milli\string\liter}]]
+    %% Print MC Options
+    tex.print( BeginMulticolsTwo )
+        tex.print( BeginChoices )
+            tex.print( string.format( CorrectChoice,string.format(SI,right) ) )
+            for i=1,nwrong do
+                tex.print( string.format( WrongChoice,string.format(SI,wrong[tab[i]]) ) )
+            end
+        tex.print( EndChoices )
+    tex.print( EndMulticols )
+}
+\end{question}
+}
+
+
+%% Uncertainty or Standard deviation
+%%----------------------------------------
+\element{error}{
+\begin{question}{ErrorQ07}
+\luaexec{
+    %% Question
+    local Q = [[
+        You record the time it takes a pendulum
+            to make \string\num{10} complete oscillations.
+        You repeat the measurement another four times.
+        They are recorded as follows:
+            \string\SI{\%.2f}{\string\second},
+            \string\SI{\%.2f}{\string\second},
+            \string\SI{\%.2f}{\string\second},
+            \string\SI{\%.2f}{\string\second},
+            \string\SI{\%.2f}{\string\second}.
+        What is the absolute uncertainty in the measurement
+            for a single complete oscillation
+            of this pendulum?
+    ]]
+    %% Random Values
+    local time = round(math.random() * math.random(10,20),2)
+    local value1 = {}
+    local value2 = {}
+    local sum1 = 0
+    local sum2 = 0
+    for i=1,5 do
+        value1[i] = time + round((0.5*gaussian()),2)
+        value2[i] = math.pow(value1[i],2)
+        sum1 = sum1 + value1[i]
+        sum2 = sum2 + value2[i] 
+    end
+    %% Random Permutations
+    local tab = {}
+    for i=1,9 do
+        tab[i] = i
+    end
+    tab = permute(tab,9,9)
+    %% Calculate values
+    local right = math.sqrt( (sum2/5) - math.pow((sum1/5),2) ) / math.sqrt(10)
+    local wrong = {
+        right * math.sqrt(10),
+        right * math.sqrt(10) / 10,
+        right / math.sqrt(10),
+        math.sqrt(math.abs((sum2/5) - (sum1/5))),
+        math.sqrt(math.abs((sum2/5) - (sum1/5))) / 10,
+        math.sqrt(math.abs((sum2/5) - (sum1/5))) / math.sqrt(10),
+        math.sqrt(math.abs((sum2) - (sum1))),
+        math.sqrt(math.abs((sum2) - (sum1))) / 10,
+        math.sqrt(math.abs((sum2) - (sum1))) / math.sqrt(10),
+    }
+    % Print Question
+    tex.print( string.format(Q,value1[1],value1[2],value1[3],value1[4],value1[5]) )
+    %% Formatting
+    local SI = [[ \string\SI[retain-zero-exponent]{\%.2e}{\string\second} ]]
+    %% Print MC Options
+    tex.print( BeginMulticolsTwo )
+        tex.print( BeginChoices )
+            tex.print( string.format( CorrectChoice, string.format(SI,right) ) )
+            for i=1,nwrong do
+                tex.print( string.format( WrongChoice, string.format(SI,wrong[tab[i]]) ) )
+            end
+        tex.print( EndChoices )
+    tex.print( EndMulticols )
+}
+\end{question}
+}
+
+
+\element{error}{
+\begin{question}{ErrorQ08}
+\luaexec{
+    %% Question
+    local Q = [[
+        You measure the time it takes a ball
+            to roll down an incline plane.
+        You repeat the measurement another four times.
+        They are recorded as follows:
+            \string\SI{\%.2f}{\string\second},
+            \string\SI{\%.2f}{\string\second},
+            \string\SI{\%.2f}{\string\second},
+            \string\SI{\%.2f}{\string\second},
+            \string\SI{\%.2f}{\string\second}.
+        What is the absolute uncertainty in the time
+            it takes the ball to roll down
+            the incline plane?
+    ]]
+    %% Random Values
+    local time = round(math.random() * math.random(10,20),2)
+    local value1 = {}
+    local value2 = {}
+    local sum1 = 0
+    local sum2 = 0
+    for i=1,5 do
+        value1[i] = time + round(0.5*gaussian(),2)
+        value2[i] = math.pow(value1[i],2)
+        sum1 = sum1 + value1[i]
+        sum2 = sum2 + value2[i] 
+    end
+    %% Random Permutations
+    local tab = {}
+    for i=1,8 do
+        tab[i] = i
+    end
+    tab = permute(tab,8,8)
+    %% Calculate values
+    local right = math.sqrt( (sum2/5) - math.pow((sum1/5),2) )
+    local wrong = {
+        right * math.sqrt(5),
+        right / math.sqrt(5),
+        math.sqrt( math.abs((sum2/5) - (sum1/5)) ),
+        math.sqrt( math.abs(sum2 - math.pow(sum1/5,2)) ),
+        (sum2/5) - (sum1/5),
+        (sum2/5) - math.pow(sum1/5,2),
+        sum1/5,
+        sum2/5,
+    }
+    %% Print Question
+    tex.print( string.format(Q,value1[1],value1[2],value1[3],value1[4],value1[5]) )
+    %% Formatting
+    local SI = [[ \string\SI[retain-zero-exponent]{\%.2e}{\string\second} ]]
+    %% Print MC Options
+    tex.print( BeginMulticolsTwo )
+        tex.print( BeginChoices )
+            tex.print( string.format( CorrectChoice, string.format(SI,right) ) )
+            for i=1,nwrong do
+                tex.print( string.format( WrongChoice, string.format(SI,wrong[tab[i]]) ) )
+            end
+        tex.print( EndChoices )
+    tex.print( EndMulticols )
+}
+\end{question}
+}
+
+
+%% Experimental Measurements
+%%----------------------------------------
+\element{error}{
+\begin{question}{ErrorQ09}
+\luaexec{
+    %% Question
+    local Q = [[
+        You record the time it takes a pendulum
+            to make \string\num{10} complete oscillations.
+        You repeat the measurement another four times.
+        They are recorded as follows:
+            \string\SI{\%.2f}{\string\second},
+            \string\SI{\%.2f}{\string\second},
+            \string\SI{\%.2f}{\string\second},
+            \string\SI{\%.2f}{\string\second},
+            \string\SI{\%.2f}{\string\second}.
+        What is the absolute uncertainty in the measurement
+            for a single complete oscillation
+            of this pendulum?
+    ]]
+    %% Random Values
+    local time = round(math.random() * math.random(10,20),2)
+    local value1 = {}
+    local value2 = {}
+    local sum1 = 0
+    local sum2 = 0
+    for i=1,5 do
+        value1[i] = time + round(gaussian(),2)
+        value2[i] = math.pow(value1[i],2)
+        sum1 = sum1 + value1[i]
+        sum2 = sum2 + value2[i] 
+    end
+    %% Random Permutations
+    local tab = {}
+    for i=1,8 do
+        tab[i] = i
+    end
+    tab = permute(tab,8,8)
+    %% Calculate values
+    local right = math.sqrt( (sum2/5) - math.pow((sum1/5),2) ) / math.sqrt(10)
+    local wrong = {
+        right * math.sqrt(10),
+        right * math.sqrt(10) / 10,
+        math.sqrt( (sum2/5) - (sum1/5) ),
+        math.sqrt( (sum2/5) - (sum1/5) ) / 10,
+        math.sqrt( (sum2/5) - (sum1/5) ) / math.sqrt(10),
+        math.sqrt( (sum2) - (sum1) ),
+        math.sqrt( (sum2) - (sum1) ) / 10,
+        math.sqrt( (sum2) - (sum1) ) / math.sqrt(10),
+    }
+    % Print Question
+    tex.print( string.format(Q,value1[1],value1[2],value1[3],value1[4],value1[5]) )
+    %% Formatting
+    local SI = [[ \string\SI{\%.2e}{\string\second} ]]
+    %% Print MC Options
+    tex.print( BeginMulticolsTwo )
+        tex.print( BeginChoices )
+            tex.print( string.format( CorrectChoice, string.format(SI,right) ) )
+            for i=1,nwrong do
+                tex.print( string.format( WrongChoice, string.format(SI,wrong[tab[i]]) ) )
+            end
+        tex.print( EndChoices )
+    tex.print( EndMulticols )
+}
+\end{question}
+}
+

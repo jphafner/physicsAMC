@@ -1,0 +1,519 @@
+
+
+%% CAP High School Prize Examination
+%%----------------------------------------
+
+
+%% this section contains 40 problems
+
+
+%% CAP Exam 2015
+%%----------------------------------------
+\element{cap}{ %% CAP-A3
+\begin{question}{CAP-A-2015-q01}
+    As shown in the picture, a ball is attached to a ceiling and a wall with massless ropes $A$ and $B$.
+    Rope $A$ is at angle $\theta$ from the vertical direction, and rope $B$ is horizontal. 
+    The system is static. 
+    \begin{center}
+    \begin{tikzpicture}
+        %% ceiling, A
+        \draw (1,0) -- (3,0);
+        \node[anchor=south,fill,pattern=north east lines,minimum width=2cm, minimum height=0.05cm] at (2,0) {};
+        %% wall, B
+        \draw (-2,-4) -- (-2,-2);
+        \node[anchor=east,fill,pattern=north east lines,minimum width=0.05cm, minimum height=2cm] at (-2,-3) {};
+        %% String A and B
+        \draw[thick] (0,-3) -- (2,0) node[pos=0.5,anchor=south east] {$A$};
+        \draw[thick] (-2,-3) -- (0,-3) node[pos=0.5,anchor=south] {$B$};
+        %% Pendulum
+        \draw[fill=white!90!black] (0,-3) circle (10pt);
+        %% angle
+        \draw[dashed] (2,0) -- (2,-1.5);
+        \draw[<->] (2,-1) arc (270:238:1) node[pos=0.5,anchor=north] {$\theta$};
+    \end{tikzpicture}
+    \end{center}
+    If rope $B$ is cut,
+        what is the ratio of the tension in rope $A$ immediately after it is cut to the tension in $A$ before it is cut?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{$1$}
+        \wrongchoice{$\cos\theta$}
+        \wrongchoice{$\dfrac{1}{\cos\theta}$}
+      \correctchoice{$\cos 2\theta$}
+        \wrongchoice{$\cos\theta \sin\theta$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{cap}{ %% CAP-A3
+\begin{question}{CAP-A-2015-q03}
+    The following graph represents the speed of a car as a function of time. 
+    We know that as the car speeds up there is a friction force with air that can be approximately considered to be proportional to the speed of the car.
+    \begin{center}
+    \begin{tikzpicture}
+        \begin{axis}[
+            axis y line=left, 
+            axis x line=bottom, 
+            axis line style={->},
+            xlabel={time},
+            xtick={3},
+            xticklabels={$t_0$},
+            x label style={
+                at={(current axis.right of origin)},
+                anchor=north east,
+            },
+            ylabel={velocity},
+            ytick=\empty,
+            xmin=0,xmax=11,
+            ymin=0,ymax=11,
+            width=0.8\columnwidth,
+            height=0.5\columnwidth,
+        ]
+        \addplot[line width=1pt] plot coordinates { (0,0) (3,9) (10,9) };
+        \addplot[line width=1pt,dashed] plot coordinates { (3,9) (3,0) };
+        \end{axis}
+    \end{tikzpicture}
+    \end{center}
+    Which of the following graphs can be the force of the engine as a function of time?
+    \begin{multicols}{2}
+    \begin{choices}
+        \AMCboxDimensions{down=-2.5em}
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left, 
+                    axis x line=bottom, 
+                    axis line style={->},
+                    xlabel={time},
+                    xtick={3},
+                    xticklabels={$t_0$},
+                    x label style={
+                        at={(current axis.right of origin)},
+                        anchor=north east,
+                    },
+                    ylabel={velocity},
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=0,ymax=11,
+                    width=1.0\columnwidth,
+                ]
+                \addplot[line width=1pt] plot coordinates { (0,9) (3,9) };
+                \addplot[line width=1pt,dashed] plot coordinates { (3,9) (3,0) };
+                \addplot[line width=1pt] plot coordinates { (3,5) (10,5) };
+                \end{axis}
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left, 
+                    axis x line=bottom, 
+                    axis line style={->},
+                    xlabel={time},
+                    xtick={3},
+                    xticklabels={$t_0$},
+                    x label style={
+                        at={(current axis.right of origin)},
+                        anchor=north east,
+                    },
+                    ylabel={velocity},
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=0,ymax=11,
+                    width=1.0\columnwidth,
+                ]
+                \addplot[line width=1pt] plot coordinates { (0,3) (3,9) };
+                \addplot[line width=1pt,dashed] plot coordinates { (3,9) (3,0) };
+                \addplot[line width=1pt] plot coordinates { (3,2) (10,2) };
+                \end{axis}
+            \end{tikzpicture}
+        }
+        %% ANS is C
+        \correctchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left, 
+                    axis x line=bottom, 
+                    axis line style={->},
+                    xlabel={time},
+                    xtick={3},
+                    xticklabels={$t_0$},
+                    x label style={
+                        at={(current axis.right of origin)},
+                        anchor=north east,
+                    },
+                    ylabel={velocity},
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=0,ymax=11,
+                    width=1.0\columnwidth,
+                ]
+                \addplot[line width=1pt] plot coordinates { (0,3) (3,9) };
+                \addplot[line width=1pt,dashed] plot coordinates { (3,9) (3,0) };
+                \addplot[line width=1pt] plot coordinates { (3,6) (10,6) };
+                \end{axis}
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left, 
+                    axis x line=bottom, 
+                    axis line style={->},
+                    xlabel={time},
+                    xtick={3},
+                    xticklabels={$t_0$},
+                    x label style={
+                        at={(current axis.right of origin)},
+                        anchor=north east,
+                    },
+                    ylabel={velocity},
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=0,ymax=11,
+                    width=1.0\columnwidth,
+                ]
+                \addplot[line width=1pt,domain=0:3] { 3 + 0.66 * x * x };
+                \addplot[line width=1pt,dashed] plot coordinates { (3,9) (3,0) };
+                \addplot[line width=1pt] plot coordinates { (3,6) (10,6) };
+                \end{axis}
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left, 
+                    axis x line=bottom, 
+                    axis line style={->},
+                    xlabel={time},
+                    xtick={3},
+                    xticklabels={$t_0$},
+                    x label style={
+                        at={(current axis.right of origin)},
+                        anchor=north east,
+                    },
+                    ylabel={velocity},
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=0,ymax=11,
+                    width=1.0\columnwidth,
+                ]
+                \addplot[line width=1pt,domain=0:3] { 3 + 0.66 * x * x };
+                \addplot[line width=1pt,dashed] plot coordinates { (3,9) (3,0) };
+                \addplot[line width=1pt] plot coordinates { (3,3) (10,3) };
+                \end{axis}
+            \end{tikzpicture}
+        }
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% CAP Exam 2014
+%%----------------------------------------
+\element{cap}{ %% cap-A3
+\begin{question}{CAP-A-2014-q24}
+    A box sits on a horizontal surface that exerts a normal force $N$ on the box. 
+    You apply a horizontal force to it and it does not move. 
+    If you had applied a force twice as large,
+        it still would not have moved. 
+    Let $\mu_s$ be the coefficient of static friction of the surface. 
+    While you are applying your initial force,
+        which of the following is true of the force of friction acting on the box?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{$F_f = 0$}
+      \correctchoice{$F_f <    \mu_s N$}
+        \wrongchoice{$F_f \leq \mu_s N$}
+        \wrongchoice{$F_f =    \mu_s N$}
+        \wrongchoice{$F_f \geq \mu_s N$}
+        \wrongchoice{$F_f >    \mu_s N$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% CAP Exam 2013
+%%----------------------------------------
+\element{cap}{ %% cap-A3
+\begin{question}{CAP-A-2013-q04}
+    A car driven at a constant speed turns left. 
+    Which force makes the car turn?
+    \begin{choices}
+      \correctchoice{The force of friction, directed towards the left.}
+        \wrongchoice{The force of friction, directed towards the right.}
+        \wrongchoice{The force with which the driver is turning the steering wheel, directed towards the left.}
+        \wrongchoice{The force with which the driver is turning the steering wheel, directed towards the right.}
+    \end{choices}
+\end{question}
+}
+
+\element{cap}{ %% cap-A3
+\begin{question}{CAP-A-2013-q05}
+    A cyclist stops pedaling at a velocity $v=\SI{36}{\kilo\meter\per\hour}$ and notices that her bike keeps moving for $d=\SI{500}{\meter}$ before it stops. 
+    The total mass of the bike, the biker and her camping equipment is $m=\SI{100}{\kilo\gram}$.
+    What is the average combined force on the bicycle due to friction and drag?
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{\SI{10}{\newton}}
+        \wrongchoice{\SI{20}{\newton}}
+        \wrongchoice{\SI{130}{\newton}}
+        \wrongchoice{\SI{260}{\newton}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{cap}{ %% cap-A3
+\begin{question}{CAP-A-2013-q06}
+    A child is swinging to and fro on a playground swing.
+    At the instant the chains of the swing are vertical,
+        what is the direction of the child's acceleration?
+    \begin{choices}
+        \wrongchoice{Downwards.}
+      \correctchoice{Upwards.}
+        \wrongchoice{In the direction of motion.}
+        \wrongchoice{Opposite to the direction of motion.}
+        \wrongchoice{At that moment, the acceleration is zero.}
+    \end{choices}
+\end{question}
+}
+
+\element{cap}{ %% cap-A3
+\begin{question}{CAP-A-2013-q07}
+    A bullet of mass \SI{5}{\gram} is accelerated in a rifle barrel with an approximately constant force of \SI{2500}{\newton}.
+    The mass of the rifle is \SI{5}{\kilo\gram}.
+    What is the force pushing the rifle back?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{2.5}{\newton}}
+      \correctchoice{\SI{2 500}{\newton}}
+        \wrongchoice{\SI{2 500 000}{\newton}}
+        \wrongchoice{\SI{0}{\newton}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{cap}{ %% cap-A3
+\begin{question}{CAP-A-2013-q09}
+    A Ferris wheel is turning about a horizontal axis through its center. 
+    The linear speed of a passenger sitting on the rim is constant. 
+    Which one of the following sentences about the passenger's acceleration is correct?
+    \begin{choices}
+        \wrongchoice{Its magnitude at the highest point is higher than at the lowest point, and it is downwards at both points.}
+        \wrongchoice{Both its magnitude and direction are the same at the highest and at the lowest points.}
+      \correctchoice{Its magnitude is the same at the highest and at the lowest points, but the directions are opposite.}
+        \wrongchoice{Its magnitude at the highest point is smaller than at the lowest point, and it is downwards at both points.}
+    \end{choices}
+\end{question}
+}
+
+\element{cap}{ %% cap-A3
+\begin{question}{CAP-A-2013-q18}
+    Two identical objects of mass $m$ are connected to a massless string which is hung over two frictionless pulleys as shown below. 
+    %% NOTE: duplicate of olympiad-1995-q06
+    \begin{center}
+    \begin{tikzpicture}
+        %% Ceiling
+        \node[anchor=south,fill,pattern=north east lines,minimum width=8cm, minimum height=0.05cm] at (0,0) {};
+        \draw (-4,0) -- (4,0);
+        %% Mass Left
+        \node[draw,anchor=north,minimum size=1cm,fill=white!90!black,rounded corners=0.5ex] (A) at (-2.5,-2.5) {$m$};
+        %% Mass Right
+        \node[draw,anchor=north,minimum size=1cm,fill=white!90!black,rounded corners=0.5ex] (B) at (+2.5,-2.5) {$m$};
+        %% Rope
+        \draw[very thick] (A.north) -- (-2.5,-1) arc(180:90:0.5) -- (+2,-0.5) arc(90:0:0.5) -- (B.north);
+        %% Pulley Left
+        \draw (-2,-1) circle (0.5cm);
+        \draw[fill=white!90!black] (-2.2,0) -- (-2.1,-1.1) arc(190:350:0.1) -- (-1.8,0) -- cycle;
+        \draw[fill] (-2,-1) circle (1pt);
+        %% Pulley Right
+        \draw (+2,-1) circle (0.5cm);
+        \draw[fill=white!90!black] (+1.8,0) -- (+1.9,-1.1) arc(190:350:0.1) -- (+2.2,0) -- cycle;
+        \draw[fill] (+2,-1) circle (1pt);
+    \end{tikzpicture}
+    \end{center}
+    If everything is at rest,
+        what is the tension in the cord?
+    \begin{choices}
+        \wrongchoice{Less than $mg$.}
+      \correctchoice{Exactly $mg$.}
+        \wrongchoice{More than $mg$, but less than $2mg$.}
+        \wrongchoice{Exactly $2mg$.}
+        \wrongchoice{More than $2mg$.}
+    \end{choices}
+\end{question}
+}
+
+\element{cap}{ %% cap-A3
+\begin{question}{CAP-A-2013-q22}
+    A ball of mass $m$ is thrown vertically upward. 
+    Instead of neglecting air resistance,
+        assume that the force of air resistance has a magnitude proportional to the ball's velocity,
+        but pointing in the opposite direction. 
+    What is the ball's acceleration at the highest point?
+    \begin{choices}
+        \wrongchoice{zero}
+        \wrongchoice{Less than $g$.}
+      \correctchoice{$g$}
+        \wrongchoice{Greater than $g$.}
+    \end{choices}
+\end{question}
+}
+
+
+%% CAP Exam 2012
+%%----------------------------------------
+\element{cap}{ %% cap-A3
+\begin{question}{CAP-A-2012-q02}
+    You are holding a bottle of sparkling water inside a car moving forward. 
+    When the driver applies the brakes:
+    \begin{choices}
+        \wrongchoice{Bubbles in the middle of the liquid will start to move forward with respect to the bottle.}
+      \correctchoice{Bubbles will start to move backward with respect the bottle.}
+        \wrongchoice{Bubbles will stay at the same horizontal location in the water.}
+        \wrongchoice{Depending on the speed of the car, bubbles might move forward or backward.}
+    \end{choices}
+\end{question}
+}
+
+
+%% CAP Exam 2011
+%%----------------------------------------
+\element{cap}{ %% cap-A3
+\begin{question}{CAP-A-2011-q14}
+    A huge case, attached to a cable,
+        is descending at a constant velocity. 
+    The tension in the cable is (neglecting the air resistance):
+    \begin{choices}
+        \wrongchoice{greater than the weight of the case.}
+        \wrongchoice{smaller than the weight of the case.}
+      \correctchoice{equal to the weight of the case.}
+        \wrongchoice{we cannot tell since we don't know the weight of the case.}
+    \end{choices}
+\end{question}
+}
+
+\element{cap}{ %% cap-A3
+\begin{question}{CAP-A-2011-q16}
+    When a car is starting, its driving wheels experience:
+    \begin{choices}
+        \wrongchoice{The force of kinetic friction directed backward.}
+        \wrongchoice{The force of static friction directed backward.}
+        \wrongchoice{The force of kinetic friction directed forward.}
+      \correctchoice{The force of static friction directed forward.}
+    \end{choices}
+\end{question}
+}
+
+
+%% CAP Exam 2010
+%%----------------------------------------
+\element{cap}{ %% cap-A3
+\begin{question}{CAP-A-2010-q02}
+    A mass $m_1$ rests on a frictionless surface. 
+    It is attached to mass $m_2$ by a light string which passes over a massless,
+        frictionless pulley, as shown in the figure.
+    \begin{center}
+    \begin{tikzpicture}
+        %% Floor and wall
+        \draw (-4,2) -- (-4,0) -- (0,0) -- (0,-3);
+        \node[anchor=north,fill,pattern=north east lines,minimum width=4cm, minimum height=0.05cm] at (-2,0) {};
+        \node[anchor=east,fill,pattern=north east lines,minimum width=0.05cm, minimum height=2.2cm] at (-4,0.9) {};
+        %% Mass
+        \node[draw,fill=white!90!black,rectangle,rounded corners=1ex,minimum size=1.25cm,anchor=south] (A) at (-2,0) {$m_1$};
+        \node[draw,fill=white!90!black,rectangle,rounded corners=1ex,minimum size=1.00cm,anchor=north] (B) at (1,-1) {$m_2$};
+        %% Rope and Pully
+        \draw[thick] (A.south east) ++(90:0.5) -- (0.75,0.5) arc(90:0:0.25) -- (B.north);
+        \draw[thick,fill=white!90!black] (0.75,0.25) circle (0.25); 
+        \draw[thick,fill=white] (0,0) -- (0.75,0.35) arc (90:-60:0.1) -- (0,-0.5) -- cycle;
+        \draw[fill] (0.75,0.25) circle (1pt);
+    \end{tikzpicture}
+    \end{center}
+    The system is released from rest.
+    The initial acceleration a of $m_2$ is given by:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{$a = g$}
+        \wrongchoice{$a = \left(m_2-m_1\right) g$}
+        \wrongchoice{$a = \dfrac{m_2}{m_1+m_2} g$}
+      \correctchoice{$a = \dfrac{m_1}{m_1+m_2} g$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{cap}{ %% cap-A3
+\begin{question}{CAP-A-2010-q08}
+    A block of mass $m$ is sandwiched between a rough vertical wall and a horizontally oriented spring with spring constant $k$. 
+    \begin{center}
+    \begin{tikzpicture}
+        %% wall
+        \draw (0,-2) -- (0,2);
+        \node[anchor=west,fill,pattern=north east lines,minimum width=0.05cm, minimum height=4cm] at (0,0) {};
+        %% block
+        \node[draw,minimum height=2cm,minimum width=1.25cm,anchor=east] (A) at (0,0) {$m$};
+        %% Spring
+        \draw[thick,decoration={aspect=0.2,segment length=2mm,amplitude=2mm,coil},decorate]  (A.west) -- (-3,0) node[anchor=south,pos=0.5,yshift=2mm] {$k$};
+        \draw[thick,->] (-5,0) -- (-3,0);
+    \end{tikzpicture}
+    \end{center}
+    If the spring is compressed a distance $x$ beyond its uncompressed length,
+        then the minimum coefficient of static friction for which the block does not fall is:
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{$\dfrac{mg}{kx}$}
+        \wrongchoice{$\dfrac{kx}{mg}$}
+        \wrongchoice{$\dfrac{kx}{mg + kx}$}
+        \wrongchoice{$\dfrac{mg}{mg + kx}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{cap}{ %% cap-A3
+\begin{question}{CAP-A-2010-q17}
+    At time $t=0$ a block of mass $m$ moves with momentum $p$ along a rough horizontal surface.
+    If it comes to a complete stop in time $t$,
+        then the coefficient of kinetic friction $\mu_k$ is given by:
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{$\dfrac{p}{mgt}$}
+        \wrongchoice{$\dfrac{pg}{mt}$}
+        \wrongchoice{$\dfrac{ptg}{m}$}
+        \wrongchoice{$\dfrac{pt}{mg}$}
+        \wrongchoice{none of the provided}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% CAP Exam 2009
+%%----------------------------------------
+\element{cap}{ %% cap-A3
+\begin{question}{CAP-A-2009-q09}
+    A \SI{0.50}{\kilo\gram} mass attached to the end of a string swings in a vertical circle with radius of \SI{2.0}{\meter}.
+    When the string is horizontal,
+        the speed of the mass is \SI{8.0}{\meter\per\second}.
+    What is the magnitude of the force of the string on the mass at this position?
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{\SI{16}{\newton}}
+        \wrongchoice{\SI{17}{\newton}}
+        \wrongchoice{\SI{21}{\newton}}
+        \wrongchoice{\SI{11}{\newton}}
+        \wrongchoice{\SI{25}{\newton}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+\endinput
+
+

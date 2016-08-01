@@ -1,0 +1,260 @@
+Part I:  Multiple Choice Questions.
+         There are 31 multiple choice questions worth 2 points each.
+	 Choose the best answer and record it on the scan sheet.
+
+1.   We see the same pattern on the moon every night because 
+        A. the moon has craters, mountains, and maria. 
+        B. the moon's spin and orbit are tidally locked. 
+        C. the earth's atmosphere make it look bigger near the horizon. 
+        D. the phase of the moon depends on the illumination of the sun. 
+
+2.   Mercury and Venus are called inferior planets because 
+        A. they are insufferably hot. 
+        B. they never stray far from the sun on the sky. 
+        C. they are small and insignificant. 
+        D. they are terrestrial planets like Mars. 
+
+3.   Why do we think the climate of Mars has changed? 
+        A. Its mean density is between that of Earth and the Jovian planets. 
+        B. Fossil trees found by the Viking spacecraft show it was once hot 
+           and wet. 
+        C. The atmosphere is currently rich in methane. 
+        D. Old river beds exist, but no water flows there today. 
+
+4.   The escape velocity is 
+        A. the terminal velocity acquired by an object in free fall. 
+        B. the speed required to completely escape the gravitational pull 
+           of an object. 
+        C. the speed needed to launch a satellite into orbit. 
+        D. the speed at which a planet will orbit in a circle. 
+
+5.   Which of these assumptions is NOT part of the scientific method? 
+        A. The laws of nature are universal. 
+        B. There exists an objective reality. 
+        C. Reality is governed by the laws of nature. 
+        D. Reality is limited by our perceptions. 
+
+6.   The molecule that does NOT contribute to the greenhouse effect on Earth 
+     is 
+        A. methane. 
+        B. water. 
+        C. carbon dioxide. 
+        D. nitrogen. 
+
+7.   The sun stays below the horizon all winter for observers 
+        A. in the tropics. 
+        B. exactly at the equator. 
+        C. above the arctic circle. 
+        D. this situation never happens. 
+
+
+
+
+
+
+8.   The geocentric world model is characterized by 
+        A. a flat earth. 
+        B. placing the earth at the center of the universe. 
+        C. placing the earth in orbit around the sun. 
+        D. placing the sun at the center of the universe. 
+
+9.   A solar eclipse can occur 
+        A. when the Moon's phase is full. 
+        B. when the Moon's phase is new. 
+        C. when Venus is in its crescent phase. 
+        D. when Venus is at inferior conjunction. 
+
+10.  The ecliptic is 
+        A. the Sun's path across the celestial sphere 
+        B. the line that divides the Earth into daytime and nighttime 
+        C. a circle approximately 23.5 degrees across centered on Polaris 
+        D. the path across the celestial sphere followed by comets 
+        E. the line on the celestial sphere directly above the Earth's Tropic 
+           of Cancer 
+
+11.  The ocean tides raised by the Sun and the Moon on the Earth reinforce 
+     each other when 
+        A. the phase of the Moon is first or third quarter. 
+        B. the phase of the Moon is new or full. 
+        C. the Moon is closest to the Earth. 
+        D. the Earth is closest to the Sun. 
+
+12.  According to Newton's laws of motion, the Moon remains in orbit around 
+     the Earth because 
+        A. the Sun's gravity balances the Earth's gravity 
+        B. the Moon's velocity balances the Earth's velocity 
+        C. the Earth's magnetic field holds it there 
+        D. the original motion of the Moon was circular 
+        E. Earth's gravity pulls the Moon toward the Earth 
+
+13.  The sun casts no shadow 
+        A. on the summer solsctice at the latitude of the tropics. 
+        B. on the spring equinox at the latitude of the tropics. 
+        C. every day at noon. 
+        D. only at the equator. 
+
+14.  The giant pendulum demonstration done in class was to illustrate 
+        A. the conservation of angular momentum. 
+        B. the conservation of mass. 
+        C. the conservation of energy. 
+        D. that the instructor better duck before the pendulum returns! 
+
+15.  Which observation of Galileo's was NOT relevant to distinguishing 
+     between the Ptolemaic and Copernican world models? 
+        A. The phases of Venus. 
+        B. The moons of Jupiter. 
+        C. Stars in the Milky Way. 
+        D. Mountains and plains on the Moon. 
+
+16.  The Moon has many more craters than Earth because 
+        A. asteroids cannot penetrate Earth's atmosphere. 
+        B. it has no erosion or geological activity to erase craters. 
+        C. it shielded Earth from collisions. 
+        D. Earth's are all beneath the ocean. 
+
+17.  The seasons of the Earth result from 
+        A. the tilt of the Earth's rotation axis 
+        B. the Earth being farther from the Sun in winter because of its 
+           elliptical orbit 
+        C. the varying speed of the Earth in its orbit 
+        D. the precession of the Earth's rotation axis 
+
+18.  Copernicus' model of the heavens destroyed many of the concepts of the 
+     heavens held by the ancient Greeks. However, one feature that his model 
+     retained was that 
+        A. the Sun controls all motions of the planets. 
+        B. all celestial orbits are circles. 
+        C. epicycles were used to explain retrograde motion. 
+        D. the Earth is at the center of the Universe. 
+
+19.  The "runaway greenhouse effect" occurred on which planet? 
+        A. Mars 
+        B. Earth 
+        C. Venus 
+        D. Mercury 
+
+20.  The greenhouse effect occurs because 
+        A. Visible radiation is blocked by the atmosphere. 
+        B. Ultraviolet radiation is blocked by the atmosphere. 
+        C. Infrared radiation is blocked by the atmosphere. 
+        D. Ultraviolet radiation is blocked by the ozone layer. 
+
+21.  Planets are spherical while asteroids are irregularly shaped because 
+        A. asteroids can not be irregular in shape. 
+        B. material strength dominates over gravity in planets. 
+        C. gravity dominates over material strength in asteroids. 
+        D. gravity dominates over material strength in planets. 
+
+22.  Which of the following statements about retrograde motion is INCORRECT? 
+        A. in the heliocentric model of the Universe, retrograde motion 
+           occurs when one planet overtakes another in its orbit around the 
+           Sun. 
+        B. in the geocentric model of the Universe, epicycles were invented 
+           to explain retrograde motion. 
+        C. retrograde motion is the occasional westward drift of a planet 
+           against the background stars. 
+        D. retrograde motion occurs when a planet occasionally rises in the 
+           west and sets in the east. 
+
+
+
+
+
+23.  The tablecloth pull demonstration done in class was to illustrate 
+        A. the conservation of mass. 
+        B. how escape velocity depends on the mass of an object. 
+        C. that physics is hazardous. 
+        D. the concept of inertia. 
+
+24.  Which of the following is NOT one of Newton's Laws of Motion? 
+        A. Every action has an equal and opposite reaction. 
+        B. F = ma. 
+        C. All objects fall at the same rate irrespective of mass. 
+        D. An object in motion remains in motion unless acted on by an 
+           outside force. 
+
+25.  The principle reason that the terrestrial planets have different geology 
+     is 
+        A. distance from the Sun. 
+        B. rotation rate. 
+        C. thickness of the atmosphere. 
+        D. planetary mass. 
+
+26.  The sidereal day is 
+        A. the portion of the day due to the earth's orbital motion. 
+        B. the time it takes earth to spin once about its axis. 
+        C. the time between one sunrise and the next. 
+        D. the international standard for the average length of a day. 
+
+27.  Suppose you are an astronaut taking a space walk to fix your spacecraft 
+     with a hammer. Your life-line breaks and the jets on your backpack are 
+     out of fuel. How would you return to your craft safely (without the help 
+     of someone else)? 
+        A. There is absolutely nothing you can do so kiss your ship goodbye 
+        B. Apply harsh language towards the spacecraft 
+        C. Fling your arms around in circles 
+        D. Throw the hammer in disgust at the spacecraft 
+        E. Throw the hammer in disgust away from the spacecraft 
+
+28.  Compared to its neighboring planets, Mercury, Venus, and Mars, the 
+     surface of the Earth is relatively young. This youthful appearance 
+     results from 
+        A. the Earth having the largest Moon of all of these planets. 
+        B. the fact that few major impacts ever occur on the Earth. 
+        C. tectonic activity still shaping the surface of the Earth. 
+        D. the Earth is furthest from the Sun. 
+        E. the Earth being the most recently formed of these planets. 
+
+29.  You find yourself driving south on Route 1 on the winter solstice. The 
+     sun is directly ahead of you. Consequently, 
+        A. you are out early, shortly after sunrise. 
+        B. this situation is not possible. 
+        C. the time is about noon. 
+        D. there will be a full moon that day. 
+
+
+
+30.  The molecule that contributes most to the greenhouse effect on Earth is 
+        A. carbon dioxide. 
+        B. ozone. 
+        C. water. 
+        D. methane. 
+
+31.  The phase of the moon today is 
+        A. first quarter. 
+        B. waxing gibbous. 
+        C. waning crescent. 
+        D. full. 
+
+
+   1. B.
+   2. B.
+   3. D.
+   4. B.
+   5. D.
+   6. D.
+   7. C.
+   8. B.
+   9. B.
+  10. A.
+  11. B.
+  12. E.
+  13. A.
+  14. C.
+  15. C.
+  16. B.
+  17. A.
+  18. B.
+  19. C.
+  20. C.
+  21. D.
+  22. D.
+  23. D.
+  24. C.
+  25. D.
+  26. B.
+  27. E.
+  28. C.
+  29. C.
+  30. C.
+  31. C.

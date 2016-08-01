@@ -1,0 +1,260 @@
+Practice Exam for ASTR II,  EXAM 5 on Cosmology
+
+ 
+
+ 
+
+    Which one of the following is the most complete statement of the Cosmological Principle?
+
+ 
+
+        the universe appears the same to all observers
+        the appearance of the universe depends on the direction of observation
+        on a large scale, the universe appears the same to all observers
+        the universe is unchanging throughout all time
+        the distribution of matter is uniform, but the appearance depends on the direction of observation
+
+ 
+
+    Which of the following are possible universes according to the solutions of Einstein’s equations for the geometry of the universe?
+
+ 
+
+        open
+        closed
+        flat
+        a and b only
+        a, b, and c
+
+ 
+
+    A universe with a positive curvature is considered a
+
+ 
+
+        closed universe
+        open universe
+        static universe
+        flat universe
+
+ 
+
+    The critical density for the universe is
+
+ 
+
+        the density of matter in the Milky Way
+        the density at which an object becomes a black hole
+        the number density of galaxies in a typical cluster of galaxies
+        the density at the center of the Big Bang
+        the density of a flat universe
+
+ 
+
+    If the density of the universe is greater than the critical density, the universe will
+
+ 
+
+        continue to expand forever
+        eventually stop expanding
+        eventually stop expanding and begin contraction
+        continue to contract forever
+        eventually stop contracting and begin expanding
+
+ 
+
+    The critical density is roughly
+
+ 
+
+        the density of air at sea level on Earth
+        the density at the center of the Sun
+        the density of a white dwarf
+        the density of the interstellar medium (~ 1 proton per cubic centimeter)
+        about 1 proton per cubic meter
+
+ 
+
+    The density of the observable matter in the universe indicates that the universe is
+
+ 
+
+        open
+        closed
+        flat
+        static
+
+ 
+
+    To determine whether the expansion of the universe is decelerating or accelerating requires
+
+ 
+
+        observing very faint galaxies
+        observing very bright galaxies
+        observing nearby galaxies
+        observing the motions of binary galaxies
+        observing the microwave background radiation
+
+ 
+
+    A large amount of deuterium in the universe would mean the universe is
+
+ 
+
+        open
+        closed
+        flat
+        static
+
+ 
+
+    What percentage of the mass of the universe was formed into helium during the Big Bang?
+
+ 
+
+        1%
+        5%
+        10%
+        25%
+        50%
+
+ 
+
+    The temperature of the universe 1 second after the Big Bang was approximately
+
+ 
+
+        10 (to the 6th power) K
+        10 (to the 8th power) K
+        10 (to the 10th power) K
+        10 (to the 15th power) K
+        10 (to the 20th power) K
+
+ 
+
+    The assumption that the general structure of the universe is the same everywhere is the assumption of
+
+ 
+
+        isotropy
+        homogeneity
+        regularity
+        universality
+        constancy
+
+ 
+
+    When we observe distant galaxies we are observing
+
+ 
+
+        very young objects
+        very old objects
+        objects having the approximate age of the Milky Way
+        distant galaxies; no statement may be made about age
+
+ 
+
+    Except for hydrogen, the most abundant element formed in the Big Bang was
+
+ 
+
+        helium
+        lithium
+        oxygen
+        carbon
+        nitrogen
+
+ 
+
+    Deuterium in the universe was produced
+
+ 
+
+        by fusion in stellar interiors
+        by fission in stellar interiors
+        during the initial Big Bang
+        by high density radiation near stars
+        none of the above, it only exists on the Earth
+
+ 
+
+    Olbers’ paradox results from asking the question
+
+ 
+
+        What is truth?
+        What is a quasar?
+        What is the nature of the Universe?
+        Why is the night sky dark?
+        What am I doing here?
+
+ 
+
+    A difficulty with inflationary models of the universe is that they fail to explain
+
+ 
+
+        where the universe came from
+        the origin of life
+        the formation of the solar system
+        how galaxies, clusters and superclusters formed
+        the origin of the microwave background radiation
+
+ 
+
+    Grand Unified Theories connect all but which one of the four forces in nature?
+
+ 
+
+        gravity
+        electromagnetism
+        weak nuclear
+        strong nuclear
+
+ 
+
+ 
+
+ 
+
+ 
+
+ANSWERS:
+
+1.  c
+
+2.  e
+
+3.  a
+
+4.  e
+
+5.  c
+
+6.  e
+
+7.  a
+
+8.  a
+
+9.  a
+
+10. d
+
+11.c
+
+12. b
+
+13. a
+
+14. a
+
+15. c
+
+16. d
+
+17. d
+
+18. a

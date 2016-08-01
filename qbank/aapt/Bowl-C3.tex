@@ -1,0 +1,543 @@
+
+
+%% AAPT Physics Bowl Exams Questions
+%%----------------------------------------
+
+
+%% This section has XX problems
+
+
+%% PhysicsBowl 2015
+%%----------------------------------------
+\element{aapt}{ %% Bowl-C3
+\begin{question}{bowl-2015-q19}
+    Ten moles of helium gas are enclosed in a container at a pressure of
+        \SI{1.00}{atm} and at a temperature of \SI{400}{\kelvin}.
+    Which one of the following choices best represents the density of this gas sample?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{0.012}{\kilo\gram\per\meter\cubed}}
+      \correctchoice{\SI{0.12}{\kilo\gram\per\meter\cubed}}
+        \wrongchoice{\SI{1.2}{\kilo\gram\per\meter\cubed}}
+        \wrongchoice{\SI{120}{\kilo\gram\per\meter\cubed}}
+        \wrongchoice{\SI{1.2e4}{\kilo\gram\per\meter\cubed}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{aapt}{ %% Bowl-C3
+\begin{question}{bowl-2015-q25}
+    A gas undergoes the unusual process $M\rightarrow{}N$ in the pressure vs. volume graph shown.
+    \begin{center}
+    \begin{tikzpicture}
+        \begin{axis}[
+            axis y line=left,
+            axis x line=bottom,
+            axis line style={->},
+            xlabel={volume},
+            xtick=\empty,
+            ylabel={pressure},
+            ytick=\empty,
+            grid=major,
+            xmin=0,xmax=10,
+            ymin=0,ymax=10,
+            width=0.8\columnwidth,
+            height=0.5\columnwidth,
+        ]
+        %% line
+        \addplot[line width=1pt,smooth,tension=0.7,mark=\empty] plot coordinates {(6,8) (5,1) (3,3) (2,2) };
+        %% arrows
+        \draw[very thick,-latex] (axis cs:5.70,4.5) -- ++(260:0.5);
+        \draw[very thick,-latex] (axis cs:3,3) -- ++(180:0.5);
+        %% labels
+        \fill (axis cs:2,2) circle (1.5pt) node[anchor=north] {$N$};
+        \fill (axis cs:6,8) circle (1.5pt) node[anchor=south] {$M$};
+        \end{axis}
+    \end{tikzpicture}
+    \end{center}
+    Which one of the following choices properly represents the signs of the internal energy change of the gas, $\Delta U$,
+        the total energy transferred as heat to the gas, $Q$,
+        and the total work done on the gas by the surroundings, $W$, for this process?
+    \begin{center}
+    \begin{tabu}{cX[c]X[c]X[c]}
+        \toprule
+        \makebox[1.5em][c]{\textnumero}
+            & $\Delta U$
+            & $Q$ & $W$ \\
+        \bottomrule
+    \end{tabu}
+    \end{center}
+    \begin{choices}
+        \wrongchoice{\begin{tabu}{X[c]X[c]X[c]} Positive & Negative & Positive \\ \end{tabu}}
+        \wrongchoice{\begin{tabu}{X[c]X[c]X[c]} Negative & Positive & Negative \\ \end{tabu}}
+        \wrongchoice{\begin{tabu}{X[c]X[c]X[c]} Negative & Negative & Negative \\ \end{tabu}}
+        \wrongchoice{\begin{tabu}{X[c]X[c]X[c]} Positive & Positive & Negative \\ \end{tabu}}
+      \correctchoice{\begin{tabu}{X[c]X[c]X[c]} Negative & Negative & Positive \\ \end{tabu}}
+    \end{choices}
+\end{question}
+}
+
+\element{aapt}{ %% Bowl-C3
+\begin{question}{bowl-2015-q47}
+    One mole of a diatomic ideal gas undergoes a reversible adiabatic process.
+    The pressure and volume initially are given as $P=\SI{2.0}{atm}$ and $V=\SI{30}{\liter}$.
+    If the volume is halved during the adiabatic process,
+        how much work was done on the gas sample by the surroundings?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{6790}{\joule}}
+        \wrongchoice{\SI{5530}{\joule}}
+      \correctchoice{\SI{4850}{\joule}}
+        \wrongchoice{\SI{4200}{\joule}}
+        \wrongchoice{\SI{3040}{\joule}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% PhysicsBowl 2014
+%%----------------------------------------
+\element{aapt}{ %% Bowl-C3
+\begin{question}{bowl-2014-q46}
+    A monatomic, ideal gas undergoes an isobaric process.
+    During the process,
+        the gas performs \SI{80}{\joule} of work on the surrounding.
+    Which one of the following statements best describes the head exchange during this process?
+    \begin{choices}
+      \correctchoice{\SI{200}{\joule} of energy was added to the gas.}
+        \wrongchoice{\SI{200}{\joule} of energy was removed from the gas.}
+        \wrongchoice{\SI{80}{\joule} of energy was added to the gas.}
+        \wrongchoice{\SI{80}{\joule} of energy was removed from the gas.}
+        \wrongchoice{It cannot be determined without knowing the change in temperature for the gas.}
+    \end{choices}
+\end{question}
+}
+
+
+%% PhysicsBowl 2013
+%%----------------------------------------
+\element{aapt}{ %% Bowl-C3
+\begin{question}{bowl-2013-q31}
+    A monatomic ideal gas undergoes a reversible isothermal
+        expansion in an enclosed container.
+    Which one of the following quantities associated with
+        the gas has a value of \emph{zero}?
+    \begin{choices}
+        \wrongchoice{Heat}
+        \wrongchoice{Entropy change}
+        \wrongchoice{Work done}
+      \correctchoice{Internal energy change}
+        \wrongchoice{Pressure change}
+    \end{choices}
+\end{question}
+}
+
+\element{aapt}{ %% Bowl-C3
+\begin{question}{bowl-2013-q41}
+    An engine operates between a low temperature of \SI{273}{\degreeCelsius} and a high temperature of \SI{546}{\degreeCelsius}.
+    What is the maximum theoretical efficiency of this engine?
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{$\dfrac{1}{3}$}
+        \wrongchoice{$\dfrac{2}{3}$}
+        \wrongchoice{$\dfrac{1}{4}$}
+        \wrongchoice{$\dfrac{1}{2}$}
+        \wrongchoice{$\dfrac{3}{4}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{aapt}{ %% Bowl-C3
+\begin{question}{bowl-2013-q48}
+    Two identical samples of a monatomic ideal gas are to undergo reversible processes.
+    Which one of the following choices is a correct statement about the heat associated with the process?
+    \begin{description}[itemsep=1ex]
+        \item[Process 1:] An isochoric pressure doubling
+        \item[Process 2:] An isobaric volume doubling
+    \end{description}
+    \begin{choices}
+      \correctchoice{There is less heat associated with Process 1 than Process 2.}
+        \wrongchoice{The heat is the same non-zero value for Process 1 and 2.}
+        \wrongchoice{There is more heat associated with Process 1 than Process 2.}
+        \wrongchoice{The heat is zero for Process 1 and 2.}
+        \wrongchoice{More information is required to determine the relationship for heats.}
+    \end{choices}
+\end{question}
+}
+
+
+%% PhysicsBowl 2012
+%%----------------------------------------
+\element{aapt}{ %% Bowl-C3
+\begin{question}{bowl-2012-q27}
+    The pressure inside a container with two moles of
+        an ideal gas is \num{0.75}~atmospheres.
+    The temperature of the gas is \SI{100}{\degreeCelsius}.
+    The container maintains constant volume as the pressure is tripled.
+    Which one of the following choices best represents
+        the temperature of the gas after the pressure is tripled?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{33}{\degreeCelsius}}
+        \wrongchoice{\SI{300}{\degreeCelsius}}
+        \wrongchoice{\SI{573}{\degreeCelsius}}
+      \correctchoice{\SI{847}{\degreeCelsius}}
+        \wrongchoice{\SI{1119}{\degreeCelsius}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{aapt}{ %% Bowl-C3
+\begin{question}{bowl-2012-q44}
+    A monatomic ideal gas is the working substance for a refrigerator that undergoes the cycle process ($ABCDA$) shown in the $PV$ diagram.
+    \begin{center}
+    \begin{tikzpicture}
+        \begin{axis}[
+            axis y line=left,
+            axis x line=bottom,
+            axis line style={->},
+            xlabel={volume},
+            xtick={0,1,2},
+            xticklabels={0,$V_0$,$2V_0$},
+            ylabel={pressure},
+            ytick={0,1,2},
+            yticklabels={0,$P_0$,$2P_0$},
+            xmin=0,xmax=2.5,
+            ymin=0,ymax=2.5,
+            width=0.8\columnwidth,
+            height=0.5\columnwidth,
+        ]
+        %% process
+        \addplot[line width=1pt,mark=\empty] plot coordinates { (1,1) (2,1) (2,2) (1,2) (1,1) };
+        %% labels
+        \node[anchor=north east] at (axis cs:1,1) {$A$};
+        \node[anchor=north west] at (axis cs:2,1) {$B$};
+        \node[anchor=south west] at (axis cs:2,2) {$C$};
+        \node[anchor=south east] at (axis cs:1,2) {$D$};
+        %% arrows
+        \draw[line width=1pt,-latex] (axis cs:2,2) -- (axis cs:1.5,2);
+        \draw[line width=1pt,-latex] (axis cs:1,2) -- (axis cs:1,1.5);
+        \draw[line width=1pt,-latex] (axis cs:1,1) -- (axis cs:1.5,1);
+        \draw[line width=1pt,-latex] (axis cs:2,1) -- (axis cs:2,1.5);
+        %% dashed
+        \draw[dashed] (axis cs:0,1) -- (axis cs:1,1);
+        \draw[dashed] (axis cs:0,2) -- (axis cs:1,2);
+        \draw[dashed] (axis cs:1,0) -- (axis cs:1,1);
+        \draw[dashed] (axis cs:2,0) -- (axis cs:2,1);
+        \end{axis}
+    \end{tikzpicture}
+    \end{center}
+    The process are all isochoric or isobaric with pressure between $P_0$
+        and $2P_0$ and volume between $V_0$ and $2V_0$.
+    What is the coefficient of performance for this refrigerator?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\dfrac{1}{4}$}
+        \wrongchoice{$\dfrac{1}{3}$}
+        \wrongchoice{$\dfrac{4}{3}$}
+      \correctchoice{$\dfrac{11}{2}$}
+        \wrongchoice{$\dfrac{13}{2}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% PhysicsBowl 2011
+%%----------------------------------------
+\element{aapt}{ %% Bowl-C3
+\begin{question}{bowl-2011-q44}
+    One mole of monatomic ideal gas undergoes an isobaric expansion.
+    In the process, the temperature of the gas increases from \SI{300}{\kelvin} to \SI{500}{\kelvin}.
+    Which one of the following choices best represents the amount of work done by the gas on the surroundings?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{665}{\joule}}
+        \wrongchoice{\SI{1110}{\joule}}
+      \correctchoice{\SI{1660}{\joule}}
+        \wrongchoice{\SI{2490}{\joule}}
+        \wrongchoice{\SI{4160}{\joule}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% PhysicsBowl 2010
+%%----------------------------------------
+\element{aapt}{ %% Bowl-C3
+\begin{question}{bowl-2010-q05}
+    When computed with proper MKS units, the Universal Gas
+        Constant divided by Boltzmann's constant is equal to:
+    \begin{choices}
+        \wrongchoice{the speed of light.}
+        \wrongchoice{Planck's constant.}
+      \correctchoice{Avogadro's number.}
+        \wrongchoice{the permittivity of free space.}
+        \wrongchoice{the Universal Gravitational constant.}
+    \end{choices}
+\end{question}
+}
+
+
+%% PhysicsBowl 2009
+%%----------------------------------------
+\element{aapt}{ %% Bowl-C3
+\begin{question}{bowl-2009-q33}
+    An ideal gas undergoes an isobaric expansion followed by an isochoric cooling.
+    Which of the following statements \emph{must} be true after the completion of these processes?
+    \begin{choices}
+      \correctchoice{The final pressure is less than the original pressure.}
+        \wrongchoice{The final volume is less than the original volume.}
+        \wrongchoice{The final temperature is less than the original temperature.}
+        \wrongchoice{The total quantity of heat, $Q$, associated with these processes is positive.}
+        \wrongchoice{The internal energy of the gas is unchanged.}
+    \end{choices}
+\end{question}
+}
+
+
+%% PhysicsBowl 2008
+%%----------------------------------------
+\element{aapt}{ %% Bowl-C3
+\begin{question}{bowl-2008-q44}
+    A mole of a monatomic ideal gas has pressure $P$,
+        volume $V$, and temperature $T$.
+    Which of the following processes would result in the greatest amount of energy added to the gas from heat?
+    \begin{choices}
+      \correctchoice{A process doubling the temperature at constant pressure.}
+        \wrongchoice{An adiabatic free expansion doubling the volume.}
+        \wrongchoice{A process doubling the pressure at constant volume.}
+        \wrongchoice{An adiabatic expansion doubling the volume.}
+        \wrongchoice{A process doubling the volume at constant temperature.}
+    \end{choices}
+\end{question}
+}
+
+
+%% PhysicsBowl 2007
+%%----------------------------------------
+\element{aapt}{ %% Bowl-C3
+\begin{question}{bowl-2007-q40}
+    Which is not true of an isochoric process on an enclosed ideal gas in which the pressure decreases?
+    \begin{choices}
+        \wrongchoice{The work done is zero.}
+        \wrongchoice{The internal energy of the gas decreases.}
+      \correctchoice{The heat is zero.}
+        \wrongchoice{The rms speed of the gas molecules decreases.}
+        \wrongchoice{The gas temperature decreases.}
+    \end{choices}
+\end{question}
+}
+
+\element{aapt}{ %% Bowl-C3
+\begin{question}{bowl-2007-q46}
+    An ideal gas undergoes a reversible isothermal expansion at $T=\SI{300}{\kelvin}$.
+    The total change in entropy of the gas is \SI{2.5}{\joule\per\kelvin}.
+    How much work was done by the environment on the gas during this process?
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{\SI{-750}{\joule}}
+        \wrongchoice{\SI{-120}{\joule}}
+        \wrongchoice{\SI{120}{\joule}}
+        \wrongchoice{\SI{750}{\joule}}
+        \wrongchoice{More information is required to answer this question.}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% PhysicsBowl 2006
+%%----------------------------------------
+\element{aapt}{ %% Bowl-C3
+\begin{question}{bowl-2006-q26}
+    In the Pressure versus Volume graph shown,
+        in the process of going from $a$ to $b$ \SI{60}{\joule} of heat are added,
+        and in the process of going from $b$ to $d$ \SI{20}{\joule} of heat are added.
+    \begin{center}
+    \begin{tikzpicture}
+        \begin{axis}[
+            axis y line=left,
+            axis x line=bottom,
+            axis line style={->},
+            xlabel={volume},
+            x unit=\si{\meter\cubed},
+            xtick={2,5},
+            ylabel={pressure},
+            y unit=\si{\pascal},
+            ytick={3,8},
+            xmin=0,xmax=6,
+            ymin=0,ymax=9,
+            clip=false,
+            width=0.8\columnwidth,
+            height=0.5\columnwidth,
+        ]
+        %% process
+        \addplot[line width=1pt,mark=\empty] plot coordinates { (2,3) (2,8) (5,8) (5,3) (2,3) };
+        %% labels
+        \node[anchor=north west] at (axis cs:2,3) {$A$};
+        \node[anchor=south west] at (axis cs:2,8) {$B$};
+        \node[anchor=north west] at (axis cs:5,3) {$C$};
+        \node[anchor=south west] at (axis cs:5,8) {$D$};
+        %% arrows
+        \draw[line width=1pt,-latex] (axis cs:2,3) -- (axis cs:2,4);
+        \draw[line width=1pt,-latex] (axis cs:2,8) -- (axis cs:3,8);
+        \draw[line width=1pt,-latex] (axis cs:2,3) -- (axis cs:3,3);
+        \draw[line width=1pt,-latex] (axis cs:5,3) -- (axis cs:5,4);
+        %% dashed
+        \draw[dashed] (axis cs:0,3) -- (axis cs:2,3);
+        \draw[dashed] (axis cs:0,8) -- (axis cs:2,8);
+        \draw[dashed] (axis cs:2,0) -- (axis cs:2,3);
+        \draw[dashed] (axis cs:5,0) -- (axis cs:5,3);
+        \end{axis}
+    \end{tikzpicture}
+    \end{center}
+    In the process of going $A$ to $C$ to $D$,
+        what is the total heat added?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{80}{\joule}}
+      \correctchoice{\SI{65}{\joule}}
+        \wrongchoice{\SI{60}{\joule}}
+        \wrongchoice{\SI{56}{\joule}}
+        \wrongchoice{\SI{47}{\joule}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{aapt}{ %% Bowl-C3
+\begin{question}{bowl-2006-q43}
+    A \SI{10}{\ohm} resistor is connected to a \SI{12}{\volt} battery.
+    If the temperature (\SI{300}{\kelvin}) and mass of the resistor (\SI{20}{\gram}) remain constant,
+        what is the change in entropy of the resistor during \SI{30}{\second} of operation of the circuit?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{432}{\joule\per\kelvin}}
+        \wrongchoice{\SI{1.44}{\joule\per\kelvin}}
+      \correctchoice{\SI{0}{\joule\per\kelvin}}
+        \wrongchoice{\SI{-1.44}{\joule\per\kelvin}}
+        \wrongchoice{\SI{-432}{\joule\per\kelvin}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{aapt}{ %% Bowl-C3
+\begin{question}{bowl-2006-q44}
+    A refrigerator must operate when the outside environment is at \SI{22}{\degreeCelsius} to maintain an environment at \SI{2}{\degreeCelsius} inside the refrigerator.
+    During one cycle,
+        the refrigerator expels \SI{1200}{\joule} of energy to the outside environment while \SI{400}{\joule} of work were done.
+    What is the coefficient of performance of this refrigerator?
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{\num{2.00}}
+        \wrongchoice{\num{3.00}}
+        \wrongchoice{\num{10.00}}
+        \wrongchoice{\num{13.75}}
+        \wrongchoice{\num{14.75}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% PhysicsBowl 2005
+%%----------------------------------------
+\element{aapt}{ %% Bowl-C3
+\begin{question}{bowl-2005-q42}
+    A sample of a monatomic ideal gas starts with pressure,
+        volume, temperature, and number of moles given as $P_0$, $V_0$, $T_0$, $n$, respectively.
+    The gas has molar specific heats at constant pressure and constant volume of $c_p$, $c_v$.
+    \begin{description}
+        \item[Process 1:] The gas is compressed to half of its volume at constant pressure.
+        \item[Process 2:] The gas is expanded isothermally such that the gas does work on the environment equal to the amount of work done onto the gas by the environment during process 1.
+    \end{description}
+    What is the entropy change of the gas during Process 2?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{$nc_p \ln\left(\dfrac{1}{2}\right)$}
+        \wrongchoice{$nc_p \ln\left(2\right)$}
+      \correctchoice{$\dfrac{P_0 V_0}{T_0}$}
+        \wrongchoice{$0$}
+        \wrongchoice{none of the provided}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% PhysicsBowl 1998
+%%----------------------------------------
+\element{aapt}{ %% Bowl-C3
+\begin{question}{bowl-1998-q07}
+    A heat engine takes in \SI{200}{\joule} of thermal energy and performs \SI{50}{\joule} of work in each cycle.
+    What is its efficiency?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{500}{\percent}}
+        \wrongchoice{\SI{400}{\percent}}
+      \correctchoice{\SI{25}{\percent}}
+        \wrongchoice{\SI{20}{\percent}}
+        \wrongchoice{\SI{12}{\percent}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% PhysicsBowl 1997
+%%----------------------------------------
+\element{aapt}{ %% Bowl-C3
+\begin{question}{bowl-1997-q15}
+    Which of the following is always true for an isothermal process of an ideal gas?
+    \begin{choices}
+      \correctchoice{The internal energy does not change.}
+        \wrongchoice{No heat flows into or out of the system.}
+        \wrongchoice{The pressure does not change.}
+        \wrongchoice{The volume does not change.}
+        \wrongchoice{No work is done by or on the system.}
+    \end{choices}
+\end{question}
+}
+
+
+%% PhysicsBowl 1996
+%%----------------------------------------
+\element{aapt}{ %% Bowl-C3
+\begin{question}{bowl-1996-q22}
+    When an ideal gas is isothermally compressed:
+    \begin{choices}
+      \correctchoice{thermal energy flows from the gas to the surroundings.}
+        \wrongchoice{the temperature of the gas decreases.}
+        \wrongchoice{no thermal energy enters or leaves the gas.}
+        \wrongchoice{the temperature of the gas increases.}
+        \wrongchoice{thermal energy flows from the surroundings to the gas.}
+    \end{choices}
+\end{question}
+}
+
+\element{aapt}{ %% Bowl-C3
+\begin{question}{bowl-1995-q24}
+    The theoretical (Carnot) efficiency of a heat engine operating between \SI{600}{\degreeCelsius} and \SI{100}{\degreeCelsius} is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{16.7}{\percent}}
+        \wrongchoice{\SI{20.0}{\percent}}
+        \wrongchoice{\SI{42.0}{\percent}}
+      \correctchoice{\SI{57.3}{\percent}}
+        \wrongchoice{\SI{83.3}{\percent}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+\endinput
+
+

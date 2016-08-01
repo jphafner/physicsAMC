@@ -1,0 +1,667 @@
+
+%%--------------------------------------------------
+%% CPO: Multiple Choice Questions
+%%--------------------------------------------------
+
+
+%% Chapter 14: Electrical Systems
+%%--------------------------------------------------
+
+
+%% Learning Objectives
+%%--------------------------------------------------
+
+%% Describe a series circuit. 
+%% Calculate the resistance and current in a series circuit. 
+%% Explain how the voltage changes across each resistor in a series circuit. 
+%% Describe how current divides in a parallel circuit.
+%% Determine the voltage across and current through each branch of a parallel circuit. 
+%% Explain why circuit breakers and fuses are used in homes. 
+%% Calculate power in a circuit. 
+%% Calculate the cost of running an appliance. 
+%% Distinguish between alternating and direct current.
+
+
+%% CPO Multiple Choice Questions
+%%--------------------------------------------------
+\element{cpo-mc}{
+\begin{question}{cpo-ch14-q01}
+    If there is a break at any point in a series circuit, the current will:
+    \begin{choices}
+      \correctchoice{stop everywhere in the circuit.}
+        \wrongchoice{leak out of the break point.}
+        \wrongchoice{be decreased by one-half.}
+        \wrongchoice{continue through remaining unbroken circuit branches.}
+    \end{choices}
+\end{question}
+}
+
+\element{cpo-mc}{
+\begin{question}{cpo-ch14-q02}
+    When more devices are added to a series circuit,
+        the total circuit resistance:
+    \begin{choices}
+        \wrongchoice{decreases.}
+      \correctchoice{increases.}
+        \wrongchoice{stays the same.}
+        \wrongchoice{may increase or decrease, depending on the device.}
+    \end{choices}
+\end{question}
+}
+
+\element{cpo-mc}{
+\begin{question}{cpo-ch14-q03}
+    Suppose you connect more and more light bulbs in series to a battery.
+    What happens to the brightness of each bulb as you add more bulbs?
+    \begin{choices}
+        \wrongchoice{The bulb grow brighter with each new bulb added.}
+      \correctchoice{The bulbs grow dimmer with each new bulb added.}
+        \wrongchoice{There is no change in brightness.}
+        \wrongchoice{The brightness may increase or decrease depending on the type of light bulb.}
+    \end{choices}
+\end{question}
+}
+
+%% NOTE: circuit diagram used for Q04 to Q07
+\newcommand{\circuitSeriesOne}{
+    \ctikzset{bipoles/length=0.75cm}
+    \begin{circuitikz}[scale=1.75]
+        \draw (0,0) to [battery,l=\SI{9.0}{\volt}] (0,1)
+                    to [R,l=\SI{1}{\ohm}] (1,1)
+                    to [R,l=\SI{1}{\ohm}] (1,0)
+                    to [R,l=\SI{1}{\ohm}] (0,0);
+    \end{circuitikz}
+}
+
+\element{cpo-mc}{
+\begin{question}{cpo-ch14-q04}
+    The diagram below pictures three identical light bulbs,
+        each with resistance of \SI{1}{\ohm},
+        which are connected by resistance-free wires.
+    A \SI{9}{\volt} battery supplies energy to the circuit.
+    \begin{center}
+        \circuitSeriesOne
+    \end{center}
+    What type of circuit is in the diagram?
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{Series}
+        \wrongchoice{Parallel}
+        \wrongchoice{Compound}
+        \wrongchoice{Current}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{cpo-mc}{
+\begin{question}{cpo-ch14-q05}
+    The diagram below pictures three identical light bulbs,
+        each with resistance of \SI{1}{\ohm},
+        which are connected by resistance-free wires.
+    A \SI{9}{\volt} battery supplies energy to the circuit.
+    \begin{center}
+        \circuitSeriesOne
+    \end{center}
+    The total resistance for the circuit shown is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{1}{\ohm}.}
+        \wrongchoice{\SI{1}{\volt}.}
+      \correctchoice{\SI{3}{\ohm}.}
+        \wrongchoice{\SI{3}{\volt}.}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{cpo-mc}{
+\begin{question}{cpo-ch14-q06}
+    The diagram below pictures three identical light bulbs,
+        each with resistance of \SI{1}{\ohm},
+        which are connected by resistance-free wires.
+    A \SI{9}{\volt} battery supplies energy to the circuit.
+    \begin{center}
+        \circuitSeriesOne
+    \end{center}
+    The total current for the circuit shown is:
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{\SI{3}{\ampere}.}
+        \wrongchoice{\SI{3}{\ohm}.}
+        \wrongchoice{\SI{0.33}{\ampere}.}
+        \wrongchoice{\SI{1}{\ohm}.}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{cpo-mc}{
+\begin{question}{cpo-ch14-q07}
+    The diagram below pictures three identical light bulbs,
+        each with resistance of \SI{1}{\ohm},
+        which are connected by resistance-free wires.
+    A \SI{9}{\volt} battery supplies energy to the circuit.
+    \begin{center}
+        \circuitSeriesOne
+    \end{center}
+    The voltage drop across each light bulb is:
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{\SI{3}{\volt}.}
+        \wrongchoice{\SI{1}{\volt}.}
+        \wrongchoice{\SI{0.33}{\volt}.}
+        \wrongchoice{\SI{0}{\volt}.}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{cpo-mc}{
+\begin{question}{cpo-ch14-q08}
+    The voltage drop across each resistor in the circuit below is:
+    \begin{center}
+    \ctikzset{bipoles/length=0.75cm}
+    \begin{circuitikz}[scale=1.60]
+        \draw (0,0) to [battery,l=\SI{9.0}{\volt}] (0,1) to [R,l=\SI{1.5}{\ohm}] (1,1) to [R,l=\SI{1.5}{\ohm}] (1,0) to [R,l=\SI{1.5}{\ohm}] (0,0);
+    \end{circuitikz}
+    \end{center}
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{1.5}{\volt}}
+      \correctchoice{\SI{3}{\volt}}
+        \wrongchoice{\SI{2}{\volt}}
+        \wrongchoice{\SI{9}{\volt}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{cpo-mc}{
+\begin{question}{cpo-ch14-q09}
+    The current in a series circuit:
+    \begin{choices}
+        \wrongchoice{decreases to zero as it travels through a circuit.}
+      \correctchoice{is the same at all points in a circuit.}
+        \wrongchoice{is greatest in the resistor with the highest resistance.}
+        \wrongchoice{is greatest in the resistor with the lowest resistance.}
+    \end{choices}
+\end{question}
+}
+
+\element{cpo-mc}{
+\begin{question}{cpo-ch14-q10}
+    The current in each resistor in the circuit below is:
+    \begin{center}
+    \ctikzset{bipoles/length=0.75cm}
+    \begin{circuitikz}[scale=1.60]
+        \draw (0,0) to [battery,l=\SI{9.0}{\volt}] (0,1) to [R,l=\SI{3.0}{\ohm}] (1,1) to [R,l=\SI{3.0}{\ohm}] (1,0) to [R,l=\SI{3.0}{\ohm}] (0,0);
+    \end{circuitikz}
+    \end{center}
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{0.33}{\ampere}}
+      \correctchoice{\SI{1}{\ampere}}
+        \wrongchoice{\SI{3}{\ampere}}
+        \wrongchoice{\SI{9}{\ampere}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{cpo-mc}{
+\begin{question}{cpo-ch14-q11}
+    Which of the following is \emph{true} about voltage in a series circuit?
+    The total of all voltage drops must:
+    \begin{choices}
+        \wrongchoice{equal to the total current.}
+        \wrongchoice{add up to zero.}
+      \correctchoice{add up to the total voltage supplied by the battery.}
+        \wrongchoice{never exceed the total circuit resistance.}
+    \end{choices}
+\end{question}
+}
+
+\element{cpo-mc}{
+\begin{question}{cpo-ch14-q12}
+    A student connects six \SI{3}{\ohm} light bulbs in series to a \SI{9}{\volt} battery.
+    The total circuit current is:
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{\SI{0.5}{\ampere}}
+        \wrongchoice{\SI{2}{\ampere}}
+        \wrongchoice{\SI{4.5}{\ampere}}
+        \wrongchoice{\SI{18}{\ampere}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+%% NOTE: circuit diagram used for Q13, Q14
+\newcommand{\circuitMultiOne}{
+    \ctikzset{bipoles/length=0.75cm}
+    \begin{circuitikz}[scale=1.00]
+        \draw (0,0) to [battery,l=\SI{3.0}{\volt}] (0,2)
+                    to (1,2)
+                    to [R] (1,1)
+                    to [R] (1,0)
+                    to (0,0);
+        \draw (1,2) to (2,2)
+                    to [R] (2,0)
+                    to (1,0);
+        \draw (2,2) to (3,2)
+                    to [R] (3,0)
+                    to (2,0);
+    \end{circuitikz}
+}
+
+\newcommand{\circuitMultiTwo}{
+    \ctikzset{bipoles/length=0.75cm}
+    \begin{circuitikz}[scale=1.00]
+        \draw (0,0) to [battery,l=\SI{1.5}{\volt}] (0,1)
+                    to (1,1)
+                    to [R] (1,0)
+                    to (0,0);
+        \draw (1,1) to (2,1)
+                    to [R] (2,0)
+                    to (1,0);
+        \draw (2,1) to (3,1)
+                    to [R] (3,0)
+                    to (2,0);
+        \draw (3,1) to (4,1)
+                    to [R] (4,0)
+                    to (3,0);
+        \draw (4,1) to (5,1)
+                    to [R] (5,0)
+                    to (4,0);
+    \end{circuitikz}
+}
+
+\newcommand{\circuitMultiThree}{
+    \ctikzset{bipoles/length=0.75cm}
+    \begin{circuitikz}[scale=1.00]
+        \draw (0,0) to [battery,l=\SI{9.0}{\volt}] (0,1)
+                    to [R] (1.5,1)
+                    to [R] (3,1)
+                    to [R] (3,0)
+                    to [R] (1.5,0)
+                    to [R] (0,0);
+    \end{circuitikz}
+}
+
+\element{cpo-mc}{
+\begin{questionmult}{ch14-Q13}
+    Which of the circuit diagrams shown is a series circuit?
+    \begin{choices}
+        \AMCboxDimensions{down=-1.0em}
+        \wrongchoice{\circuitMultiOne}
+        \wrongchoice{\circuitMultiTwo}
+      \correctchoice{\circuitMultiThree}
+    \end{choices}
+\end{questionmult}
+}
+
+\element{cpo-mc}{
+\begin{questionmult}{ch14-Q14}
+    Which of the circuit diagrams shown is a parallel circuit?
+    \begin{choices}
+        \AMCboxDimensions{down=-1.0em}
+      \correctchoice{\circuitMultiOne}
+      \correctchoice{\circuitMultiTwo}
+        \wrongchoice{\circuitMultiThree}
+    \end{choices}
+\end{questionmult}
+}
+
+\element{cpo-mc}{
+\begin{question}{cpo-ch14-q15}
+    When a new branch containing a resistor is added to a parallel circuit,
+        the total circuit resistance:
+    \begin{choices}
+      \correctchoice{decreases.}
+        \wrongchoice{increases.}
+        \wrongchoice{stays the same.}
+        \wrongchoice{may increase or decrease, depending on the device.}
+    \end{choices}
+\end{question}
+}
+
+\element{cpo-mc}{
+\begin{question}{cpo-ch14-q16}
+    What is the basic difference between series and parallel circuits?
+    \begin{choices}
+        \wrongchoice{Simple series circuits are not used in electrical devices; parallel circuits are used in all electrical devices.}
+        \wrongchoice{In a series circuit, there are multiple paths for the flow of charge; in a parallel circuit, there are only one paths.}
+      \correctchoice{A series circuit contains one path for the flow of charge; a parallel circuit contains more than one path.}
+        \wrongchoice{A series circuit obeys Ohm's law; a parallel circuit does not obey Ohm's law.}
+    \end{choices}
+\end{question}
+}
+
+\element{cpo-mc}{
+\begin{question}{cpo-ch14-q17}
+    The wiring in your home uses:
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{parallel circuits}
+        \wrongchoice{series circuits}
+        \wrongchoice{two-way circuits}
+        \wrongchoice{three-way circuits}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{cpo-mc}{
+\begin{question}{cpo-ch14-q18}
+    Which of the following statements best describes the difference between series and parallel circuits?
+    \begin{choices}
+        \wrongchoice{Series circuits are battery circuits, and parallel circuits are generator circuits.}
+      \correctchoice{Series circuits have a single path, and parallel circuits have two or more paths.}
+        \wrongchoice{Series circuits are used in computers, and parallel circuits are used in homes.}
+        \wrongchoice{Series circuits have one switch in them, and parallel circuits have two switches in them.}
+    \end{choices}
+\end{question}
+}
+
+\element{cpo-mc}{
+\begin{question}{cpo-ch14-q19}
+    The voltage drop across each resistor in the circuit below is:
+    \begin{center}
+    \ctikzset{bipoles/length=0.75cm}
+    \begin{circuitikz}[scale=1.33]
+        \draw (0,0) to [battery,l=$\SI{6.0}{\volt}$] (0,1) to (1,1) to [R,l=$\SI{10}{\ohm}$] (1,0) to (0,0);
+        \draw (1,1) to (2,1) to [R,l=$\SI{10}{\ohm}$] (2,0) to (1,0);
+        \draw (2,1) to (3,1) to [R,l=$\SI{10}{\ohm}$] (3,0) to (2,0);
+    \end{circuitikz}
+    \end{center}
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{0.2}{\volt}}
+        \wrongchoice{\SI{5}{\volt}}
+      \correctchoice{\SI{6}{\volt}}
+        \wrongchoice{\SI{12}{\volt}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{cpo-mc}{
+\begin{question}{cpo-ch14-q20}
+    The current in each resistor in the circuit is:
+    \begin{center}
+    \ctikzset{bipoles/length=0.75cm}
+    \begin{circuitikz}[scale=1.33]
+        \draw (0,0) to [battery,l=$\SI{9.0}{\volt}$] (0,1) to (1,1) to [R,l=$\SI{3}{\ohm}$] (1,0) to (0,0);
+        \draw (1,1) to (2,1) to [R,l=$\SI{3}{\ohm}$] (2,0) to (1,0);
+        \draw (2,1) to (3,1) to [R,l=$\SI{3}{\ohm}$] (3,0) to (2,0);
+    \end{circuitikz}
+    \end{center}
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{1/3}{\ampere}}
+        \wrongchoice{\SI{1}{\ampere}}
+      \correctchoice{\SI{3}{\ampere}}
+        \wrongchoice{\SI{9}{\ampere}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{cpo-mc}{
+\begin{questionmult}{ch14-Q21}
+    A lamp has a \emph{short circuit}.
+    %%Which of the following statements best describes the lamp's circuit?
+    Which of the following statements correctly describes the lamp's circuit?
+    \begin{choices}
+      \correctchoice{The circuit is drawing a large amount of current.}
+      \correctchoice{The circuit has a path of very low resistance.}
+      \correctchoice{The lamp will not turn on.}
+      %\correctchoice{All of the above.}
+    \end{choices}
+\end{questionmult}
+}
+
+\element{cpo-mc}{
+\begin{question}{cpo-ch14-q22}
+    The voltage across the \SI{1}{\ohm} resistor pictured below is:
+    \begin{center}
+    \ctikzset{bipoles/length=0.75cm}
+    \begin{circuitikz}[scale=1.33]
+        \draw (0,0) to [battery,l=\SI{3}{\volt}] (0,1) to (1,1) to [R,l=\SI{1}{\ohm}] (1,0) to (0,0);
+        \draw (1,1) to (2,1) to [R,l=\SI{2}{\ohm}] (2,0) to (1,0);
+    \end{circuitikz}
+    \end{center}
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{1/3}{\volt}}
+        \wrongchoice{\SI{2/3}{\volt}}
+        \wrongchoice{\SI{1}{\volt}}
+      \correctchoice{\SI{3}{\volt}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{cpo-mc}{
+\begin{question}{cpo-ch14-q23}
+    Kirchoff's current law applies to a parallel circuit because it states that:
+    \begin{choices}
+        \wrongchoice{current is the same everywhere throughout one entire circuit.}
+        \wrongchoice{current is the same everywhere throughout branching circuit paths.}
+        \wrongchoice{current stays the same as more branches are added to a parallel circuit.}
+      \correctchoice{All the current flowing into a branch point must flow out again.}
+    \end{choices}
+\end{question}
+}
+
+\element{cpo-mc}{
+\begin{question}{cpo-ch14-q24}
+    A student connects three \SI{1}{\ohm} light bulbs to a \SI{9}{\volt} battery in parallel.
+    The total circuit current is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{1}{\ampere}}
+        \wrongchoice{\SI{3}{\ampere}}
+        \wrongchoice{\SI{9}{\ampere}}
+      \correctchoice{\SI{27}{\ampere}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{cpo-mc}{
+\begin{question}{cpo-ch14-q25}
+    Which of the following would create a total resistance of \SI{0.5}{\ohm}?
+    \begin{choices}
+      \correctchoice{Four \SI{2}{\ohm} resistors connected in parallel.}
+        \wrongchoice{Four \SI{2}{\ohm} resistors connected in series.}
+        \wrongchoice{Eight \SI{2}{\ohm} resistors connected in parallel.}
+        \wrongchoice{Two \SI{2}{\ohm} resistors connected in series.}
+    \end{choices}
+\end{question}
+}
+
+\element{cpo-mc}{
+\begin{question}{cpo-ch14-q26}
+    A circuit containing two identical branches has:
+    \begin{choices}
+      \correctchoice{one-half the resistance it would have if it only contained one of the branches.}
+        \wrongchoice{twice the resistance it would have if it only contained one of the branches.}
+        \wrongchoice{the same resistance it would have if it only contained one of the branches.}
+        \wrongchoice{no resistance at all.}
+    \end{choices}
+\end{question}
+}
+
+%% NOTE: circuit diagram used for Q27, Q28
+\newcommand{\circuitParallelTwo}{
+    \ctikzset{bipoles/length=0.75cm}
+    \begin{circuitikz}[scale=1.25]
+        \draw (0,0) to [battery,v] (0,2)
+                    to (1,2)
+                    to [R,l=$A$] (1,0)
+                    to (0,0);
+        \draw (1,2) to (2,2)
+                    to [R,l=$B$] (2,1)
+                    to [R,l=$C$] (2,0)
+                    to (1,0);
+    \end{circuitikz}
+}
+
+\element{cpo-mc}{
+\begin{question}{cpo-ch14-q27}
+    In the circuit shown below, three identical flashlight bulbs are screwed
+        into sockets and are lighted when the circuit is closed:
+    \begin{center}
+        \circuitParallelTwo
+    \end{center}
+    Which bulb draws the least amount of current?
+    \begin{choices}
+        \wrongchoice{Bulb $A$}
+        \wrongchoice{Bulb $B$}
+        \wrongchoice{Bulb $C$}
+      \correctchoice{Both $B$ and $C$ draw an equal amount of current but draw less than bulb $A$.}
+    \end{choices}
+\end{question}
+}
+
+\element{cpo-mc}{
+\begin{question}{cpo-ch14-q28}
+    In the circuit shown below, three identical flashlight bulbs are screwed
+        into sockets and are lighted when the circuit is closed:
+    \begin{center}
+        \circuitParallelTwo
+    \end{center}
+    If you unscrewed bulb $A$:
+    \begin{choices}
+        \wrongchoice{only bulb $B$ would go out.}
+        \wrongchoice{only bulb $C$ would go out.}
+        \wrongchoice{bulbs $B$ and $C$ would go out.}
+      \correctchoice{bulbs $B$ and $C$ would remain lit.}
+    \end{choices}
+\end{question}
+}
+
+\element{cpo-mc}{
+\begin{question}{cpo-ch14-q29}
+    In the circuit shown below, three identical flashlight bulbs are screwed
+        into sockets and are lighted when the circuit is closed:
+    \begin{center}
+        \circuitParallelTwo
+    \end{center}
+    If you unscrewed bulb $C$:
+    \begin{choices}
+        \wrongchoice{only bulb $A$ would go out.}
+        \wrongchoice{only bulb $B$ would go out.}
+      \correctchoice{bulb $B$ and $C$ would go out.}
+        \wrongchoice{bulb $B$ and $A$ would remain lit.}
+    \end{choices}
+\end{question}
+}
+
+\element{cpo-mc}{
+\begin{question}{cpo-ch14-q30}
+    A \SI{75}{\watt} bulb uses:
+    \begin{choices}
+        \wrongchoice{\SI{75}{\joule} of energy until it burns out.}
+      \correctchoice{\SI{75}{\joule} of energy every second.}
+        \wrongchoice{\SI{75}{\joule} of energy every hour.}
+        \wrongchoice{\SI{75}{\watt} of power every hour.}
+    \end{choices}
+\end{question}
+}
+
+\element{cpo-mc}{
+\begin{question}{cpo-ch14-q31}
+    The power used by a circuit can be found by:
+    \begin{choices}
+        \wrongchoice{using Ohm's law.}
+        \wrongchoice{dividing voltage by current.}
+        \wrongchoice{adding all resistance.}
+      \correctchoice{multiplying voltage and current.}
+    \end{choices}
+\end{question}
+}
+
+\element{cpo-mc}{
+\begin{question}{cpo-ch14-q32}
+    What do we buy from electric utility company?
+    \begin{choices}
+        \wrongchoice{Power, in watts (\si{\watt})}
+      \correctchoice{Energy, in kilowatt-hours (\si{\kilo\watt\hour})}
+        \wrongchoice{Current, in amperes (\si{\ampere})}
+        \wrongchoice{Voltage, in volts (\si{\volt})}
+    \end{choices}
+\end{question}
+}
+
+\element{cpo-mc}{
+\begin{question}{cpo-ch14-q33}
+    Which of the following is \emph{true} about alternating current?
+    \begin{choices}
+        \wrongchoice{Alternating current flows in one direction only.}
+        \wrongchoice{Batteries run on alternating current.}
+      \correctchoice{The electricity in your house uses alternating current.}
+        \wrongchoice{Alternating current is easy to recharge.}
+    \end{choices}
+\end{question}
+}
+
+\element{cpo-mc}{
+\begin{question}{cpo-ch14-q34}
+    The watt is a unit that represents the:
+    \begin{choices}
+        \wrongchoice{amount of energy consumed by electrical appliances.}
+        \wrongchoice{flow of charge in a circuit.}
+      \correctchoice{rate at which energy is changed from one form to another.}
+        \wrongchoice{potential energy difference between two places in a circuit.}
+    \end{choices}
+\end{question}
+}
+
+\element{cpo-mc}{
+\begin{question}{cpo-ch14-q35}
+    How much would it cost to operate a \SI{100}{\watt} light bulb for \SI{10}{\hour} if the cost of electric energy is \num{10} cents per kilowatt-hour?
+    %\SI{0.10}{USD\per\kilo\watt\per\hour}
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{1 dollar}
+        \wrongchoice{10 dollar}
+        \wrongchoice{10 cents}
+      \correctchoice{1 cent}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{cpo-mc}{
+\begin{question}{cpo-ch14-q36}
+    How much does it cost to operate a \SI{1 500}{\watt} space heater for \SI{8}{\hour} if the cost of electric energy is \num{12} cents per kilowatt-hour?
+    %\SI{0.12}{USD\per\kilo\watt\per\hour}
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{\$1.44}
+        \wrongchoice{\$9.60}
+        \wrongchoice{\$1.50}
+        \wrongchoice{\$0.18}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{cpo-mc}{
+\begin{question}{cpo-ch14-q37}
+    Which of the following devices draws the most current when operating on a \SI{120}{\volt} circuit?
+    \begin{choices}
+        \wrongchoice{\SI{10}{\watt} clock radio}
+        \wrongchoice{\SI{40}{\watt} light bulb}
+      \correctchoice{\SI{50}{\watt} fan}
+        \wrongchoice{All devices would draw the same current.}
+    \end{choices}
+\end{question}
+}
+
+\endinput
+
+

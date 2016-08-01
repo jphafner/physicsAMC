@@ -1,0 +1,186 @@
+%%
+%% Copyright (C) 2014 Jeffrey P. Hafner <jphafner@buffalo.edu>
+%%
+%%  This program is free software: you can redistribute it and/or modify
+%%  it under the terms of the GNU General Public License as published by
+%%  the Free Software Foundation, either version 3 of the License, or
+%%  (at your option) any later version.
+%%
+%%  This program is distributed in the hope that it will be useful,
+%%  but WITHOUT ANY WARRANTY; without even the implied warranty of
+%%  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+%%  GNU General Public License for more details.
+%%
+%%  You should have received a copy of the GNU General Public License
+%%  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+%%
+
+\documentclass[
+    11pt,
+    titlepage,
+]{scrartcl}
+
+\usepackage{AMCexam}
+
+%% Begin Definitions
+%%------------------------------------------------
+\newlength{\mylen}
+\setlength{\parskip}{0pt} % 1ex plus 0.5ex minus 0.2ex}
+\setlength{\parindent}{0pt}
+
+\titlehead{Title Head}
+\subject{Subject or Class Name}
+\title{Examination Title}
+\subtitle{Examination Subtitle \textnumero{}\serialnum}
+\author{Dr. Jeffrey Hafner}
+\date{\today}
+%\thanks{}
+\publishers{
+    The possession or use of \emph{any} communications device is strictly
+        prohibited when taking this examination.
+    If you use any communications device, no matter how briefly,
+        your examination will be invalidated and no score will be given.
+
+    Use of a non-QWERTY calculator, a ruler of any scale,
+        any writing utensil,
+        and a protractor are permitted.
+    The use of any external reference material is strictly prohibited.
+    You will be provided with scrap paper by the proctor,
+        you may request more at any time.
+
+    For each statement or question, choose the word or expression that,
+        of those given, best completes the statement or answers the question.
+    Some questions may require the use of the provided reference tables.
+    Record your answers on the provided response sheet
+        located on the last page of this booklet.
+
+    Questions using the sign \multiSymbole{} may have zero,
+        one or several correct answers.
+    All other questions have one correct answer.
+
+    You may write in this booklet as only your response
+        sheet will be collected.
+    You may \emph{only} use either an HB or \textnumero{}2 graphite pencil,
+        or a black ink pen on the response sheet.
+    Make no stray marks on the response sheet!
+
+    All questions are weighted evenly for grading purposes.
+    Each correct response is worth $+4$ points,
+        and each incorrect response is worth $-1$ point.
+    Questions using the sign \multiSymbole{} are worth $+4$ or $0$,
+        and nothing in-between.
+    Points awarded will be the geometric mean of the
+        points earned and points available.
+    
+    This booklet has printed material on the
+        recto and verso side of each page.
+    \emph{Good Luck!}
+}
+
+\graphicspath{{./qbank/halliday/gfx/}{./qbank/serway/gfx/}{./qbank/aapt/gfx/}}
+
+%% Begin Document
+%%------------------------------------------------
+\begin{document}
+
+%% 319 Questions
+
+%% Serway
+\input{./qbank/serway/ch05-mc.tex}
+\input{./qbank/serway/ch06-mc.tex}
+
+%% Halliday
+\input{./qbank/halliday/ch05-mc.tex}
+\input{./qbank/halliday/ch06-mc.tex}
+
+%% AAPT 52Q
+\input{./qbank/aapt/Bowl-A3.tex}
+\input{./qbank/aapt/Olympiad-A3.tex}
+
+%% Lua
+%\directlua{dofile("./qbank/lua/common.lua")}
+%\input{./qbank/lua/wrong.tex}
+%\input{./qbank/lua/units.tex}
+
+
+%% Begin Question Sheet
+%%------------------------------------------------
+\begin{examcopy}[2]
+    \begin{titlepage}
+        \titleAMC
+        \newpage
+    \end{titlepage}
+
+    %% Section: question or questionmult
+    %\section{Multiple Choice Questions}
+    \begin{multicols}{2}
+        \cleargroup{all}
+
+        \shufflegroup{serway-mc}
+        \shufflegroup{halliday-mc}
+        \shufflegroup{aapt}
+
+        \copygroup[14]{serway-mc}{all}
+        \copygroup[13]{halliday-mc}{all}
+        \copygroup[6]{aapt}{all}
+
+        \shufflegroup{all}
+        \insertgroup{all}
+    \end{multicols}
+    
+    \AMCcleardoublepage
+
+    %% Begin Answer Sheet
+    %%------------------------------------------------
+
+    %% Must use to begin answer sheet
+    \AMCformBegin
+
+    \setlength{\mylen}{\linewidth}
+    \addtolength{\mylen}{-17em}
+    \begin{minipage}{\linewidth}
+        \centering
+        \begin{minipage}{15.5em}
+            \centering
+            Student Number \\
+            \AMCcodeH{StudentNum}{3}
+        \end{minipage}
+        \begin{minipage}{\mylen}
+            \centering
+            \titleHeader \\
+            \namefield{\fbox{
+                \begin{minipage}{\linewidth}
+                    Last and First Name: \hfill Today's Date:
+                    \vspace*{3em}
+                \end{minipage}
+            }}
+        \end{minipage}
+    \end{minipage}
+
+    \null\hfill\parbox[c]{0.9\linewidth}{
+        Print your last and first name in the box provided above.
+        Enter your course student ID number by filling in
+            the appropriate boxes to the left.
+        Enter your chosen selection for each question on this
+            form by filling in completely your selected oval(s) for each question.
+        \emph{Good Luck!!}
+    }\hfill\null
+
+    \rule[0pt]{\linewidth}{0.5pt}
+
+    %%% end of the answer sheet header
+    \begin{multicols}{3}
+        \columnseprule=.4pt
+        %% prevent broken paragraphs
+        \widowpenalties 1 10000
+        \AMCform
+        %\AMCformS
+    \end{multicols}
+    %% NOTE: Place Reference sheet here
+    \clearpage
+    \input{./REF.tex}
+    %% NOTE: This is needed for mass printing
+    \AMCcleardoublepage
+\end{examcopy}
+\end{document}
+

@@ -1,0 +1,1215 @@
+
+%%--------------------------------------------------
+%% Halliday: Fundamentals of Physics
+%%--------------------------------------------------
+
+
+%% Chapter 27: Circuits
+%%--------------------------------------------------
+
+
+%% Learning Objectives
+%%--------------------------------------------------
+
+%% 27.01: Identify the action of an emf source in terms of the work it does.
+%% 27.02: For an ideal battery, apply the relationship between the emf, the current, and the power (rate of energy transfer).
+%% 27.03: Draw a schematic diagram for a single-loop circuit containing a battery and three resistors.
+%% 27.04: Apply the loop rule to write a loop equation that relates the potential differences of the circuit elements around a (complete) loop.
+%% 27.05: Apply the resistance rule in crossing through a resistor.
+%% 27.06: Apply the emf rule in crossing through an emf.
+%% 27.07: Identify that resistors in series have the same current, which is the same value that their equivalent resistor has.
+%% 27.08: Calculate the equivalent of series resistors.
+%% 27.09: Identify that a potential applied to resistors wired in series is equal to the sum of the potentials across the individual resistors.
+%% 27.10: Calculate the potential difference between any two points in a circuit.
+%% 27.11: Distinguish a real battery from an ideal battery and, in a circuit diagram, replace a real battery with an ideal battery and an explicitly shown resistance.
+%% 27.12: With a real battery in a circuit, calculate the potential difference between its terminals for current in the direction of the emf and in the opposite direction.
+%% 27.13: Identify what is meant by grounding a circuit, and draw a schematic diagram for such a connection.
+%% 27.14: Identify that grounding a circuit does not affect the current in a circuit.
+%% 27.15: Calculate the dissipation rate of energy in a real battery.
+%% 27.16: Calculate the net rate of energy transfer in a real battery for current in the direction of the emf and in the opposite direction.
+
+
+%% Halliday Multiple Choice Questions
+%%--------------------------------------------------
+\element{halliday-mc}{
+\begin{question}{halliday-ch27-q01}
+    ``The sum of the currents into a junction equals the sum of the currents out of the junction'' is a consequence of:
+    \begin{choices}
+        \wrongchoice{Newton's third law}
+        \wrongchoice{Ohm's law}
+        \wrongchoice{Newton’s second law}
+        \wrongchoice{conservation of energy}
+      \correctchoice{conservation of charge}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch27-q02}
+    ``The sum of the emf's and potential differences around a closed loop equals zero'' is a consequence of:
+    \begin{choices}
+        \wrongchoice{Newton's third law}
+        \wrongchoice{Ohm's law}
+        \wrongchoice{Newton’s second law}
+      \correctchoice{conservation of energy}
+        \wrongchoice{conservation of charge}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch27-q03}
+    A portion of a circuit is shown, with the values of the currents given for some branches. 
+    What is the direction and value of the current $i$?
+    %% NOTE: tikzpicture
+    \begin{multicols}{2}
+    \begin{choices}
+        %% NOTE: options tikz vector??
+        %% Define command, then reuse??
+      \correctchoice{↓, \SI{6}{\ampere}}
+        \wrongchoice{↑, \SI{6}{\ampere}}
+        \wrongchoice{↓, \SI{4}{\ampere}}
+        \wrongchoice{↑, \SI{4}{\ampere}}
+        \wrongchoice{↓, \SI{2}{\ampere}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch27-q04}
+    Four wires meet at a junction. The first carries \SI{4}{\ampere} into the junction,
+        the second carries \SI{5}{\ampere} out of the junction,
+        and the third carries \SI{2}{\ampere} out of the junction. 
+    The fourth carries:
+    \begin{choices}
+        \wrongchoice{\SI{7}{\ampere} out of the junction}
+        \wrongchoice{\SI{7}{\ampere} into the junction}
+        \wrongchoice{\SI{3}{\ampere} out of the junction}
+      \correctchoice{\SI{3}{\ampere} into the junction}
+        \wrongchoice{\SI{1}{\ampere} into the junction}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch27-q05}
+    In the context of the loop and junctions rules for electrical circuits a junction is:
+    \begin{choices}
+        \wrongchoice{where a wire is connected to a resistor}
+        \wrongchoice{where a wire is connected to a battery}
+        \wrongchoice{where only two wires are joined}
+      \correctchoice{where three or more wires are joined}
+        \wrongchoice{where a wire is bent}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch27-q06}
+    For any circuit the number of independent equations containing emf's,
+        resistances, and currents equals:
+    \begin{choices}
+        \wrongchoice{the number of junctions}
+        \wrongchoice{the number of junctions minus 1}
+      \correctchoice{the number of branches}
+        \wrongchoice{the number of branches minus 1}
+        \wrongchoice{the number of closed loops}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch27-q07}
+    If a circuit has $L$ closed loops, $B$ branches,
+        and $J$ junctions the number of independent loop equations is:
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{$B-J+1$}
+        \wrongchoice{$B-J$}
+        \wrongchoice{$B$}
+        \wrongchoice{$L$}
+        \wrongchoice{$L-J$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch27-q08}
+    A battery is connected across a series combination of two identical resistors. 
+    If the potential difference across the terminals is $V$ and the current in the battery is $i$, then:
+    \begin{choices}
+        \wrongchoice{the potential difference across each resistor is $V$ and the current in each resistor is $i$}
+        \wrongchoice{the potential difference across each resistor is $V/2$ and the current in each resistor is $i/2$}
+        \wrongchoice{the potential difference across each resistor is $V$ and the current in each resistor is $i/2$}
+      \correctchoice{the potential difference across each resistor is $V/2$ and the current in each resistor is $i$}
+        \wrongchoice{none of the provided are true}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch27-q09}
+    A battery is connected across a parallel combination of two identical resistors. 
+    If the potential difference across the terminals is $V$ and the current in the battery is $i$,
+        then:
+    \begin{choices}
+        \wrongchoice{the potential difference across each resistor is $V$ and the current in each resistor is $i$}
+        \wrongchoice{the potential difference across each resistor is $V/2$ and the current in each resistor is $i/2$}
+      \correctchoice{the potential difference across each resistor is $V$ and the current in each resistor is $i/2$}
+        \wrongchoice{the potential difference across each resistor is $V/2$ and the current in each resistor is $i$}
+        \wrongchoice{none of the provided are true}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch27-q10}
+    A total resistance of \SI{3.0}{\ohm} is to be produced by combining an unknown resistor $R$ with a \SI{12}{\ohm} resistor.
+    What is the value of $R$ and how is it to be connected to the \SI{12}{\ohm} resistor?
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{\SI{4.0}{\ohm}, parallel}
+        \wrongchoice{\SI{4.0}{\ohm}, series}
+        \wrongchoice{\SI{2.4}{\ohm}, parallel}
+        \wrongchoice{\SI{2.4}{\ohm}, series}
+        \wrongchoice{\SI{9.0}{\ohm}, series}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch27-q11}
+    By using only two resistors, $R_1$ and $R_2$,   
+        a student is able to obtain resistances of \SI{3}{\ohm},
+        \SI{4}{\ohm}, \SI{12}{\ohm}, and \SI{16}{\ohm}.
+    The values of $R_1$ and $R_2$ are:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{3}{\ohm}, \SI{4}{\ohm}}
+        \wrongchoice{\SI{2}{\ohm}, \SI{12}{\ohm}}
+        \wrongchoice{\SI{3}{\ohm}, \SI{16}{\ohm}}
+      \correctchoice{\SI{4}{\ohm}, \SI{12}{\ohm}}
+        \wrongchoice{\SI{4}{\ohm}, \SI{16}{\ohm}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch27-q12}
+    Four \SI{20}{\ohm} resistors are connected in parallel and the combination is connected to a \SI{20}{\volt} emf device. 
+    The current in the device is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{0.25}{\ampere}}
+        \wrongchoice{\SI{1.0}{\ampere}}
+      \correctchoice{\SI{4.0}{\ampere}}
+        \wrongchoice{\SI{5.0}{\ampere}}
+        \wrongchoice{\SI{100}{\ampere}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch27-q13}
+    Four \SI{20}{\ohm} resistors are connected in parallel and the combination is connected to a \SI{20}{\volt} emf device. 
+    The current in any one of the resistors is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{0.25}{\ampere}}
+      \correctchoice{\SI{1.0}{\ampere}}
+        \wrongchoice{\SI{4.0}{\ampere}}
+        \wrongchoice{\SI{5.0}{\ampere}}
+        \wrongchoice{\SI{100}{\ampere}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch27-q14}
+    Four \SI{20}{\ohm} resistors are connected in series and the combination is connected to a \SI{20}{\volt} emf device. 
+    The current in any one of the resistors is:
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{\SI{0.25}{\ampere}}
+        \wrongchoice{\SI{1.0}{\ampere}}
+        \wrongchoice{\SI{4.0}{\ampere}}
+        \wrongchoice{\SI{5.0}{\ampere}}
+        \wrongchoice{\SI{100}{\ampere}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch27-q15}
+    Four \SI{20}{\ohm} resistors are connected in series and the combination is connected to a \SI{20}{\volt} emf device. 
+    The potential difference across any one of the resistors is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{1}{\volt}}
+        \wrongchoice{\SI{4}{\volt}}
+      \correctchoice{\SI{5}{\volt}}
+        \wrongchoice{\SI{20}{\volt}}
+        \wrongchoice{\SI{80}{\volt}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch27-q16}
+    Nine identical wires, each of diameter $d$ and length $L$, are connected in parallel. 
+    The combination has the same resistance as a single similar wire of length $L$ but whose diameter is:
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{$3d$}
+        \wrongchoice{$9d$}
+        \wrongchoice{$\dfrac{d}{3}$}
+        \wrongchoice{$\dfrac{d}{9}$}
+        \wrongchoice{$\dfrac{d}{81}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch27-q17}
+    Nine identical wires, each of diameter $d$ and length $L$, are connected in series. 
+    The combination has the same resistance as a single similar wire of length $L$ but whose diameter is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$3d$}
+        \wrongchoice{$9d$}
+      \correctchoice{$\dfrac{d}{3}$}
+        \wrongchoice{$\dfrac{d}{9}$}
+        \wrongchoice{$\dfrac{d}{81}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch27-q18}
+    Two wires made of the same material have the same lengths but different diameters. 
+    They are connected in parallel to a battery. 
+    The quantity that is \emph{not} the same for the wires is:
+    \begin{choices}
+        \wrongchoice{the end-to-end potential difference}
+      \correctchoice{the current}
+        \wrongchoice{the current density}
+        \wrongchoice{the electric field}
+        \wrongchoice{the electron drift velocity}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch27-q19}
+    Two wires made of the same material have the same lengths but different diameters. 
+    They are connected in series to a battery. 
+    The quantity that is the same for the wires is:
+    \begin{choices}
+        \wrongchoice{the end-to-end potential difference}
+      \correctchoice{the current}
+        \wrongchoice{the current density}
+        \wrongchoice{the electric field}
+        \wrongchoice{the electron drift velocity}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch27-q20}
+    The equivalent resistance between points 1 and 2 of the circuit shown is:
+    \begin{center}
+    \begin{circuitikz}
+        %% NOTE:
+    \end{circuitikz}
+    \end{center}
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{3}{\ohm}}
+        \wrongchoice{\SI{4}{\ohm}}
+      \correctchoice{\SI{5}{\ohm}}
+        \wrongchoice{\SI{6}{\ohm}}
+        \wrongchoice{\SI{7}{\ohm}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch27-q21}
+    Each of the resistors in the diagram has a resistance of \SI{12}{\ohm}. 
+    \begin{center}
+    \begin{circuitikz}
+        %% NOTE:
+    \end{circuitikz}
+    \end{center}
+    The resistance of the entire circuit is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{5.76}{\ohm}}
+      \correctchoice{\SI{25}{\ohm}}
+        \wrongchoice{\SI{48}{\ohm}}
+        \wrongchoice{\SI{120}{\ohm}}
+        \wrongchoice{none of the provied}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch27-q22}
+    The resistance of resistor 1 is twice the resistance of resistor 2. 
+    The two are connected in parallel and a potential difference is maintained across the combination. 
+    Then:
+    \begin{choices}
+        \wrongchoice{the current in 1 is twice that in 2}
+      \correctchoice{the current in 1 is half that in 2}
+        \wrongchoice{the potential difference across 1 is twice that across 2}
+        \wrongchoice{the potential difference across 1 is half that across 2}
+        \wrongchoice{none of the provided are true}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch27-q23}
+    The resistance of resistor 1 is twice the resistance of resistor 2. 
+    The two are connected in series and a potential difference is maintained across the combination. 
+    Then:
+    \begin{choices}
+        \wrongchoice{the current in 1 is twice that in 2}
+        \wrongchoice{the current in 1 is half that in 2}
+      \correctchoice{the potential difference across 1 is twice that across 2}
+        \wrongchoice{the potential difference across 1 is half that across 2}
+        \wrongchoice{none of the provided are true}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch27-q24}
+    Resistor 1 has twice the resistance of resistor 2. 
+    The two are connected in series and a potential difference is maintained across the combination. 
+    The rate of thermal energy generation in 1 is:
+    \begin{choices}
+        \wrongchoice{the same as that in 2}
+      \correctchoice{twice that in 2}
+        \wrongchoice{half that in 2}
+        \wrongchoice{four times that in 2}
+        \wrongchoice{one-fourth that in 2}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch27-q25}
+    Resistor 1 has twice the resistance of resistor 2. 
+    The two are connected in parallel and a potential difference is maintained across the combination. 
+    The rate of thermal energy generation in 1 is:
+    \begin{choices}
+        \wrongchoice{the same as that in 2}
+        \wrongchoice{twice that in 2}
+      \correctchoice{half that in 2}
+        \wrongchoice{four times that in 2}
+        \wrongchoice{one-fourth that in 2}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch27-q26}
+    The emf of a battery is equal to its terminal potential difference:
+    \begin{choices}
+        \wrongchoice{under all conditions}
+        \wrongchoice{only when the battery is being charged}
+        \wrongchoice{only when a large current is in the battery}
+      \correctchoice{only when there is no current in the battery}
+        \wrongchoice{under no conditions}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch27-q27}
+    The terminal potential difference of a battery is less than its emf:
+    \begin{choices}
+        \wrongchoice{under all conditions}
+        \wrongchoice{only when the battery is being charged}
+      \correctchoice{only when the battery is being discharged}
+        \wrongchoice{only when there is no current in the battery}
+        \wrongchoice{under no conditions}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch27-q28}
+    A battery has an emf of \SI{9}{\volt} and an internal resistance of \SI{2}{\ohm}. 
+    If the potential difference across its terminals is greater than \SI{9}{\volt},
+    %% NOTE: traditional defintion of current?
+    \begin{choices}
+        \wrongchoice{it must be connected across a large external resistance}
+        \wrongchoice{it must be connected across a small external resistance}
+        \wrongchoice{the current must be out of the positive terminal}
+      \correctchoice{the current must be out of the negative terminal}
+        \wrongchoice{the current must be zero}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch27-q29}
+    A battery with an emf of \SI{24}{\volt} is connected to a \SI{6}{\ohm} resistor. 
+    As a result, current of 3 A exists in the resistor. 
+    The terminal potential difference of the battery is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{zero}
+        \wrongchoice{\SI{6}{\volt}}
+        \wrongchoice{\SI{12}{\volt}}
+      \correctchoice{\SI{18}{\volt}}
+        \wrongchoice{\SI{24}{\volt}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch27-q30}
+    In the diagram $R_1 > R_2 > R_3$.
+    \begin{center}
+    \begin{circuitikz}
+        %% NOTE:
+    \end{circuitikz}
+    \end{center}
+    Rank the three resistors according to the current in them,
+        least to greatest.
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{1, 2, 3}
+        \wrongchoice{3, 2, 1}
+        \wrongchoice{1, 3, 2}
+        \wrongchoice{3, 1, 3}
+      \correctchoice{All are the same}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch27-q31}
+    Resistances of \SI{2.0}{\ohm}, \SI{4.0}{\ohm}, and \SI{6.0}{\ohm} and a \SI{24}{\volt} emf device are all in parallel. 
+    The current in the \SI{2.0}{\ohm} resistor is:
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{\SI{12}{\ampere}}
+        \wrongchoice{\SI{4.0}{\ampere}}
+        \wrongchoice{\SI{2.4}{\ampere}}
+        \wrongchoice{\SI{2.0}{\ampere}}
+        \wrongchoice{\SI{0.50}{\ampere}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch27-q32}
+    Resistances of \SI{2.0}{\ohm}, \SI{4.0}{\ohm}, and \SI{6.0}{\ohm} and a \SI{24}{\volt} emf device are all in series. 
+    The potential difference across the \SI{2.0}{\ohm} resistor is:
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{\SI{4}{\volt}}
+        \wrongchoice{\SI{8}{\volt}}
+        \wrongchoice{\SI{12}{\volt}}
+        \wrongchoice{\SI{24}{\volt}}
+        \wrongchoice{\SI{48}{\volt}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch27-q33}
+    A battery with an emf of \SI{12}{\volt} and an internal resistance of \SI{1}{\ohm} is used to charge a battery with an emf of \SI{10}{\volt} and an internal resistance of \SI{1}{\ohm}. 
+    The current in the circuit is:
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{\SI{1}{\ampere}}
+        \wrongchoice{\SI{2}{\ampere}}
+        \wrongchoice{\SI{4}{\ampere}}
+        \wrongchoice{\SI{11}{\ampere}}
+        \wrongchoice{\SI{22}{\ampere}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch27-q34}
+    In the diagram, the current in the \SI{3}{\ohm} resistor is \SI{4}{\ampere}.
+    \begin{center}
+    \begin{circuitikz}
+        %% NOTE:
+    \end{circuitikz}
+    \end{center}
+    The potential difference between points 1 and 2 is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{0.75}{\volt}}
+        \wrongchoice{\SI{0.8}{\volt}}
+        \wrongchoice{\SI{1.25}{\volt}}
+        \wrongchoice{\SI{12}{\volt}}
+      \correctchoice{\SI{20}{\volt}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch27-q35}
+    Below is a complex circuit,
+        resistors in parallel and series.
+    \begin{center}
+    \begin{circuitikz}
+        %% NOTE:
+    \end{circuitikz}
+    \end{center}
+    The current in the \SI{5.0}{\ohm} resistor is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{0.42}{\ampere}}
+        \wrongchoice{\SI{0.67}{\ampere}}
+        \wrongchoice{\SI{1.5}{\ampere}}
+        \wrongchoice{\SI{2.4}{\ampere}}
+        \wrongchoice{\SI{3.0}{\ampere}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch27-q36}
+    A \SI{3}{\ohm} and a \SI{1.5}{\ohm} resistor are wired in parallel and the combination is wired in series to a \SI{4}{\ohm} resistor and a \SI{10}{\volt} emf device. 
+    The current in the \SI{3}{\ohm} resistor is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{0.33}{\ampere}}
+      \correctchoice{\SI{0.67}{\ampere}}
+        \wrongchoice{\SI{2.0}{\ampere}}
+        \wrongchoice{\SI{3.3}{\ampere}}
+        \wrongchoice{\SI{6.7}{\ampere}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch27-q37}
+    A \SI{3}{\ohm} and a \SI{1.5}{\ohm} resistor are wired in parallel and the combination is wired in series to a \SI{4}{\ohm} resistor and a \SI{10}{\volt} emf device. 
+    The potential difference across the \SI{3}{\ohm} resistor is:
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{\SI{2.0}{\volt}}
+        \wrongchoice{\SI{6.0}{\volt}}
+        \wrongchoice{\SI{8.0}{\volt}}
+        \wrongchoice{\SI{10}{\volt}}
+        \wrongchoice{\SI{12}{\volt}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch27-q38}
+    Two identical batteries, each with an emf of \SI{18}{\volt} and an internal resistance of \SI{1}{\ohm},
+        are wired in parallel by connecting their positive terminals together and connecting their negative terminals together. 
+    The combination is then wired across a \SI{4}{\ohm} resistor. 
+    The current in the \SI{4}{\ohm} resistor is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{1.0}{\ampere}}
+        \wrongchoice{\SI{2.0}{\ampere}}
+      \correctchoice{\SI{4.0}{\ampere}}
+        \wrongchoice{\SI{3.6}{\ampere}}
+        \wrongchoice{\SI{7.2}{\ampere}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch27-q39}
+    Two identical batteries, each with an emf of \SI{18}{\volt} and an internal resistance of \SI{1}{\ohm},
+        are wired in parallel by connecting their positive terminals together and connecting their negative terminals together. 
+    The combination is then wired across a \SI{4}{\ohm} resistor. 
+    The current in each battery is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{1.0}{\ampere}}
+      \correctchoice{\SI{2.0}{\ampere}}
+        \wrongchoice{\SI{4.0}{\ampere}}
+        \wrongchoice{\SI{3.6}{\ampere}}
+        \wrongchoice{\SI{7.2}{\ampere}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch27-q40}
+    Two identical batteries, each with an emf of \SI{18}{\volt} and an internal resistance of \SI{1}{\ohm},
+        are wired in parallel by connecting their positive terminals together and connecting their negative terminals together. 
+    The combination is then wired across a \SI{4}{\ohm} resistor. 
+    The potential difference across the \SI{4}{\ohm} resistor is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{4.0}{\volt}}
+        \wrongchoice{\SI{8.0}{\volt}}
+        \wrongchoice{\SI{14}{\volt}}
+      \correctchoice{\SI{16}{\volt}}
+        \wrongchoice{\SI{29}{\volt}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch27-q41}
+    In the diagrams, all light bulbs are identical and all emf devices are identical. 
+    \begin{center}
+    \begin{circuitikz}
+        %% NOTE:
+    \end{circuitikz}
+    \end{center}
+    In which circuit will the bulbs glow with the same brightness as in the shown circuit?
+    \begin{multicols}{2}
+    \begin{choices}
+        %% NOTE: ANS is D
+        \wrongchoice{
+            \begin{circuitikz}
+                %% NOTE:
+            \end{circuitikz}
+        }
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch27-q42}
+    In the diagrams, all light bulbs are identical and all emf devices are identical. 
+    In which circuit will the bulbs be dimmest?
+    \begin{multicols}{2}
+    \begin{choices}
+        %% NOTE: ANS is D
+        \wrongchoice{
+            \begin{circuitikz}
+                %% NOTE:
+            \end{circuitikz}
+        }
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch27-q43}
+    A \SI{120}{\volt} power line is protected by a \SI{15}{\ampere} fuse. 
+    What is the maximum number of ``\SI{120}{\volt}, \SI{500}{\watt}'' light bulbs that can be operated at full brightness from this line?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\num{1}}
+        \wrongchoice{\num{2}}
+      \correctchoice{\num{3}}
+        \wrongchoice{\num{4}}
+        \wrongchoice{\num{5}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch27-q44}
+    Two \SI{110}{\volt} light bulbs, one ``\SI{25}{\watt}'' and the other ``\SI{100}{\watt}'',
+        are connected in series to a \SI{110}{\volt} source. 
+    Then:
+    \begin{choices}
+        \wrongchoice{the current in the \SI{100}{\watt} bulb is greater than that in the \SI{25}{\watt} bulb}
+        \wrongchoice{the current in the \SI{100}{\watt} bulb is less than that in the \SI{25}{\watt} bulb}
+        \wrongchoice{both bulbs will light with equal brightness}
+        \wrongchoice{each bulb will have a potential difference of \SI{55}{\volt}}
+      \correctchoice{none of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch27-q45}
+    A resistor with resistance $R_1$ and a resistor with resistance $R_2$ are connected in parallel to an ideal battery with emf $\varepsilon$. 
+    The rate of thermal energy generation in the resistor with resistance $R_1$ is:
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{$\dfrac{\varepsilon^2}{R_1}$}
+        \wrongchoice{$\dfrac{\varepsilon^2 R_1}{\left(R_1+R_2\right)^2}$}
+        \wrongchoice{$\dfrac{\varepsilon^2}{R_1+R_2}$}
+        \wrongchoice{$\dfrac{\varepsilon^2}{R_2}$}
+        \wrongchoice{$\dfrac{\varepsilon^2 R_1}{R_2^2}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch27-q46}
+    In an antique automobile,
+        a \SI{6}{\volt} battery supplies a total of \SI{48}{\watt} to two identical headlights in parallel.
+    The resistance of each bulb is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{0.67}{\ohm}}
+      \correctchoice{\SI{1.5}{\ohm}}
+        \wrongchoice{\SI{3}{\ohm}}
+        \wrongchoice{\SI{4}{\ohm}}
+        \wrongchoice{\SI{8}{\ohm}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch27-q47}
+    Resistor 1 has twice the resistance of resistor 2. 
+    They are connected in parallel to a battery.
+    The ratio of the thermal energy generation rate in 1 to that in 2 is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$1:4$}
+      \correctchoice{$1:2$}
+        \wrongchoice{$1:1$}
+        \wrongchoice{$2:1$}
+        \wrongchoice{$4:1$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch27-q48}
+    A series circuit consists of a battery with internal resistance $r$ and an external resistor $R$. 
+    If these two resistances are equal ($r=R$) then the thermal energy generated per unit time by the internal resistance r is:
+    \begin{choices}
+      \correctchoice{the same as by $R$}
+        \wrongchoice{half that by $R$}
+        \wrongchoice{twice that by $R$}
+        \wrongchoice{one-third that by $R$}
+        \wrongchoice{unknown unless the emf is given}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch27-q49}
+    The positive terminals of two batteries with emf's of $\varepsilon_1$ and $\varepsilon_2$a
+        respectively, are connected together. 
+    Here $\varepsilon_2 > \varepsilon_1$.
+    The circuit is completed by connecting the negative terminals. 
+    If each battery has an internal resistance $r$,
+        the rate with which electrical energy is converted to chemical energy in the smaller battery is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{$\dfrac{\varepsilon_1^2}{r}$}
+        \wrongchoice{$\dfrac{\varepsilon_1^2}{2r}$}
+        \wrongchoice{$\dfrac{\varepsilon_1\left(\varepsilon_2-\varepsilon_1\right)}{r}$}
+      \correctchoice{$\dfrac{\varepsilon_1\left(\varepsilon_2-\varepsilon_1\right)}{2r}$}
+        \wrongchoice{$\dfrac{\varepsilon_2^2}{2r}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch27-q50}
+    In the figure, voltmeter $V_1$ reads \SI{600}{\volt}, voltmeter $V_2$ reads \SI{580}{\volt},
+        and ammeter $A$ reads \SI{100}{\ampere}.
+    \begin{center}
+    \begin{circuitikz}
+        %% NOTE:
+    \end{circuitikz}
+    \end{center}
+    The power wasted in the transmission line connecting the power house to the consumer is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{1}{\kilo\watt}}
+      \correctchoice{\SI{2}{\kilo\watt}}
+        \wrongchoice{\SI{58}{\kilo\watt}}
+        \wrongchoice{\SI{59}{\kilo\watt}}
+        \wrongchoice{\SI{60}{\kilo\watt}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch27-q51}
+    The circuit shown was wired for the purpose of measuring the resistance of the lamp $L$. 
+    \begin{center}
+    \begin{circuitikz}
+        %% NOTE:
+    \end{circuitikz}
+    \end{center}
+    Inspection shows that:
+    \begin{choices}
+        \wrongchoice{voltmeter $V$ and rheostat $R$ should be interchanged}
+        \wrongchoice{the circuit is satisfactory}
+        \wrongchoice{the ammeter $A$ should be in parallel with $R$, not $L$}
+      \correctchoice{the meters, $V$ and $A$, should be interchanged}
+        \wrongchoice{$L$ and $V$ should be interchanged}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch27-q52}
+    When switch $S$ is open,
+        the ammeter in the circuit shown reads \SI{2.0}{\ampere}. 
+    \begin{center}
+    \begin{circuitikz}
+        %% NOTE:
+    \end{circuitikz}
+    \end{center}
+    When $S$ is closed, the ammeter reading:
+    \begin{choices}
+      \correctchoice{increases slightly}
+        \wrongchoice{remains the same}
+        \wrongchoice{decreases slightly}
+        \wrongchoice{doubles}
+        \wrongchoice{halves}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch27-q53}
+    A certain galvanometer has a resistance of \SI{100}{\ohm} and requires \SI{1}{\milli\ampere} for full scale deflection. 
+    To make this into a voltmeter reading \SI{1}{\volt} full scale,
+        connect a resistance of:
+    \begin{choices}
+        \wrongchoice{\SI{1000}{\ohm} in parallel}
+      \correctchoice{\SI{900}{\ohm} in series}
+        \wrongchoice{\SI{1000}{\ohm} in series}
+        \wrongchoice{\SI{10}{\ohm} in parallel}
+        \wrongchoice{\SI{0.1}{\ohm} in series}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch27-q54}
+    To make a galvanometer into an ammeter, connect:
+    \begin{choices}
+        \wrongchoice{a high resistance in parallel}
+        \wrongchoice{a high resistance in series}
+        \wrongchoice{a low resistance in series}
+      \correctchoice{a low resistance in parallel}
+        \wrongchoice{a source of emf in series}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch27-q55}
+    A certain voltmeter has an internal resistance of \SI{10 000}{\ohm} and a range from \SI{0}{\volt} to \SI{100}{\volt}. 
+    To give it a range from \SI{0}{\volt} to \SI{1000}{\volt},
+        one should connect:
+    \begin{choices}
+        \wrongchoice{\SI{100 000}{\ohm} in series}
+        \wrongchoice{\SI{100 000}{\ohm} in parallel}
+        \wrongchoice{\SI{1000}{\ohm} in series}
+        \wrongchoice{\SI{1000}{\ohm} in parallel}
+      \correctchoice{\SI{90 000}{\ohm} in series}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch27-q56}
+    A certain ammeter has an internal resistance of \SI{1}{\ohm} and a range from \SI{0}{\milli\ampere} to \SI{50}{\milli\ampere}. 
+    To make its range from \SI{0}{\ampere} to \SI{5}{\ampere},
+        use:
+    \begin{choices}
+        \wrongchoice{a series resistance of \SI{99}{\ohm}}
+        \wrongchoice{an extremely large (say \SI{e6}{\ohm}) series resistance}
+        \wrongchoice{a resistance of \SI{99}{\ohm} in parallel}
+      \correctchoice{a resistance of \SI{1/99}{\ohm} in parallel}
+        \wrongchoice{a resistance of \SI{1/1000}{\ohm} in parallel}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch27-q57}
+    A galvanometer has an internal resistance of \SI{12}{\ohm} and requires \SI{0.01}{\ampere} for full scale deflection.
+    To convert it to a voltmeter reading \SI{3}{\volt} full scale,
+        one must use a series resistance of:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{102}{\ohm}}
+      \correctchoice{\SI{288}{\ohm}}
+        \wrongchoice{\SI{300}{\ohm}}
+        \wrongchoice{\SI{360}{\ohm}}
+        \wrongchoice{\SI{412}{\ohm}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch27-q58}
+    A certain voltmeter has an internal resistance of \SI{10 000}{\ohm} and a range from \SI{0}{\volt} to \SI{12}{\volt}. 
+    To extend its range to \SI{120}{\volt},
+        use a series resistance of:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{1 111}{\ohm}}
+      \correctchoice{\SI{90 000}{\ohm}}
+        \wrongchoice{\SI{100 000}{\ohm}}
+        \wrongchoice{\SI{108 000}{\ohm}}
+        \wrongchoice{\SI{120 000}{\ohm}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\newcommand{\hallidayChTwentySevenQFiftyNine}{
+\begin{circuitikz}
+    %% NOTE:
+\end{circuitikz}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch27-q59}
+    Four circuits have the form shown in the diagram. 
+    The capacitor is initially uncharged and the switch $S$ is open.
+    \begin{center}
+        \hallidayChTwentySevenQFiftyNine
+    \end{center}
+    The values of the emf $\varepsilon$, resistance $R$, and capacitance $C$ for each of the circuits are
+    \begin{description}
+        \item[circuit 1:] $\varepsilon=\SI{18}{\volt}$, $R=\SI{3}{\ohm}$, $C=\SI{1}{\micro\farad}$
+        \item[circuit 2:] $\varepsilon=\SI{18}{\volt}$, $R=\SI{6}{\ohm}$, $C=\SI{9}{\micro\farad}$
+        \item[circuit 3:] $\varepsilon=\SI{12}{\volt}$, $R=\SI{1}{\ohm}$, $C=\SI{7}{\micro\farad}$
+        \item[circuit 4:] $\varepsilon=\SI{10}{\volt}$, $R=\SI{5}{\ohm}$, $C=\SI{7}{\micro\farad}$
+    \end{description}
+    Rank the circuits according to the current just after switch $S$ is closed least to greatest.
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{1, 2, 3, 4}
+        \wrongchoice{4, 3, 2, 1}
+        \wrongchoice{4, 2, 3, 1}
+      \correctchoice{4, 2, 1, 3}
+        \wrongchoice{3, 1, 2, 4}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch27-q60}
+    Four circuits have the form shown in the diagram. 
+    The capacitor is initially uncharged and the switch $S$ is open.
+    \begin{center}
+        \hallidayChTwentySevenQFiftyNine
+    \end{center}
+    The values of the emf $\varepsilon$, resistance $R$, and capacitance $C$ for each of the circuits are
+    \begin{description}
+        \item[circuit 1:] $\varepsilon=\SI{18}{\volt}$, $R=\SI{3}{\ohm}$, $C=\SI{1}{\micro\farad}$
+        \item[circuit 2:] $\varepsilon=\SI{18}{\volt}$, $R=\SI{6}{\ohm}$, $C=\SI{9}{\micro\farad}$
+        \item[circuit 3:] $\varepsilon=\SI{12}{\volt}$, $R=\SI{1}{\ohm}$, $C=\SI{7}{\micro\farad}$
+        \item[circuit 4:] $\varepsilon=\SI{10}{\volt}$, $R=\SI{5}{\ohm}$, $C=\SI{7}{\micro\farad}$
+    \end{description}
+    Rank the circuits according to the time after switch $S$ is closed for the capacitors to reach half their final charges,
+        least to greatest.
+    %\begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{1, 2, 3, 4}
+        \wrongchoice{4, 3, 2, 1}
+      \correctchoice{1, 3, 4, 2}
+        \wrongchoice{1 and 2 tied, then 4, 3}
+        \wrongchoice{4, 3, then 1 and 2 tied}
+    \end{choices}
+    %\end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch27-q61}
+    The time constant $RC$ has units of:
+    \begin{choices}
+        \wrongchoice{second per farad (\si{\second\per\farad})}
+        \wrongchoice{second per ohm (\si{\second\per\ohm})}
+        \wrongchoice{per second (\si{\per\second})}
+        \wrongchoice{second per watt (\si{\second\per\watt})}
+      \correctchoice{none of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch27-q62}
+    In the circuit shown, both resistors have the same value $R$. 
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: cirtcuitikz
+    \end{tikzpicture}
+    \end{center}
+    Suppose switch $S$ is initially closed.
+    When it is then opened,
+        the circuit has a time constant $\tau_a$.
+    Conversely, suppose $S$ is initially open. 
+    When it is then closed, the circuit has a time constant $\tau_b$. 
+    The ratio $\tau_a/\tau_b$ is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\num{1}}
+      \correctchoice{\num{2}}
+        \wrongchoice{\num{0.5}}
+        \wrongchoice{\num{0.667}}
+        \wrongchoice{\num{1.5}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch27-q63}
+    In the circuit shown, the capacitor is initially uncharged. 
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: cirtcuitikz
+    \end{tikzpicture}
+    \end{center}
+    At time $t=0$, switch $S$ is closed. 
+    If $\tau$ denotes the time constant,
+        the approximate current through the \SI{3}{\ohm} resistor when $t=\tau/10$ is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{0.38}{\ampere}}
+        \wrongchoice{\SI{0.50}{\ampere}}
+        \wrongchoice{\SI{0.75}{\ampere}}
+      \correctchoice{\SI{1.0}{\ampere}}
+        \wrongchoice{\SI{1.5}{\ampere}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch27-q64}
+    Suppose the current charging a capacitor is kept constant. 
+    Which graph below correctly gives the potential difference $V$ across the capacitor as a function of time?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{
+            \begin{tikzpicture}
+            \end{tikzpicture}
+        }
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch27-q65}
+    A charged capacitor is being discharged through a resistor. 
+    At the end of one time constant the charge has been reduced by $\left(1-\dfrac{1}{\mathrm{e}}\right)=\SI{63}{\percent}$ of its initial value. 
+    At the end of two time constants the charge has been reduced by what percent of its initial value?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{82}{\percent}}
+      \correctchoice{\SI{86}{\percent}}
+        \wrongchoice{\SI{100}{\percent}}
+        \wrongchoice{Between \SI{90}{\percent} and \SI{100}{\percent}}
+        \wrongchoice{Need to know more data to answer the question}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch27-q66}
+    An initially uncharged capacitor $C$ is connected in series with resistor $R$.
+    This combination is then connected to a battery of emf $V_0$.
+    Sufficient time elapses so that a steady state is reached.
+    Which of the following statements is \emph{not} true?
+    \begin{choices}
+        \wrongchoice{The time constant is independent of $V_0$}
+        \wrongchoice{The final charge on $C$ is independent of $R$}
+      \correctchoice{The total thermal energy generated by $R$ is independent of $R$}
+        \wrongchoice{The total thermal energy generated by $R$ is independent of $V_0$}
+        \wrongchoice{The initial current (just after the battery was connected) is independent of $C$}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch27-q67}
+    A certain capacitor, in series with a resistor,
+        is being charged. 
+    At the end of \SI{10}{\milli\second} its charge is half the final value. 
+    The time constant for the process is about:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{0.43}{\milli\second}}
+        \wrongchoice{\SI{2.3}{\milli\second}}
+        \wrongchoice{\SI{6.9}{\milli\second}}
+        \wrongchoice{\SI{10}{\milli\second}}
+      \correctchoice{\SI{14}{\milli\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch27-q68}
+    A certain capacitor, in series with a \SI{720}{\ohm} resistor,
+        is being charged. 
+    At the end of \SI{10}{\milli\second} its charge is half the final value. 
+    The capacitance is about:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{9.6}{\micro\farad}}
+        \wrongchoice{\SI{14}{\micro\farad}}
+      \correctchoice{\SI{20}{\micro\farad}}
+        \wrongchoice{\SI{7.2}{\farad}}
+        \wrongchoice{\SI{10}{\farad}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch27-q69}
+    In the capacitor discharge formula $q=q_0\mathrm{e}^{-t/RC}$ the symbol $t$ represents:
+    \begin{choices}
+        \wrongchoice{the time constant}
+        \wrongchoice{the time it takes for $C$ to lose the fraction $1/\mathrm{e}$ of its initial charge}
+        \wrongchoice{the time it takes for $C$ to lose the fraction $\left(1-\dfrac{1}{e}\right)$ of its initial charge}
+        \wrongchoice{the time it takes for $C$ to lose essentially all of its initial charge}
+      \correctchoice{none of the provided}
+    \end{choices}
+\end{question}
+}
+
+
+\endinput
+
+

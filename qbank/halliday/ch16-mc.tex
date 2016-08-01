@@ -1,0 +1,1258 @@
+
+%%--------------------------------------------------
+%% Halliday: Fundamentals of Physics
+%%--------------------------------------------------
+
+
+%% Chapter 16: Waves I
+%%--------------------------------------------------
+
+
+%% Learning Objectives
+%%--------------------------------------------------
+
+%% 16.01: Identify the three main types of waves
+%% 16.02: Distinguish between transverse waves and longitudinal waves.
+%% 16.03: given a displacement function for a traverse wave, determine amplitude $y_m$, angular wave number $k$, angular frequency $\omega$, phase constant $\phi$, and the direction of travel, anc calculate the phase $kx\pm \omega t + \phi$ and the displacement at any given time and position.
+%% 16.04: Given a displacement function for a traverse wave, calculate the time between two given displacements.
+%% 16.05: Sketch a graph of a transverse wave as a function of position, identifying amplitude $y_m$, wavelength $\lambda$, where the slope is greatest, where it is zero, and where the string elements have positive velocity, negative velocity, and zero velocity.
+%% 16.06: Given a graph of displacement versus time for a transverse wave, determine amplitude $y_m$ and period $T$.
+%% 16.07: Describe the effect on a transverse wave of changing phase constant $\phi$.
+%% 16.08: Apply the relation between the wave speed $v$, the distance traveled by the wave, and the time required for that travel.
+%% 16.09: Apply the relationships between wave speed $v$, angular frequency $\omega$, angular wave number $k$, wavelength $\lambda$, period $T$, and frequency $f$.
+%% 16.10: Describe the motion of a string element as a transverse wave moves through its location, and identify when its transverse speed is zero and when it is maximum.
+%% 16.11: Calculate the transverse velocity $u(t)$ of a string element as a transverse wave moves through its location.
+%% 16.12: Calculate the transverse acceleration $a(t)$ of a string element as a transverse wave moves through its location.
+%% 16.13: Given a graph of displacement, transverse velocity, or transverse acceleration, determine the phase constant $\phi$.
+
+
+%% Halliday Multiple Choice Questions
+%%--------------------------------------------------
+\element{halliday-mc}{
+\begin{question}{halliday-ch16-q01}
+    For a transverse wave on a string the string displacement is described by $y(x, t) = f(x - at)$,
+        where $f$ is a given function and $a$ is a positive constant. 
+    Which of the following does \emph{not} necessarily follow from this statement?
+    \begin{choices}
+        \wrongchoice{The shape of the string at time $t=0$ is given by $f(x)$.}
+        \wrongchoice{The shape of the waveform does not change as it moves along the string.}
+        \wrongchoice{The waveform moves in the positive $x$ direction.}
+        \wrongchoice{The speed of the waveform is $a$.}
+      \correctchoice{The speed of the waveform is $x/t$.}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch16-q02}
+    A sinusoidal wave is traveling toward the right as shown. 
+    Which letter correctly labels the amplitude of the wave?
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE:
+    \end{tikzpicture}
+    \end{center}
+    \begin{multicols}{5}
+    \begin{choices}[o]
+        %% ans: D
+        \wrongchoice{$A$}
+        \wrongchoice{$B$}
+        \wrongchoice{$C$}
+        \wrongchoice{$D$}
+        \wrongchoice{$E$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch16-q03}
+    A sinusoidal wave is traveling toward the right as shown. 
+    Which letter correctly labels the wavelength of the wave?
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE:
+    \end{tikzpicture}
+    \end{center}
+    \begin{multicols}{5}
+    \begin{choices}[o]
+        %% ans: A
+        \wrongchoice{$A$}
+        \wrongchoice{$B$}
+        \wrongchoice{$C$}
+        \wrongchoice{$D$}
+        \wrongchoice{$E$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch16-q04}
+    In the diagram below, the interval PQ represents:
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE:
+    \end{tikzpicture}
+    \end{center}
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{wavelength$/2$}
+        \wrongchoice{wavelength}
+        \wrongchoice{$2\times$amplitude}
+      \correctchoice{period$/2$}
+        \wrongchoice{period}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch16-q05}
+    Let $f$ be the frequency, $v$ the speed, and $T$ the period of a sinusoidal traveling wave. 
+    The correct relationship is:
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{$f = \dfrac{1}{T}$}
+        \wrongchoice{$f = v + T$}
+        \wrongchoice{$f = vT$}
+        \wrongchoice{$f = \dfrac{v}{T}$}
+        \wrongchoice{$f = \dfrac{T}{v}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch16-q06}
+    Let $f$ be the frequency, $v$ the speed, and $T$ the period of a sinusoidal traveling wave.
+    The angular frequency is given by:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\dfrac{1}{T}$}
+      \correctchoice{$\dfrac{2\pi}{T}$}
+        \wrongchoice{$vT$}
+        \wrongchoice{$\dfrac{f}{T}$}
+        \wrongchoice{$\dfrac{T}{f}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch16-q07}
+    The displacement of a string is given by
+    \begin{equation*}
+        y(x, t) = y_m \sin\left( kx + \omega t \right) .
+    \end{equation*}
+    The wavelength of the wave is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\dfrac{2\pi k}{\omega}$}
+        \wrongchoice{$\dfrac{k}{\omega}$}
+        \wrongchoice{$\omega k$}
+      \correctchoice{$\dfrac{2\pi}{k}$}
+        \wrongchoice{$\dfrac{k}{2\pi}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch16-q08}
+    Three traveling sinusoidal waves are on identical strings,
+        with the same tension. 
+    The mathematical forms of the waves are $y_1 (x, t) = y_m\sin(3x - 6t)$,
+        $y_2 (x, t) = y_m\sin(4x - 8t)$,
+        and $y_3 (x, t) = y_m\sin(6x - 12t)$,
+        where $x$ is in meters and $t$ is in seconds. 
+    Match each mathematical form to the appropriate graph below.
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE:
+    \end{tikzpicture}
+    \end{center}
+    \begin{choices}
+      \correctchoice{$y_1:i$,   $y_2:ii$,   $y_3:ii$}
+        \wrongchoice{$y_1:iii$, $y_2:ii$,   $y_3:i$}
+        \wrongchoice{$y_1:i$,   $y_2:iii$,  $y_3:ii$}
+        \wrongchoice{$y_1:ii$,  $y_2:i$,    $y_3:iii$}
+        \wrongchoice{$y_1:iii$, $y_2:i$,    $y_3:ii$}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch16-q09}
+    The displacement of a string is given by
+    \begin{equation*}
+        y(x, t) = y m sin(kx + ωt) .
+    \end{equation*}
+    The speed of the wave is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\dfrac{2\pi k}{\omega}$}
+      \correctchoice{$\dfrac{\omega}{k}$}
+        \wrongchoice{$\omega k$}
+        \wrongchoice{$\dfrac{2\pi}{k}$}
+        \wrongchoice{$\dfrac{k}{2\pi}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch16-q10}
+    A wave is described by $y(x, t) = 0.1 \sin\left(3x + 10t\right)$, where $x$ is in meters, $y$ is in centimeters, and $t$ is in seconds. 
+    The angular wave number is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{0.10}{\radian\per\meter}}
+        \wrongchoice{\SI[parse-numbers=false]{3\pi}{\radian\per\meter}}
+        \wrongchoice{\SI{10}{\radian\per\meter}}
+        \wrongchoice{\SI[parse-numbers=false]{10\pi}{\radian\per\meter}}
+      \correctchoice{\SI{3.0}{\radian\per\centi\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch16-q11}
+    A wave is described by $y(x, t) = 0.1 \sin\left(3x - 10t\right)$, where $x$ is in meters, $y$ is in centimeters, and $t$ is in seconds. 
+    The angular frequency is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{0.10}{\radian\per\second}}
+        \wrongchoice{\SI[parse-numbers=false]{3.0\pi}{\radian\per\second}}
+        \wrongchoice{\SI[parse-numbers=false]{10\pi}{\radian\per\second}}
+        \wrongchoice{\SI[parse-numbers=false]{20\pi}{\radian\per\second}}
+      \correctchoice{\SI{10}{\radian\per\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch16-q12}
+    Water waves in the sea are observed to have a wavelength of \SI{300}{\meter} and a frequency of \SI{0.07}{\hertz}.
+    The speed of these waves is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{0.00021}{\meter\per\second}}
+        \wrongchoice{\SI{2.1}{\meter\per\second}}
+      \correctchoice{\SI{21}{\meter\per\second}}
+        \wrongchoice{\SI{210}{\meter\per\second}}
+        \wrongchoice{none of the provided}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch16-q13}
+    Sinusoidal water waves are generated in a large ripple tank. 
+    The waves travel at \SI{20}{\centi\meter\per\second} and their adjacent crests are \SI{5.0}{\centi\meter} apart. 
+    The time required for each new whole cycle to be generated is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{100}{\second}}
+        \wrongchoice{\SI{4.0}{\second}}
+        \wrongchoice{\SI{2.0}{\second}}
+        \wrongchoice{\SI{0.5}{\second}}
+      \correctchoice{\SI{0.25}{\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch16-q14}
+    A traveling sinusoidal wave is shown below. 
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE:
+    \end{tikzpicture}
+    \end{center}
+    At which point is the motion \ang{180} out of phase with the motion at point $P$?
+    \begin{multicols}{5}
+    \begin{choices}[o]
+        \wrongchoice{$A$}
+        \wrongchoice{$B$}
+      \correctchoice{$C$}
+        \wrongchoice{$D$}
+        \wrongchoice{$E$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch16-q15}
+    The displacement of a string carrying a traveling sinusoidal wave is given by
+    \begin{equation*}
+        y(x, t) = y_m \sin\left(kx - \omega t - \phi\right) .
+    \end{equation*}
+    At time $t=0$ the point at $x=0$ has a displacement of zero and is moving in the positive $y$ direction. 
+    The phase constant $\phi$ is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\ang{45}}
+        \wrongchoice{\ang{90}}
+        \wrongchoice{\ang{135}}
+      \correctchoice{\ang{180}}
+        \wrongchoice{\ang{270}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch16-q16}
+    The displacement of a string carrying a traveling sinusoidal wave is given by
+    \begin{equation*}
+        y(x, t) = y_m \sin\left( kx - \omega t - \phi\right) .
+    \end{equation*}
+    At time $t=0$ the point at $x=0$ has a velocity of zero and a positive displacement. 
+    The phase constant $\phi$ is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\ang{45}}
+        \wrongchoice{\ang{90}}
+        \wrongchoice{\ang{135}}
+        \wrongchoice{\ang{180}}
+      \correctchoice{\ang{270}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch16-q17}
+    The displacement of a string carrying a traveling sinusoidal wave is given by
+    \begin{equation*}
+        y(x, t) = y_m \sin\left( kx - \omega t - \phi\right) .
+    \end{equation*}
+    At time $t=0$ the point at $x=0$ has velocity $v_0$ and displacement $y_0$. 
+    The phase constant $\phi$ is given by $\tan\phi=$
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\dfrac{v_0 }{\omega y_0}$}
+      \correctchoice{$\dfrac{\omega y_0}{v_0}$}
+        \wrongchoice{$\dfrac{\omega v_0}{y_0}$}
+        \wrongchoice{$\dfrac{y_0}{\omega v_0}$}
+        \wrongchoice{$\dfrac{\omega v_0}{y_0}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch16-q18}
+    A sinusoidal transverse wave is traveling on a string. 
+    Any point on the string:
+    \begin{choices}
+        \wrongchoice{moves in the same direction as the wave}
+        \wrongchoice{moves in simple harmonic motion with a different frequency than that of the wave}
+      \correctchoice{moves in simple harmonic motion with the same angular frequency as the wave}
+        \wrongchoice{moves in uniform circular motion with a different angular speed than the wave}
+        \wrongchoice{moves in uniform circular motion with the same angular speed as the wave}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch16-q19}
+    Here are the equations for three waves traveling on separate strings. 
+    \begin{description}
+        \item[wave 1:] $y(x, t) = \left(\SI{2.0}{\milli\meter}\right) \sin\left[\left(\SI{4.0}{\per\meter}\right)x - \left(\SI{3.0}{\per\second}\right)t \right]$
+        \item[wave 2:] $y(x, t) = \left(\SI{1.0}{\milli\meter}\right) \sin\left[\left(\SI{8.0}{\per\meter}\right)x - \left(\SI{4.0}{\per\second}\right)t \right]$
+        \item[wave 3:] $y(x, t) = \left(\SI{1.0}{\milli\meter}\right) \sin\left[\left(\SI{4.0}{\per\meter}\right)x - \left(\SI{8.0}{\per\second}\right)t \right]$
+    \end{description}
+    Rank them according to the maximum transverse speed,
+        least to greatest.
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{1, 2, 3}
+        \wrongchoice{1, 3, 2}
+      \correctchoice{2, 1, 3}
+        \wrongchoice{2, 3, 1}
+        \wrongchoice{3, 1, 2}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch16-q20}
+    The transverse wave shown is traveling from left to right in a medium. 
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE:
+    \end{tikzpicture}
+    \end{center}
+    The direction of the instantaneous velocity of the medium at point $P$ is:
+    \begin{multicols}{2}
+    \begin{choices}
+        %% ANS is A
+        \wrongchoice{
+            \begin{tikzpicture}
+            \end{tikzpicture}
+        }
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch16-q21}
+    A wave traveling to the right on a stretched string is shown below. 
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE:
+    \end{tikzpicture}
+    \end{center}
+    The direction of the instantaneous velocity of the point $P$ on the string is:
+    \begin{multicols}{2}
+    \begin{choices}
+        %% ANS is B
+        \wrongchoice{
+            \begin{tikzpicture}
+            \end{tikzpicture}
+        }
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch16-q22}
+    Sinusoidal waves travel on five different strings, all with the same tension. 
+    Four of the strings have the same linear mass density,
+        but the fifth has a different linear mass density. 
+    Use the mathematical forms of the waves, given below,
+        to identify the string with the different linear mass density. 
+    In the expressions $x$ and $y$ are in centimeters and $t$ is in seconds.
+    \begin{choices}
+        \wrongchoice{$y\left(x, t\right) = \left(\SI{2}{\centi\meter}\right)\sin\left(2x -4t\right)$}
+        \wrongchoice{$y\left(x, t\right) = \left(\SI{2}{\centi\meter}\right)\sin\left(4x -10t\right)$}
+        \wrongchoice{$y\left(x, t\right) = \left(\SI{2}{\centi\meter}\right)\sin\left(6x -12t\right)$}
+        \wrongchoice{$y\left(x, t\right) = \left(\SI{2}{\centi\meter}\right)\sin\left(8x -16t\right)$}
+      \correctchoice{$y\left(x, t\right) = \left(\SI{2}{\centi\meter}\right)\sin\left(10x-20t\right)$}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch16-q23}
+    Any point on a string carrying a sinusoidal wave is moving with its maximum speed when:
+    \begin{choices}
+        \wrongchoice{the magnitude of its acceleration is a maximum}
+        \wrongchoice{the magnitude of its displacement is a maximum}
+      \correctchoice{the magnitude of its displacement is a minimum}
+        \wrongchoice{the magnitude of its displacement is half the amplitude}
+        \wrongchoice{the magnitude of its displacement is one-fourth the amplitude}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch16-q24}
+    The mathematical forms for three sinusoidal traveling waves are given by
+    \begin{description}
+        \item[wave 1:] $y\left(x,t\right) = \left(\SI{2}{\centi\meter}\right) sin\left(3x-6t\right)$
+        \item[wave 2:] $y\left(x,t\right) = \left(\SI{3}{\centi\meter}\right) sin\left(4x-12t\right)$
+        \item[wave 3:] $y\left(x,t\right) = \left(\SI{4}{\centi\meter}\right) sin\left(5x-11t\right)$
+    \end{description}
+    where $x$ is in meters and $t$ is in seconds. 
+    Of these waves:
+    \begin{choices}
+        \wrongchoice{wave 1 has the greatest wave speed and the greatest maximum transverse string speed}
+        \wrongchoice{wave 2 has the greatest wave speed and wave 1 has the greatest maximum transverse string speed}
+        \wrongchoice{wave 3 has the greatest wave speed and the greatest maximum transverse string speed}
+      \correctchoice{wave 2 has the greatest wave speed and wave 3 has the greatest maximum transverse string speed}
+        \wrongchoice{wave 3 has the greatest wave speed and wave 2 has the greatest maximum transverse string speed}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch16-q25}
+    Suppose the maximum speed of a string carrying a sinusoidal wave is $v_s$.
+    When the displacement of a point on the string is half its maximum,
+        the speed of the point is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\dfrac{v_s}{2}$}
+        \wrongchoice{$2v_s$}
+        \wrongchoice{$\dfrac{v_s}{4}$}
+        \wrongchoice{$\dfrac{3 v_s}{4}$}
+      \correctchoice{$\dfrac{\sqrt{3} v_s}{2}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch16-q26}
+    A string carries a sinusoidal wave with an amplitude of \SI{2.0}{\centi\meter} and a frequency of \SI{100}{\hertz}.
+    The maximum speed of any point on the string is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{2.0}{\meter\per\second}}
+        \wrongchoice{\SI{4.0}{\meter\per\second}}
+        \wrongchoice{\SI{6.3}{\meter\per\second}}
+      \correctchoice{\SI{13}{\meter\per\second}}
+        \wrongchoice{unknown (not enough information is given)}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch16-q27}
+    A transverse traveling sinusoidal wave on a string has a frequency of \SI{100}{\hertz},
+        a wavelength of \SI{0.040}{\meter}, and an amplitude of \SI{2.0}{\milli\meter}.
+    %The maximum velocity in \si{\meter\per\second} of any point on the string is:
+    The maximum velocity of any point on the string is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{0.2}{\meter\per\second}}
+      \correctchoice{\SI{1.3}{\meter\per\second}}
+        \wrongchoice{\SI{4}{\meter\per\second}}
+        \wrongchoice{\SI{15}{\meter\per\second}}
+        \wrongchoice{\SI{25}{\meter\per\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch16-q28}
+    A transverse traveling sinusoidal wave on a string has a frequency of \SI{100}{\hertz},
+        a wavelength of \SI{0.040}{\meter}, and an amplitude of \SI{2.0}{\milli\meter}.
+    %The maximum acceleration in m/s 2 of any point on the string is:
+    The maximum acceleration of any point on the string is:
+    \begin{multicols}{2}
+    \begin{choices}
+        %\wrongchoice{\SI{0}{\meter\per\second\squared}}
+        \wrongchoice{zero}
+        \wrongchoice{\SI{130}{\meter\per\second\squared}}
+        \wrongchoice{\SI{395}{\meter\per\second\squared}}
+      \correctchoice{\SI{790}{\meter\per\second\squared}}
+        \wrongchoice{\SI{1600}{\meter\per\second\squared}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch16-q29}
+    The speed of a sinusoidal wave on a string depends on:
+    \begin{choices}
+        \wrongchoice{the frequency of the wave}
+        \wrongchoice{the wavelength of the wave}
+        \wrongchoice{the length of the string}
+        \wrongchoice{the tension in the string}
+        \wrongchoice{the amplitude of the wave}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch16-q30}
+    The time required for a small pulse to travel from $A$ to $B$ on a stretched cord shown is \emph{not} altered by changing:
+    \begin{choices}
+        \wrongchoice{the linear mass density of the cord}
+        \wrongchoice{the length between $A$ and $B$}
+      \correctchoice{the shape of the pulse}
+        \wrongchoice{the tension in the cord}
+        \wrongchoice{none of the above (changes in all alter the time)}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch16-q31}
+    The diagrams show three identical strings that have been put under tension by suspending blocks of \SI{5}{\kilo\gram} each. 
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: 1 x 3
+    \end{tikzpicture}
+    \end{center}
+    For which is the wave speed the greatest?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{1}
+        \wrongchoice{2}
+        \wrongchoice{3}
+      \correctchoice{1 and 3 tie}
+        \wrongchoice{2 and 3 tie}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch16-q32}
+    For a given medium, the frequency of a wave is:
+    \begin{choices}
+        \wrongchoice{independent of wavelength}
+        \wrongchoice{proportional to wavelength}
+      \correctchoice{inversely proportional to wavelength}
+        \wrongchoice{proportional to the amplitude}
+        \wrongchoice{inversely proportional to the amplitude}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch16-q33}
+    The tension in a string with a linear mass density of \SI{0.0010}{\kilo\gram\per\meter} is \SI{0.40}{\newton}. 
+    A sinusoidal wave with a wavelength of \SI{20}{\centi\meter} on this string has a frequency of:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{0.0125}{\hertz}}
+        \wrongchoice{\SI{0.25}{\hertz}}
+      \correctchoice{\SI{100}{\hertz}}
+        \wrongchoice{\SI{630}{\hertz}}
+        \wrongchoice{\SI{2000}{\hertz}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch16-q34}
+    When a \SI{100}{\hertz} oscillator is used to generate a sinusoidal wave on a certain string the wavelength is \SI{10}{\centi\meter}.
+    When the tension in the string is doubled the generator produces a wave with a frequency and wavelength of:
+    \begin{choices}
+        \wrongchoice{\SI{200}{\hertz} and \SI{20}{\centi\meter}}
+        \wrongchoice{\SI{141}{\hertz} and \SI{10}{\centi\meter}}
+        \wrongchoice{\SI{100}{\hertz} and \SI{20}{\centi\meter}}
+      \correctchoice{\SI{100}{\hertz} and \SI{14}{\centi\meter}}
+        \wrongchoice{\SI{50}{\hertz} and \SI{14}{\centi\meter}}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch16-q35}
+    A source of frequency $f$ sends waves of wavelength $\lambda$ traveling with speed $v$ in some medium.
+    If the frequency is changed from $f$ to $2f$,
+        then the new wavelength and new speed are (respectively):
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$2\lambda$, $v$}
+      \correctchoice{$\dfrac{\lambda}{2}$, $v$}
+        \wrongchoice{$\lambda$, $2v$}
+        \wrongchoice{$\lambda$, $\dfrac{v}{2}$}
+        \wrongchoice{$\dfrac{\lambda}{2}$, $2v$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch16-q36}
+    A long string is constructed by joining the ends of two shorter strings. 
+    The tension in the strings is the same but string I has 4 times the linear mass density of string II. 
+    When a sinusoidal wave passes from string I to string II:
+    \begin{choices}
+        \wrongchoice{the frequency decreases by a factor of 4}
+        \wrongchoice{the frequency decreases by a factor of 2}
+        \wrongchoice{the wavelength decreases by a factor of 4}
+      \correctchoice{the wavelength decreases by a factor of 2}
+        \wrongchoice{the wavelength increases by a factor of 2}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch16-q37}
+    Three separate strings are made of the same material. 
+    String 1 has length $L$ and tension $\tau$,
+        string 2 has length $2L$ and tension $2\tau$,
+        and string 3 has length $3L$ and tension $3\tau$. 
+    A pulse is started at one end of each string. 
+    If the pulses start at the same time,
+        the order in which they reach the other end is:
+    \begin{choices}
+      \correctchoice{1, 2, 3}
+        \wrongchoice{3, 2, 1}
+        \wrongchoice{2, 3, 1}
+        \wrongchoice{3, 1, 2}
+        \wrongchoice{they all take the same time}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch16-q38}
+    A long string is constructed by joining the ends of two shorter strings. 
+    The tension in the strings is the same but string I has 4 times the linear mass density of string II. 
+    When a sinusoidal wave passes from string I to string II:
+    \begin{choices}
+        \wrongchoice{the frequency decreases by a factor of 4}
+        \wrongchoice{the frequency decreases by a factor of 2}
+        \wrongchoice{the wave speed decreases by a factor of 4}
+        \wrongchoice{the wave speed decreases by a factor of 2}
+      \correctchoice{the wave speed increases by a factor of 2}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch16-q39}
+    Two identical but separate strings, with the same tension,
+        carry sinusoidal waves with the same frequency. 
+    Wave $A$ has a amplitude that is twice that of wave $B$ and transmits energy at a rate that is \rule[-0.1pt]{4em}{0.1pt} that of wave $B$.
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{half}
+        \wrongchoice{twice}
+        \wrongchoice{one-fourth}
+      \correctchoice{four times}
+        \wrongchoice{eight times}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+%% NOTE: 40 is duplicate of 39
+%% NOTE: reword to something else, maybe twice the frequency?
+\element{halliday-mc}{
+\begin{question}{halliday-ch16-q40}
+    Two identical but separate strings, with the same tension,
+        carry sinusoidal waves with the same frequency. 
+    Wave $A$ has an amplitude that is twice that of wave $B$ and transmits energy at a rate that is \rule[-0.1pt]{4em}{0.1pt} that of wave $B$.
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{half}
+        \wrongchoice{twice}
+        \wrongchoice{one-fourth}
+      \correctchoice{four times}
+        \wrongchoice{eight times}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch16-q41}
+    A sinusoidal wave is generated by moving the end of a string up and down periodically. 
+    The generator must supply the greatest power when the end of the string
+    \begin{choices}
+        \wrongchoice{has its greatest acceleration}
+        \wrongchoice{has its greatest displacement}
+        \wrongchoice{has half its greatest displacement}
+        \wrongchoice{has one-fourth its greatest displacement}
+      \correctchoice{has its least displacement}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch16-q42}
+    A sinusoidal wave is generated by moving the end of a string up and down periodically. 
+    The generator does not supply any power when the end of the string
+    \begin{choices}
+        \wrongchoice{has its least acceleration}
+      \correctchoice{has its greatest displacement}
+        \wrongchoice{has half its greatest displacement}
+        \wrongchoice{has one-fourth its greatest displacement}
+        \wrongchoice{has its least displacement}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch16-q43}
+    The sum of two sinusoidal traveling waves is a sinusoidal traveling wave only if:
+    \begin{choices}
+        \wrongchoice{their amplitudes are the same and they travel in the same direction.}
+        \wrongchoice{their amplitudes are the same and they travel in opposite directions.}
+      \correctchoice{their frequencies are the same and they travel in the same direction.}
+        \wrongchoice{their frequencies are the same and they travel in opposite directions.}
+        \wrongchoice{their frequencies are the same and their amplitudes are the same.}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch16-q44}
+    Two traveling sinusoidal waves interfere to produce a wave with the mathematical form
+    \begin{equation*}
+        %% Orig has alpha and not phi here?
+        y(x, t) = y_m\sin\left(kx + \omega t + \phi\right) .
+    \end{equation*}
+    If the value of $\phi$ is appropriately chosen,
+        the two waves might be:
+    \begin{choices}
+        \wrongchoice{$y_1 \left(x,t\right) = \left(\dfrac{y_m}{3}\right)\sin\left(kx + \omega t\right)$ and \\
+                     $y 2 \left(x, t\right) = \left(\dfrac{y_m}{3}\right)\sin\left(kx + \omega t + \phi\right)$}
+        \wrongchoice{$y_1 \left(x,t\right) = 0.7y_m\sin\left(kx-\omega t\right)$ and \\
+                     $y 2 \left(x, t\right) = 0.7y_m\sin\left(kx-\omega t + \phi\right)$}
+        \wrongchoice{$y_1 \left(x,t\right) = 0.7y_m\sin\left(kx-\omega t\right)$ and \\
+                     $y 2 \left(x, t\right) = 0.7y_m\sin\left(kx+\omega t + \phi\right)$}
+        \wrongchoice{$y_1 \left(x,t\right) = 0.7y_m\sin\left[\left(\dfrac{kx}{2}\right) - \left(\dfrac{\omega t}{2}\right)\right]$ and \\
+                     $y_2 \left(x, t\right) = 0.7y_m\sin\left[\left(\dfrac{kx}{2}\right) - \left(\dfrac{\omega t}{2}\right) +\phi\right]$}
+      \correctchoice{$y_1 \left(x,t\right) = 0.7y_m\sin\left(kx+\omega t\right)$ and \\
+                     $y_2 \left(x, t\right) = 0.7y_m\sin\left(kx+\omega t+\phi\right)$}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch16-q45}
+    Fully constructive interference between two sinusoidal waves of the same frequency occurs only if they:
+    \begin{choices}
+        \wrongchoice{travel in opposite directions and are in phase}
+        \wrongchoice{travel in opposite directions and are \ang{180} out of phase}
+      \correctchoice{travel in the same direction and are in phase}
+        \wrongchoice{travel in the same direction and are \ang{180} out of phase}
+        \wrongchoice{travel in the same direction and are \ang{90} out of phase}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch16-q46}
+    Fully destructive interference between two sinusoidal waves of the same frequency and amplitude occurs only if they:
+    \begin{choices}
+        \wrongchoice{travel in opposite directions and are in phase}
+        \wrongchoice{travel in opposite directions and are \ang{180} out of phase}
+        \wrongchoice{travel in the same direction and are in phase}
+      \correctchoice{travel in the same direction and are \ang{180} out of phase}
+        \wrongchoice{travel in the same direction and are \ang{90} out of phase}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch16-q47}
+    Two sinusoidal waves travel in the same direction and have the same frequency. 
+    Their amplitudes are $y_{1m}$ and $y_{2m}$.
+    The smallest possible amplitude of the resultant wave is:
+    \begin{choices}
+        \wrongchoice{$y_{1m} + y_{2m}$ and occurs if they are \ang{180} out of phase}
+      \correctchoice{$|y_{1m} - y_{2m}|$ and occurs if they are \ang{180} out of phase}
+        \wrongchoice{$y_{1m} + y_{2m}$ and occurs if they are in phase}
+        \wrongchoice{$|y_{1m} - y_{2m}|$ and occurs if they are in phase}
+        \wrongchoice{$|y_{1m} - y_{2m}|$ and occurs if they are \ang{90} out of phase}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch16-q48}
+    Two sinusoidal waves have the same angular frequency,
+        the same amplitude $y_m$, and travel in the same direction in the same medium. 
+    If they differ in phase by \ang{50},
+        the amplitude of the resultant wave is given by:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$0.64 y_m$}
+        \wrongchoice{$1.3 y_m$}
+        \wrongchoice{$0.91 y_m$}
+      \correctchoice{$1.8 y_m$}
+        \wrongchoice{$0.35 y_m$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch16-q49}
+    Two separated sources emit sinusoidal traveling waves that have the same wavelength $\lambda$ and are in phase at their respective sources. 
+    One travels a distance $l_1$ to get to the observation point while the other travels a distance $l_2$. 
+    The amplitude is a minimum at the observation point if $l_1-l_2$ is:
+    \begin{choices}
+      \correctchoice{an odd multiple of $\dfrac{\lambda}{2}$}
+        \wrongchoice{an odd multiple of $\dfrac{\lambda}{4}$}
+        \wrongchoice{a multiple of $\lambda$}
+        \wrongchoice{an odd multiple of $\dfrac{\pi}{2}$}
+        \wrongchoice{a multiple of $\pi$}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch16-q50}
+    Two separated sources emit sinusoidal traveling waves that have the same wavelength $\lambda$ and are in phase at their respective sources. 
+    One travels a distance $l_1$ to get to the observation point while the other travels a distance $l_2$. 
+    The amplitude is a maximum at the observation point if $l_1-l_2$ is:
+    \begin{choices}
+        \wrongchoice{an odd multiple of $\dfrac{\lambda}{2}$}
+        \wrongchoice{an odd multiple of $\dfrac{\lambda}{4}$}
+      \correctchoice{a multiple of $\lambda$}
+        \wrongchoice{an odd multiple of $\dfrac{\pi}{2}$}
+        \wrongchoice{a multiple of $\pi$}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch16-q51}
+    Two sources, $S_1$ and $S_2$,
+        each emit waves of wavelength $\lambda$ in the same medium. 
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE:
+    \end{tikzpicture}
+    \end{center}
+    The phase difference between the two waves,
+        at the point $P$ shown, is $\left(2\pi/\lambda\right)\left(l_2-l_1\right) + \epsilon$.
+    The quantity is:
+    \begin{choices}
+        \wrongchoice{the distance $S_1 S_2$}
+        \wrongchoice{the angle $S_1 PS_2$}
+        \wrongchoice{$\dfrac{\pi}{2}$}
+      \correctchoice{the phase difference between the two sources}
+        \wrongchoice{zero for transverse waves, $\pi$ for longitudinal waves}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch16-q52}
+    A wave on a stretched string is reflected from a fixed end P of the string. 
+    The phase difference, at $P$,
+        between the incident and reflected waves is:
+    \begin{choices}
+        \wrongchoice{zero}
+      \correctchoice{$\pi\,\si{\radian}$}
+        \wrongchoice{$\dfrac{\pi}{2}\,\si{\radian}$}
+        \wrongchoice{depends on the velocity of the wave}
+        \wrongchoice{depends on the frequency of the wave}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch16-q53}
+    The sinusoidal wave
+    \begin{equation*}
+        y\left(x,t\right) = y_m\sin\left(kx - \omega t\right)
+    \end{equation*}
+    is incident on the fixed end of a string at $x=L$. 
+    The reflected wave is given by:
+    \begin{choices}
+        \wrongchoice{$y_m \sin\left(kx + \omega t\right)$}
+        \wrongchoice{$-y_m\sin\left(kx + \omega t\right)$}
+        \wrongchoice{$y_m \sin\left(kx + \omega t - kL\right)$}
+      \correctchoice{$y_m \sin\left(kx + \omega t - 2kL\right)$}
+        \wrongchoice{$-y_m\sin\left(kx + \omega t + 2kL\right)$}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch16-q54}
+    A wave on a string is reflected from a fixed end. 
+    The reflected wave:
+    \begin{choices}
+        \wrongchoice{is in phase with the original wave at the end}
+      \correctchoice{is \ang{180} out of phase with the original wave at the end}
+        \wrongchoice{has a larger amplitude than the original wave}
+        \wrongchoice{has a larger speed than the original wave}
+        \wrongchoice{cannot be transverse}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch16-q55}
+    A standing wave:
+    \begin{choices}
+      \correctchoice{can be constructed from two similar waves traveling in opposite directions}
+        \wrongchoice{must be transverse}
+        \wrongchoice{must be longitudinal}
+        \wrongchoice{has motionless points that are closer than half a wavelength}
+        \wrongchoice{has a wave velocity that differs by a factor of two from what it would be for a traveling wave}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch16-q56}
+    Which of the following represents a standing wave?
+    \begin{choices}
+        %% NOTE: try formatting this better
+        \wrongchoice{$y = \left(\SI{6.0}{\milli\meter}\right)\sin\left[\left(\SI{3.0}{\per\meter}\right)x + \\
+                          \left(\SI{2.0}{\per\second}\right)t\right] -\left(\SI{6.0}{\milli\meter}\right) \cos\left[\left(\SI{3.0}{\per\meter} \right)x+\num{2.0}\right]$}
+      \correctchoice{$y = \left(\SI{6.0}{\milli\meter}\right)\cos\left[\left(\SI{3.0}{\per\meter}\right)x - \\
+                          \left(\SI{2.0}{\per\second}\right)t\right] +\left(\SI{6.0}{\milli\meter}\right) \cos\left[\left(\SI{2.0}{\per\second}\right)t+\left(\SI{3.0}{\per\meter}\right)x\right]$}
+        \wrongchoice{$y = \left(\SI{6.0}{\milli\meter}\right)\cos\left[\left(\SI{3.0}{\per\meter}\right)x - \\
+                          \left(\SI{2.0}{\per\second}\right)t\right] -\left(\SI{6.0}{\milli\meter}\right) \sin\left[\left(\SI{2.0}{\per\second}\right)t-\num{3.0}\right]$}
+        \wrongchoice{$y = \left(\SI{6.0}{\milli\meter}\right)\sin\left[\left(\SI{3.0}{\per\meter}\right)x - \\
+                          \left(\SI{2.0}{\per\second}\right)t\right] -\left(\SI{6.0}{\milli\meter}\right) \cos\left[\left(\SI{2.0}{\per\second}\right)t+\left(\SI{3.0}{\per\meter}\right)x\right]$}
+        \wrongchoice{$y = \left(\SI{6.0}{\milli\meter}\right)\sin\left[\left(\SI{3.0}{\per\meter}\right)x\right] + \\
+                          \left(\SI{6.0}{\milli\meter}\right)\cos\left[\left(\SI{2.0}{\per\second}\right)t\right]$}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch16-q57}
+    When a certain string is clamped at both ends,
+        the lowest four resonant frequencies are 50, 100, 150, and 200 Hz. 
+    When the string is also clamped at its midpoint,
+        the lowest four resonant frequencies are:
+    \begin{choices}
+        %% NOTE: format these
+        \wrongchoice{50, 100, 150, and 200 Hz}
+        \wrongchoice{50, 150, 250, and 300 Hz}
+      \correctchoice{100, 200, 300, and 400 Hz}
+        \wrongchoice{25, 50, 75, and 100 Hz}
+        \wrongchoice{75, 150, 225, and 300 Hz}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch16-q58}
+    When a certain string is clamped at both ends,
+        the lowest four resonant frequencies are measured to be 100, 150, 200, and 250 Hz. 
+    One of the resonant frequencies (below 200 Hz) is missing. 
+    What is it?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{25}{\hertz}}
+      \correctchoice{\SI{50}{\hertz}}
+        \wrongchoice{\SI{75}{\hertz}}
+        \wrongchoice{\SI{125}{\hertz}}
+        \wrongchoice{\SI{225}{\hertz}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch16-q59}
+    Two traveling waves $y_1 = A\sin\left[ k\left(x-vt\right)\right]$
+        and $y_2 = A\sin\left[k\left(x+vt\right)\right]$ are superposed on the same string. 
+    The distance between the adjacent nodes is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\dfrac{vt}{\pi}$}
+        \wrongchoice{$\dfrac{vt}{2\pi}$}
+        \wrongchoice{$\dfrac{\pi}{2k}$}
+      \correctchoice{$\dfrac{\pi}{k}$}
+        \wrongchoice{$\dfrac{2\pi}{k}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch16-q60}
+    If $\lambda$ is the wavelength of each of the component sinusoidal traveling waves that form a standing wave,
+        the distance between adjacent nodes in the standing wave is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\dfrac{\lambda}{4}$}
+      \correctchoice{$\dfrac{\lambda}{2}$}
+        \wrongchoice{$\dfrac{3\lambda}{4}$}
+        \wrongchoice{$\lambda$}
+        \wrongchoice{$2\lambda$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch16-q61}
+    A standing wave pattern is established in a string as shown. 
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE:
+    \end{tikzpicture}
+    \end{center}
+    The wavelength of one of the component traveling waves is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{0.25}{\meter}}
+        \wrongchoice{\SI{0.5}{\meter}}
+        \wrongchoice{\SI{1}{\meter}}
+        \wrongchoice{\SI{2}{\meter}}
+      \correctchoice{\SI{4}{\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch16-q62}
+    Standing waves are produced by the interference of two traveling sinusoidal waves,
+        each of frequency \SI{100}{\hertz}. 
+    The distance from the second node to the fifth node is \SI{60}{\centi\meter}. 
+    The wavelength of each of the two original waves is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{50}{\centi\meter}}
+      \correctchoice{\SI{40}{\centi\meter}}
+        \wrongchoice{\SI{30}{\centi\meter}}
+        \wrongchoice{\SI{20}{\centi\meter}}
+        \wrongchoice{\SI{15}{\centi\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch16-q63}
+    A string of length \SI{100}{\centi\meter} is held fixed at both ends and vibrates in a standing wave pattern.
+    The wavelengths of the constituent traveling waves \emph{cannot} be:
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{\SI{400}{\centi\meter}}
+        \wrongchoice{\SI{200}{\centi\meter}}
+        \wrongchoice{\SI{100}{\centi\meter}}
+        \wrongchoice{\SI{66.7}{\centi\meter}}
+        \wrongchoice{\SI{50}{\centi\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch16-q64}
+    A string of length $L$ is clamped at each end and vibrates in a standing wave pattern. 
+    The wavelengths of the constituent traveling waves \emph{cannot} be:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$L$}
+        \wrongchoice{$2L$}
+        \wrongchoice{$\dfrac{L}{2}$}
+        \wrongchoice{$\dfrac{2L}{3}$}
+      \correctchoice{$4L$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch16-q65}
+    Two sinusoidal waves, each of wavelength \SI{5}{\meter} and amplitude \SI{10}{\centi\meter},
+        travel in opposite directions on a \SI{20}{\meter} long stretched string that is clamped at each end. 
+    Excluding the nodes at the ends of the string,
+        how many nodes appear in the resulting standing wave?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\num{3}}
+        \wrongchoice{\num{4}}
+        \wrongchoice{\num{5}}
+      \correctchoice{\num{7}}
+        \wrongchoice{\num{8}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch16-q66}
+    A string, clamped at its ends, vibrates in three segments. 
+    The string is \SI{100}{\centi\meter} long. 
+    The wavelength is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{33.3}{\centi\meter}}
+      \correctchoice{\SI{66.7}{\centi\meter}}
+        \wrongchoice{\SI{150}{\centi\meter}}
+        \wrongchoice{\SI{300}{\centi\meter}}
+        \wrongchoice{need to know the frequency}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch16-q67}
+    A stretched string, clamped at its ends, vibrates in its fundamental frequency. 
+    To double the fundamental frequency,
+        one can change the string tension by a factor of:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$2$}
+      \correctchoice{$4$}
+        \wrongchoice{$\sqrt{2}$}
+        \wrongchoice{$\dfrac{1}{2}$}
+        \wrongchoice{$\dfrac{1}{\sqrt{2}}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch16-q68}
+    When a string is vibrating in a standing wave pattern the power transmitted across an antinode,
+    compared to the power transmitted across a node, is:
+    \begin{choices}
+        \wrongchoice{more}
+        \wrongchoice{less}
+      \correctchoice{the same (zero)}
+        \wrongchoice{the same (non-zero)}
+        \wrongchoice{sometimes more, sometimes less, and sometimes the same}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch16-q69}
+    A \SI{40}{\centi\meter} long string,
+        with one end clamped and the other free to move transversely,
+        is vibrating in its fundamental standing wave mode. 
+    The wavelength of the constituent traveling waves is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{10}{\centi\meter}}
+        \wrongchoice{\SI{20}{\centi\meter}}
+        \wrongchoice{\SI{40}{\centi\meter}}
+        \wrongchoice{\SI{80}{\centi\meter}}
+        \wrongchoice{\SI{160}{\centi\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch16-q70}
+    A \SI{30}{\centi\meter} long string,
+        with one end clamped and the other free to move transversely,
+        is vibrating in its second harmonic. 
+    The wavelength of the constituent traveling waves is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{10}{\centi\meter}}
+        \wrongchoice{\SI{30}{\centi\meter}}
+      \correctchoice{\SI{40}{\centi\meter}}
+        \wrongchoice{\SI{60}{\centi\meter}}
+        \wrongchoice{\SI{120}{\centi\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch16-q71}
+    A \SI{40}{\centi\meter} long string,
+        with one end clamped and the other free to move transversely,
+        is vibrating in its fundamental standing wave mode. 
+    If the wave speed is \SI{320}{\centi\meter\per\second} the frequency is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{32}{\hertz}}
+        \wrongchoice{\SI{16}{\hertz}}
+        \wrongchoice{\SI{8}{\hertz}}
+        \wrongchoice{\SI{4}{\hertz}}
+      \correctchoice{\SI{2}{\hertz}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+\endinput
+
+

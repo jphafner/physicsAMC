@@ -1,0 +1,166 @@
+
+
+%% AP Physics MC Questions Archive
+%%----------------------------------------
+
+
+%% Spring Constant
+%%----------------------------------------
+\element{ap}{
+\begin{question}{spring-constant-q01}
+    A mass of \SI{0.25}{\kilo\gram} is hung vertically from an ideal spring,
+        stretching it a distance of \SI{0.05}{\meter}.
+    The values of the spring constant for this spring is most nearly:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{5}{\newton\per\meter}}
+        \wrongchoice{\SI{20}{\newton\per\meter}}
+      \correctchoice{\SI{50}{\newton\per\meter}}
+        \wrongchoice{\SI{200}{\newton\per\meter}}
+        \wrongchoice{\SI{2000}{\newton\per\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{ap}{
+\begin{question}{spring-constant-q02}
+    After a block of mass $m$ is attached to a spring,
+        the spring is compressed to a distance $x_0$ from its equilibrium position.
+    The spring is released,
+        when it reaches the equilibrium position it detaches.
+    What is the speed of the block when it is released?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\sqrt{gx_0}$}
+        \wrongchoice{$\dfrac{kx_0}{mg}$}
+        \wrongchoice{$\dfrac{kx_0}{m}$}
+      \correctchoice{$x_0\sqrt{\dfrac{k}{m}}$}
+        \wrongchoice{$x_0\sqrt{\dfrac{m}{k}}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{ap}{
+\begin{question}{spring-constant-q03}
+    What is the spring constant of the spring shown in the picture below?
+    \begin{center}
+    \begin{tikzpicture}
+        \begin{scope}[xshift=-1.5cm]
+            %% Title
+            %\node[anchor=south] at (0.5,0.10cm) {Unstretched Spring};
+            \node[anchor=south,text width=5em,text centered] at (0.5,0.15cm) {Unstretched Spring};
+            %% Celiing
+            \draw (-0.5,0) --  (1.5,0);
+            \node[anchor=south,fill,pattern=north east lines,minimum width=2cm, minimum height=0.05cm] at (0.5,0) {};
+            %% Spring
+            \draw[thick,decoration={aspect=0.2,segment length=1mm,amplitude=2mm,coil},decorate] (0,0) -- (0,-1.5);
+            \draw[dashed]  (0,-1.5) -- ++(0:1cm);
+            %% Ruler
+            \draw[<->] (1,0) -- (1,-1.5) node[pos=0.5,anchor=center,fill=white] {\SI{0.50}{\meter}};
+        \end{scope}
+        \begin{scope}[xshift=+1.5cm]
+            %% Title
+            \node[anchor=south,text width=5em,text centered] at (0.5,0.15cm) {Stretched Spring};
+            %% Celiing
+            \draw (-0.5,0) --  (1.5,0);
+            \node[anchor=south,fill,pattern=north east lines,minimum width=2cm, minimum height=0.05cm] at (0.5,0) {};
+            %% Weight
+            \node[anchor=north,draw,minimum size=1cm] (M) at (0,-3) {\SI{20}{\newton}};
+            %% Spring
+            \draw[thick,decoration={aspect=0.2,segment length=2mm,amplitude=2mm,coil},decorate] (0,0) -- (0,-3);
+            \draw[dashed]  (0,-3) -- ++(0:1cm);
+            %% Ruler
+            \draw[<->] (1,0) -- (1,-3) node[pos=0.5,anchor=center,fill=white] {\SI{1.00}{\meter}};
+        \end{scope}
+    \end{tikzpicture}
+    \end{center}
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{\SI{40}{\newton\per\meter}}
+        \wrongchoice{\SI{20}{\newton\per\meter}}
+        \wrongchoice{\SI{10}{\newton\per\meter}}
+        \wrongchoice{\SI{0.5}{\newton\per\meter}}
+        \wrongchoice{\SI{0.025}{\newton\per\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{ap}{
+\begin{question}{spring-constant-q04}
+    A spring with a spring constant \SI{4000}{\newton\per\meter} is hung from a ceiling with a mass of \SI{10.0}{\kilo\gram} attached to its end.
+    In this configuration, the spring has a length $l_1$.
+    The mass is detached,
+        and the spring comes to rest with a length $l_2$.
+    The difference $l_1-l_2$ is most nearly:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{0.025}{\centi\meter}}
+        \wrongchoice{\SI{0.25}{\centi\meter}}
+        \wrongchoice{\SI{2.5}{\centi\meter}}
+      \correctchoice{\SI{25}{\centi\meter}}
+        \wrongchoice{\SI{250}{\centi\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{ap}{
+\begin{question}{spring-constant-q05}
+    A spring with length \SI{1.2}{\meter} is hung from the ceiling and is at rest.
+    A mass of \SI{0.5}{\kilo\gram} is hung from the spring,
+        and the spring comes to rest with a length of \SI{1.4}{\meter}.
+    The spring constant of the spring is most nearly:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{2.5}{\newton\per\meter}}
+        \wrongchoice{\SI{3.6}{\newton\per\meter}}
+      \correctchoice{\SI{25}{\newton\per\meter}}
+        \wrongchoice{\SI{36}{\newton\per\meter}}
+        \wrongchoice{\SI{250}{\newton\per\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{ap}{
+\begin{question}{spring-constant-q06}
+    When a block with a mass of \SI{4}{\kilo\gram} is hung from a spring,
+        the spring stretches \SI{12}{\centi\meter}.
+    If a mass of \SI{3}{\kilo\gram} is then added to the spring,
+        the spring will stretch an additional:
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{\SI{9}{\centi\meter}}
+        \wrongchoice{\SI{12}{\centi\meter}}
+        \wrongchoice{\SI{15}{\centi\meter}}
+        \wrongchoice{\SI{18}{\centi\meter}}
+        \wrongchoice{\SI{21}{\centi\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{ap}{
+\begin{question}{spring-constant-q07}
+    A ideal spring with natural length \SI{10}{\centi\meter} and spring constant \SI{100}{\newton\per\meter} is kept at its natural length as a \SI{2}{\kilo\gram} mass is hung from it.
+    When the spring is released,
+        how far will the mass fall before its velocity becomes zero?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{10}{\centi\meter}}
+        \wrongchoice{\SI{20}{\centi\meter}}
+      \correctchoice{\SI{40}{\centi\meter}}
+        \wrongchoice{\SI{80}{\centi\meter}}
+        \wrongchoice{\SI{100}{\centi\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+\endinput
+
+

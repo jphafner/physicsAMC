@@ -1,0 +1,209 @@
+
+%%--------------------------------------------------
+%% Holt: Multiple Choice Questions
+%%--------------------------------------------------
+
+
+%% Chapter 07: Circular Motion
+%%--------------------------------------------------
+
+
+%% Holt Multiple Choice Questions
+%%--------------------------------------------------
+\element{holt-mc}{
+\begin{question}{ch07-mc-Q01}
+    An object moves in a circle at a constat speed.
+    Which of the following is \emph{not} true of the object?
+    \begin{choices}
+        \wrongchoice{Its centripetal acceleration points toward the center of the circle}
+        \wrongchoice{Its tangential speed is constant}
+      \correctchoice{Its velocity is constant}
+        \wrongchoice{A centripetal force acts on the object}
+    \end{choices}
+\end{question}
+}
+
+\element{holt-mc}{
+\begin{question}{ch07-mc-Q02}
+    A car traveling at \SI{15}{\meter\per\second} on a flat surface turns in a circle with a radius of \SI{25}{\meter}.
+
+    What is the centripetal acceleration of the car?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{2.4e-2}{\meter\per\second\squared}}
+        \wrongchoice{\SI{0.60}{\meter\per\second\squared}}
+        \wrongchoice{\SI{9.0}{\meter\per\second\squared}}
+        \wrongchoice{zero}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{holt-mc}{
+\begin{question}{ch07-mc-Q03}
+    A car traveling at \SI{15}{\meter\per\second} on a flat surface turns in a circle with a radius of \SI{25}{\meter}.
+
+    What is the most direct cause of the car's centripetal acceleration?
+    \begin{choices}
+        \wrongchoice{The torque on the steering wheel}
+        \wrongchoice{The torque on the tires on the road}
+      \correctchoice{The force of friction between the tires and the road}
+        \wrongchoice{The normal force between the tires and the road}
+    \end{choices}
+\end{question}
+}
+
+\element{holt-mc}{
+\begin{question}{ch07-mc-Q04}
+    Earth ($m=\SI{5.7e24}{\kilo\gram}$) orbits the sun ($m=\SI{1.99e30}{\kilo\gram}$)
+        at a mean distance of \SI{1.50e11}{\meter}.
+    What is the gravitational force of the sun on Earth?
+    %% NOTE: this is solvable without G!
+    %($G = \SI{6.673e-11}{\newton\per\meter\squared\per\kilo\gram\squared}$)
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{5.29e32}{\newton}}
+        \wrongchoice{\SI{3.52e22}{\newton}}
+        \wrongchoice{\SI{5.90e-2}{\newton}}
+        \wrongchoice{\SI{1.77e-8}{\newton}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{holt-mc}{
+\begin{questionmult}{ch07-mc-Q05}
+    Which of the following is a correct interpretation of the expression
+    \begin{equation}
+        a_g = g = G\frac{m_E}{r^2}
+    \end{equation}
+    \begin{choices}
+      \correctchoice{Gravitational field strength changes with an object's distance from Earth.}
+      \correctchoice{Free-fall acceleration changes with an objects distance from Earth.}
+      \correctchoice{Free-fall acceleration is independent of the falling object's mass.}
+        %\wrongchoice{All of the provided are correct repsonses}
+    \end{choices}
+\end{questionmult}
+}
+
+\element{holt-mc}{
+\begin{question}{ch07-mc-Q06}
+    what data do you need to calculate the orbital speed of a satellite?
+    \begin{choices}
+        %% NOTE: consider question mult?
+        %% NOTE: can you derive some quantities from others?
+        \wrongchoice{mass of satellite, mass of planet, radius of orbit}
+        \wrongchoice{mass of satellite, radius of planet, area of orbit}
+        \wrongchoice{mass of satellite and radius of orbit only}
+        \wrongchoice{mass of planet and radius of orbit only}
+    \end{choices}
+\end{question}
+}
+
+\element{holt-mc}{
+\begin{question}{ch07-mc-Q07}
+    Which of the following choices correctly describes the orbital relationship between Earth and the sun?
+    \begin{choices}
+        \wrongchoice{The sun orbits Earth in a perfect circle}
+        \wrongchoice{Earth orbits the sun in a perfect circle}
+        \wrongchoice{The sun orbits Earth in an ellipse, with Earth at one focus.}
+      \correctchoice{Earth orbits the sun in an ellipse, with the sun at one focus.}
+    \end{choices}
+\end{question}
+}
+
+\element{holt-mc}{
+\begin{question}{ch07-mc-Q08}
+    %% NOTE: Provide description of picture
+    \begin{center}
+    \end{center}
+    Three forces acting on a wheel above have equal magnitudes.
+    Which force will produce the greatest torque on the wheel?
+    \begin{choices}
+        \wrongchoice{$\mathbf{F_1}$}
+        \wrongchoice{$\mathbf{F_2}$}
+        \wrongchoice{$\mathbf{F_3}$}
+        \wrongchoice{Each force will produce the same torque}
+    \end{choices}
+\end{question}
+}
+
+\element{holt-mc}{
+\begin{question}{ch07-mc-Q09}
+    %% NOTE: Provide description of picture
+    \begin{center}
+    \end{center}
+    If each force is \SI{6.0}{\newton},
+        the angle between $\mathbf{F_1}$ and $\mathbf{F_2}$ is \ang{60},
+        and the radius of the wheel is \SI{1.0}{\meter},
+        what is the resultant torque on the wheel?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{-18}{\newton\meter}}
+        \wrongchoice{\SI{-9.0}{\newton\meter}}
+        \wrongchoice{\SI{9.0}{\newton\meter}}
+        \wrongchoice{\SI{18}{\newton\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{holt-mc}{
+\begin{question}{ch07-mc-Q10}
+    A force of \SI{75}{\newton} is applied to a lever.
+    This force lifts a load weighing \SI{225}{\newton}.
+    What is the mechanical advantage of the lever?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\num{1/3}}
+      \correctchoice{\num{3}}
+        \wrongchoice{\num{150}}
+        \wrongchoice{\num{300}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{holt-mc}{
+\begin{question}{ch07-mc-Q11}
+    A pulley system has an efficiency of \num{87.5} percent.
+    How much work must you do to lift a desk weighing
+        \SI{1320}{\newton} to a height of \SI{1.50}{\meter}?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{1510}{\joule}}
+        \wrongchoice{\SI{1730}{\joule}}
+        \wrongchoice{\SI{1980}{\joule}}
+      \correctchoice{\SI{2260}{\joule}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{holt-mc}{
+\begin{question}{ch07-mc-Q12}
+    Whic of the following statements is correct?
+    \begin{choices}
+        \wrongchoice{Mass and weight both vary with location.}
+        \wrongchoice{Mass varies with location, but weight does not.}
+      \correctchoice{Weight varies with location, but mass does not.}
+        \wrongchoice{Neither mass nor weight varies with location.}
+    \end{choices}
+\end{question}
+}
+
+\element{holt-mc}{
+\begin{question}{ch07-mc-Q13}
+    Which astronomer discovered that planets travel in elliptical rather than circular orbits?
+    \begin{choices}
+      \correctchoice{Johannes Kepler}
+        \wrongchoice{Nicolaus Copernicus}
+        \wrongchoice{Tycho Brahe}
+        \wrongchoice{Claudius Ptolemy}
+    \end{choices}
+\end{question}
+}
+
+
+\endinput
+

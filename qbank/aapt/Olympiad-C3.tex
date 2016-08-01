@@ -1,0 +1,356 @@
+
+
+%% AAPT Physics Olympiad F=ma Questions
+%%----------------------------------------
+
+
+%% PhysicsOlympiad 2015
+%%----------------------------------------
+
+
+%% PhysicsOlympiad 2000
+%%----------------------------------------
+\element{aapt}{ %% Olympiad-C3
+\begin{question}{olympiad-2000-q09}
+    If an ideal Carnot heat engine with an efficiency of \SI{30}{\percent} absorbs heat from a reservoir at \SI{727}{\degreeCelsius},
+        what must be the exhaust temperature of the engine?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{509}{\degreeCelsius}}
+      \correctchoice{\SI{427}{\degreeCelsius}}
+        \wrongchoice{\SI{273}{\degreeCelsius}}
+        \wrongchoice{\SI{218}{\degreeCelsius}}
+        \wrongchoice{\SI{0}{\degreeCelsius}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% PhysicsOlympiad 1999
+%%----------------------------------------
+\element{aapt}{ %% Olympiad-C3
+\begin{question}{olympiad-1999-q17}
+    An ideal heat engine takes in heat energy at a high temperature and exhausts energy at a lower temperature.
+    If the amount of energy exhausted at the low temperature is 3 times the amount of work done by the heat engine,
+        what is its efficiency?
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{\num{0.25}}
+        \wrongchoice{\num{0.33}}
+        \wrongchoice{\num{0.67}}
+        \wrongchoice{\num{0.9}}
+        \wrongchoice{\num{1.33}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% PhysicsOlympiad 1997
+%%----------------------------------------
+\newcommand{\aaptOlympiadNinetySevenQSixteen}{
+\begin{tikzpicture}
+    \begin{semilogyaxis}[
+        clip=false,
+        axis y line=left,
+        axis x line=bottom,
+        axis line style={->},
+        xlabel={$V$},
+        xtick=\empty,
+        ylabel={$p$},
+        ytick=\empty,
+        y label style={
+            at={(current axis.above origin)},
+            anchor=east,
+            rotate=270,
+        },
+        xmin=0,xmax=10,
+        ymin=0.5,ymax=16,
+        width=0.8\columnwidth,
+        height=0.5\columnwidth,
+    ]
+    \node[anchor=south] at (axis cs:2,8) {1};
+    \node[anchor=west] at (axis cs:8,2) {2};
+    \node[anchor=west] at (axis cs:8,0.8) {3};
+    \addplot[line width=1pt,domain=2:8]{ 25/x^(1.66) };
+    \draw[thick,->]  (axis cs:5.1,1.69) -- (axis cs:5,1.74);
+    \addplot[line width=1pt,domain=2:8]{ 16/x };
+    \draw[thick,->] (axis cs:5,3.2) -- (axis cs:5.1,3.17);
+    \addplot[line width=1pt,domain=2:8] plot coordinates { (8,0.8) (8,2) };
+    \draw[thick,->] (axis cs:8,1.1) -- (axis cs:8,0.9);
+    \end{semilogyaxis}
+\end{tikzpicture}
+}
+
+\element{aapt}{ %% Olympiad-C3
+\begin{question}{olympiad-1997-q16}
+    Three processes compose a thermodynamic cycle shown in the accompanying pV diagram of an ideal gas.
+    \begin{center}
+        \aaptOlympiadNinetySevenQSixteen
+    \end{center}
+    Process $1\to 2$ takes place at constant temperature (\SI{300}{\kelvin}).
+    During this process \SI{60}{\joule} of heat enters the system.
+    Process $2\to 3$ takes place at constant volume.
+    During this process \SI{40}{\joule} of heat leaves the system.
+    Process $3\to 1$ is adiabatic.
+    $T_3$ is \SI{275}{\kelvin}.
+    %% start question
+    What is the change in internal energy of the system during process $3\to 1$?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{-40}{\joule}}
+        \wrongchoice{\SI{-20}{\joule}}
+        \wrongchoice{zero}
+        \wrongchoice{\SI{+20}{\joule}}
+      \correctchoice{\SI{+40}{\joule}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{aapt}{ %% Olympiad-C3
+\begin{question}{olympiad-1997-q17}
+    Three processes compose a thermodynamic cycle shown in the accompanying pV diagram of an ideal gas.
+    \begin{center}
+        \aaptOlympiadNinetySevenQSixteen
+    \end{center}
+    Process $1\to 2$ takes place at constant temperature (\SI{300}{\kelvin}).
+    During this process \SI{60}{\joule} of heat enters the system.
+    Process $2\to 3$ takes place at constant volume.
+    During this process \SI{40}{\joule} of heat leaves the system.
+    Process $3\to 1$ is adiabatic.
+    $T_3$ is \SI{275}{\kelvin}.
+    %% start question
+    %What is the change in entropy of the system described in Question \#16 during the process $3\to 1$?
+    What is the change in entropy of the system during the process $3\to 1$?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{+5.0}{\kelvin\per\joule}}
+        \wrongchoice{\SI{+0.20}{\joule\per\kelvin}}
+      \correctchoice{zero}
+        \wrongchoice{\SI{-1.6}{\joule\per\kelvin}}
+        \wrongchoice{\SI{-6.9}{\kelvin\per\joule}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% PhysicsOlympiad 1996
+%%----------------------------------------
+\element{aapt}{ %% Olympiad-C3
+\begin{question}{olympiad-1996-q17}
+    Which of the accompanying $pV$ diagrams best represents an adiabatic process (process where no heat enters or leaves the system)?
+    \begin{multicols}{2}
+    \begin{choices}
+        \AMCboxDimensions{down=-2.5em}
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=bottom,
+                    axis line style={->},
+                    xlabel={$V$},
+                    xtick=\empty,
+                    x label style={
+                        at={(current axis.right of origin)},
+                        anchor=west,
+                    },
+                    ylabel={$p$},
+                    ytick=\empty,
+                    y label style={
+                        at={(current axis.above origin)},
+                        anchor=east,
+                        rotate=270,
+                    },
+                    xmin=0,xmax=10,
+                    ymin=0,ymax=10,
+                    width=0.95\columnwidth,
+                ]
+                \addplot[line width=1pt,domain=2:8]{6};
+                \draw[thick,->] (axis cs:4,6) -- (axis cs:6,6);
+                \end{axis}
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=bottom,
+                    axis line style={->},
+                    xlabel={$V$},
+                    xtick=\empty,
+                    x label style={
+                        at={(current axis.right of origin)},
+                        anchor=west,
+                    },
+                    ylabel={$p$},
+                    ytick=\empty,
+                    y label style={
+                        at={(current axis.above origin)},
+                        anchor=east,
+                        rotate=270,
+                    },
+                    xmin=0,xmax=10,
+                    ymin=0,ymax=10,
+                    width=0.95\columnwidth,
+                ]
+                \addplot[line width=1pt,no marks] plot coordinates { (1,1) (9,9) };
+                \draw[thick,->] (axis cs:4,4) -- (axis cs:6,6);
+                \end{axis}
+            \end{tikzpicture}
+        }
+        %% ANS is C
+        \correctchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=bottom,
+                    axis line style={->},
+                    xlabel={$V$},
+                    xtick=\empty,
+                    x label style={
+                        at={(current axis.right of origin)},
+                        anchor=west,
+                    },
+                    ylabel={$p$},
+                    ytick=\empty,
+                    y label style={
+                        at={(current axis.above origin)},
+                        anchor=east,
+                        rotate=270,
+                    },
+                    xmin=0,xmax=10,
+                    ymin=0,ymax=10,
+                    width=0.95\columnwidth,
+                ]
+                \addplot[line width=1pt,domain=1:8]{ 22/x^(1.66) };
+                \draw[thick,->] (axis cs:5,1.52) -- (axis cs:5.2,1.425);
+                \end{axis}
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=bottom,
+                    axis line style={->},
+                    xlabel={$V$},
+                    xtick=\empty,
+                    x label style={
+                        at={(current axis.right of origin)},
+                        anchor=west,
+                    },
+                    ylabel={$p$},
+                    ytick=\empty,
+                    y label style={
+                        at={(current axis.above origin)},
+                        anchor=east,
+                        rotate=270,
+                    },
+                    xmin=0,xmax=10,
+                    ymin=0,ymax=10,
+                    width=0.95\columnwidth,
+                ]
+                \addplot[line width=1pt,domain=1:8]{ x^(1.66)/3.5 };
+                \draw[thick,->] (axis cs:5,4.13) -- (axis cs:5.2,4.41);
+                \end{axis}
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=bottom,
+                    axis line style={->},
+                    xlabel={$V$},
+                    xtick=\empty,
+                    x label style={
+                        at={(current axis.right of origin)},
+                        anchor=west,
+                    },
+                    ylabel={$p$},
+                    ytick=\empty,
+                    y label style={
+                        at={(current axis.above origin)},
+                        anchor=east,
+                        rotate=270,
+                    },
+                    xmin=0,xmax=10,
+                    ymin=0,ymax=10,
+                    width=0.95\columnwidth,
+                ]
+                \addplot[line width=1pt,no marks] plot coordinates { (5,1) (5,9) };
+                \draw[thick,->] (axis cs:5,4) -- (axis cs:5,6);
+                \end{axis}
+            \end{tikzpicture}
+        }
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% PhysicsOlympiad 1995
+%%----------------------------------------
+\element{aapt}{ %% Olympiad-C3
+\begin{question}{olympiad-1995-q17}
+    If the heat is added at constant volume,
+        \SI{6300}{\joule} of heat are required to raise the temperature of an ideal gas by \SI{150}{\kelvin}.
+    If instead, the heat is added at constant pressure,
+        \SI{8800}{\joule} are needed for the same temperature change.
+    When the temperature of the gas changes by \SI{150}{\kelvin},
+        the internal energy of the gas changes by:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{2500}{\joule}}
+      \correctchoice{\SI{6300}{\joule}}
+        \wrongchoice{\SI{8800}{\joule}}
+        \wrongchoice{\SI{11 300}{\joule}}
+        \wrongchoice{\SI{15 100}{\joule}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% PhysicsOlympiad 1994
+%%----------------------------------------
+\element{aapt}{ %% Olympiad-C3
+\begin{question}{olympiad-1994-q17}
+    A Carnot cycle takes in \SI{1000}{\joule} of heat at a high temperature of \SI{400}{\kelvin}.
+    How much heat is expelled at the cooler temperature of \SI{300}{\kelvin}?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{zero}
+        \wrongchoice{\SI{250}{\joule}}
+        \wrongchoice{\SI{500}{\joule}}
+      \correctchoice{\SI{750}{\joule}}
+        \wrongchoice{\SI{1000}{\joule}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{aapt}{ %% Olympiad-C3
+\begin{question}{olympiad-1994-q18}
+    An ideal gas is expanded at constant pressure from initial volume $V_i$ and temperature $T_i$ to final volume $V_f$ and temperature $T_f$.
+    The gas has molar heat capacity $C_P$ at constant pressure.
+    The amount of work done by $n$ moles of the gas during the process can be expressed:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{zero}
+        \wrongchoice{$nRT\ln\left(\dfrac{V_f}{V_i}\right)$}
+        \wrongchoice{$C_P\left(T_f-T_i\right)$}
+        \wrongchoice{$nR\left(V_f-V_i\right)$}
+      \correctchoice{$nR\left(T_f-T_i\right)$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+\endinput
+
+

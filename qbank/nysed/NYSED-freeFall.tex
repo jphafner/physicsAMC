@@ -1,0 +1,1314 @@
+
+%% Free Fall Questions used on the
+%% NYSED Physics Regents Examination
+%%--------------------------------------------------
+
+%% this section contains 33 problems
+
+
+%% Section June2016
+%%--------------------
+\element{nysed}{
+\begin{question}{June2016-Q31}
+    A ball is hit straight up with an initial speed of \SI{28}{\meter\per\second}.
+    What is the speed of the ball \SI{2.2}{\second} after it is hit? 
+    [Neglect friction.]
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{4.3}{\meter\per\second}}
+      \correctchoice{\SI{6.4}{\meter\per\second}}
+        \wrongchoice{\SI{22}{\meter\per\second}}
+        \wrongchoice{\SI{28}{\meter\per\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{nysed}{
+\begin{question}{June2016-Q37}
+    Which graph represents the relationship between the speed of a freely falling object and the time of fall of the object near Earth’s surface?
+    \begin{multicols}{2}
+    \begin{choices}
+        \AMCboxDimensions{down=-1.5em}
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=bottom,
+                    axis line style={->},
+                    xlabel={time},
+                    xtick=\empty,
+                    ylabel={speed},
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=0,ymax=11,
+                    width=0.95\columnwidth,
+                    very thin,
+                ]
+                \addplot[line width=1pt,domain=0:10]{8};
+                \end{axis}
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=bottom,
+                    axis line style={->},
+                    xlabel={time},
+                    xtick=\empty,
+                    ylabel={speed},
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=0,ymax=11,
+                    width=0.95\columnwidth,
+                    very thin,
+                ]
+                \addplot[line width=1pt,domain=0:10]{10/x};
+                \end{axis}
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=bottom,
+                    axis line style={->},
+                    xlabel={time},
+                    xtick=\empty,
+                    ylabel={speed},
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=0,ymax=11,
+                    width=0.95\columnwidth,
+                    very thin,
+                ]
+                \addplot[line width=1pt,domain=0:10]{0.1*x*x};
+                \end{axis}
+            \end{tikzpicture}
+        }
+        %% ANS is 4
+        \correctchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=bottom,
+                    axis line style={->},
+                    xlabel={time},
+                    xtick=\empty,
+                    ylabel={speed},
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=0,ymax=11,
+                    width=0.95\columnwidth,
+                    very thin,
+                ]
+                \addplot[line width=1pt,domain=0:10]{x};
+                \end{axis}
+            \end{tikzpicture}
+        }
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+
+%% Section June2015
+%%--------------------
+\element{nysed}{
+\begin{question}{June2015-Q02}
+    A \SI{3.00}{\kilo\gram} mass is thrown vertically upward with an initial speed of \SI{9.80}{\meter\per\second}.
+    What is the maximum height this object will reach?
+    [Neglect friction.]
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{1.00}{\meter}}
+      \correctchoice{\SI{4.90}{\meter}}
+        \wrongchoice{\SI{9.80}{\meter}}
+        \wrongchoice{\SI{19.6}{\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{nysed}{
+\begin{question}{June2015-Q22}
+    Which diagram best represents the position of a ball,
+        at equal time intervals, as it falls freely from rest near Earth's surface?
+    \begin{multicols}{4}
+    \begin{choices}
+        \AMCboxDimensions{down=-3cm}
+        \wrongchoice{
+            \begin{tikzpicture}
+                \draw[dashed,white!80!black] (-1em,-0.2) rectangle (1em,6.2);
+                \foreach \x in {0,15,...,60} \fill (0,\x mm) circle (2pt);
+                %% ground
+                \draw (-1em,0) -- (1em,0);
+                \node[pattern=north east lines,anchor=north,minimum width=2em] at (0,0) {};
+            \end{tikzpicture}
+        }
+        \correctchoice{
+            \begin{tikzpicture}
+                \draw[dashed,white!80!black] (-1em,-0.2) rectangle (1em,6.2);
+                \foreach \x in {0,1,...,4} \fill (0,{6-0.375*\x*\x}) circle (2pt);
+                %% ground
+                \draw (-1em,0) -- (1em,0);
+                \node[pattern=north east lines,anchor=north,minimum width=2em] at (0,0) {};
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \draw[dashed,white!80!black] (-1em,-0.2) rectangle (1em,6.2);
+                \foreach \x in {0,1,...,4} \fill (0,{0.375*\x*\x}) circle (2pt);
+                %% ground
+                \draw (-1em,0) -- (1em,0);
+                \node[pattern=north east lines,anchor=north,minimum width=2em] at (0,0) {};
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \draw[dashed,white!80!black] (-1em,-0.2) rectangle (1em,6.2);
+                \foreach \x in {0,1,...,5} \fill (0,{6*rnd}) circle (2pt);
+                %% ground
+                \draw (-1em,0) -- (1em,0);
+                \node[pattern=north east lines,anchor=north,minimum width=2em] at (0,0) {};
+            \end{tikzpicture}
+        }
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% Section June2014
+%%--------------------
+\element{nysed}{
+\begin{question}{June2014-Q04}
+    What is the time required for an object starting from rest to fall freely \SI{500}{\meter} near the Earth's surface?
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{\SI{10.1}{\second}}
+        \wrongchoice{\SI{7.14}{\second}}
+        \wrongchoice{\SI{51.0}{\second}}
+        \wrongchoice{\SI{25.5}{\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% Section June2010
+%%--------------------
+\element{nysed}{
+\begin{question}{June2010-Q11}
+    A ball is thrown vertically upward with an initial velocity of \SI{29.4}{\meter\per\second}.
+    What is the maximum height reached by the ball?
+    [Neglect friction.]
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{14.7}{\meter}}
+        \wrongchoice{\SI{29.4}{\meter}}
+      \correctchoice{\SI{44.1}{\meter}}
+        \wrongchoice{\SI{88.1}{\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{nysed}{
+\begin{question}{June2010-Q42}
+    A student throws a baseball vertically upward and then catches it.
+    If vertically upward is considered to be the positive direction,
+        which graph best represents the relationship between velocity and time for the baseball?
+    [Neglect friction.]
+    \begin{multicols}{2}
+    \begin{choices}
+        \AMCboxDimensions{down=-1.5em}
+        \correctchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=middle,
+                    axis line style={->},
+                    xlabel={time},
+                    xtick=\empty,
+                    ylabel={velocity},
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=-5,ymax=6,
+                    width=0.95\columnwidth,
+                    very thin,
+                ]
+                \addplot[line width=1pt,domain=0:10]{5-x};
+                \end{axis}
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=middle,
+                    axis line style={->},
+                    xlabel={time},
+                    xtick=\empty,
+                    x label style={anchor=north east},
+                    ylabel={velocity},
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=-5,ymax=6,
+                    width=0.95\columnwidth,
+                    very thin,
+                ]
+                \addplot[line width=1pt,domain=0:5]{x};
+                \addplot[line width=1pt,domain=5:10]{10-x};
+                \end{axis}
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=middle,
+                    axis line style={->},
+                    xlabel={time},
+                    xtick=\empty,
+                    x label style={anchor=north east},
+                    ylabel={velocity},
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=-5,ymax=6,
+                    width=0.95\columnwidth,
+                    very thin,
+                ]
+                \addplot[line width=1pt,domain=0:10]{-0.20*x*(x-10)};
+                \end{axis}
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=middle,
+                    axis line style={->},
+                    xlabel={time},
+                    xtick=\empty,
+                    x label style={anchor=north east},
+                    ylabel={velocity},
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=-5,ymax=6,
+                    width=0.95\columnwidth,
+                    very thin,
+                ]
+                \addplot[line width=1pt,domain=0:5]{5-x};
+                \addplot[line width=1pt,domain=5:10]{-5+x};
+                \end{axis}
+            \end{tikzpicture}
+        }
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{nysed}{
+\begin{question}{June2010-Q43}
+    A \SI{0.50}{\kilo\gram} sphere, starting from rest, falls freely \SI{22}{\meter} in \SI{3.0}{\second} near the surface of a planet.
+    Compared to the acceleration due to gravity near Earth's surface,
+        the acceleration due to gravity near the surface of the planet is approximately:
+    \begin{choices}
+        \wrongchoice{the same}
+        \wrongchoice{twice as great}
+      \correctchoice{one-half as great}
+        \wrongchoice{four times as great}
+    \end{choices}
+\end{question}
+}
+
+
+%% Section Jan2009
+%%--------------------
+\element{nysed}{
+\begin{question}{Jan2009-Q05}
+    A baseball dropped from the roof of a tall building takes \SI{3.1}{\second} to hit the ground.
+    How tall is the building?
+    [Neglect friction.]
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{15}{\meter}}
+        \wrongchoice{\SI{30}{\meter}}
+      \correctchoice{\SI{47}{\meter}}
+        \wrongchoice{\SI{94}{\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% Section June2008
+%%--------------------
+\element{nysed}{
+\begin{question}{June2008-Q05}
+    A rock falls from rest a vertical distance of \SI{0.72}{\meter} to the surface of a planet in \SI{0.63}{\second}.
+    The magnitude of the acceleration due to gravity on the planet is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{1.1}{\meter\per\second\squared}}
+        \wrongchoice{\SI{2.3}{\meter\per\second\squared}}
+      \correctchoice{\SI{3.6}{\meter\per\second\squared}}
+        \wrongchoice{\SI{9.8}{\meter\per\second\squared}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% Section Jan2008
+%%--------------------
+\element{nysed}{
+\begin{question}{Jan2008-Q03}
+    A ball is thrown straight downward with a speed of \SI{0.50}{\meter\per\second} from a height of \SI{4.0}{\meter}.
+    What is the speed of the ball \SI{0.70}{\second} after it is released?
+    [Neglect friction.]
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{\SI{7.4}{\meter\per\second}}
+        \wrongchoice{\SI{0.50}{\meter\per\second}}
+        \wrongchoice{\SI{9.8}{\meter\per\second}}
+        \wrongchoice{\SI{10}{\meter\per\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% Section June2007
+%%--------------------
+\element{nysed}{
+\begin{question}{June2007-Q41}
+    Which graph best represents the relationship between the velocity of an object thrown straight upward from Earth's surface and the time that elapses while it is in the air?
+    [Neglect friction.]
+    \begin{multicols}{2}
+    \begin{choices}
+        \AMCboxDimensions{down=-2.5em}
+        \correctchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=middle,
+                    axis line style={->},
+                    xlabel={time},
+                    xtick=\empty,
+                    ylabel={velocity},
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=-5.5,ymax=5.5,
+                    width=\columnwidth,
+                    very thin,
+                ]
+                \addplot[line width=1pt,domain=0:10]{5-x};
+                \end{axis}
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=bottom,
+                    axis line style={->},
+                    xlabel={time},
+                    xtick=\empty,
+                    ylabel={velocity},
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=0,ymax=11,
+                    width=\columnwidth,
+                    very thin,
+                ]
+                \addplot[line width=1pt,domain=0:10]{8};
+                \end{axis}
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=bottom,
+                    axis line style={->},
+                    xlabel={time},
+                    xtick=\empty,
+                    ylabel={velocity},
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=0,ymax=11,
+                    width=\columnwidth,
+                    very thin,
+                ]
+                \addplot[line width=1pt,domain=0:10]{5/x};
+                \end{axis}
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=bottom,
+                    axis line style={->},
+                    xlabel={time},
+                    xtick=\empty,
+                    ylabel={velocity},
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=0,ymax=11,
+                    width=\columnwidth,
+                    very thin,
+                ]
+                \addplot[line width=1pt,domain=0:10]{0.1 *x *x};
+                \end{axis}
+            \end{tikzpicture}
+        }
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% Section Jan2007
+%%--------------------
+\element{nysed}{
+\begin{question}{Jan2007-Q04}
+    What is the speed of a \SI{2.5}{\kilo\gram} mass after it has fallen freely from rest through a distance of \SI{12}{\meter}?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{4.8}{\meter\per\second}}
+      \correctchoice{\SI{15}{\meter\per\second}}
+        \wrongchoice{\SI{30}{\meter\per\second}}
+        \wrongchoice{\SI{43}{\meter\per\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{nysed}{
+\begin{question}{Jan2007-Q37}
+    Which graph best represents the relationship between the acceleration of an object falling freely near the surface of Earth and the time that it falls?
+    \begin{multicols}{2}
+    \begin{choices}
+        \AMCboxDimensions{down=-2.5em}
+        \correctchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=bottom,
+                    axis line style={->},
+                    xlabel={time},
+                    xtick=\empty,
+                    ylabel={acceleration},
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=0,ymax=11,
+                    width=\columnwidth,
+                    very thin,
+                ]
+                \addplot[line width=1pt,domain=0:10]{9.8};
+                \end{axis}
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=middle,
+                    axis line style={->},
+                    xlabel={time},
+                    xtick=\empty,
+                    ylabel={acceleration},
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=-5.5,ymax=5.5,
+                    width=\columnwidth,
+                    very thin,
+                ]
+                \addplot[line width=1pt,domain=0:10]{5-x};
+                \end{axis}
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=bottom,
+                    axis line style={->},
+                    xlabel={time},
+                    xtick=\empty,
+                    ylabel={acceleration},
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=0,ymax=11,
+                    width=\columnwidth,
+                    very thin,
+                ]
+                \addplot[line width=1pt,domain=0:10]{5/x};
+                \end{axis}
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=bottom,
+                    axis line style={->},
+                    xlabel={time},
+                    xtick=\empty,
+                    ylabel={acceleration},
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=0,ymax=11,
+                    width=\columnwidth,
+                    very thin,
+                ]
+                \addplot[line width=1pt,domain=0:10]{0.1* x *x};
+                \end{axis}
+            \end{tikzpicture}
+        }
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% Section June2006
+%%--------------------
+\element{nysed}{
+\begin{question}{June2006-Q01}
+    A rock falls from rest off a high cliff.
+    How far has the rock fallen when its speed is \SI{39.2}{\meter\per\second}?
+    [Neglect friction.]
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{\SI{78.3}{\meter}}
+        \wrongchoice{\SI{19.6}{\meter}}
+        \wrongchoice{\SI{44.1}{\meter}}
+        \wrongchoice{\SI{123}{\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{nysed}{
+\begin{question}{Jan2006-Q02}
+    A \SI{1.0}{\kilo\gram} ball is dropped from the roof of a building \SI{40}{\meter} tall.
+    What is the approximate time of fall?
+    [Neglect air resistance.]
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{\SI{2.9}{\second}}
+        \wrongchoice{\SI{2.0}{\second}}
+        \wrongchoice{\SI{4.1}{\second}}
+        \wrongchoice{\SI{8.2}{\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{nysed}{
+\begin{question}{Jan2006-Q20}
+    A \SI{0.25}{\kilo\gram} baseball is thrown upward with a speed of \SI{30.}{\meter\per\second}.
+    Neglecting friction, the maximum height reached by the baseball is approximately:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{15}{\meter}}
+      \correctchoice{\SI{46}{\meter}}
+        \wrongchoice{\SI{74}{\meter}}
+        \wrongchoice{\SI{92}{\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% Section June2005
+%%--------------------
+\element{nysed}{
+\begin{question}{June2005-Q02}
+    An object is dropped from rest and falls freely \SI{20}{\meter} to Earth.
+    When is the speed of the object \SI{9.8}{\meter\per\second}?
+    \begin{choices}
+        \wrongchoice{during the entire first second of its fall}
+      \correctchoice{at the end of its first second of fall}
+        \wrongchoice{during its entire time of fall}
+        \wrongchoice{after it has fallen \SI{9.8}{\meter}}
+    \end{choices}
+\end{question}
+}
+
+\element{nysed}{
+\begin{question}{June2005-Q10}
+    An astronaut drops a hammer from \SI{2.0}{\meter} above the surface of the Moon.
+    If the acceleration due to gravity on the Moon is \SI{1.62}{\meter\per\second},
+        how long will it take for the hammer to fall to the Moon's surface?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{0.62}{\second}}
+        \wrongchoice{\SI{1.2}{\second}}
+      \correctchoice{\SI{1.6}{\second}}
+        \wrongchoice{\SI{2.5}{\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% Section Jan2005
+%%--------------------
+\element{nysed}{
+\begin{question}{Jan2005-Q01}
+    A ball dropped from rest falls freely until it hits the ground with a speed of \SI{20}{\meter\per\second}.
+    The time during which the ball is in free fall is approximately:
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{\SI{2}{\second}}
+        \wrongchoice{\SI{1}{\second}}
+        \wrongchoice{\SI{10}{\second}}
+        \wrongchoice{\SI{0.5}{\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% NOTE: NYSED-estimation??
+\element{nysed}{
+\begin{question}{Jan2005-Q38}
+    An egg is dropped from a third-story window.
+    The distance the egg falls from the window to the ground is closest to:
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{\SI{e1}{\meter}}
+        \wrongchoice{\SI{e2}{\meter}}
+        \wrongchoice{\SI{e3}{\meter}}
+        \wrongchoice{\SI[retain-zero-exponent]{e0}{\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% Section June2004
+%%--------------------
+\element{nysed}{
+\begin{question}{June2004-Q07}
+    A basketball player jumped straight up to grab a rebound.
+    If she was in the air for \SI{0.8}{\second},
+        how high did she jump?
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{\SI{0.78}{\meter}}
+        \wrongchoice{\SI{0.50}{\meter}}
+        \wrongchoice{\SI{1.2}{\meter}}
+        \wrongchoice{\SI{1.3}{\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% Section Jan2004
+%%--------------------
+\element{nysed}{
+\begin{question}{Jan2004-Q04}
+    A ball is thrown vertically upward reaches a maximum height of \SI{30}{\meter} above the surface of Earth.
+    At its maximum height, the speed of the ball is:
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{\SI{0.0}{\meter\per\second}}
+        \wrongchoice{\SI{3.1}{\meter\per\second}}
+        \wrongchoice{\SI{9.8}{\meter\per\second}}
+        \wrongchoice{\SI{24}{\meter\per\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% Section Jan2003
+%%--------------------
+\element{nysed}{
+\begin{question}{Jan2003-Q03}
+    How far will a brick starting from rest fall freely in \SI{3.0}{\second}?
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{\SI{44}{\meter}}
+        \wrongchoice{\SI{15}{\meter}}
+        \wrongchoice{\SI{29}{\meter}}
+        \wrongchoice{\SI{88}{\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% Section Jan2002
+%%--------------------
+\element{nysed}{
+\begin{question}{Jan2002-Q05}
+    An object falls freely from rest near the surface of Earth.
+    What is the speed of the object after having fallen a distance at \SI{4.9}{\meter}?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{4.90}{\meter\per\second}}
+      \correctchoice{\SI{9.80}{\meter\per\second}}
+        \wrongchoice{\SI{24.0}{\meter\per\second}}
+        \wrongchoice{\SI{96.1}{\meter\per\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% Section Jan2001
+%%--------------------
+\element{nysed}{
+\begin{question}{Jan2001-Q04}
+    Approximately how far will an object near Earth's surface fall in \SI{3.0}{\second}?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{88}{\meter}}
+      \correctchoice{\SI{44}{\meter}}
+        \wrongchoice{\SI{29}{\meter}}
+        \wrongchoice{\SI{9.8}{\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% Section June2000
+%%--------------------
+\element{nysed}{
+\begin{question}{June2000-Q07}
+    A ball is thrown straight up with a speed of \SI{12}{\meter\per\second} near the surface of Earth.
+    What is the maximum height reached by the ball?
+    [Neglect air friction.]
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{15}{\meter}}
+      \correctchoice{\SI{7.3}{\meter}}
+        \wrongchoice{\SI{1.2}{\meter}}
+        \wrongchoice{\SI{0.37}{\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% Section June1998
+%%--------------------
+\element{nysed}{
+\begin{question}{June1998-Q03}
+    Which two graphs best represent the motion of an object falling freely from rest near the Earth's surface?
+    \begin{choices}
+        \AMCboxDimensions{down=-2.5em}
+        \correctchoice{
+            \begin{tikzpicture}
+                \begin{groupplot}[
+                        axis y line=left,
+                        axis x line=bottom,
+                        axis line style={->},
+                        group style={group size=2 by 1},
+                        xtick=\empty,
+                        ytick=\empty,
+                        width=0.5\columnwidth,
+                    ]
+                    \nextgroupplot[
+                        xlabel={time},
+                        ylabel={speed},
+                        xmin=0,xmax=11,
+                        ymin=0,ymax=11,
+                    ] \addplot[line width=1pt,domain=0:10] {x};
+                    \nextgroupplot[
+                        xlabel={time},
+                        ylabel={acceleration},
+                        xmin=0,xmax=11,
+                        ymin=0,ymax=11,
+                    ] \addplot[line width=1pt,domain=0:10] {8};
+                \end{groupplot}
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{groupplot}[
+                        axis y line=left,
+                        axis x line=bottom,
+                        axis line style={->},
+                        group style={group size=2 by 1},
+                        xtick=\empty,
+                        ytick=\empty,
+                        width=0.5\columnwidth,
+                    ]
+                    \nextgroupplot[
+                        xlabel={time},
+                        ylabel={speed},
+                        xmin=0,xmax=11,
+                        ymin=0,ymax=11,
+                    ] \addplot[line width=1pt,domain=0:10] {x};
+                    \nextgroupplot[
+                        xlabel={time},
+                        ylabel={acceleration},
+                        xmin=0,xmax=11,
+                        ymin=0,ymax=11,
+                    ] \addplot[line width=1pt,domain=0:10] {x};
+                \end{groupplot}
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{groupplot}[
+                        axis y line=left,
+                        axis x line=bottom,
+                        axis line style={->},
+                        group style={group size=2 by 1},
+                        xtick=\empty,
+                        ytick=\empty,
+                        width=0.5\columnwidth,
+                    ]
+                    \nextgroupplot[
+                        xlabel={time},
+                        ylabel={speed},
+                        xmin=0,xmax=11,
+                        ymin=0,ymax=11,
+                    ] \addplot[line width=1pt,domain=0:10] {x};
+                    \nextgroupplot[
+                        xlabel={time},
+                        ylabel={acceleration},
+                        xmin=0,xmax=11,
+                        ymin=0,ymax=11,
+                    ] \addplot[line width=1pt,domain=0:10] {10-x};
+                \end{groupplot}
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{groupplot}[
+                        axis y line=left,
+                        axis x line=bottom,
+                        axis line style={->},
+                        group style={group size=2 by 1},
+                        xtick=\empty,
+                        ytick=\empty,
+                        width=0.5\columnwidth,
+                    ]
+                    \nextgroupplot[
+                        xlabel={time},
+                        ylabel={speed},
+                        xmin=0,xmax=11,
+                        ymin=0,ymax=11,
+                    ] \addplot[line width=1pt,domain=0:10] {8};
+                    \nextgroupplot[
+                        xlabel={time},
+                        ylabel={acceleration},
+                        xmin=0,xmax=11,
+                        ymin=0,ymax=11,
+                    ] \addplot[line width=1pt,domain=0:10] {x};
+                \end{groupplot}
+            \end{tikzpicture}
+        }
+    \end{choices}
+\end{question}
+}
+
+
+%% Section June1997
+%%--------------------
+\element{nysed}{
+\begin{question}{June1997-Q04}
+    A stone is dropped from a bridge \SI{45}{\meter} above the surface of a river.
+    Approximately how many seconds does the stone take to reach the water's surface?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{1.0}{\second}}
+        \wrongchoice{\SI{10}{\second}}
+      \correctchoice{\SI{3.0}{\second}}
+        \wrongchoice{\SI{22}{\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% Section June1995
+%%--------------------
+\element{nysed}{
+\begin{question}{June1995-Q03}
+    Which graph best represents the motion of an object falling from rest near the Earth's surface?
+    [Neglect friction.]
+    \begin{multicols}{2}
+    \begin{choices}
+        \AMCboxDimensions{down=-2.5em}
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=bottom,
+                    axis line style={->},
+                    xlabel={time},
+                    xtick=\empty,
+                    ylabel={distance},
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=0,ymax=11,
+                    width=\columnwidth,
+                    very thin,
+                ]
+                \addplot[line width=1pt,domain=0:10]{10-x};
+                \end{axis}
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=bottom,
+                    axis line style={->},
+                    xlabel={time},
+                    xtick=\empty,
+                    ylabel={distance},
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=0,ymax=11,
+                    width=\columnwidth,
+                    very thin,
+                ]
+                \addplot[line width=1pt,domain=0:10]{x};
+                \end{axis}
+            \end{tikzpicture}
+        }
+        \correctchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=bottom,
+                    axis line style={->},
+                    xlabel={time},
+                    xtick=\empty,
+                    ylabel={speed},
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=0,ymax=11,
+                    width=\columnwidth,
+                    very thin,
+                ]
+                \addplot[line width=1pt,domain=0:10]{x};
+                \end{axis}
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=bottom,
+                    axis line style={->},
+                    xlabel={time},
+                    xtick=\empty,
+                    ylabel={speed},
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=0,ymax=11,
+                    width=\columnwidth,
+                    very thin,
+                ]
+                \addplot[line width=1pt,domain=0:10]{10-x};
+                \end{axis}
+            \end{tikzpicture}
+        }
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{nysed}{
+\begin{question}{June1995-Q04}
+    An object falls freely from rest near the surface of the Earth.
+    What is the speed of the object when it has fallen \SI{4.9}{\meter} from its rest position?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{4.9}{\meter\per\second}}
+      \correctchoice{\SI{9.8}{\meter\per\second}}
+        \wrongchoice{\SI{24}{\meter\per\second}}
+        \wrongchoice{\SI{96}{\meter\per\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% Section June1994
+%%--------------------
+\element{nysed}{
+\begin{question}{June1994-Q06}
+    A rock falls freely from rest near the surface of a planet where the acceleration due to gravity is \SI{4.0}{\meter\per\second\squared}.
+    What is the speed of this rock after it falls \SI{32}{\meter}?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{8.0}{\meter\per\second}}
+      \correctchoice{\SI{16}{\meter\per\second}}
+        \wrongchoice{\SI{25}{\meter\per\second}}
+        \wrongchoice{\SI{32}{\meter\per\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% Section June1990
+%%--------------------
+\element{nysed}{
+\begin{question}{June1990-Q03}
+    A ball dropped from a bridge takes \SI{3.0}{\second} to reach the water below.
+    How far is the bridge above the water?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{15}{\meter}}
+        \wrongchoice{\SI{29}{\meter}}
+      \correctchoice{\SI{44}{\meter}}
+        \wrongchoice{\SI{88}{\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{nysed}{
+\begin{question}{June1990-Q09}
+    Which graph best represents the motion of a freely falling body near the Earth's surface?
+    \begin{multicols}{2}
+    \begin{choices}
+        \AMCboxDimensions{down=-2.5em}
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=bottom,
+                    axis line style={->},
+                    xlabel={time},
+                    xtick=\empty,
+                    ylabel={speed},
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=0,ymax=11,
+                    width=\columnwidth,
+                    very thin,
+                ]
+                \addplot[line width=1pt,domain=0:10]{8};
+                \end{axis}
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=bottom,
+                    axis line style={->},
+                    xlabel={time},
+                    xtick=\empty,
+                    ylabel={speed},
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=0,ymax=11,
+                    width=\columnwidth,
+                    very thin,
+                ]
+                \addplot[line width=1pt,domain=0:10]{10/x};
+                \end{axis}
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=bottom,
+                    axis line style={->},
+                    xlabel={time},
+                    xtick=\empty,
+                    ylabel={speed},
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=0,ymax=11,
+                    width=\columnwidth,
+                    very thin,
+                ]
+                \addplot[line width=1pt,domain=0:10]{0.1*x*x};
+                \end{axis}
+            \end{tikzpicture}
+        }
+        %% ANS is 4
+        \correctchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=bottom,
+                    axis line style={->},
+                    xlabel={time},
+                    xtick=\empty,
+                    ylabel={speed},
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=0,ymax=11,
+                    width=\columnwidth,
+                    very thin,
+                ]
+                \addplot[line width=1pt,domain=0:10]{x};
+                \end{axis}
+            \end{tikzpicture}
+        }
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% Section June1989
+%%--------------------
+\element{nysed}{
+\begin{question}{June1989-Q10}
+    An object near the surface of planet $X$ falls freely from rest and reaches a speed of \SI{12.0}{\meter\per\second} after it has fallen \SI{14.4}{\meter}.
+    What is the acceleration due to gravity on planet $X$?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{2.50}{\meter\per\second\squared}}
+      \correctchoice{\SI{5.00}{\meter\per\second\squared}}
+        \wrongchoice{\SI{9.80}{\meter\per\second\squared}}
+        \wrongchoice{\SI{10.0}{\meter\per\second\squared}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% Section June1986
+%%--------------------
+\element{nysed}{
+\begin{question}{June1986-Q05}
+    An object starts from rest and falls freely.
+    What is the velocity of the object at the end of \SI{3.00}{\second}?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{9.81}{\meter\per\second}}
+        \wrongchoice{\SI{19.6}{\meter\per\second}}
+      \correctchoice{\SI{29.4}{\meter\per\second}}
+        \wrongchoice{\SI{88.2}{\meter\per\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% Section June1985
+%%--------------------
+\element{nysed}{
+\begin{question}{June1985-Q03}
+    Which graph best represents the motion of an object sliding down a frictionless incline plane?
+    \begin{multicols}{2}
+    \begin{choices}
+        \AMCboxDimensions{down=-2.5em}
+        %% ANS is 1
+        \correctchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=bottom,
+                    axis line style={->},
+                    xlabel={time},
+                    xtick=\empty,
+                    ylabel={speed},
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=0,ymax=11,
+                    width=\columnwidth,
+                    very thin,
+                ]
+                \addplot[line width=1pt,domain=0:10]{x};
+                \end{axis}
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=bottom,
+                    axis line style={->},
+                    xlabel={time},
+                    xtick=\empty,
+                    ylabel={speed},
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=0,ymax=11,
+                    width=\columnwidth,
+                    very thin,
+                ]
+                \addplot[line width=1pt,domain=0:10]{7};
+                \end{axis}
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=bottom,
+                    axis line style={->},
+                    xlabel={time},
+                    xtick=\empty,
+                    ylabel={speed},
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=0,ymax=11,
+                    width=\columnwidth,
+                    very thin,
+                ]
+                \addplot[line width=1pt,domain=0:10]{10-x};
+                \end{axis}
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=bottom,
+                    axis line style={->},
+                    xlabel={time},
+                    xtick=\empty,
+                    ylabel={speed},
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=0,ymax=11,
+                    width=\columnwidth,
+                    very thin,
+                ]
+                \addplot[line width=1pt,domain=0:10]{sqrt(10)*sqrt(x)};
+                \end{axis}
+            \end{tikzpicture}
+        }
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{nysed}{
+\begin{question}{June1985-Q04}
+    An object is allowed to fall freely near the surface of a planet.
+    The object falls \SI{54}{\meter} in the first \SI{3.0}{\second} after it is released.
+    The acceleration due to gravity on that planet is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{6.0}{\meter\per\second\squared}}
+      \correctchoice{\SI{12}{\meter\per\second\squared}}
+        \wrongchoice{\SI{27}{\meter\per\second\squared}}
+        \wrongchoice{\SI{108}{\meter\per\second\squared}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+\endinput
+
+

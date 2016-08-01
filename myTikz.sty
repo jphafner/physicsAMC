@@ -1,0 +1,107 @@
+%%
+%% Copyright (C) 2014 Jeffrey P. Hafner <jphafner@buffalo.edu>
+%%  
+%%  This program is free software: you can redistribute it and/or modify
+%%  it under the terms of the GNU General Public License as published by
+%%  the Free Software Foundation, either version 3 of the License, or
+%%  (at your option) any later version.
+%%  
+%%  This program is distributed in the hope that it will be useful,
+%%  but WITHOUT ANY WARRANTY; without even the implied warranty of
+%%  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+%%  GNU General Public License for more details.
+%%  
+%%  You should have received a copy of the GNU General Public License
+%%  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+%%
+
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{myTikz}
+
+%%---------------------------------------
+%% Tikz Customization
+%%---------------------------------------
+\RequirePackage{tikz}
+
+\usetikzlibrary{arrows,calc,scopes,shapes}
+\usetikzlibrary{positioning,decorations.markings}
+\usetikzlibrary{shapes.geometric}
+
+%% For use in REF
+\tikzset{
+  every overlay node/.style={
+    draw=black,fill=white,rounded corners,anchor=north west,
+  },
+}
+% Usage:
+% \tikzoverlay at (-1cm,-5cm) {content};
+% or
+% \tikzoverlay[text width=5cm] at (-1cm,-5cm) {content};
+\def\tikzoverlay{
+  \tikz[baseline,overlay]\node[every overlay node]
+}
+
+
+\newcounter{leafs}
+
+\tikzset{%
+leaf/.style={%
+    /utils/exec=\setcounter{leafs}{0},
+    decorate,decoration={
+        markings,
+        mark=at position 0 with {
+            \draw [bend left=35,fill=black] (0,0)
+                to ++(-0.3,0.02*\sign)
+                to ++(0.3,-0.02*\sign);},
+        mark=between positions 0.02 and 0.5 step 0.05 with {
+            \draw [bend right=35,fill=black] (0.01*\sign,0.01*\sign)
+                to ++(-0.2-\mult,0.3*\sign+\mult*\sign)
+                to ++(0.2+\mult,-0.3*\sign-\mult*\sign);
+            \stepcounter{leafs};
+        },
+        mark=between positions 0.54 and 0.99 step 0.04875 with {
+            \addtocounter{leafs}{-1}
+            \draw [bend left=35,fill=black] (-0.01*\sign,0.01*\sign)
+                to ++(0.2+\mult,0.3*\sign+\mult*\sign)
+                to ++(-0.2-\mult,-0.3*\sign-\mult*\sign);
+        },
+    }
+}}
+
+%% Define Laurels
+%%---------------------------------------
+\newcommand{\leaves}[1]{%
+    \setlength{\lineskip}{6pt plus 6pt minus 0pt}
+    \lineskiplimit=\baselineskip
+    \def\mult{0.15*\theleafs}
+    \begin{tikzpicture}
+        \node [align=center] (box) {#1};
+        \node [below left=of box] (ll) {};
+        \node [above left=of box] (ul) {};
+        \node [below right=of box] (lr) {};
+        \node [above right=of box] (ur) {};
+        \def\sign{-1}
+        \draw [bend right=45, fill=black,postaction=leaf]
+            (ul) to (ll) to ++(0.1,0.1) to [bend left=45] (ul);
+        \def\sign{1}
+        \draw [bend left=45, fill=black,postaction=leaf]
+            (ur) to (lr) to ++ (-0.1,0.1) to [bend right=45] (ur);
+    \end{tikzpicture}
+}
+
+
+%%---------------------------------------
+%% ShapePar Customization
+%%---------------------------------------
+\RequirePackage{shapepar}
+
+\newcommand\circlenodetext[3]{\node [draw, shape=circle, text width=0cm, inner sep=5mm] at (#1,#2) {\shapepar{\circleshape} #3\par};}
+\newcommand\squarenodetext[3]{\node [draw, regular polygon, regular polygon sides=4, text width=0cm, inner sep=0mm] at (#1,#2) {\shapepar{\squareshape} #3\par};}
+\newcommand\diamondnodetext[3]{\node [draw, shape=diamond, text width=0cm, inner sep=5mm] at (#1,#2) {\shapepar{\diamondshape} #3\par};}
+
+\endinput
+%%------------------------------------------------
+%% End of myTikz Style File
+%%------------------------------------------------
+

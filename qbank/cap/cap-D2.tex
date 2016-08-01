@@ -1,0 +1,215 @@
+
+
+%% CAP High School Prize Examination
+%%----------------------------------------
+
+
+%% this section contains 40 problems
+
+
+%% CAP Exam 2015
+%%----------------------------------------
+\element{cap}{ %% CAP-D2
+\begin{question}{CAP-A-2015-q02}
+    Consider a circuit made of a wire with uniform resistance in a shape of a circle as shown in the picture. 
+    The circle is connected diagonally from point $A$ to point $B$ with the same type of wire. 
+    \begin{center}
+    \begin{circuitikz}[scale=0.95]
+        %% left branch
+        \draw[thick] (4,0) to [short,i=$i_0$] (2,0);
+        %% center circle
+        \draw[thick] (0,0) circle (2cm);
+        %% wire AB
+        \draw[thick] (240:2) -- (60:2);
+        \node[anchor=north east] at  (240:2) {$A$};
+        \node[anchor=south west] at  (60:2) {$B$};
+        \draw[dashed] (-1,0) -- (1,0);
+        \draw[<->] (0.66,0) arc (0:60:0.66) node[pos=0.5,anchor=west] {$\theta$};
+        %% right branch
+        \draw[thick] (-2,0) to [short,i=$i_0$] (-4,0);
+    \end{circuitikz}
+    \end{center}
+    If the current passing through the circuit is $i_0$,
+        what is the current passing through the wire $AB$ as a function of angle $\theta$?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{zero}
+        \wrongchoice{$\dfrac{\theta}{\pi-\theta} i_0$}
+        \wrongchoice{$\dfrac{\pi-2\theta}{\pi+2} i_0$}
+      \correctchoice{$\dfrac{\pi-2\theta}{\pi+4} i_0$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{cap}{ %% cap-D2
+\begin{questionmult}{CAP-A-2014-q01}
+    Consider the electric power dissipation due to resistance in a circuit. 
+    Which of the following changes leave the dissipated electric power unchanged?
+    \begin{choices}
+      \correctchoice{Doubling the voltage and reducing the current by a factor of two.}
+      \correctchoice{Doubling the voltage and increasing the resistance by a factor of four.}
+      \correctchoice{Doubling the current and reducing the resistance by a factor of four.}
+        %\wrongchoice{None of the above.}
+        %\wrongchoice{Both (b) and (c) are correct.}
+        %\correctchoice{(a),(b) and (c) are correct.}
+    \end{choices}
+\end{questionmult}
+}
+
+
+%% CAP Exam 2014
+%%----------------------------------------
+\element{cap}{ %% cap-D2
+\begin{question}{CAP-A-2014-q08}
+    In the circuit shown below,
+        the resistance $R_1$ is increased. 
+    \begin{center}
+    \ctikzset{bipoles/length=1.00cm}
+    \begin{circuitikz}
+        \draw (0,0) to [battery] (4,0) to (4,2) to [R,l=$R_2$] (2,2) to [R,l=$R_1$] (0,2) to (0,0);
+    \end{circuitikz}
+    \end{center}
+    What happens to the magnitude of the potential difference across $R_1$?
+    \begin{choices}
+      \correctchoice{It increases.}
+        \wrongchoice{It decreases.}
+        \wrongchoice{It remains the same.}
+    \end{choices}
+\end{question}
+}
+
+\element{cap}{ %% cap-D2
+\begin{question}{CAP-A-2014-q18}
+    A circuit contains nothing but a battery of voltage $V$ wired to three resistors of resistance $R$. 
+    Which of the following cannot be the power dissipated in the circuit
+        (assuming negligible resistance for the wires)?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{$P = \dfrac{V^2}{3 R}$}
+        \wrongchoice{$P = \dfrac{3 V^2}{R}$}
+        \wrongchoice{$P = \dfrac{3 V^2}{2 R}$}
+        \wrongchoice{$P = \dfrac{2 V^2}{3 R}$}
+      \correctchoice{All of the provided are possible}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{cap}{ %% cap-D2
+\begin{question}{CAP-A-2014-q23}
+    The three electric heaters in the following circuit all have the same resistance. 
+    \begin{center}
+    \ctikzset{bipoles/length=1.00cm}
+    \begin{circuitikz}[]
+        \draw (0,0) to [battery] (4,0) to (4,1) to [R,l=$C$] (2,1) to [R,l=$B$] (0,1) to (0,0);
+        \draw (4,1) to (4,2) to [R,l=$A$] (0,2) to (0,1);
+    \end{circuitikz}
+    \end{center}
+    Given that the total heat emitted by a heater is proportional to the power dissipated,
+        the total heat produced by $B$ and $C$ together,
+        compared with the heat produced in $A$, is:
+    \begin{choices}
+        \wrongchoice{A quarter as much.}
+      \correctchoice{Half as much.}
+        \wrongchoice{The same.}
+        \wrongchoice{Twice as much.}
+        \wrongchoice{Four times as much.}
+    \end{choices}
+\end{question}
+}
+
+
+%% CAP Exam 2012
+%%----------------------------------------
+\element{cap}{ %% cap-D2
+\begin{question}{CAP-A-2012-q05}
+    Three batteries are placed in series. 
+    Each battery has an internal resistance $r$. 
+    If one of the batteries is placed the wrong way around as shown in the picture,
+    \begin{center}
+    \ctikzset{bipoles/length=1.00cm}
+    \begin{circuitikz}[scale=1.1]
+        %% nodes A and B
+        \draw[fill] (-3,0) circle (2pt);
+        \draw[fill] (+3,0) circle (2pt);
+        %% Circuit
+        \draw (-1,0) to [battery,v=$ $] (-3,0);
+        \draw (-1,0) to [battery,v=$ $] (1,0) to [battery,v=$ $] (3,0);
+    \end{circuitikz}
+    \end{center}
+        what will be the total resistance of the three cells now?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\dfrac{r}{3}$}
+        \wrongchoice{$\dfrac{r}{2}$}
+        \wrongchoice{$r$}
+        \wrongchoice{$2r$}
+      \correctchoice{$3r$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% CAP Exam 2011
+%%----------------------------------------
+\element{cap}{ %% cap-D2
+\begin{question}{CAP-A-2011-q23}
+    Rank in order, from brightest to dimmest,
+        the identical bulbs $A$ to $D$.
+    \begin{center}
+    \ctikzset{bipoles/length=1.00cm}
+    \begin{circuitikz}[yscale=0.8]
+        \draw (4,0) to [battery] (0,0) to (0,2) to [R,l=$A$] (2,2) to [R,l=$B$] (4,2) to (4,4) to (4,0);
+        \draw (0,2) to (0,4) to [R,l=$C$] (4,4) to (4,2);
+        \draw (0,4) to (0,6) to [R,l=$D$] (4,6) to (4,4);
+    \end{circuitikz}
+    \end{center}
+    \begin{choices}
+        \wrongchoice{$A = B = C = D$}
+        \wrongchoice{$A = B > C = D$}
+        \wrongchoice{$A > C > B > D$}
+        \wrongchoice{$A > C = D > B$}
+      \correctchoice{$C = D > B = A$}
+    \end{choices}
+\end{question}
+}
+
+
+%% CAP Exam 2009
+%%----------------------------------------
+\element{cap}{ %% cap-D2
+\begin{question}{CAP-A-2009-q04}
+    In the two circuits shown below,
+        the batteries are identical and maintain constant voltage.
+    The light bulbs $A$, $B$, $C$ and $D$, are identical and have resistance $R$.
+    \begin{center}
+    \ctikzset{bipoles/length=0.75cm}
+    \begin{circuitikz}
+        %% Left
+        \begin{scope}[xshift=-1.5cm,xscale=0.8]
+            \draw (0,0) to [battery] (0,3) to (2,3) to [R,l=$A$] (2,1.5) to [R,l=$B$] (2,0) to (0,0);
+        \end{scope}
+        %% Right
+        \begin{scope}[xshift=+1.5cm,xscale=0.8]
+            \draw (0,0) to [battery] (0,3) to (2,3) to [R,l=$C$] (2,0) to (0,0);
+            \draw (2,3) to (4,3) to [R,l=$D$] (4,0) to (2,0);
+        \end{scope}
+    \end{circuitikz}
+    \end{center}
+    Assume that the bulbs are brighter when there is more current flowing through them.
+    Which of the following relationships correctly describe the brightness of the bulbs?
+    \begin{choices}
+        \wrongchoice{$A = B > C = D$}
+      \correctchoice{$C = D > A = B$}
+        \wrongchoice{$A = B = C = D$}
+        \wrongchoice{$A = C > B = D$}
+    \end{choices}
+\end{question}
+}
+
+
+\endinput
+
+

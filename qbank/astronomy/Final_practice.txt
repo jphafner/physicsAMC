@@ -1,0 +1,378 @@
+Part I:  Multiple Choice Questions (135 points total).
+         There are 45 multiple choice questions worth 3 points each.
+         Choose the best answer and record it on the scan sheet.
+
+1.   What prevents a white dwarf from collapsing to a black hole? 
+        A. The highly compressed electrons exert degeneracy pressure. 
+        B. Fission of complex elements releases heat. 
+        C. Fusion of complex elements generates heat. 
+        D. The highly compressed neutrons exert degeneracy pressure. 
+
+2.   In order from the hottest to the coolest stars, the order of the stellar 
+     spectral sequence is 
+        A. MKGFABO 
+        B. ABFGKMO 
+        C. OBAFGKM 
+        D. OBFGAMK 
+
+3.   Modern cosmology supposes that the Universe came from a "big bang" event 
+     about 13 billion years ago. Evidence for this is 
+        A. the uniformity of the abundance of hydrogen and helium. 
+        B. the cosmic background radiation. 
+        C. the Hubble expansion. 
+        D. all of these answers. 
+
+4.   The proton proton chain 
+        A. produces chains of protons which are then broken apart to produce 
+           the Sun's energy. 
+        B. is a three step process which converts some mass to energy as 
+           helium nuclei are formed. 
+        C. is the runaway reaction that produces the fission of iron during a 
+           supernova explosion. 
+        D. adds protons together until a massive carbon nucleus is produced 
+           at the core of the Sun. 
+
+5.   Even if a "wormhole" could be constructed for interstellar travel, it 
+     would be dangerous to use because 
+        A. Objects might spontaneously fly out of it. 
+        B. Worms are unpleasant. 
+        C. Tidal forces would crush ships entering it. 
+        D. There would be no way back from the other side. 
+
+6.   Hubble's Law enables astronomers to estimate the distance to a galaxy if 
+     they can determine the galaxy's 
+        A. velocity of recession. 
+        B. mass. 
+        C. spectral type. 
+        D. temperature. 
+
+
+
+
+
+
+
+7.   Many things that we use today, such as automobiles, are made from iron. 
+     What was the original source of the iron mined from Earth? 
+        A. the original Big Bang creation event. 
+        B. blobs of liquid metal ejected from the Sun. 
+        C. the core of an exploding supernova. 
+        D. mass lost from red giant stars. 
+
+8.   Evidence that the Universe contains much unobserved dark matter is the 
+        A. excessive amounts of gas found in spiral galaxies. 
+        B. powerful radio emission from the centers of spirals. 
+        C. flat rotation curves of spiral galaxies. 
+        D. excessive amount of dark dust in spiral galaxies. 
+
+9.   Which of the following is NOT one of Kepler's Three Laws? 
+        A. planets sweep out equal areas in equal times. 
+        B. the square of the period of a planet's orbit equals the cube of 
+           its semi-major axis. 
+        C. the shapes of planetary orbits are ellipses. 
+        D. objects of different masses fall at the same rate. 
+
+10.  The age of a star cluster can be deduced from 
+        A. the turn-off point of stars on its main sequence. 
+        B. the number of stars it contains. 
+        C. its radial velocity. 
+        D. its location in the Milky Way galaxy. 
+
+11.  If the average density of the Universe were greater than the critical 
+     density, the Universe would 
+        A. continue to contract forever. 
+        B. eventually stop expanding and then contract. 
+        C. continue to expand forever. 
+        D. eventually stop contracting and begin expansion. 
+
+12.  Hubble classified galaxies by their appearance. Which of the following 
+     types of galaxies do NOT fall on Hubble's tuning fork diagram? 
+        A. Peculiar galaxies. 
+        B. Spiral galaxies. 
+        C. Elliptical galaxies. 
+        D. Barred spiral galaxies. 
+
+13.  The phases of the Moon are caused by 
+        A. the rotation of the Earth. 
+        B. the highly elliptical orbit of the Moon. 
+        C. our differing viewing angle of the illuminated half of the Moon. 
+        D. the Earth's shadow cast on the Moon as the Earth moves in between 
+           the Sun and the Moon. 
+
+14.  Most of the helium in the Universe is believed to have been produced in 
+        A. red giants. 
+        B. the Big Bang. 
+        C. supernovae. 
+        D. main sequence stars. 
+
+
+15.  In about 5 billion years, the sun will become 
+        A. a supernova. 
+        B. a black hole. 
+        C. a red giant. 
+        D. a neutron star. 
+
+16.  When neutron degeneracy fails in a high-mass star, it becomes a 
+        A. white dwarf. 
+        B. black hole. 
+        C. pulsar. 
+        D. neutron star. 
+
+17.  What is the Chandrasekhar limit? 
+        A. The smallest mass a star can have and still burn hydrogen. 
+        B. The size of a black hole. 
+        C. The distance from the center of a galaxy at which Population I 
+           stars turn to Population II stars. 
+        D. The maximum possible mass of a white dwarf. 
+
+18.  The measurements of radial motions of astronomical objects using the 
+     Doppler effect have been instrumental in 
+        A. the discovery that our Universe is expanding. 
+        B. illustrating the need for dark matter in galaxies. 
+        C. discovering planets around other stars. 
+        D. All of these answers. 
+
+19.  The hypothesis that pulsars were spinning white dwarfs was excluded 
+     because 
+        A. pulsars spin too fast. 
+        B. white dwarfs have broad absorption lines. 
+        C. white dwarfs emit X-rays. 
+        D. pulsars always have red giant companions. 
+
+20.  For main sequence stars, the general rule is: the higher the surface 
+     temperature, the 
+        A. less luminous are the stars. 
+        B. more numerous are the stars. 
+        C. greater the masses of the stars. 
+        D. more common are binary stars. 
+
+21.  In which part of the Milky Way are Population I stars like the sun most 
+     likely to be found? 
+        A. bulge. 
+        B. nucleus. 
+        C. halo. 
+        D. disk. 
+
+22.  The oldest star clusters are 
+        A. globular clusters. 
+        B. galactic clusters. 
+        C. open clusters. 
+        D. the Pleiades. 
+
+
+23.  The Sun derives its energy from 
+        A. chemical reactions that convert hydrogen and oxygen into carbon, 
+           accompanied by the release of neutrinos. 
+        B. the fusion of hydrogen into helium. 
+        C. the conversion of energy into mass. 
+        D. a steady gravitational contraction of its core. 
+
+24.  The visible light spectrum of a typical star like our Sun shows 
+        A. bright emission lines 
+        B. shows all of the other answers depending on the season on Earth 
+        C. dark absorption lines 
+        D. no spectral lines at all 
+
+25.  Interstellar dust between Earth and a star causes the star's light to 
+     appear 
+        A. dimmer and bluer. 
+        B. brighter and bluer. 
+        C. brighter and redder. 
+        D. dimmer and redder. 
+
+26.  What is the Solar Nebula? 
+        A. Another name for the Sun's outer atmosphere. 
+        B. The disk of gas from which the Sun and planets formed. 
+        C. Gas ejected from the Sun which fills the inner Solar System. 
+        D. A cloud of gas around the outer edges of the Solar System. 
+
+27.  Most stars are composed of 
+        A. about 1/4 hydrogen and 3/4 helium. 
+        B. mostly iron in their core. 
+        C. about 3/4 hydrogen and 1/4 helium. 
+        D. equal parts hydrogen and helium. 
+
+28.  The assumption that matter is evenly distributed across the large scale 
+     of the universe is 
+        A. Hubble's law. 
+        B. the Cosmological Principle. 
+        C. the Tully-Fisher relation. 
+        D. cosmological redshift. 
+
+29.  The phase of the moon today is 
+        A. waxing crescent. 
+        B. waning gibbous. 
+        C. waxing gibbous. 
+        D. waning crescent. 
+
+30.  A Type I supernova occurs when 
+        A. an accreting white dwarf exceeds the Chandrasekhar limit. 
+        B. a low mass star reaches the end of its life. 
+        C. a massive star has burnt the last of its nuclear fuel. 
+        D. two neutron stars collide. 
+
+
+
+
+31.  A solar eclipse is caused by 
+        A. the Moon moving directly between the Sun and Earth. 
+        B. the Moon making its closest approach to the Earth. 
+        C. the Earth moving directly between the Sun and Moon. 
+        D. the planet Venus entering its crescent phase. 
+
+32.  Cosmological redshift is the result of the 
+        A. expansion of the universe. 
+        B. supermassive black holes. 
+        C. galaxies speeding away from us. 
+        D. Tully-Fisher relation. 
+
+33.  The ecliptic plane is 
+        A. the plane in which the comets orbit the Sun. 
+        B. the plane in which the planets orbit the Sun. 
+        C. the plane in which the Moon orbits the Earth. 
+        D. the plane in which the satellite Dactyl orbits the asteroid Ida. 
+
+34.  Which planet can never be seen on the meridian at midnight? 
+        A. Jupiter 
+        B. Mercury 
+        C. Saturn 
+        D. Mars 
+
+35.  Why is the cosmic background radiation so cool? 
+        A. interstellar dust grains absorbs and cools it. 
+        B. we are moving through it so fast it just looks cool. 
+        C. the expansion of the Universe has lengthened its wavelength. 
+        D. it is emitted by cool stars. 
+
+36.  Galileo found that the Ptolemaic system can not explain 
+        A. lunar phases. 
+        B. the retrograde motions of the planets. 
+        C. his observations of parallax. 
+        D. his observation of the phases of the planet Venus. 
+
+37.  The main sequence is primarily a sequence in stellar 
+        A. size. 
+        B. age. 
+        C. mass. 
+        D. composition. 
+
+38.  Compared to its neighboring planets, Mercury, Venus, and Mars, the 
+     surface of the Earth is relatively young. This youthful appearance 
+     results from 
+        A. tectonic activity still shaping the surface of the Earth. 
+        B. the Earth is furthest from the Sun. 
+        C. the fact that few major impacts ever occur on the Earth. 
+        D. the Earth having the largest Moon of all of these planets. 
+
+
+
+
+
+39.  How can astronomers determine whether the unseen companion in an X-ray 
+     emitting binary star system is a black hole or a neutron star? 
+        A. Black holes show up as a black dot and neutron stars show up as a 
+           pulsar. 
+        B. Any binary system having an unseen companion must contain a black 
+           hole. 
+        C. If the mass of the unseen companion exceeds three solar masses, 
+           it must be a black hole. 
+        D. Only neutron stars can emit X-rays; black holes emit nothing. 
+
+40.  In the "Great Debate" between Curtis and Shapley, evidence that the sun 
+     is not near the center of the Milky Way was provided by the observation 
+     that 
+        A. cepheids had been seen in other galaxies. 
+        B. dust reddens star light. 
+        C. most globular clusters are on one side of the sky. 
+        D. spiral nebulae could be seen to rotate. 
+
+41.  The pulses seen from a pulsar are caused by 
+        A. gobs of hot gas from an accretion disk falling rhythmically onto 
+           the star's surface. 
+        B. the star's rapid rotation sweeping beams of radiation across the 
+           viewer's line of sight. 
+        C. a dark companion periodically eclipsing the bright ``pulsar' 
+           itself. 
+        D. the star's radius expanding and contracting as it burns iron in 
+           its core. 
+
+42.  The cosmic micorwave background radiation comes from 
+        A. quasars. 
+        B. the solar nebula. 
+        C. the Big Bang. 
+        D. radio galaxies. 
+
+43.  Star counting in the disk of the Milky Way galaxy cannot be used to 
+     locate the center because 
+        A. the stars do not extend all the way to the center. 
+        B. interstellar dust obscures all but the nearest stars. 
+        C. the stars are not uniformly distributed in the disk. 
+        D. there are too many stars to be counted. 
+
+44.  The terrestrial planets are rocky because 
+        A. the Sun converted all the hydrogen and helium in the inner Solar 
+           System into iron and nickel. 
+        B. the Sun's gravity drew primarily heavy elements into the inner 
+           part of the early Solar System. 
+        C. Once planetesimals formed, the rocky ones drifted inward and the 
+           icy ones moved outward in the Solar System. 
+        D. Only rocky material was able to condense in the hot inner parts 
+           of the early solar nebula. 
+
+
+
+
+45.  If an alien astronomer in a distant galaxy looks at the galaxies it can 
+     see, it will observe that 
+        A. half of the galaxies are moving away and half of them are moving 
+           toward it. 
+        B. other galaxies are stationary. 
+        C. other galaxies are moving away from it. 
+        D. other galaxies are moving toward it. 
+
+
+   1. A.
+   2. C.
+   3. D.
+   4. B.
+   5. C.
+   6. A.
+   7. C.
+   8. C.
+   9. D.
+  10. A.
+  11. B.
+  12. A.
+  13. C.
+  14. B.
+  15. C.
+  16. B.
+  17. D.
+  18. D.
+  19. A.
+  20. C.
+  21. D.
+  22. A.
+  23. B.
+  24. C.
+  25. D.
+  26. B.
+  27. C.
+  28. B.
+  29. D.
+  30. A.
+  31. A.
+  32. A.
+  33. B.
+  34. B.
+  35. C.
+  36. D.
+  37. C.
+  38. A.
+  39. C.
+  40. C.
+  41. B.
+  42. C.
+  43. B.
+  44. D.
+  45. C.

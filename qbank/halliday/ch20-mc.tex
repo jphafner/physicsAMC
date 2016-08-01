@@ -1,0 +1,892 @@
+
+%%--------------------------------------------------
+%% Halliday: Fundamentals of Physics
+%%--------------------------------------------------
+
+
+%% Chapter 20: Entropy and the
+%%      second law of thermodynamics
+%%--------------------------------------------------
+
+
+%% Learning Objectives
+%%--------------------------------------------------
+
+%% 20.01: Identify the second law of thermodynamics: If a process occurs in a closed system, the entropy of the system increases for irreversible processes and remains constant for reversible processes; it never decreases.
+%% 20.02: Identify that entropy is a state function (the value for a particular state of the system does not depend on how that state is reached).
+%% 20.03: Calculate the change in entropy for a process by integrating the inverse of the temperature (in kelvins) with respect to the heat $Q$ transferred during the process.
+%% 20.04: For a phase change with a constant temperature process, apply the relationship between the entropy change $\Delta S$, the total transferred heat $Q$, and the temperature $T$ (in kelvins).
+%% 20.05: For a temperature change $\Delta T$ that is small relative to the temperature $T$, apply the relationship between the entropy change $\Delta S$, the transferred heat $Q$, and the average temperature $T_{avg}$ (in kelvins).
+%% 20.06: For an ideal gas, apply the relationship between the entropy change $\Delta S$ and the initial and final values of the pressure and volume.
+%% 20.07: Identify that if a process is an irreversible one, the integration for the entropy change must be done for a reversible process that takes the system between the same initial and final states as the irreversible process.
+%% 20.08: For stretched rubber, relate the elastic force to the rate at which the rubber's entropy changes with the change in the stretching distance.
+
+
+%% Halliday Multiple Choice Questions
+%%--------------------------------------------------
+\element{halliday-mc}{
+\begin{question}{halliday-ch20-q01}
+    In a reversible process the system:
+    \begin{choices}
+      \correctchoice{is always close to equilibrium states}
+        \wrongchoice{is close to equilibrium states only at the beginning and end}
+        \wrongchoice{might never be close to any equilibrium state}
+        \wrongchoice{is close to equilibrium states throughout, except at the beginning and end}
+        \wrongchoice{is none of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch20-q02}
+    A slow (quasi-static) process is \emph{not} reversible if:
+    \begin{choices}
+        \wrongchoice{the temperature changes}
+        \wrongchoice{energy is absorbed or emitted as heat}
+        \wrongchoice{work is done on the system}
+      \correctchoice{friction is present}
+        \wrongchoice{the pressure changes}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch20-q03}
+    The difference in entropy $\Delta S = S_B - S_A$ for two states $A$ and $B$ of a system can be computed as the integral $\mathrm{d}Q/T$ provided:
+    \begin{choices}
+        \wrongchoice{$A$ and $B$ are on the same adiabat}
+        \wrongchoice{$A$ and $B$ have the same temperature}
+      \correctchoice{a reversible path is used for the integral}
+        \wrongchoice{the change in internal energy is first computed}
+        \wrongchoice{the energy absorbed as heat by the system is first computed}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch20-q04}
+    Possible units of entropy are:
+    \begin{choices}
+        \wrongchoice{joule (\si{\joule})}
+      \correctchoice{joule per kelvin (\si{\joule\per\kelvin})}
+        \wrongchoice{per joule (\si{\per\joule})}
+        \wrongchoice{liter atmosphere (\si{\liter\atm})}
+        \wrongchoice{calorie per mole (\si{\calorie\per\mole})}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch20-q05}
+    Which of the following is \emph{not} a state variable?
+    \begin{choices}
+      \correctchoice{Work}
+        \wrongchoice{Internal energy}
+        \wrongchoice{Entropy}
+        \wrongchoice{Temperature}
+        \wrongchoice{Pressure}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch20-q06}
+    The change in entropy is zero for:
+    \begin{choices}
+      \correctchoice{reversible adiabatic processes}
+        \wrongchoice{reversible isothermal processes}
+        \wrongchoice{reversible processes during which no work is done}
+        \wrongchoice{reversible isobaric processes}
+        \wrongchoice{all adiabatic processes}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch20-q07}
+    Which of the following processes leads to a change in entropy of zero for the system undergoing the process?
+    \begin{choices}
+        \wrongchoice{Non-cyclic isobaric (constant pressure)}
+        \wrongchoice{Non-cyclic isochoric (constant volume)}
+        \wrongchoice{Non-cyclic isothermal (constant temperature)}
+      \correctchoice{Any closed cycle}
+        \wrongchoice{None of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch20-q08}
+    Rank, from smallest to largest,
+        the changes in entropy of a pan of water on a hot plate,
+        as the temperature of the water:
+    \begin{enumerate}
+        \item goes from \SI{20}{\degreeCelsius} to \SI{30}{\degreeCelsius}
+        \item goes from \SI{30}{\degreeCelsius} to \SI{40}{\degreeCelsius}
+        \item goes from \SI{40}{\degreeCelsius} to \SI{45}{\degreeCelsius}
+        \item goes from \SI{80}{\degreeCelsius} to \SI{85}{\degreeCelsius}
+    \end{enumerate}
+    \begin{choices}
+        \wrongchoice{1, 2, 3, 4}
+        \wrongchoice{4, 3, 2, 1}
+        \wrongchoice{1 and 2 tie, then 3 and 4 tie}
+        \wrongchoice{3 and 4 tie, then 1 and 2 tie}
+      \correctchoice{4, 3, 2, 1}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch20-q09}
+    An ideal gas expands into a vacuum in a rigid vessel. 
+    As a result there is:
+    \begin{choices}
+      \correctchoice{a change in entropy}
+        \wrongchoice{an increase of pressure}
+        \wrongchoice{a change in temperature}
+        \wrongchoice{a decrease of internal energy}
+        \wrongchoice{a change in phase}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch20-q10}
+    Consider all possible isothermal contractions of an ideal gas. 
+    The change in entropy of the gas:
+    \begin{choices}
+        \wrongchoice{is zero for all of them}
+        \wrongchoice{does not decrease for any of them}
+        \wrongchoice{does not increase for any of them}
+        \wrongchoice{increases for all of them}
+      \correctchoice{decreases for all of them}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch20-q11}
+    An ideal gas is to taken reversibly from state $i$, at temperature $T_1$,
+        to any of the other states labeled I, II, III, IV, and V on the $p$-$V$ diagram below.
+    All are at the same temperature $T_2$.
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE:
+    \end{tikzpicture}
+    \end{center}
+    Rank the five processes according to the change in entropy of the gas,
+        least to greatest.
+    \begin{choices}
+      \correctchoice{I, II, III, IV, V}
+        \wrongchoice{V, IV, III, II, I}
+        \wrongchoice{I, then II, III, IV, and V tied}
+        \wrongchoice{I, II, III, and IV tied, then V}
+        \wrongchoice{I and V tied, then II, III, IV}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch20-q12}
+    An ideal gas, consisting of $n$ moles, undergoes a reversible isothermal process during which the volume changes from $V_i$ to $V_f$.
+    The change in entropy of the thermal reservoir in contact with the gas is given by:
+    \begin{choices}
+        \wrongchoice{$nR\left(V_f-V_i\right)$}
+        \wrongchoice{$nR\ln\left(V_f-V_i\right)$}
+      \correctchoice{$nR\ln\left(\dfrac{V_i}{V_f}\right)$}
+        \wrongchoice{$nR\ln\left(\dfrac{V_f}{V_i}\right)$}
+        \wrongchoice{none of the provided (entropy can't be calculated for a reversible process)}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch20-q13}
+    One mole of an ideal gas expands reversibly and isothermally at temperature $T$ until its volume is doubled.
+    The change of entropy of this gas for this process is:
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{$R\ln 2$}
+        \wrongchoice{$\dfrac{\ln 2}{T}$}
+        \wrongchoice{zero}
+        \wrongchoice{$RT\ln 2$}
+        \wrongchoice{$2R$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch20-q14}
+    An ideal gas, consisting of $n$ moles,
+        undergoes an irreversible process in which the temperature has the same value at the beginning and end.
+    If the volume changes from $V_i$ to $V_f$,
+        the change in entropy of the gas is given by:
+    \begin{choices}
+        \wrongchoice{$nR\left(V_f-V_i\right)$}
+        \wrongchoice{$nR\ln\left(V_f-V_i\right)$}
+        \wrongchoice{$nR\ln\left(\dfrac{V_i}{V_f}\right)$}
+      \correctchoice{$nR\ln\left(\dfrac{V_f}{V_i}\right)$}
+        \wrongchoice{none of the provided (entropy can't be calculated for a reversible process)}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch20-q15}
+    The temperature of $n$ moles of a gas is increased from $T_i$ to $T_f$ at constant volume.
+    If the molar specific heat at constant volume is $C_V$ and is independent of temperature,
+        then change in the entropy of the gas is:
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{$nC_V\ln\left(\dfrac{T_f}{T_i}\right)$}
+        \wrongchoice{$nC_V\ln\left(\dfrac{T_i}{T_f}\right)$}
+        \wrongchoice{$nC_V\ln\left(T_f-T_i\right)$}
+        \wrongchoice{$nC_V\ln\left(1-\dfrac{T_i}{T_f}\right)$}
+        \wrongchoice{$nC_V\left(T_f-T_i\right)$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch20-q16}
+    Consider the following processes:
+        The temperature of two identical gases are increased from the same initial temperature to the same final temperature.
+    Reversible processes are used.
+    For gas $A$ the process is carried out at constant volume while for gas $B$ it is carried out at constant pressure.
+    The change in entropy:
+    \begin{choices}
+        \wrongchoice{is the same for $A$ and $B$}
+        \wrongchoice{is greater for $A$}
+      \correctchoice{is greater for $B$}
+        \wrongchoice{is greater for $A$ only if the initial temperature is low}
+        \wrongchoice{is greater for $A$ only if the initial temperature is high}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch20-q17}
+    A hot object and a cold object are placed in thermal contact and the combination is isolated.
+    They transfer energy until they reach a common temperature.
+    The change $\Delta S_h$ in the entropy of the hot object,
+        the change $\Delta S_c$ in the entropy of the cold object,
+        and the change $\Delta S_{\text{total}}$ in the entropy of the combination are:
+    \begin{choices}
+        \wrongchoice{$\Delta S_h > 0$, $\Delta S_c > 0$, $\Delta S_{\text{total}} > 0$}
+      \correctchoice{$\Delta S_h < 0$, $\Delta S_c > 0$, $\Delta S_{\text{total}} > 0$}
+        \wrongchoice{$\Delta S_h < 0$, $\Delta S_c > 0$, $\Delta S_{\text{total}} < 0$}
+        \wrongchoice{$\Delta S_h > 0$, $\Delta S_c < 0$, $\Delta S_{\text{total}} > 0$}
+        \wrongchoice{$\Delta S_h > 0$, $\Delta S_c < 0$, $\Delta S_{\text{total}} < 0$}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch20-q18}
+    Let $S_I$ denote the change in entropy of a sample for an irreversible process from state $A$ to state $B$.
+    Let $S_R$ denote the change in entropy of the same sample for a reversible process from state $A$ to state $B$.
+    Then:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$S_I > S_R$}
+      \correctchoice{$S_I = S_R$}
+        \wrongchoice{$S_I < S_R$}
+        \wrongchoice{$S_I = 0$}
+        \wrongchoice{$S_R = 0$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch20-q19}
+    For all adiabatic processes:
+    \begin{choices}
+        \wrongchoice{the entropy of the system does not change}
+        \wrongchoice{the entropy of the system increases}
+        \wrongchoice{the entropy of the system decreases}
+        \wrongchoice{the entropy of the system does not increase}
+      \correctchoice{the entropy of the system does not decrease}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch20-q20}
+    For all reversible processes involving a system and its environment:
+    \begin{choices}
+        \wrongchoice{the entropy of the system does not change}
+        \wrongchoice{the entropy of the system increases}
+      \correctchoice{the total entropy of the system and its environment does not change}
+        \wrongchoice{the total entropy of the system and its environment increases}
+        \wrongchoice{none of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch20-q21}
+    For all irreversible processes involving a system and its environment:
+    \begin{choices}
+        \wrongchoice{the entropy of the system does not change}
+        \wrongchoice{the entropy of the system increases}
+        \wrongchoice{the total entropy of the system and its environment does not change}
+      \correctchoice{the total entropy of the system and its environment increases}
+        \wrongchoice{none of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch20-q22}
+    According to the second law of thermodynamics:
+    \begin{choices}
+      \correctchoice{heat energy cannot be completely converted to work}
+        \wrongchoice{work cannot be completely converted to heat energy}
+        \wrongchoice{for all cyclic processes we have $\mathrm{d}Q/T<0$}
+        \wrongchoice{the reason all heat engine efficiencies are less than \SI{100}{\percent} is friction, which is unavoidable}
+        \wrongchoice{all of the provided are true}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch20-q23}
+    Consider the following processes:
+    \begin{itemize}
+        \item[I.] Energy flows as heat from a hot object to a colder object
+        \item[II.] Work is done on a system and an equivalent amount of energy is rejected as heat by the system
+        \item[III.] Energy is absorbed as heat by a system and an equivalent amount of work is done by the system
+    \end{itemize}
+    Which are never found to occur?
+    %% NOTE: questionmult
+    \begin{choices}
+        \wrongchoice{Only I}
+        \wrongchoice{Only II}
+      \correctchoice{Only III}
+        \wrongchoice{Only II and III}
+        \wrongchoice{I, II, and III}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch20-q24}
+    An inventor suggests that a house might be heated by using a refrigerator to draw energy as heat from the ground and reject energy as heat into the house.
+    He claims that the energy supplied to the house as heat can exceed the work required to run the refrigerator.
+    This:
+    \begin{choices}
+        \wrongchoice{is impossible by first law}
+        \wrongchoice{is impossible by second law}
+        \wrongchoice{would only work if the ground and the house were at the same temperature}
+        \wrongchoice{is impossible since heat energy flows from the (hot) house to the (cold) ground}
+      \correctchoice{is possible}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch20-q25}
+    In a thermally insulated kitchen,
+        an ordinary refrigerator is turned on and its door is left open.
+    The temperature of the room:
+    \begin{choices}
+        \wrongchoice{remains constant according to the first law of thermodynamics}
+        \wrongchoice{increases according to the first law of thermodynamics}
+        \wrongchoice{decreases according to the first law of thermodynamics}
+        \wrongchoice{remains constant according to the second law of thermodynamics}
+        \wrongchoice{increases according to the second law of thermodynamics}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch20-q26}
+    A heat engine:
+    \begin{choices}
+        \wrongchoice{converts heat input to an equivalent amount of work}
+        \wrongchoice{converts work to an equivalent amount of heat}
+      \correctchoice{takes heat in, does work, and loses energy as heat}
+        \wrongchoice{uses positive work done on the system to transfer heat from a low temperature reservoir to a high temperature reservoir}
+        \wrongchoice{uses positive work done on the system to transfer heat from a high temperature reservoir to a low temperature reservoir.}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch20-q27}
+    A heat engine absorbs energy of magnitude $|Q_H|$ as heat from a high temperature reservoir,
+        does work of magnitude $|W|$, and transfers energy of magnitude $|Q_L|$ as heat to a low temperature reservoir.
+    Its efficiency is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\dfrac{|Q_H|}{|W|}$}
+        \wrongchoice{$\dfrac{|Q_L|}{|W|}$}
+        \wrongchoice{$\dfrac{|Q_H|}{|Q_L|}$}
+      \correctchoice{$\dfrac{|W|}{|Q_H|}$}
+        \wrongchoice{$\dfrac{|W|}{|Q_L|}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch20-q28}
+    The temperatures $T_C$ of the cold reservoirs and the temperatures $T_H$ of the hot reservoirs for four Carnot heat engines are
+    \begin{description}
+        \item[engine 1:] $T_C=\SI{400}{\kelvin}$ and $T_H=\SI{500}{\kelvin}$
+        \item[engine 2:] $T_C=\SI{500}{\kelvin}$ and $T_H=\SI{600}{\kelvin}$
+        \item[engine 3:] $T_C=\SI{400}{\kelvin}$ and $T_H=\SI{600}{\kelvin}$
+        \item[engine 4:] $T_C=\SI{600}{\kelvin}$ and $T_H=\SI{800}{\kelvin}$
+    \end{description}
+    Rank these engines according to their efficiencies,
+        least to greatest:
+    \begin{choices}
+        \wrongchoice{1, 2, 3, 4}
+        \wrongchoice{1 and 2 tie, then 3 and 4 tie}
+        \wrongchoice{2, 1, 3, 4}
+        \wrongchoice{1, 2, 4, 3}
+      \correctchoice{2, 1, 4, 3}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch20-q29}
+    A Carnot heat engine runs between a cold reservoir at temperature $T_C$ and a hot reservoir at temperature $T_H$.
+    You want to increase its efficiency.
+    Of the following, which change results in the greatest increase in efficiency?
+    The value of $\Delta T$ is the same for all changes.
+    \begin{choices}
+        \wrongchoice{Raise the temperature of the hot reservoir by $\Delta T$}
+        \wrongchoice{Raise the temperature of the cold reservoir by $\Delta T$}
+        \wrongchoice{Lower the temperature of the hot reservoir by $\Delta T$}
+      \correctchoice{Lower the temperature of the cold reservoir by $\Delta T$}
+        \wrongchoice{Lower the temperature of the hot reservoir by $\dfrac{1}{2}\Delta T$ and raise the temperature of the cold reservoir by $\dfrac{1}{2}\Delta T$}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch20-q30}
+    A certain heat engine draws \SI{500}{\calorie\per\second} from a water bath at \SI{27}{\degreeCelsius} and transfers \SI{400}{\calorie\per\second} to a reservoir at a lower temperature.
+    The efficiency of this engine is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{80}{\percent}}
+        \wrongchoice{\SI{75}{\percent}}
+        \wrongchoice{\SI{55}{\percent}}
+        \wrongchoice{\SI{25}{\percent}}
+      \correctchoice{\SI{20}{\percent}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+%% NOTE: halliday-ch20-q31 is missing
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch20-q32}
+    A heat engine that in each cycle does positive work and loses energy as heat,
+        with no heat energy input, would violate:
+    \begin{choices}
+        \wrongchoice{the zeroth law of thermodynamics}
+      \correctchoice{the first law of thermodynamics}
+        \wrongchoice{the second law of thermodynamics}
+        \wrongchoice{the third law of thermodynamics}
+        \wrongchoice{Newton's second law}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch20-q33}
+    A cyclical process that transfers energy as heat from a high temperature reservoir to a low temperature reservoir with no other change would violate:
+    \begin{choices}
+        \wrongchoice{the zeroth law of thermodynamics}
+        \wrongchoice{the first law of thermodynamics}
+        \wrongchoice{the second law of thermodynamics}
+        \wrongchoice{the third law of thermodynamics}
+        \wrongchoice{none of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch20-q33}
+    A cyclical process that transfers energy as heat from a high temperature reservoir to a low temperature reservoir with no other change would violate:
+    \begin{choices}
+        \wrongchoice{the zeroth law of thermodynamics}
+        \wrongchoice{the first law of thermodynamics}
+        \wrongchoice{the second law of thermodynamics}
+        \wrongchoice{the third law of thermodynamics}
+        \wrongchoice{none of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch20-q34}
+    On a warm day a pool of water transfers energy to the air as heat and freezes.
+    This is a direct violation of:
+    \begin{choices}
+        \wrongchoice{the zeroth law of thermodynamics}
+        \wrongchoice{the first law of thermodynamics}
+      \correctchoice{the second law of thermodynamics}
+        \wrongchoice{the third law of thermodynamics}
+        \wrongchoice{none of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch20-q35}
+    A heat engine in each cycle absorbs energy of magnitude $|Q_H|$ as heat from a high temperature reservoir,
+        does work of magnitude $|W|$, and then absorbs energy of magnitude $|Q_L|$ as heat from a low temperature reservoir.
+    If $|W|=|Q_H|+|Q_L|$ this engine violates:
+    \begin{choices}
+        \wrongchoice{the zeroth law of thermodynamics}
+        \wrongchoice{the first law of thermodynamics}
+      \correctchoice{the second law of thermodynamics}
+        \wrongchoice{the third law of thermodynamics}
+        \wrongchoice{none of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch20-q36}
+    A heat engine in each cycle absorbs energy from a reservoir as heat and does an equivalent amount of work,
+        with no other changes.
+    This engine violates:
+    \begin{choices}
+        \wrongchoice{the zeroth law of thermodynamics}
+        \wrongchoice{the first law of thermodynamics}
+      \correctchoice{the second law of thermodynamics}
+        \wrongchoice{the third law of thermodynamics}
+        \wrongchoice{none of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch20-q37}
+    A Carnot cycle:
+    \begin{choices}
+      \correctchoice{is bounded by two isotherms and two adiabats on a $p$-$V$ graph}
+        \wrongchoice{consists of two isothermal and two constant volume processes}
+        \wrongchoice{is any four-sided process on a $p$-$V$ graph}
+        \wrongchoice{only exists for an ideal gas}
+        \wrongchoice{has an efficiency equal to the enclosed area on a $p$-$V$ diagram}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch20-q38}
+    According to the second law of thermodynamics:
+    \begin{choices}
+        \wrongchoice{all heat engines have the same efficiency}
+        \wrongchoice{all reversible heat engines have the same efficiency}
+        \wrongchoice{the efficiency of any heat engine is independent of its working substance}
+      \correctchoice{the efficiency of a Carnot engine depends only on the temperatures of the two reservoirs}
+        \wrongchoice{all Carnot engines theoretically have \SI{100}{\percent} efficiency}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch20-q39}
+    A Carnot heat engine operates between \SI{400}{\kelvin} and \SI{500}{\kelvin}.
+    Its efficiency is:
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{\SI{20}{\percent}}
+        \wrongchoice{\SI{25}{\percent}}
+        \wrongchoice{\SI{44}{\percent}}
+        \wrongchoice{\SI{79}{\percent}}
+        \wrongchoice{\SI{100}{\percent}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch20-q40}
+    A Carnot heat engine operates between a hot reservoir at absolute temperature $T_H$ and a cold reservoir at absolute temperature $T_C$.
+    Its efficiency is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\dfrac{T_H}{T_C}$}
+        \wrongchoice{$\dfrac{T_C}{T_H}$}
+        \wrongchoice{$1-\dfrac{T_H}{T_C}$}
+      \correctchoice{$1-\dfrac{T_C}{T_H}$}
+        \wrongchoice{\SI{100}{\percent}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch20-q41}
+    A heat engine operates between a high temperature reservoir at $T_H$ and a low temperature reservoir at $T_L$.
+    Its efficiency is given by $1-\dfrac{T_L}{T_H}$:
+    \begin{choices}
+        \wrongchoice{only if the working substance is an ideal gas}
+      \correctchoice{only if the engine is reversible}
+        \wrongchoice{only if the engine is quasi-static}
+        \wrongchoice{only if the engine operates on a Stirling cycle}
+        \wrongchoice{no matter what characteristics the engine has}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch20-q42}
+    The maximum theoretical efficiency of a Carnot heat engine operating between reservoirs at the steam point and at room temperature is about:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{10}{\percent}}
+      \correctchoice{\SI{20}{\percent}}
+        \wrongchoice{\SI{50}{\percent}}
+        \wrongchoice{\SI{80}{\percent}}
+        \wrongchoice{\SI{99}{\percent}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch20-q43}
+    An inventor claims to have a heat engine that has an efficiency of \SI{40}{\percent} when it operates between a high temperature reservoir of 150 ◦ C and a low temperature reservoir of \SI{30}{\degreeCelsius}.
+    This engine:
+    \begin{choices}
+        \wrongchoice{must violate the zeroth law of thermodynamics}
+        \wrongchoice{must violate the first law of thermodynamics}
+      \correctchoice{must violate the second law of thermodynamics}
+        \wrongchoice{must violate the third law of thermodynamics}
+        \wrongchoice{does not necessarily violate any of the laws of thermodynamics}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch20-q44}
+    A Carnot heat engine and an irreversible heat engine both operate between the same high temperature and low temperature reservoirs.
+    They absorb the same energy from the high temperature reservoir as heat.
+    The irreversible engine:
+    \begin{choices}
+        \wrongchoice{does more work}
+      \correctchoice{transfers more energy to the low temperature reservoir as heat}
+        \wrongchoice{has the greater efficiency}
+        \wrongchoice{has the same efficiency as the reversible engine}
+        \wrongchoice{cannot absorb the same energy from the high temperature reservoir as heat without violating the second law of thermodynamics}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch20-q45}
+    A perfectly reversible heat pump with a coefficient of performance of 14 supplies energy to a building as heat to maintain its temperature at \SI{27}{\degreeCelsius}.
+    If the pump motor does work at the rate of \SI{1}{\kilo\watt},
+        at what rate does the pump supply energy to the building as heat?
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{\SI{15}{\kilo\watt}}
+        \wrongchoice{\SI{3.85}{\kilo\watt}}
+        \wrongchoice{\SI{1.35}{\kilo\watt}}
+        \wrongchoice{\SI{1.07}{\kilo\watt}}
+        \wrongchoice{\SI{1.02}{\kilo\watt}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch20-q46}
+    A heat engine operates between \SI{200}{\kelvin} and \SI{100}{\kelvin}.
+    In each cycle it takes \SI{100}{\joule} from the hot reservoir,
+        loses \SI{25}{\joule} to the cold reservoir,
+        and does \SI{75}{\joule} of work.
+    This heat engine violates:
+    \begin{choices}
+        \wrongchoice{both the first and second laws of thermodynamics}
+        \wrongchoice{the first law but not the second law of thermodynamics}
+      \correctchoice{the second law but not the first law of thermodynamics}
+        \wrongchoice{neither the first law nor the second law of thermodynamics}
+        \wrongchoice{cannot answer without knowing the mechanical equivalent of heat}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch20-q47}
+    A refrigerator absorbs energy of magnitude $|Q_C|$ as heat from a low temperature reservoir and transfers energy of magnitude $|Q_H|$ as heat to a high temperature reservoir.
+    Work $W$ is done on the working substance.
+    The coefficient of performance is given by:
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{$\dfrac{\left|Q_C\right|}{W}$}
+        \wrongchoice{$\dfrac{\left|Q_H\right|}{W}$}
+        \wrongchoice{$\dfrac{\left|Q_C\right|+|Q_H|}{W}$}
+        \wrongchoice{$\dfrac{W}{|Q_C|}$}
+        \wrongchoice{$\dfrac{W}{|Q_H|}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch20-q48}
+    A reversible refrigerator operates between a low temperature reservoir at $T_C$ and a high temperature reservoir at $T_H$.
+    Its coefficient of performance is given by:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\dfrac{T_H-T_C}{T_C}$}
+      \correctchoice{$\dfrac{T_C}{T_H-T_C}$}
+        \wrongchoice{$\dfrac{T_H-T_C}{T_H}$}
+        \wrongchoice{$\dfrac{T_H}{T_H-T_C}$}
+        \wrongchoice{$\dfrac{T_H}{T_H+T_C}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch20-q49}
+    An Carnot refrigerator runs between a cold reservoir at temperature $T_C$ and a hot reservoir at temperature $T_H$. 
+    You want to increase its coefficient of performance. 
+    Of the following,
+        which change results in the greatest increase in the coefficient? 
+    The value of $\Delta T$ is the same for all changes.
+    \begin{choices}
+        \wrongchoice{Raise the temperature of the hot reservoir by $\Delta T$}
+      \correctchoice{Raise the temperature of the cold reservoir by $\Delta T$}
+        \wrongchoice{Lower the temperature of the hot reservoir by $\Delta T$}
+        \wrongchoice{Lower the temperature of the cold reservoir by $\Delta T$}
+        \wrongchoice{Lower the temperature of the hot reservoir by $\dfrac{1}{2}\Delta T$ and raise the temperature of the cold reservoir by $\dfrac{1}{2}\Delta T$}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch20-q50}
+    For one complete cycle of a reversible heat engine,
+        which of the following quantities is \emph{not} zero?
+    \begin{choices}
+        \wrongchoice{the change in the entropy of the working gas}
+        \wrongchoice{the change in the pressure of the working gas}
+        \wrongchoice{the change in the internal energy of the working gas}
+      \correctchoice{the work done by the working gas}
+        \wrongchoice{the change in the temperature of the working gas}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch20-q51}
+    Twenty-five identical molecules are in a box. 
+    Microstates are designated by identifying the molecules in the left and right halves of the box. 
+    The multiplicity of the configuration with 15 molecules in the right half and 10 molecules in the left half is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\num{1.03e23}}
+      \correctchoice{\num{3.27e6}}
+        \wrongchoice{\num{150}}
+        \wrongchoice{\num{25}}
+        \wrongchoice{\num{5}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch20-q52}
+    Twenty-five identical molecules are in a box. 
+    Microstates are designated by identifying the molecules in the left and right halves of the box. 
+    The Boltzmann constant is \SI{1.38e-23}{\joule\per\kelvin}.
+    The entropy associated with the configuration for which 15 molecules are in the left half and 10 molecules are in the right half is:
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{\SI{2.07e-22}{\joule\per\kelvin}}
+        \wrongchoice{\SI{7.31e-22}{\joule\per\kelvin}}
+        \wrongchoice{\SI{4.44e-23}{\joule\per\kelvin}}
+        \wrongchoice{\SI{6.91e-23}{\joule\per\kelvin}}
+        \wrongchoice{\SI{2.22e-23}{\joule\per\kelvin}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch20-q53}
+    The thermodynamic state of a gas changes from one with \num{3.8e18} microstates to one with \num{7.9e19} microstates. 
+    The Boltzmann constant is \SI{1.38e-23}{\joule\per\kelvin}. 
+    The change in entropy is:
+    \begin{choices}
+        \wrongchoice{$\Delta S = \text{zero}$}
+        \wrongchoice{$\Delta S = \SI{1.04e-23}{\joule\per\kelvin}$}
+        \wrongchoice{$\Delta S = \SI{-1.04e-23}{\joule\per\kelvin}$}
+      \correctchoice{$\Delta S = \SI{4.19e-23}{\joule\per\kelvin}$}
+        \wrongchoice{$\Delta S = \SI{-4.19e-23}{\joule\per\kelvin}$}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch20-q54}
+    Let $k$ be the Boltzmann constant. 
+    If the configuration of the molecules in a gas changes so that the multiplicity is reduced to one-third its previous value,
+        the entropy of the gas changes by:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{$\Delta S = \text{zero}$}
+        \wrongchoice{$\Delta S = 3k\ln 2$}
+        \wrongchoice{$\Delta S = -3k\ln 2$}
+      \correctchoice{$\Delta S = -k\ln 3$}
+        \wrongchoice{$\Delta S = k\ln 3$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch20-q55}
+    Let $k$ be the Boltzmann constant. 
+    If the configuration of molecules in a gas changes from one with a multiplicity of $M_1$ to one with a multiplicity of $M_2$,
+        then entropy changes by:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{$\Delta S = \text{zero}$}
+        \wrongchoice{$\Delta S = k\left(M_2-M_1\right)$}
+        \wrongchoice{$\Delta S = k\dfrac{M_2}{M_1}$}
+        \wrongchoice{$\Delta S = k\ln\left(M_2 M_1\right)$}
+      \correctchoice{$\Delta S = k\ln\left(\dfrac{M_2}{M_1}\right)$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch20-q56}
+    Let $k$ be the Boltzmann constant. 
+    If the thermodynamic state of a gas at temperature $T$ changes isothermally and reversibly to a state with three times the number of microstates as initially,
+        the energy input to the gas as heat is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{$Q = \text{zero}$}
+        \wrongchoice{$Q = 3kT$}
+        \wrongchoice{$Q = -3kT$}
+      \correctchoice{$kT\ln 3$}
+        \wrongchoice{$-kT\ln 3$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+\endinput
+
+

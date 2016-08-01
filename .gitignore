@@ -1,0 +1,34 @@
+# Latex specific
+*.aux
+*.glo
+*.idx
+*.log
+*.toc
+*.ist
+*.acn
+*.acr
+*.alg
+*.bbl
+*.blg
+*.dvi
+*.glg
+*.gls
+*.ilg
+*.ind
+*.lof
+*.lot
+*.maf
+*.mtc
+*.mtc1
+*.out
+*.synctex.gz
+
+# Testing
+testing.pdf
+testing.tex
+testing-numeric.tex
+testing-numeric.pdf
+
+# AMC specific
+*.amc
+

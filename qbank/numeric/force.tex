@@ -1,0 +1,237 @@
+
+%% This defines the lua function mycommand()
+%\directlua{require('./qbank/lua/common.lua')}
+
+
+%% Numeric Difficulty A
+%%--------------------------------------
+\element{numeric}{
+\begin{questionmultx}{force-A-Q01}
+\luaexec{
+    %% Question
+    local Q = [[
+        A \string\SI{\%0.2f}{\string\kilo\string\gram}
+            mass and a \string\SI{\%0.2f}{\string\kilo\string\gram}
+            mass are attached to a lightweight cord that passes over
+            a frictionless pulley.
+        The hanging masses are free to move.
+        What is the magnitude of acceleration for the larger mass divided by
+            \string\SI{1}{\string\meter\string\per\string\second\string\squared}?
+        [$g=\string\SI{9.80665}{\string\meter\string\per\string\second\string\squared}$]
+    ]]
+    %% Random Values
+    local m1 = 1 + round(10 * math.random(),2)
+    local m2 = 1 + round(10 * math.random(),2)
+    local g  = 9.80665
+    local ans = math.abs( g * (m1-m2) / (m1+m2) )
+    %% Print Question
+    tex.print( string.format(Q, m1, m2))
+    %% Print AMCnumeric
+    options = [[ digits=4, decimals=3, sign=True, approx=1 ]]
+    tex.print( BeginCenter )
+    tex.print( string.format(AMCnumeric, ans, options) )
+    tex.print( EndCenter )
+}
+\end{questionmultx}
+}
+
+\element{numeric}{
+\begin{questionmultx}{force-A-Q02}
+\luaexec{
+    %% Question
+    local Q = [[
+        A \string\SI{\%0.2f}{\string\kilo\string\gram}
+            mass on a frictionless level surface is attached
+            to a lightweight cord that passes over a pulley
+            at the edge of the table and is connected to a
+            \string\SI{\%0.2f}{\string\kilo\string\gram}
+            hanging mass.
+        What is the magnitude of the acceleration for the larger mass divided by
+            \string\SI{1}{\string\meter\string\per\string\second\string\squared}?
+        [$g=\string\SI{9.80665}{\string\meter\string\per\string\second\string\squared}$]
+    ]]
+    %% Random Values
+    local m1 = 1 + round(10 * math.random(),2)
+    local m2 = 1 + round(10 * math.random(),2)
+    local g  = 9.80665
+    local ans = g * m2 / (m1+m2)
+    %% Print Question
+    tex.print( string.format(Q, m1, m2))
+    %% Print AMCnumeric
+    options = [[ digits=4, decimals=3, sign=True, approx=1 ]]
+    tex.print( BeginCenter )
+    tex.print( string.format(AMCnumeric, ans, options) )
+    tex.print( EndCenter )
+}
+\end{questionmultx}
+}
+
+
+%% Numeric Difficulty B
+%%--------------------------------------
+\element{numeric}{
+\begin{questionmultx}{force-B-Q01}
+\luaexec{
+    %% Question
+    local Q = [[
+        An elevator filled to capacity has a mass of
+            \string\SI{\%d}{\string\kilo\string\gram}.
+        The elevator accelerates uniformly upward from
+            rest for \string\SI{\%0.1f}{\string\second}
+            until it reaches a speed of
+            \string\SI{\%0.1f}{\string\meter\string\per\string\second}.
+        The elevator is supported by a cable.
+        What is the tension in the cable when the elevator
+            is accelerating upward divided by
+            \string\SI{1}{\string\kilo\string\newton}?
+        [$g=\string\SI{9.80665}{\string\meter\string\per\string\second\string\squared}$]
+    ]]
+    %% Random Values
+    local mas = math.random(1500,2500)
+    local tim = 1 + round(3 * math.random(),1)
+    local vel = 1 + round(4 * math.random(),1)
+    local g   = 9.80665
+    local f = (mas*g) + (mas * vel / tim)
+    local ans = f / 1000
+    %% Print Question
+    tex.print( string.format(Q, mas, tim, vel))
+    %% Print AMCnumeric
+    options = [[ digits=4, decimals=2, sign=True, approx=1 ]]
+    tex.print( BeginCenter )
+    tex.print( string.format(AMCnumeric, ans, options) )
+    tex.print( EndCenter )
+}
+\end{questionmultx}
+}
+
+
+\begin{comment}
+\element{numeric}{
+\begin{questionmultx}{force-B-Q02}
+\luaexec{
+    %% Question
+    local Q = [[
+        The parachute on a race car that weighs
+            \string\SI{\%d}{\string\newton}
+            opens at the end of a very exciting
+            quarter-mile run when the car is traveling
+            \string\SI{\%d}{\string\meter\string\per\string\second}.
+        What net retarding force divided by
+            \string\SI{1}{\string\newton}
+            must be suppied by the parachute
+            to stop the car in a distance of
+            \string\SI{\%d}{\string\meter}?
+        [$g=\string\SI{9.80665}{\string\meter\string\per\string\second\string\squared}$]
+    ]]
+    %% Random Values
+    local w = math.random(1500,2500)
+    local v = math.random(25,55)
+    local d = math.random(800,1200)
+    local g = 9.80665
+    local ans = w*v*v / g / 2 / d
+    %% Print Question
+    tex.print( string.format(Q, w, v, d) )
+    %% Print AMCnumeric
+    options = [[ digits=4, decimals=1, sign=True, approx=1 ]]
+    tex.print( BeginCenter )
+    tex.print( string.format(AMCnumeric, ans, options) )
+    tex.print( EndCenter )
+}
+\end{questionmultx}
+}
+
+
+\element{numeric}{
+\begin{questionmultx}{force-B-Q03}
+\luaexec{
+    %% Question
+    local Q = [[
+        A race car has a mass of
+            \string\SI{\%d}{\string\kilo\string\gram}.
+        It starts from rest and travels
+            \string\SI{\%d}{\string\meter}
+            in \string\SI{\%0.1f}{\string\second}.
+        The car is uniformly accelerated during the entire time.
+        What net force is applied to the race car divided by
+            \string\SI{1}{\string\kilo\string\newton}?
+    ]]
+    %% Random Values
+    local m = math.random(500,1000)
+    local d = math.random(20,50)
+    local t = 1 + round(3 * math.random(),1)
+    local ans = 2 * m * d / t / t / 1000
+    %% Print Question
+    tex.print( string.format(Q, m, d, t) )
+    %% Print AMCnumeric
+    options = [[ digits=4, decimals=2, sign=True, approx=1 ]]
+    tex.print( BeginCenter )
+    tex.print( string.format(AMCnumeric, ans, options) )
+    tex.print( EndCenter )
+}
+\end{questionmultx}
+}
+\end{comment}
+
+
+\element{numeric}{
+\begin{questionmultx}{force-B-Q04}
+\luaexec{
+    %% Question
+    local Q = [[
+        A \string\SI{\%d}{\string\kilo\string\gram}
+            mass starts from rest and slides down
+            an inclined plane \string\SI{\%0.2f}{\string\meter}
+            long in \string\SI{\%0.2f}{\string\second}.
+        What net force is acting on the mass along the incline
+            divided by \string\SI{1}{\string\newton}?
+    ]]
+    %% Random Values
+    local m = math.random(1,10)
+    local d = round(2*math.random(),2)
+    local t = round(2*math.random(),2)
+    local ans = 2 * m * d / t / t
+    %% Print Question
+    tex.print( string.format(Q, m, d, t))
+    %% Print AMCnumeric
+    options = [[ digits=4, decimals=2, sign=True, approx=1 ]]
+    tex.print( BeginCenter )
+    tex.print( string.format(AMCnumeric, ans, options) )
+    tex.print( EndCenter )
+}
+\end{questionmultx}
+}
+
+
+\element{numeric}{
+\begin{questionmultx}{force-B-Q05}
+\luaexec{
+    %% Question
+    local Q = [[
+        In an emergency stop to avoid an accident,
+            a shoulder-strap seat-belt held a
+            \string\SI{\%d}{\string\kilo\string\gram}
+            passenger in place.
+        The car was initially traveling at
+            \string\SI{\%d}{\string\kilo\string\meter\string\per\string\hour}
+            and came to a stop in \string\SI{\%0.1f}{\string\second}.
+        What was the average force applied to the passenger by the seat-belt
+            divided by \string\SI{1}{\string\kilo\string\newton}?
+    ]]
+    %% Random Values
+    local m = math.random(40,120)
+    local v = math.random(40,120)
+    local t = 1 + round(4*math.random(),1)
+    local ans = m * 1000 * v / 3600 / t
+    %% Print Question
+    tex.print( string.format(Q, m, v, t))
+    %% Print AMCnumeric
+    options = [[ digits=4, decimals=3, sign=True, approx=1 ]]
+    tex.print( BeginCenter )
+    tex.print( string.format(AMCnumeric, ans, options) )
+    tex.print( EndCenter )
+}
+\end{questionmultx}
+}
+
+\endinput
+

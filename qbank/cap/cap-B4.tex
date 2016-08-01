@@ -1,0 +1,166 @@
+
+
+%% CAP High School Prize Examination
+%%----------------------------------------
+
+
+%% this section contains 40 problems
+
+
+%% CAP Exam 2015
+%%----------------------------------------
+\element{cap}{ %% cap-B4
+\begin{question}{CAP-A-2015-q22}
+    Students are watching a science fiction movie where the crew of one spaceship watches an explosion on the other spaceship. 
+    After a short time interval the crew hear the sound of the explosion. 
+    The students think it is unphysical.
+    \begin{choices}
+        \wrongchoice{The students are right, because there should be no delay: the sound propagates in vacuum at the speed of light.}
+        \wrongchoice{The students are wrong. The science adviser of the movie made it according to the laws of physics.}
+        \wrongchoice{The students are right, because the steel body of the spaceship blocks the sound}
+      \correctchoice{The students are right, because sound cannot propagate in the region between the spaceships}
+    \end{choices}
+\end{question}
+}
+
+
+%% CAP Exam 2014
+%%----------------------------------------
+\element{cap}{ %% cap-B4
+\begin{question}{CAP-A-2014-q09}
+    Two identical loudspeakers, placed close to each other,
+        are supplied with the same sinusoidal voltage. 
+    One can imagine a pattern around the loudspeakers with alternating areas of increased and decreased sound intensity. 
+    Which of the actions below will not change the positions of these areas?
+    \begin{choices}
+        \wrongchoice{Moving one of the speakers.}
+      \correctchoice{Changing the amplitude of the voltage.}
+        \wrongchoice{Changing the frequency.}
+        \wrongchoice{Replacing the air in the room with a gas of a different density.}
+    \end{choices}
+\end{question}
+}
+
+
+%% CAP Exam 2012
+%%----------------------------------------
+\element{cap}{ %% cap-B4
+\begin{question}{CAP-A-2012-q20}
+    You are on the side of the highway,
+        listening to the siren of a fast-approaching ambulance. 
+    When the ambulance is not moving the frequency of its siren is \SI{1000}{\hertz}.
+    Which of the following graphs best describes the frequency that you hear as the ambulance approaches and then passes you?
+    \begin{choices}
+        %% NOTE: make graphs better
+        \AMCboxDimensions{down=-4em}
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left, 
+                    axis x line=bottom, 
+                    axis line style={->},
+                    xlabel={time},
+                    x unit=\si{\second},
+                    xtick={0,1,2,3,4,5,6},
+                    ylabel={frequency},
+                    y unit=\si{\hertz},
+                    ytick={920,960,1000,1040,1080},
+                    xmin=0,xmax=6.5,
+                    ymin=920,ymax=1090,
+                    width=0.8\columnwidth,
+                    height=0.5\columnwidth,
+                ]
+                \addplot[line width=1pt] plot coordinates { (1,1080) (5,920) };
+                \end{axis}
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left, 
+                    axis x line=bottom, 
+                    axis line style={->},
+                    xlabel={time},
+                    x unit=\si{\second},
+                    xtick={0,1,2,3,4,5,6},
+                    ylabel={frequency},
+                    y unit=\si{\hertz},
+                    ytick={920,960,1000,1040,1080},
+                    xmin=0,xmax=6.5,
+                    ymin=920,ymax=1090,
+                    width=0.8\columnwidth,
+                    height=0.5\columnwidth,
+                ]
+                \addplot[line width=1pt] plot coordinates { (1,920) (5,1080) };
+                \end{axis}
+            \end{tikzpicture}
+        }
+        %% ANS is C
+        \correctchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left, 
+                    axis x line=bottom, 
+                    axis line style={->},
+                    xlabel={time},
+                    x unit=\si{\second},
+                    xtick={0,1,2,3,4,5,6},
+                    ylabel={frequency},
+                    y unit=\si{\hertz},
+                    ytick={920,960,1000,1040,1080},
+                    xmin=0,xmax=6.5,
+                    ymin=920,ymax=1090,
+                    width=0.8\columnwidth,
+                    height=0.5\columnwidth,
+                ]
+                \addplot[line width=1pt,domain=0:6] { 940 + 120 / (1 + exp(10*(x-3)) };
+                \end{axis}
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left, 
+                    axis x line=bottom, 
+                    axis line style={->},
+                    xlabel={time},
+                    x unit=\si{\second},
+                    xtick={0,1,2,3,4,5,6},
+                    ylabel={frequency},
+                    y unit=\si{\hertz},
+                    ytick={920,960,1000,1040,1080},
+                    xmin=0,xmax=6.5,
+                    ymin=920,ymax=1090,
+                    width=0.8\columnwidth,
+                    height=0.5\columnwidth,
+                ]
+                \draw (axis cs:0,1060) to[out=0,in=180] (axis cs:6,940);
+                \end{axis}
+            \end{tikzpicture}
+        }
+    \end{choices}
+\end{question}
+}
+
+
+%% CAP Exam 2009
+%%----------------------------------------
+\element{cap}{ %% cap-B4
+\begin{question}{CAP-A-2009-q07}
+    An object is moving at a constant speed $v_0$ towards a source that is at rest and that is emitting sound waves of frequency $f_0$.
+    The frequency of the echo that returns to the source after being reflected from the object is given by:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{$f_{\text{echo}} = f_0 \dfrac{v}{v-v_0}$}
+        \wrongchoice{$f_{\text{echo}} = f_0 \dfrac{v-v_0}{v+v_0}$}
+      \correctchoice{$f_{\text{echo}} = f_0 \dfrac{v+v_0}{v-v_0}$}
+        \wrongchoice{$f_{\text{echo}} = f_0 \dfrac{v+v_0}{v}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+\endinput
+
+

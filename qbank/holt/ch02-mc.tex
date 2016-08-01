@@ -1,0 +1,443 @@
+
+%%--------------------------------------------------
+%% Holt: Multiple Choice Questions
+%%--------------------------------------------------
+
+
+%% Chapter 02: Motion in One Dimension
+%%--------------------------------------------------
+
+
+%% Holt Multiple Choice Questions
+%%--------------------------------------------------
+\element{holt-mc}{
+\begin{question}{holt-ch02-Q01}
+    Which graph represents an object moving with a constant positive velocity?
+    \begin{multicols}{2}
+    \begin{choices}
+        \AMCboxDimensions{down=-2.5em}
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=bottom,
+                    axis line style={->},
+                    xlabel={time},
+                    xtick=\empty,
+                    ylabel={position},
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=0,ymax=11,
+                    width=\columnwidth,
+                    height=0.618\columnwidth,
+                    very thin,
+                ]
+                \addplot[line width=1pt,domain=0:10]{5};
+                \end{axis}
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=bottom,
+                    axis line style={->},
+                    xlabel={time},
+                    xtick=\empty,
+                    ylabel={position},
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=0,ymax=11,
+                    width=\columnwidth,
+                    height=0.618\columnwidth,
+                    very thin,
+                ]
+                \addplot[line width=1pt,domain=0:10]{10-x};
+                \end{axis}
+            \end{tikzpicture}
+        }
+        \correctchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=bottom,
+                    axis line style={->},
+                    xlabel={time},
+                    xtick=\empty,
+                    ylabel={position},
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=0,ymax=11,
+                    width=\columnwidth,
+                    height=0.618\columnwidth,
+                    very thin,
+                ]
+                \addplot[line width=1pt,domain=0:10]{x};
+                \end{axis}
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=bottom,
+                    axis line style={->},
+                    xlabel={time},
+                    xtick=\empty,
+                    ylabel={velocity},
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=0,ymax=11,
+                    width=\columnwidth,
+                    height=0.618\columnwidth,
+                    very thin,
+                ]
+                \addplot[line width=1pt,domain=0:10]{x};
+                \end{axis}
+            \end{tikzpicture}
+        }
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{holt-mc}{
+\begin{question}{holt-ch02-Q02}
+    Which graph represents an object at rest?
+    \begin{multicols}{2}
+    \begin{choices}
+        \AMCboxDimensions{down=-2.5em}
+        \correctchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=bottom,
+                    axis line style={->},
+                    xlabel={time},
+                    xtick=\empty,
+                    ylabel={position},
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=0,ymax=11,
+                    width=\columnwidth,
+                    height=0.618\columnwidth,
+                    very thin,
+                ]
+                \addplot[line width=1pt,domain=0:10]{5};
+                \end{axis}
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=bottom,
+                    axis line style={->},
+                    xlabel={time},
+                    xtick=\empty,
+                    ylabel={position},
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=0,ymax=11,
+                    width=\columnwidth,
+                    height=0.618\columnwidth,
+                    very thin,
+                ]
+                \addplot[line width=1pt,domain=0:10]{10-x};
+                \end{axis}
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=bottom,
+                    axis line style={->},
+                    xlabel={time},
+                    xtick=\empty,
+                    ylabel={position},
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=0,ymax=11,
+                    width=\columnwidth,
+                    height=0.618\columnwidth,
+                    very thin,
+                ]
+                \addplot[line width=1pt,domain=0:10]{x};
+                \end{axis}
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=bottom,
+                    axis line style={->},
+                    xlabel={time},
+                    xtick=\empty,
+                    ylabel={velocity},
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=0,ymax=11,
+                    width=\columnwidth,
+                    height=0.618\columnwidth,
+                    very thin,
+                ]
+                \addplot[line width=1pt,domain=0:10]{x};
+                \end{axis}
+            \end{tikzpicture}
+        }
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{holt-mc}{
+\begin{question}{holt-ch02-Q03}
+    Which graph represents an object moving with constant positive acceleration?
+    \begin{multicols}{2}
+    \begin{choices}
+        \AMCboxDimensions{down=-2.5em}
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=bottom,
+                    axis line style={->},
+                    xlabel={time},
+                    xtick=\empty,
+                    ylabel={position},
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=0,ymax=11,
+                    width=\columnwidth,
+                    height=0.618\columnwidth,
+                    very thin,
+                ]
+                \addplot[line width=1pt,domain=0:10]{5};
+                \end{axis}
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=bottom,
+                    axis line style={->},
+                    xlabel={time},
+                    xtick=\empty,
+                    ylabel={position},
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=0,ymax=11,
+                    width=\columnwidth,
+                    height=0.618\columnwidth,
+                    very thin,
+                ]
+                \addplot[line width=1pt,domain=0:10]{10-x};
+                \end{axis}
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=bottom,
+                    axis line style={->},
+                    xlabel={time},
+                    xtick=\empty,
+                    ylabel={position},
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=0,ymax=11,
+                    width=\columnwidth,
+                    height=0.618\columnwidth,
+                    very thin,
+                ]
+                \addplot[line width=1pt,domain=0:10]{x};
+                \end{axis}
+            \end{tikzpicture}
+        }
+        \correctchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=bottom,
+                    axis line style={->},
+                    xlabel={time},
+                    xtick=\empty,
+                    ylabel={velocity},
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=0,ymax=11,
+                    width=\columnwidth,
+                    height=0.618\columnwidth,
+                    very thin,
+                ]
+                \addplot[line width=1pt,domain=0:10]{x};
+                \end{axis}
+            \end{tikzpicture}
+        }
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{holt-mc}{
+\begin{question}{holt-ch02-Q04}
+    A bus travels from El Paso, Texas, to Chihuahua, Mexico, in \SI{5.2}{\hour} with an average velocity of \SI{73}{\kilo\meter\per\hour} to the south.
+    What is the bus's displacement?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{73}{\kilo\meter} to the south}
+        \wrongchoice{\SI{370}{\kilo\meter} to the south}
+      \correctchoice{\SI{380}{\kilo\meter} to the south}
+        \wrongchoice{\SI{14}{\kilo\meter} to the south}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\newcommand{\holtChTwoQFive}{
+\begin{tikzpicture}
+    \begin{axis}[
+        clip=false,
+        axis y line=left,
+        axis x line=middle,
+        axis line style={->},
+        xlabel={time},
+        x unit=\si{\second},
+        xtick={0,1,2,3,4,5},
+        ylabel={position},
+        minor y tick num=1,
+        y unit=\si{\meter},
+        ytick={-2,0,2,4},
+        xmin=0,xmax=5.5,
+        ymin=-2,ymax=4,
+        width=0.95\columnwidth,
+        height=0.40\columnwidth,
+        very thin,
+    ]
+    \addplot[line width=1pt,domain=0:1]{4*x};
+    \addplot[line width=1pt,domain=1:2.5]{8 - 4*x};
+    \addplot[line width=1pt,domain=2.5:4]{-2};
+    \addplot[line width=1pt,domain=4:5]{-10 + 2*x};
+    \end{axis}
+\end{tikzpicture}
+}
+
+\element{holt-mc}{
+\begin{question}{holt-ch02-Q05-A}
+    The following position-time graph represents the motion of a squirrel running along a clothesline.
+    \begin{center}
+        \holtChTwoQFive
+    \end{center}
+    What is the squirrel's displacement between \SI{0.0}{\second} and \SI{3.0}{\second}?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{-6.0}{\meter}}
+      \correctchoice{\SI{-2.0}{\meter}}
+        \wrongchoice{\SI{+0.8}{\meter}}
+        \wrongchoice{\SI{+2.0}{\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{holt-mc}{
+\begin{question}{holt-ch02-Q05-B}
+    The following position-time graph represents the motion of a squirrel running along a clothesline.
+    \begin{center}
+        \holtChTwoQFive
+    \end{center}
+    What is the squirrel's distance traveled between \SI{0.0}{\second} and \SI{3.0}{\second}?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{6.0}{\meter}}
+        \wrongchoice{\SI{2.0}{\meter}}
+      \correctchoice{\SI{10}{\meter}}
+        \wrongchoice{\SI{-2.0}{\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{holt-mc}{
+\begin{question}{holt-ch02-Q06-A}
+    The following position-time graph represents the motion of a squirrel running along a clothesline.
+    \begin{center}
+        \holtChTwoQFive
+    \end{center}
+    What is the squirrel's average velocity during the time interval between \SI{0.0}{\second} and \SI{3.0}{\second}?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{-2.0}{\meter\per\second}}
+      \correctchoice{\SI{-0.67}{\meter\per\second}}
+        \wrongchoice{\SI{0.0}{\meter\per\second}}
+        \wrongchoice{\SI{+0.53}{\meter\per\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{holt-mc}{
+\begin{question}{holt-ch02-Q06-B}
+    The following position-time graph represents the motion of a squirrel running along a clothesline.
+    \begin{center}
+        \holtChTwoQFive
+    \end{center}
+    What is the squirrel's average speed during the time interval between \SI{0.0}{\second} and \SI{3.0}{\second}?
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{\SI{10/3}{\meter\per\second}}
+        \wrongchoice{\SI{-2/3}{\meter\per\second}}
+        \wrongchoice{\SI{0.0}{\meter\per\second}}
+        \wrongchoice{\SI{6/3}{\meter\per\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{holt-mc}{
+\begin{question}{holt-ch02-Q07}
+    %% NOTE: C: Acceleration does not depend on direction motion, only the direction of the change
+    Which of the following statements is true of acceleration?
+    \begin{choices}
+        \wrongchoice{Acceleration always has the same sign as displacement.}
+        \wrongchoice{Acceleration always has the same sign as velocity.}
+      \correctchoice{The sign of acceleration depends on both the direction of motion and how the velocity is changing.}
+        \wrongchoice{Acceleration always has a positive sign}
+    \end{choices}
+\end{question}
+}
+
+\element{holt-mc}{
+\begin{question}{holt-ch02-Q08}
+    A ball initially at rest rolls down a hill and has an acceleration of \SI{3.3}{\meter\per\second\squared}.
+    If it accelerates for \SI{7.5}{\second},
+        how far will it move during this time?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{12}{\meter}}
+      \correctchoice{\SI{93}{\meter}}
+        \wrongchoice{\SI{120}{\meter}}
+        \wrongchoice{\SI{190}{\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{holt-mc}{
+\begin{question}{holt-ch02-Q09}
+    Which of the following statements is true for a ball thrown vertically upward?
+    \begin{choices}
+        \wrongchoice{The ball has a negative acceleration on the way up and a positive acceleration on the way down.}
+        \wrongchoice{The ball has a positive acceleration on the way up and a negative acceleration on the way down.}
+        \wrongchoice{The ball has zero acceleration on the way up and a positive acceleration on the way down.}
+      \correctchoice{The ball has a constant acceleration throughout its flight.}
+    \end{choices}
+\end{question}
+}
+
+\endinput
+

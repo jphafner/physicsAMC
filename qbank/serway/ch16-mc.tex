@@ -1,0 +1,831 @@
+
+%%--------------------------------------------------
+%% Serway: Physics for Scientists and Engineers
+%%--------------------------------------------------
+
+
+%% Chapter 16: Wave Motion
+%%--------------------------------------------------
+
+
+%% Table of Contents
+%%--------------------------------------------------
+
+%% 16.1 Propagation of a Disturbance
+%% 16.2 The Traveling Wave Model
+%% 16.3 The Speed of Waves on Strings
+%% 16.4 Reflection and Transmission
+%% 16.5 Rate of Energy Transfer by Sinusoidal Waves on Strings
+%% 16.6 The Linear Wave Equation
+
+
+%% Serway Multiple Choice Questions
+%%--------------------------------------------------
+\element{serway-mc}{
+\begin{question}{serway-ch16-q01}
+    The wavelength of light visible to the human eye is on the order of \SI{5e-7}{\meter}.
+    If the speed of light in air is \SI{3e8}{\meter\per\second},
+        find the frequency of the lightwave.
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{3e7}{\hertz}}
+        \wrongchoice{\SI{4e9}{\hertz}}
+        \wrongchoice{\SI{5e11}{\hertz}}
+      \correctchoice{\SI{6e14}{\hertz}}
+        \wrongchoice{\SI{4e15}{\hertz}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch16-q02}
+    The speed of a \SI{10}{\kilo\hertz} sound wave in seawater is approximately \SI{1500}{\meter\per\second}.
+    What is its wavelength in sea water?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{5.0}{\centi\meter}}
+        \wrongchoice{\SI{10}{\centi\meter}}
+      \correctchoice{\SI{15}{\centi\meter}}
+        \wrongchoice{\SI{20}{\centi\meter}}
+        \wrongchoice{\SI{29}{\centi\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch16-q03}
+    Bats can detect small objects such as insects that are of a size on the order of a wavelength.
+    If bats emit a chirp at a frequency of \SI{60}{\kilo\hertz} and the speed of soundwaves in air is 330 m/s, what is the smallest size insect they can detect?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{1.5}{\milli\meter}}
+        \wrongchoice{\SI{3.5}{\milli\meter}}
+      \correctchoice{\SI{5.5}{\milli\meter}}
+        \wrongchoice{\SI{7.5}{\milli\meter}}
+        \wrongchoice{\SI{9.8}{\milli\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch16-q04}
+    Ocean waves with a wavelength of \SI{120}{\meter} are coming in at a rate of \SI{8}{\per\minute}.
+    What is their speed?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{8.0}{\meter\per\second}}
+      \correctchoice{\SI{16}{\meter\per\second}}
+        \wrongchoice{\SI{24}{\meter\per\second}}
+        \wrongchoice{\SI{30}{\meter\per\second}}
+        \wrongchoice{\SI{4.0}{\meter\per\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch16-q05}
+    An earthquake emits both S-waves and P-waves which travel at different speeds through the Earth.
+    A P-wave travels at \SI{9000}{\meter\per\second} and an S-wave travels at \SI{5000}{\meter\per\second}.
+    If P-waves are received at a seismic station \SI{1.00}{\minute} before an S-wave arrives,
+        how far away is the earthquake center?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{88.9}{\kilo\meter}}
+        \wrongchoice{\SI{1200}{\kilo\meter}}
+      \correctchoice{\SI{675}{\kilo\meter}}
+        \wrongchoice{\SI{240}{\kilo\meter}}
+        \wrongchoice{\SI{480}{\kilo\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch16-q06}
+    A piano string of density \SI{0.0050}{\kilo\gram\per\meter} is under a tension of \SI{1350}{\newton}.
+    Find the velocity with which a wave travels on the string.
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{260}{\meter\per\second}}
+      \correctchoice{\SI{520}{\meter\per\second}}
+        \wrongchoice{\SI{1040}{\meter\per\second}}
+        \wrongchoice{\SI{2080}{\meter\per\second}}
+        \wrongchoice{\SI{4160}{\meter\per\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch16-q07}
+    A \SI{100}{\meter} long transmission cable is suspended between two towers.
+    If the mass density is \SI{2.01}{\kilo\gram\per\meter} and the tension in the cable is \SI{3.00e4}{\newton},
+        what is the speed of transverse waves on the cable?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{60}{\meter\per\second}}
+      \correctchoice{\SI{122}{\meter\per\second}}
+        \wrongchoice{\SI{244}{\meter\per\second}}
+        \wrongchoice{\SI{310}{\meter\per\second}}
+        \wrongchoice{\SI{1500}{\meter\per\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch16-q08}
+    Transverse waves are traveling on a \SI{1.00}{\meter} long piano string at \SI{500}{\meter\per\second}.
+    If the points of zero vibration occur at one-half wavelength,
+        (where the string is fastened at both ends),
+        find the frequency of vibration.
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{\SI{250}{\hertz}}
+        \wrongchoice{\SI{500}{\hertz}}
+        \wrongchoice{\SI{1000}{\hertz}}
+        \wrongchoice{\SI{2000}{\hertz}}
+        \wrongchoice{\SI{2500}{\hertz}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch16-q09}
+    The lowest $A$ on a piano has a frequency of \SI{27.5}{\hertz}.
+    If the tension in the \SI{2.00}{\meter} string is \SI{308}{\newton},
+        and one-half wavelength occupies the string,
+        what is the mass of the wire?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{0.025}{\kilo\gram}}
+        \wrongchoice{\SI{0.049}{\kilo\gram}}
+      \correctchoice{\SI{0.051}{\kilo\gram}}
+        \wrongchoice{\SI{0.081}{\kilo\gram}}
+        \wrongchoice{\SI{0.037}{\kilo\gram}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch16-q10}
+    If $y = 0.02\sin\left(30x-400t\right)$ (SI units),
+        the frequency of the wave is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$30\,\si{\hertz}$}
+        \wrongchoice{$\dfrac{15}{\pi}\,\si{\hertz}$}
+      \correctchoice{$\dfrac{200}{\pi}\,\si{\hertz}$}
+        \wrongchoice{$400\,\si{\hertz}$}
+        \wrongchoice{$800\pi\,\si{\hertz}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch16-q11}
+    If $y = 0.02\sin\left(30x-400t\right)$ (SI units),
+        the wavelength of the wave is:
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{$\dfrac{\pi}{15}\,\si{\meter}$}
+        \wrongchoice{$\dfrac{15}{\pi}\,\si{\meter}$}
+        \wrongchoice{$60\pi\,\si{\meter}$}
+        \wrongchoice{$4.2\,\si{\meter}$}
+        \wrongchoice{$30\,\si{\meter}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch16-q12}
+    If $y = 0.02\sin\left(30x-400t\right)$ (SI units),
+        the velocity of the wave is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\dfrac{3}{40}\,\si{\meter\per\second}$}
+      \correctchoice{$\dfrac{40}{3}\,\si{\meter\per\second}$}
+        \wrongchoice{$\dfrac{60\pi}{400}\,\si{\meter\per\second}$}
+        \wrongchoice{$\dfrac{400}{60\pi}\,\si{\meter\per\second}$}
+        \wrongchoice{$400\,\si{\meter\per\second}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch16-q13}
+    If $y = 0.02\sin\left(30x-400t\right)$ (SI units),
+        the angular frequency of the wave is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$30\,\si{\radian\per\second}$}
+        \wrongchoice{$\dfrac{30}{2\pi}\,\si{\radian\per\second}$}
+        \wrongchoice{$\dfrac{400}{2\pi}\,\si{\radian\per\second}$}
+      \correctchoice{$400\,\si{\radian\per\second}$}
+        \wrongchoice{$\dfrac{40}{3}\,\si{\radian\per\second}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch16-q14}
+    If $y = 0.02\sin\left(30x-400t\right)$ (SI units),
+        the wave number is:
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{$30\,\si{\per\meter}$}
+        \wrongchoice{$\dfrac{30}{2\pi}\,\si{\per\meter}$}
+        \wrongchoice{$\dfrac{400}{2\pi}\,\si{\per\meter}$}
+        \wrongchoice{$400\,\si{\per\meter}$}
+        \wrongchoice{$60\pi\,\si{\per\meter}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch16-q15}
+    If $y = 0.02\sin\left(30x-400t\right)$ (SI units) and if the mass density of the string on which the wave propagates is \SI{0.005}{\kilo\gram\per\meter},
+        then the transmitted power is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{1.03}{\watt}}
+      \correctchoice{\SI{2.13}{\watt}}
+        \wrongchoice{\SI{4.84}{\watt}}
+        \wrongchoice{\SI{5.54}{\watt}}
+        \wrongchoice{\SI{106}{\watt}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch16-q16}
+    Write the equation of a wave,
+        traveling along the +x axis with an amplitude of \SI{0.02}{\meter},
+        a frequency of \SI{440}{\hertz},
+        and a speed of \SI{330}{\meter\per\second}.
+    \begin{choices}
+      \correctchoice{$y = 0.02\sin\left[880\pi\left(\dfrac{x}{300}-t\right)\right]$}
+        \wrongchoice{$y = 0.02\cos\left[880\pi\dfrac{x}{330}-440t\right]$}
+        \wrongchoice{$y = 0.02\sin\left[880\pi\left(\dfrac{x}{330}+t\right)\right]$}
+        \wrongchoice{$y = 0.02\sin\left[2\pi\left(\dfrac{x}{330}+440t\right)\right]$}
+        \wrongchoice{$y = 0.02\cos\left[2\pi\left(\dfrac{x}{330}+440t\right)\right]$}
+    \end{choices}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch16-q17}
+    For the wave described by
+    \begin{equation*}
+        y = 0.15\sin\left[\dfrac{\pi}{16}\left(2x-64t\right)\right]
+    \end{equation*}
+    (SI units),
+        determine the first positive $x$-coordinate where $y$ is a maximum when $t=0$.
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{16}{\meter}}
+        \wrongchoice{\SI{8}{\meter}}
+      \correctchoice{\SI{4}{\meter}}
+        \wrongchoice{\SI{2}{\meter}}
+        \wrongchoice{\SI{13}{\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch16-q18}
+    For the wave described by
+    \begin{equation*}
+        y = 0.15\sin\left[\dfrac{\pi}{16}\left(2x-64t\right)\right]
+    \end{equation*}
+    (SI units), determine $x$ coordinate of the second maximum when $t=0$.
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{\SI{20}{\meter}}
+        \wrongchoice{\SI{18}{\meter}}
+        \wrongchoice{\SI{24}{\meter}}
+        \wrongchoice{\SI{28}{\meter}}
+        \wrongchoice{\SI{16}{\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch16-q19}
+    For the wave described by $y = 0.02\sin\left(kx\right)$ at $t=\SI{0}{\second}$,
+        the first maximum at a positive $x$ coordinate occurs where $x=\SI{4}{\meter}$.
+    Where on the positive $x$ axis does the second maximum occur?
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{\SI{20}{\meter}}
+        \wrongchoice{\SI{18}{\meter}}
+        \wrongchoice{\SI{24}{\meter}}
+        \wrongchoice{\SI{28}{\meter}}
+        \wrongchoice{\SI{16}{\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch16-q20}
+    For the transverse wave described by 
+    \begin{equation*}
+        y=0.15\sin\left[\dfrac{\pi}{16}\left(2x-64t\right)\right]
+    \end{equation*}
+    (SI units),
+        determine the maximum transverse speed of the particles of the medium.
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$0.192\,\si{\meter\per\second}$}
+      \correctchoice{$0.6\pi\,\si{\meter\per\second}$}
+        \wrongchoice{$9.6\,\si{\meter\per\second}$}
+        \wrongchoice{$4\,\si{\meter\per\second}$}
+        \wrongchoice{$2\,\si{\meter\per\second}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch16-q21}
+    Which of the following is a solution to the wave equation,
+    \begin{equation*}
+        \dfrac{\partial^2 y}{\partial x^2} = \dfrac{1}{v^2} \dfrac{\partial^2 y}{\partial t^2}\,?
+    \end{equation*}
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{$\dfrac{\mathrm{e}^{-x}}{x}\sin x$}
+      \correctchoice{$\left(\cos kx\right)\left(\sin t\right)$}
+        \wrongchoice{$\mathrm{e}^{-x}\sin\omega t$}
+        \wrongchoice{$\mathrm{e}^{-x}\sin\left(kx-\omega t\right)$}
+        \wrongchoice{$\mathrm{e}^{-x}\cos t$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch16-q22}
+    Find the period of a wave of \SI{100}{\meter} wavelength in deep water where $v = \sqrt{\dfrac{g\lambda}{2\pi}}$.
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{5.0}{\second}}
+      \correctchoice{\SI{8.0}{\second}}
+        \wrongchoice{\SI{12.5}{\second}}
+        \wrongchoice{\SI{15}{\second}}
+        \wrongchoice{\SI{0.125}{\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch16-q23}
+    A piano wire of length \SI{1.5}{\meter} vibrates so that one-half wavelength is contained on the string.
+    If the frequency of vibration is \SI{65}{\hertz},
+        the amplitude of vibration is \SI{3.0}{\milli\meter},
+        and the density is \SI{15}{\gram\per\meter},
+        how much energy is transmitted per second down the wire?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{21}{\watt}}
+        \wrongchoice{\SI{11}{\watt}}
+        \wrongchoice{\SI{5.4}{\watt}}
+      \correctchoice{\SI{2.2}{\watt}}
+        \wrongchoice{\SI{1.1}{\watt}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch16-q24}
+    A student attaches a length of nylon fishing line to a fence post.
+    She stretches it out and shakes the end of the rope in her hand back and forth to produce waves on the line.
+    The most efficient way for her to increase the wavelength is to:
+    \begin{choices}
+        \wrongchoice{increase the tension on the hose and shake the end more times per second.}
+        \wrongchoice{decrease the tension on the hose and shake the end more times per second.}
+      \correctchoice{increase the tension on the hose and shake the end fewer times per second.}
+        \wrongchoice{decrease the tension on the hose and shake the end fewer times per second.}
+        \wrongchoice{keep the tension and frequency the same but increase the length of the hose.}
+    \end{choices}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch16-q25}
+    The figure below shows a sine wave at one point of a string as a function of time.
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: pgfpltos
+    \end{tikzpicture}
+    \end{center}
+    Which of the graphs below shows a wave where the amplitude and the frequency are doubled?
+    \begin{multicols}{2}
+    \begin{choices}
+        %% NOTE: ANS is D
+        \wrongchoice{
+            \begin{tikzpicture}
+                %% NOTE: tikz graphs
+            \end{tikzpicture}
+        }
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch16-q26}
+    The figure below shows a sine wave at one point of a string as a function of time.
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: pgfpltos
+    \end{tikzpicture}
+    \end{center}
+    Which of the graphs below shows a wave where the amplitude and frequency are each reduced in half?
+    \begin{multicols}{2}
+    \begin{choices}
+        %% NOTE: ANS is E
+        \wrongchoice{
+            \begin{tikzpicture}
+                %% NOTE: tikz graphs
+            \end{tikzpicture}
+        }
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch16-q27}
+    The figure below shows a sine wave on a string at one instant of time.
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: pgfpltos
+    \end{tikzpicture}
+    \end{center}
+    Which of the graphs below shows a wave where the frequency and wave velocity are both doubled?
+    \begin{multicols}{2}
+    \begin{choices}
+        %% NOTE: ANS is A
+        \wrongchoice{
+            \begin{tikzpicture}
+                %% NOTE: tikz graphs
+            \end{tikzpicture}
+        }
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch16-q28}
+    The figure below shows a sine wave on a string at one instant of time.
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: pgfpltos
+    \end{tikzpicture}
+    \end{center}
+    Which of the graphs below shows a wave where the wavelength is twice as large?
+    \begin{multicols}{2}
+    \begin{choices}
+        %% NOTE: ANS is D
+        \wrongchoice{
+            \begin{tikzpicture}
+                %% NOTE: tikz graphs
+            \end{tikzpicture}
+        }
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{questionmult}{serway-ch16-q29}
+    Superposition of waves can occur:
+    \begin{choices}
+      \correctchoice{in transverse waves.}
+      \correctchoice{in longitudinal waves.}
+      \correctchoice{in sinusoidal waves.}
+        %\correctchoice{in all ofthe above.}
+        %\wrongchoice{only in (a) and (c) above.}
+    \end{choices}
+\end{questionmult}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch16-q30}
+    Two pulses are traveling towards each other at \SI{10}{\centi\meter\per\second} on a long string at $t=\SI{0}{\second}$,
+        as shown below.
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: tikz
+    \end{tikzpicture}
+    \end{center}
+    Which diagram below correctly shows the shape of the string at \SI{0.5}{\second}?
+    \begin{multicols}{2}
+    \begin{choices}
+        %% NOTE: ANS is B
+        \wrongchoice{
+            \begin{tikzpicture}
+                %% NOTE: tikz graphs
+            \end{tikzpicture}
+        }
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{questionmult}{serway-ch16-q31}
+    Suppose that you were selected for a ``Survivor''-type TV show.
+    To help keep your group connected, you suggest that long vines can be tied together and used to transmit signals in cases of emergency.
+    To get the signals to travel faster, you should
+    \begin{choices}
+      \correctchoice{select lighter vines.}
+      \correctchoice{increase the tension on the vines.}
+        \wrongchoice{hang weights from the vines at evenly spaced intervals.}
+        %\wrongchoice{do all of the above.}
+        %\correctchoice{do (a) and (b) above only.}
+    \end{choices}
+\end{questionmult}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch16-q32}
+    Two ropes are spliced together as shown.
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: tikz
+    \end{tikzpicture}
+    \end{center}
+    A short time after the incident pulse shown in the diagram reaches the splice,
+        the ropes appearance will be that in:
+    \begin{choices}
+        %% NOTE: ANS is A
+        \wrongchoice{
+            \begin{tikzpicture}
+                %% NOTE: tikz graphs
+            \end{tikzpicture}
+        }
+    \end{choices}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch16-q33}
+    Two ropes are spliced together as shown.
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: tikz
+    \end{tikzpicture}
+    \end{center}
+    A short time after the incident pulse shown in the diagram reaches the splice,
+        the ropes appearance will be that in:
+    \begin{choices}
+        %% NOTE: ANS is C
+        \wrongchoice{
+            \begin{tikzpicture}
+                %% NOTE: tikz graphs
+            \end{tikzpicture}
+        }
+    \end{choices}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch16-q34}
+    The fundamental frequency of a above middle C on the piano is \SI{440}{\hertz}.
+    This is the tenor high A,
+        but a convenient note in the mid-range of women's voices.
+    When we calculate the wavelength,
+        we find that it is:
+    \begin{choices}
+        \wrongchoice{much shorter than the length of either a man's or woman's lips.}
+        \wrongchoice{shorter than the length of a man's lips, but about the length of a woman's lips.}
+        \wrongchoice{longer than a woman's lips, but about the length of a man's lips.}
+      \correctchoice{much longer than the length of either a man's or a woman's lips.}
+        \wrongchoice{about the same length as either a man's or woman's lips.}
+    \end{choices}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch16-q35}
+    Ariel claims that a pulse is described by the equation
+    \begin{equation*}
+        y(x,t) = \dfrac{2}{x^2 - 6.0xt + 9t^2 + 9}
+    \end{equation*}
+    where $x$ and $y$ are measured in \si{\centi\meter} and $t$ in \si{\second}.
+    Miranda says that it is not possible to represent a pulse with this function because a wave must be a function of $x+vt$ or $x-vt$.
+    Which one, if either, is correct, and why?
+    \begin{choices}
+      \correctchoice{Ariel, because $x^2-6.0xt+9t^2 = \left(x-3.0t\right)^2$.}
+        \wrongchoice{Ariel, because a pulse is not an infinite wave.}
+        \wrongchoice{Miranda, because $\left(x-3.0t\right)^2$ is the same as $\left(3.0t-x\right)^2$.}
+        \wrongchoice{Miranda, because a pulse is not an infinite wave.}
+        \wrongchoice{Miranda, because $x^2-6.0xt+9t^2=x^2\left(1-\dfrac{6.00t}{x}+\dfrac{9t^2}{x^2}\right)$ is infinite when $x=0$.}
+    \end{choices}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch16-q36}
+    How does the wave function $y^{\prime}=\sin\left(k^2x-\omega^2t\right)$ differ from the wave function $y=\sin\left(kx-\omega t\right)$?
+    (In $y^{\prime}$, $k^2$ has units \si{\per\centi\meter} and $\omega^2$ units \si{\per\second}.
+    In $y$, $k$ has units \si{\per\centi\meter} and $\omega$ units \si{\per\second}.)
+    \begin{choices}[o]
+        \wrongchoice{$\lambda^{\prime} = \dfrac{\lambda}{2\pi}$}
+        \wrongchoice{$f^{\prime} = 2\pi f$}
+        \wrongchoice{$v^{\prime} = v^2$}
+      \correctchoice{All of the above are correct.}
+        \wrongchoice{The only difference is that $v^{\prime}=2v$.}
+    \end{choices}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch16-q37}
+    The figure below represents a string which has a heavy section and a light section.
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE:
+    \end{tikzpicture}
+    \end{center}
+    The mass per unit length of the heavy section is 16 times as large as the mass per unit length of the light section.
+    When the string is under tension,
+        the speed of a pulse traveling in the heavy section is \rule[-0.1pt]{4em}{0.1pt} times the speed of that same pulse traveling in the light section.
+    \begin{multicols}{3}
+    \begin{choices}
+         \wrongchoice{\num{1/16}}
+       \correctchoice{\num{1/4}}
+         \wrongchoice{\num{1/2}}
+         \wrongchoice{\num{2}}
+         \wrongchoice{\num{4}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{questionmult}{serway-ch16-q38}
+    To transmit four times as much energy per unit time along a string,
+        you must:
+    \begin{choices}
+      \correctchoice{double the frequency.}
+      \correctchoice{double the amplitude.}
+        \wrongchoice{increase the tension by a factor of 16.}
+        %\wrongchoice{do any one of the above.}
+        %\correctchoice{do only (a) or (b) above.}
+    \end{choices}
+\end{questionmult}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch16-q39}
+    The wave equation is written down in an exam as
+    \begin{equation*}
+        \dfrac{\mathrm{d}^2 y}{\mathrm{d}x^2} = v^2 \dfrac{\mathrm{d}^2y}{\mathrm{d}t^2} .
+    \end{equation*}
+    From dimensional considerations we see that:
+    \begin{choices}
+        \wrongchoice{$v^2$ should be replaced by $\dfrac{T}{\mu}$.}
+        \wrongchoice{$v^2$ should be replaced by $\sqrt{T}{\mu}$.}
+        \wrongchoice{$v^2$ should be replaced by $v$.}
+        \wrongchoice{$v^2$ should be replaced by $\dfrac{1}{v}$.}
+      \correctchoice{$v^2$ should be replaced by $\dfrac{1}{v^2}$.}
+    \end{choices}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch16-q40}
+    Four wave functions are given below.
+    Rank them in order of the magnitude of the wave speeds,
+        from least to greatest.
+    \begin{itemize}
+        \item[I.]   $y(x,t) = 5\sin\left(4x-20t+4\right)$
+        \item[II.]  $y(x,t) = 5\sin\left(3x-12t+5\right)$
+        \item[III.] $y(x,t) = 5\cos\left(4x+24t+6\right)$
+        \item[IV.]  $y(x,t) = 14\cos\left(2x-8t+3\right)$
+    \end{itemize}
+    \begin{choices}
+        \wrongchoice{IV, II, I, III}
+      \correctchoice{IV=II, I, III}
+        \wrongchoice{III, I, II, IV}
+        \wrongchoice{IV, I, II, III}
+        \wrongchoice{III, IV, II, I}
+    \end{choices}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch16-q41}
+    Four wave functions are given below.
+    Rank them in order of the magnitude of the frequencies of the waves,
+        from least to greatest.
+    \begin{itemize}
+        \item[I.]   $y(x,t) = 5\sin\left(4x-20t+4\right)$
+        \item[II.]  $y(x,t) = 5\sin\left(3x-12t+5\right)$
+        \item[III.] $y(x,t) = 5\cos\left(4x+24t+6\right)$
+        \item[IV.]  $y(x,t) = 14\cos\left(2x-8t+3\right)$
+    \end{itemize}
+    \begin{choices}
+      \correctchoice{IV, II, I, III}
+        \wrongchoice{IV=II, I, III}
+        \wrongchoice{III, I, II, IV}
+        \wrongchoice{IV, I, II, III}
+        \wrongchoice{III, IV, II, I}
+    \end{choices}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch16-q42}
+    Four wave functions are given below.
+    Rank them in order of the magnitude of the wavelengths,
+        from least to greatest.
+    \begin{itemize}
+        \item[I.]   $y(x,t) = 5\sin\left(4x-20t+4\right)$
+        \item[II.]  $y(x,t) = 5\sin\left(3x-12t+5\right)$
+        \item[III.] $y(x,t) = 5\cos\left(4x+24t+6\right)$
+        \item[IV.]  $y(x,t) = 14\cos\left(2x-8t+3\right)$
+    \end{itemize}
+    \begin{choices}
+        \wrongchoice{IV, II, I, III}
+        \wrongchoice{IV, I, II, III}
+        \wrongchoice{I, II, III, IV}
+        \wrongchoice{IV, II, III=I}
+      \correctchoice{I=III, II, IV}
+    \end{choices}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch16-q43}
+    You are holding on to one end of a long string that is fastened to a rigid steel light pole.
+    After producing a wave pulse that was \SI{5}{\milli\meter} high and \SI{4}{\centi\meter} wide,
+        you want to produce a pulse that is \SI{4}{\centi\meter} wide but \SI{7}{\milli\meter} high.
+    You must move your hand up and down once,
+    \begin{choices}
+        \wrongchoice{the same distance up as before, but take a shorter time.}
+        \wrongchoice{the same distance up as before, but take a longer time.}
+        \wrongchoice{a smaller distance up, but take a shorter time.}
+        \wrongchoice{a greater distance up, but take a longer time.}
+      \correctchoice{a greater distance up, but take the same time.}
+    \end{choices}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch16-q44}
+    You are holding on to one end of a long string that is fastened to a rigid steel light pole. 
+    After producing a wave pulse that was \SI{5}{\milli\meter} high and \SI{4}{\centi\meter} wide,
+        you want to produce a pulse that is \SI{6}{\centi\meter} wide but still \SI{5}{\milli\meter} high. 
+    You must move your hand up and down once,
+    \begin{choices}
+        \wrongchoice{the same distance up as before, but take a shorter time.}
+      \correctchoice{the same distance up as before, but take a longer time.}
+        \wrongchoice{a smaller distance up, but take a shorter time.}
+        \wrongchoice{a greater distance up, but take a longer time.}
+        \wrongchoice{a greater distance up, but take the same time.}
+    \end{choices}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch16-q45}
+    You are holding on to one end of a long string that is fastened to a rigid steel light pole. 
+    After producing a wave pulse that was \SI{5}{\milli\meter} high and \SI{4}{\centi\meter} wide,
+        you want to produce a pulse that is \SI{6}{\centi\meter} wide and \SI{7}{\milli\meter} high. 
+    You must move your hand up and down once,
+    \begin{choices}
+        \wrongchoice{the same distance up as before, but take a shorter time.}
+        \wrongchoice{the same distance up as before, but take a longer time.}
+        \wrongchoice{a smaller distance up, but take a shorter time.}
+      \correctchoice{a greater distance up, but take a longer time.}
+        \wrongchoice{a greater distance up, but take the same time.}
+    \end{choices}
+\end{question}
+}
+
+
+\endinput
+
+

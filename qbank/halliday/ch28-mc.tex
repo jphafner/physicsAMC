@@ -1,0 +1,825 @@
+
+%%--------------------------------------------------
+%% Halliday: Fundamentals of Physics
+%%--------------------------------------------------
+
+
+%% Chapter 28: Magnetic Fields
+%%--------------------------------------------------
+
+
+%% Learning Objectives
+%%--------------------------------------------------
+
+%% 28.01: Distinguish an electromagnet from a permanent magnet.
+%% 28.02: Identify that a magnetic field is a vector quantity and thus has both magnitude and direction.
+%% 28.03: Explain how a magnetic field can be defined in terms of what happens to a charged particle moving through the field.
+%% 28.04: For a charged particle moving through a uniform magnetic field, apply the relationship between force magnitude $F_B$, charge $q$, speed $v$, field magnitude $B$, and the angle $\phi$ between the directions of the velocity vector $\vec{v}$ and the magnetic field vector $\vec{B}$ .
+%% 28.05: For a charged particle sent through a uniform magnetic field, find the direction of the magnetic force $\vec{F}_B$ by (1) applying the right-hand rule to find the direction of the cross product $\vec{v}\times\vec{B}$ and (2) determining what effect the charge q has on the direction.
+%% 28.06: Find the magnetic force $\vec{F}_B$ acting on a moving charged particle by evaluating the cross product $q\left(\vec{v}\times\vec{B}\right)$ in unit-vector notation and magnitude-angle notation.
+%% 28.07: Identify that the magnetic force vector $\vec{F}_B$ must always be perpendicular to both the velocity vector $\vec{v}$ and the magnetic field vector $\vec{B}$.
+%% 28.08: Identify the effect of the magnetic force on the particle's speed and kinetic energy.
+%% 28.09: Identify a magnet as being a magnetic dipole.
+%% 28.10: Identify that opposite magnetic poles attract each other and like magnetic poles repel each other.
+%% 28.11: Explain magnetic field lines, including where they originate and terminate and what their spacing represents.
+
+
+%% Halliday Multiple Choice Questions
+%%--------------------------------------------------
+\element{halliday-mc}{
+\begin{question}{halliday-ch28-q01}
+    Units of a magnetic field might be:
+    \begin{choices}
+        \wrongchoice{coulomb meter per second (\si{\coulomb\meter\per\second})}
+        \wrongchoice{coulomb second per meter (\si{\coulomb\second\per\meter})}
+        \wrongchoice{coulomb per kilogram (\si{\coulomb\per\kilo\gram})}
+      \correctchoice{kilogram per couloumb per second (\si{\kilo\gram\per\coulomb\per\second})}
+        \wrongchoice{newton per coulomb per meter (\si{\newton\per\coulomb\per\meter})}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch28-q02}
+    In the formula $\vec{F} = q\vec{v}\times\vec{B}$:
+    %% NOTE: bold vec
+    \begin{choices}
+        \wrongchoice{$\vec{F}$ must be perpendicular to $\vec{v}$ but not necessarily to $\vec{B}$}
+        \wrongchoice{$\vec{F}$ must be perpendicular to $\vec{B}$ but not necessarily to $\vec{v}$}
+        \wrongchoice{$\vec{v}$ must be perpendicular to $\vec{B}$ but not necessarily to $\vec{F}$}
+        \wrongchoice{all three vectors must be mutually perpendicular}
+      \correctchoice{$\vec{F}$ must be perpendicular to both $\vec{v}$ and $\vec{B}$}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch28-q03}
+    An electron moves in the negative $x$ direction,
+        through a uniform magnetic field in the negative $y$ direction.
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: tikz
+    \end{tikzpicture}
+    \end{center}
+    The  magnetic force on the electron is:
+    \begin{choices}
+        \wrongchoice{in the negative $x$ direction}
+        \wrongchoice{in the positive $y$ direction}
+        \wrongchoice{in the negative $y$ direction}
+        \wrongchoice{in the positive $z$ direction}
+      \correctchoice{in the negative $z$ direction}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch28-q04}
+    At any point the magnetic field lines are in the direction of:
+    \begin{choices}
+        \wrongchoice{the magnetic force on a moving positive charge}
+        \wrongchoice{the magnetic force on a moving negative charge}
+        \wrongchoice{the velocity of a moving positive charge}
+        \wrongchoice{the velocity of a moving negative charge}
+      \correctchoice{none of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch28-q05}
+    The magnetic force on a charged particle is in the direction of its velocity if:
+    \begin{choices}
+        \wrongchoice{it is moving in the direction of the field}
+        \wrongchoice{it is moving opposite to the direction of the field}
+        \wrongchoice{it is moving perpendicular to the field}
+        \wrongchoice{it is moving in some other direction}
+      \correctchoice{never}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch28-q06}
+    A magnetic field exerts a force on a charged particle:
+    \begin{choices}
+        \wrongchoice{always}
+        \wrongchoice{never}
+      \correctchoice{if the particle is moving across the field lines}
+        \wrongchoice{if the particle is moving along the field lines}
+        \wrongchoice{if the particle is at rest}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch28-q07}
+    The direction of the magnetic field in a certain region of space is determined by firing a test charge into the region with its velocity in various directions in different trials.
+    The field direction is:
+    \begin{choices}
+      \correctchoice{one of the directions of the velocity when the magnetic force is zero}
+        \wrongchoice{the direction of the velocity when the magnetic force is a maximum}
+        \wrongchoice{the direction of the magnetic force}
+        \wrongchoice{perpendicular to the velocity when the magnetic force is zero}
+        \wrongchoice{none of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch28-q08}
+    An electron is moving north in a region where the magnetic field is south.
+    The magnetic force exerted on the electron is:
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{zero}
+        \wrongchoice{up}
+        \wrongchoice{down}
+        \wrongchoice{east}
+        \wrongchoice{west}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch28-q09}
+    A magnetic field \emph{cannot}:
+    \begin{choices}
+        \wrongchoice{exert a force on a charged particle}
+        \wrongchoice{change the velocity of a charged particle}
+        \wrongchoice{change the momentum of a charged particle}
+      \correctchoice{change the kinetic energy of a charged particle}
+        \wrongchoice{change the trajectory of a charged particle}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch28-q10}
+    A proton (charge $e$), traveling perpendicular to a magnetic field,
+        experiences the same force as an alpha particle (charge $2e$) which is also traveling perpendicular to the same field.
+    The ratio of their speeds, $v_{\text{proton}}/v_{\text{alpha}}$, is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\num{0.5}}
+        \wrongchoice{\num{1}}
+      \correctchoice{\num{2}}
+        \wrongchoice{\num{4}}
+        \wrongchoice{\num{8}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch28-q11}
+    A hydrogen atom that has lost its electron is moving east in a region where the magnetic field is directed from south to north.
+    It will be deflected:
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{up}
+        \wrongchoice{down}
+        \wrongchoice{north}
+        \wrongchoice{south}
+        \wrongchoice{not at all}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch28-q12}
+    A beam of electrons is sent horizontally down the axis of a tube to strike a fluorescent screen at the end of the tube.
+    On the way,
+        the electrons encounter a magnetic field directed vertically downward.
+    The spot on the screen will therefore be deflected:
+    \begin{choices}
+        \wrongchoice{upward}
+        \wrongchoice{downward}
+      \correctchoice{to the right as seen from the electron source}
+        \wrongchoice{to the left as seen from the electron source}
+        \wrongchoice{not at all}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch28-q13}
+    An electron (charge = \SI{-1.6e-19}{\coulomb}) is moving at \SI{3e5}{\meter\per\second} in the positive $x$ direction.
+    A magnetic field of \SI{0.8}{\tesla} is in the positive $z$ direction.
+    The magnetic force on the electron is:
+    \begin{choices}
+        \wrongchoice{zero}
+        \wrongchoice{\SI{4e-14}{\newton}, in the positive $z$ direction}
+        \wrongchoice{\SI{4e-14}{\newton}, in the negative $z$ direction}
+      \correctchoice{\SI{4e-14}{\newton}, in the positive $y$ direction}
+        \wrongchoice{\SI{4e-14}{\newton}, in the negative $y$ direction}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch28-q14}
+    At one instant an electron (charge = \SI{-1.6e-19}{\coulomb}) is moving in the $xy$ plane,
+        the components of its velocity being $v_x=\SI{5e5}{\meter\per\second}$ and $v_y=\SI{3e5}{\meter\per\second}$.
+    A magnetic field of \SI{0.8}{\tesla} is in the positive $x$ direction.
+    At that instant the magnitude of the magnetic force on the electron is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{zero}
+        \wrongchoice{\SI{2.6e-14}{\newton}}
+      \correctchoice{\SI{3.8e-14}{\newton}}
+        \wrongchoice{\SI{6.4e-14}{\newton}}
+        \wrongchoice{\SI{1.0e-3}{\newton}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch28-q15}
+    At one instant an electron (charge = \SI{-1.6e-19}{\coulomb}) is moving in the $xy$ plane,
+    the components of its velocity being $v_x=\SI{5e5}{\meter\per\second}$ and $v_y=\SI{3e5}{\meter\per\second}$.
+    A magnetic field of \SI{0.8}{\tesla} is in the positive $x$ direction.
+    At that instant the magnitude of the magnetic force on the electron is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{zero}
+      \correctchoice{\SI{3.8e-14}{\newton}}
+        \wrongchoice{\SI{5.1e-14}{\newton}}
+        \wrongchoice{\SI{6.4e-14}{\newton}}
+        \wrongchoice{\SI{7.5e-14}{\newton}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch28-q16}
+    An electron travels due north through a vacuum in a region of uniform magnetic field $\vec{B}$ that is also directed due north.
+    It will:
+    \begin{choices}
+      \correctchoice{be unaffected by the field}
+        \wrongchoice{speed up}
+        \wrongchoice{slow down}
+        \wrongchoice{follow a right-handed corkscrew path}
+        \wrongchoice{follow a left-handed corkscrew path}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch28-q17}
+    At one instant an electron is moving in the positive $x$ direction along the $x$ axis in a region where there is a uniform magnetic field in the positive $z$ direction.
+    When viewed from a point on the positive $z$ axis,
+        it subsequent motion is:
+    \begin{choices}
+        \wrongchoice{straight ahead}
+      \correctchoice{counterclockwise around a circle in the $xy$ plane}
+        \wrongchoice{clockwise around a circle in the $xy$ plane}
+        \wrongchoice{in the positive $z$ direction}
+        \wrongchoice{in the negative $z$ direction}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch28-q18}
+    A uniform magnetic field is directed into the page.
+    A charged particle, moving in the plane of the page,
+        follows a clockwise spiral of decreasing radius as shown.
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: tikz
+    \end{tikzpicture}
+    \end{center}
+    A reasonable explanation is:
+    \begin{choices}
+        \wrongchoice{the charge is positive and slowing down}
+      \correctchoice{the charge is negative and slowing down}
+        \wrongchoice{the charge is positive and speeding up}
+        \wrongchoice{the charge is negative and speeding up}
+        \wrongchoice{none of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch28-q19}
+    An electron and a proton each travel with equal speeds around circular orbits in the same uniform magnetic field,
+        as shown in the diagram (not to scale).
+    The field is into the page on the diagram.
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: tikz
+    \end{tikzpicture}
+    \end{center}
+    Because the electron is less massive than the proton and because the electron is negatively charged and the proton is positively charged:
+    \begin{choices}
+      \correctchoice{the electron travels clockwise around the smaller circle and the proton travels counterclockwise around the larger circle}
+        \wrongchoice{the electron travels counterclockwise around the smaller circle and the proton travels clockwise around the larger circle}
+        \wrongchoice{the electron travels clockwise around the larger circle and the proton travels counterclockwise around the smaller circle}
+        \wrongchoice{the electron travels counterclockwise around the larger circle and the proton travels clockwise around the smaller circle}
+        \wrongchoice{the electron travels counterclockwise around the smaller circle and the proton travels counterclockwise around the larger circle}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch28-q20}
+    An electron is launched with velocity $v$ in a uniform magnetic field $B$.
+    The angle $\theta$ between $v$ and $B$ is between \ang{0} and \ang{90}.
+    As a result, the electron follows a helix,
+        its velocity vector $v$ returning to its initial value in a time interval of:
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{$\dfrac{2\pi m}{eB}$}
+        \wrongchoice{$\dfrac{2\pi mv}{eB}$}
+        \wrongchoice{$\dfrac{2\pi mv\sin\theta}{eB}$}
+        \wrongchoice{$\dfrac{2\pi πmv\cos\theta}{eB}$}
+        \wrongchoice{none of the provided}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch28-q21}
+    An electron and a proton are both initially moving with the same speed and in the same direction at \ang{90} to the same uniform magnetic field.
+    They experience magnetic forces, which are initially:
+    \begin{choices}
+        \wrongchoice{identical}
+      \correctchoice{equal in magnitude but opposite in direction}
+        \wrongchoice{in the same direction and differing in magnitude by a factor of 1840}
+        \wrongchoice{in opposite directions and differing in magnitude by a factor of 1840}
+        \wrongchoice{equal in magnitude but perpendicular to each other.}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch28-q22}
+    An electron enters a region of uniform perpendicular $\vec{E}$ and $\vec{B}$ fields.
+    It is observed that the velocity $v$ of the electron is unaffected.
+    A possible explanation is:
+    \begin{choices}
+        \wrongchoice{$v$ is parallel to $\vec{E}$ and has magnitude $E/B$}
+        \wrongchoice{$v$ is parallel to $\vec{B}$}
+        \wrongchoice{$v$ is perpendicular to both $\vec{E}$ and $\vec{B}$ and has magnitude $B/E$}
+      \correctchoice{$v$ is perpendicular to both $\vec{E}$ and $\vec{B}$ and has magnitude $E/B$}
+        \wrongchoice{the given situation is impossible}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch28-q23}
+    A charged particle is projected into a region of uniform,
+        parallel, $\vec{E}$ and $\vec{B}$ fields.
+    The force on the particle is:
+    \begin{choices}
+        \wrongchoice{zero}
+      \correctchoice{at some angle $<\ang{90}$ with the field lines}
+        \wrongchoice{along the field lines}
+        \wrongchoice{perpendicular to the field lines}
+        \wrongchoice{unknown (need to know the sign of the charge)}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch28-q24}
+    A uniform magnetic field is in the positive $z$ direction.
+    A positively charged particle is moving in the positive $x$ direction through the field.
+    The net force on the particle can be made zero by applying an electric field in what direction?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{Positive $y$}
+      \correctchoice{Negative $y$}
+        \wrongchoice{Positive $x$}
+        \wrongchoice{Negative $x$}
+        \wrongchoice{Positive $z$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch28-q25}
+    An electron is traveling in the positive $x$ direction.
+    A uniform electric field $\vec{E}$ is in the negative $y$ direction.
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: tikz
+    \end{tikzpicture}
+    \end{center}
+    If a uniform magnetic field with the appropriate magnitude and direction also exists in the region, the total force on the electron will be zero.
+    The appropriate direction for the magnetic field is:
+    \begin{choices}
+        \wrongchoice{the positive $y$ direction}
+        \wrongchoice{the negative $y$ direction}
+      \correctchoice{into the page}
+        \wrongchoice{out of the page}
+        \wrongchoice{the negative $x$ direction}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch28-q26}
+    An ion with a charge of \SI{+3.2e-19}{\coulomb} is in a region where a uniform electric field of \SI{5e4}{\volt\per\meter} is perpendicular to a uniform magnetic field of \SI{0.8}{\tesla}.
+    If its acceleration is zero then its speed must be:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{zero}
+        \wrongchoice{\SI{1.6e4}{\meter\per\second}}
+        \wrongchoice{\SI{4.0e4}{\meter\per\second}}
+      \correctchoice{\SI{6.3e4}{\meter\per\second}}
+        \wrongchoice{any value but zero}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch28-q27}
+    The current is from left to right in the conductor shown.
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: tikz
+    \end{tikzpicture}
+    \end{center}
+    The magnetic field is into the page and point $S$ is at a higher potential than point $T$.
+    The charge carriers are:
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{positive}
+        \wrongchoice{negative}
+        \wrongchoice{neutral}
+        \wrongchoice{absent}
+        \wrongchoice{moving near the speed of light}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch28-q28}
+    Electrons (mass $m$, charge $-e$) are accelerated from rest through a potential difference $V$ and are then deflected by a magnetic field $\vec{B}$ that is perpendicular to their velocity. 
+    The radius of the resulting electron trajectory is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{$\dfrac{1}{B}\sqrt{\dfrac{2eV}{m}}$}
+        \wrongchoice{$\dfrac{B\sqrt{2eV}}{m}$}
+      \correctchoice{$\dfrac{1}{b}\sqrt{\dfrac{2mV}{e}}$}
+        \wrongchoice{$\dfrac{B\sqrt{2mV}}{e}$}
+        \wrongchoice{none of the provided}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch28-q29}
+    In a certain mass spectrometer, an ion beam passes through a velocity filter consisting of mutually perpendicular fields $\vec{E}$ and $\vec{B}$. 
+    The beam then enters a region of another magnetic field $\vec{B}^{\prime}$ perpendicular to the beam.
+    The radius of curvature of the resulting ion beam is proportional to:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\dfrac{EB^{\prime}}{B}$}
+        \wrongchoice{$\dfrac{EB}{B^{\prime}}$}
+        \wrongchoice{$\dfrac{BB^{\prime}}{E}$}
+        \wrongchoice{$\dfrac{B}{EB^{\prime}}$}
+      \correctchoice{$\dfrac{E}{BB^{\prime}}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch28-q30}
+    A cyclotron operates with a given magnetic field and at a given frequency. 
+    If $R$ denotes the radius of the final orbit,
+        the final particle energy is proportional to:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\dfrac{1}{R}$}
+        \wrongchoice{$R$}
+      \correctchoice{$R^2$}
+        \wrongchoice{$R^3$}
+        \wrongchoice{$R^4$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch28-q31}
+    J. J. Thomson’s experiment,
+        involving the motion of an electron beam in mutually perpendicular $\vec{E}$ and $\vec{B}$ fields,
+        gave the value of:
+    \begin{choices}
+        \wrongchoice{mass of an electron}
+        \wrongchoice{charge of an electron}
+        \wrongchoice{Earth's magnetic field}
+      \correctchoice{charge/mass ratio for electrons}
+        \wrongchoice{Avogadro's number}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch28-q32}
+    The diagram shows a straight wire carrying a flow of electrons into the page. 
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: tikz
+    \end{tikzpicture}
+    \end{center}
+    The wire is between the poles of a permanent magnet. 
+    The direction of the magnetic force exerted on the wire is:
+    \begin{multicols}{2}
+    \begin{choices}
+        %% NOTE: tikz options, like projectphysics
+      \correctchoice{↑}
+        \wrongchoice{↓}
+        \wrongchoice{←}
+        \wrongchoice{→}
+        \wrongchoice{into the page}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch28-q33}
+    The figure shows the motion of electrons in a wire that is near the $N$ pole of a magnet. 
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: tikz
+    \end{tikzpicture}
+    \end{center}
+    The wire will be pushed:
+    \begin{choices}
+        \wrongchoice{toward the magnet}
+        \wrongchoice{away from the magnet}
+        \wrongchoice{downwards}
+      \correctchoice{upwards}
+        \wrongchoice{along its length}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch28-q34}
+    The diagram shows a straight wire carrying current $i$ in a uniform magnetic field. 
+    The magnetic force on the wire is indicated by an arrow but the magnetic field is not shown.
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: tikz
+    \end{tikzpicture}
+    \end{center}
+    Of the following possibilities,
+        the direction of the magnetic field is:
+    \begin{choices}
+        \wrongchoice{opposite the direction of the current}
+        \wrongchoice{opposite the direction of $F$}
+        \wrongchoice{in the direction of $F$}
+        \wrongchoice{into the page}
+      \correctchoice{out of the page}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch28-q35}
+    The figure shows a uniform magnetic field $\vec{B}$ directed to the left and a wire carrying a current into the page.
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: tikz
+    \end{tikzpicture}
+    \end{center}
+    The magnetic force acting on the wire is:
+    \begin{choices}
+      \correctchoice{toward the top of the page}
+        \wrongchoice{toward the bottom of the page}
+        \wrongchoice{toward the left}
+        \wrongchoice{toward the right}
+        \wrongchoice{zero}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch28-q36}
+    A loop of wire carrying a current of \SI{2.0}{\ampere} is in the shape of a right triangle with two equal sides,
+        each \SI{15}{\centi\meter} long. 
+    A \SI{0.7}{\tesla} uniform magnetic field is parallel to the hypotenuse. 
+    The resultant magnetic force on the two equal sides has a magnitude of:
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{zero}
+        \wrongchoice{\SI{0.21}{\newton}}
+        \wrongchoice{\SI{0.30}{\newton}}
+        \wrongchoice{\SI{0.41}{\newton}}
+        \wrongchoice{\SI{0.51}{\newton}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch28-q37}
+    A loop of wire carrying a current of \SI{2.0}{\ampere} is in the shape of a right triangle with two equal sides,
+        each \SI{15}{\centi\meter} long. 
+    A \SI{0.7}{\tesla} uniform magnetic field is in the plane of the triangle and is perpendicular to the hypotenuse. 
+    The magnetic force on either of the two equal sides has a magnitude of:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{zero}
+        \wrongchoice{\SI{0.105}{\newton}}
+      \correctchoice{\SI{0.15}{\newton}}
+        \wrongchoice{\SI{0.21}{\newton}}
+        \wrongchoice{\SI{0.25}{\newton}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch28-q38}
+    A current is clockwise around the outside edge of this page and a uniform magnetic field is directed parallel to the page,
+        from left to right. 
+    If the magnetic force is the only force acting on the page,
+        the page will turn so the right edge:
+    \begin{choices}
+      \correctchoice{moves toward you}
+        \wrongchoice{moves away from you}
+        \wrongchoice{moves to your right}
+        \wrongchoice{moves to your left}
+        \wrongchoice{does not move}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch28-q39}
+    A square loop of wire lies in the plane of the page and carries a current $I$ as shown.
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: tikz
+    \end{tikzpicture}
+    \end{center}
+    There is a uniform magnetic field $\vec{B}$ parallel to the side $MK$ as indicated. 
+    The loop will tend to rotate:
+    \begin{choices}
+      \correctchoice{about $PQ$ with $KL$ coming out of the page}
+        \wrongchoice{about $PQ$ with $KL$ going into the page}
+        \wrongchoice{about $RS$ with $MK$ coming out of the page}
+        \wrongchoice{about $RS$ with $MK$ going into the page}
+        \wrongchoice{about an axis perpendicular to the page.}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch28-q40}
+    The units of magnetic dipole moment are:
+    \begin{choices}
+        \wrongchoice{ampere (\si{\ampere})}
+        \wrongchoice{ampere meter (\si{\ampere\meter})}
+      \correctchoice{ampere meter squared (\si{\ampere\meter\squared})}
+        \wrongchoice{ampere per meter (\si{\ampere\per\meter})}
+        \wrongchoice{ampere per meter squared (\si{\ampere\per\meter\squared})}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch28-q41}
+    You are facing a loop of wire which carries a clockwise current of \SI{3.0}{\ampere} and which surrounds an area of \SI{5.8e-2}{\meter\squared}. 
+    The magnetic dipole moment of the loop is:
+    \begin{choices}
+        \wrongchoice{\SI{3.0}{\ampere\meter\squared}, away from you}
+        \wrongchoice{\SI{3.0}{\ampere\meter\squared}, toward you}
+      \correctchoice{\SI{0.17}{\ampere\meter\squared}, away from you}
+        \wrongchoice{\SI{0.17}{\ampere\meter\squared}, toward you}
+        \wrongchoice{\SI{0.17}{\ampere\meter\squared}, left to right}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch28-q42}
+    The magnetic torque exerted on a flat current-carrying loop of wire by a uniform magnetic field B is:
+    \begin{choices}
+        \wrongchoice{maximum when the plane of the loop is perpendicular to $\vec{B}$}
+      \correctchoice{maximum when the plane of the loop is parallel to $\vec{B}$}
+        \wrongchoice{dependent on the shape of the loop for a fixed loop area}
+        \wrongchoice{independent of the orientation of the loop}
+        \wrongchoice{such as to rotate the loop around the magnetic field lines}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch28-q43}
+    A circular loop of wire with a radius of \SI{20}{\centi\meter} lies in the $xy$ plane and carries a current of \SI{2}{\ampere},
+        counterclockwise when viewed from a point on the positive $z$ axis.
+    Its magnetic dipole moment is:
+    \begin{choices}
+      \correctchoice{\SI{0.25}{\ampere\meter\squared}, in the positive $z$ direction}
+        \wrongchoice{\SI{0.25}{\ampere\meter\squared}, in the negative $z$ direction}
+        \wrongchoice{\SI{2.5}{\ampere\meter\squared}, in the positive $z$ direction}
+        \wrongchoice{\SI{2.5}{\ampere\meter\squared}, in the negative $z$ direction}
+        \wrongchoice{\SI{0.25}{\ampere\meter\squared}, in the $xy$ plane}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch28-q44}
+    The diagrams show five possible orientations of a magnetic dipole $\vec{\mu}$ in a uniform magnetic field $\vec{B}$.
+    For which of these does the magnetic torque on the dipole have the greatest magnitude?
+    \begin{multicols}{2}
+    \begin{choices}
+        %% NOTE: ANS is A
+        \wrongchoice{
+            \begin{tikzpicture}
+                %% NOTE:
+            \end{tikzpicture}
+        }
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch28-q45}
+    The magnetic dipole moment of a current-carrying loop of wire is in the positive $z$ direction.
+    If a uniform magnetic field is in the positive $x$ direction the magnetic torque on the loop is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{zero}
+        \wrongchoice{in the positive $y$ direction}
+        \wrongchoice{in the negative $y$ direction}
+        \wrongchoice{in the positive $z$ direction}
+        \wrongchoice{in the negative $z$ direction}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch28-q46}
+    For a loop of current-carrying wire in a uniform magnetic field the potential energy is a minimum if the magnetic dipole moment of the loop is:
+    \begin{choices}
+      \correctchoice{in the same direction as the field}
+        \wrongchoice{in the direction opposite to that of the field}
+        \wrongchoice{perpendicular to the field}
+        \wrongchoice{at an angle of \ang{45} to the field}
+        \wrongchoice{none of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch28-q47}
+    The diagrams show five possible orientations of a magnetic dipole $\vec{\mu}$ in a uniform magnetic field $\vec{B}$. 
+    For which of these is the potential energy the greatest?
+    \begin{multicols}{2}
+    \begin{choices}
+        %% NOTE: ANS is E
+        \wrongchoice{
+            \begin{tikzpicture}
+                %% NOTE:
+            \end{tikzpicture}
+        }
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch28-q48}
+    A loop of current-carrying wire has a magnetic dipole moment of \SI{5e-4}{\ampere\meter\squared}.
+    The moment initially is aligned with a \SI{0.5}{\tesla} magnetic field. 
+    To rotate the loop so its dipole moment is perpendicular to the field and hold it in that orientation,
+        you must do work of:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{zero}
+      \correctchoice{\SI{2.5e-4}{\joule}}
+        \wrongchoice{\SI{-2.5e-4}{\joule}}
+        \wrongchoice{\SI{1.0e-3}{\joule}}
+        \wrongchoice{\SI{-1.0e-3}{\joule}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+\endinput
+
+

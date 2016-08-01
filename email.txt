@@ -1,0 +1,11 @@
+%S student total score
+%M maximum total score
+%s student mark
+%m maximum mark
+%(ID) student's name
+%(COL) column COL in the student list
+
+
+Dear %(ID)
+
+
