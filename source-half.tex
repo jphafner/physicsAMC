@@ -22,6 +22,7 @@
 
 \usepackage{AMChalf}
 \newlength{\mylen}
+%% To save space
 \setlength{\parskip}{0pt} % 1ex plus 0.5ex minus 0.2ex}
 \setlength{\parindent}{0pt}
 
@@ -73,6 +74,9 @@
 %%------------------------------------------------
 \begin{examcopy}[1]
 
+%% I never place titles on source-half to save space
+%% Give verbal instructions for the first time you use
+
 \setlength{\mylen}{\linewidth}
 \addtolength{\mylen}{-16em}
 \begin{minipage}{\linewidth}
@@ -82,14 +86,19 @@
     \begin{minipage}{\mylen}
         \namefield{\fbox{\small
             \begin{minipage}{\linewidth}
+                %% Do not ask for date as it takes too much space
                 \hfill Last and First Name: \hfill
-                \vspace*{3.3em}
+                %\vspace*{3.3em}
+                \vspace*{3.6em}
             \end{minipage}
         }}
     \end{minipage}
 \end{minipage}
 
 \null\hfill\parbox[c]{0.9\linewidth}{\small
+%% Instructions for half quiz
+%% Feel free to change
+%% I purposefully keep the instructions brief and incomplete to save space
 Questions using the sign \multiSymbole{} may have zero, one or several correct answers.
 Other questions have a single correct answer.
 % NOTE: if numeric answer
