@@ -1,0 +1,343 @@
+
+%% Letter Paper
+%% 8.5 in x 11.5 in
+%% 203 mm × 267 mm
+%% 20.3 cm × 26.7 cm
+
+
+% Magic formula for make \hbar not throwing a spurious message
+% However, \hbar won't work in text mode, which should not be a problem
+%\expandafter\let\expandafter\hbar\csname ?-\string\hbar\endcsname
+% End of magic code
+
+%% This is what I consider to be essential information for the students taking my assessments
+%% I print this on the backside of the answer/response sheet so as to not waste more paper,
+%%    as the backside of the answer/response sheet would have been wasted anyway
+
+
+\pagestyle{empty}
+\fontsize{11pt}{12pt}
+
+\begin{tikzpicture}
+
+\node[baseline,overlay,text width=\linewidth,anchor=north west,yshift=1cm] (A) at (0,0) {
+    \begin{minipage}{1.00\linewidth}
+    %\begin{tabu}{X[3l]X[l]lX[l]}
+    \begin{tabu}{X[3l]X[l]lX[l]cc}
+        \multicolumn{6}{c}{\LARGE International System of Units (SI)} \\
+        \toprule
+        %% SI Base Units
+        length
+        & meter
+        & \si{\meter}
+        &
+        & $l$, $x$, $r$, etc\ldots
+        & $\mathrm{L}$\\
+        mass
+        & kilogram
+        & \si{\kilo\gram}
+        &
+        & $m$
+        & $\mathrm{M}$\\
+        time
+        & second
+        & \si{\second}
+        &
+        & $t$
+        & $\mathrm{T}$\\
+        electric current
+        & ampere
+        & \si{\ampere}
+        &
+        & $I$, $i$
+        & $\mathrm{I}$\\
+        thermodynamic temperature
+        & kelvin
+        & \si{\kelvin}
+        &
+        & $T$
+        & $\mathrm{\Phi}$\\
+        amount of substance
+        & mole
+        & \si{\mole}
+        &
+        & $n$
+        & $\mathrm{N}$\\
+        luminous intensity
+        & candela
+        & \si{\candela}
+        &
+        & $I_v$
+        & $\mathrm{J}$\\
+        %% SI Named Units
+        plane angle
+        & radian
+        & \si{\radian}
+        & \si{\meter\per\meter}
+        & & \\
+        solid angle
+        & steradian
+        & \si{\steradian}
+        & \si{\meter\squared\per\meter\squared}
+        & & \\
+        frequency
+        & hertz
+        & \si{\hertz}
+        & \si{\per\second}
+        & & \\
+        force
+        & newton
+        & \si{\newton} 
+        & \si{\kilo\gram\meter\per\second\squared}
+        & & \\
+        pressure, stress
+        & pascal
+        & \si{\pascal}
+        & \si{\newton\per\meter\squared}
+        & & \\
+        energy, work, heat
+        & joule
+        & \si{\joule}
+        & \si{\newton\meter}
+        & & \\
+        power, radiant flux
+        & watt
+        & \si{\watt}
+        & \si{\joule\per\second}
+        & & \\
+        electric charge
+        & coulomb
+        & \si{\coulomb}
+        & \si{\ampere\second}
+        & & \\
+        electric potential difference %, electromotive force
+        & volt
+        & \si{\volt}
+        & \si{\watt\per\ampere}
+        & & \\
+        capacitance
+        & farad
+        & \si{\farad}
+        & \si{\coulomb\per\volt}
+        & & \\
+        electric resistance
+        & ohm
+        & \si{\ohm}
+        & \si{\volt\per\ampere}
+        & & \\
+        electric conductance
+        & siemens
+        & \si{\siemens}
+        & \si{\ampere\per\volt}
+        & & \\
+        magnetic flux
+        & weber
+        & \si{\weber}
+        & \si{\volt\second}
+        & & \\
+        magnetic flux density
+        & tesla
+        & \si{\tesla}
+        & \si{\weber\per\meter\squared}
+        & & \\
+        inductance
+        & henry
+        & \si{\henry}
+        & \si{\weber\per\ampere}
+        & & \\
+        Celsius temperature
+        & degree
+        & \si{\degreeCelsius}
+        & \si{\kelvin}
+        & & \\
+        luminous flux
+        & lumen
+        & \si{\lumen}
+        & \si{\candela\steradian} 
+        & & \\
+        illuminance
+        & lux
+        & \si{\lux}
+        & \si{\lumen\per\meter\squared}
+        & & \\
+        activity (of radionuclide)
+        & becquerel
+        & \si{\becquerel}
+        & \si{\per\second}
+        & & \\
+        absorbed dose %, specific energy (imparted) , kerma
+        & gray
+        & \si{\gray} 
+        & \si{\joule\per\kilo\gram}
+        & & \\
+        dose equivalent %, ambient dose equivalent, directional dose equivalent, personal dose equivalent, organ equivalent dose
+        & sievert
+        & \si{\sievert}
+        & \si{\joule\per\kilo\gram}
+        & & \\
+        catalytic activity
+        & katal
+        & \si{\katal}
+        & \si{\mole\per\second}
+        & & \\
+    \end{tabu}
+    \end{minipage}
+};
+
+
+%\node[baseline,overlay,text width=12cm,anchor=north west,shift={(1,-1)}] (A) at () {
+\node[baseline,overlay,text width=12cm,anchor=north west,yshift=-1em] (B) at (A.south west) {
+    \begin{minipage}{1.00\linewidth}
+    \renewcommand{\arraystretch}{1.2}
+    \begin{tabu}{X[3r]rcX[2l]}
+        \multicolumn{4}{c}{\LARGE Physical Constants} \\
+        \toprule
+        Rest mass of the electron
+        & $m_e$     & $=$ & \SI{9.11e-31}{\kilo\gram} \\
+        Rest mass of the proton
+        & $m_p$     & $=$ &  \SI{1.67e-27}{\kilo\gram} \\
+        Magnitude of the electron charge
+        & $e$       & $=$ & \SI{1.60e-19}{\coulomb} \\
+        Avogadro's number
+        & $N_A$     & $=$ & \SI{6.02e23}{\per\mole} \\
+        Universal gas constant
+        & $R$       & $=$ & \SI{8.31}{\joule\per\mole\per\kelvin} \\
+        Boltzman's constant
+        & $k$       & $=$ & \SI{1.38e-23}{\joule\per\kelvin} \\
+        Speed of light
+        & $c$       & $=$ & \SI{3.00e8}{\meter\per\second} \\
+        Planck's constant
+        & $h$       & $=$ & \SI{6.63e-34}{\joule\second}\\
+        &           & $=$ & \SI{4.14e-15}{\eV\second} \\
+        & $\hbar$   & $=$ & $h/(2\pi)$ \\
+        & $hc$      & $=$ & \SI{1.24e3}{\eV\nano\meter} \\
+        Vacuum permittivity
+        & $\epsilon_0$  & $=$ & \SI{8.85e-12}{\coulomb\squared\per\newton\per\meter\squared} \\
+        Vacuum permeability
+        & $\mu_0$   & $=$ & \SI{4\pi e-7}{\tesla\meter\per\ampere} \\
+        Universal gravitational constant
+        & $G$       & $=$ & \SI{6.67e-11}{\meter\cubed\per\kilo\gram\per\second\squared} \\
+        Standard acceleration of gravity
+        & $g$       & $=$ & \SI{9.81}{\meter\per\second\squared} \\
+        1 {\AA}ngstr\"{o}m
+        & \SI{1}{\angstrom}   & $=$ & \SI{1e-10}{\meter} \\
+    \end{tabu}
+    \end{minipage}
+};
+
+%\node[baseline,overlay,text width=12cm,anchor=north west,xshift=1em] (C) at (B.north east) {
+%    \begin{minipage}{1.00\linewidth}
+%    \begin{tabu}{X[l]ll}
+%        \multicolumn{3}{c}{\LARGE Base Quantities} \\
+%        %Base quantity               & Symbol for quantity   & Symbol for dimension \\
+%        \toprule
+%        length                      & $l$, $x$, $r$, etc.   & $\mathrm{L}$ \\
+%        mass                        & $m$                   & $\mathrm{M}$ \\
+%        time, duration              & $t$                   & $\mathrm{T}$ \\
+%        electric current            & $I$, $i$              & $\mathrm{I}$ \\
+%        thermodynamic temperature   & $T$                   & $\mathrm{\Phi}$ \\
+%        amount of substance         & $n$                   & $\mathrm{N}$ \\
+%        luminous intensity          & $I_v$                 & $\mathrm{J}$ \\
+%    \end{tabu}
+%    \end{minipage}
+%};
+
+
+\node[baseline,overlay,text width=3.5cm,anchor=north east,yshift=-5.0cm] (D) at (A.north east) {
+    \begin{minipage}{1.00\linewidth}
+    \renewcommand{\arraystretch}{1.2}
+    \begin{tabu}{X[l]X[c]l}
+        \multicolumn{3}{c}{\LARGE SI Prefixes} \\
+        \toprule
+        \num{e-15} & femto & \si{\femto} \\
+        \num{e-12} & pico  & \si{\pico} \\
+        \num{e-9}  & nano  & \si{\nano} \\
+        \num{e-6}  & micro & \si{\micro} \\
+        \num{e-3}  & milli & \si{\milli} \\
+        \num{e-2}  & centi & \si{\centi} \\
+        \num{e3}   & kilo  & \si{\kilo} \\
+        \num{e6}   & mega  & \si{\mega} \\
+        \num{e9}   & giga  & \si{\giga} \\
+        \num{e12}  & tera  & \si{\tera} \\
+        \num{e15}  & peta  & \si{\peta} \\
+    \end{tabu}
+    \end{minipage}
+};
+
+\node[baseline,overlay,text width=3.5cm,anchor=north west,yshift=-1em] (E) at (D.south west) {
+    \begin{minipage}{1.00\linewidth}
+    \renewcommand{\arraystretch}{2.5}
+    \begin{tabu}{X[r]X[l]}
+        \multicolumn{2}{c}{\LARGE Rotational} \\[-1em]
+        \multicolumn{2}{c}{\LARGE Inertia} \\
+        \toprule
+        Rod     & $\dfrac{1}{12} ML^2$ \\
+        Disc    & $\dfrac{1}{2} MR^2$ \\
+        Sphere  & $\dfrac{2}{5} MR^2$ \\
+    \end{tabu}
+    \end{minipage}
+};
+
+
+\node[baseline,overlay,text width=5cm,anchor=north east,yshift=-1em] (G) at (E.south east) {
+    \begin{minipage}{1.00\linewidth}
+    \renewcommand{\arraystretch}{1.2}
+    \begin{tabu}{X[r]cX[l]}
+        \multicolumn{3}{c}{\LARGE Unit Conversions} \\
+        \toprule
+        inch    & $=$ & \SI{2.54}{\centi\meter} \\
+        foot    & $=$ & \SI{12}{\inch} \\
+        yard    & $=$ & \SI{3}{\foot} \\
+        %yard    & $=$ & \SI{0.9144}{\meter} \\
+        mile    & $=$ & \SI{5280}{\foot} \\
+        lb-mass & $=$ & \SI{0.454}{\kilo\gram} \\
+        lb-force& $=$ & \SI{4.448}{\newton} \\
+        gallon  & $=$ & \SI{3.785}{\liter} \\
+        liter   & $=$ & \SI{e-3}{\meter\cubed} \\
+    \end{tabu}
+    \end{minipage}
+};
+
+%\node[baseline,overlay,text width=5.5cm,anchor=north east,yshift=-1em] (G) at (E.south east) {
+%    \begin{minipage}{1.00\linewidth}
+%    \renewcommand{\arraystretch}{2.5}
+%    \begin{tabu}{X[r]cX[3l]}
+%        \multicolumn{3}{c}{\LARGE Kinematics} \\
+%        \toprule
+%        $\vec{\mathbf{d}}$      & $=$ & $\vec{\mathbf{x}}_f - \vec{\mathbf{x}}_i$ \\
+%        $\vec{\mathbf{v}}$      & $=$ & $\dfrac{\mathrm{d}}{\mathrm{d}t}\vec{\mathbf{x}}$ \\
+%        $\vec{\mathbf{a}}$      & $=$ & $\dfrac{\mathrm{d}}{\mathrm{d}t}\vec{\mathbf{v}} = \dfrac{\mathrm{d}^2}{\mathrm{d}t^2}\vec{\mathbf{x}}$ \\
+%        %$\vec{\mathbf{p}}$      & $=$ & $m\vec{\mathbf{v}}$ \\
+%        %$\vec{\mathbf{F}}$      & $=$ & $\dfrac{\mathrm{d}\vec{\mathbf{v}}}{\mathrm{d}t}$ \\
+%        %$\vec{\mathbf{\tau}}$   & $=$ & $\vec{\mathbf{r}} \times \vec{\mathbf{F}}$ \\
+%        %$W$                     & $=$ & $\int \vec{\mathbf{F}}\cdot\mathrm{d}l$ \\
+%        %$P$                     & $=$ & $\dfrac{W}{t}$ \\
+%        %$F_g$                   & $=$ & $\dfrac{Gm_1m_2}{r^2}$ \\
+%    \end{tabu}
+%    \end{minipage}
+%};
+
+
+%\node[baseline,overlay,text width=5cm,anchor=north west,yshift=1em] (G) at (F.south west) {
+%    \begin{minipage}{1.00\linewidth}
+%    \renewcommand{\arraystretch}{2.5}
+%    \begin{tabu}{X[r]cX[3l]}
+%        \multicolumn{3}{c}{\LARGE Mechanics} \\
+%        \toprule
+%        $\vec{\mathbf{v}}$      & $=$ & $\dfrac{\mathrm{d}x}{\mathrm{d}t}$ \\
+%        $\vec{\mathbf{a}}$      & $=$ & $\dfrac{\mathrm{d}v}{\mathrm{d}t} = \dfrac{\mathrm{d}^2x}{\mathrm{d}t^2}$ \\
+%        $\vec{\mathbf{p}}$      & $=$ & $m\vec{\mathbf{v}}$ \\
+%        $\vec{\mathbf{F}}$      & $=$ & $\dfrac{\mathrm{d}\vec{\mathbf{v}}}{\mathrm{d}t}$ \\
+%        $\vec{\mathbf{\tau}}$   & $=$ & $\vec{\mathbf{r}} \times \vec{\mathbf{F}}$ \\
+%        $W$                     & $=$ & $\int \vec{\mathbf{F}}\cdot\mathrm{d}l$ \\
+%        $P$                     & $=$ & $\dfrac{W}{t}$ \\
+%        $F_g$                   & $=$ & $\dfrac{Gm_1m_2}{r^2}$ \\
+%    \end{tabu}
+%    \end{minipage}
+%};
+
+\end{tikzpicture}
+
+
+\endinput
+
