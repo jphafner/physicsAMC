@@ -87,7 +87,7 @@ _Please Note:_ This is not an exhaustive list.
 
 ## Question Bank (master)
 
-- [kinematics](/qbank/kinematics/): A collection of custom written graph questions
+- [kinematics](/qbank/kinematics/): A collection of custom written graph questions.
 - [nysed](/qbank/nysed/): A comprehensive collection of NYSED physics regents exam questions, _over 2200 categorized questions!!_
 - [lua](/qbank/lua/): A collection of custom written questions that are randomized, requires [lua](http://www.lua.org)
 - [diagnostic](/qbank/diagnostic/): A collection of diagnostic exams: [freeBodyDiagrams](http://dx.doi.org/10.1103/PhysRevSTPER.11.020137), [vectors](http://dx.doi.org/10.1103/PhysRevSTPER.11.020137), [ADTv2](http://solar.physics.montana.edu/aae/adt/)
@@ -100,11 +100,13 @@ _Please Note:_ This is not an exhaustive list.
 - [cap](/qbank/cap/): A rewrite of the [Canadian Association of Physicists](www.cap.ca) challenge exam questions.
 - [cpo](/qbank/cpo/): A rewrite of the CPO exam bank. I am particularly proud of ch21-q09, check it out.
 - [gre](/qbank/gre/): A rewrite of all released physics GRE exams.
-- [holt](/qbank/holt/): A rewrite of the end of chapter assessments from Holt's _Physics_.
 - [halliday](/qbank/halliday/): A rewrite of the exam bank to Halliday's _Fundamentals of Physics_.
-- [serway](/qbank/serway/): A rewrite of the exam bank to Serway's _Physics for Scientists and Engineers_.
-- [project](/qbank/project/): A rewrite of [Harvard University's Project Physics](https://archive.org/details/projectphysicscollection) exam bank.
+- [hewitt](/qbank/hewitt/): A rewrite of Hewitt's 60 questions that all physics students should answer.
+- [holt](/qbank/holt/): A rewrite of the end of chapter assessments from Holt's _Physics_.
 - [jpierce](/qbank/jpierce/): A rewrite of of [Dr. James Pierce's Physics 101 Sample Test Questions](http://mavdisk.mnsu.edu/jpierce/courses/p101/questions.html).
+- [njctl](/qbank/njctl/): A rewrite of [The New Jersey Center for Teaching and Learning](https://njctl.org/details/projectphysicscollection) physics problems, both calculus and algebra based.
+- [project](/qbank/project/): A rewrite of [Harvard University's Project Physics](https://archive.org/details/projectphysicscollection) exam bank.
+- [serway](/qbank/serway/): A rewrite of the exam bank to Serway's _Physics for Scientists and Engineers_.
 
 Please refer to the headings of each file for more information.
 

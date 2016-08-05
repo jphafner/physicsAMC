@@ -16534,9 +16534,253 @@
 %% part I
 \element{nysed}{
 \begin{question}{June1981-Q01}
+    The average speed of a runner in a \SI{400}{\meter} race is \SI{8.0}{\meter\per\second}.
+    How long did it take the runner to complete the race?
     \begin{multicols}{2}
     \begin{choices}
-        \wrongchoice{}
+        \wrongchoice{\SI{80}{\second}}
+        \wrongchoice{\SI{50}{\second}}
+        \wrongchoice{\SI{40}{\second}}
+        \wrongchoice{\SI{32}{\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{nysed}{
+\begin{question}{June1981-Q02}
+    Which graph best represents the relationship between velocity and time for an object which accelerates uniformly for \SI{2.0}{\second},
+        then moves at a constant velocity for \SI{1.0}{\second},
+        and finally decelerates for \SI{3.0}{\second}?
+    \begin{multicols}{2}
+    \begin{choices}
+        \AMCboxDimensions{down=-3.5em}
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=bottom,
+                    axis line style={->},
+                    xlabel={time},
+                    x unit=\si{\second},
+                    xtick={1,2,3,4,5,6},
+                    ylabel={velocity},
+                    ytick=\empty,
+                    xmin=0,xmax=6.5,
+                    ymin=0,ymax=10,
+                    width=1.0\columnwidth,
+                ]
+                \addplot[line width=1pt,mark=\empty] coordinates {(0,2) (2,8) (3,8) (6,2)};
+                \end{axis}
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=bottom,
+                    axis line style={->},
+                    xlabel={time},
+                    x unit=\si{\second},
+                    xtick={1,2,3,4,5,6},
+                    ylabel={velocity},
+                    ytick=\empty,
+                    xmin=0,xmax=6.5,
+                    ymin=0,ymax=10,
+                    width=1.0\columnwidth,
+                ]
+                \addplot[line width=1pt,mark=\empty] coordinates {(0,8) (2,2) (3,2) (6,8)};
+                \end{axis}
+            \end{tikzpicture}
+        }
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{nysed}{
+\begin{question}{June1981-Q03}
+    If a man walks \SI{17}{\meter} east then \SI{17}{\meter} south,
+        the magnitude of the man's displacement is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{17}{\meter}}
+        \wrongchoice{\SI{24}{\meter}}
+        \wrongchoice{\SI{30}{\meter}}
+        \wrongchoice{\SI{34}{\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{nysed}{
+\begin{question}{June1981-Q04}
+    A rock is thrown horizontally from the top of a cliff at \SI{12}{\meter\per\second}.
+    Approximately how long does it take the rock to fall \SI{45}{\meter} vertically?
+    [Assume neglible air resistance.]
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{1.0}{\second}}
+        \wrongchoice{\SI{5.0}{\second}}
+        \wrongchoice{\SI{3.0}{\second}}
+        \wrongchoice{\SI{8.0}{\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{nysed}{
+\begin{question}{June1981-Q05}
+    Two concurrent forces act at right angles to each other.
+    If one of the forces is \SI{40}{\newton} and the resultant of the two forces is \SI{50}{\newton},
+        the magnitude of the other force must be:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{10}{\newton}}
+        \wrongchoice{\SI{20}{\newton}}
+        \wrongchoice{\SI{30}{\newton}}
+        \wrongchoice{\SI{40}{\newton}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{nysed}{
+\begin{question}{June1981-Q06}
+    If two \SI{10}{\newton} concurrent forces have a resultant of zero,
+        the angle between the forces must be:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\ang{0}}
+        \wrongchoice{\ang{45}}
+        \wrongchoice{\ang{90}}
+        \wrongchoice{\ang{180}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{nysed}{
+\begin{question}{June1981-Q07}
+    Which graph best represents the motion of a moving object with no unbalanced force acting on it?
+    \begin{multicols}{2}
+    \begin{choices}
+        \AMCboxDimensions{down=-2.5em}
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=bottom,
+                    axis line style={->},
+                    xlabel={time},
+                    xtick=\empty,
+                    ylabel={velocity},
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=0,ymax=11,
+                    width=1.0\columnwidth,
+                ]
+                \addplot[line width=1pt]{5};
+                \end{axis}
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=bottom,
+                    axis line style={->},
+                    xlabel={time},
+                    xtick=\empty,
+                    ylabel={velocity},
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=0,ymax=11,
+                    width=1.0\columnwidth,
+                ]
+                \addplot[line width=1pt]{sqrt(10)*sqrt(x)};
+                \end{axis}
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=bottom,
+                    axis line style={->},
+                    xlabel={time},
+                    xtick=\empty,
+                    ylabel={velocity},
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=0,ymax=11,
+                    width=1.0\columnwidth,
+                ]
+                \addplot[line width=1pt]{10/x};
+                \end{axis}
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=bottom,
+                    axis line style={->},
+                    xlabel={time},
+                    xtick=\empty,
+                    ylabel={velocity},
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=0,ymax=11,
+                    width=1.0\columnwidth,
+                ]
+                \addplot[line width=1pt]{x};
+                \end{axis}
+            \end{tikzpicture}
+        }
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{nysed}{
+\begin{question}{June1981-Q08}
+    An \SI{800}{\newton} person is standing in an elevator.
+    If the upward force of the elevator on the person is \SI{600}{\newton},
+        the person is:
+    \begin{choices}
+        \wrongchoice{at rest}
+        \wrongchoice{accelerating upward}
+        \wrongchoice{accelerating downward}
+        \wrongchoice{moving downward at constant speed}
+    \end{choices}
+\end{question}
+}
+
+\element{nysed}{
+\begin{question}{June1981-Q09}
+    Two objects of equal mass are a fixed distance apart.
+    If the mass of each object could be tripled,
+        the gravitational force between the objects would:
+    \begin{choices}
+        \wrongchoice{decrease by one-third}
+        \wrongchoice{decrease by one-ninth}
+        \wrongchoice{triple}
+        \wrongchoice{increase 9 times}
+    \end{choices}
+\end{question}
+}
+
+\element{nysed}{
+\begin{question}{June1981-Q10}
+    A \SI{1.0}{\kilo\gram} mass changes speed from \SI{2.0}{\meter\per\second} to \SI{5.0}{\meter\per\second}.
+    The change in the object's momentum is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{9.0}{\kilo\gram\meter\per\second}}
+        \wrongchoice{\SI{21}{\kilo\gram\meter\per\second}}
+        \wrongchoice{\SI{3.0}{\kilo\gram\meter\per\second}}
+        \wrongchoice{\SI{29}{\kilo\gram\meter\per\second}}
     \end{choices}
     \end{multicols}
 \end{question}
