@@ -234,8 +234,8 @@
     \begin{multicols}{3}
     \begin{choices}
         \wrongchoice{$\dfrac{1}{\mathrm{e}^x}$}
-        \wrongchoice{$\mathrm{e}^{\frac{1}{x}}$}
-      \correctchoice{$x\mathrm{e}^{\frac{1}{x}}$}
+        \wrongchoice{$\mathrm{e}^{\tfrac{1}{x}}$}
+      \correctchoice{$x\mathrm{e}^{\tfrac{1}{x}}$}
         \wrongchoice{$\dfrac{1}{\mathrm{ln} x}$}
         \wrongchoice{$\mathrm{ln} x$}
     \end{choices}
@@ -340,6 +340,7 @@
 \end{question}
 }
 
+%% NOTE: TODO: finish options
 \element{calculusAB}{
 \begin{question}{1969-AB-q16}
     If $y$ is a function of $x$ such that $y\prime{}>0$ for all $x$ and $y\dprime{}<0$
@@ -758,7 +759,7 @@
 
 \element{calculusAB}{
 \begin{question}{1969-AB-q38}
-    $\displaystyle \int\dfrac{x^2}{\mathrm{e}^{x^3}}\,\mathrm{d}x =$
+    $\displaystyle \int\,\dfrac{x^2}{\mathrm{e}^{x^3}}\,\mathrm{d}x =$
     \begin{multicols}{2}
     \begin{choices}
         \wrongchoice{$-\dfrac{1}{3}\ln\mathrm{e}^{x^3} + C$}
@@ -842,7 +843,7 @@
 
 \element{calculusAB}{
 \begin{question}{1969-AB-q43}
-    $\displaystyle \int\sin(2x+3)\,\mathrm{d}x = $
+    $\displaystyle \int\,\sin(2x+3)\,\mathrm{d}x = $
     \begin{multicols}{2}
     \begin{choices}
         \wrongchoice{$\dfrac{1}{2}\cos\left(2x+3\right) + C$}
@@ -857,7 +858,7 @@
 
 \element{calculusAB}{
 \begin{question}{1969-AB-q44}
-    The fundamental period of the function defined by $f(x) = 3 - \cos^2\dfrac{\pi x}{3}$ is:
+    The fundamental period of the function defined by $f(x) = 3 - \cos^2\left(\dfrac{\pi x}{3}\right)$ is:
     \begin{multicols}{3}
     \begin{choices}
         \wrongchoice{$1$}
@@ -890,7 +891,7 @@
 %%--------------------------------------------------
 \element{calculusAB}{
 \begin{question}{1973-AB-q01}
-    $\displaystyle \int \left( x^3 - 3x \right) \mathrm{d} x = $
+    $\displaystyle \int\,\left( x^3 - 3x \right)\mathrm{d}x=$
     \begin{multicols}{2}
     \begin{choices}
         \wrongchoice{$3x^2 - 3 + C$}
@@ -1254,7 +1255,7 @@
 
 \element{calculusAB}{
 \begin{question}{1973-AB-q25}
-    $\displaystyle \int^{\;\;\frac{\pi}{4}}_0 \tan^2 x\,\mathrm{d}x =$
+    $\displaystyle \int^{\;\;\tfrac{\pi}{4}}_0 \tan^2 x\,\mathrm{d}x =$
     \begin{multicols}{3}
     \begin{choices}
         \wrongchoice{$\dfrac{\pi}{4}-1$}
@@ -1288,7 +1289,7 @@
 
 \element{calculusAB}{
 \begin{question}{1973-AB-q27}
-    $\displaystyle \int^{\;\;\frac{1}{2}}_0 \dfrac{2x}{\sqrt{1-x^2}}\,\mathrm{d}x =$
+    $\displaystyle \int^{\;\;\tfrac{1}{2}}_0 \dfrac{2x}{\sqrt{1-x^2}}\,\mathrm{d}x =$
     \begin{multicols}{2}
     \begin{choices}
         \wrongchoice{$1 - \dfrac{\sqrt{3}}{2}$}
@@ -1459,8 +1460,9 @@
 
 \element{calculusAB}{
 \begin{question}{1973-AB-q38}
-    If $\int^{\,2}_1 f(x-c)\,\mathrm{d}x = 5$ where $c$ is a constant,
-        then $\int^{\,2-c}_{1-c} f(x)\,\mathrm{d}x = $
+    %% TODO: NOTE: spacing \, or \;
+    If $\int^{\;2}_1 f(x-c)\,\mathrm{d}x = 5$ where $c$ is a constant,
+        then $\int^{\;2-c}_{1-c} f(x)\,\mathrm{d}x = $
     \begin{multicols}{3}
     \begin{choices}
         \wrongchoice{$5 + c$}
@@ -1527,7 +1529,7 @@
 \element{calculusAB}{
 \begin{question}{1973-AB-q42}
     Calculate the approximate area of the shaded region in the figure by the trapezoidal rule,
-        using division at $x=\dfrac{4}{3}$ and $x=\dfrac{5}{3}$.
+        using division at $x=\tfrac{4}{3}$ and $x=\tfrac{5}{3}$.
     \begin{center}
     \begin{tikzpicture}
         \begin{axis}[
@@ -1714,9 +1716,9 @@
     \begin{choices}
         \wrongchoice{$\ln 3 + \ln 1$}
         \wrongchoice{$\dfrac{\ln 8}{\ln 2}$}
-        \wrongchoice{$\int^{\,4}_1\mathrm{e}^t\,\mathrm{d}t$}
-        \wrongchoice{$\int^{\,4}_1\ln x\,\mathrm{d}t$}
-      \correctchoice{$\int^{\,4}_1\dfrac{1}{t}\,\mathrm{d}t$}
+        \wrongchoice{$\displaystyle\int^{\;\;4}_1\mathrm{e}^t\,\mathrm{d}t$}
+        \wrongchoice{$\displaystyle\int^{\;\;4}_1\ln x\,\mathrm{d}t$}
+      \correctchoice{$\displaystyle\int^{\;\;4}_1\frac{1}{t}\,\mathrm{d}t$}
     \end{choices}
     \end{multicols}
 \end{question}
@@ -1739,7 +1741,7 @@
 
 \element{calculusAB}{
 \begin{question}{1985-AB-q09}
-    If $\int^{\,1}_{-1} \mathrm{e}^{-x^2}\,\mathrm{d}x = k$, then $\int^{\,0}_1\mathrm{e}^{-x^2}\,\mathrm{d}x = $
+    If $\int^{\,\,1}_{-1} \mathrm{e}^{-x^2}\,\mathrm{d}x = k$, then $\int^{\,\,0}_1\mathrm{e}^{-x^2}\,\mathrm{d}x = $
     \begin{multicols}{3}
     \begin{choices}
         \wrongchoice{$-2k$}
@@ -1863,7 +1865,7 @@
 
 \element{calculusAB}{
 \begin{question}{1985-AB-q17}
-    $\displaystyle \int^{\;\;1}_0 \, x\mathrm{e}^{-x}\,\mathrm{d}x =$
+    $\displaystyle \int^{\;\;1}_0 x\mathrm{e}^{-x}\,\mathrm{d}x=$
     \begin{multicols}{3}
     \begin{choices}
         \wrongchoice{$1-2\mathrm{e}$}
@@ -1966,7 +1968,8 @@
 
 \element{calculusAB}{
 \begin{question}{1985-AB-q24}
-    If $\displaystyle \int^{\,2}_{-2} \left(x^7+k\right)\,\mathrm{d}x = 16$,
+    %% NOTE: TODO: double check int spacing
+    If $\displaystyle \int^{\;\;2}_{-2} \left(x^7+k\right)\,\mathrm{d}x = 16$,
         then $k=$
     \begin{multicols}{3}
     \begin{choices}
@@ -2009,7 +2012,7 @@
 
 \element{calculusAB}{
 \begin{question}{1985-AB-q27}
-    $\displaystyle \int^{\,3}_0 \left|x-1\right|\,\mathrm{d}x = $
+    $\displaystyle \int^{\;\;3}_0 \left|x-1\right|\,\mathrm{d}x = $
     \begin{multicols}{3}
     \begin{choices}
         \wrongchoice{$0$}
@@ -2051,8 +2054,7 @@
 
 \element{calculusAB}{
 \begin{question}{1985-AB-q30}
-    $\displaystyle \int \tan\left(2x\right)\,\mathrm{d}x = $
-    \begin{multicols}{2}
+    $\displaystyle \int\,\tan\left(2x\right)\,\mathrm{d}x = $
     \begin{choices}
         \wrongchoice{$-2 \ln| \cos\left(2x\right) | + C$}
       \correctchoice{$-\dfrac{1}{2} \ln| \cos\left(2x\right) | + C$}
@@ -2060,7 +2062,6 @@
         \wrongchoice{$2 \ln| \cos\left(2x\right) | + C$}
         \wrongchoice{$\dfrac{1}{2} \sec\left(2x\right) \tan\left(2x\right) + C$}
     \end{choices}
-    \end{multicols}
 \end{question}
 }
 
@@ -2083,7 +2084,7 @@
 
 \element{calculusAB}{
 \begin{question}{1985-AB-q32}
-    $\displaystyle \int^{\;\;\frac{\pi}{3}}_0 \,\sin\left(3x\right)\,\mathrm{d}x =$
+    $\displaystyle \int^{\;\;\tfrac{\pi}{3}}_0 \,\sin\left(3x\right)\,\mathrm{d}x =$
     \begin{multicols}{3}
     \begin{choices}
         \wrongchoice{$-2$}
@@ -2418,7 +2419,7 @@
 
 \element{calculusAB}{
 \begin{question}{1985-AB-q42}
-    $\displaystyle \frac{\mathrm{d}}{\mathrm{d}x} \int^{\;\;x}_2 \sqrt{1+t^2}\,\mathrm{d}t =$
+    $\displaystyle \frac{\mathrm{d}}{\mathrm{d}x}\int^{\;\;x}_2\sqrt{1+t^2}\,\mathrm{d}t =$
     \begin{multicols}{2}
     \begin{choices}
         \wrongchoice{$\dfrac{x}{\sqrt{1+x^2}}$}
@@ -2542,7 +2543,7 @@
 
 \element{calculusAB}{
 \begin{question}{1988-AB-q05}
-    $\displaystyle \int \sec^2 x\,\mathrm{d}x =$
+    $\displaystyle\int\,\sec^2 x\,\mathrm{d}x =$
     \begin{multicols}{2}
     \begin{choices}
       \correctchoice{$\tan x + C$}
@@ -2572,7 +2573,7 @@
 
 \element{calculusAB}{
 \begin{question}{1988-AB-q07}
-    $\displaystyle \int \dfrac{x\,\mathrm{d}x}{\sqrt{3x^2+5}} =$
+    $\displaystyle \int\,\dfrac{x\,\mathrm{d}x}{\sqrt{3x^2+5}} =$
     \begin{multicols}{2}
     \begin{choices}
         \wrongchoice{$\dfrac{1}{9}\left(3x^2+5\right)^{\dfrac{3}{2}} + C$}
@@ -2718,7 +2719,7 @@
 
 \element{calculusAB}{
 \begin{question}{1988-AB-q14}
-    $\displaystyle \int^{\;\;\frac{\pi}{2}}_0 \dfrac{\cos x}{\sqrt{1+\sin\theta}}\,\mathrm{d}\theta =$
+    $\displaystyle \int^{\;\;\tfrac{\pi}{2}}_0 \dfrac{\cos x}{\sqrt{1+\sin\theta}}\,\mathrm{d}\theta =$
     \begin{multicols}{2}
     \begin{choices}
         \wrongchoice{$-2\left(\sqrt{2}-1\right)$}
@@ -2765,7 +2766,7 @@
 
 \element{calculusAB}{
 \begin{question}{1988-AB-q17}
-    $\displaystyle \int^{\;\;1}_0 \, \left(3x-2\right)^2\,\mathrm{d}x =$
+    $\displaystyle \int^{\;\;1}_0\left(3x-2\right)^2\,\mathrm{d}x =$
     \begin{multicols}{3}
     \begin{choices}
         \wrongchoice{$-\dfrac{7}{3}$}
@@ -2886,7 +2887,7 @@
 \element{calculusAB}{
 \begin{question}{1988-AB-q25}
     For all $x>1$,
-    if $(x)=\int^{\,x}_1 \dfrac{1}{t}\,\mathrm{d}t$, then $f\prime{}(x) = $
+        if $(x)=\int^{\,\,x}_1 \tfrac{1}{t}\,\mathrm{d}t$, then $f\prime{}(x) = $
     \begin{multicols}{3}
     \begin{choices}
         \wrongchoice{$1$}
@@ -2901,7 +2902,7 @@
 
 \element{calculusAB}{
 \begin{question}{1988-AB-q26}
-    $\displaystyle \int^{\;\;\dfrac{\pi}{2}}_0 x \cos x\,\mathrm{d}x = $
+    $\displaystyle \int^{\;\;\tfrac{\pi}{2}}_0 x \cos x\,\mathrm{d}x = $
     \begin{multicols}{3}
     \begin{choices}
         \wrongchoice{$-\dfrac{\pi}{2}$}
@@ -2972,11 +2973,11 @@
     If the region is rotated about the $y$-axis, the volume of the solid that is generated is represented by which of the following integrals?
     \begin{multicols}{2}
     \begin{choices}
-      \correctchoice{$2\pi \int^{\,1}_0 x\mathrm{e}^{2x}\,\mathrm{d}x$}
-        \wrongchoice{$2\pi \int^{\,1}_0 \mathrm{e}^{2x}\,\mathrm{d}x$}
-        \wrongchoice{$\pi \int^{\,1}_0 \mathrm{e}^{4x}\,\mathrm{d}x$}
-        \wrongchoice{$\pi \int^{\,\mathrm{e}}_0 y\ln y\,\mathrm{d}y$}
-        \wrongchoice{$\dfrac{\pi}{4} \int^{\,\mathrm{e}}_0 \ln^2 y\,\mathrm{d}y$}
+      \correctchoice{$2\pi \int^{\,\,1}_0 x\mathrm{e}^{2x}\,\mathrm{d}x$}
+        \wrongchoice{$2\pi \int^{\,\,1}_0 \mathrm{e}^{2x}\,\mathrm{d}x$}
+        \wrongchoice{$\pi \int^{\,\,1}_0 \mathrm{e}^{4x}\,\mathrm{d}x$}
+        \wrongchoice{$\pi \int^{\,\,\mathrm{e}}_0 y\ln y\,\mathrm{d}y$}
+        \wrongchoice{$\dfrac{\pi}{4} \int^{\,\,\mathrm{e}}_0 \ln^2 y\,\mathrm{d}y$}
     \end{choices}
     \end{multicols}
 \end{question}
@@ -3028,6 +3029,7 @@
 \end{question}
 }
 
+%% NOTE: TODO: finish this
 %\element{calculusAB}{
 %\begin{question}{1988-AB-q34}
 %    The area of the shaded region in the figure below is represented by which of the following integrals?
@@ -3121,7 +3123,7 @@
 
 \element{calculusAB}{
 \begin{question}{1988-AB-q38}
-    For $x>0$, $\displaystyle \int \left(\frac{1}{x} \int^{\;\;x}_1 \frac{\mathrm{d}u}{u}\right)\,\mathrm{d}x = $
+    For $x>0$, $\displaystyle\int\,\left(\frac{1}{x}\int^{\;\;x}_1 \frac{\mathrm{d}u}{u}\right)\,\mathrm{d}x = $
     \begin{multicols}{2}
     \begin{choices}
         \wrongchoice{$\dfrac{1}{x^3} + C$}
@@ -3540,7 +3542,7 @@
 
 \element{calculusAB}{
 \begin{question}{1993-AB-q17}
-    $\displaystyle \int \left(x^2+1\right)^2\,\mathrm{d}x=$
+    $\displaystyle\int\,\left(x^2+1\right)^2\,\mathrm{d}x=$
     \begin{multicols}{2}
     \begin{choices}
         \wrongchoice{$\dfrac{\left(x^2+1\right)^3}{3} + C$}
@@ -3597,11 +3599,11 @@
     The volume of the solid generated when $R$ is revolved about the $y$-axis is given by:
     \begin{multicols}{2}
     \begin{choices}
-        \wrongchoice{$\pi\int^7_0\,\left(x+1\right)^{2/3}\,\mathrm{d}x$}
-      \correctchoice{$2\pi\int^7_0\,x\left(x+1\right)^{1/3}\,\mathrm{d}x$}
-        \wrongchoice{$\pi\int^2_0\,\left(x+1\right)^{2/3}\,\mathrm{d}x$}
-        \wrongchoice{$2\pi\int^2_0\,x\left(x+1\right)^{1/3}\,\mathrm{d}x$}
-        \wrongchoice{$\pi\int^7_0\,x\left(y^3-1\right)^{2}\,\mathrm{d}y$}
+        \wrongchoice{$\displaystyle\pi\int^{\;\;7}_0\,\left(x+1\right)^{2/3}\,\mathrm{d}x$}
+      \correctchoice{$\displaystyle{}2\pi\int^{\;\;7}_0\,x\left(x+1\right)^{1/3}\,\mathrm{d}x$}
+        \wrongchoice{$\displaystyle\pi\int^{\;\;2}_0\,\left(x+1\right)^{2/3}\,\mathrm{d}x$}
+        \wrongchoice{$\displaystyle{}2\pi\int^{\;\;2}_0\,x\left(x+1\right)^{1/3}\,\mathrm{d}x$}
+        \wrongchoice{$\displaystyle\pi\int^{\;\;7}_0\,x\left(y^3-1\right)^{2}\,\mathrm{d}y$}
     \end{choices}
     \end{multicols}
 \end{question}
@@ -3838,7 +3840,7 @@
 
 \element{calculusAB}{
 \begin{question}{1993-AB-q36}
-    If the definite integral $\int^2_0\,\mathrm{e}^{x^2}\,\mathrm{d}x$ is first approximated by using two \emph{inscribed} rectangles of equal width and then approximated by using the trapezoidal rule with $n=2$,
+    If the definite integral $\int^{\,\,2}_0 \mathrm{e}^{x^2}\,\mathrm{d}x$ is first approximated by using two \emph{inscribed} rectangles of equal width and then approximated by using the trapezoidal rule with $n=2$,
         the difference between the two approximations is:
     \begin{multicols}{2}
     \begin{choices}
@@ -4118,7 +4120,7 @@
 
 \element{calculusAB}{
 \begin{question}{1993-AB-q43}
-    $\displaystyle \int xf(x)\,\mathrm{d}x = $
+    $\displaystyle \int\,xf(x)\,\mathrm{d}x = $
     \begin{multicols}{2}
     \begin{choices}
         \wrongchoice{$xf(x) - \int,xf\prime{}(x)\,\mathrm{d}x$}
@@ -4196,8 +4198,8 @@
 
 \element{calculusAB}{
 \begin{question}{1997-AB-q03}
-    If $\int^{\,b}_a \,f(x)\,\mathrm{d}x = a+2b$,
-        then $\int^{\,b}_a\,\left(f(x)+5\right)\,\mathrm{d}x = $
+    If $\int^{\,\,b}_a f(x)\,\mathrm{d}x = a+2b$,
+        then $\int^{\,\,b}_a\left(f(x)+5\right)\,\mathrm{d}x = $
     \begin{multicols}{2}
     \begin{choices}
         \wrongchoice{$a + 2b + 5$}
@@ -4243,13 +4245,13 @@
 
 \element{calculusAB}{
 \begin{question}{1997-AB-q06}
-    $\displaystyle \dfrac{1}{2} \int\mathrm{e}^{\dfrac{t}{2}}\,\mathrm{d}t =$
+    $\displaystyle \dfrac{1}{2} \int\mathrm{e}^{\tfrac{t}{2}}\,\mathrm{d}t =$
     \begin{multicols}{2}
     \begin{choices}
         \wrongchoice{$\mathrm{e}^{-t} + C$}
-        \wrongchoice{$\mathrm{e}^{-\dfrac{t}{2}} + C$}
-      \correctchoice{$\mathrm{e}^{\dfrac{t}{2}} + C$}
-        \wrongchoice{$2\mathrm{e}^{\dfrac{t}{2}} + C$}
+        \wrongchoice{$\mathrm{e}^{-\tfrac{t}{2}} + C$}
+      \correctchoice{$\mathrm{e}^{\tfrac{t}{2}} + C$}
+        \wrongchoice{$2\mathrm{e}^{\tfrac{t}{2}} + C$}
         \wrongchoice{$\mathrm{e}^{t} + C$}
     \end{choices}
     \end{multicols}
@@ -4662,7 +4664,8 @@
 
 \element{calculusAB}{
 \begin{question}{1997-AB-q18}
-    $\displaystyle \int^{\;\;\frac{\pi}{4}}_{0}\,\dfrac{\mathrm{e}^{\tan x}}{\cos^2 x}\,\mathrm{d}x = $
+    %% NOTE: TODO: dfrac in integral
+    $\displaystyle\int^{\;\;\frac{\pi}{4}}_{0}\,\dfrac{\mathrm{e}^{\tan x}}{\cos^2 x}\,\mathrm{d}x = $
     \begin{multicols}{3}
     \begin{choices}
         \wrongchoice{$-\dfrac{25}{27}$}
@@ -5207,7 +5210,7 @@
     \end{tabular}
     \end{center}
     If four equal subintervals of $\left[0,2\right]$ are used,
-        which of the following is the trapexoidal approximation of $\int^{\,2}_{0}f(x)\,\mathrm{d}x$?
+        which of the following is the trapexoidal approximation of $\int^{\,\,2}_{0}f(x)\,\mathrm{d}x$?
     \begin{multicols}{3}
     \begin{choices}
         \wrongchoice{8}
@@ -5281,7 +5284,8 @@
         \end{axis}
     \end{tikzpicture}
     \end{center}
-    What is the value of $\int^{\,4}_{-1} f(x)\,\mathrm{d}x$?
+    %% NOTE: TODO: double check spacing on int bounds
+    What is the value of $\displaystyle\int^{\;\;4}_{-1} f(x)\,\mathrm{d}x$?
     \begin{multicols}{3}
     \begin{choices}
         \wrongchoice{1}
