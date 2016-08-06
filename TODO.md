@@ -3,6 +3,10 @@
 -[ ] README in master
 -[ ] description.xml options.xml in mc-project
 
+## AP
+-[ ] Finish APC and APB exams in collegeBoard
+-[ ] move other files in collegeBoard elsewhere??
+
 
 -[ ] gray choicelabels? \def\AMCchoiceLabelFormat#1{\textcolor{black!40}{#1}}
 -[ ] page limit in \onecopy{}: \loop\ifnum\thepage<5\clearpage ~\repeat
