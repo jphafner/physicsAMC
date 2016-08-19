@@ -1,4 +1,7 @@
 
+-[ ] create new category: NYSED-physicalOptics
+
+
 -[ ] Check physics labs for categorization??
 
 -[ ] modern should have relativity and standard model, or split relativity into separate??
@@ -12,7 +15,7 @@
 
 -[ ] why no fluids??
 
--[ ] split gravity into gravity and orbits
+-[ ] split gravity into gravity and orbits ??
 
 -[ ] split NYSED-momentum into impulse and momentum (conservation principle) ??
 
@@ -20,6 +23,7 @@
 
 -[ ] split use Group 4---Atomic and Nuclear Physics into nuclear and atomic
 
+## See above
 -[ ] split NYSED-light -> lightRayModel and lightWaveModel (color) and lightPhoton (move from atomic)
 -[ ] split NYSED-light -> color 
 
@@ -33,6 +37,7 @@
 -[ ] Learning Objectives in each file, refer to heller and heller and kelly oshea
 -[ ] Use phycoresci.pdf as example
 -[ ] Make reference to misconceptions
+
 
 ## Examples
 

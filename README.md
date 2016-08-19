@@ -1,7 +1,15 @@
 
 # physicsAMC
 
-## Introduction
+##table of contents
+- [introduction](#introduction)
+- [branches](#branches)
+- [dependencies](#dependencies)
+- [exam files](#exam files)
+- [question bank](#question)
+
+
+#introduction
 
 This projects seeks to create an exam question repository for an introductory physics course.
 If you are not convinced in the effectiveness of multiple choice,
@@ -17,8 +25,7 @@ Grading should be fast, student feedback should be lengthy.
 This README is written with the hopes of being comprehensible to a computer literate physics teacher.
 If you describe yourself as above, and find this incomprehensible, I consider that a bug.
 
-
-## Branches
+#branches
 
 -[mc-project](mc-project), this is a self contained assessment ready for import into auto multiple choice (AMC).
     If you are new to using AMC, I would recommend that you start here.
@@ -31,7 +38,7 @@ If you describe yourself as above, and find this incomprehensible, I consider th
     Not everything here will work, though most should.
     If you want to contribute, or use things in development, I would recommend that you start here.
 
-## Dependencies
+#dependencies
 
 All except automultiplechoice are included by default in most package managers.
 I use [Fedora's Package Manager](https://fedoraproject.org), but have heard good things about other projects: [HomeBrew](http://brew.sh/), [Debian](http://debian.org), [Arch Linux](https://archlinux.org), [Chocolatey](https://chocolatey.org/), etc.
@@ -54,7 +61,7 @@ A good place to start is [The LaTeX Project](https://www.latex-project.org/get/)
 
 _Please Note:_ This is not an exhaustive list.
 
-## Exam Files
+##exam files
 
 -[source-exam](source-exam.tex), this is for beautifully formatted exams with separate cover sheet and answer/response sheet.
     I use this for unit assessments.
@@ -85,7 +92,9 @@ _Please Note:_ This is not an exhaustive list.
 -[email](email.txt), this file provides a template for formmating student emails.
 
 
-## Question Bank (master)
+#question bank
+
+## master branch
 
 - [kinematics](/qbank/kinematics/): A collection of custom written graph questions.
 - [nysed](/qbank/nysed/): A comprehensive collection of NYSED physics regents exam questions, _over 2200 categorized questions!!_
@@ -94,7 +103,7 @@ _Please Note:_ This is not an exhaustive list.
 - [survey](/qbank/survey/): A collection of surveys that may be of interest: [CLASS](http://www.colorado.edu/sei/class/), [MPEX](http://serc.carleton.edu/NAGTWorkshops/assess/activities/MPEX.html), [Duckworth](https://sites.sas.upenn.edu/?q=duckworth/pages/educators-0)
 
 
-## Question Bank (develop)
+## develop branch
 
 - [aapt](/qbank/aapt/): A rewrite of the [American Association of Physics Teachers](www.aapt.org) Physics Bowl and Olympiad Exam questions.
 - [cap](/qbank/cap/): A rewrite of the [Canadian Association of Physicists](www.cap.ca) challenge exam questions.
@@ -112,6 +121,10 @@ _Please Note:_ This is not an exhaustive list.
 - [serway](/qbank/serway/): A rewrite of the exam bank questions to Serway's _Physics for Scientists and Engineers_.
 
 Please refer to the headings of each file for more information.
+
+## Contributions and Style Guide
+
+I use NOTE: and TODO: labels for easy access to information in files.
 
 ## Copyright and License
 
