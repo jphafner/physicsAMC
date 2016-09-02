@@ -6,7 +6,8 @@
 - [branches](#branches)
 - [dependencies](#dependencies)
 - [exam files](#exam files)
-- [question bank](#question)
+- [question bank](#question bank)
+- [references](#references)
 
 
 #introduction
@@ -41,7 +42,8 @@ If you describe yourself as above, and find this incomprehensible, I consider th
 #dependencies
 
 All except automultiplechoice are included by default in most package managers.
-I use [Fedora's Package Manager](https://fedoraproject.org), but have heard good things about other projects: [HomeBrew](http://brew.sh/), [Debian](http://debian.org), [Arch Linux](https://archlinux.org), [Chocolatey](https://chocolatey.org/), etc.
+I use [Fedora's Package Manager](https://fedoraproject.org), but have heard good things about other projects:
+    [HomeBrew](http://brew.sh/), [Debian](http://debian.org), [Arch Linux](https://archlinux.org), [Chocolatey](https://chocolatey.org/), [OneGet](https://github.com/OneGet/oneget), etc.
 A good place to start is [The LaTeX Project](https://www.latex-project.org/get/) no matter what you are using.
 
 - [automultiplechoice](http://home.gna.org/auto-qcm/), this should really be self explanatory, hence the AMC in the project name.
@@ -61,7 +63,7 @@ A good place to start is [The LaTeX Project](https://www.latex-project.org/get/)
 
 _Please Note:_ This is not an exhaustive list.
 
-##exam files
+#exam files
 
 -[source-exam](source-exam.tex), this is for beautifully formatted exams with separate cover sheet and answer/response sheet.
     I use this for unit assessments.
@@ -96,10 +98,11 @@ _Please Note:_ This is not an exhaustive list.
 
 ## master branch
 
-- [kinematics](/qbank/kinematics/): A collection of custom written graph questions.
-- [nysed](/qbank/nysed/): A comprehensive collection of NYSED physics regents exam questions, _over 2200 categorized questions!!_
-- [lua](/qbank/lua/): A collection of custom written questions that are randomized, requires [lua](http://www.lua.org)
 - [diagnostic](/qbank/diagnostic/): A collection of diagnostic exams: [freeBodyDiagrams](http://dx.doi.org/10.1103/PhysRevSTPER.11.020137), [vectors](http://dx.doi.org/10.1103/PhysRevSTPER.11.020137), [ADTv2](http://solar.physics.montana.edu/aae/adt/)
+- [hewitt](/qbank/hewitt/): A rewrite of Hewitt's 60 questions that all physics students should answer.
+- [kinematics](/qbank/kinematics/): A collection of custom written graph questions.
+- [lua](/qbank/lua/): A collection of custom written questions that are randomized, requires [lua](http://www.lua.org)
+- [nysed](/qbank/nysed/): A comprehensive collection of NYSED physics regents exam questions, _over 2200 categorized questions!!_
 - [survey](/qbank/survey/): A collection of surveys that may be of interest: [CLASS](http://www.colorado.edu/sei/class/), [MPEX](http://serc.carleton.edu/NAGTWorkshops/assess/activities/MPEX.html), [Duckworth](https://sites.sas.upenn.edu/?q=duckworth/pages/educators-0)
 
 
@@ -113,7 +116,6 @@ _Please Note:_ This is not an exhaustive list.
     Of interest are the rewrites of all released [calculus AB](/qbank/collegeBoard/calculusAB.tex) and [calculus BC](/qbank/collegeBoard/calculusBC.tex) exam questions.
 - [gre](/qbank/gre/): A rewrite of all released physics GRE exams.
 - [halliday](/qbank/halliday/): A rewrite of the exam bank questions to Halliday's _Fundamentals of Physics_.
-- [hewitt](/qbank/hewitt/): A rewrite of Hewitt's 60 questions that all physics students should answer.
 - [holt](/qbank/holt/): A rewrite of the end of chapter assessments from Holt's _Physics_.
 - [jpierce](/qbank/jpierce/): A rewrite of of [Dr. James Pierce's Physics 101 Sample Test Questions](http://mavdisk.mnsu.edu/jpierce/courses/p101/questions.html).
 - [njctl](/qbank/njctl/): A rewrite of [The New Jersey Center for Teaching and Learning](https://njctl.org/courses/science/) physics problems, both calculus and algebra based.
@@ -122,13 +124,15 @@ _Please Note:_ This is not an exhaustive list.
 
 Please refer to the headings of each file for more information.
 
+#references
+
+- [Using AMC in command line only](http://project.auto-multiple-choice.net/projects/auto-multiple-choice/wiki/Using_AMC_in_command_line_only)
+- [amc-mill](http://project.auto-multiple-choice.net/attachments/934/amc-mill.zip) is an implementation of the above
+
+
 ## Contributions and Style Guide
 
 I use NOTE: and TODO: labels for easy access to information in files.
-
-## Copyright and License
-
-* [GNU GPL v3](LICENSE.md)
 
 
 
