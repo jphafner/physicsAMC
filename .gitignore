@@ -27,6 +27,9 @@
 testing.pdf
 testing-numeric.pdf
 
+## Compiled exams
+source*pdf
+
 # AMC specific
 *.amc
 

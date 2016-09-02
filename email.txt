@@ -22,8 +22,6 @@ Sincerely,
 Jeffrey P. Hafner
 
 
-
-
 NOTE: I sometimes add another column to the students.csv file for current grade in class.
 I find it helpful if students are reminded frequently where they stand in the class.
 The column names are completely arbitrary.

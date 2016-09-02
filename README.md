@@ -27,14 +27,14 @@ If you describe yourself as above, and find this incomprehensible, I consider th
 
 #branches
 
--[mc-project](mc-project), this is a self contained assessment ready for import into auto multiple choice (AMC).
+-[mc-project](physicsAMC/tree/mc-project), this is a self contained assessment ready for import into auto multiple choice (AMC).
     If you are new to using AMC, I would recommend that you start here.
 
--[master](master), this is the stable branch.
+-[master](physicsAMC/tree/master), this is the stable branch.
     Everything should work here.
     If you feel comfortable with using AMC, I would recommend that you start here.
 
--[develop](develop), this is the development branch.
+-[develop](physicsAMC/tree/develop), this is the development branch.
     Not everything here will work, though most should.
     If you want to contribute, or use things in development, I would recommend that you start here.
 
@@ -108,15 +108,15 @@ _Please Note:_ This is not an exhaustive list.
 - [aapt](/qbank/aapt/): A rewrite of the [American Association of Physics Teachers](www.aapt.org) Physics Bowl and Olympiad Exam questions.
 - [cap](/qbank/cap/): A rewrite of the [Canadian Association of Physicists](www.cap.ca) challenge exam questions.
 - [cpo](/qbank/cpo/): A rewrite of the CPO exam bank questions.
-    I am particularly proud of [ch21-q09][/qbank/cpo/ch21-mc.tex), check it out.
+    I am particularly proud of [ch21-q09](/qbank/cpo/ch21-mc.tex), check it out.
 - [collegeBoard](/qbank/collegeBoard/): Anything relating to College Board. 
-    Of interest are the rewrites of all released [calculus AB](/qbank/collegeBoard/calculusAB) and [calculus BC](/qbank/collegeBoard/calculusBC) exam questions.
+    Of interest are the rewrites of all released [calculus AB](/qbank/collegeBoard/calculusAB.tex) and [calculus BC](/qbank/collegeBoard/calculusBC.tex) exam questions.
 - [gre](/qbank/gre/): A rewrite of all released physics GRE exams.
 - [halliday](/qbank/halliday/): A rewrite of the exam bank questions to Halliday's _Fundamentals of Physics_.
 - [hewitt](/qbank/hewitt/): A rewrite of Hewitt's 60 questions that all physics students should answer.
 - [holt](/qbank/holt/): A rewrite of the end of chapter assessments from Holt's _Physics_.
 - [jpierce](/qbank/jpierce/): A rewrite of of [Dr. James Pierce's Physics 101 Sample Test Questions](http://mavdisk.mnsu.edu/jpierce/courses/p101/questions.html).
-- [njctl](/qbank/njctl/): A rewrite of [The New Jersey Center for Teaching and Learning](https://njctl.org/details/projectphysicscollection) physics problems, both calculus and algebra based.
+- [njctl](/qbank/njctl/): A rewrite of [The New Jersey Center for Teaching and Learning](https://njctl.org/courses/science/) physics problems, both calculus and algebra based.
 - [project](/qbank/project/): A rewrite of [Harvard University's Project Physics](https://archive.org/details/projectphysicscollection) exam bank questions.
 - [serway](/qbank/serway/): A rewrite of the exam bank questions to Serway's _Physics for Scientists and Engineers_.
 
