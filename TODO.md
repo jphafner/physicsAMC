@@ -7,8 +7,12 @@
 -[ ] Finish APC and APB exams in collegeBoard
 -[ ] move other files in collegeBoard elsewhere??
 
+## High school
+-[ ] Start questionBank.ca questions
+
 
 -[ ] gray choicelabels? \def\AMCchoiceLabelFormat#1{\textcolor{black!40}{#1}}
+    This would make grading less ambiguous
 -[ ] page limit in \onecopy{}: \loop\ifnum\thepage<5\clearpage ~\repeat
 -[ ] indivanswers for solution creation
 -[ ] add \explain{ } to gre, project, and others
