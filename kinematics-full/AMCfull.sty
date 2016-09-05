@@ -1,0 +1,123 @@
+%%
+%% Copyright (C) 2014 Jeffrey P. Hafner <jphafner@buffalo.edu>
+%%  
+%%  This program is free software: you can redistribute it and/or modify
+%%  it under the terms of the GNU General Public License as published by
+%%  the Free Software Foundation, either version 3 of the License, or
+%%  (at your option) any later version.
+%%  
+%%  This program is distributed in the hope that it will be useful,
+%%  but WITHOUT ANY WARRANTY; without even the implied warranty of
+%%  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+%%  GNU General Public License for more details.
+%%  
+%%  You should have received a copy of the GNU General Public License
+%%  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+%%
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{AMCfull}
+
+
+\RequirePackage{AMCcommon}
+
+
+%%------------------------------------------------
+%% Auto-Multiple Choice
+%%------------------------------------------------
+
+%% box: place every question in a block, prevents page breaks
+%% completemulti: automatically adds a "None of these answers are correct" option
+%% noshuffle: stops the automatic shuffling of the answers for every question
+%% answers: produces the corrected version of the MCQ test, not the test sheet itself.
+%% separateanswersheet: requires all check-boxes to be on seperate sheet
+%% digits: use numbers instead of letters
+%% outsidebox: print options outside box
+%% insidebox: print options inside box
+%% catalog: catalog questions to be used on future exams
+%% postcorrect: grade from blank sheets after the fact
+%% automarks: (only for separateanswersheet) cancel marks printing on subject pages
+
+\PassOptionsToPackage{
+    %answers,
+    box,
+    lang=english,
+    insidebox,
+    %separateanswersheet,
+}{automultiplechoice}
+\RequirePackage{automultiplechoice}
+
+\geometry{
+    letterpaper,
+    hmargin=2.0cm,
+    headheight=2.0cm,
+    headsep=0.0cm,
+    footskip=1.0cm,
+    top=3.0cm,
+    bottom=2.0cm,
+}
+
+\AMCrandomseed{123456}
+
+%% e: ambiguous
+%% v: no answer
+%% b: correct response
+%% p: score lower limit
+%% d: offset
+%% m: wrong response
+%% haut: +x right, -1 wrong
+
+%% Default S: e=0,v=0,b=1,m=0
+%% Default M: e=0,v=0,b=1,m=0,p=-100,d=0
+
+%% For question
+\scoringDefaultS{e=0,v=0,b=1,m=0}
+%% For questionmult
+\scoringDefaultM{haut=1,p=0}
+
+%% none,top,side
+\AMCidsPosition{pos=side} %,width=2cm,height=3ex}
+
+\def\AMCbeginQuestion#1#2{\noindent{\bf Q#1} #2}
+\def\AMCbeginAnswer#1#2{\par\noindent{\bf Q#1} #2}
+
+%\def\AMCbeginQuestion#1#2{\par\noindent{\bf Question #1} #2\hspace*{1em}}
+
+%\def\multiSymbole{}
+\def\AMCntextVHead#1{\emph{b#1}}
+%\def\AMCdecimalPoint{$\bullet$\hspace{1ex}}
+\def\AMCdecimalPoint{$\bullet$\vspace{1ex}\hspace{1ex}}
+%\def\AMCntextSign{text}
+
+\AMCboxDimensions{
+    shape   = square,
+    size    = 1.33em,
+    %shape   = oval,
+    %size    = 1.4em,
+    rule    = 0.3pt,
+    down    = 0.33em,
+}
+\AMCcodeHspace=0.2em
+\AMCcodeVspace=0.2em
+\AMCcodeBoxSep=0.2em
+
+\AMCformHSpace=0.2em
+\AMCformVSpace=1.2ex
+
+%\AMCboxColor{red}
+\def\AMCchoiceLabel#1{\small\alph{#1}}
+%\def\AMCchoiceLabelFormat#1{\textbf{#1}}
+
+\def\AMCformQuestion#1{\vspace{\AMCformVSpace}\par{\noindent\scshape Q#1:}}
+\def\AMCformAnswer#1{\hspace{\AMCformHSpace} #1}
+
+%\AMCtext{none}{None of these answers are correct}
+%\AMCtext{correct}{All of these are corrected}
+\AMCtext{draft}{DRAFT}
+%\AMCtext{message}{For your examination, preferably print documents copiled from auto-multiple-choice.}
+
+\endinput
+%%------------------------------------------------
+%% End of Quiz Style File
+%%------------------------------------------------
+

@@ -1,0 +1,105 @@
+%%
+%% Copyright (C) 2014 Jeffrey P. Hafner <jphafner@buffalo.edu>
+%%  
+%%  This program is free software: you can redistribute it and/or modify
+%%  it under the terms of the GNU General Public License as published by
+%%  the Free Software Foundation, either version 3 of the License, or
+%%  (at your option) any later version.
+%%  
+%%  This program is distributed in the hope that it will be useful,
+%%  but WITHOUT ANY WARRANTY; without even the implied warranty of
+%%  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+%%  GNU General Public License for more details.
+%%  
+%%  You should have received a copy of the GNU General Public License
+%%  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+%%
+
+\documentclass[
+    11pt,
+    fleqn,
+]{scrartcl}
+
+\usepackage{AMCfull}
+\newlength{\mylen}
+\setlength{\parskip}{0pt} % 1ex plus 0.5ex minus 0.2ex}
+\setlength{\parindent}{0pt}
+
+\graphicspath{{./qbank/aapt/gfx/}{./qbank/nysed/gfx/}}
+
+%% Begin Document
+%%------------------------------------------------
+\begin{document}
+
+%% AAPT 52Q
+\input{./qbank/aapt/Bowl-A1.tex}
+
+%% NYSED
+\input{./qbank/nysed/NYSED-constantVelocity.tex}
+\input{./qbank/nysed/NYSED-constantAcceleration.tex}
+\input{./qbank/nysed/NYSED-freeFall.tex}
+\input{./qbank/nysed/NYSED-estimation.tex}
+
+%% Lua Questions
+\directlua{dofile("./qbank/lua/common.lua")}
+\input{./qbank/lua/units.tex}
+
+%% Begin Quiz
+%%------------------------------------------------
+\begin{examcopy}[2]
+
+\setlength{\mylen}{\linewidth}
+\addtolength{\mylen}{-17em}
+\begin{minipage}{\linewidth}
+    \centering
+    \begin{minipage}{15.5em}
+        \centering
+        Student Number \\
+        \AMCcodeH{StudentNum}{3}
+    \end{minipage}
+    \begin{minipage}{\mylen}
+        \centering
+        \textsc{Physics Assessment} \\
+        \namefield{\fbox{\small
+            \begin{minipage}{\mylen}
+                Last and First Name: \hfill Today's Date:
+                \vspace*{3.3em}
+            \end{minipage}
+        }}
+    \end{minipage}
+\end{minipage}
+
+\null\hfill\parbox[c]{0.9\linewidth}{\small
+    %% Instructions for quiz
+    %% Feel free to change as desired
+    %% I purposefully keep the instructions small and incomplete to save space
+    Enter your student number, your full name, and today's date in the provided space.
+    Questions using the sign \multiSymbole{} may have zero, one or several correct answers.
+    Other questions have a single correct answer.
+    Select your response by filling the appropriate box.
+    The use of an HB or \#2 pencil is preferred, but not required.
+    The use of external reference material or electronic communication devices is prohibited.
+}\hfill\null
+
+\rule[0pt]{\linewidth}{0.5pt}
+
+\begin{multicols}{2}
+    \cleargroup{all}
+
+    \shufflegroup{aapt}
+    \shufflegroup{nysed}
+    \shufflegroup{units}
+
+    \copygroup[6]{aapt}{all}
+    \copygroup[6]{nysed}{all}
+    \copygroup[2]{units}{all}
+
+    \shufflegroup{all}
+    \insertgroup{all}
+\end{multicols}
+
+\AMCcleardoublepage
+\end{examcopy}
+
+\end{document}
+

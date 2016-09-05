@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<projetAMC>
+  <_modifie>1</_modifie>
+  <_modifie_ok>0</_modifie_ok>
+  <after_export>file</after_export>
+  <allocate_ids>0</allocate_ids>
+  <annote_position>case</annote_position>
+  <annote_rtl></annote_rtl>
+  <assoc_code></assoc_code>
+  <auto_capture_mode>-1</auto_capture_mode>
+  <code_examen></code_examen>
+  <cr>cr</cr>
+  <data>data</data>
+  <doc_catalog>DOC-catalog.pdf</doc_catalog>
+  <doc_question>DOC-sujet.pdf</doc_question>
+  <doc_setting>DOC-calage.xy</doc_setting>
+  <doc_solution>DOC-corrige.pdf</doc_solution>
+  <email_col></email_col>
+  <email_subject>Exam result</email_subject>
+  <email_text>Please find enclosed your annotated completed answer sheet.
+Regards.</email_text>
+  <encodage_csv>UTF-8</encodage_csv>
+  <encodage_liste>UTF-8</encodage_liste>
+  <export_csv_columns>student.copy,student.key,student.name</export_csv_columns>
+  <export_csv_separateur>;</export_csv_separateur>
+  <export_csv_ticked></export_csv_ticked>
+  <export_include_abs></export_include_abs>
+  <export_ncols>2</export_ncols>
+  <export_ods_columns>student.copy,student.key,student.name</export_ods_columns>
+  <export_ods_groupsums></export_ods_groupsums>
+  <export_ods_stats></export_ods_stats>
+  <export_ods_statsindic>1</export_ods_statsindic>
+  <export_pagesize>a4</export_pagesize>
+  <export_sort>n</export_sort>
+  <filter>latex</filter>
+  <filtered_source>DOC-filtered.tex</filtered_source>
+  <format_export>CSV</format_export>
+  <liste_key></liste_key>
+  <listeetudiants></listeetudiants>
+  <maj_bareme>1</maj_bareme>
+  <modele_regroupement></modele_regroupement>
+  <moteur_latex_b>lualatex</moteur_latex_b>
+  <nom_examen></nom_examen>
+  <nombre_copies>0</nombre_copies>
+  <note_arrondi>inf</note_arrondi>
+  <note_grain>0.5</note_grain>
+  <note_max>20</note_max>
+  <note_max_plafond>1</note_max_plafond>
+  <note_min></note_min>
+  <notes>notes.xml</notes>
+  <postcorrect_copy>0</postcorrect_copy>
+  <postcorrect_student>0</postcorrect_student>
+  <regroupement_compose></regroupement_compose>
+  <regroupement_copies>ALL</regroupement_copies>
+  <regroupement_type>STUDENTS</regroupement_type>
+  <seuil>0.5</seuil>
+  <texsrc>%PROJET/separate.tex</texsrc>
+  <verdict>%(ID)
+Mark: %s/%m (total score: %S/%M)</verdict>
+  <verdict_q>&quot;%s/%m&quot;</verdict_q>
+</projetAMC>

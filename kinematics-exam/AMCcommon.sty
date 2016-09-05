@@ -1,0 +1,258 @@
+%%
+%% Copyright (C) 2014 Jeffrey P. Hafner <jphafner@buffalo.edu>
+%%  
+%%  This program is free software: you can redistribute it and/or modify
+%%  it under the terms of the GNU General Public License as published by
+%%  the Free Software Foundation, either version 3 of the License, or
+%%  (at your option) any later version.
+%%  
+%%  This program is distributed in the hope that it will be useful,
+%%  but WITHOUT ANY WARRANTY; without even the implied warranty of
+%%  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+%%  GNU General Public License for more details.
+%%  
+%%  You should have received a copy of the GNU General Public License
+%%  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+%%
+
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{AMCcommon}
+
+\RequirePackage{myTikz}
+
+%\RequirePackage[l2tabu, orthodox]{nag}
+
+
+%% Package Definitions
+%%------------------------------------------------
+\RequirePackage{booktabs}
+\RequirePackage{chngpage}
+\RequirePackage{color}
+%\RequirePackage{cleveref}
+%\RequirePackage{chemfig}
+\RequirePackage{environ}
+\RequirePackage[shortlabels,inline]{enumitem}
+\RequirePackage{graphicx}
+\RequirePackage{float}
+\RequirePackage{fp}
+\RequirePackage{luacode}
+\RequirePackage{multicol}
+\RequirePackage[version=3]{mhchem}
+\RequirePackage{physics}
+\RequirePackage{rotating}
+\RequirePackage{tabulary}
+\RequirePackage{tabu}
+%\RequirePackage{textpos}
+\RequirePackage{verbatim}
+\RequirePackage{xfrac}
+\RequirePackage{xstring}
+
+%\RequirePackage[colorlinks=false, pdfborder={0 0 0}]{hyperref}
+%\setitemize{noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt,leftmargin=0pt,rightmargin=0pt}
+
+%% Font and Language Selections
+%%------------------------------------------------
+%\fontspec{<font name>}[<font features>]
+%\setmainfont{<font name>}[<font features>]
+%\setsansfont{<font name>}[<font features>]
+%\setmonofont{<font name>}[<font features>]
+%\newfontfamily<cmd>{<font name>}[<fon> features>]
+
+%\setmathrm{<font name>}[<font features>]
+%\setmathsf{<font name>}[<font features>]
+%\setmathtt{<font name>}[<font features>]
+%\setboldmathrm{<font name>}[<font features>]
+
+\RequirePackage{fontspec}
+%\RequirePackage{xunicode}
+\defaultfontfeatures{
+    Ligatures=TeX
+}
+
+\setmainfont{STIX}
+\setsansfont{STIX}
+\setmonofont{STIX}
+
+\RequirePackage{unicode-math}
+\unimathsetup{
+    bold-style=ISO,
+    %math-style=TeX,
+}
+%\setmathfont{latinmodern-math.otf}
+%\setmathfont{Asana-Math.otf}
+%\setmathfont{xits-math.otf
+\setmathfont{STIXMath-Regular.otf}
+
+\RequirePackage{polyglossia}
+    %\setmainlanguage[spelling=new,babelshorthands=true]{english}
+    \setmainlanguage{english}
+
+%% Must be loaded after fonts
+\RequirePackage{microtype}
+
+%%------------------------------------------------
+%% Math and SI Units
+%%------------------------------------------------
+\RequirePackage{amsmath}
+%\RequirePackage{mathtools}
+%\RequirePackage{amsfonts}  % conflicts with mathdesign
+%\RequirePackage{amssymb}   % conflicts with mathdesign
+
+\RequirePackage{siunitx}
+\sisetup{
+    retain-explicit-plus,
+    output-product = \cdot,
+    quotient-mode = fraction,
+    fraction-function = \dfrac, %%\dfrac, \tfrac
+    per-mode=symbol,            %% fraction
+}
+
+%% \begin{tabular}{ss}
+
+%% Common enough to abbreviate
+\DeclareSIUnit\Fahrenheit{F}
+\DeclareSIUnit\Rankine{R}
+\DeclareSIUnit\calorie{cal}
+\DeclareSIUnit\gallon{gal}
+\DeclareSIUnit\quart{qt}
+\DeclareSIUnit\inch{in}
+\DeclareSIUnit\foot{ft}
+\DeclareSIUnit\yard{yd}
+\DeclareSIUnit\point{pt}
+\DeclareSIUnit\pound{lb}
+\DeclareSIUnit\slug{slug}
+\DeclareSIUnit\teaspoon{tsp}
+\DeclareSIUnit\tablespoon{tbsp}
+\DeclareSIUnit\revolution{rev}
+\DeclareSIUnit\rotation{rotation}
+\DeclareSIUnit\atm{atm} %% atmosphere
+%% Not common enough to abbreviate
+\DeclareSIUnit\year{year} %% yr
+\DeclareSIUnit\week{week} %% wk
+\DeclareSIUnit\day{day}   %% NIST: d
+\DeclareSIUnit\mile{mile}
+\DeclareSIUnit\ton{ton}   %% NIST: t
+\DeclareSIUnit\knot{knot}
+
+\DeclareSIPrePower\quartic{4}
+\DeclareSIPostPower\tothefourth{4}
+\DeclareSIPrePower\quintic{5}
+\DeclareSIPostPower\tothefifth{5}
+
+
+%% PGF and Tikz Libraries
+%%------------------------------------------------
+\RequirePackage{tikz}
+    \usetikzlibrary{arrows}
+    \usetikzlibrary{calc}
+    \usetikzlibrary{decorations.markings}
+    \usetikzlibrary{decorations.fractals}
+    \usetikzlibrary{decorations.text}
+    \usetikzlibrary{patterns}
+    \usetikzlibrary{positioning}
+    \usetikzlibrary{shadows}
+    \usetikzlibrary{shapes.geometric}
+
+\RequirePackage[siunitx]{circuitikz}
+\RequirePackage{pgfplots}
+    \usepgfplotslibrary{groupplots}
+    \usepgfplotslibrary{units}
+    \usepgfplotslibrary{patchplots}
+    \usepgfplotslibrary{fillbetween}
+    %\pgfplotsset{compat=1.13}
+%\RequirePackage{pgfplotstable}
+\pgfmathsetseed{1234}
+
+%\RequirePackage{logicpuzzle}
+
+
+%% PGF Math Functions
+%%------------------------------------------------
+
+% Gauss function, parameters mu and sigma
+%\newcommand\gauss[2]{1/(#2*sqrt(2*pi))*exp(-((x-#1)^2)/(2*#2^2))}
+
+
+%%------------------------------------------------
+%% Personal Customizations
+%%------------------------------------------------
+
+%% Custom Title
+\makeatletter
+\newcommand{\titleHeader}{\@title: \@subtitle}
+\makeatother
+
+
+%% Title Page
+%%------------------------------------------------
+\makeatletter
+\newcommand*{\titleAMC}{%
+    \thispagestyle{empty}
+    \begingroup
+    \setlength{\parskip}{0pt}
+    \setlength{\parindent}{0pt}
+    \centering
+    %% Head
+    {\Large\@titlehead\par\@subject\par}
+        \vskip\baselineskip
+
+    %% Title and subtitle
+    \rule{\textwidth}{1pt}
+        \vskip0.33\baselineskip
+    {\bfseries\Huge\@title\par\@subtitle\par}
+        \vskip0.11\baselineskip
+    \rule{\textwidth}{1pt}
+        %\vskip2.00\baselineskip
+        \vskip1.00\baselineskip
+
+    %% Decoration
+    %\begin{tikzpicture}[decoration=Koch curve type 2,scale=1]
+    %\path[draw] decorate{ decorate{ decorate{ decorate{ (0,0) -- (3,0) }}}}; %\path[draw] decorate{ decorate{ decorate{ (0,0) -- (3,0) }}};
+    %\end{tikzpicture}
+    %    \vskip2.00\baselineskip
+
+    %% Author
+    %\begin{minipage}{0.4\textwidth}
+    %    \begin{flushleft}
+    %        \Large\@author\par
+    %    \end{flushleft}
+    %\end{minipage}
+    %% Date
+    %\begin{minipage}{0.4\textwidth}
+    %    \begin{flushright}
+    %        \Large\@date\par
+    %    \end{flushright}
+    %\end{minipage}
+    %{\Large\@date\par}
+    \vfill
+
+    %% Instructions
+    \begin{adjustwidth}{-3cm}{-3cm}% adjust the L and R margins by 1 inch
+    \begin{center}
+    \leaves{
+        \begin{minipage}{9cm}
+        \parbox{1.00\linewidth}{
+            \setlength{\parskip}{0.5\baselineskip}
+            \setlength{\parindent}{1em}
+            \normalfont\@publishers\par
+        }
+        \end{minipage}
+    }
+    \end{center}
+    \end{adjustwidth}
+    \vfill
+
+    %% Publishers Logo
+    \begin{flushright}
+        \fbox{$\mathcal{JPH}$}
+    \end{flushright}
+    \endgroup
+}
+\makeatother
+
+\endinput
+%%------------------------------------------------
+%% End of AMCcommon Style File
+%%------------------------------------------------
+

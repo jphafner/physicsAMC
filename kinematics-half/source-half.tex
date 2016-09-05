@@ -1,0 +1,97 @@
+%%
+%% Copyright (C) 2014 Jeffrey P. Hafner <jphafner@buffalo.edu>
+%%  
+%%  This program is free software: you can redistribute it and/or modify
+%%  it under the terms of the GNU General Public License as published by
+%%  the Free Software Foundation, either version 3 of the License, or
+%%  (at your option) any later version.
+%%  
+%%  This program is distributed in the hope that it will be useful,
+%%  but WITHOUT ANY WARRANTY; without even the implied warranty of
+%%  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+%%  GNU General Public License for more details.
+%%  
+%%  You should have received a copy of the GNU General Public License
+%%  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+%%
+
+
+\documentclass[
+    11pt,
+]{scrartcl}
+
+\usepackage{AMChalf}
+\newlength{\mylen}
+%% To save space
+\setlength{\parskip}{0pt} % 1ex plus 0.5ex minus 0.2ex}
+\setlength{\parindent}{0pt}
+
+\graphicspath{{./qbank/cpo/examView/gfx/}{./qbank/nysed/gfx/}}
+
+%% Begin Document
+%%------------------------------------------------
+\begin{document}
+
+%% NYSED
+\input{./qbank/nysed/NYSED-constantVelocity.tex}
+\input{./qbank/nysed/NYSED-constantAcceleration.tex}
+\input{./qbank/nysed/NYSED-freeFall.tex}
+\input{./qbank/nysed/NYSED-estimation.tex}
+
+%% Lua
+%\directlua{dofile("./qbank/lua/common.lua")}
+%\input{./qbank/lua/wrong.tex}
+%\input{./qbank/lua/units.tex}
+
+
+%% Begin Quiz
+%%------------------------------------------------
+\begin{examcopy}[2]
+
+%% I never place titles on source-half to save space
+%% Give verbal instructions for the first time you use
+
+\setlength{\mylen}{\linewidth}
+\addtolength{\mylen}{-16em}
+\begin{minipage}{\linewidth}
+    \begin{minipage}{16em}
+        \AMCcodeH{StudentNum}{3}
+    \end{minipage}
+    \begin{minipage}{\mylen}
+        \namefield{\fbox{\small
+            \begin{minipage}{\linewidth}
+                %% Do not ask for date as it takes too much space
+                \hfill Last and First Name: \hfill
+                %\vspace*{3.3em}
+                \vspace*{3.6em}
+            \end{minipage}
+        }}
+    \end{minipage}
+\end{minipage}
+
+\null\hfill\parbox[c]{0.9\linewidth}{\small
+%% Instructions for half quiz
+%% Feel free to change
+%% I purposefully keep the instructions brief and incomplete to save space
+Questions using the sign \multiSymbole{} may have zero, one or several correct answers.
+Other questions have a single correct answer.
+% NOTE: if numeric answer
+%Please ask for assistance if you do not know how to bubble in your answer.
+%\emph{Good Luck!}
+}\hfill\null
+
+\rule[0pt]{\linewidth}{0.5pt} \\
+
+    \cleargroup{all}
+
+    \shufflegroup{nysed}
+    \copygroup[6]{nysed}{all}
+
+    \shufflegroup{all}
+    \insertgroup{all}
+
+\AMCcleardoublepage
+\end{examcopy}
+
+\end{document}
+

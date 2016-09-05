@@ -1,0 +1,1588 @@
+
+
+%% AAPT Physics Bowl Exams Questions
+%%----------------------------------------
+
+
+%% This section has 58 problems
+
+
+%% PhysicsBowl 2015
+%%----------------------------------------
+\element{aapt}{ %% Bowl-A1
+\begin{question}{bowl-2015-q02}
+    A box uniformly slides \SI{7.50}{\meter} to rest across
+        a flat surface in a time of \SI{12.0}{\second}.
+    What was the initial speed of the box when it started its slide?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{0.313}{\meter\per\second}}
+        \wrongchoice{\SI{0.625}{\meter\per\second}}
+      \correctchoice{\SI{1.25}{\meter\per\second}}
+        \wrongchoice{\SI{2.50}{\meter\per\second}}
+        \wrongchoice{\SI{5.00}{\meter\per\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{aapt}{ %% Bowl-A1
+\begin{question}{bowl-2015-q06}
+    A car travels at \SI{20.0}{\mile\per\hour}.
+    Which one of the following choices best represents the speed
+        of the car in SI units of meter per second (\si{\meter\per\second})?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{533}{\meter\per\second}}
+        \wrongchoice{\SI{45.0}{\meter\per\second}}
+        \wrongchoice{\SI{20.0}{\meter\per\second}}
+      \correctchoice{\SI{8.9}{\meter\per\second}}
+        \wrongchoice{\SI{0.75}{\meter\per\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{aapt}{ %% Bowl-A1
+\begin{question}{bowl-2015-q09}
+    Two cars are moving to the right on a horizontal track,
+        each with constant acceleration.
+    At an instant of time, the information about the cars is shown:
+    \begin{description}
+        \item[Car \#1:] position = \SI{125.0}{\meter};
+            velocity = \SI{13.0}{\meter\per\second};
+            constant acceleration = \SI{1.5}{\meter\per\second\squared}
+        \item[Car \#2:] position = \SI{80.0}{\meter};
+            velocity = \SI{9.30}{\meter\per\second};
+            constant acceleration = \SI{5.5}{\meter\per\second\squared}
+    \end{description}
+    During the next \SI{1.0}{\second} of motion,
+        which one of the following choices best represents
+        what happens to the distance between the cars?
+    \begin{choices}
+        \wrongchoice{It decreases during the entire \SI{1.0}{\second} of motion.}
+        \wrongchoice{It increases during the entire \SI{1.0}{\second} of motion.}
+      \correctchoice{It initially increases and then decreases resulting in a greater distance between the cars after \SI{1.0}{\second}.}
+        \wrongchoice{It initially increases and then decreases resulting in a smaller distance between the cars after \SI{1.0}{\second}.}
+        \wrongchoice{It initially increases and then decreases resulting in the same distance between the cars after \SI{1.0}{\second}.}
+    \end{choices}
+\end{question}
+}
+
+\element{aapt}{ %% Bowl-A1
+\begin{question}{bowl-2015-q17}
+    An object starts at the origin and its velocity along a line vs. time is graphed.
+    \begin{center}
+    \begin{tikzpicture}
+        \begin{axis}[
+            axis y line=left,
+            axis x line=middle,
+            axis line style={->},
+            xlabel={time},
+            x unit=\si{\second},
+            xtick={0,2,4,6,8,10},
+            minor x tick num=1,
+            ylabel={velocity},
+            y unit=\si{\meter\per\second},
+            ytick={-5,0,5},
+            minor y tick num=4,
+            grid=major,
+            xmin=0,xmax=10.2,
+            ymin=-5.5,ymax=5.5,
+            width=0.95\columnwidth,
+            height=0.50\columnwidth,
+        ]
+        \addplot[line width=1pt,mark=\empty] plot coordinates { (0,0) (3,4) (5,4) (9,-4) (10,-4) };
+        \end{axis}
+    \end{tikzpicture}
+    \end{center}
+    Which one of the following choices best gives the proper interval(s) of time for which the object is moving away from the origin?
+    \begin{choices}
+        \wrongchoice{Only for times $\SI{0}{\second}<t<\SI{3}{\second}$}
+        \wrongchoice{Only for times $\SI{0}{\second}<t<\SI{5}{\second}$}
+        \wrongchoice{Only for times $\SI{3}{\second}<t<\SI{5}{\second}$}
+      \correctchoice{Only for times $\SI{0}{\second}<t<\SI{7}{\second}$}
+        \wrongchoice{For times $\SI{0}{\second}<t<\SI{3}{\second}$ and $\SI{5}{\second}<t<\SI{9}{\second}$}
+    \end{choices}
+\end{question}
+}
+
+\element{aapt}{ %% Bowl-A1
+\begin{question}{bowl-2015-q32}
+    An object moving along a line completes a \SI{20.0}{\second}
+        trip with an average speed of \SI{10.0}{\meter\per\second} in two stages.
+    During stage 1, the object moves with a constant velocity of
+        \SI{6.0}{\meter\per\second} to the right for \SI{12.0}{\second}.
+    What constant magnitude acceleration directed to the left
+        must the object have during the \SI{8.0}{\second} of stage 2?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{2.5}{\meter\per\second\squared}}
+        \wrongchoice{\SI{2.7}{\meter\per\second\squared}}
+        \wrongchoice{\SI{4.0}{\meter\per\second\squared}}
+      \correctchoice{\SI{5.3}{\meter\per\second\squared}}
+        \wrongchoice{\SI{6.3}{\meter\per\second\squared}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\newcommand{\BowlTwentyFifteenQFortyOne}{
+\begin{tikzpicture}
+    \begin{axis}[
+        axis y line=left,
+        axis x line=bottom,
+        axis line style={->},
+        xlabel={time},
+        xtick={0,5,10},
+        xticklabels={$0$,$T$,$2T$},
+        ylabel={position},
+        ytick=\empty,
+        grid=major,
+        xmin=0,xmax=11,
+        ymin=0,ymax=20,
+        width=0.95\columnwidth,
+        height=0.50\columnwidth,
+        very thin,
+        legend style={
+            at={(0.90,0.1)},
+            anchor=south,
+        },
+        colormap={mymap}{rgb=(0,0,0); rgb=(0,0,0)}
+    ]
+    \addplot[dashed,line width=1pt,domain=0:10]{4+(8*x/5)};
+    \addplot[line width=1pt,black,draw=black,color=black,patch,patch type=quadratic spline] coordinates {
+        (0,4) (5,12) (2,2.0) (5,12) (10,20) (7,18) };
+    %\legend{Truck,Car}; node??
+    \end{axis}
+\end{tikzpicture}
+}
+
+\element{aapt}{ %% Bowl-A1
+\begin{question}{bowl-2015-q41}
+    %Questions 41--42 deal with the following information:
+    A car (solid line) and a truck (dashed line) are moving on a horizontal track.
+    The position vs. time graph for the two vehicles is shown.
+    \begin{center}
+        \BowlTwentyFifteenQFortyOne
+    \end{center}
+    For the entire time shown in the graph,
+        which one of the following choices correctly describes the relationship
+        between the average speed of the truck to that of the car?
+    \begin{choices}
+      \correctchoice{The truck's average speed is less than the average speed of the car.}
+        \wrongchoice{The truck's average speed is the same as the average speed of the car.}
+        \wrongchoice{The truck's average speed is greater than the average speed of the car.}
+        \wrongchoice{The truck's average speed is positive while the car's average speed is negative but of the same magnitude.}
+        \wrongchoice{A relationship cannot be determined without more information.}
+    \end{choices}
+\end{question}
+}
+
+\element{aapt}{ %% Bowl-A1
+\begin{question}{bowl-2015-q42}
+    %Questions 41--42 deal with the following information:
+    A car (solid line) and a truck (dashed line) are moving on a horizontal track.
+    The position vs. time graph for the two vehicles is shown.
+    \begin{center}
+        \BowlTwentyFifteenQFortyOne
+    \end{center}
+    Which one of the following choices best describes the instants of time, $t$,
+        at which the car and truck travel with the same speed?
+    \begin{choices}
+        \wrongchoice{Only at times $t=0$, $t=T$ and $t=2T$.}
+        \wrongchoice{At one instant during the interval $0 < t < T$ and at one instant during the interval $T < t < 2T$.}
+      \correctchoice{At two instants during the interval $0 < t < T$ and at one instant during the interval $T < t < 2T$.}
+        \wrongchoice{At one instant during the interval $0 < t < T$ and at two instants during the interval $T < t < 2T$.}
+        \wrongchoice{At two instants during the interval $0 < t < T$ and at two instants during the interval $T < t < 2T$.}
+    \end{choices}
+\end{question}
+}
+
+
+%% PhysicsBowl 2014
+%%----------------------------------------
+\element{aapt}{ %% Bowl-A1
+\begin{question}{bowl-2014-q07}
+    Starting from rest,
+        a car uniformly accelerates to a speed of \SI{7.60}{\meter\per\second} in a time of \SI{3.00}{\second}.
+    Through what distance does the cart move in this time?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{5.7}{\meter}}
+        \wrongchoice{\SI{8.1}{\meter}}
+      \correctchoice{\SI{11.4}{\meter}}
+        \wrongchoice{\SI{16.1}{\meter}}
+        \wrongchoice{\SI{22.8}{\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{aapt}{ %% Bowl-A1
+\begin{question}{bowl-2014-q16}
+    A toy car initially moves to the right at \SI{60.0}{\centi\meter\per\second}.
+    Five seconds later, the car is moving at \SI{40.0}{\centi\meter\per\second} to the left.
+    The total displacement of the car during this time is \SI{10.0}{\centi\meter} to the left of where it started.
+    Which one of the following choices best represents the magnitude of the average velocity of the car during the five second motion?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{50.0}{\centi\meter\per\second}}
+        \wrongchoice{\SI{10.0}{\centi\meter\per\second}}
+        \wrongchoice{\SI{4.0}{\centi\meter\per\second}}
+      \correctchoice{\SI{2.0}{\centi\meter\per\second}}
+        \wrongchoice{\SI{0.40}{\centi\meter\per\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{aapt}{ %% Bowl-A1
+\begin{question}{bowl-2014-q17}
+    A toy car initially moves to the right at \SI{60.0}{\centi\meter\per\second}.
+    Five seconds later, the car is moving at \SI{40.0}{\centi\meter\per\second} to the left.
+    The total displacement of the car during this time is \SI{10.0}{\centi\meter} to the left of where it started.
+    Which one of the following choices best represents the magnitude of the average acceleration of the car during the five second motion?
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{\SI{20.0}{\centi\meter\per\second\squared}}
+        \wrongchoice{\SI{4.0}{\centi\meter\per\second\squared}}
+        \wrongchoice{\SI{2.0}{\centi\meter\per\second\squared}}
+        \wrongchoice{\SI{0.80}{\centi\meter\per\second\squared}}
+        \wrongchoice{\SI{0.40}{\centi\meter\per\second\squared}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+\element{aapt}{ %% Bowl-A1
+\begin{question}{bowl-2014-q33}
+    An object moves with constant acceleration starting with velocity $v_0=\SI{5.00}{\meter\per\second}$ and ending with a velocity of $v=-\SI{1.00}{\meter\per\second}$ in a time of \SI{3.00}{\second}.
+    For this motion, what is the average speed associated with the object.
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{2.00}{\meter\per\second}}
+      \correctchoice{\SI{2.17}{\meter\per\second}}
+        \wrongchoice{\SI{2.50}{\meter\per\second}}
+        \wrongchoice{\SI{2.83}{\meter\per\second}}
+        \wrongchoice{\SI{3.00}{\meter\per\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% PhysicsBowl 2013
+%%----------------------------------------
+\element{aapt}{ %% Bowl-A1
+\begin{question}{bowl-2013-q17}
+    A position vs. time graph of a particle moving along a horizontal axis is shown.
+    \begin{center}
+    \begin{tikzpicture}
+        \begin{axis}[
+            axis y line=left,
+            axis x line=middle,
+            axis line style={->},
+            xlabel={time},
+            x unit=\si{\second},
+            xtick={0,2,4,6,8,10},
+            minor xtick={1,3,5,7,9},
+            ylabel={position},
+            y unit=\si{\meter},
+            ytick={-10,0,10},
+            minor ytick={-8,-6,-4,-2,2,4,6,8},
+            grid=both,
+            xmin=0,xmax=10.5,
+            ymin=-10.5,ymax=10.5,
+            width=0.95\columnwidth,
+            height=0.618\columnwidth,
+        ]
+        \addplot[line width=1pt,mark=\empty] plot coordinates { (0,8) (3,8) (5,0) (6,0) (8,-8) (9,-8) (10,10) };
+        \end{axis}
+    \end{tikzpicture}
+    \end{center}
+    What is the total distance traveled by the particle from $t=\SI{0}{\second}$ to $t=\SI{10}{\second}$?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{2}{\meter}}
+        \wrongchoice{\SI{18}{\meter}}
+        \wrongchoice{\SI{26}{\meter}}
+      \correctchoice{\SI{34}{\meter}}
+        \wrongchoice{\SI{42}{\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{aapt}{ %% Bowl-A1
+\begin{question}{bowl-2013-q26}
+    An object moving only to the right completes a \SI{20.0}{\second} trip in two stages, I and II.
+    The average speed of the entire \SI{20.0}{\second} trip is \SI{10.0}{\meter\per\second}.
+    For state I, the object moves with a constant velocity of \SI{6.0}{\meter\per\second} for \SI{12.0}{\second}.
+    What constant acceleration must the object have during the \SI{8.0}{\second} of stage II?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{2.25}{\meter\per\second\squared}}
+      \correctchoice{\SI{2.50}{\meter\per\second\squared}}
+        \wrongchoice{\SI{4.00}{\meter\per\second\squared}}
+        \wrongchoice{\SI{6.25}{\meter\per\second\squared}}
+        \wrongchoice{\SI{8.50}{\meter\per\second\squared}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{aapt}{ %% Bowl-A1
+\begin{question}{bowl-2013-q32}
+    An acceleration vs. time graph for an object moving along a line is shown.
+    \begin{center}
+    \begin{tikzpicture}
+        \begin{axis}[
+            axis y line=left,
+            axis x line=middle,
+            axis line style={->},
+            xlabel={time},
+            x unit=\si{\second},
+            xtick={0,2,4,6,8,10},
+            minor xtick={1,3,5,7,9},
+            ylabel={acceleration},
+            y unit=\si{\meter\per\second\squared},
+            ytick={-10,0,10},
+            minor ytick={-8,-6,-4,-2,2,4,6,8},
+            grid=both,
+            xmin=0,xmax=10.25,
+            ymin=-10.5,ymax=10.5,
+            width=0.95\columnwidth,
+            height=0.618\columnwidth,
+        ]
+        \addplot[line width=1pt,domain=0:10]{8*sin(1.26*deg(x))};
+        \end{axis}
+    \end{tikzpicture}
+    \end{center}
+    The object starts from rest at time $t=\SI{0}{\second}$.
+    At what time(s) does the object attain a maximum displacement from its starting position?
+    \begin{choices}
+        \wrongchoice{At times $t=\SI{2.5}{\second}$ and $t=\SI{7.5}{\second}$ only}
+        \wrongchoice{At times $t=\SI{5.0}{\second}$ and $t=\SI{10}{\second}$ only}
+        \wrongchoice{At times $t=\SI{1.25}{\second}$, $t=\SI{3.75}{\second}$,
+            $t=\SI{6.25}{\second}$, and $t=\SI{8.75}{\second}$ only}
+        \wrongchoice{At times $t=\SI{2.5}{\second}$, $t=\SI{5.0}{\second}$,
+            $t=\SI{7.5}{\second}$, and $t=\SI{10}{\second}$ only}
+      \correctchoice{At time $t=\SI{10}{\second}$ only}
+    \end{choices}
+\end{question}
+}
+
+
+%% PhysicsBowl 2012
+%%----------------------------------------
+\element{aapt}{ %% Bowl-A1
+\begin{question}{bowl-2012-q08}
+    An object of mass \SI{5.00}{\kilo\gram} moves only to the right along the $+x$-axis.
+    During some time interval, the object's speed increased from \SI{4.00}{\meter\per\second} to \SI{8.00}{\meter\per\second} with a constant acceleration of \SI{2.00}{\meter\per\second\squared}.
+    Through what distance does the object move during the time interval of the acceleration?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{2.00}{\meter}}
+        \wrongchoice{\SI{4.00}{\meter}}
+        \wrongchoice{\SI{8.00}{\meter}}
+      \correctchoice{\SI{12.0}{\meter}}
+        \wrongchoice{\SI{24.0}{\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{aapt}{ %% Bowl-A1
+\begin{question}{bowl-2012-q17}
+    A mass moves according to the graph of position as a function of time shown below.
+    \begin{center}
+    \begin{tikzpicture}
+        \begin{axis}[
+            axis y line=left,
+            axis x line=middle,
+            axis line style={->},
+            xlabel={time},
+            x unit=\si{\second},
+            xtick={0,2,4,6,8,10},
+            minor xtick={1,3,5,7,9},
+            ylabel={position},
+            y unit=\si{\meter},
+            ytick={-10,0,10},
+            minor ytick={-8,-6,-4,-2,2,4,6,8},
+            grid=both,
+            xmin=0,xmax=10.25,
+            ymin=-10.5,ymax=10.5,
+            width=0.95\columnwidth,
+            height=0.618\columnwidth,
+        ]
+        \addplot[line width=1pt,domain=0:10]{8*sin(6.28*deg(x)/10)};
+        \end{axis}
+    \end{tikzpicture}
+    \end{center}
+    Which one of the following choices correctly represents the time or time interval for which the instantaneous velocity of the mass is considered always to be negative?
+    Let $t$ represent time.
+    \begin{choices}
+        \wrongchoice{$t=\SI{0.0}{\second}$, $t=\SI{5.0}{\second}$ and $t=\SI{10.0}{\second}$}
+        \wrongchoice{$\SI{0.0}{\second}<t<\SI{2.5}{\second}$}
+      \correctchoice{$\SI{2.5}{\second}<t<\SI{7.5}{\second}$}
+        \wrongchoice{$\SI{5.0}{\second}<t<\SI{10.0}{\second}$}
+        \wrongchoice{$\SI{2.5}{\second}<t<\SI{10.0}{\second}$}
+    \end{choices}
+\end{question}
+}
+
+\element{aapt}{ %% Bowl-A1
+\begin{question}{bowl-2012-q29}
+    A vehicle completes one lap around a circular track
+        at an average speed of \SI{50}{\meter\per\second}
+        and then completes a second lap at an average speed of $V$.
+    The average speed of the vehicle for the completion
+        of both laps was \SI{80}{\meter\per\second}.
+    What was the average speed $V$ of the second lap?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{100}{\meter\per\second}}
+        \wrongchoice{\SI{110}{\meter\per\second}}
+        \wrongchoice{\SI{125}{\meter\per\second}}
+        \wrongchoice{\SI{150}{\meter\per\second}}
+      \correctchoice{\SI{200}{\meter\per\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% PhysicsBowl 2011
+%%----------------------------------------
+\element{aapt}{ %% Bowl-A1
+\begin{question}{bowl-2011-q07}
+    A ball of mass $m=\SI{0.100}{\kilo\gram}$ is launched
+        straight upward so that it rises to a maximum height
+        of \SI{12.0}{\meter} above the launch point.
+    Ignore air resistance.
+    %% Start question
+    Approximately how much time does it take the ball to reach
+        the maximum height from its launch?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{0.65}{\second}}
+        \wrongchoice{\SI{1.00}{\second}}
+        \wrongchoice{\SI{1.20}{\second}}
+      \correctchoice{\SI{1.55}{\second}}
+        \wrongchoice{\SI{2.40}{\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{aapt}{ %% Bowl-A1
+\begin{question}{bowl-2011-q08}
+    An object moves along a horizontal line with increasing speed.
+    Which one of the following choices could represent the signs of the velocity and of the acceleration for the object to achieve this motion?
+    \begin{center}
+    \begin{tabu}{cX[c]X[c]}
+        \toprule
+        \makebox[1.5em][c]{\textnumero}
+            & Velocity & Acceleration \\
+        \bottomrule
+    \end{tabu}
+    \end{center}
+    \begin{choices}
+        \wrongchoice{\begin{tabu}{X[c]X[c]} Zero & Zero \\ \end{tabu}}
+        \wrongchoice{\begin{tabu}{X[c]X[c]} Positive & Zero \\ \end{tabu}}
+        \wrongchoice{\begin{tabu}{X[c]X[c]} Positive & Negative \\ \end{tabu}}
+        \wrongchoice{\begin{tabu}{X[c]X[c]} Negative & Positive \\ \end{tabu}}
+      \correctchoice{\begin{tabu}{X[c]X[c]} Negative & Negative \\ \end{tabu}}
+    \end{choices}
+\end{question}
+}
+
+\element{aapt}{ %% Bowl-A1
+\begin{question}{bowl-2011-q09}
+    Which one of the following choices best represents the speed of \SI{60.0}{\mile\per\hour} rewritten in units of \si{\kilo\meter\per\day}?
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{\SI{2300}{\kilo\meter\per\day}}
+        \wrongchoice{\SI{1440}{\kilo\meter\per\day}}
+        \wrongchoice{\SI{900}{\kilo\meter\per\day}}
+        \wrongchoice{\SI{4.00}{\kilo\meter\per\day}}
+        \wrongchoice{\SI{1.56}{\kilo\meter\per\day}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{aapt}{ %% Bowl-A1
+\begin{question}{bowl-2011-q14}
+    A car makes a trip in two parts.
+    \begin{description}[itemsep=0pt]
+        \item[Part 1:] It travels a distance of \SI{800}{\meter} at a constant speed of \SI{4.0}{\meter\per\second}.
+        \item[Part 2:] It travels a distance of \SI{1200}{\meter} at a constant speed of \SI{20.0}{\meter\per\second}.
+    \end{description}
+    What is the average speed of the two-part trip?
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{\SI{7.7}{\meter\per\second}}
+        \wrongchoice{\SI{10.4}{\meter\per\second}}
+        \wrongchoice{\SI{12.0}{\meter\per\second}}
+        \wrongchoice{\SI{13.6}{\meter\per\second}}
+        \wrongchoice{\SI{17.3}{\meter\per\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\newcommand{\BowlTwentyElevenQEighteen}{
+\begin{tikzpicture}
+    \begin{axis}[
+        axis y line=left,
+        axis x line=middle,
+        axis line style={->},
+        xlabel={time},
+        x unit=\si{\second},
+        xtick={0,2,4,6,8,10},
+        minor x tick num=1,
+        ylabel={velocity},
+        y unit=\si{\meter\per\second},
+        ytick={-10,0,10},
+        minor y tick num=4,
+        grid=both,
+        xmin=0,xmax=10,
+        ymin=-10,ymax=10,
+        width=0.8\columnwidth,
+        height=0.5\columnwidth,
+    ]
+    \addplot[line width=1pt,domain=0:10] { 8*sin(36*x) };
+    \end{axis}
+\end{tikzpicture}
+}
+
+\element{aapt}{ %% Bowl-A1
+\begin{question}{bowl-2011-q18}
+    The motion of an object moving along a straight line is given by the velocity vs. time graph shown.
+    \begin{center}
+        \BowlTwentyElevenQEighteen
+    \end{center}
+    Which one of the following choices best represents the average acceleration of the object during the time interval from $t=\SI{4.0}{\second}$ to $t=\SI{9.0}{\second}$?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{0.80}{\meter\per\second\squared}}
+        \wrongchoice{\SI{0}{\meter\per\second\squared}}
+        \wrongchoice{\SI{-0.80}{\meter\per\second\squared}}
+      \correctchoice{\SI{-1.6}{\meter\per\second\squared}}
+        \wrongchoice{\SI{-3.2}{\meter\per\second\squared}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{aapt}{ %% Bowl-A1
+\begin{question}{bowl-2011-q19}
+    The motion of an object moving along a straight line is given by the velocity vs. time graph shown.
+    \begin{center}
+        \BowlTwentyElevenQEighteen
+    \end{center}
+    Which one of the following choices best represents the instantaneous acceleration of the object at the time $t=\SI{4.0}{\second}$
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{0}{\meter\per\second\squared}}
+        \wrongchoice{\SI{-1.6}{\meter\per\second\squared}}
+        \wrongchoice{\SI{-2.0}{\meter\per\second\squared}}
+        \wrongchoice{\SI{-3.2}{\meter\per\second\squared}}
+      \correctchoice{\SI{-4.0}{\meter\per\second\squared}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+%% NOTE: bowl-2011-q21?
+
+\element{aapt}{ %% Bowl-A1
+\begin{question}{bowl-2011-q30}
+    Two cars travel to the right, each starting from rest, along a straight road.
+    Car $A$ has twice the acceleration of car $B$.
+    After traveling a distance $d$, Car $A$ has speed $v$.
+    When Car $B$ has traveled the same distance $d$, what is its speed in terms of $v$?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\dfrac{1}{4}v$}
+        \wrongchoice{$\dfrac{1}{2}v$}
+        \wrongchoice{$\dfrac{\sqrt{3}}{2}v$}
+      \correctchoice{$\dfrac{\sqrt{2}}{2}v$}
+        \wrongchoice{$v$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% PhysicsBowl 2010
+%%----------------------------------------
+\element{aapt}{ %% Bowl-A1
+\begin{question}{bowl-2010-q04}
+    Which of the following relationships correctly ranks
+        the three given speeds from least to greatest?
+    The speeds are given as $v_1=\SI{1.25e-4}{\centi\meter\per\micro\second}$,
+        $v_2=\SI{0.076}{\mega\meter\per\week}$,
+        $v_3=\SI{9.50}{\kilo\meter\per\day}$.
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{$v_1<v_2<v_3$}
+      \correctchoice{$v_3<v_2<v_1$}
+        \wrongchoice{$v_2<v_3<v_1$}
+        \wrongchoice{$v_1<v_3<v_2$}
+        \wrongchoice{$v_3<v_2=v_1$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{aapt}{ %% Bowl-A1
+\begin{question}{bowl-2010-q07}
+    A small object is thrown straight downward on Earth with
+        an initial speed of \SI{12.0}{\meter\per\second}
+        from a position \SI{10.0}{\meter} above the ground.
+    Ignoring air resistance, the speed of the object when it reaches the ground is:
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{\SI{18.4}{\meter\per\second}}
+        \wrongchoice{\SI{14.6}{\meter\per\second}}
+        \wrongchoice{\SI{14.0}{\meter\per\second}}
+        \wrongchoice{\SI{12.8}{\meter\per\second}}
+        \wrongchoice{\SI{12.0}{\meter\per\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{aapt}{ %% Bowl-A1
+\begin{question}{bowl-2010-q10}
+    A particle travels at a constant speed around
+        a circular path of radius $R$.
+    If the particle makes one complete trip around
+        the entire circle, what is the magnitude
+        of the displacement for this trip?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\pi R$}
+        \wrongchoice{$2 R$}
+        \wrongchoice{$2\pi R$}
+        \wrongchoice{$\pi R^2$}
+      \correctchoice{zero}
+        %% NOTE: added for symmetry
+        %\wrongchoice{$4\pi R$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{aapt}{ % Bowl-A1
+\begin{question}{bowl-2010-q11}
+    Consider the motion of an object given by the velocity
+        vs. time graph shown below.
+    \begin{center}
+    \begin{tikzpicture}
+        \begin{axis}[
+            axis y line=left,
+            axis x line=middle,
+            axis line style={->},
+            xlabel={time},
+            x unit=\si{\second},
+            xtick={0,2,4,6,8,10},
+            minor x tick num=1,
+            ylabel={velocity},
+            y unit=\si{\meter\per\second},
+            ytick={-10,0,10},
+            minor y tick num=4,
+            grid=both,
+            xmin=0,xmax=10,
+            ymin=-10,ymax=10,
+            width=0.95\columnwidth,
+            height=0.50\columnwidth,
+        ]
+        \addplot[mark=\empty,smooth] plot coordinates { (0,-6) (5,8) (10,-8) };
+        \end{axis}
+    \end{tikzpicture}
+    \end{center}
+    For which time(s) is the acceleration of the object
+        equal to \SI{0}{\meter\per\second\squared}?
+    \begin{choices}
+        \wrongchoice{Only at time $t=\SI{2.0}{\second}$}
+      \correctchoice{Only at time $t=\SI{5.0}{\second}$}
+        \wrongchoice{Only at time $t=\SI{8.0}{\second}$}
+        \wrongchoice{At times $t=\SI{2.0}{\second}$ and $t=\SI{5.0}{\second}$}
+        \wrongchoice{At times $t=\SI{2.0}{\second}$, $t=\SI{5.0}{\second}$, and $t=\SI{8.0}{\second}$}
+    \end{choices}
+\end{question}
+}
+
+\element{aapt}{ %% Bowl-A1
+\begin{question}{bowl-2010-q24}
+    By computing the area under the acceleration vs time
+        graph for a fixed time interval of an object's
+        motion, what quantity has been determined for that object?
+    \begin{choices}
+        \wrongchoice{The average velocity during the time interval.}
+        \wrongchoice{The velocity at the end of the time interval.}
+        \wrongchoice{The average speed during the time interval.}
+      \correctchoice{The change in velocity during the time interval.}
+        \wrongchoice{The velocity at the time midway through the time interval.}
+    \end{choices}
+\end{question}
+}
+
+\element{aapt}{ %% Bowl-A1
+\begin{question}{bowl-2010-q29}
+    A ball initially at rest falls without air resistance from
+        a height $h$ above the ground.
+    If the ball falls the first distance $\frac{h}{2}$ in a time
+        $t$, how much time is required to fall the remaining
+        distance of $\frac{h}{2}$?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\num{0.25}t$}
+      \correctchoice{$\num{0.41}t$}
+        \wrongchoice{$\num{0.50}t$}
+        \wrongchoice{$\num{0.71}t$}
+        \wrongchoice{$\num{1.00}t$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{aapt}{ %% Bowl-A1
+\begin{question}{bowl-2010-q38}
+    Two objects both move uniformly accelerate to the right.
+    At time $t=\SI{0}{\second}$, the objects are at the same
+        initial position but
+    \begin{itemize}
+        \item Object 1 has initial speed twice that of Object 2
+        \item Object 1 has one-half the acceleration of Object 2
+    \end{itemize}
+    After some time $T$, the velocity of the two objects is the same.
+    What is the ratio of the distance traveled in this time $T$
+        by Object 2 to that traveled by Object 1?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$5:6$}
+      \correctchoice{$4:5$}
+        \wrongchoice{$3:4$}
+        \wrongchoice{$2:3$}
+        \wrongchoice{$1:2$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% PhysicsBowl 2009
+%%----------------------------------------
+
+%% NOTE: bowl-2009-q08
+
+\element{aapt}{ %% Bowl-A1
+\begin{question}{bowl-2009-q17}
+    A toy car moves \SI{3.0}{\meter} to the North in \SI{1.0}{\second}.
+    The car then moves at \SI{9.0}{\meter\per\second} due South
+        for \SI{2.0}{\second}.
+    What is the average speed of the car for this \SI{3.0}{\second} trip?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{4.0}{\meter\per\second}}
+        \wrongchoice{\SI{5.0}{\meter\per\second}}
+        \wrongchoice{\SI{6.0}{\meter\per\second}}
+      \correctchoice{\SI{7.0}{\meter\per\second}}
+        \wrongchoice{\SI{12.0}{\meter\per\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{aapt}{ %% Bowl-A1
+\begin{question}{bowl-2009-q31}
+    A car moves to the right along a one-dimensional track
+        for a total time $T$ in two parts.
+    \begin{description}
+        \item[Part One:] The car maintains constant non-zero speed $V$
+            for the first \num{3/4} of the total time.
+        \item[Part Two:] The car accelerates uniformly to rest during
+                the last \num{1/4} of the total time.
+    \end{description}
+    What is the ratio of the distance traveled during Part One of
+        the trip to the distance traveled during Part Two of the trip?
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{$6:1$}
+        \wrongchoice{$3:2$}
+        \wrongchoice{$4:3$}
+        \wrongchoice{$8:3$}
+        \wrongchoice{The values of $V$ and $T$ are required to answer the question.}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% PhysicsBowl 2008
+%%----------------------------------------
+\element{aapt}{ %% Bowl-A1
+\begin{question}{bowl-2008-q03}
+    A dog starts from rest and runs in a straight line
+        with constant acceleration of \SI{2.5}{\meter\per\second\squared}.
+    How much time does it take for the dog to run
+        a distance of \SI{10.0}{\meter}?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{8.0}{\second}}
+        \wrongchoice{\SI{4.0}{\second}}
+      \correctchoice{\SI{2.8}{\second}}
+        \wrongchoice{\SI{2.0}{\second}}
+        \wrongchoice{\SI{1.4}{\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\newcommand{\BowlTwentyZeroEightQTwentyThree}{
+\begin{tikzpicture}
+    \begin{axis}[
+        axis y line=left,
+        axis x line=middle,
+        axis line style={->},
+        xlabel={time},
+        x unit=\si{\second},
+        xtick={0,2,4,6,8,10},
+        minor x tick num=1,
+        ylabel={velocity},
+        y unit=\si{\meter\per\second},
+        ytick={-10,-5,0,5,10},
+        minor y tick num=4,
+        grid=major,
+        xmin=0,xmax=10,
+        ymin=-10,ymax=10,
+        width=0.95\columnwidth,
+        height=0.618\columnwidth,
+    ]
+    \addplot[line width=1pt,domain=0:3]{8};
+    \addplot[line width=1pt,domain=3:6]{20 - 4*x};
+    \addplot[line width=1pt,domain=6:10]{-4};
+    \end{axis}
+\end{tikzpicture}
+}
+
+\element{aapt}{ %% Bowl-A1
+\begin{question}{bowl-2008-q23}
+    The velocity vs. time graph for the motion of a car on a straight track is shown in the diagram.
+    The thick line represents the velocity.
+    Assume that the car starts at the origin $x=0$.
+    \begin{center}
+        \BowlTwentyZeroEightQTwentyThree
+    \end{center}
+    At which time is the car the greatest distance from the origin?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$t=\SI{10}{\second}$}
+        \wrongchoice{$t=\SI{6}{\second}$}
+      \correctchoice{$t=\SI{5}{\second}$}
+        \wrongchoice{$t=\SI{3}{\second}$}
+        \wrongchoice{$t=\SI{0}{\second}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{aapt}{ %% Bowl-A1
+\begin{question}{bowl-2008-q24}
+    The velocity vs. time graph for the motion of a car on a straight track is shown in the diagram.
+    The thick line represents the velocity.
+    Assume that the car starts at the origin $x=0$.
+    \begin{center}
+        \BowlTwentyZeroEightQTwentyThree
+    \end{center}
+    What is the average speed of the car for the \SI{10}{\second} interval?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{1.20}{\meter\per\second}}
+        \wrongchoice{\SI{1.40}{\meter\per\second}}
+        \wrongchoice{\SI{3.30}{\meter\per\second}}
+      \correctchoice{\SI{5.00}{\meter\per\second}}
+        \wrongchoice{\SI{5.40}{\meter\per\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% PhysicsBowl 2007
+%%----------------------------------------
+\element{aapt}{ %% Bowl-A1
+\begin{question}{bowl-2007-q03}
+    Two automobiles are \SI{150}{\kilo\meter} apart and traveling toward each other.
+    One automobile is moving at \SI{60}{\kilo\meter\per\hour} and the other is moving \SI{40}{\kilo\meter\per\hour}.
+    In how many hours will they meet?
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{\SI{1.5}{\hour}}
+        \wrongchoice{\SI{1.75}{\hour}}
+        \wrongchoice{\SI{2.0}{\hour}}
+        \wrongchoice{\SI{2.5}{\hour}}
+        \wrongchoice{\SI{3.0}{\hour}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{aapt}{ %% Bowl-A1
+\begin{questionmult}{bowl-2007-q04}
+    A particle moves on the $x$-axis.
+    When the particle's acceleration is positive and increasing
+    \begin{choices}
+        \wrongchoice{its velocity must be positive.}
+        \wrongchoice{its velocity must be negative.}
+        \wrongchoice{it must be slowing down.}
+        \wrongchoice{it must be speeding up.}
+        %\correctchoice{none of the other options are true.}
+    \end{choices}
+\end{questionmult}
+}
+
+\element{aapt}{ %% Bowl-A1
+\begin{question}{bowl-2007-q05}
+    The position-time, $y$ vs. $t$, graph for the motion
+        of an object is shown.
+    \begin{center}
+    \begin{tikzpicture}
+        \begin{axis}[
+            axis y line=left,
+            axis x line=bottom,
+            axis line style={->},
+            xlabel={time},
+            x unit=\si{\second},
+            xtick={0,1,2,3,4,5},
+            minor x tick num=1,
+            ylabel={position},
+            y unit=\si{\meter},
+            ytick={0,10,20,30},
+            minor y tick num=4,
+            grid=major,
+            xmin=0,xmax=5.2,
+            ymin=0,ymax=32,
+            width=0.95\columnwidth,
+            height=0.50\columnwidth,
+        ]
+        \addplot[line width=1pt,domain=0:5]{25 - 4*(x-2.5)*(x-2.5)};
+        \end{axis}
+    \end{tikzpicture}
+    \end{center}
+    What would be a reasonable equation for the acceleration $a$ that would account for this motion?
+    \begin{choices}
+        \wrongchoice{$a=0$}
+        \wrongchoice{$a=$ positive constant}
+      \correctchoice{$a=$ negative constant}
+        \wrongchoice{$a=$ positive constant times $t$}
+        \wrongchoice{$a=$ negative constant times $t$}
+    \end{choices}
+\end{question}
+}
+
+\element{aapt}{ %% Bowl-A1
+\begin{question}{bowl-2007-q08}
+    What does one obtain by dividing the distance of \SI{12}{\mega\meter} by the time of \SI{4}{\tera\second}?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{3}{\nano\meter\per\second}}
+      \correctchoice{\SI{3}{\micro\meter\per\second}}
+        \wrongchoice{\SI{3}{\milli\meter\per\second}}
+        \wrongchoice{\SI{3}{\kilo\meter\per\second}}
+        \wrongchoice{\SI{3}{\giga\meter\per\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{aapt}{ %% Bowl-A1
+\begin{question}{bowl-2007-q11}
+    A cart is initially moving at \SI{0.5}{\meter\per\second} along a track.
+    The cart comes to rest after traveling \SI{1}{\meter}.
+    The experiment is repeated on the same track,
+        but now the cart is initially moving at \SI{1}{\meter\per\second}.
+    How far does the cart travel before coming to rest?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{1}{\meter}}
+        \wrongchoice{\SI{2}{\meter}}
+        \wrongchoice{\SI{3}{\meter}}
+      \correctchoice{\SI{4}{\meter}}
+        \wrongchoice{\SI{5}{\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{aapt}{ %% Bowl-A1
+\begin{question}{bowl-2007-q12}
+    The definition of average velocity is:
+    \begin{choices}
+        \wrongchoice{the average acceleration multiplied by the time.}
+        \wrongchoice{distance traveled divided by the time.}
+        \wrongchoice{$\frac{1}{2}\left(v_f+v_i\right)$}
+        \wrongchoice{radius multiplied by angular velocity.}
+      \correctchoice{displacement divided by the time.}
+    \end{choices}
+\end{question}
+}
+
+
+%% PhysicsBowl 2006
+%%----------------------------------------
+\element{aapt}{ %% Bowl-A1
+\begin{question}{bowl-2006-q03}
+    Three students were arguing about the height of a parking garage.
+    One student suggested that to determine the height of the garage,
+        they simply had to drop tennis balls from the top and time
+        the fall of the tennis balls.
+    If the time for the ball to fall was \SI{1.4}{\second},
+        approximately how tall is the parking garage?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{4.9}{\meter}}
+        \wrongchoice{\SI{7.0}{\meter}}
+      \correctchoice{\SI{9.8}{\meter}}
+        \wrongchoice{\SI{13.8}{\meter}}
+        \wrongchoice{\SI{19.6}{\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{aapt}{ %% Bowl-A1
+\begin{question}{bowl-2006-q07}
+    A car has the velocity versus time curve shown.
+    %% NOTE: bowl-2007-q17
+    \begin{center}
+    \begin{tikzpicture}
+        \begin{axis}[
+            axis y line=left,
+            axis x line=middle,
+            axis line style={->},
+            clip=false,
+            xlabel={time},
+            x unit=\si{\second},
+            xtick={0,1,2,3,4,5,6},
+            ylabel={velocity},
+            y unit=\si{\meter\per\second},
+            ytick={-10,0,10},
+            minor y tick num=1,
+            grid=major,
+            xmin=0,xmax=6.5,
+            ymin=-15,ymax=15,
+            width=0.8\columnwidth,
+            height=0.5\columnwidth,
+        ]
+        \addplot[very thick,smooth,tension=0.7,mark=\empty] plot coordinates { (0,0) (1,6) (2,15) (3,7) (3.3,0) (4,-10) (5.1,0) (5,-1) (6,6) };
+        \end{axis}
+    \end{tikzpicture}
+    \end{center}
+    Which of the following statements regarding its motion is \emph{incorrect}?
+    \begin{choices}
+        \wrongchoice{The car is moving fastest at \SI{2.0}{\second}.}
+        \wrongchoice{The car is at rest at approximately \SI{5.2}{\second}.}
+        \wrongchoice{The car is speeding up from $t=\SI{0}{\second}$ to $t=\SI{2.0}{\second}$.}
+      \correctchoice{The car has negative acceleration at $t=\SI{4.5}{\second}$.}
+        \wrongchoice{The car has no acceleration at the instant $t=\SI{2.0}{\second}$.}
+    \end{choices}
+\end{question}
+}
+
+\element{aapt}{ %% Bowl-A1
+\begin{question}{bowl-2006-q18}
+    A cart is initially moving at \SI{0.5}{\meter\per\second} along a track.
+    The cart comes to rest after traveling \SI{1}{\meter}.
+    The experiment is repeated on the same track,
+        but now the cart is initially moving at \SI{1}{\meter\per\second}.
+    How far does the cart travel before coming to rest?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{1}{\meter}}
+        \wrongchoice{\SI{2}{\meter}}
+        \wrongchoice{\SI{3}{\meter}}
+      \correctchoice{\SI{4}{\meter}}
+        \wrongchoice{\SI{8}{\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% PhysicsBowl 2005
+%%----------------------------------------
+\element{aapt}{ %% Bowl-A1
+\begin{question}{bowl-2005-q07}
+    A snail is moving along a straight line.
+    Its initial position is $x_0 = \SI{-5}{\meter}$ and it is moving away from the origin and slowing down.
+    In this coordinate system, the signs of the initial position $x_0$,
+        initial velocity $v_0$ and acceleration $a$, respectively, are
+    \begin{choices}
+        \wrongchoice{$x_0=-$, $v_0=+$, $a=+$}
+      \correctchoice{$x_0=-$, $v_0=-$, $a=+$}
+        \wrongchoice{$x_0=-$, $v_0=-$, $a=-$}
+        \wrongchoice{$x_0=-$, $v_0=+$, $a=-$}
+        \wrongchoice{$x_0=+$, $v_0=+$, $a=+$}
+    \end{choices}
+\end{question}
+}
+
+
+%% PhysicsBowl 2000
+%%----------------------------------------
+\element{aapt}{ %% Bowl-A1
+\begin{question}{bowl-2000-q09}
+    Is it possible for an object's velocity to increase while its acceleration decreases?
+    \begin{choices}
+        \wrongchoice{No, this is impossible because of the way in which acceleration is defined.}
+        \wrongchoice{No, because if acceleration is decreasing the object will be slowing down.}
+        \wrongchoice{No, because velocity and acceleration must always be in the same direction.}
+        \wrongchoice{Yes, an example would be a falling object near the surface of the moon.}
+      \correctchoice{Yes, an example would be a falling object in the presence of air resistance}
+    \end{choices}
+\end{question}
+}
+
+\element{aapt}{ %% Bowl-A1
+\begin{question}{bowl-2000-q40}
+    Suppose two cars are racing on a circular track \SI{1}{\kilo\meter} in circumference.
+    The first car can circle the track in \SI{15}{\second} at top speed
+        while the second car can circle the track in \SI{12}{\second} at top speed.
+    How much lead does the first car need starting the last lap of the race not to lose?
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{at least \SI{250}{\meter}}
+        \wrongchoice{at least \SI{200}{\meter}}
+        \wrongchoice{at least \SI{104}{\meter}}
+        \wrongchoice{at least \SI{83}{\meter}}
+        \wrongchoice{at least \SI{67}{\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% PhysicsBowl 1999
+%%----------------------------------------
+\element{aapt}{ %% Bowl-A1
+\begin{question}{bowl-1999-q01}
+    %% NOTE: NIST style convention is distance divied by time
+    The change of distance per unit time without reference
+        to a particular direction is called
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{inertia}
+      \correctchoice{speed}
+        \wrongchoice{velocity}
+        \wrongchoice{acceleration}
+        \wrongchoice{position}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{aapt}{ %% Bowl-A1
+\begin{question}{bowl-1999-q20}
+    What is the shape of the velocity time graph for an object with the position time graph shown below.
+    \begin{center}
+    \begin{tikzpicture}
+        \begin{axis}[
+            axis y line=left,
+            axis x line=middle,
+            axis line style={->},
+            xlabel={time},
+            xtick=\empty,
+            ylabel={position},
+            ytick=\empty,
+            xmin=0,xmax=11,
+            ymin=-6,ymax=6,
+            width=0.8\linewidth,
+            height=0.5\linewidth,
+        ]
+        \addplot[line width=1pt,domain=0:10]{5-x};
+        \end{axis}
+    \end{tikzpicture}
+    \end{center}
+    \begin{multicols}{2}
+    \begin{choices}
+        \AMCboxDimensions{down=-2em}
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=middle,
+                    axis line style={->},
+                    xlabel={time},
+                    xtick=\empty,
+                    x label style={anchor=north east},
+                    ylabel={position},
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=-6,ymax=6,
+                    width=1.0\columnwidth,
+                ]
+                \addplot[line width=1pt,domain=0:10]{4};
+                \end{axis}
+            \end{tikzpicture}
+        }
+        %% ANS is B
+        \correctchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=middle,
+                    axis line style={->},
+                    xlabel={time},
+                    xtick=\empty,
+                    ylabel={position},
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=-6,ymax=6,
+                    width=1.0\columnwidth,
+                ]
+                \addplot[line width=1pt,domain=0:10]{-4};
+                \end{axis}
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=middle,
+                    axis line style={->},
+                    xlabel={time},
+                    xtick=\empty,
+                    x label style={anchor=north east},
+                    ylabel={position},
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=-6,ymax=6,
+                    width=1.0\columnwidth,
+                ]
+                \addplot[line width=1pt,mark=\empty] plot coordinates { (0,5) (5,0) (10,5) };
+                \end{axis}
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=middle,
+                    axis line style={->},
+                    xlabel={time},
+                    xtick=\empty,
+                    ylabel={position},
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=-6,ymax=6,
+                    width=1.0\columnwidth,
+                ]
+                \addplot[line width=1pt,domain=0:5] { -0.2*x*x };
+                \addplot[line width=1pt,domain=5:10] { -0.2*(x-10)*(x-10) };
+                \end{axis}
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=middle,
+                    axis line style={->},
+                    xlabel={time},
+                    xtick=\empty,
+                    ylabel={position},
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=-6,ymax=6,
+                    width=1.0\columnwidth,
+                ]
+                \addplot[line width=1pt,domain=0:5] { 5 - 0.2*x*x };
+                \addplot[line width=1pt,domain=5:10] { -5 + 0.2*(x-10)*(x-10) };
+                \end{axis}
+            \end{tikzpicture}
+        }
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% PhysicsBowl 1998
+%%----------------------------------------
+\element{aapt}{ %% Bowl-A1
+\begin{question}{bowl-1998-q14}
+    How long must a \SI{2.5}{\meter\per\second\squared} acceleration
+        act to change the velocity of a \SI{2.0}{\kilo\gram} object
+        by \SI{3.0}{\meter\per\second}?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{0.83}{\second}}
+      \correctchoice{\SI{1.2}{\second}}
+        \wrongchoice{\SI{1.7}{\second}}
+        \wrongchoice{\SI{2.5}{\second}}
+        \wrongchoice{\SI{7.5}{\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+\element{aapt}{ %% Bowl-A1
+\begin{question}{bowl-1998-q15}
+    A freely falling object is found to be moving downward at \SI{18}{\meter\per\second}.
+    If it continues to fall,
+        two seconds later the object would be moving with a speed of:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{8.0}{\meter\per\second}}
+        \wrongchoice{\SI{10}{\meter\per\second}}
+        \wrongchoice{\SI{18}{\meter\per\second}}
+      \correctchoice{\SI{38}{\meter\per\second}}
+        \wrongchoice{\SI{180}{\meter\per\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{aapt}{ %% Bowl-A1
+\begin{question}{bowl-1998-q31}
+    An object sliding down an inclined plane has a speed \SI{0.40}{\meter\per\second} two seconds after it begins to slide.
+    Approximately how far does it travel in three seconds?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{0.15}{\meter}}
+        \wrongchoice{\SI{0.30}{\meter}}
+        \wrongchoice{\SI{0.45}{\meter}}
+        \wrongchoice{\SI{0.60}{\meter}}
+      \correctchoice{\SI{0.90}{\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% PhysicsBowl 1997
+%%----------------------------------------
+\element{aapt}{ %% Bowl-A1
+\begin{question}{bowl-1997-q18}
+    A motorist travels \SI{400}{\kilo\meter} at \SI{80}{\kilo\meter\per\hour} and \SI{400}{\kilo\meter} at \SI{100}{\kilo\meter\per\hour}.
+    What is the average speed of the motorist on this trip?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{84}{\kilo\meter\per\hour}}
+      \correctchoice{\SI{89}{\kilo\meter\per\hour}}
+        \wrongchoice{\SI{90}{\kilo\meter\per\hour}}
+        \wrongchoice{\SI{91}{\kilo\meter\per\hour}}
+        \wrongchoice{\SI{95}{\kilo\meter\per\hour}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\newcommand{\BowlNineteenNinetySevenQTwenty}{
+\begin{tikzpicture}
+    \begin{axis}[
+        axis y line=left,
+        axis x line=middle,
+        axis line style={->},
+        xlabel={time},
+        x unit=\si{\second},
+        xtick={0,5,10,15,20,25,30,35},
+        ylabel={velocity},
+        y unit=\si{\meter\per\second},
+        ytick={-2,-1,0,1,2,3},
+        grid=major,
+        xmin=0,xmax=37,
+        ymin=-2.2,ymax=3.3,
+        width=0.95\columnwidth,
+        height=0.50\columnwidth,
+    ]
+    \addplot[line width=1pt,domain=0:10]{0.3*x};
+    \addplot[line width=1pt,domain=10:20]{3};
+    \addplot[line width=1pt,domain=20:25]{3 - 0.8*(x-20)};
+    \addplot[line width=1pt,domain=25:30]{-1};
+    \addplot[line width=1pt,domain=30:35]{-1 + 0.2*(x-30)};
+    \end{axis}
+\end{tikzpicture}
+}
+
+\element{aapt}{ %% Bowl-A1
+\begin{question}{bowl-1997-q20}
+    %Questions 20, 21, and 22 refer to the motion of a toy car traveling along the x-axis.
+    The graph shown below is a plot of the car's
+        velocity in the $x$ direction, $v_x$, versus time, $t$.
+    \begin{center}
+        \BowlNineteenNinetySevenQTwenty
+    \end{center}
+    During what time interval was the car moving towards
+        its initial position at constant velocity?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SIrange{0}{10}{\second}}
+        \wrongchoice{\SIrange{10}{20}{\second}}
+        \wrongchoice{\SIrange{20}{25}{\second}}
+      \correctchoice{\SIrange{25}{30}{\second}}
+        \wrongchoice{\SIrange{30}{35}{\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{aapt}{ %% Bowl-A1
+\begin{question}{bowl-1997-q21}
+    %Questions 20, 21, and 22 refer to the motion of a toy car traveling along the x-axis.
+    The graph shown below is a plot of the car's
+        velocity in the $x$ direction, $v_x$, versus time, $t$.
+    \begin{center}
+        \BowlNineteenNinetySevenQTwenty
+    \end{center}
+    What was the acceleration at \SI{33}{\second}?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{0.40}{\meter\per\second\squared}}
+      \correctchoice{\SI{0.20}{\meter\per\second\squared}}
+        \wrongchoice{\SI{0.0}{\meter\per\second\squared}}
+        \wrongchoice{\SI{-0.20}{\meter\per\second\squared}}
+        \wrongchoice{\SI{-0.40}{\meter\per\second\squared}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{aapt}{ %% Bowl-A1
+\begin{question}{bowl-1997-q22}
+    %Questions 20, 21, and 22 refer to the motion of a toy car traveling along the x-axis.
+    The graph shown below is a plot of the car's
+        velocity in the $x$ direction, $v_x$, versus time, $t$.
+    \begin{center}
+        \BowlNineteenNinetySevenQTwenty
+    \end{center}
+    How far did the car travel during the first \SI{15}{\second}?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{0.0}{\meter}}
+        \wrongchoice{\SI{3.0}{\meter}}
+        \wrongchoice{\SI{15}{\meter}}
+      \correctchoice{\SI{30}{\meter}}
+        \wrongchoice{\SI{45}{\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+
+%% PhysicsBowl 1996
+%%----------------------------------------
+\element{aapt}{ %% Bowl-A1
+\begin{question}{bowl-1996-q17}
+    A ball which is dropped from the top of a building strikes the ground with a speed of \SI{30}{\meter\per\second}.
+    Assume air resistance can be ignored.
+    The height of the building is approximately:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{15}{\meter}}
+        \wrongchoice{\SI{30}{\meter}}
+      \correctchoice{\SI{45}{\meter}}
+        \wrongchoice{\SI{75}{\meter}}
+        \wrongchoice{\SI{90}{\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+%% PhysicsBowl 1995
+%%----------------------------------------
+\element{aapt}{ %% Bowl-A1
+\begin{question}{bowl-1995-q03}
+    A toy car moves \SI{0.80}{\meter} in \SI{1.0}{\second}
+        at the constant velocity.
+    If it continues, how far will it travel in \SI{3.0}{\second}?
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{\SI{2.4}{\meter}}
+        \wrongchoice{\SI{3.6}{\meter}}
+        \wrongchoice{\SI{4.8}{\meter}}
+        \wrongchoice{\SI{7.2}{\meter}}
+        \wrongchoice{\SI{14.4}{\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{aapt}{ %% Bowl-A1
+\begin{question}{bowl-1995-q13}
+    A freely falling body is found to be moving downwards at \SI{27}{\meter\per\second} at one instant.
+    If it continues to fall, one second later the object would be moving with a downward velocity closest to:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{270}{\meter\per\second}}
+      \correctchoice{\SI{37}{\meter\per\second}}
+        \wrongchoice{\SI{27}{\meter\per\second}}
+        \wrongchoice{\SI{17}{\meter\per\second}}
+        \wrongchoice{\SI{10}{\meter\per\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{aapt}{ %% Bowl-A1
+\begin{question}{bowl-1995-q39}
+    A car starts from rest and accelerates at \SI{0.80}{\meter\per\second\squared} for \SI{10}{\second}.
+    It then continues at constant velocity.
+    Twenty seconds (\SI{20}{\second}) after it began to move, the car has:
+    \begin{choices}
+        \wrongchoice{velocity \SI{8.0}{\meter\per\second} and has traveled \SI{40}{\meter}.}
+        \wrongchoice{velocity \SI{8.0}{\meter\per\second} and has traveled \SI{80}{\meter}.}
+      \correctchoice{velocity \SI{8.0}{\meter\per\second} and has traveled \SI{120}{\meter}.}
+        \wrongchoice{velocity \SI{16.0}{\meter\per\second} and has traveled \SI{160}{\meter}.}
+        \wrongchoice{velocity \SI{16.0}{\meter\per\second} and has traveled \SI{320}{\meter}.}
+    \end{choices}
+\end{question}
+}
+
+
+%% PhysicsBowl 1994
+%%----------------------------------------
+\element{aapt}{ %% Bowl-A1
+\begin{question}{bowl-1994-q01}
+    Starting from rest, object 1 falls freely for \SI{4.0}{\second},
+        and object 2 falls freely for \SI{8.0}{\second}.
+    Compared to object 1, object 2 falls:
+    \begin{choices}
+        \wrongchoice{half as far.}
+        \wrongchoice{twice as far.}
+        \wrongchoice{three times as far.}
+      \correctchoice{four times as far.}
+        \wrongchoice{sixteen times as far.}
+    \end{choices}
+\end{question}
+}
+
+\element{aapt}{ %% Bowl-A1
+\begin{question}{bowl-1994-q02}
+    A car starts from rest and uniformly accelerates to a final speed of \SI{20.0}{\meter\per\second} in a time of \SI{15}{\second}.
+    How far does the car travel during this time?
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{\SI{150}{\meter}}
+        \wrongchoice{\SI{300}{\meter}}
+        \wrongchoice{\SI{450}{\meter}}
+        \wrongchoice{\SI{600}{\meter}}
+        \wrongchoice{\SI{800}{\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\endinput
+
+

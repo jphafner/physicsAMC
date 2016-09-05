@@ -39,7 +39,7 @@ Regards.</email_text>
   <listeetudiants></listeetudiants>
   <maj_bareme>1</maj_bareme>
   <modele_regroupement></modele_regroupement>
-  <moteur_latex_b>pdflatex</moteur_latex_b>
+  <moteur_latex_b>lualatex</moteur_latex_b>
   <nom_examen></nom_examen>
   <nombre_copies>0</nombre_copies>
   <note_arrondi>inf</note_arrondi>
