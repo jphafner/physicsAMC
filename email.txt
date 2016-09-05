@@ -1,3 +1,10 @@
+# STUDENTS / 1ST YEAR
+surname:name:id:email
+Bienvenüe:Alexis:001:paamc@passoire.fr
+Boulix:Jojo:002:jojo.boulix@rien.xx
+Noël:Père:003:pere.noel@pole-nord.xx
+
+
 %S student total score
 %M maximum total score
 %s student mark
@@ -6,6 +13,32 @@
 %(COL) column COL in the student list
 
 
-Dear %(ID)
+Dear %(name) %(surname):
+
+Your annotated response sheet is attached.
+You scored a %(S) out of %(M) total points.
+
+Sincerely,
+Jeffrey P. Hafner
+
+
+NOTE: I sometimes add another column to the students.csv file for current grade in class.
+I find it helpful if students are reminded frequently where they stand in the class.
+The column names are completely arbitrary.
+
+# STUDENTS / 1ST YEAR
+surname:name:id:email:grade
+Bienvenüe:Alexis:001:paamc@passoire.fr:80
+Boulix:Jojo:002:jojo.boulix@rien.xx:92
+Noël:Père:003:pere.noel@pole-nord.xx:76
+
+Dear %(name) %(surname):
+
+Your annotated response sheet is attached.
+You scored a %(S) out of %(M) total points.
+Your current grade is %(grade).
+
+Sincerely,
+Jeffrey P. Hafner
 
 

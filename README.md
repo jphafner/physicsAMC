@@ -1,7 +1,16 @@
 
 # physicsAMC
 
-## Introduction
+##table of contents
+- [introduction](#introduction)
+- [branches](#branches)
+- [dependencies](#dependencies)
+- [exam files](#exam files)
+- [question bank](#question bank)
+- [references](#references)
+
+
+#introduction
 
 This projects seeks to create an exam question repository for an introductory physics course.
 If you are not convinced in the effectiveness of multiple choice,
@@ -11,37 +20,122 @@ This project should be of interest to anyone who teaches a physics course,
     and especially to anyone whose students take the NYSED physics regents.
 I am also aware that most online solutions are simply not an option for many high school teachers.
 
-
 My main goals are to bring some basic ideas from computer science to teaching.
+Grading should be fast, student feedback should be lengthy.
 
+This README is written with the hopes of being comprehensible to a computer literate physics teacher.
+If you describe yourself as above, and find this incomprehensible, I consider that a bug.
 
-## Dependencies
+#branches
+
+-[mc-project](physicsAMC/tree/mc-project), this is a self contained assessment ready for import into auto multiple choice (AMC).
+    If you are new to using AMC, I would recommend that you start here.
+    Once you get familiar, you can slowly import from the other branches to suite your needs.
+
+-[master](physicsAMC/tree/master), this is the stable branch.
+    Everything should work here.
+    It is currently blank until I sort out what has been tested,
+        and what has not been tested.
+    This is somewhat implied in [question bank](#question bank).
+
+-[develop](physicsAMC/tree/develop), this is the development branch.
+    Not everything here will work, though most should.
+    If you want to contribute, or use things in development, I would recommend that you start here.
+
+#dependencies
+
+All except automultiplechoice are included by default in most package managers.
+I use [Fedora's Package Manager](https://fedoraproject.org), but have heard good things about other projects:
+    [HomeBrew](http://brew.sh/), [Debian](http://debian.org), [Arch Linux](https://archlinux.org), [Chocolatey](https://chocolatey.org/), [OneGet](https://github.com/OneGet/oneget), etc.
+A good place to start is [The LaTeX Project](https://www.latex-project.org/get/) no matter what you are using.
 
 - [automultiplechoice](http://home.gna.org/auto-qcm/), this should really be self explanatory, hence the AMC in the project name.
-- [mhchem](http://ctan.org/pkg/mhche) is used for typsetting nuclear reactions.
+- [mhchem](http://ctan.org/pkg/mhche) is used for typesetting nuclear reactions.
 - [pgfplots](http://ctan.org/pkg/pgfplots) is used extensively for all graphs.
 - [circuitikz](http://ctan.org/pkg/circuitikz) is used for all circuit diagrams.
 - [pgf/TikZ](http://ctan.org/pkg/pgf) is used extensively for all graphics.
-- [lualatex](http://luatex.org/) is used for unicode font support and for integrating lua scripts into documents
-- [siunitx](http://ctan.org/pkg/siunitx) is used for typsetting all SI units and most other units and numbers.
-- [amsmath](http://ctan.org/pkg/amsmath) is used for typsetting all equations.
+- [lualatex](http://luatex.org/) is used for Unicode font support and for integrating lua scripts into documents.
+- [siunitx](http://ctan.org/pkg/siunitx) is used for typesetting all SI units and most other units and numbers.
+- [amsmath](http://ctan.org/pkg/amsmath) is used for typesetting all equations.
 - [booktabs](http://ctan.org/pkg/booktabs) is used for typesetting tables.
 - [tabu](http://ctan.org/pkg/tabu) is used for creating column fitted tables.
+- [physics](http://ctan.org/pkg/physics) is used for Dirac bracket notation,
+    not used on any high school level question.
+- [STIX Fonts](http://stixfonts.org) is the default font used.
+    You can change it, but I strongly recommend it.
+
+_Please Note:_ This is not an exhaustive list.
+
+#exam files
+
+-[source-exam](source-exam.tex), this is for beautifully formatted exams with separate cover sheet and answer/response sheet.
+    I use this for unit assessments.
+    As they are each unique, I allow for redos and only record the most recent attempt.
+    This file depends on [AMCexam](AMCexam.sty).
+
+-[source-full](source-full.tex), this is for space saving for when you do not want a separate cover sheet and answer sheet.
+    I use this for one page weekly assessments.
+    I use these typically to measure student progress,
+        I grade them, but I do not record them.
+    This file depends on [AMCfull](AMCfull.sty).
+
+-[source-half](source-half.tex), this is for half letter page sized assessments.
+    These are really nice when you only want one to five questions.
+    I use this for entrance drills and exit tickets.
+    I am a huge proponent of using entrance drills, they can be a godsend at times.
+    There is an included script for printing these,
+        the script assumes that all assessments fit onto one sheet half letter paper (both recto and verso).
+    If the above assumption is false, then you should be using source-full.
+    This file depends on [AMChalf](AMChalf.sty).
+
+-[AMCcommon](AMCcommon.sty), this file provides common definitions that are necessary for compiling the exam files and the question bank files.
+    Do _not_ edit this file unless you are looking to contribute.
+
+-[myTikz](myTikz.sty), this file defines some fanciness for source-exam.
+    Do _not_ edit this file unless you are looking to contribute.
+
+-[email](email.txt), this file provides a template for formmating student emails.
 
 
-## List of Contents
+#question bank
 
-- [kinematics](/qbank/kinematics/): A collection of custom written graph questions
-- [nysed](/qbank/nysed/): A comprehensive collection of NYSED physics regents exam questions, <em>over 2200 categorized questions!!</em>
-- [lua](/qbank/lua/): A collection of custom written questions that are randomized, requires [lua](http://www.lua.org)
+## master branch
+
 - [diagnostic](/qbank/diagnostic/): A collection of diagnostic exams: [freeBodyDiagrams](http://dx.doi.org/10.1103/PhysRevSTPER.11.020137), [vectors](http://dx.doi.org/10.1103/PhysRevSTPER.11.020137), [ADTv2](http://solar.physics.montana.edu/aae/adt/)
+- [hewitt](/qbank/hewitt/): A rewrite of Hewitt's 60 questions that all physics students should answer.
+- [kinematics](/qbank/kinematics/): A collection of custom written graph questions.
+- [lua](/qbank/lua/): A collection of custom written questions that are randomized, requires [lua](http://www.lua.org)
+- [nysed](/qbank/nysed/): A comprehensive collection of NYSED physics regents exam questions, _over 2200 categorized questions!!_
 - [survey](/qbank/survey/): A collection of surveys that may be of interest: [CLASS](http://www.colorado.edu/sei/class/), [MPEX](http://serc.carleton.edu/NAGTWorkshops/assess/activities/MPEX.html), [Duckworth](https://sites.sas.upenn.edu/?q=duckworth/pages/educators-0)
+
+
+## develop branch
+
+- [aapt](/qbank/aapt/): A rewrite of the [American Association of Physics Teachers](www.aapt.org) Physics Bowl and Olympiad Exam questions.
+- [cap](/qbank/cap/): A rewrite of the [Canadian Association of Physicists](www.cap.ca) challenge exam questions.
+- [cpo](/qbank/cpo/): A rewrite of the CPO exam bank questions.
+    I am particularly proud of [ch21-q09](/qbank/cpo/ch21-mc.tex), check it out.
+- [collegeBoard](/qbank/collegeBoard/): Anything relating to College Board. 
+    Of interest are the rewrites of all released [calculus AB](/qbank/collegeBoard/calculusAB.tex) and [calculus BC](/qbank/collegeBoard/calculusBC.tex) exam questions.
+- [gre](/qbank/gre/): A rewrite of all released physics GRE exams.
+- [halliday](/qbank/halliday/): A rewrite of the exam bank questions to Halliday's _Fundamentals of Physics_.
+- [holt](/qbank/holt/): A rewrite of the end of chapter assessments from Holt's _Physics_.
+- [jpierce](/qbank/jpierce/): A rewrite of of [Dr. James Pierce's Physics 101 Sample Test Questions](http://mavdisk.mnsu.edu/jpierce/courses/p101/questions.html).
+- [njctl](/qbank/njctl/): A rewrite of [The New Jersey Center for Teaching and Learning](https://njctl.org/courses/science/) physics problems, both calculus and algebra based.
+- [project](/qbank/project/): A rewrite of [Harvard University's Project Physics](https://archive.org/details/projectphysicscollection) exam bank questions.
+- [serway](/qbank/serway/): A rewrite of the exam bank questions to Serway's _Physics for Scientists and Engineers_.
 
 Please refer to the headings of each file for more information.
 
-## Copright and License
+#references
 
-* [GNU GPL v3](LICENSE.md)
+- [Using AMC in command line only](http://project.auto-multiple-choice.net/projects/auto-multiple-choice/wiki/Using_AMC_in_command_line_only)
+- [amc-mill](http://project.auto-multiple-choice.net/attachments/934/amc-mill.zip) is an implementation of the above
+
+
+## Contributions and Style Guide
+
+I use NOTE: and TODO: labels for easy access to information in files.
 
 
 
