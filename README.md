@@ -30,10 +30,13 @@ If you describe yourself as above, and find this incomprehensible, I consider th
 
 -[mc-project](physicsAMC/tree/mc-project), this is a self contained assessment ready for import into auto multiple choice (AMC).
     If you are new to using AMC, I would recommend that you start here.
+    Once you get familiar, you can slowly import from the other branches to suite your needs.
 
 -[master](physicsAMC/tree/master), this is the stable branch.
     Everything should work here.
-    If you feel comfortable with using AMC, I would recommend that you start here.
+    It is currently blank until I sort out what has been tested,
+        and what has not been tested.
+    This is somewhat implied in [question bank](#question bank).
 
 -[develop](physicsAMC/tree/develop), this is the development branch.
     Not everything here will work, though most should.
