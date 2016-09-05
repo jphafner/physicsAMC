@@ -160,7 +160,7 @@
     \usepgfplotslibrary{units}
     \usepgfplotslibrary{patchplots}
     \usepgfplotslibrary{fillbetween}
-    %\pgfplotsset{compat=1.13}
+    \pgfplotsset{compat=1.13}
 %\RequirePackage{pgfplotstable}
 \pgfmathsetseed{1234}
 
@@ -227,22 +227,19 @@
     %{\Large\@date\par}
     \vfill
 
-    %% NOTE: No myTikz
-
-    %% Instructions 
-    %\begin{adjustwidth}{-3cm}{-3cm}% adjust the L and R margins by 1 inch
-    %\begin{center}
-    %\leaves{
-    %    \begin{minipage}{9cm}
-    %    \parbox{1.00\linewidth}{
-    %        \setlength{\parskip}{0.5\baselineskip}
-    %        \setlength{\parindent}{1em}
-    %        \normalfont\@publishers\par
-    %    }
-    %    \end{minipage}
-    %}
-    %\end{center}
-    %\end{adjustwidth}
+    %% Instructions
+    \begin{adjustwidth}{-3cm}{-3cm}% adjust the L and R margins by 1 inch
+    \begin{center}
+        %% NOTE: removed myTikz
+        \begin{minipage}{9cm}
+        \parbox{1.00\linewidth}{
+            \setlength{\parskip}{0.5\baselineskip}
+            \setlength{\parindent}{1em}
+            \normalfont\@publishers\par
+        }
+        \end{minipage}
+    \end{center}
+    \end{adjustwidth}
     \vfill
 
     %% Publishers Logo
