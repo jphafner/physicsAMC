@@ -1,12 +1,16 @@
 
 # physicsAMC
 
-##table of contents
+#table of contents
 - [introduction](#introduction)
 - [branches](#branches)
 - [dependencies](#dependencies)
-- [exam files](#exam files)
-- [question bank](#question bank)
+- [exam-files](#exam-files)
+- [question-bank](#question-bank)
+    - [master-branch](#master-branch)
+    - [develop-branch](#develop-branch)
+- [best-practices](#best-practices)
+- [style-guide](#style-guide)
 
 
 #introduction
@@ -33,7 +37,7 @@ If you describe yourself as above, and find this incomprehensible, I consider th
 
 -[master](https://github.com/jphafner/physicsAMC/tree/master), this is the stable branch.
     Everything should work here.
-    This is somewhat implied in [question bank](#question bank).
+    This is somewhat implied in [question-bank](#question-bank).
 
 -[develop](https://github.com/jphafner/physicsAMC/tree/develop), this is the development branch.
     Not everything here will work, though most should.
@@ -61,9 +65,9 @@ A good place to start is [The LaTeX Project](https://www.latex-project.org/get/)
 - [STIX Fonts](http://stixfonts.org) is the default font used.
     You can change it, but I strongly recommend it.
 
-_Please Note:_ This is not an exhaustive list.
+_Please Note:_ This is _not_ an exhaustive list.
 
-#exam files
+#exam-files
 
 -[source-exam](source-exam.tex), this is for beautifully formatted exams with separate cover sheet and answer/response sheet.
     I use this for unit assessments.
@@ -94,7 +98,7 @@ _Please Note:_ This is not an exhaustive list.
 -[email](email.txt), this file provides a template for formmating student emails.
 
 
-#question bank
+#question-bank
 
 Below is a list of contents with a description in the question bank.
 Each has been edited by me to reflect my style and conventions.
@@ -107,7 +111,7 @@ This is broken only when necessary.
 Question naming follows closesly as possible to the source material.
 For instance, question 32 on the June 2012 regents exam is named _June2012-Q32_.
 
-## master branch
+## master-branch
 
 - [diagnostic](qbank/diagnostic/): A collection of diagnostic exams: [freeBodyDiagrams](http://dx.doi.org/10.1103/PhysRevSTPER.11.020137), [vectors](http://dx.doi.org/10.1103/PhysRevSTPER.11.020137), [ADTv2](http://solar.physics.montana.edu/aae/adt/)
 - [hewitt](qbank/hewitt/): A rewrite of Hewitt's 60 questions that all physics students should answer.
@@ -120,7 +124,7 @@ For instance, question 32 on the June 2012 regents exam is named _June2012-Q32_.
     [Duckworth](https://sites.sas.upenn.edu/?q=duckworth/pages/educators-0),
     and Boredom Proneness Scale.
 
-## develop branch
+## develop-branch
 
 - [aapt](qbank/aapt/): A rewrite of the [American Association of Physics Teachers](www.aapt.org) Physics Bowl and Olympiad Exam questions.
     Questions are categorized according to James Nelson's, _AAPT/NSTA high school physics examination_, The Physics Teacher, February 1983, p100--103.
@@ -141,8 +145,15 @@ For instance, question 32 on the June 2012 regents exam is named _June2012-Q32_.
 
 Please refer to the headings of each file for more information.
 
+# best-practices
 
-## Contributions and Style Guide
+- Do _not_ have any MC-Project directory depend on material from another directory.
+    Projects are much less likely to break, and debugging is much simpler.
+- _Always_ set all random number seeds to a fixed number.
+    This allows for recompilation and will likely save you at least once.
+    
+
+# style-guide
 
 I use NOTE: and TODO: labels for easy access to information in files.
 
