@@ -22,6 +22,7 @@
 %% PGFplots Customization
 %%----------------------------------------
 \pgfplotsset{
+    %% jphafner
     myaxis/.style={
         axis y line=left,
         axis x line=middle,
@@ -36,7 +37,7 @@
         y label style={
             at={(current axis.above origin)},
             anchor=south,
-            rotate=270,
+            rotate=-90,
         },
         width=0.90\columnwidth,
         very thin,
@@ -45,33 +46,19 @@
         line width=1pt,
     },
     mygroup/.style={
-        %axis y line=left,
-        %axis x line=middle,
         axis lines=middle,
         axis line style={->},
         label style={font=\normalsize},
         xtick=\empty,
-        %xmin=0,xmax=10,
         x label style={
             at={(current axis.right of origin)},
             anchor=west,
         },
-        %ymin=0,ymax=10,
         ytick=\empty,
         y label style={
             at={(current axis.above origin)},
             anchor=south,
-            %rotate=90,
         },
-        %x label style={
-        %    at={(current axis.right of origin)},
-        %    anchor=north east,
-        %},
-        %y label style={
-        %    at={(current axis.above origin)},
-        %    anchor=south east,
-        %    rotate=90
-        %},
         width=0.5\columnwidth,
         height=0.309\columnwidth,
         very thin,
@@ -602,6 +589,7 @@
         \wrongchoice{
             \begin{tikzpicture}
                 \begin{axis}[
+                    %% jphafner
                     myaxis,
                     xlabel={$t$},
                     ylabel={$x$},
@@ -981,7 +969,7 @@
         \begin{axis}[
             myaxis,
             xlabel={$t$},
-            x unit=\si{\meter},
+            x unit=\si{\second},
             xmin=0,xmax=11,
             ylabel={$v$},
             y unit=\si{\meter\per\second},
