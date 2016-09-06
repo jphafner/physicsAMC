@@ -1,7 +1,7 @@
 
 # physicsAMC
 
-##table of contents
+#table of contents
 - [introduction](#introduction)
 - [branches](#branches)
 - [dependencies](#dependencies)
@@ -9,7 +9,7 @@
 - [question-bank](#question-bank)
     - [master-branch](#master-branch)
     - [develop-branch](#develop-branch)
-- [best practices](#best practices)
+- [best-practices](#best-practices)
 
 
 #introduction
@@ -144,7 +144,7 @@ For instance, question 32 on the June 2012 regents exam is named _June2012-Q32_.
 
 Please refer to the headings of each file for more information.
 
-## best practices
+# best-practices
 
 - Do _not_ have any MC-Project directory depend on material from another directory.
     Projects are much less likely to break, and debugging is much simpler.
@@ -152,7 +152,7 @@ Please refer to the headings of each file for more information.
     This allows for recompilation and will likely save you at least once.
     
 
-## Contributions and Style Guide
+# style-guide
 
 I use NOTE: and TODO: labels for easy access to information in files.
 
