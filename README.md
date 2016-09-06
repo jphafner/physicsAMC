@@ -7,6 +7,9 @@
 - [dependencies](#dependencies)
 - [exam files](#exam files)
 - [question bank](#question bank)
+    - [master branch](##master branch)
+    - [develop branch](##develop branch)
+- [best practices](#best practices)
 
 
 #introduction
@@ -61,7 +64,7 @@ A good place to start is [The LaTeX Project](https://www.latex-project.org/get/)
 - [STIX Fonts](http://stixfonts.org) is the default font used.
     You can change it, but I strongly recommend it.
 
-_Please Note:_ This is not an exhaustive list.
+_Please Note:_ This is _not_ an exhaustive list.
 
 #exam files
 
@@ -141,6 +144,13 @@ For instance, question 32 on the June 2012 regents exam is named _June2012-Q32_.
 
 Please refer to the headings of each file for more information.
 
+## best practices
+
+- Do _not_ have any MC-Project directory depend on material from another directory.
+    Projects are much less likely to break, and debugging is much simpler.
+- _Always_ set all random number seeds to a fixed number.
+    This allows for recompilation and will likely save you at least once.
+    
 
 ## Contributions and Style Guide
 
