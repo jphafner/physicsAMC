@@ -12,7 +12,7 @@ You should be able to copy and past this directory directly into your MC-Project
 
 ```bash
 $ cd ~/MC-Project
-$ git clone --single-branch --branch mc-project https://github.com/jphafner/physicsAMC.git
+$ git clone --single-branch --branch mc-project https://github.com/jphafner/physicsAMC.git ./
 
 ```
 
