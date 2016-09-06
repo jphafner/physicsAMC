@@ -9,6 +9,13 @@
 ## introduction
 
 You should be able to copy and past this directory directly into your MC-Project directory.
+
+```bash
+$ cd ~/MC-Project
+$ git clone --single-branch --branch mc-project https://github.com/jphafner/physicsAMC.git
+
+```
+
 I have included one sample exam, sample-[exam|full|half].pdf with each template.
 Do not print or use the sample exam included,
     as you must compile it yourself for grading.
