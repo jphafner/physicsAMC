@@ -16,7 +16,7 @@ $ git clone --single-branch --branch mc-project https://github.com/jphafner/phys
 
 ```
 
-I have included one sample exam, sample-[exam|full|half].pdf with each template.
+I have included one sample exam&mdash;sample-[exam|full|half].pdf&mdash;with each template.
 Do not print or use the sample exam included,
     as you must compile it yourself for grading.
 
