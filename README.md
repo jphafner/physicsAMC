@@ -6,9 +6,9 @@
 - [branches](#branches)
 - [dependencies](#dependencies)
 - [exam-files](#exam-files)
-- [question bank](#question bank)
-    - [master branch](##master-branch)
-    - [develop branch](##develop-branch)
+- [question-bank](#question-bank)
+    - [master-branch](#master-branch)
+    - [develop-branch](#develop-branch)
 - [best practices](#best practices)
 
 
@@ -36,7 +36,7 @@ If you describe yourself as above, and find this incomprehensible, I consider th
 
 -[master](https://github.com/jphafner/physicsAMC/tree/master), this is the stable branch.
     Everything should work here.
-    This is somewhat implied in [question bank](#question bank).
+    This is somewhat implied in [question-bank](#question-bank).
 
 -[develop](https://github.com/jphafner/physicsAMC/tree/develop), this is the development branch.
     Not everything here will work, though most should.
@@ -97,7 +97,7 @@ _Please Note:_ This is _not_ an exhaustive list.
 -[email](email.txt), this file provides a template for formmating student emails.
 
 
-#question bank
+#question-bank
 
 Below is a list of contents with a description in the question bank.
 Each has been edited by me to reflect my style and conventions.
