@@ -5,7 +5,7 @@
 - [introduction](#introduction)
 - [branches](#branches)
 - [dependencies](#dependencies)
-- [exam files](#exam files)
+- [exam-files](#exam-files)
 - [question bank](#question bank)
     - [master branch](##master-branch)
     - [develop branch](##develop-branch)
@@ -66,7 +66,7 @@ A good place to start is [The LaTeX Project](https://www.latex-project.org/get/)
 
 _Please Note:_ This is _not_ an exhaustive list.
 
-#exam files
+#exam-files
 
 -[source-exam](source-exam.tex), this is for beautifully formatted exams with separate cover sheet and answer/response sheet.
     I use this for unit assessments.
