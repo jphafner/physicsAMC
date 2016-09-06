@@ -156,6 +156,6 @@ Please refer to the headings of each file for more information.
 
 # style-guide
 
-I use NOTE: and TODO: labels for easy access to information in files.
+I use NOTE, TODO and REF labels for easy access to information in files.
 
 
