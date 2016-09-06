@@ -10,6 +10,7 @@
     - [master-branch](#master-branch)
     - [develop-branch](#develop-branch)
 - [best-practices](#best-practices)
+- [style-guide](#style-guide)
 
 
 #introduction
