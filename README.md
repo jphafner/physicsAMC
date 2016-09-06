@@ -7,8 +7,8 @@
 - [dependencies](#dependencies)
 - [exam files](#exam files)
 - [question bank](#question bank)
-    - [master branch](##master branch)
-    - [develop branch](##develop branch)
+    - [master branch](##master-branch)
+    - [develop branch](##develop-branch)
 - [best practices](#best practices)
 
 
@@ -110,7 +110,7 @@ This is broken only when necessary.
 Question naming follows closesly as possible to the source material.
 For instance, question 32 on the June 2012 regents exam is named _June2012-Q32_.
 
-## master branch
+## master-branch
 
 - [diagnostic](qbank/diagnostic/): A collection of diagnostic exams: [freeBodyDiagrams](http://dx.doi.org/10.1103/PhysRevSTPER.11.020137), [vectors](http://dx.doi.org/10.1103/PhysRevSTPER.11.020137), [ADTv2](http://solar.physics.montana.edu/aae/adt/)
 - [hewitt](qbank/hewitt/): A rewrite of Hewitt's 60 questions that all physics students should answer.
@@ -123,7 +123,7 @@ For instance, question 32 on the June 2012 regents exam is named _June2012-Q32_.
     [Duckworth](https://sites.sas.upenn.edu/?q=duckworth/pages/educators-0),
     and Boredom Proneness Scale.
 
-## develop branch
+## develop-branch
 
 - [aapt](qbank/aapt/): A rewrite of the [American Association of Physics Teachers](www.aapt.org) Physics Bowl and Olympiad Exam questions.
     Questions are categorized according to James Nelson's, _AAPT/NSTA high school physics examination_, The Physics Teacher, February 1983, p100--103.
