@@ -95,20 +95,22 @@ _Please Note:_ This is _not_ an exhaustive list.
 -[myTikz](myTikz.sty), this file defines some fanciness for source-exam.
     Do _not_ edit this file unless you are looking to contribute.
 
--[email](email.txt), this file provides a template for formmating student emails.
+-[email](email.txt), this file provides a template for formatting student emails.
 
 
 #question-bank
 
 Below is a list of contents with a description in the question bank.
 Each has been edited by me to reflect my style and conventions.
-For instance, units not formatted to [NIST style conventions](https://www.nist.gov/physical-measurement-laboratory/special-publication-811),
-    written using british instead of american english, et cetera.
+For instance, units not formatted to the [NIST style guide](https://www.nist.gov/physical-measurement-laboratory/special-publication-811),
+    use of British instead of American English,
+    formatting preferences, physical errors,
+    or because I found the question ambiguous.
 
 Question group naming follows the directory where the question is located.
 This is broken only when necessary.
 
-Question naming follows closesly as possible to the source material.
+Question naming follows closely as possible to the source material.
 For instance, question 32 on the June 2012 regents exam is named _June2012-Q32_.
 
 ## master-branch
@@ -151,7 +153,6 @@ Please refer to the headings of each file for more information.
     Projects are much less likely to break, and debugging is much simpler.
 - _Always_ set all random number seeds to a fixed number.
     This allows for recompilation and will likely save you at least once.
-    
 
 # style-guide
 
