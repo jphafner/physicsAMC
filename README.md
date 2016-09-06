@@ -9,9 +9,17 @@
 ## introduction
 
 You should be able to copy and past this directory directly into your MC-Project directory.
-I have included one example exam with each template.
+I have included one example exam, sample-[exam|full|half].pdf with each template.
 Do not print or use the sample exam included,
     as you must compile it yourself for grading.
+
+For a complete list of dependencies,
+    please refer to sample-[exam|full|half].dep.
+To help with installing all dependencies on Fedora, you can run the below command.
+
+```bash
+$ sudo dnf install $( cat sample-exam.dep | sed -n 's#[^\*]*\*{package}{\([a-zA-Z]*\)}.*#texlive-\1#p' )
+```
 
 ## templates
 
