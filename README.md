@@ -7,7 +7,6 @@
 - [dependencies](#dependencies)
 - [exam files](#exam files)
 - [question bank](#question bank)
-- [references](#references)
 
 
 #introduction
@@ -34,8 +33,6 @@ If you describe yourself as above, and find this incomprehensible, I consider th
 
 -[master](https://github.com/jphafner/physicsAMC/tree/master), this is the stable branch.
     Everything should work here.
-    It is currently blank until I sort out what has been tested,
-        and what has not been tested.
     This is somewhat implied in [question bank](#question bank).
 
 -[develop](https://github.com/jphafner/physicsAMC/tree/develop), this is the development branch.
@@ -99,6 +96,17 @@ _Please Note:_ This is not an exhaustive list.
 
 #question bank
 
+Below is a list of contents with a description in the question bank.
+Each has been edited by me to reflect my style and conventions.
+For instance, units not formatted to [NIST style conventions](https://www.nist.gov/physical-measurement-laboratory/special-publication-811),
+    written using british instead of american english, et cetera.
+
+Question group naming follows the directory where the question is located.
+This is broken only when necessary.
+
+Question naming follows closesly as possible to the source material.
+For instance, question 32 on the June 2012 regents exam is named _June2012-Q32_.
+
 ## master branch
 
 - [diagnostic](qbank/diagnostic/): A collection of diagnostic exams: [freeBodyDiagrams](http://dx.doi.org/10.1103/PhysRevSTPER.11.020137), [vectors](http://dx.doi.org/10.1103/PhysRevSTPER.11.020137), [ADTv2](http://solar.physics.montana.edu/aae/adt/)
@@ -106,12 +114,17 @@ _Please Note:_ This is not an exhaustive list.
 - [kinematics](qbank/kinematics/): A collection of custom written graph questions.
 - [lua](qbank/lua/): A collection of custom written questions that are randomized, requires [lua](http://www.lua.org)
 - [nysed](qbank/nysed/): A comprehensive collection of NYSED physics regents exam questions, _over 2200 categorized questions!!_
-- [survey](qbank/survey/): A collection of surveys that may be of interest: [CLASS](http://www.colorado.edu/sei/class/), [MPEX](http://serc.carleton.edu/NAGTWorkshops/assess/activities/MPEX.html), [Duckworth](https://sites.sas.upenn.edu/?q=duckworth/pages/educators-0)
-
+- [survey](qbank/survey/): A collection of surveys that may be of interest:
+    [CLASS](http://www.colorado.edu/sei/class/),
+    [MPEX](http://serc.carleton.edu/NAGTWorkshops/assess/activities/MPEX.html),
+    [Duckworth](https://sites.sas.upenn.edu/?q=duckworth/pages/educators-0),
+    and Boredom Proneness Scale.
 
 ## develop branch
 
 - [aapt](qbank/aapt/): A rewrite of the [American Association of Physics Teachers](www.aapt.org) Physics Bowl and Olympiad Exam questions.
+    Questions are categorized according to James Nelson's, _AAPT/NSTA high school physics examination_, The Physics Teacher, February 1983, p100--103.
+    For instance, questions on one dimensional kinematics use the postfix of A1.
 - [cap](qbank/cap/): A rewrite of the [Canadian Association of Physicists](www.cap.ca) challenge exam questions.
 - [cpo](qbank/cpo/): A rewrite of the CPO exam bank questions.
     I am particularly proud of [ch21-q09](/qbank/cpo/ch21-mc.tex), check it out.
@@ -123,19 +136,14 @@ _Please Note:_ This is not an exhaustive list.
 - [jpierce](/qbank/jpierce/): A rewrite of of [Dr. James Pierce's Physics 101 Sample Test Questions](http://mavdisk.mnsu.edu/jpierce/courses/p101/questions.html).
 - [njctl](/qbank/njctl/): A rewrite of [The New Jersey Center for Teaching and Learning](https://njctl.org/courses/science/) physics problems, both calculus and algebra based.
 - [project](/qbank/project/): A rewrite of [Harvard University's Project Physics](https://archive.org/details/projectphysicscollection) exam bank questions.
+    This directory should be master branch ready.
 - [serway](/qbank/serway/): A rewrite of the exam bank questions to Serway's _Physics for Scientists and Engineers_.
 
 Please refer to the headings of each file for more information.
-
-#references
-
-- [Using AMC in command line only](http://project.auto-multiple-choice.net/projects/auto-multiple-choice/wiki/Using_AMC_in_command_line_only)
-- [amc-mill](http://project.auto-multiple-choice.net/attachments/934/amc-mill.zip) is an implementation of the above
 
 
 ## Contributions and Style Guide
 
 I use NOTE: and TODO: labels for easy access to information in files.
-
 
 

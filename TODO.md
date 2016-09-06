@@ -1,7 +1,6 @@
 
 
 -[ ] README in master
--[ ] description.xml options.xml in mc-project
 
 ## AP
 -[ ] Finish APC and APB exams in collegeBoard
@@ -31,7 +30,6 @@
 -[ ] finish Bowl and Olympiad 1994 - 2000
 
 
-
 ## Learning Objectives in Header of each file!!
 
 ## NYSED: tikz in circuit and gravity
@@ -46,6 +44,7 @@
 
 
 ## Add GREphysics, for advanced multiple choice questions!!
+## this is more for personal pleasure
 -[ ] [Physics GRE](http://www.physicsgre.com/)
 -[ ] [GRE Phsyics](http://grephysics.net/ans/)
 -[ ] [ ](https://web.stanford.edu/group/sps/PhysGRE.htm)
