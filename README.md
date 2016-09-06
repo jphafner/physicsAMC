@@ -9,7 +9,7 @@
 ## introduction
 
 You should be able to copy and past this directory directly into your MC-Project directory.
-I have included one example exam, sample-[exam|full|half].pdf with each template.
+I have included one sample exam, sample-[exam|full|half].pdf with each template.
 Do not print or use the sample exam included,
     as you must compile it yourself for grading.
 
@@ -29,8 +29,10 @@ $ sudo dnf install $( cat sample-exam.dep | sed -n 's#[^\*]*\*{package}{\([a-zA-
 - [kinematics full quiz](kinematics-full), an example full page kinematics exam utilizing my custom unit questions (requires lua!) with NYSED questions. 
     This exam does not include a cover sheet with instructions or a response and reference sheet at the end.
 
-- [kinematics half quiz](kinematics-half), an exmaple half page kinematics exam utilizing just NYSED questions.
-    This exam is desinged to be as space efficient as possible.
+- [kinematics half quiz](kinematics-half), an example half page kinematics exam utilizing only NYSED questions.
+    This exam is designed to be as space efficient as possible.
+    For example, questions may be split on pages,
+        whereas in kinematics-[exam|full], this is prohibited.
 
 
 ## amc-mill
