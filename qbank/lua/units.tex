@@ -510,17 +510,18 @@
     end
     tab = permute(tab,8,8)
     %% Convert Units
+    local conversion = 1.09
     local gallon = 3.785411784
-    local right = price * gallon / 1.09
+    local right = price * gallon / conversion
     local wrong = {
         right * gallon,
         right / gallon,
         right * gallon * gallon,
         right / gallon / gallon,
-        right * 1.09,
-        right / 1.09,
-        right * 1.09 * 1.09,
-        right / 1.09 / 1.09,
+        right * conversion,
+        right / conversion,
+        right * conversion * conversion,
+        right / conversion / conversion,
     }
     %% Formatting
     local SI = [[ \string\SI{\%.2f}{USD\string\per\string\gallon} ]]
@@ -736,7 +737,7 @@
     %% Convert Units
     local right = link * 0.3048 * 5280 / 8000
     local wrong = {
-        %% NOTE: add link to wrongs 
+        %% NOTE: add link to wrongs?
         right * 0.3048,
         right / 0.3048,
         right * 5280,
@@ -794,7 +795,7 @@
     %% 864 point = 1 foot
     local right = point * 0.3048 / 864
     local wrong = {
-        %% NOTE: add point to wrongs 
+        %% NOTE: add point to wrongs?
         right * 0.3048,
         right / 0.3048,
         right * 864,
