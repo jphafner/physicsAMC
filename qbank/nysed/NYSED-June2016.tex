@@ -92,22 +92,8 @@
 }
 
 \element{nysed}{
-\begin{question}{June2016-Q18}
-    A \SI{5.8e4}{\watt} elevator motor can lift a total weight of \SI{2.1e4}{\newton} with a maximum constant speed of:
-    \begin{multicols}{2}
-    \begin{choices}
-        \wrongchoice{\SI{0.28}{\meter\per\second}}
-        \wrongchoice{\SI{0.36}{\meter\per\second}}
-      \correctchoice{\SI{2.8}{\meter\per\second}}
-        \wrongchoice{\SI{3.6}{\meter\per\second}}
-    \end{choices}
-    \end{multicols}
-\end{question}
-}
-
-\element{nysed}{
 \begin{question}{June2016-Q19}
-    A stationary police officer directs radio waves emitted by a radar gun at a vehicle moving toward the officer. 
+    A stationary police officer directs radio waves emitted by a radar gun at a vehicle moving toward the officer.
     Compared to the emitted radio waves,
         the radio waves reflected from the vehicle and received by the radar gun have a:
     \begin{choices}
@@ -351,6 +337,144 @@
         }
         %% NOTE: ANS is 3
     \end{choices}
+\end{question}
+}
+
+
+
+%% NOTE: electromagneticApplication?, 2dkinematics, electrostatics, Sound, light
+
+%% Section June2015
+%%--------------------
+\element{nysed}{
+\begin{question}{June2015-Q22}
+    Which diagram best represents the position of a ball,
+        at equal time intervals,
+        as it falls freely from rest near Earth's surface?
+    \begin{multicols}{2}
+    \begin{choices}
+        %% NOTE: make ticker tape graph
+        \wrongchoice{
+            \begin{tikzpicture}
+                \draw[white] (0,0) rectangle (2,4);
+                \draw[domain=0:10,samples=4,mark=*,only marks] plot ({1.0}, {0.02*\x*\x});
+                \draw (0,0) -- (2,0) node[pos=0.5,anchor=north] {Earth's Surface};
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \draw[white] (0,0) rectangle (1,-4);
+                \draw[domain=0:10,samples=4,mark=*,only marks] plot ({1.0}, {-0.02*\x*\x});
+                \draw (0,-4) -- (2,-4) node[pos=0.5,anchor=north] {Earth's Surface};
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \draw[white] (0,0) rectangle (1,-4);
+                \draw[domain=0:10,samples=4,mark=*,only marks] plot ({1.0}, {0.2*\x});
+                \draw (0,0) -- (2,0) node[pos=0.5,anchor=north] {Earth's Surface};
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \draw[white] (0,0) rectangle (1,-4);
+                \draw[domain=0:10,samples=4,mark=*,only marks] plot ({1.0}, {0.04*(10-\x)*\x});
+                \draw (0,0) -- (2,0) node[pos=0.5,anchor=north] {Earth's Surface};
+            \end{tikzpicture}
+        }
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+%% NOTE: TODO: finish next two questions
+\newcommand{\JuneTwentyFifteenQThirty}{
+    \begin{tikzpicture}
+    \end{tikzpicture}
+}
+
+\element{nysed}{
+\begin{question}{June2015-Q30}
+    %Base your answers to questions 30 and 31 on the diagram
+    %    below and on your knowledge of physics. 
+    The diagram represents two small, charged,
+        identical metal spheres, $A$ and $B$ that are separated
+        by a distance of \SI{2.0}{\meter}.
+    \begin{center}
+        \JuneTwentyFifteenQThirty
+    \end{center}
+    What is the magnitude of the electrostatic force exerted by sphere A on sphere B?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{7.2e-3}{\newton}}
+        \wrongchoice{\SI{3.6e-3}{\newton}}
+        \wrongchoice{\SI{8.0e-13}{\newton}}
+        \wrongchoice{\SI{4.0e-13}{\newton}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{nysed}{
+\begin{question}{June2015-Q31}
+    The diagram represents two small, charged,
+        identical metal spheres, $A$ and $B$ that are separated
+        by a distance of \SI{2.0}{\meter}.
+    \begin{center}
+        \JuneTwentyFifteenQThirty
+    \end{center}
+    If the two spheres were touched together and then separated,
+        the charge on sphere $A$ would be
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{-3.0e-7}{\coulomb}}
+        \wrongchoice{\SI{-6.0e-6}{\coulomb}}
+        \wrongchoice{\SI{-1.3e-6}{\coulomb}}
+        \wrongchoice{\SI{-2.6e-6}{\coulomb}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{nysed}{
+\begin{question}{June2015-Q32}
+    The horn of a moving vehicle produces a sound of constant frequency. 
+    Two stationary observers, $A$ and $C$,
+    and the vehicle's driver, $B$, positioned as represented
+        in the diagram below, hear the sound of the horn.
+    \begin{center}
+        %% NOTE: insert graphic
+        %\includegraphics[width=0.9\columnwidth,keepaspectratio]{June2015-Q32}
+    \end{center}
+    Compared to the frequency of the sound of the horn heard by driver $B$,
+        the frequency heard by observer $A$ is:
+    \begin{choices}
+        \wrongchoice{lower and the frequency heard by observer $C$ is lower}
+        \wrongchoice{lower and the frequency heard by observer $C$ is higher}
+        \wrongchoice{higher and the frequency heard by observer $C$ is lower}
+        \wrongchoice{higher and the frequency heard by observer $C$ is higher}
+    \end{choices}
+\end{question}
+}
+
+\element{nysed}{
+\begin{question}{June2015-Q34}
+    The diagram below shows a ray of monochromatic light
+        incident on a boundary between air and glass.
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE:
+    \end{tikzpicture}
+    \end{center}
+    Which ray best represents the path of the reflected light ray?
+    \begin{multicols}{4}
+    \begin{choices}[o]
+        \wrongchoice{$A$}
+        \wrongchoice{$B$}
+        \wrongchoice{$C$}
+        \wrongchoice{$D$}
+    \end{choices}
+    \end{multicols}
 \end{question}
 }
 

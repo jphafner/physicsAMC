@@ -1,6 +1,8 @@
 
 
--[ ] README in master
+-[ ] write a script for compiling exams
+-[ ] For instance, extract all June2001 exams from all NYSED-*.tex files.
+
 
 ## AP
 -[ ] Finish APC and APB exams in collegeBoard
@@ -8,7 +10,6 @@
 
 ## High school
 -[ ] Start questionBank.ca questions
-
 
 -[ ] gray choicelabels? \def\AMCchoiceLabelFormat#1{\textcolor{black!40}{#1}}
     This would make grading less ambiguous
