@@ -1,8 +1,47 @@
 
 
--[ ] write a script for compiling exams
--[ ] For instance, extract all June2001 exams from all NYSED-*.tex files.
+## P1
 
+-[ ] update mc-projects with student.csv and fully formatted email in options.xml !!!
+
+-[ ] cap-other, for ones that do not fit elsewhere
+
+-[ ] update copyright year, 2014--2016
+
+
+-[ ] write a script for compiling exams
+-[ ] For instance, extract all June2001 exams from all NYSED files.
+
+-[ ] master files are considered to be antiquated once questions are categorized!
+    -[ ] cap-mc is not to be touched when cap-A1 is updated
+    -[ ] script from above will solve this problem, and ease maintaince in future
+
+## notes on script
+-[ ] copy paste entire \element{ } block.
+-[ ] search in name, \begin{question}{ }, for match
+-[ ] print matches to stdout
+
+## links
+-[ ] http://www.regular-expressions.info/recurse.html#balanced
+-[ ] https://stackoverflow.com/questions/546433/regular-expression-to-match-outer-brackets/19863847#19863847
+-[ ] https://stackoverflow.com/questions/26028091/regular-expression-to-extract-argument-in-a-latex-command
+
+
+-[ ] This could be a _huge_ plus for the project, as I could then _tag_ the questions and extract them accordingly!!!
+-[ ] AAPT: A1, A2,...   NYSED: assign to NY objectives, for tag ideas!!
+-[ ] \newcommand\tag{tag1,tag2,tag3,tag4}
+
+
+
+## Pother
+
+## Learning Objectives in Header of each file!!
+
+## Add GREphysics, for advanced multiple choice questions!!
+## this is more for personal pleasure
+-[ ] [Physics GRE](http://www.physicsgre.com/)
+-[ ] [GRE Phsyics](http://grephysics.net/ans/)
+-[ ] [ ](https://web.stanford.edu/group/sps/PhysGRE.htm)
 
 ## AP
 -[ ] Finish APC and APB exams in collegeBoard
@@ -31,24 +70,8 @@
 -[ ] finish Bowl and Olympiad 1994 - 2000
 
 
-## Learning Objectives in Header of each file!!
-
-## NYSED: tikz in circuit and gravity
-
-## Add more descriptive graphs in motion-graphs.tex!!
-
-## Working/AP-Physics-Exams/
-
-
 ## Feynman Exercises, convert for advanced multiple choice questions!!
 -[ ]http://www.feynmanlectures.info/exercises/atwood.html
-
-
-## Add GREphysics, for advanced multiple choice questions!!
-## this is more for personal pleasure
--[ ] [Physics GRE](http://www.physicsgre.com/)
--[ ] [GRE Phsyics](http://grephysics.net/ans/)
--[ ] [ ](https://web.stanford.edu/group/sps/PhysGRE.htm)
 
 
 ## Add Project Physics Test Booklet
@@ -65,39 +88,18 @@
 -[ ] [British Columbia Provincial Exams](http://questionbank.ca)
 
 
-## Formatting considerations
--[ ] Make qbank and src separate directories
--[ ] Give instructions on use in README.md
-
-
-## Scoring Guide?
--[ ] single: 3 for correct, 1 for incorrect
--[ ] multi: 5 for correct, 0 for incorrect
--[ ] numeric: 5 for correct, 0 for incorrect
-
-
 ## Links
 - http://physics101x.blogspot.com/2012/11/multiple-choice-physics-101-quiz.html
 - http://dev.physicslab.org/Compilations/AAPT.aspx
 
-### GrTeX
-- http://www.physics.rutgers.edu/computers/grtex.html
-
 ### Survey
 - http://ceep.indiana.edu/hssse/index.html
-
-### Math review questions
-- http://www.sosmath.com/algebra/solve/solve0/solve0.html
-
-### Unit reference Sheet
-- http://www.physics.nist.gov/cuu/Units/units.html
 
 ## Conceptual Question Bank
 - http://www.rocklin.k12.ca.us/staff/pmorrison/ConPhys/ConPhysIndex.htm
 
 ### Question Bank
 - http://physics.mines.edu/undergraduate/transfercredit/transfer5.php
-
 
 ### Warmups and Practice Questions
 - http://wps.aw.com/aw_wilson_physics_7/109/28121/7199047.cw/index.html
@@ -111,12 +113,6 @@
 ### Feynman Exercises
 - http://www.feynmanlectures.info/exercises.html
 
-### NY Regents
-- http://www.nysedregents.org/Physics/
-
-### Huge Question Bank
-- http://www.questionbank.ca/
-
 ### US Physics Olympia
 - http://aapt.org/physicsteam/2015/exams.cfm
 
@@ -125,17 +121,11 @@
 - http://www.mhpracticeplusap.com/ID7.html
 - http://www.mhpracticeplusap.com/ID8.html
 
-
 ### Exam Bank
 - http://www.collegephysics.com/
 
 ### Multiple Choice Information
 - http://www.uleth.ca/edu/runte/tests/multiplechoicetests.html
-
-## #Mutiple Choice Research
-- http://journals.aps.org/prstper/pdf/10.1103/PhysRevSTPER.2.020102
-
-
 
 ## Reference for unicode-math-table problem
 I beleive this has since been fixed
