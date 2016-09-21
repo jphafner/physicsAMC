@@ -31,6 +31,8 @@
 -[ ] AAPT: A1, A2,...   NYSED: assign to NY objectives, for tag ideas!!
 -[ ] \newcommand\tag{tag1,tag2,tag3,tag4}
 
+-[ ] lua-lpeg, functions: findElement, keepElement, modElement
+
 
 
 ## Pother
