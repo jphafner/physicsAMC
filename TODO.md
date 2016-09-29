@@ -1,4 +1,12 @@
 
+## VIM modelines
+-[ ] http://tedlogan.com/techblog3.html
+-[ ] tabstop, expandtab,shiftwidth,softabstop
+-[ ] vim: noai:ts=4:sw=4:et
+
+## To enforce style guides
+/* vim: set tabstop=8 softtabstop=8 shiftwidth=8 noexpandtab autoindent : */
+
 
 ## P1
 

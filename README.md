@@ -56,6 +56,8 @@ A good place to start is [The LaTeX Project](https://www.latex-project.org/get/)
 - [circuitikz](http://ctan.org/pkg/circuitikz) is used for all circuit diagrams.
 - [pgf/TikZ](http://ctan.org/pkg/pgf) is used extensively for all graphics.
 - [lualatex](http://luatex.org/) is used for Unicode font support and for integrating lua scripts into documents.
+- [lua](http://lua.org/) is used for scripting and some custom questions.
+- [lpeg](http://www.inf.puc-rio.br/~roberto/lpeg/) is used for scripting, see the [scripts](./scripts) directory.
 - [siunitx](http://ctan.org/pkg/siunitx) is used for typesetting all SI units and most other units and numbers.
 - [amsmath](http://ctan.org/pkg/amsmath) is used for typesetting all equations.
 - [booktabs](http://ctan.org/pkg/booktabs) is used for typesetting tables.
