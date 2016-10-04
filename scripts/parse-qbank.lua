@@ -1,3 +1,18 @@
+
+local lpeg = require("lpeg")
+
+-- Options
+--   -h --help      print help menu
+--   -t --tregex    match tags with regex
+--   -q --qregex    match question names with regex
+--   -e --eregex    match elment names with regex
+--   -i --input     input tex file
+--   -o --output    output tex file
+
+-- Functions
+-- getElement
+-- getTags
+
 -- lpeg
 -- P,S,R,C,Ct
 --
