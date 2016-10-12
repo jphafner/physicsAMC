@@ -1,8 +1,9 @@
 
 ## VIM modelines
 -[ ] http://tedlogan.com/techblog3.html
--[ ] tabstop, expandtab,shiftwidth,softabstop
--[ ] vim: noai:ts=4:sw=4:et
+-[ ] tabstop, expandtab, shiftwidth, softabstop
+-[ ] -- lua is 2 --> vim: noai:ts=2:sw=2:et
+-[ ] -- vim: ts=3 ss=3 sw=3 expandtab --> sputnik style
 
 ## To enforce style guides
 /* vim: set tabstop=8 softtabstop=8 shiftwidth=8 noexpandtab autoindent : */

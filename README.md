@@ -160,6 +160,8 @@ Please refer to the headings of each file for more information.
 
 I use NOTE, TODO and REF labels for easy access to information in files.
 
+-[ ] [LuaStyleGuide](http://lua-users.org/wiki/LuaStyleGuide)
+-[ ] [luadoc](https://keplerproject.github.io/luadoc/)
 -[ ] lua in separate files
 -[ ] import lua common from inside separate file
     -[ ] units.tex and units.lua instead of all in one

@@ -1,5 +1,24 @@
 
-local lpeg = require("lpeg")
+local lpeg = require "lpeg"
+
+local alt_getopt = require "alt_getopt"
+
+local long_opts = {
+   version = 0,
+   verbose = "v",
+   help    = "h",
+   fake    = 0,
+   len     = 1,
+   output  = "o",
+   set_value = "S",
+   ["set-output"] = "o"
+}
+
+local ret
+local optarg
+local optind
+opts,optind,optarg = alt_getopt.get_ordered_opts (arg, "hVvo:n:S:", long_opts)
+
 
 -- Options
 --   -h --help      print help menu
@@ -39,3 +58,6 @@ local lpeg = require("lpeg")
 --     if tag then print
 -- end
 --
+
+
+
