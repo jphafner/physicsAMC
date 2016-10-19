@@ -1,10 +1,62 @@
 #!/bin/bash
 
-if [ $# -eq 0 ]; then
-    echo "  Bad argument ORDER"
-    echo "  Syntax: $(basename $0) [n exam] [input pdf]"
-    exit 1
-fi
+#if [ $# -eq 0 ]; then
+#    echo "  Bad argument ORDER"
+#    echo "  Syntax: $(basename $0) [n exam] [input pdf]"
+#    exit 1
+#fi
+
+function usage() {
+    echo "Usage: $(basename $0) (-i input pdf) (-n num exam)";
+    exit ${E_OPTERROR};
+}
+## : has a required argument
+## :: has an optional argument
+## Set default values??
+options="n:i:r"
+function parseargs() {
+  while getopts ${options} opts; do
+    case ${opts} in
+      r)
+        rm_tmp = true;;
+      n)
+        num = ${OPTARG};;
+      i)
+        input = ${OPTARG};;
+      h)
+        usage;; 
+      \?)
+        echo "Unknown option: -${OPTARG}" >&2
+        usage;;
+      *)
+        echo "Invalid option: -${OPTARG}" 1>&2
+        usage;;
+      :)
+        echo "Option -${OPTARG} requires an argument." 1>&2
+        usage;;
+    esac
+  done
+  ## Checks for required, multiple methods
+  while getopts ${options} opts; do
+    case "${opts}" in
+        :) echo "${OPTARG} requires an argument"; exit 1;
+    esac
+  done
+  if [ $OPTIND -eq 1 ]; then
+      echo "No options were passed"
+      usage
+  fi
+  for var in ${options[@]}; do
+      if [[ -z ${var} ]]; then
+          echo "Error: specific a value for ${var} with ${option[var]}"
+          usage
+      fi
+  done
+  if [ -z ${num} ]; then
+      echo "[n exam] is a required argument"
+      usage
+  fi
+}
 
 ## Examples
 ##  pdfjam --batch --nup 2x1 --suffix 2up --landscape --outfile . file1.pdf file2.pdf
@@ -21,39 +73,52 @@ fi
 ##  pdfnup --checkfiles 'my PDF file'
 ##  pdfjam --landscape --doublepagestwistodd true my-landscape-document.pdf 
 
-NEXAM=$( expr $1 - 1 )
-INPUT=$2
- 
-if [ ! $(( ${1} % 2)) -eq 0 ]; then
-    echo "NEXAM must be an even number"
-    exit 1
-fi
+function clean_tmp() {
+  echo "rm -f temp.pdf"
+        rm -f temp.pdf
+}
 
-## Exams are assumed to be two pages
-## There must be an even number of exams
+function main() {
+    parseargs()
 
-for i in `seq 0 2 ${NEXAM}`; do
-    echo $i
-    ORDER+=$( expr 2 \* $i + 1 )'R '
-    ORDER+=$( expr 2 \* $i + 3 )'R '
-    ORDER+=$( expr 2 \* $i + 2 )'L '
-    ORDER+=$( expr 2 \* $i + 4 )'L '
-done
+    #NEXAM=$( expr ${num} - 1 )
+    NEXAM=$( expr 20 - 1 )
+    INPUT=$2
 
-echo ${ORDER[@]}
+    if [ ! $(( ${num} % 2)) -eq 0 ]; then
+        echo "NEXAM must be an even number"
+        exit 1
+    fi
 
-## https://github.com/hellerbarde/stapler
-## Usage: stapler [options] mode input.pdf ... [output.pdf]
-echo "stapler cat ${INPUT} ${ORDER} temp.pdf"
-      stapler cat ${INPUT} ${ORDER} temp.pdf
+    ## Exams are assumed to be two pages
+    ## There must be an even number of exams
 
-# pdfnup options: --pages, --paper, --orient, --trim, --delta,
-#                 --offset, --scale and --openright, --frame
+    for i in $(seq 0 2 ${NEXAM}); do
+        echo $i
+        ORDER+=$( expr 2 \* $i + 1 )'R '
+        ORDER+=$( expr 2 \* $i + 3 )'R '
+        ORDER+=$( expr 2 \* $i + 2 )'L '
+        ORDER+=$( expr 2 \* $i + 4 )'L '
+    done
 
-echo "pdfnup --nup 1x2 --papersize '{11in,8.5in}' --frame true temp.pdf"
-      pdfnup --nup 1x2 --papersize '{11in,8.5in}' --frame true temp.pdf
+    echo ${ORDER[@]}
 
-echo "rm -f temp.pdf"
-      rm -f temp.pdf
+    ## https://github.com/hellerbarde/stapler
+    ## Usage: stapler [options] mode input.pdf ... [output.pdf]
+    echo "stapler cat ${INPUT} ${ORDER} temp.pdf"
+          stapler cat ${INPUT} ${ORDER} temp.pdf
 
+    # pdfnup options: --pages, --paper, --orient, --trim, --delta,
+    #                 --offset, --scale and --openright, --frame
+
+    echo "pdfnup --nup 1x2 --papersize '{11in,8.5in}' --frame true temp.pdf"
+          pdfnup --nup 1x2 --papersize '{11in,8.5in}' --frame true temp.pdf
+
+    if [ ${rm_tmp} ]; then
+        clean_tmp()
+    fi
+}
+
+main()
+exit $?
 

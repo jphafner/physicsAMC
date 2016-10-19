@@ -8,8 +8,9 @@
 ## To enforce style guides
 /* vim: set tabstop=8 softtabstop=8 shiftwidth=8 noexpandtab autoindent : */
 
-
 ## P1
+
+-[ ] in scripts, finish TODO notes!!!
 
 -[ ] update mc-projects with student.csv and fully formatted email in options.xml !!!
 

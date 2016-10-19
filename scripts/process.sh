@@ -1,5 +1,8 @@
 #!/bin/bash
 
+## TODO: break script into functions,
+## TODO: make main() function and parseargs()
+
 ## AMC parameters
 
 # density of the scans (default 300)
@@ -18,6 +21,13 @@ debug=true
 
 # export format
 exportFormat=ods
+
+## Define AMC functions
+function amc-prepare() {
+}
+
+function amc-analyze() {
+}
 
 ## My parameters
 projectDir=/home/adin/MC-Projects/encuesta
