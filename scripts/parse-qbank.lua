@@ -6,6 +6,7 @@
 
 local lpeg = require "lpeg"
 local argparse = require "argparse"
+local string = require "string"
 local re = require "re"
 local io = require "io"
 local os = require "os"
@@ -101,13 +102,13 @@ function parseargs()
   -- Arguments
   parser:argument() {
     name = "input",
-    description = "List of input file name",
+    description = "List of input file names",
     args = "+",
   }
   -- Options
   parser:option() {
     name = "-o --output",
-    description = "Output file name [default: stdout]",
+    description = "Output file name [default: io.stdout]",
     convert = function(s)
         return io.open(s,"w")
     end,
@@ -155,6 +156,7 @@ function parseargs()
 end
 
 function list_tags(args)
+    -- TODO
 end
 
 
@@ -163,17 +165,18 @@ end
 function main()
   local args = parseargs()
 
+  -- TODO
   if args.list then
     list_tags(args)
   end
 
   -- loop through all input files
-  for k,file in pairs(args.input) do
+  for k1,file in pairs(args.input) do
     local text = io.open(file):read("*all")
     local comm = Ct(newcommands):match(text)
 
     -- loop through all elements
-    for k,elem in pairs(Ct(elements):match(text)) do
+    for k2,elem in pairs(Ct(elements):match(text)) do
 
       -- check for matching element name
       if not args.element or string.find(lpegmatch(element_name,elem),args.element) then
@@ -185,11 +188,11 @@ function main()
           if not args.tags or string.find(lpegmatch(tag_name,elem),args.tags) then
 
             -- check for matching newcommands
-            for k,c in pairs(comm) do
+            for k3,c in pairs(comm) do
               if string.find(elem,lpegmatch(newcommand_name,c)) then
 
-                -- prevent duplicates
-                args.output:write(table.remove(comm,k))
+                -- print and prevent duplicates
+                args.output:write(table.remove(comm,k3))
               end
             end
 
