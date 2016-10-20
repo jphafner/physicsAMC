@@ -9,6 +9,7 @@
 - [question-bank](#question-bank)
     - [master-branch](#master-branch)
     - [develop-branch](#develop-branch)
+- [parse-qbank](#parse-qbank)
 - [best-practices](#best-practices)
 - [style-guide](#style-guide)
 
@@ -24,7 +25,7 @@ This project should be of interest to anyone who teaches a physics course,
 I am also aware that most online solutions are simply not an option for many high school teachers.
 
 My main goals are to bring some basic ideas from computer science to teaching.
-Grading should be fast, student feedback should be lengthy.
+Grading should be fast, student feedback should be prompt and thorough.
 
 This README is written with the hopes of being comprehensible to a computer literate physics teacher.
 If you describe yourself as above, and find this incomprehensible, I consider that a bug.
@@ -148,6 +149,34 @@ For instance, question 32 on the June 2012 regents exam is named _June2012-Q32_.
 - [serway](/qbank/serway/): A rewrite of the exam bank questions to Serway's _Physics for Scientists and Engineers_.
 
 Please refer to the headings of each file for more information.
+
+# parse-qbank
+
+The purpose of parse-qbank is to allow fast and easy parsing from the question bank.
+This project was first organized by files,
+    this was acceptable when the project was only being used by the author.
+A more powerful manner to organize this project is to tag each question and parse the file for the desired question attributes.
+This allows a question to have multiple tags, as opposed to one directory,
+    many questions do not fit neatly into a single category.
+
+The author recommends building an exam by starting with the desired project in mc-project,
+    and then parsing the question bank for the desired questions to include.
+
+The script is very much beta, but it is currently producing usable output.
+
+## example usage
+
+Extract all questions from the June2012 regents.
+
+```bash
+$ parse-qbank -q June2012 qbank/nysed/NYSED-*tex
+```
+
+Extract all one-dimensional kinematics questions.
+
+```bash
+$ parse-qbank -t A1 qbank/AAPT/Bowl-*tex
+```
 
 # best-practices
 
