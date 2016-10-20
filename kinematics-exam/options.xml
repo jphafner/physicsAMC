@@ -16,8 +16,11 @@
   <doc_setting>DOC-calage.xy</doc_setting>
   <doc_solution>DOC-corrige.pdf</doc_solution>
   <email_col></email_col>
-  <email_subject>Exam result</email_subject>
-  <email_text>Please find enclosed your annotated completed answer sheet.
+  <email_subject>Assessment result</email_subject>
+  <email_text>Dear %(name) $(surname):
+Your annotated response sheet is attached.
+You scored a %(S) out of %(M) total points.
+Your current course grade is %(grade).
 Regards.</email_text>
   <encodage_csv>UTF-8</encodage_csv>
   <encodage_liste>UTF-8</encodage_liste>
