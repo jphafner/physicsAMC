@@ -45,12 +45,11 @@ local newcommands = P {
   definition = balancer("{","}",V("definition")),
 }^0
 
--- NOTE: place all in one, then remove on each match
 local newcommand_name = P {
   "expr",
   expr = V("command") * V("num")^-1 * V("definition"),
   command = P("\\newcommand{") * V("name") * P("}"),
-  name = C(locale.alnum^1),
+  name = C( P("\\") * locale.alnum^1 ),
   num = P("[") * P(locale.digit^1) * P("]"),
   definition = balancer("{","}",V("definition")),
 }
@@ -65,7 +64,7 @@ local elements = P {
 
 local element_name = P {
   "expr",
-  expr = V("command") * V("group") + 1 * V("expr"),
+  expr = V("command") * V("group") + 1,
   group = balancer("{","}",V("group")),
   command = P("\\element{") * V("name") * P("}"),
   name = C(locale.alnum^1),
@@ -73,18 +72,14 @@ local element_name = P {
 
 local question_name = P {
   "expr",
-  expr = C( V("command") ) + 1,
-  command = P("\\begin{question}{") * V("name") * P("}"),
-  name = C( P(locale.alnum + locale.punct)^1 ),
-  --[[
-  expr = V("environment") + 1,
+  expr = V("environment") + 1 * V("expr"),
   environment = balancer(V("left"),V("right"),V("environment")),
   left  = P("\\begin{question}{") * V("name") * P("}"),
   right = P("\\end{question}"),
-  name = C( P(locale.alnum + locale.punct)^1 ),
-  --]]
+  name = C( (locale.alnum + S("-"))^1 ),
 }
 
+-- NOTE: element_tag
 local tag_name = P {
   "expr",
   expr  = V("label") * V("list"),
@@ -120,7 +115,7 @@ function parseargs()
     args = "1",
     count = "?",
   }
-  -- NOTE: Patterns @ lua.org/pil/20.2.html
+  -- NOTE: Patterns at lua.org/pil/20.2.html
   parser:option() {
     name = "-t --tags",
     description = "Lua pattern for matching the project subject tags",
@@ -172,24 +167,34 @@ function main()
     list_tags(args)
   end
 
+  -- loop through all input files
   for k,file in pairs(args.input) do
-    local t = io.open(file):read("*all")
-    local c = Ct(newcommands):match(t)
-    --for a,b in pairs(c) do
-    --  args.output:write(b,"\n\n")
-    --end
-    -- only print command if matches matched element
+    local text = io.open(file):read("*all")
+    local comm = Ct(newcommands):match(text)
 
-    -- string.find(s, pattern)
-    for k,v in pairs(Ct(elements):match(t)) do
-      if not args.element or string.find(lpegmatch(element_name,v),args.element) then
-        print(v)
-        print(question_name:match(v))
-        --print(string.find(lpegmatch(question_name,v),args.question))
-        --print(lpegmatch(Ct(question_name),v))
-        if not args.question or string.find(lpegmatch(question_name,v),args.question) then
-          if not args.tags or string.find(lpegmatch(tag_name,v),args.tags) then
-            args.output:write(v,"\n\n") 
+    -- loop through all elements
+    for k,elem in pairs(Ct(elements):match(text)) do
+
+      -- check for matching element name
+      if not args.element or string.find(lpegmatch(element_name,elem),args.element) then
+
+        -- check for matching question name
+        if not args.question or string.find(lpegmatch(question_name,elem),args.question) then
+
+          -- check for matching tag name
+          if not args.tags or string.find(lpegmatch(tag_name,elem),args.tags) then
+
+            -- check for matching newcommands
+            for k,c in pairs(comm) do
+              if string.find(elem,lpegmatch(newcommand_name,c)) then
+
+                -- prevent duplicates
+                args.output:write(table.remove(comm,k))
+              end
+            end
+
+            -- print element
+            args.output:write(elem,"\n\n") 
           end
         end
       end

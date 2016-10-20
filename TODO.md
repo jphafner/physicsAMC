@@ -1,4 +1,6 @@
 
+-[ ] \myJune... commands, change to \nysedJune...
+
 ## VIM modelines
 -[ ] http://tedlogan.com/techblog3.html
 -[ ] tabstop, expandtab, shiftwidth, softabstop
