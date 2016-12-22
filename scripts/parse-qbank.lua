@@ -71,6 +71,15 @@ local element_name = P {
   name = C(locale.alnum^1),
 }
 
+local question = P {
+  "expr",
+  expr = C( V("environment") ) + 1 * V("expr"),
+  environment = balancer(V("left"),V("right"),V("environment")),
+  left  = P("\\begin{question}{") * V("name") * P("}"),
+  right = P("\\end{question}"),
+  name = (locale.alnum + S("-"))^1,
+}
+
 local question_name = P {
   "expr",
   expr = V("environment") + 1 * V("expr"),
@@ -123,6 +132,7 @@ function parseargs()
     args = "1",
     count = "?",
   }
+  -- NOTE: epatt, qpatt, tpatt ?
   parser:option() {
     name = "-e --element",
     description = "Lua pattern for matching the AMC element name",
@@ -156,7 +166,11 @@ function parseargs()
 end
 
 function list_tags(args)
-    -- TODO
+    -- TODO: print sorted and uniq list
+end
+
+function compare(a,b)
+    return a < b
 end
 
 
@@ -166,6 +180,7 @@ function main()
   local args = parseargs()
 
   -- TODO
+  -- NOTE: use _ to ignore value
   if args.list then
     list_tags(args)
   end
@@ -174,6 +189,9 @@ function main()
   for k1,file in pairs(args.input) do
     local text = io.open(file):read("*all")
     local comm = Ct(newcommands):match(text)
+    --local bank = Ct(elements):match(text)
+
+    -- TODO: table.sort(elem,compare)
 
     -- loop through all elements
     for k2,elem in pairs(Ct(elements):match(text)) do
