@@ -135,12 +135,14 @@ function parseargs()
   -- NOTE: epatt, qpatt, tpatt ?
   parser:option() {
     name = "-e --element",
+    -- \element{NAME}{ }
     description = "Lua pattern for matching the AMC element name",
     args = "1",
     count = "?",
   }
   parser:option() {
     name = "-q --question",
+    -- \begin{question}{NAME}
     description = "Lua pattern for matching the AMC question name",
     args = "1",
     count = "?",
