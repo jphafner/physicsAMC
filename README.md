@@ -41,7 +41,6 @@ $ sudo dnf install $( cat sample-exam.dep | sed -n 's#[^\*]*\*{package}{\([a-zA-
     For example, questions may be split on pages,
         whereas in kinematics-[exam|full], this is prohibited.
 
-
 ## amc-mill
 
 If you are interested in automating exam creation using the command line, I would strongly recommend checking out amc-mill.
