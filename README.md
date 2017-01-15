@@ -34,6 +34,7 @@ If you describe yourself as above, and find this incomprehensible, I consider th
 
 -[mc-project](https://github.com/jphafner/physicsAMC/tree/mc-project), this is a self contained assessment ready for import into auto multiple choice (AMC).
     If you are new to using AMC, I would recommend that you start here.
+    I have even included an rpm package of auto-multiple-choice for convenience.
     Once you get familiar, you can slowly import from the other branches to suite your needs.
 
 -[master](https://github.com/jphafner/physicsAMC/tree/master), this is the stable branch.

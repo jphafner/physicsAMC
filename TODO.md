@@ -10,7 +10,26 @@
 ## To enforce style guides
 /* vim: set tabstop=8 softtabstop=8 shiftwidth=8 noexpandtab autoindent : */
 
+## Git diff ideas, compare master to develop
+-[ ] git diff --name-status master..develop | grep ^M
+-[ ] git diff --stat --color master..develop
+-[ ] git diff HEAD 
+-[ ] git diff --cached
+
+## git workflow for merging a branch through an intermediary
+git checkout ba
+git checkout -b ba-merge
+git merge master
+.... review new code and fix conflicts....
+git commit
+git checkout ba
+git merge ba-merge
+git branch -d ba-merge
+git merge master
+
+
 ## P1
+
 
 -[ ] in scripts, finish TODO notes!!!
 
@@ -26,7 +45,7 @@
 
 -[ ] master files are considered to be antiquated once questions are categorized!
     -[ ] cap-mc is not to be touched when cap-A1 is updated
-    -[ ] script from above will solve this problem, and ease maintaince in future
+    -[ ] script from above will solve this problem, and ease maintenance in future
 
 ## notes on script
 -[ ] copy paste entire \element{ } block.
