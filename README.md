@@ -8,6 +8,7 @@
 
 ## introduction
 
+This branch is designed to get a beginner started as quick as possible.
 You should be able to copy and past this directory directly into your MC-Project directory.
 
 ```bash
@@ -16,16 +17,29 @@ $ git clone --single-branch --branch mc-project https://github.com/jphafner/phys
 
 ```
 
+It would also be beneficial to start keeping local settings in your home directory.
+
+```bash
+$ cp ./kinematics-exam/options.xml ~/AMC.d/cf.default.xml.
+```
+
 I have included one sample exam, sample-[exam|full|half].pdf, with each template.
 Do not print or use the sample exam included,
     as you must compile it yourself for grading.
 
 For a complete list of dependencies,
-    please refer to sample-[exam|full|half].dep.
-To help with installing all dependencies on Fedora, you can run the below command.
+    please refer to ./kinematcs-[exam|full|half]/sample-[exam|full|half].dep.
+To help with installing all dependencies on Fedora, you can run the below commands.
 
 ```bash
-$ sudo dnf install $( cat sample-exam.dep | sed -n 's#[^\*]*\*{package}{\([a-zA-Z]*\)}.*#texlive-\1#p' )
+$ sudo dnf install ./auto-multiple-choice-1.3.0-1.fc25.x86_64.rpm
+$ sudo dnf install $( cat ./kinematics-exam/sample-exam.dep | sed -n 's#[^\*]*\*{package}{\([a-zA-Z]*\)}.*#texlive-\1#p' )
+```
+
+As a last resort, if your document still does not compile, try:
+
+```bash
+$ sudo dnf install texlive-collection-*
 ```
 
 ## templates

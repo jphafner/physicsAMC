@@ -10,44 +10,22 @@
   *{file}   {scrsize11pt.clo}{2016/06/14 v3.21}
   *{package}{typearea}    {2016/06/14 v3.21}
   *{package}{snapshot}    {2002/03/05 v1.14}
-  *{package}{AMCexam}     {0000/00/00 v0.0}
+  *{package}{AMChalf}     {0000/00/00 v0.0}
   *{package}{AMCcommon}   {0000/00/00 v0.0}
-  *{package}{myTikz}      {0000/00/00 v0.0}
-  *{package}{tikz}        {2015/08/07 v3.0.1a}
-  *{package}{pgf}         {2015/08/07 v3.0.1a}
-  *{package}{pgfrcs}      {2015/08/07 v3.0.1a}
-  *{package}{everyshi}    {2001/05/15 v3.00}
-  *{file}   {pgfrcs.code.tex}{0000/00/00 v0.0}
-  *{package}{pgfcore}     {2010/04/11 v3.0.1a}
+  *{package}{booktabs}    {2016/04/27 v1.618033}
+  *{package}{chngpage}    {2009/10/20 v1.2b}
+  *{package}{color}       {1999/02/16 v0.0}
+  *{file}   {color.cfg}   {2016/01/02 v1.6}
+  *{file}   {luatex.def}  {2016/08/17 v0.01g}
+  *{package}{infwarerr}   {2016/05/16 v1.4}
+  *{package}{ltxcmds}     {2016/05/16 v1.23}
+  *{package}{environ}     {2014/05/04 v0.3}
+  *{package}{trimspaces}  {2009/09/17 v1.1}
+  *{package}{enumitem}    {2011/09/28 v3.5.2}
   *{package}{graphicx}    {2014/10/28 v1.0g}
   *{package}{graphics}    {2016/05/09 v1.0r}
   *{package}{trig}        {2016/01/03 v1.10}
   *{file}   {graphics.cfg}{2016/01/02 v1.10}
-  *{file}   {luatex.def}  {2016/08/17 v0.01g}
-  *{package}{infwarerr}   {2016/05/16 v1.4}
-  *{package}{ltxcmds}     {2016/05/16 v1.23}
-  *{package}{pgfsys}      {2014/07/09 v3.0.1a}
-  *{file}   {pgfsys.code.tex}{0000/00/00 v0.0}
-  *{file}   {pgfsyssoftpath.code.tex}{2013/09/09 v1.9)}
-  *{file}   {pgfsysprotocol.code.tex}{2006/10/16 v1.4)}
-  *{package}{xcolor}      {2016/05/11 v2.12}
-  *{file}   {color.cfg}   {2016/01/02 v1.6}
-  *{file}   {pgfcore.code.tex}{0000/00/00 v0.0}
-  *{package}{pgfcomp-version-0-65}{2007/07/03 v3.0.1a}
-  *{package}{pgfcomp-version-1-18}{2007/07/23 v3.0.1a}
-  *{package}{pgffor}      {2013/12/13 v3.0.1a}
-  *{package}{pgfkeys}     {0000/00/00 v0.0}
-  *{file}   {pgfkeys.code.tex}{0000/00/00 v0.0}
-  *{package}{pgfmath}     {0000/00/00 v0.0}
-  *{file}   {pgfmath.code.tex}{0000/00/00 v0.0}
-  *{file}   {pgffor.code.tex}{0000/00/00 v0.0}
-  *{file}   {tikz.code.tex}{0000/00/00 v0.0}
-  *{package}{shapepar}    {2013/03/26 v2.2x,}
-  *{package}{booktabs}    {2016/04/27 v1.618033}
-  *{package}{chngpage}    {2009/10/20 v1.2b}
-  *{package}{environ}     {2014/05/04 v0.3}
-  *{package}{trimspaces}  {2009/09/17 v1.1}
-  *{package}{enumitem}    {2011/09/28 v3.5.2}
   *{package}{float}       {2001/11/08 v1.3d}
   *{package}{fp}          {1995/04/02 v0.0}
   *{package}{defpattern}  {1994/10/12 v0.0}
@@ -127,6 +105,28 @@
   *{package}{siunitx}     {2016/03/01 v2.6q}
   *{package}{translator}  {2010/06/12 v1.10}
   *{file}   {translator-language-mappings.tex}{0000/00/00 v0.0}
+  *{package}{tikz}        {2015/08/07 v3.0.1a}
+  *{package}{pgf}         {2015/08/07 v3.0.1a}
+  *{package}{pgfrcs}      {2015/08/07 v3.0.1a}
+  *{package}{everyshi}    {2001/05/15 v3.00}
+  *{file}   {pgfrcs.code.tex}{0000/00/00 v0.0}
+  *{package}{pgfcore}     {2010/04/11 v3.0.1a}
+  *{package}{pgfsys}      {2014/07/09 v3.0.1a}
+  *{file}   {pgfsys.code.tex}{0000/00/00 v0.0}
+  *{file}   {pgfsyssoftpath.code.tex}{2013/09/09 v1.9)}
+  *{file}   {pgfsysprotocol.code.tex}{2006/10/16 v1.4)}
+  *{package}{xcolor}      {2016/05/11 v2.12}
+  *{file}   {color.cfg}   {2016/01/02 v1.6}
+  *{file}   {pgfcore.code.tex}{0000/00/00 v0.0}
+  *{package}{pgfcomp-version-0-65}{2007/07/03 v3.0.1a}
+  *{package}{pgfcomp-version-1-18}{2007/07/23 v3.0.1a}
+  *{package}{pgffor}      {2013/12/13 v3.0.1a}
+  *{package}{pgfkeys}     {0000/00/00 v0.0}
+  *{file}   {pgfkeys.code.tex}{0000/00/00 v0.0}
+  *{package}{pgfmath}     {0000/00/00 v0.0}
+  *{file}   {pgfmath.code.tex}{0000/00/00 v0.0}
+  *{file}   {pgffor.code.tex}{0000/00/00 v0.0}
+  *{file}   {tikz.code.tex}{0000/00/00 v0.0}
   *{package}{circuitikz}  {2016/06/06{} v0.6}
   *{package}{pgfplots}    {2016/01/06 v1.13}
   *{package}{automultiplechoice}{0000/00/00 v0.0}
@@ -150,13 +150,9 @@
   *{file}   {epstopdf-sys.cfg}{2010/07/13 v1.3}
   *{file}   {translator-basic-dictionary-English.dict}{0000/00/00 v0.0}
   *{file}   {siunitx-abbreviations.cfg}{2016/03/01 v2.6q}
-  *{file}   {./qbank/aapt/Bowl-A1.tex}{0000/00/00 v0.0}
   *{file}   {./qbank/nysed/NYSED-constantVelocity.tex}{0000/00/00 v0.0}
   *{file}   {./qbank/nysed/NYSED-constantAcceleration.tex}{0000/00/00 v0.0}
   *{file}   {./qbank/nysed/NYSED-freeFall.tex}{0000/00/00 v0.0}
   *{file}   {./qbank/nysed/NYSED-estimation.tex}{0000/00/00 v0.0}
-  *{file}   {./qbank/kinematics/motion-graphs.tex}{0000/00/00 v0.0}
   *{file}   {mt-cmr.cfg}  {2013/05/19 v2.2}
-  *{file}   {./qbank/REF.tex}{0000/00/00 v0.0}
-  *{file}   {./qbank/REF.tex}{0000/00/00 v0.0}
 }
