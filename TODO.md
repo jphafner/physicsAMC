@@ -16,6 +16,8 @@
 -[ ] git diff HEAD 
 -[ ] git diff --cached
 
+## projectile and 2Dkinematics have duplicates
+
 ## git workflow for merging a branch through an intermediary
 git checkout ba
 git checkout -b ba-merge

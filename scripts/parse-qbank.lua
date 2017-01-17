@@ -34,9 +34,21 @@ local function instringchecker(patt)
   end
 end
 
+local function AMCbegin(patt1,patt2)
+  return P ( "\\begin{" * patt1 * "}{" * patt2 * "}" )
+end
+
+local function AMCend(patt)
+  return P ( "\\end{" * patt * "}" )
+end
+
 
 -- Define grammars
 ----------------------------------------
+
+-- NOTE: Ordered choice matters!!
+local AMCenvironment = P( P("questionmultx") + P("questionmult") + P("question") )
+
 local newcommands = P {
   "expr",
   expr = C( V("command") * V("num")^-1 * V("definition") ) + 1 * V("expr"),
@@ -55,7 +67,7 @@ local newcommand_name = P {
   definition = balancer("{","}",V("definition")),
 }
 
-local elements = P {
+local AMCelement = P {
   "expr",
   expr = C( V("command") * V("group") ) + 1 * V("expr"),
   group = balancer("{","}",V("group")),
@@ -63,7 +75,7 @@ local elements = P {
   name = locale.alnum^1,
 }^0
 
-local element_name = P {
+local AMCelement_name = P {
   "expr",
   expr = V("command") * V("group") + 1,
   group = balancer("{","}",V("group")),
@@ -71,21 +83,23 @@ local element_name = P {
   name = C(locale.alnum^1),
 }
 
-local question = P {
+local AMCquestion = P {
   "expr",
   expr = C( V("environment") ) + 1 * V("expr"),
   environment = balancer(V("left"),V("right"),V("environment")),
-  left  = P("\\begin{question}{") * V("name") * P("}"),
-  right = P("\\end{question}"),
+  left  = AMCbegin(AMCenvironment,V("name")),
+  right = AMCend(AMCenvironment),
+  --left  = P("\\begin{question}{") * V("name") * P("}"),
+  --right = P("\\end{question}"),
   name = (locale.alnum + S("-"))^1,
 }
 
-local question_name = P {
+local AMCquestion_name = P {
   "expr",
   expr = V("environment") + 1 * V("expr"),
   environment = balancer(V("left"),V("right"),V("environment")),
-  left  = P("\\begin{question}{") * V("name") * P("}"),
-  right = P("\\end{question}"),
+  left  = AMCbegin(AMCenvironment,V("name")),
+  right = AMCend(AMCenvironment),
   name = C( (locale.alnum + S("-"))^1 ),
 }
 
@@ -196,13 +210,13 @@ function main()
     -- TODO: table.sort(elem,compare)
 
     -- loop through all elements
-    for k2,elem in pairs(Ct(elements):match(text)) do
+    for k2,elem in pairs(Ct(AMCelement):match(text)) do
 
       -- check for matching element name
-      if not args.element or string.find(lpegmatch(element_name,elem),args.element) then
+      if not args.element or string.find(lpegmatch(AMCelement_name,elem),args.element) then
 
         -- check for matching question name
-        if not args.question or string.find(lpegmatch(question_name,elem),args.question) then
+        if not args.question or string.find(lpegmatch(AMCquestion_name,elem),args.question) then
 
           -- check for matching tag name
           if not args.tags or string.find(lpegmatch(tag_name,elem),args.tags) then
@@ -212,7 +226,7 @@ function main()
               if string.find(elem,lpegmatch(newcommand_name,c)) then
 
                 -- print and prevent duplicates
-                args.output:write(table.remove(comm,k3))
+                args.output:write(table.remove(comm,k3),"\n\n")
               end
             end
 
