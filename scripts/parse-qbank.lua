@@ -34,6 +34,9 @@ local function instringchecker(patt)
   end
 end
 
+-- Define AMC specific functions
+----------------------------------------
+
 local function AMCbegin(patt1,patt2)
   return P ( "\\begin{" * patt1 * "}{" * patt2 * "}" )
 end
@@ -89,8 +92,6 @@ local AMCquestion = P {
   environment = balancer(V("left"),V("right"),V("environment")),
   left  = AMCbegin(AMCenvironment,V("name")),
   right = AMCend(AMCenvironment),
-  --left  = P("\\begin{question}{") * V("name") * P("}"),
-  --right = P("\\end{question}"),
   name = (locale.alnum + S("-"))^1,
 }
 
@@ -112,6 +113,13 @@ local tag_name = P {
   tags  = C(locale.alnum^1) * P(locale.punct),
 }
 
+local split_comma = P {
+  "expr",
+  expr = Ct( V("elem") * ( V("sep") * V("elem"))^0),
+  sep  = S(","),
+  elem = C( (1 - V("sep"))^0 ),
+}
+
 
 -- Define argparse function
 ----------------------------------------
@@ -127,6 +135,7 @@ function parseargs()
     name = "input",
     description = "List of input file names",
     args = "+",
+    -- comma_split to table, then table of open files
   }
   -- Options
   parser:option() {
@@ -143,32 +152,44 @@ function parseargs()
   parser:option() {
     name = "-t --tags",
     description = "Lua pattern for matching the project subject tags",
+    convert = function(s)
+        return lpeg.match(split_comma,s)
+    end,
     args = "1",
     count = "?",
   }
-  -- NOTE: epatt, qpatt, tpatt ?
+  -- TODO: epatt, qpatt, tpatt ?
   parser:option() {
     name = "-e --element",
-    -- \element{NAME}{ }
     description = "Lua pattern for matching the AMC element name",
+    convert = function(s)
+        return lpeg.match(split_comma,s)
+    end,
     args = "1",
     count = "?",
   }
   parser:option() {
     name = "-q --question",
-    -- \begin{question}{NAME}
     description = "Lua pattern for matching the AMC question name",
+    convert = function(s)
+        return lpeg.match(split_comma,s)
+    end,
     args = "1",
     count = "?",
   }
-  -- Flags
+  -- TODO: Flags
   parser:flag() {
     name = "-l --list",
-    description = "Sort output matching elements",
+    description = "List all used tags from input and then exit.",
   }
   parser:flag() {
     name = "-s --sort",
-    description = "List all used tags from input and then exit.",
+    description = "Sort output matching elements",
+  }
+  -- TODO: implement, after csv parser for multiple tags
+  parser:flag() {
+    name = "-a --and",
+    description = "Switch filtering logic from logical or (default) to logical and",
   }
   parser:flag() {
     name = "-v --version",
@@ -189,6 +210,23 @@ function compare(a,b)
     return a < b
 end
 
+function findOR(str, tbl)
+  for _,v in pairs(tbl) do
+    if string.find(str,v) then
+        return true
+    end
+  end
+  return false
+end
+
+function findAND(str, tbl)
+  for _,v in pairs(tbl) do
+    if not string.find(str,v) then
+        return false
+    end
+  end
+  return true
+end
 
 -- Define main function
 ----------------------------------------
@@ -200,8 +238,11 @@ function main()
   if args.list then
     list_tags(args)
   end
+    
+  -- TODO: separate loops: filter, sort, print
 
   -- loop through all input files
+  -- TODO: is for _,file faster??
   for k1,file in pairs(args.input) do
     local text = io.open(file):read("*all")
     local comm = Ct(newcommands):match(text)
@@ -213,19 +254,22 @@ function main()
     for k2,elem in pairs(Ct(AMCelement):match(text)) do
 
       -- check for matching element name
-      if not args.element or string.find(lpegmatch(AMCelement_name,elem),args.element) then
+      --if not args.element or string.find(lpegmatch(AMCelement_name,elem),args.element) then
+      -- NOTE: how to pass arguments
+      -- NOTE: string.find(s, pattern)
+      if not args.element or findOR(lpegmatch(AMCelement_name,elem),args.element) then
 
         -- check for matching question name
-        if not args.question or string.find(lpegmatch(AMCquestion_name,elem),args.question) then
+        if not args.question or findOR(lpegmatch(AMCquestion_name,elem),args.question) then
 
           -- check for matching tag name
-          if not args.tags or string.find(lpegmatch(tag_name,elem),args.tags) then
+          if not args.tags or findOR(lpegmatch(tag_name,elem),args.tags) then
 
             -- check for matching newcommands
             for k3,c in pairs(comm) do
               if string.find(elem,lpegmatch(newcommand_name,c)) then
 
-                -- print and prevent duplicates
+                -- print newcommand and prevent duplicates
                 args.output:write(table.remove(comm,k3),"\n\n")
               end
             end
@@ -234,6 +278,7 @@ function main()
             args.output:write(elem,"\n\n") 
           end
         end
+        --]=]
       end
     end
   end

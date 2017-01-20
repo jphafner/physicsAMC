@@ -1,6 +1,12 @@
 
 -[ ] \myJune... commands, change to \nysedJune...
 
+## reoganize qbank/subject/...
+-[ ] move all questions to source names, cap/2005.tex
+-[ ] add tags to each question
+-[ ] change element name on unfinished questions, \element{testing} or similar
+
+
 ## VIM modelines
 -[ ] http://tedlogan.com/techblog3.html
 -[ ] tabstop, expandtab, shiftwidth, softabstop
@@ -10,6 +16,51 @@
 ## To enforce style guides
 /* vim: set tabstop=8 softtabstop=8 shiftwidth=8 noexpandtab autoindent : */
 
+-[ ] create style guide with concern to multiple-choice questions
+-[ ] http://www.thelearningmanager.com/pubdownloads/writing_effective_questions.pdf
+-[ ] http://files.eric.ed.gov/fulltext/EJ985723.pdf
+
+## start making branches for different tasks
+-[ ] git checkout -b explain
+
+## basic merging
+
+```bash
+$ git checkout master
+Switched to branch 'master'
+$ git merge hotfix
+Merge made by the 'recursive' strategy.
+index.html |    1 +
+1 file changed, 1 insertion(+)
+$ git branch -d hotfix
+```
+
+## add explanations
+-[ ] add explanations to problems, this is a massive undertaking!!!
+
+```latex
+\begin{question}{explanation}
+Which has the highest elevation among the following?
+\begin{choices}
+  \correctchoice{Sagarmatha}
+    \wrongchoice{K2}
+    \wrongchoice{Mont Blanc}
+    \wrongchoice{Aconcagua}
+\end{choices}
+\explain{Sagarmatha which literally means `Head of sky' is the native name of Mount Everest,
+    the highest mountain in the world.}
+\end{question}
+```
+
+```latex
+\begin{question}{open}
+Define \emph{inflation}.
+\AMCOpen{lines=5,answer=some text here}{
+    \wrongchoice[W]{w}\scoring{0}\wrongchoice[P]{p}\scoring{1}\correctchoice[C]{c}\scoring{2}
+}
+\end{question}
+```
+
 ## Git diff ideas, compare master to develop
 -[ ] git diff --name-status master..develop | grep ^M
 -[ ] git diff --stat --color master..develop
@@ -17,6 +68,10 @@
 -[ ] git diff --cached
 
 ## projectile and 2Dkinematics have duplicates
+
+## parse-qbank
+-[ ] parse-qbank, use functional each to allow for multiple question/element/tags
+-[ ] parse-qbank, use functional each to allow for multiple question/element/tags
 
 ## git workflow for merging a branch through an intermediary
 git checkout ba
@@ -35,15 +90,14 @@ git merge master
 
 -[ ] in scripts, finish TODO notes!!!
 
--[ ] update mc-projects with student.csv and fully formatted email in options.xml !!!
-
 -[ ] cap-other, for ones that do not fit elsewhere
 
 -[ ] update copyright year, 2014--2016
 
-
 -[ ] write a script for compiling exams
--[ ] For instance, extract all June2001 exams from all NYSED files.
+    -[x] extract all June2001 exams from all NYSED files.
+    -[ ] sort all June2001 exams in order from all NYSED files
+
 
 -[ ] master files are considered to be antiquated once questions are categorized!
     -[ ] cap-mc is not to be touched when cap-A1 is updated
@@ -89,6 +143,7 @@ git merge master
     This would make grading less ambiguous
 -[ ] page limit in \onecopy{}: \loop\ifnum\thepage<5\clearpage ~\repeat
 -[ ] indivanswers for solution creation
+        indivanswers is for manual marking, use also nopage for no header markers
 -[ ] add \explain{ } to gre, project, and others
 -[ ] qbank/(element)/filename
 

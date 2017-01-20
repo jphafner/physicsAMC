@@ -164,19 +164,31 @@ The author recommends building an exam by starting with the desired project in m
     and then parsing the question bank for the desired questions to include.
 
 The script is very much beta, but it is currently producing usable output.
+It depends additionally on [lpeg](http://www.inf.puc-rio.br/~roberto/lpeg/lpeg.html) and [argparse](https://github.com/mpeterv/argparse).
+These can be installed either with luarocks,
+
+```bash
+$ luarocks install lpeg argparse
+```
+
+or with the fedora package manager,
+
+```bash
+$ sudo dnf install lua-argparse lua-lpeg
+```
 
 ## example usage
 
-Extract all questions from the June2012 regents.
+Extract all questions from the June2012 or the June2013 regents.
 
 ```bash
-$ parse-qbank -q June2012 qbank/nysed/NYSED-*tex
+$ parse-qbank -q June2012,June2013 qbank/nysed/NYSED-*tex
 ```
 
-Extract all one-dimensional kinematics questions.
+Extract all one-dimensional (A1) or two-dimensional (A2) kinematics questions.
 
 ```bash
-$ parse-qbank -t A1 qbank/AAPT/Bowl-*tex
+$ parse-qbank -t A1,A2 qbank/AAPT/Bowl-*tex
 ```
 
 # best-practices
