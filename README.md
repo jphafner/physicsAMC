@@ -11,8 +11,6 @@
     - [develop-branch](#develop-branch)
 - [parse-qbank](#parse-qbank)
 - [best-practices](#best-practices)
-- [style-guide](#style-guide)
-
 
 #introduction
 
@@ -197,17 +195,4 @@ $ parse-qbank -t A1,A2 qbank/AAPT/Bowl-*tex
     Projects are much less likely to break, and debugging is much simpler.
 - _Always_ set all random number seeds to a fixed number.
     This allows for recompilation and will likely save you at least once.
-
-# style-guide
-
-I use NOTE, TODO and REF labels for easy access to information in files.
-
--[ ] [LuaStyleGuide](http://lua-users.org/wiki/LuaStyleGuide)
--[ ] [luadoc](https://keplerproject.github.io/luadoc/)
--[ ] lua in separate files
--[ ] import lua common from inside separate file
-    -[ ] units.tex and units.lua instead of all in one
--[ ] functional programming style
--[ ] indenting C style
-
 

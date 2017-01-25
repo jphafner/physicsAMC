@@ -1,3 +1,18 @@
+
+# taken from README
+
+I use NOTE, TODO and REF labels for easy access to information in files.
+
+- [LuaStyleGuide](http://lua-users.org/wiki/LuaStyleGuide)
+- [luadoc](https://keplerproject.github.io/luadoc/)
+- lua in separate files
+- import lua common from inside separate file
+    - units.tex and units.lua instead of all in one
+- functional programming style
+- indenting C style
+- make separate document for CONTRIBUTING
+- include help with question writing
+
 # Contributing to this project
 
 Please take a moment to review this document in order to make the contribution
