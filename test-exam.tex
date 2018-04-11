@@ -89,17 +89,12 @@
 
 %% 319 Questions
 
-%% Serway
-\input{./qbank/serway/ch05-mc.tex}
-\input{./qbank/serway/ch06-mc.tex}
-
-%% Halliday
-\input{./qbank/halliday/ch05-mc.tex}
-\input{./qbank/halliday/ch06-mc.tex}
+%% NYSED
+\input{./qbank/nysed/NYSED-sound.tex}
+\input{./qbank/nysed/NYSED-waves.tex}
 
 %% AAPT 52Q
 \input{./qbank/aapt/Bowl-A3.tex}
-\input{./qbank/aapt/Olympiad-A3.tex}
 
 %% Lua
 %\directlua{dofile("./qbank/lua/common.lua")}
@@ -109,7 +104,7 @@
 
 %% Begin Question Sheet
 %%------------------------------------------------
-\begin{examcopy}[2]
+\begin{examcopy}[1]
     \begin{titlepage}
         \titleAMC
         \newpage
@@ -120,14 +115,9 @@
     \begin{multicols}{2}
         \cleargroup{all}
 
-        \shufflegroup{serway-mc}
-        %\shufflegroup{halliday-mc}
-        %\shufflegroup{aapt}
-
-        \copygroup[14]{serway-mc}{all}
-        %\copygroup[13]{halliday-mc}{all}
-        %\copygroup[6]{aapt}{all}
-
+        \shufflegroup{nysed}
+        \copygroup[40]{nysed}{all}
+        
         \shufflegroup{all}
         \insertgroup{all}
     \end{multicols}
@@ -200,6 +190,7 @@
     %% NOTE: Place Reference sheet here
     \clearpage
     \input{./qbank/REF.tex}
+    %\input{./Slide_rule.pdf}
     %% NOTE: This is needed for mass printing
     \AMCcleardoublepage
 \end{examcopy}

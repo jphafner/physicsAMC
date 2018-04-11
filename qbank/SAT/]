@@ -1,0 +1,374 @@
+
+%%--------------------------------------------------
+%% SAT Practice Test One
+%%--------------------------------------------------
+
+%% https://collegereadiness.collegeboard.org/pdf/sat-practice-test-1.pdf
+
+%% Directions
+%%--------------------------------------------------
+
+%% For questions 1-15, solve each problem, choose the best answer from the choices provided, and fill in the corresponding circle on your answer sheet. 
+%% For questions 16-20, solve the problem and enter your answer in the grid on the answer sheet. 
+%% Please refer to the directions before question 16 on how to enter your answers in the grid. 
+%% You may use any available space in your test booklet for scratch work.
+
+%% Notes
+%%--------------------------------------------------
+
+%% 1. The use of a calculator is not permitted.
+%% 2. All variables and expressions used represent real numbers unless otherwise indicated.
+%% 3. Figures provided in this test are drawn to scale unless otherwise indicated.
+%% 4. All figures lie in a plane unless otherwise indicated.
+%% 5. Unless otherwise indicated, the domain of a given function f is the set of all real numbers x for which f(x) is a real number.
+
+
+%% NOTE: Unauthorized copying or reuse of any part of this page is illegal.
+
+
+%% SAT Writing and Language Test
+%%--------------------------------------------------
+\element{sat-mc}{
+\begin{question}{math-t01-q01}
+    If $\dfrac{x-1}{3} = k$ and $k=3$, what is the value of $x$?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{2}
+        \wrongchoice{4}
+        \wrongchoice{9}
+     \correctchoice{10}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{sat-mc}{
+\begin{question}{math-t01-q02}
+    For $i=\sqrt{-1}$, what is the sum of $\left(7+3i\right) + \left(-8+9i\right)$?
+    \begin{multicols}{2}
+    \begin{choices}
+     \correctgchoice{$-1 + 12i$}
+        \wrongchoice{$-1 - 6i$}
+        \wrongchoice{$15 + 12i$}
+        \wrongchoice{$15 - 6i$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{sat-mc}{
+\begin{question}{math-t01-q03}
+    On Saturday afternoon, Armand sent $m$ text messages each hour for 5 hours,
+        and Tyrone sent $p$ text messages each hour for 4 hours.
+    Which of the following represents the total number of messages sent by Armand and Tyrone on Saturday afternoon?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{$9 mp$}
+        \wrongchoice{$20 mp$}
+      \correctchoice{$5m + 4p$}
+        \wrongchoice{$4m + 5p$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{sat-mc}{
+\begin{question}{math-t01-q04}
+    Kathy is a repair technician for a phone company.
+    Each week, she receives a batch of phone that need repairs.
+    The number of phones that she has left to fix at the end of each day can be estimated with the equation $P = 108-23d$,
+        where $P$ is the number of phones left and $d$ is the number of days she has worked that week.
+    What is the meaning of the value $108$ in this equation?
+    \begin{choices}
+        \wrongchoice{Kathy will complete the repairs within 108 days.}
+      \correctchoice{Kathy starts each week with 108 phone to fix.}
+        \wrongchoice{Kathy repairs phones at a rate of 108 per hour.}
+        \wrongchoice{Kathy repairs phones at a rate of 108 per day.}
+    \end{choices}
+\end{question}
+}
+
+\element{sat-mc}{
+\begin{question}{math-t01-q05}
+    \begin{equation}
+        \left( x^2y - 3y^2 + 5xy^2) - (-x^2y + 3xy^2 - 3y^2 \right)
+    \begin{equation}
+    Which of the following is equivalent to the expression above?
+    \begin{choices}
+        \wrongchoice{$4 x^2 y^2$}
+        \wrongchoice{$8xy^2 - 6y^2$}
+      \correctchoice{$2x^2y + 2xy^2$}
+        \wrongchoice{$2x^2y + 8xy^2 - 6y^2$}
+    \end{choices}
+\end{question}
+}
+
+\element{sat-mc}{
+\begin{question}{math-t01-q06}
+    \begin{equation}
+        h = 3a + 28.6
+    \begin{equation}
+    A pediatrician uses the model above to estimate the height $h$ of a boy, in inches,
+        in terms of the boys age $a$, in years, between the ages of 2 and 5.
+    Based on the model, what is the estimated increase, in inches,
+        of a boy's height each year?
+    \begin{choices}
+      \correctchoice{$3$}
+        \wrongchoice{$5.7$}
+        \wrongchoice{$9.5$}
+        \wrongchoice{$14.3$}
+    \end{choices}
+\end{question}
+}
+
+\element{sat-mc}{
+\begin{question}{math-t01-q07}
+    \begin{equation}
+        m = \frac{ \left( \frac{r}{1,200} \right) \left(1 + \frac{r}{1200} \right)^N }
+                 {\left(1 + \frac{r}{1200}\right)^N - 1}
+    \begin{equation}
+    The formuula above gives the monthly payment $m$ needed to pay off a loan of $P$ dollars at $r$ percent annual interest over $n$ months.
+    Which of the following gives $P$ in terms of $m$, $r$, and $N$?
+    \begin{choices}
+        \wrongchoice{$P = \frac{\left(\frac{r}{1200}\right) \left(1+\frac{r}{1200}\right)^N}
+                               {\left(1+\frac{r}{1200}\right)^N - 1} m$}
+      \correctchoice{$P = \frac{\left(\left(1+\frac{r}{1200}\right)^N -1}
+                               {\left(\frac{r}{1200}\right) \left(1+\frac{r}{1200}\right)^N - 1} m$}
+        \wrongchoice{$P = \frac{\left(\frac{r}{1200}\right)m}$}
+        \wrongchoice{$P = \frac{\left(\frac{1200}{r}\right)m}$}
+    \end{choices}
+\end{question}
+}
+
+\element{sat-mc}{
+\begin{question}{math-t01-q08}
+    if $\dfrac{a}{b}$ = 2, what if the value of $\dfrac{4b}{a}$?
+    \begin{choices}
+        \wrongchoice{$0$}
+        \wrongchoice{$1$}
+      \correctchoice{$2$}
+        \wrongchoice{$4$}
+    \end{choices}
+\end{question}
+}
+
+\element{sat-mc}{
+\begin{question}{math-t01-q09}
+    \begin{equation}
+        3x + 4y &= -23
+        2y - x  = -19
+    \end{equation}
+    What is the solution $(x,y)$ to the system of equation above?
+    \begin{choices}
+        \wrongchoice{$(-5, -2)$}
+        \wrongchoice{$(3, -8)$}
+        \wrongchoice{$(4, -6)$}
+        \wrongchoice{$(9, -6)$}
+    \end{choices}
+\end{question}
+}
+
+\element{sat-mc}{
+\begin{question}{math-t01-q10}
+    \begin{equation}
+        g(x) = ax^2 + 24 
+    \end{equation}
+    For the function $g$ defined above, $a$ is a constant and $g(4)=8$.
+    What is the value of $g(-4)$?
+    \begin{choices}
+      \correctchoice{$8$}
+        \wrongchoice{$0$}
+        \wrongchoice{$-1$}
+        \wrongchoice{$-8$}
+    \end{choices}
+\end{question}
+}
+
+\element{sat-mc}{
+\begin{question}{math-t01-q11}
+    \begin{equation}
+        b = 2.35 + 0.25x
+        c = 1.75 + 0.40x
+    \end{equation}
+    In the equations above, $b$ and $c$ represent the price per pound,
+         in dollars, of beef and chicken,
+        respectively, $x$ weeks after July 1 during last summer.
+    What was the price per pound of beef when it was equal to the price per pound of chicken?
+    \begin{choices}
+      \correctchoice{$\$ 2.60$}
+        \wrongchoice{$\$ 2.85$}
+        \wrongchoice{$\$ 2.95$}
+        \wrongchoice{$\$ 3.35$}
+    \end{choices}
+\end{question}
+}
+
+\element{sat-mc}{
+\begin{question}{math-t01-q12}
+    A line in the $xy$-plane passes through the origin has a slope of $\dfrac{1}{7}$.
+    Which of the following points lies on the line?
+    \begin{choices}
+        \wrongchoice{$\left( 0, 7 \right)$}
+        \wrongchoice{$\left( 1, 7 \right)$}
+        \wrongchoice{$\left( 7, 7 \right)$}
+      \correctchoice{$\left( 14, 2 \right)$}
+    \end{choices}
+\end{question}
+}
+
+\element{sat-mc}{
+\begin{question}{math-t01-q13}
+    If $x>3$, which of the following is equivalent:
+    \begin{choices}
+        \wrongchoice{$\frac{1}{\frac{1}{x+2}+\frac{1}{x+3}}$}
+        \wrongchoice{$\frac{2x+5}{x^2 + 5x + 6}$}
+        \wrongchoice{$\frac{x^2 + 5x + 6}{2x+5}$}
+        \wrongchoice{$2x+5$}
+        \wrongchoice{$x^2 + 5x + 6$}
+    \end{choices}
+\end{question}
+}
+
+\element{sat-mc}{
+\begin{question}{math-t01-q14}
+    If $3x - y = 12$,
+        what is the value of $\dfrac{8^x}{2^y}$?
+    \begin{choices}
+        \wrongchoice{$2^12$}
+        \wrongchoice{$4^4$}
+      \correctchoice{$8^2$}
+        \wrongchoice{The value cannot be determined from the information given}
+    \end{choices}
+\end{question}
+}
+
+\element{sat-mc}{
+\begin{question}{math-t01-q15}
+    If $(ax + 2)(bx + 7) = 15x^2 + cx + 14$ for all values of $x$,
+        and $a+b=8$, what are the two possible values for $c$?
+    \begin{choices}
+        \wrongchoice{3 and 5}
+        \wrongchoice{6 and 35}
+        \wrongchoice{10 and 21}
+        \wrongchoice{31 and 41}
+    \end{choices}
+\end{question}
+}
+
+
+%% https://collegereadiness.collegeboard.org/pdf/sat-practice-test-2.pdf
+
+\element{sat-mc}{
+\begin{question}{math-t02-q01}
+    If $5x + 6 = 10$, what is the value of $10x + 3$ ?
+    \begin{choices}
+        \wrongchoice{4}
+        \wrongchoice{9}
+      \correctchoice{11}
+        \wrongchoice{20}
+    \end{choices}
+\end{question}
+}
+
+\element{sat-mc}{
+\begin{question}{math-t02-q02}
+    \begin{equation}
+        x  +  y &= 0
+        3x - 2y &= 10
+    \end{equation}
+    Which of the following orderd pairs $(x,y)$ satisfies the system of equation above?
+    \begin{choices}
+        \wrongchoice{$\left(3,-2\right)$}
+        \wrongchoice{$\left(2,-2\right)$}
+        \wrongchoice{$\left(-2,2\right)$}
+        \wrongchoice{$\left(-2,-2\right)$}
+    \end{choices}
+\end{question}
+}
+
+\element{sat-mc}{
+\begin{question}{math-t02-q03}
+    A landscaping company estimates the price of a job in dollars,
+    using the expression $60+12nh$, where $n$ is the  number of landscapers who will be working
+        and $h$ is the total number of hours the job will take using $n$ landscapers.
+   Which of the following is the best interpretation of the number 12 in the expression?
+    \begin{choices}
+        \wrongchoice{The company charges $12 per hours for each landscaper.}
+        \wrongchoice{A minimum of 12 landscapers will work on each job.}
+        \wrongchoice{the price of every job inncreases by $12 every hour.}
+        \wrongchoice{Each landscaper works 12 hours a day.}
+    \end{choices}
+\end{question}
+}
+
+\element{sat-mc}{
+\begin{question}{math-t02-q04}
+        \begin{equation}
+            9a^4 + 12a^2b^2 + 4b^4
+        \end{equation}
+        Which one of the following is equivalent to the expression shown above?
+    \begin{choices}
+        \wrongchoice{$\left( 3a^2 + 2b^2 \right)^2$}
+        \wrongchoice{$\left( 3a + 2b \right)^4$}
+        \wrongchoice{$\left( 9a^2 + 4b^2 \right)^2$}
+        \wrongchoice{$\left( 9a + 4b \right)^4$}
+    \end{choices}
+\end{question}
+}
+
+\element{sat-mc}{
+\begin{question}{math-t02-q05}
+        \begin{equation}
+            \sqrt{2k^2+17} -x = 0
+        \end{equation}
+        If $k>0$ and $x=7$ in the equation above,
+            what is the value of $k$?
+    \begin{choices}
+        \wrongchoice{2}
+        \wrongchoice{3}
+      \correctchoice{4}
+        \wrongchoice{5}
+    \end{choices}
+\end{question}
+}
+
+\element{sat-mc}{
+\begin{question}{math-t02-q06}
+    \begin{center}
+    \begin{tikzpicture}
+
+    \end{tikzpicture}
+    \end{center}
+    In the $xy$-plane above, line $l$ is parallel to the line $k$.
+    What is the value of $p$?
+    \begin{choices}
+        \wrongchoice{4}
+        \wrongchoice{5}
+        \wrongchoice{8}
+        \wrongchoice{10}
+    \end{choices}
+\end{question}
+}
+
+\element{sat-mc}{
+\begin{question}{math-t02-q07}
+    \begin{center}
+    \begin{tikzpicture}
+
+    \end{tikzpicture}
+    \end{center}
+    In the $xy$-plane above, line $l$ is parallel to the line $k$.
+    What is the value of $p$?
+    \begin{choices}
+        \wrongchoice{4}
+        \wrongchoice{5}
+        \wrongchoice{8}
+        \wrongchoice{10}
+    \end{choices}
+\end{question}
+}
+
+
+\endinput
+
+
