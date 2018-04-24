@@ -24,6 +24,8 @@
 *.synctex.gz
 
 # Testing
+test-exam.tex
+test-exam.pdf
 testing.pdf
 testing-numeric.pdf
 
