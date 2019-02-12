@@ -57,7 +57,7 @@ Regards.</email_text>
   <regroupement_copies>ALL</regroupement_copies>
   <regroupement_type>STUDENTS</regroupement_type>
   <seuil>0.5</seuil>
-  <texsrc>%PROJET/separate.tex</texsrc>
+  <texsrc>%PROJET/source-full.tex</texsrc>
   <verdict>%(ID)
 Mark: %s/%m (total score: %S/%M)</verdict>
   <verdict_q>&quot;%s/%m&quot;</verdict_q>
