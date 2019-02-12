@@ -189,6 +189,10 @@ Extract all one-dimensional (A1) or two-dimensional (A2) kinematics questions.
 $ parse-qbank -t A1,A2 qbank/AAPT/Bowl-*tex
 ```
 
+```bash
+git clone https://gitlab.com/jojo_boulix/auto-multiple-choice
+```
+
 # best-practices
 
 - Do _not_ have any MC-Project directory depend on material from another directory.
