@@ -37,6 +37,7 @@
 %% automarks: (only for separateanswersheet) cancel marks printing on subject pages
 
 \PassOptionsToPackage{
+    %answers,
     box,
     lang=english,
     insidebox,
@@ -57,7 +58,7 @@
     bottom=2.0cm,
 }
 
-\AMCrandomseed{123456}
+\AMCrandomseed{654321}
 
 %% If automarks and separateanswersheet
 \renewcommand\AMCsubjectPageTag{
@@ -119,6 +120,7 @@
 %% Acquire Student IDs
 \AMCcodeHspace=0.2em
 \AMCcodeVspace=0.2em
+%% TODO: check why this no longer works
 %\AMCcodeBoxSep=0.2em
 
 %% Answer sheet, if used
