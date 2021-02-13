@@ -1,0 +1,61 @@
+
+
+%% Conversions and Dimensional-Analysis
+%%------------------------------------------------
+\element{numericA}{
+\begin{questionmultx}{units-A-Q01}
+\luaexec{
+    %% Question
+    local Q = [[
+        A fish tank measures
+            $\string\SI{\%d}{\string\inch}\string\times
+             \string\SI{\%d}{\string\inch}\string\times
+             \string\SI{\%d}{\string\inch}$.
+        What is its volume divided by
+            \SI{1e3}{\kilo\string\centi\string\meter\string\cubed}?
+        ($\string\SI{1}{\string\inch} = \string\SI{2.54}{\string\centi\string\meter}$)
+    ]]
+    %% Random Values
+    local l1 = math.random(10,20)
+    local l2 = math.random(10,20)
+    local l3 = math.random(10,20)
+    local ans = l1 * l2 * l3 * 2.54 * 2.54 * 2.54 / 1e3
+    %% Print Question
+    tex.print( string.format(Q, l1, l2, l3) )
+    %% Print AMCnumeric
+    options = [[ digits=5, decimals=2, sign=True, vertical=false, approx=1 ]]
+    tex.print( BeginCenter )
+    tex.print( string.format(AMCnumeric, ans, options ) )
+    tex.print( EndCenter )
+}
+\end{questionmultx}
+}
+
+
+\element{numericA}{
+\begin{questionmultx}{units-A-Q04}
+\luaexec{
+    %% Question
+    local Q = [[
+        A \string\SI{\%d}{\string\inch\string\cubed}
+            tank can be filled in \string\SI{\%f}{\string\hour}.
+        What is the fill rate divided by
+            \SI{ }{\string\foot\string\cubed\string\per\string\minute}?
+    ]]
+    %% Values
+    local vol = math.random(500,2000)
+    local tim = 1 + (10 * math.random())
+    local ans = vol / tim
+    %% Print Question
+    tex.print( string.format(Q, vol, tim) )
+    %% Print AMCnumeric
+    options = [[ digits=5, decimals=2, sign=True, vertical=false, approx=1 ]]
+    tex.print( BeginCenter )
+    tex.print( string.format(AMCnumeric, ans, options ) )
+    tex.print( EndCenter )
+}
+\end{questionmultx}
+}
+
+\endinput
+

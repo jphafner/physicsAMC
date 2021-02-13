@@ -1,0 +1,114 @@
+
+%% this section contains 26 problems
+
+%% SIunitx Customization
+%%------------------------------
+\sisetup{
+    fraction-function = \sfrac,
+}
+
+
+%% Ticker Tape
+%%--------------------
+
+\element{ticker}{
+\begin{question}{ticker-Q31}
+    The position of an object at equal time intervals is shown below:
+    %% TICKER TAPE
+    Which graph below correctly represents position versus time for this object?
+    %% PGFPLOTS GRAPHS
+\end{question}
+}
+
+\element{ticker}{
+\begin{question}{ticker-Q31}
+    Five motion diagrams in which points represent the positions
+        of an object at equal time intervals are shown below.
+    Which statement is correct?
+    %% BUNCH OF DIAGRAMS THEN OPTIONS
+    a.  A has the greatest speed and the greatest acceleration.
+    b.  C has decreasing speed.
+    c.  D slows down and then speeds up.
+    d.  D speeds up and then slows down.
+    e.  E has a greater speed than A
+\end{question}
+}
+
+
+%% TODO
+\element{ticker}{
+\begin{question}{ticker-Q31}
+    The position of an object at equal time intervals is shown below.
+
+    Which graph below best represents the position-time graph for this object?
+    \begin{multicols}{2}
+        %\AMCBoxedAnswers
+        \begin{choices}
+        \AMCboxDimensions{down=-1.5em}
+          \correctchoice{
+                \begin{tikzpicture}
+                    \begin{axis}[
+                        myaxis,
+                        xlabel={$t$},
+                        ylabel={$x$},
+                        xmin=0,xmax=10,
+                        ymin=0,ymax=10,
+                        width=\columnwidth,
+                        %height=0.618\columnwidth,
+                    ]
+                    \addplot[mystyle,domain=0:10]{x};
+                    \end{axis}
+                \end{tikzpicture}
+            }
+            \wrongchoice{
+                \begin{tikzpicture}
+                    \begin{axis}[
+                        myaxis,
+                        xlabel={$t$},
+                        ylabel={$x$},
+                        xmin=0,xmax=10,
+                        ymin=0,ymax=10,
+                        width=\columnwidth,
+                        %height=0.618\columnwidth,
+                    ]
+                    \addplot[mystyle,domain=0:10]{10-x};
+                    \end{axis}
+                \end{tikzpicture}
+            }
+            \wrongchoice{
+                \begin{tikzpicture}
+                    \begin{axis}[
+                        myaxis,
+                        xlabel={$t$},
+                        ylabel={$x$},
+                        xmin=0,xmax=10,
+                        ymin=0,ymax=10,
+                        width=\columnwidth,
+                        %height=0.618\columnwidth,
+                    ]
+                    %\addplot[mystyle,domain=0:10]{5};
+                    \addplot[mystyle,domain=0:10]{10 - 0.1*x*x};
+                    \end{axis}
+                \end{tikzpicture}
+            }
+            \wrongchoice{
+                \begin{tikzpicture}
+                    \begin{axis}[
+                        myaxis,
+                        xlabel={$t$},
+                        ylabel={$x$},
+                        xmin=0,xmax=10,
+                        ymin=-5,ymax=5,
+                        width=\columnwidth,
+                        %height=0.618\columnwidth,
+                    ]
+                    \addplot[mystyle,domain=0:10,smooth]{3*sin(deg(x))};
+                    \end{axis}
+                \end{tikzpicture}
+            }
+        \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+

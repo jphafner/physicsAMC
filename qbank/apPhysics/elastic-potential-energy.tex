@@ -1,0 +1,370 @@
+
+
+%% AP Style MC Question Archive
+%%----------------------------------------
+
+
+%% Elastic Potential energy
+%%----------------------------------------
+\element{ap}{
+\begin{question}{elastic-energy-q01}
+    Five identical masses of mass $M$ are suspended by a spring stretched a distance of $L$.
+    If three of the masses are removed,
+        what is the potential energy stored in the spring?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\dfrac{4}{25} MgL$}
+        \wrongchoice{$\dfrac{2}{5} MgL^2$}
+      \correctchoice{$\dfrac{5}{2} MgL$}
+        \wrongchoice{$\dfrac{4}{25} MgL^2$}
+        \wrongchoice{$5 MgL$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{ap}{
+\begin{question}{elastic-energy-q02}
+    A \SI{1.0}{\kilo\gram} object is suspended from a spring with constant $k=\SI{16}{\newton\per\meter}$.
+    The mass is pulled \SI{0.25}{\meter} downward from its equilibrium position and allowed to oscillate.
+    What is the maximum kinetic energy of the object?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{0.25}{\joule}}
+      \correctchoice{\SI{0.50}{\joule}}
+        \wrongchoice{\SI{1.0}{\joule}}
+        \wrongchoice{\SI{2.0}{\joule}}
+        \wrongchoice{\SI{4.0}{\joule}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{ap}{
+\begin{question}{elastic-energy-q03}
+    Which graph below best represents the relationship between the potential energy stored in a spring ($PE$) and the change in the length of the spring from its equilibrium position ($X$)?
+    \begin{multicols}{2}
+    \begin{choices}
+        \AMCboxDimensions{down=-1.5em}
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=middle,
+                    axis line style={->},
+                    xlabel={$X$},
+                    x label style={
+                        at={(current axis.right of origin)},
+                        anchor=west,
+                    },
+                    xtick=\empty,
+                    ylabel={$PE$},
+                    y label style={
+                        at={(current axis.above origin)},
+                        anchor=south,
+                        rotate=270,
+                    },
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=0,ymax=11,
+                    width=0.95\columnwidth,
+                    very thin,
+                ]
+                \addplot[line width=1pt,domain=0:10]{8};
+                \end{axis}
+            \end{tikzpicture}
+        }
+        %% ANS is B
+        \correctchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=middle,
+                    axis line style={->},
+                    xlabel={$X$},
+                    x label style={
+                        at={(current axis.right of origin)},
+                        anchor=west,
+                    },
+                    xtick=\empty,
+                    ylabel={$PE$},
+                    y label style={
+                        at={(current axis.above origin)},
+                        anchor=south,
+                        rotate=270,
+                    },
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=0,ymax=11,
+                    width=0.95\columnwidth,
+                    very thin,
+                ]
+                \addplot[line width=1pt,domain=0:10]{0.1*x*x};
+                \end{axis}
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=middle,
+                    axis line style={->},
+                    xlabel={$X$},
+                    x label style={
+                        at={(current axis.right of origin)},
+                        anchor=west,
+                    },
+                    xtick=\empty,
+                    ylabel={$PE$},
+                    y label style={
+                        at={(current axis.above origin)},
+                        anchor=south,
+                        rotate=270,
+                    },
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=0,ymax=11,
+                    width=0.95\columnwidth,
+                    very thin,
+                ]
+                \addplot[line width=1pt,domain=0:10]{x};
+                \end{axis}
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=middle,
+                    axis line style={->},
+                    xlabel={$X$},
+                    x label style={
+                        at={(current axis.right of origin)},
+                        anchor=west,
+                    },
+                    xtick=\empty,
+                    ylabel={$PE$},
+                    y label style={
+                        at={(current axis.above origin)},
+                        anchor=south,
+                        rotate=270,
+                    },
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=0,ymax=11,
+                    width=0.95\columnwidth,
+                    very thin,
+                ]
+                \addplot[line width=1pt,domain=0:10]{10/x};
+                \end{axis}
+            \end{tikzpicture}
+        }
+        %\wrongchoice{
+        %    \begin{tikzpicture}
+        %        \draw[white] (-1.5,2) rectangle (1.5,2);
+        %        \node[anchor=center] at (0,0) {None of the provided};
+        %    \end{tikzpicture}
+        %}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{ap}{
+\begin{question}{elastic-energy-q04}
+    Which graph below best represents the relationship between the potential energy stored in a spring ($PE$) and the force required to keep the spring in equilibrium ($F$)?
+    \begin{multicols}{2}
+    \begin{choices}
+        \AMCboxDimensions{down=-1.5em}
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=middle,
+                    axis line style={->},
+                    xlabel={$F$},
+                    x label style={
+                        at={(current axis.right of origin)},
+                        anchor=west,
+                    },
+                    xtick=\empty,
+                    ylabel={$PE$},
+                    y label style={
+                        at={(current axis.above origin)},
+                        anchor=south,
+                        rotate=270,
+                    },
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=0,ymax=11,
+                    width=0.95\columnwidth,
+                    very thin,
+                ]
+                \addplot[line width=1pt,domain=0:10]{8};
+                \end{axis}
+            \end{tikzpicture}
+        }
+        %% ANS is B
+        \correctchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=middle,
+                    axis line style={->},
+                    xlabel={$F$},
+                    x label style={
+                        at={(current axis.right of origin)},
+                        anchor=west,
+                    },
+                    xtick=\empty,
+                    ylabel={$PE$},
+                    y label style={
+                        at={(current axis.above origin)},
+                        anchor=south,
+                        rotate=270,
+                    },
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=0,ymax=11,
+                    width=0.95\columnwidth,
+                    very thin,
+                ]
+                \addplot[line width=1pt,domain=0:10]{0.1*x*x};
+                \end{axis}
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=middle,
+                    axis line style={->},
+                    xlabel={$F$},
+                    x label style={
+                        at={(current axis.right of origin)},
+                        anchor=west,
+                    },
+                    xtick=\empty,
+                    ylabel={$PE$},
+                    y label style={
+                        at={(current axis.above origin)},
+                        anchor=south,
+                        rotate=270,
+                    },
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=0,ymax=11,
+                    width=0.95\columnwidth,
+                    very thin,
+                ]
+                \addplot[line width=1pt,domain=0:10]{x};
+                \end{axis}
+            \end{tikzpicture}
+        }
+        \wrongchoice{
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis y line=left,
+                    axis x line=middle,
+                    axis line style={->},
+                    xlabel={$F$},
+                    x label style={
+                        at={(current axis.right of origin)},
+                        anchor=west,
+                    },
+                    xtick=\empty,
+                    ylabel={$PE$},
+                    y label style={
+                        at={(current axis.above origin)},
+                        anchor=south,
+                        rotate=270,
+                    },
+                    ytick=\empty,
+                    xmin=0,xmax=11,
+                    ymin=0,ymax=11,
+                    width=0.95\columnwidth,
+                    very thin,
+                ]
+                \addplot[line width=1pt,domain=0:10]{10/x};
+                \end{axis}
+            \end{tikzpicture}
+        }
+        %\wrongchoice{
+        %    \begin{tikzpicture}
+        %        \draw[white] (-1.5,2) rectangle (1.5,2);
+        %        \node[anchor=center] at (0,0) {None of the provided};
+        %    \end{tikzpicture}
+        %}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{ap}{
+\begin{question}{elastic-energy-q05}
+    A block of mass \SI{5.0}{\kilo\gram} is hung from a vertical spring stretching it \SI{0.40}{\meter}.
+    The amount of energy stored in the spring is most nearly
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{0.40}{\joule}}
+        \wrongchoice{\SI{0.80}{\joule}}
+        \wrongchoice{\SI{8.0}{\joule}}
+        \wrongchoice{\SI{10}{\joule}}
+      \correctchoice{\SI{20}{\joule}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{ap}{
+\begin{question}{elastic-energy-q06}
+    %% changed to reflect gravity
+    Which of the following is true of the energy of a spring-mass system in a graviational field?
+    \begin{choices}
+        \wrongchoice{The total energy is greatest when the velocity is greatest.}
+        \wrongchoice{The total energy is greatest when the displacement is greatest.}
+        \wrongchoice{The potential energy is greatest when the displacement is least.}
+        \wrongchoice{The kinetic energy is greatest when the potential energy is least.}
+      \correctchoice{The total energy varies based on the position of the mass.}
+    \end{choices}
+\end{question}
+}
+
+\element{ap}{
+\begin{question}{elastic-energy-q07}
+    A spring of constant \SI{50}{\newton\per\meter} is used to launch a mass across a rough surface.
+    The spring is compressed \SI{0.05}{\meter} and released.
+    How much work is done by friction in order to bring the mass to rest?
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{\SI{0.063}{\joule}}
+        \wrongchoice{\SI{0.125}{\joule}}
+        \wrongchoice{\SI{1.25}{\joule}}
+        \wrongchoice{\SI{2.5}{\joule}}
+        \wrongchoice{\SI{100}{\joule}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{ap}{
+\begin{question}{elastic-energy-q08}
+    A \SI{3}{\kilo\gram} object is dropped from a height of \SI{4}{\meter} onto a spring.
+    The maximum compression of the spring is \SI{0.5}{\meter}.
+    What is the spring constant?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{120}{\newton\per\meter}}
+        \wrongchoice{\SI{240}{\newton\per\meter}}
+        \wrongchoice{\SI{480}{\newton\per\meter}}
+        \wrongchoice{\SI{600}{\newton\per\meter}}
+      \correctchoice{\SI{960}{\newton\per\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+\endinput
+
+

@@ -1,0 +1,1241 @@
+
+%%--------------------------------------------------
+%% Halliday: Fundamentals of Physics
+%%--------------------------------------------------
+
+
+%% Chapter 32: Maxwell's Equations;
+%%              Magnetism and Matter
+%%--------------------------------------------------
+
+
+%% Learning Objectives
+%%--------------------------------------------------
+
+%% 32.01: Identify that the simplest magnetic structure is a magnetic dipole.
+%% 32.02: Calculate the magnetic flux  through a surface by integrating the dot product of the magnetic field vector $\vec{B}$ and the area vector dA (for patch elements) over the surface.
+%% 32.03: Identify that the net magnetic flux through a Gaussian surface (which is a closed surface) is zero.
+
+
+%% Halliday Multiple Choice Questions
+%%--------------------------------------------------
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q01}
+    Gauss' law for magnetism:
+    \begin{choices}
+        \wrongchoice{can be used to find $\vec{B}$ due to given currents provided there is enough symmetry}
+        \wrongchoice{is false because there are no magnetic poles}
+        \wrongchoice{can be used with open surfaces because there are no magnetic poles}
+        \wrongchoice{contradicts Faraday's law because one says $\Phi_B=0$ and the other says $\varepsilon=-\dfrac{\mathrm{d}\Phi_B}{\mathrm{d}t}$}
+      \correctchoice{none of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q02}
+    Gauss' law for magnetism tells us:
+    \begin{choices}
+        \wrongchoice{the net charge in any given volume}
+        \wrongchoice{that the line integral of a magnetic field around any closed loop must vanish}
+        \wrongchoice{the magnetic field of a current element}
+      \correctchoice{that magnetic monopoles do not exist}
+        \wrongchoice{charges must be moving to produce magnetic fields}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q03}
+    The statement that magnetic field lines form closed loops is a direct consequence of:
+    \begin{choices}
+        \wrongchoice{Faraday's law}
+        \wrongchoice{Ampere's law}
+        \wrongchoice{Gauss' law for electricity}
+      \correctchoice{Gauss' law for magnetism}
+        \wrongchoice{the Lorentz force}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q04}
+    A magnetic field parallel to the $x$ axis with a magnitude that decreases with increasing $x$ but does not change with $y$ and $z$ is impossible according to:
+    \begin{choices}
+        \wrongchoice{Faraday's law}
+        \wrongchoice{Ampere's law}
+        \wrongchoice{Gauss' law for electricity}
+      \correctchoice{Gauss' law for magnetism}
+        \wrongchoice{Newton's second law}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q05}
+    According to Gauss' law for magnetism, magnetic field lines:
+    \begin{choices}
+      \correctchoice{form closed loops}
+        \wrongchoice{start at south poles and end at north poles}
+        \wrongchoice{start at north poles and end at south poles}
+        \wrongchoice{start at both north and south poles and end at infinity}
+        \wrongchoice{do not exist}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q06}
+    The magnetic field lines due to an ordinary bar magnet:
+    \begin{choices}
+        \wrongchoice{form closed curves}
+        \wrongchoice{cross one another near the poles}
+        \wrongchoice{are more numerous near the N pole than near the S pole}
+        \wrongchoice{do not exist inside the magnet}
+        \correctchoice{none of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q07}
+    Four closed surfaces are shown. 
+    The areas $A_{top}$ and $A_{bot}$ of the top and bottom faces and the magnitudes $B_{top}$ and $B_{bot}$ of the uniform magnetic fields through the top and bottom faces are given.
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE:
+    \end{tikzpicture}
+    \end{center}
+    The fields are perpendicular to the faces and are either inward or outward. 
+    Rank the surfaces according to the magnitude of the magnetic flux through the curved sides,
+        least to greatest.
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{1, 2, 3, 4}
+      \correctchoice{3, 4, 1, 2}
+        \wrongchoice{1, 2, 4, 3}
+        \wrongchoice{4, 3, 2, 1}
+        \wrongchoice{2, 1, 4, 3}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q08}
+    Consider the four Maxwell equations:
+    \begin{enumerate}
+        \item $\oint\,\vec{E}\cdot\mathrm{d}\vec{A} = \dfrac{q}{\epsilon_0}$
+        \item $\oint\,\vec{B}\cdot\mathrm{d}\vec{A} = 0$
+        \item $\oint\,\vec{E}\cdot\mathrm{d}\vec{s} = -\dfrac{\mathrm{d}\Phi_B}{\mathrm{d}t}$
+        \item $\oint\,\vec{B}\cdot\mathrm{d}\vec{s} = \mu_0 i + \mu_0 \epsilon_0 \dfrac{\mathrm{d}\Phi_E}{\mathrm{d}t}$
+    \end{enumerate}
+    Which of these must be modified if magnetic poles are discovered?
+    \begin{multicols}{2}
+    \begin{choices}
+        %% NOTE: questionmult?
+        \wrongchoice{Only 1}
+        \wrongchoice{Only 2}
+      \correctchoice{Only 2 and 3}
+        \wrongchoice{Only 3 and 4}
+        \wrongchoice{Only 2, 3, and 4}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q09}
+    One of the Maxwell equations begins with $\oint\,\vec{B}\cdot\mathrm{d}\vec{s} = \ldots$
+    The symbol ``$\mathrm{d}\vec{s}$'' means:
+    \begin{choices}
+        \wrongchoice{an infinitesimal displacement of a charge}
+        \wrongchoice{an infinitesimal displacement of a magnetic pole}
+        \wrongchoice{an infinitesimal inductance}
+        \wrongchoice{an infinitesimal surface area}
+      \correctchoice{none of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q10}
+    One of the Maxwell equations begins with $\oint\,\vec{E}\cdot\mathrm{d}\vec{s} = \ldots$.
+    The ``\tikz \draw (0,0) circle (2pt);'' symbol in the integral sign means:
+    \begin{choices}
+        \wrongchoice{the same as the subscript in $\mu_0$}
+        \wrongchoice{integrate clockwise around the path}
+        \wrongchoice{integrate counterclockwise around the path}
+      \correctchoice{integrate around a closed path}
+        \wrongchoice{integrate over a closed surface}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q11}
+    One of the Maxwell equations begins with $\oint\,\vec{B}\cdot\mathrm{d}\vec{A} = \ldots$.
+    The ``\tikz \draw (0,0) circle (2pt);'' symbol in the integral sign means:
+    \begin{choices}
+        \wrongchoice{the same as the subscript in $\mu_0$}
+        \wrongchoice{integrate clockwise around the path}
+        \wrongchoice{integrate counterclockwise around the path}
+        \wrongchoice{integrate around a closed path}
+      \correctchoice{integrate over a closed surface}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q12}
+    One of the crucial facts upon which the Maxwell equations are based is:
+    \begin{choices}
+        \wrongchoice{the numerical value of the electron charge}
+        \wrongchoice{charge is quantized}
+        \wrongchoice{the numerical value of the charge/mass ratio of the electron}
+        \wrongchoice{there are three types of magnetic materials}
+      \correctchoice{none of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q13}
+    Two of Maxwell's equations contain a path integral on the left side and an area integral on the right. 
+    For them:
+    \begin{choices}
+        \wrongchoice{the path must pierce the area}
+        \wrongchoice{the path must be well-separated from the area}
+        \wrongchoice{the path must be along a field line and the area must be perpendicular to the field line}
+      \correctchoice{the path must be the boundary of the area}
+        \wrongchoice{the path must lie in the area, away from its boundary}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q14}
+    Two of Maxwell's equations contain an integral over a closed surface. 
+    For them the infinitesimal vector area $\mathrm{d}\vec{A}$ is always:
+    \begin{choices}
+        \wrongchoice{tangent to the surface}
+      \correctchoice{perpendicular to the surface and pointing outward}
+        \wrongchoice{perpendicular to the surface and pointing inward}
+        \wrongchoice{tangent to a field line}
+        \wrongchoice{perpendicular to a field line}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q15}
+    Two of Maxwell's equations contain a path integral on the left side and an area integral on the right.
+    The directions of the infinitesimal path element ds and infinitesimal area element $\mathrm{d}\vec{A}$ are:
+    \begin{choices}
+        \wrongchoice{always in the same direction}
+        \wrongchoice{always in opposite directions}
+        \wrongchoice{always perpendicular to each other}
+        \wrongchoice{never perpendicular to each other}
+      \correctchoice{none of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q16}
+    Two of Maxwell's equations contain a path integral on the left side and an area integral on the right.
+    Suppose the area is the surface of a piece of paper at which you are looking and $\mathrm{d}\vec{A}$ is chosen to point toward you.
+    Then, the path integral is:
+    \begin{choices}
+        \wrongchoice{clockwise around the circumference of the paper}
+      \correctchoice{counterclockwise around the circumference of the paper}
+        \wrongchoice{from left to right}
+        \wrongchoice{from right to left}
+        \wrongchoice{from top to bottom}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q17}
+    Which of the following equations can be used,
+        along with a symmetry argument,
+        to calculate the electric field of a point charge?
+    \begin{choices}
+      \correctchoice{$\oint\,\vec{E}\cdot\mathrm{d}\vec{A} = \dfrac{q}{\epsilon_0}$}
+        \wrongchoice{$\oint\,\vec{B}\cdot\mathrm{d}\vec{A} = 0$}
+        \wrongchoice{$\oint\,\vec{E}\cdot\mathrm{d}\vec{s} = -\dfrac{\mathrm{d}\Phi_B}{\mathrm{d}t}$}
+        \wrongchoice{$\oint\,\vec{B}\cdot\mathrm{d}\vec{s} = \mu_0 i + \mu_0 \epsilon_0\dfrac{\mathrm{d}\Phi_E}{\mathrm{d}t}$}
+        \wrongchoice{None of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q18}
+    Which of the following equations can be used, along with a symmetry argument,
+        to calculate the magnetic field of a long straight wire carrying current?
+    \begin{choices}
+        \wrongchoice{$\oint\,\vec{E}\cdot\mathrm{d}\vec{A} = \dfrac{q}{\epsilon_0}$}
+        \wrongchoice{$\oint\,\vec{B}\cdot\mathrm{d}\vec{A} = 0$}
+        \wrongchoice{$\oint\,\vec{E}\cdot\mathrm{d}\vec{s} = -\dfrac{\mathrm{d}\Phi_B}{\mathrm{d}t}$}
+      \correctchoice{$\oint\,\vec{B}\cdot\mathrm{d}\vec{s} = \mu_0 i + \mu_0 \epsilon_0\dfrac{\mathrm{d}\Phi_E}{\mathrm{d}t}$}
+        \wrongchoice{None of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q19}
+    Which of the following equations can be used to show that magnetic field lines form closed loops?
+    \begin{choices}
+        \wrongchoice{$\oint\,\vec{E}\cdot\mathrm{d}\vec{A} = \dfrac{q}{\epsilon_0}$}
+      \correctchoice{$\oint\,\vec{B}\cdot\mathrm{d}\vec{A} = 0$}
+        \wrongchoice{$\oint\,\vec{E}\cdot\mathrm{d}\vec{s} = -\dfrac{\mathrm{d}\Phi_B}{\mathrm{d}t}$}
+        \wrongchoice{$\oint\,\vec{B}\cdot\mathrm{d}\vec{s} = \mu_0 i + \mu_0 \epsilon_0\dfrac{\mathrm{d}\Phi_E}{\mathrm{d}t}$}
+        \wrongchoice{None of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q20}
+    Which of the following equations, along with a symmetry argument,
+        can be used to calculate the magnetic field produced by a uniform time-varying electric field?
+    \begin{choices}
+        \wrongchoice{$\oint\,\vec{E}\cdot\mathrm{d}\vec{A} = \dfrac{q}{\epsilon_0}$}
+        \wrongchoice{$\oint\,\vec{B}\cdot\mathrm{d}\vec{A} = 0$}
+        \wrongchoice{$\oint\,\vec{E}\cdot\mathrm{d}\vec{s} = -\dfrac{\mathrm{d}\Phi_B}{\mathrm{d}t}$}
+      \correctchoice{$\oint\,\vec{B}\cdot\mathrm{d}\vec{s} = \mu_0 i + \mu_0 \epsilon_0\dfrac{\mathrm{d}\Phi_E}{\mathrm{d}t}$}
+        \wrongchoice{None of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q21}
+    Which of the following equations, along with a symmetry argument,
+        can be used to calculate the electric field produced by a uniform time-varying magnetic field?
+    \begin{choices}
+        \wrongchoice{$\oint\,\vec{E}\cdot\mathrm{d}\vec{A} = \dfrac{q}{\epsilon_0}$}
+        \wrongchoice{$\oint\,\vec{B}\cdot\mathrm{d}\vec{A} = 0$}
+      \correctchoice{$\oint\,\vec{E}\cdot\mathrm{d}\vec{s} = -\dfrac{\mathrm{d}\Phi_B}{\mathrm{d}t}$}
+        \wrongchoice{$\oint\,\vec{B}\cdot\mathrm{d}\vec{s} = \mu_0 i + \mu_0 \epsilon_0\dfrac{\mathrm{d}\Phi_E}{\mathrm{d}t}$}
+        \wrongchoice{None of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q22}
+    Which of the following equations, along with a symmetry argument,
+        can be used to calculate the magnetic field between the plates of a charging parallel plate capacitor with circular plates?
+    \begin{choices}
+        \wrongchoice{$\oint\,\vec{E}\cdot\mathrm{d}\vec{A} = \dfrac{q}{\epsilon_0}$}
+        \wrongchoice{$\oint\,\vec{B}\cdot\mathrm{d}\vec{A} = 0$}
+        \wrongchoice{$\oint\,\vec{E}\cdot\mathrm{d}\vec{s} = -\dfrac{\mathrm{d}\Phi_B}{\mathrm{d}t}$}
+      \correctchoice{$\oint\,\vec{B}\cdot\mathrm{d}\vec{s} = \mu_0 i + \mu_0 \epsilon_0\dfrac{\mathrm{d}\Phi_E}{\mathrm{d}t}$}
+        \wrongchoice{None of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q23}
+    Maxwell's equations, along with an appropriate symmetry argument,
+        can be used to calculate:
+    \begin{choices}
+        \wrongchoice{the electric force on a given charge}
+        \wrongchoice{the magnetic force on a given moving charge}
+        \wrongchoice{the flux of a given electric field}
+        \wrongchoice{the flux of a given magnetic field}
+      \correctchoice{none of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q24}
+    The polarity of an unmarked magnet can be determined using:
+    \begin{choices}
+        \wrongchoice{a charged glass rod}
+      \correctchoice{a compass}
+        \wrongchoice{an electroscope}
+        \wrongchoice{another unmarked magnet}
+        \wrongchoice{iron filings}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q25}
+    A bar magnet is placed vertically with its S pole up and its N pole down. 
+    Its $\vec{B}$ field at its center is:
+    \begin{choices}
+        \wrongchoice{zero}
+      \correctchoice{down}
+        \wrongchoice{up due to the weight of the magnet}
+        \wrongchoice{horizontal}
+        \wrongchoice{slightly below the horizontal}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q26}
+    A bar magnet is broken in half.
+    Each half is broken in half again, etc. 
+    The observation is that each piece has both a north and south pole. 
+    This is usually explained by:
+    \begin{choices}
+      \correctchoice{Ampere's theory that all magnetic phenomena result from electric currents}
+        \wrongchoice{our inability to divide the magnet into small enough pieces}
+        \wrongchoice{Coulomb's law}
+        \wrongchoice{Lenz' law}
+        \wrongchoice{conservation of charge.}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q27}
+    A small bar magnet is suspended horizontally by a string. 
+    When placed in a uniform horizontal magnetic field, it will:
+    \begin{choices}
+        \wrongchoice{translate in the direction of $\vec{B}$}
+        \wrongchoice{translate in the opposite direction of $\vec{B}$}
+        \wrongchoice{rotate so as to be at right angles to $\vec{B}$}
+        \wrongchoice{rotate so as to be vertical}
+      \correctchoice{none of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q28}
+    Magnetic dipole $X$ is fixed and dipole $Y$ is free to move. 
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: tikz
+    \end{tikzpicture}
+    \end{center}
+    Dipole $Y$ will initially:
+    \begin{choices}
+      \correctchoice{move toward $X$ but not rotate}
+        \wrongchoice{move away from $X$ but not rotate}
+        \wrongchoice{move toward $X$ and rotate}
+        \wrongchoice{move away from $X$ and rotate}
+        \wrongchoice{rotate but not translate}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q29}
+    Magnetic dipole $X$ is fixed and dipole $Y$ is free to move. 
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: tikz
+    \end{tikzpicture}
+    \end{center}
+    Dipole $Y$ will initially:
+    \begin{choices}
+        \wrongchoice{move toward $X$ but not rotate}
+        \wrongchoice{move away from $X$ but not rotate}
+        \wrongchoice{move toward $X$ and rotate}
+        \wrongchoice{move away from $X$ and rotate}
+      \correctchoice{rotate but not move toward or away from $X$}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q30}
+    The diagram shows the angular momentum vectors of two electrons and two protons in the same external magnetic field. 
+    The field points upward in the diagram. 
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: tikz
+    \end{tikzpicture}
+    \end{center}
+    Rank the situations according to the potential energy,
+        least to greatest.
+    \begin{choices}
+        \wrongchoice{1 and 3 tie, then 2 and 4 tie}
+      \correctchoice{2 and 3 tie, then 1 and 4 tie}
+        \wrongchoice{1 and 2 tie, then 3 and 4 tie}
+        \wrongchoice{3 and 4 tie, then 1 and 2 tie}
+        \wrongchoice{all tie}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q31}
+    The energy of a magnetic dipole in an external magnetic field is least when:
+    \begin{choices}
+      \correctchoice{the dipole moment is parallel to the field}
+        \wrongchoice{the dipole moment is antiparallel to the field}
+        \wrongchoice{the dipole moment is perpendicular to the field}
+        \wrongchoice{none of the provided (the same energy is associated with all orientations)}
+        \wrongchoice{none of the proivded (no energy is associated with the dipole-field interaction)}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q32}
+    The magnetic properties of materials stem chiefly from:
+    \begin{choices}
+        \wrongchoice{particles with north poles}
+        \wrongchoice{particles with south poles}
+        \wrongchoice{motions of protons within nuclei}
+        \wrongchoice{proton spin angular momentum}
+      \correctchoice{electron magnetic dipole moments}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q33}
+    Magnetization is:
+    \begin{choices}
+        \wrongchoice{the current density in an object}
+        \wrongchoice{the charge density of moving charges in an object}
+        \wrongchoice{the magnetic dipole moment of an object}
+      \correctchoice{the magnetic dipole moment per unit volume of an object}
+        \wrongchoice{the magnetic field per unit volume produced by an object}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q34}
+    The units of magnetization are:
+    \begin{choices}
+        \wrongchoice{ampere (\si{\ampere})}
+        \wrongchoice{ampere meter (\si{\ampere\meter})}
+        \wrongchoice{ampere meter squared (\si{\ampere\meter\squared})}
+      \correctchoice{ampere per meter (\si{\ampere\per\meter})}
+        \wrongchoice{ampere per meter squared (\si{\ampere\per\meter\squared})}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q35}
+    If $\vec{L}$ is the orbital angular momentum of an electron,
+        the magnetic dipole moment associated with its orbital motion:
+    \begin{choices}
+        \wrongchoice{is in the direction of $\vec{L}$ and has magnitude proportional to $L$}
+      \correctchoice{is opposite to the direction of $\vec{L}$ and has magnitude proportional to $L$}
+        \wrongchoice{is in the direction of $\vec{L}$ and has magnitude proportional to $L^2$}
+        \wrongchoice{is opposite to the direction of $\vec{L}$ and has magnitude proportional to $L^2$}
+        \wrongchoice{does not depend on $\vec{L}$}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q36}
+    If an electron has an orbital angular momentum with magnitude $L$ the magnitude of the orbital contribution to its magnetic dipole moment is given by:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\dfrac{eL}{m}$}
+      \correctchoice{$\dfrac{eL}{2m}$}
+        \wrongchoice{$\dfrac{2eL}{m}$}
+        \wrongchoice{$\dfrac{mL}{e}$}
+        \wrongchoice{$\dfrac{mL}{2}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q37}
+    An electron traveling with speed $v$ around a circle of radius $r$ is equivalent to a current of:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\dfrac{evr}{2}$}
+        \wrongchoice{$\dfrac{ev}{r}$}
+      \correctchoice{$\dfrac{ev}{2\pi r}$}
+        \wrongchoice{$\dfrac{2\pi er}{v}$}
+        \wrongchoice{$\dfrac{2\pi ev}{r}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q38}
+    The intrinsic magnetic dipole moments of protons and neutrons are much less than that of an electron because:
+    \begin{choices}
+      \correctchoice{their masses are greater}
+        \wrongchoice{their angular momenta are much less}
+        \wrongchoice{their angular momenta are much greater}
+        \wrongchoice{their charges are much less}
+        \wrongchoice{their radii are much less}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q39}
+    The spin magnetic dipole moment of an electron:
+    \begin{choices}
+        \wrongchoice{is in the same direction as the spin angular momentum}
+        \wrongchoice{is zero}
+        \wrongchoice{has a magnitude that depends on the orbital angular momentum}
+        \wrongchoice{has a magnitude that depends on the applied magnetic field}
+        \wrongchoice{none of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q40}
+    If an electron has zero orbital angular momentum,
+        the magnitude of its magnetic dipole moment equals:
+    \begin{choices}
+        \wrongchoice{zero}
+        \wrongchoice{half the Bohr magneton}
+        \wrongchoice{a Bohr magneton}
+        \wrongchoice{twice a Bohr magneton}
+        \wrongchoice{none of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q41}
+    The magnetic dipole moment of an atomic electron is typically:
+    \begin{choices}
+        \wrongchoice{much less than a Bohr magneton}
+      \correctchoice{a few Bohr magnetons}
+        \wrongchoice{much greater than a Bohr magneton}
+        \wrongchoice{much greater or much less than a Bohr magneton, depending on the atom}
+        \wrongchoice{not related to the value of the Bohr magneton}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q42}
+    The magnitude of the Bohr magneton is about:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{e-15}{\joule\per\tesla}}
+        \wrongchoice{\SI{e-19}{\joule\per\tesla}}
+      \correctchoice{\SI{e-23}{\joule\per\tesla}}
+        \wrongchoice{\SI{e-27}{\joule\per\tesla}}
+        \wrongchoice{\SI{e-31}{\joule\per\tesla}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q43}
+    The molecular theory of magnetism can explain each of the following \emph{except}:
+    \begin{choices}
+      \correctchoice{an N pole attracts a S pole}
+        \wrongchoice{stroking an iron bar with a magnet will magnetize the bar}
+        \wrongchoice{when a bar magnet is broken in two, each piece is a bar magnet}
+        \wrongchoice{heating tends to destroy magnetization}
+        \wrongchoice{hammering tends to destroy magnetization}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q44}
+    Lenz' law can explain:
+    \begin{choices}
+        \wrongchoice{paramagnetism only}
+      \correctchoice{diamagnetism only}
+        \wrongchoice{ferromagnetism only}
+        \wrongchoice{only two of the three types of magnetism}
+        \wrongchoice{all three of the types of magnetism}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q45}
+    The diagram shows two small diamagnetic spheres,
+        one near each end of a bar magnet. 
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: tikz
+    \end{tikzpicture}
+    \end{center}
+    Which of the following statements is true?
+    \begin{choices}
+        \wrongchoice{The force on 1 is toward the magnet and the force on 2 is away from the magnet}
+        \wrongchoice{The force on 1 is away from the magnet and the force on 2 is away from the magnet}
+        \wrongchoice{The forces on 1 and 2 are both toward the magnet}
+      \correctchoice{The forces on 1 and 2 are both away from the magnet}
+        \wrongchoice{The magnet does not exert a force on either sphere}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q46}
+    Paramagnetism is closely associated with:
+    \begin{choices}
+      \correctchoice{the tendency of electron dipole moments to align with an applied magnetic field}
+        \wrongchoice{the tendency of electron dipole moments to align opposite to an applied magnetic field}
+        \wrongchoice{the exchange force between electrons}
+        \wrongchoice{the force exerted by electron dipole moments on each other}
+        \wrongchoice{the torque exerted by electron dipole moments on each other}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q47}
+    The diagram shows two small paramagnetic spheres,
+        one near each end of a bar magnet. 
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: tikz
+    \end{tikzpicture}
+    \end{center}
+    Which of the following statements is true?
+    \begin{choices}
+        \wrongchoice{The force on 1 is toward the magnet and the force on 2 is away from the magnet}
+        \wrongchoice{The force on 1 is away from the magnet and the force on 2 is away from the magnet}
+      \correctchoice{The forces on 1 and 2 are both toward the magnet}
+        \wrongchoice{The forces on 1 and 2 are both away from the magnet}
+        \wrongchoice{The magnet does not exert a force on either sphere}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q48}
+    A paramagnetic substance is placed in a weak magnetic field and its absolute temperature $T$ is increased. 
+    As a result,
+        its magnetization:
+    \begin{choices}
+        \wrongchoice{increases in proportion to $T$}
+        \wrongchoice{increases in proportion to $T^2$}
+        \wrongchoice{remains the same}
+      \correctchoice{decreases in proportion to $\dfrac{1}{T}$}
+        \wrongchoice{decreases in proportion to $\dfrac{1}{T^2}$}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q49}
+    A magnetic field $\vec{B}_0$ is applied to a paramagnetic substance. 
+    In the interior the magnetic field produced by the magnetic dipoles of the substance is:
+    \begin{choices}
+        \wrongchoice{greater than $\vec{B}_0$ and in the opposite direction}
+        \wrongchoice{less than $\vec{B}_0$ and in the opposite direction}
+        \wrongchoice{greater than $\vec{B}_0$ and in the same direction}
+      \correctchoice{less than $\vec{B}_0$ and in the same direction}
+        \wrongchoice{the same as $\vec{B}_0$}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q50}
+    A paramagnetic substance, in an external magnetic field,
+        is thermally isolated. 
+    The field is then removed. 
+    As a result:
+    \begin{choices}
+        \wrongchoice{the magnetic energy of the magnetic dipoles decreases}
+        \wrongchoice{the temperature of the substance increases}
+        \wrongchoice{the magnetization decreases, but only slightly}
+        \wrongchoice{the magnetization reverses direction}
+      \correctchoice{none of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q51}
+    A magnetic field $\vec{B}_0$ is applied to a diamagnetic substance. 
+    In the interior the magnetic field produced by the magnetic dipoles of the substance is:
+    \begin{choices}
+        \wrongchoice{greater than $\vec{B}_0$ and in the opposite direction}
+      \correctchoice{less than $\vec{B}_0$ and in the opposite direction}
+        \wrongchoice{greater than $\vec{B}_0$ and in the same direction}
+        \wrongchoice{less than $\vec{B}_0$ and in the same direction}
+        \wrongchoice{the same as $\vec{B}_0$}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q52}
+    Ferromagnetism is closely associated with:
+    \begin{choices}
+        \wrongchoice{the tendency of electron dipole moments to align with an applied magnetic field}
+        \wrongchoice{the tendency of electron dipole moments to align opposite to an applied magnetic field}
+        \wrongchoice{the tendency of electron dipole moments to change magnitude in an applied magnetic field}
+      \correctchoice{the tendency of electron dipole moments to align with each other}
+        \wrongchoice{the force exerted by electron dipole moments on each other}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q53}
+    Of the three chief kinds of magnetic materials 
+        (diamagnetic, paramagnetic, and ferromagnetic),
+        which are used to make permanent magnets?
+    \begin{choices}
+        \wrongchoice{Only diamagnetic}
+      \correctchoice{Only ferromagnetic}
+        \wrongchoice{Only paramagnetic}
+        \wrongchoice{Only paramagnetic and ferromagnetic}
+        \wrongchoice{All three types}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q54}
+    When a permanent magnet is strongly heated:
+    \begin{choices}
+        \wrongchoice{nothing happens}
+        \wrongchoice{it becomes an induced magnet}
+      \correctchoice{it loses its magnetism}
+        \wrongchoice{its magnetism increases}
+        \wrongchoice{its polarity reverses}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q55}
+    Magnetization vectors in neighboring ferromagnetic domains are:
+    \begin{choices}
+        \wrongchoice{always in opposite directions}
+        \wrongchoice{always in the same direction}
+      \correctchoice{always in different directions}
+        \wrongchoice{sometimes in different directions and sometimes in the same direction}
+        \wrongchoice{sometimes in opposite directions and sometimes in the same direction}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q56}
+    The behavior of ferromagnetic domains in an applied magnetic field gives rise to:
+    \begin{choices}
+      \correctchoice{hysteresis}
+        \wrongchoice{ferromagnetism}
+        \wrongchoice{the Curie law}
+        \wrongchoice{a lowering of the Curie temperature}
+        \wrongchoice{Gauss’ law for magnetism}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q57}
+    Because ferromagnets have ferromagnetic domains,
+        the net magnetization:
+    \begin{choices}
+        \wrongchoice{can never be in the same direction as an applied field}
+      \correctchoice{may not vanish when an applied field is reduced to zero}
+        \wrongchoice{can never vanish}
+        \wrongchoice{is proportional to any applied magnetic field}
+        \wrongchoice{is always opposite to the direction of any applied magnetic field}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q58}
+    The soft iron core in the solenoid shown is removable. 
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: tikz
+    \end{tikzpicture}
+    \end{center}
+    Then:
+    \begin{choices}
+        \wrongchoice{the current will be larger without the core}
+        \wrongchoice{the current will be larger with the core}
+      \correctchoice{one must do work to remove the core}
+        \wrongchoice{the circuit will do work in expelling the core}
+        \wrongchoice{the stored energy is the same with or without the core}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q59}
+    An unmagnetized steel bar is placed inside a solenoid. 
+    As the current in the solenoid is slowly increased from zero to some large value,
+        the magnetization of the bar:
+    \begin{choices}
+        \wrongchoice{increases proportionally with the current}
+        \wrongchoice{remains zero for awhile and then increases linearly with any further increase in current}
+      \correctchoice{increases with increasing current at first but later is much less affected by it}
+        \wrongchoice{is unaffected by the current}
+        \wrongchoice{increases quadratically with the current}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q60}
+    The magnetic field of Earth is roughly the same as that of a magnetic dipole with a dipole moment of about:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{e17}{\joule\per\tesla}}
+        \wrongchoice{\SI{e19}{\joule\per\tesla}}
+        \wrongchoice{\SI{e21}{\joule\per\tesla}}
+      \correctchoice{\SI{e23}{\joule\per\tesla}}
+        \wrongchoice{\SI{e25}{\joule\per\tesla}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q61}
+    Of the following places,
+        one would expect that the horizontal component of Earth's magnetic field is largest in:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{Maine}
+      \correctchoice{Florida}
+        \wrongchoice{Maryland}
+        \wrongchoice{New York}
+        \wrongchoice{Iowa}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q62}
+    A positively charged ion, due to a cosmic ray,
+        is headed through Earth's atmosphere toward the center of Earth. 
+    Due to Earth's magnetic field,
+        the ion will be deflected:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{south}
+        \wrongchoice{north}
+        \wrongchoice{west}
+      \correctchoice{east}
+        \wrongchoice{not at all since it is a charge and not a pole}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q63}
+    Maxwell's great contribution to electromagnetic theory was his hypothesis that:
+    \begin{choices}
+        \wrongchoice{work is required to move a magnetic pole through a closed path surrounding a current}
+      \correctchoice{a time-varying electric flux acts as a current for purposes of producing a magnetic field}
+        \wrongchoice{the speed of light could be determined from simple electrostatic and magnetostatic experiments (finding the values of $\mu_0$ and $\epsilon_0$)}
+        \wrongchoice{the magnetic force on a moving charge particle is perpendicular to both $\vec{v}$ and $\vec{B}$}
+        \wrongchoice{magnetism could be explained in terms of circulating currents in atoms}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q64}
+    Displacement current is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\dfrac{\mathrm{d}\Phi_E}{\mathrm{d}t}$}
+      \correctchoice{$\epsilon_0\dfrac{\mathrm{d}\Phi_E}{\mathrm{d}t}$}
+        \wrongchoice{$\mu_0\dfrac{\mathrm{d}\Phi_E}{\mathrm{d}t}$}
+        \wrongchoice{$\mu_0\epsilon_0\dfrac{\mathrm{d}\Phi_E}{\mathrm{d}t}$}
+        \wrongchoice{$\dfrac{−\mathrm{d}\Phi_B}{\mathrm{d}t}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q65}
+    Displacement current exists wherever there is:
+    \begin{choices}
+        \wrongchoice{a magnetic field}
+        \wrongchoice{moving charge}
+        \wrongchoice{a changing magnetic field}
+        \wrongchoice{an electric field}
+      \correctchoice{a changing electric field}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q66}
+    Displacement current exists in the region between the plates of a parallel plate capacitor if:
+    \begin{choices}
+        \wrongchoice{the capacitor leaks charge across the plates}
+      \correctchoice{the capacitor is being discharged}
+        \wrongchoice{the capacitor is fully charged}
+        \wrongchoice{the capacitor is fully discharged}
+        \wrongchoice{none of the provided are true}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q67}
+    An electric field exists in the cylindrical region shown and is parallel to the cylinder axis. 
+    The magnitude of the field might vary with time according to any of the four graphs shown. 
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE:
+    \end{tikzpicture}
+    \end{center}
+    Rank the four variations according to the magnitudes of the magnetic field induced at the edge of the region,
+        least to greatest.
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{2, 4, 3, 1}
+        \wrongchoice{3 and 4 tie, then 1, 2}
+        \wrongchoice{4, 3, 2, 1}
+        \wrongchoice{4, 3, 1, 2}
+        \wrongchoice{2, 1, 3, 4}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q68}
+    The diagram shows one plate of a parallel-plate capacitor from within the capacitor.
+    The plate is circular and has radius $R$. 
+    The dashed circles are four integration paths and have radii of $r_1=R/4$, $r2=R/2$, $r_3=3R/2$, and $r_4=2R$.
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE:
+    \end{tikzpicture}
+    \end{center}
+    Rank the paths according to the magnitude of $\oint\,\vec{B}\cdot\mathrm{d}\vec{s}$ around the paths during the discharging of the capacitor,
+        least to greatest.
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{1, 2 and 3 tie, then 4}
+        \wrongchoice{1, 2, 3, 4}
+      \correctchoice{1, 2, 3 and 4 tie}
+        \wrongchoice{4, 3, 1, 2}
+        \wrongchoice{all tie}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q69}
+    A \SI{1.2}{\meter} radius cylindrical region contains a uniform electric field along the cylinder axis. 
+    It is increasing uniformly with time. 
+    To obtain a total displacement current of \SI{2.0e-9}{\ampere} through a cross section of the region,
+        the magnitude of the electric field should change at a rate of:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{5.0}{\volt\per\meter\per\second}}
+        \wrongchoice{\SI{12}{\volt\per\meter\per\second}}
+        \wrongchoice{\SI{37}{\volt\per\meter\per\second}}
+      \correctchoice{\SI{50}{\volt\per\meter\per\second}}
+        \wrongchoice{\SI{4.0e7}{\volt\per\meter\per\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q70}
+    A current of \SI{1}{\ampere} is used to charge a parallel plate capacitor with square plates. 
+    If the area of each plate is \SI{0.6}{\meter\squared} the displacement current through a \SI{0.3}{\meter\squared} area wholly between the capacitor plates and parallel to them is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{1}{\ampere}}
+        \wrongchoice{\SI{2}{\ampere}}
+        \wrongchoice{\SI{0.7}{\ampere}}
+      \correctchoice{\SI{0.5}{\ampere}}
+        \wrongchoice{\SI{0.25}{\ampere}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q71}
+    A \SI{1}{\micro\farad} capacitor is connected to an emf that is increasing uniformly with time at a rate of \SI{100}{\volt\per\second}.
+    The displacement current between the plates is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{zero}
+        \wrongchoice{\SI{1e-8}{\ampere}}
+        \wrongchoice{\SI{1e-6}{\ampere}}
+      \correctchoice{\SI{1e-4}{\ampere}}
+        \wrongchoice{\SI{100}{\ampere}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q72}
+    A magnetic field exists between the plates of a capacitor:
+    \begin{choices}
+        \wrongchoice{always}
+        \wrongchoice{never}
+        \wrongchoice{when the capacitor is fully charged}
+      \correctchoice{while the capacitor is being charged}
+        \wrongchoice{only when the capacitor is starting to be charged}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q73}
+    Suppose you are looking into one end of a long cylindrical tube in which there is a uniform electric field,
+        pointing away from you. 
+    If the magnitude of the field is decreasing with time the direction of the induced magnetic field is:
+    \begin{choices}
+        \wrongchoice{toward you}
+        \wrongchoice{away from you}
+        \wrongchoice{clockwise}
+      \correctchoice{counterclockwise}
+        \wrongchoice{to your right}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q74}
+    Suppose you are looking into one end of a long cylindrical tube in which there is a uniform electric field,
+        pointing away from you. 
+    If the magnitude of the field is decreasing with time the field lines of the induced magnetic field are:
+    \begin{choices}
+      \correctchoice{circles}
+        \wrongchoice{ellipses}
+        \wrongchoice{straight lines parallel to the electric field}
+        \wrongchoice{straight lines perpendicular to the electric field}
+        \wrongchoice{none of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q75}
+    A cylindrical region contains a uniform electric field that is along the cylinder axis and is changing with time. 
+    If $r$ is distance from the cylinder axis the magnitude of the magnetic field within the region is:
+    \begin{choices}
+        \wrongchoice{uniform}
+        \wrongchoice{proportional to $\dfrac{1}{r}$}
+        \wrongchoice{proportional to $r^2$}
+        \wrongchoice{proportional to $\dfrac{1}{r^2}$}
+      \correctchoice{proportional to $r$}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q76}
+    A cylindrical region contains a uniform electric field that is parallel to the axis and is changing with time. 
+    If $r$ is distance from the cylinder axis the magnitude of the magnetic field outside the region is:
+    \begin{choices}
+        \wrongchoice{zero}
+      \correctchoice{proportional to $\dfrac{1}{r}$}
+        \wrongchoice{proportional to $r^2$}
+        \wrongchoice{proportional to $\dfrac{1}{r^2}$}
+        \wrongchoice{proportional to $r$}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q77}
+    A \SI{0.70}{\meter} radius cylindrical region contains a uniform electric field that is parallel to the axis and is decreasing at the rate \SI{5.0e12}{\volt\per\meter\per\second}.
+    The magnetic field at a point \SI{0.25}{\meter} from the axis has a magnitude of:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{zero}
+      \correctchoice{\SI{7.0e-6}{\tesla}}
+        \wrongchoice{\SI{2.8e-5}{\tesla}}
+        \wrongchoice{\SI{5.4e-5}{\tesla}}
+        \wrongchoice{\SI{7.0e-5}{\tesla}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q78}
+    A \SI{0.70}{\meter} radius cylindrical region contains a uniform electric field that is parallel to the axis and is decreasing at the rate \SI{5.0e12}{\volt\per\meter\per\second}.
+    The magnetic field at a point \SI{1.2}{\meter} from the axis has a magnitude of:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{zero}
+        \wrongchoice{\SI{7.0e-6}{\tesla}}
+      \correctchoice{\SI{1.1e-5}{\tesla}}
+        \wrongchoice{\SI{2.3e-5}{\tesla}}
+        \wrongchoice{\SI{2.8e-5}{\tesla}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q79}
+    A \SI{1}{\ampere} current is used to charge a parallel plate capacitor. 
+    A large square piece of paper is placed between the plates and parallel to them so it sticks out on all sides.
+    The value of the integral $\oint\,\vec{B}\cdot\mathrm{d}\vec{s}$ around the perimeter of the paper is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{2}{\tesla\meter}}
+        \wrongchoice{\SI{4\pi e-7}{\tesla\meter}}
+        \wrongchoice{\SI{8.85e-12}{\tesla\meter}}
+        \wrongchoice{\SI{e-7}{\tesla\meter}}
+        \wrongchoice{not determined from the given quantities}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q80}
+    A sinusoidal emf is connected to a parallel plate capacitor. 
+    The magnetic field between the plates is:
+    \begin{choices}
+        \wrongchoice{zero}
+        \wrongchoice{constant}
+        \wrongchoice{sinusoidal and its amplitude does not depend on the frequency of the source}
+      \correctchoice{sinusoidal and its amplitude is proportional to the frequency of the source}
+        \wrongchoice{sinusoidal and its amplitude is inversely proportional to the frequency of the source}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch32-q81}
+    An electron is on the $z$ axis moving toward the $xy$ plane but it has not reached that plane yet.
+    At that instant:
+    \begin{choices}
+        \wrongchoice{there is only a true current through the $xy$ plane}
+      \correctchoice{there is only a displacement current through the $xy$ plane}
+        \wrongchoice{there are both true and displacement currents through the $xy$ plane}
+        \wrongchoice{there is neither a true nor a displacement current through the $xy$ plane}
+        \wrongchoice{none of the provided are true}
+    \end{choices}
+\end{question}
+}
+
+
+\endinput
+
+

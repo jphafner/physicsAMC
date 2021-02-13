@@ -1,0 +1,145 @@
+
+%% This defines the lua function mycommand()
+%\directlua{require('./qbank/lua/common.lua')}
+
+
+%% Numeric Difficulty A
+%%--------------------------------------
+\element{numeric}{
+\begin{questionmultx}{acceleration-A-Q01}
+\luaexec{
+    %% Question
+    local Q = [[
+        A fighter jet is traveling on a level flight path at
+            \string\SI{\%d}{\string\meter\string\per\string\second}
+            for \string\SI{\%d}{\string\minute}
+            when the pilot hits the after burners.
+        The jet then accelerates at a rate of
+            \string\SI{\%0.2f}{\string\meter\string\per\string\second\string\squared}.
+        He keeps the after burners on for
+            \string\SI{\%d}{\string\second}.
+        After turning off the afterburners, the jet then
+            accelerates at a rate of
+            \string\SI{\%0.2f}{\string\meter\string\per\string\second\string\squared}
+            until it returns to the original speed.
+        What is the distance traveled in that time divided by 
+            \string\SI{1}{\string\kilo\string\meter\string\per\string\second}?
+    ]]
+    %% Random Values
+    local vel = math.random(200,350)
+    local tim0 = math.random(2,8)
+    local tim1 = math.random(10,35)
+    local acc = 5 + ( 5 * round(math.random(),2) )
+    local dec = 1 + ( 2 * round(math.random(),2) )
+    %% Print Question
+    local dis = (60*vel*tim0) + (vel*tim1*(1+(acc/dec))) + (0.5*acc*tim1*tim1*(1+(acc/dec)))
+    local ans = dis/1000
+    tex.print( string.format(Q, vel, tim0, acc, tim1, -1*dec ))
+    %tex.print( ans )
+    %% Print AMCnumeric
+    options = [[ digits=4, decimals=1, sign=True, approx=1 ]]
+    tex.print( BeginCenter )
+    tex.print( string.format(AMCnumeric, ans, options ) )
+    tex.print( EndCenter )
+}
+\end{questionmultx}
+}
+
+\element{numeric}{
+\begin{questionmultx}{acceleration-A-Q02}
+\luaexec{
+    %% Question
+    local Q = [[
+        A car travels at a constant speed of
+            \string\SI{\%d}{\string\meter\string\per\string\second}
+            for \string\SI{\%d}{\string\minute}.
+        The driver then steps on the gas and accelerates at a rate of
+            \string\SI{\%f}{\string\meter\string\per\string\second\string\squared}
+            for \string\SI{\%d}{\string\second}.
+        The driver then maintains that speed for another
+            \string\SI{\%f}{\string\minute}.
+        What is the distance traveled by the car in that time
+            dividied by \string\SI{1}{\string\kilo\string\meter}?
+    ]]
+    %% Random Values
+    local vel = math.random(10,30)
+    local tim1= math.random(10,20)
+    local acc = 1 + 3 * round(math.random(),2)
+    local tim2= math.random(30,58)
+    local tim3= math.random(3,10)
+    %% Rectangle plus parallelgram
+    local dis = (vel * ((60*tim1) + tim2 + tim3) ) + 0.5*((acc*tim2) * ((2*tim2)+tim3))
+    local ans = dis / 1000
+    %% Print Question
+    tex.print( string.format(Q, vel, tim1, acc, tim2, tim3))
+    %% Print AMCnumeric
+    options = [[ digits=4, decimals=2, sign=True, approx=5 ]]
+    tex.print( string.format(AMCnumeric, ans, options) )
+}
+\end{questionmultx}
+}
+
+
+%% Numeric Difficulty B
+%%--------------------------------------
+
+
+%% Numeric Difficulty C
+%%--------------------------------------
+\element{numeric}{
+\begin{questionmultx}{acceleration-C-Q01}
+\luaexec{
+    %% Question
+    local Q = [[
+        A car accelerates uniformly from rest to a speed of
+            \string\SI{\%d}{\string\kilo\string\meter\string\per\string\hour}
+            in \string\SI{\%0.1f}{\string\second}.
+        What is the distance traveled by the car in that time
+            divided by \string\SI{10}{\string\meter}?
+    ]]
+    %% Random Values
+    local vel = math.random(50,120)
+    local tim = 5 + round(10*math.random(),1)
+    local ans = 0.5 * vel * tim
+    %% Print Question
+    tex.print( string.format(Q, vel, tim) )
+    %tex.print( ans )
+    %% Print AMCnumeric
+    options = [[ digits=4, decimals=2, sign=True, approx=1 ]]
+    tex.print( BeginCenter )
+    tex.print( string.format(AMCnumeric, ans, options ) )
+    tex.print( EndCenter )
+}
+\end{questionmultx}
+}
+
+\element{numeric}{
+\begin{questionmultx}{acceleration-C-Q02}
+\luaexec{
+    %% Question
+    local Q = [[
+        A car skids to a stop leaving a
+            \string\SI{\%0.1f}{\string\meter} skid mark.
+        If the acceleration of the car is
+            \string\SI{\%0.2f}{\string\meter\string\per\string\second\string\squared},
+            what is the initial velocity of the car divideed by
+            \string\SI{1}{\string\meter\string\per\string\second}?
+    ]]
+    %% Random Values
+    local dis = math.random(80,150)
+    local acc = math.random(8,20)
+    local ans = math.sqrt( 2 * dis * acc )
+    %% Print Question
+    tex.print( string.format(Q, dis, acc) )
+    %tex.print( ans )
+    %% Print AMCnumeric
+    options = [[ digits=4, decimals=2, sign=True, approx=1 ]]
+    tex.print( BeginCenter )
+    tex.print( string.format(AMCnumeric, ans, options ) )
+    tex.print( EndCenter )
+}
+\end{questionmultx}
+}
+
+\endinput
+

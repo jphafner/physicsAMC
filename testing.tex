@@ -1,0 +1,439 @@
+%%
+%% Copyright (C) 2014 Jeffrey P. Hafner <jphafner@buffalo.edu>
+%%  
+%%  This program is free software: you can redistribute it and/or modify
+%%  it under the terms of the GNU General Public License as published by
+%%  the Free Software Foundation, either version 3 of the License, or
+%%  (at your option) any later version.
+%%  
+%%  This program is distributed in the hope that it will be useful,
+%%  but WITHOUT ANY WARRANTY; without even the implied warranty of
+%%  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+%%  GNU General Public License for more details.
+%%  
+%%  You should have received a copy of the GNU General Public License
+%%  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+%%
+
+
+\documentclass[
+    11pt,
+    fleqn,
+]{scrartcl}
+
+\usepackage{AMCfull}
+\newlength{\mylen}
+\setlength{\parskip}{0pt} % 1ex plus 0.5ex minus 0.2ex}
+\setlength{\parindent}{0pt}
+
+\graphicspath{{./qbank/diagnostic/gfx/}{./qbank/nysed/gfx/}{./qbank/aapt/gfx/}}
+
+%% Begin Document
+%%------------------------------------------------
+\begin{document}
+
+%% English
+%\input{./qbank/misc/SAT-sentence_completion.tex}
+%\input{./qbank/misc/SAT-reading_comprehension.tex}
+%\input{./qbank/misc/GRE-sentence_completion.tex}
+%\input{./qbank/misc/GRE-analogies.tex}
+%\input{./qbank/misc/GRE-antonymns.tex}
+%\input{./qbank/misc/GRE-reading_comprehension.tex}
+
+
+%% Diagnostic
+%\input{./qbank/diagnostic/astronomy.tex}
+%\input{./qbank/diagnostic/vectors.tex}
+%\input{./qbank/diagnostic/freeBodyDiagrams.tex}
+
+%% JPierce, 814 Q
+%\input{./qbank/jpierce/pt101tb1q.tex}
+%\input{./qbank/jpierce/pt101tb2q.tex}
+%\input{./qbank/jpierce/pt101tb3q.tex}
+%\input{./qbank/jpierce/pt101tb4q.tex}
+%\input{./qbank/jpierce/pt101tb5q.tex}
+
+%% GRE
+%\input{./qbank/gre/GRE8677.tex}
+%\input{./qbank/gre/GRE9277.tex}
+%\input{./qbank/gre/GRE9677.tex}
+%\input{./qbank/gre/GRE0177.tex}
+%\input{./qbank/gre/GRE0877.tex}
+
+%% CAP, 520 Q
+%\input{./qbank/cap/cap-mc.tex}
+%\input{./qbank/cap/cap-open.tex}
+
+%% AAPT, 1203 Q
+%\input{./qbank/aapt/Bowl-2016.tex}
+%\input{./qbank/aapt/AAPT-PhysicsBowl.tex}
+%\input{./qbank/aapt/AAPT-PhysicsOlympiad.tex}
+
+%\input{./qbank/aapt/Bowl-A1.tex}
+%\input{./qbank/aapt/Bowl-A2.tex}
+%\input{./qbank/aapt/Bowl-A3.tex}
+%\input{./qbank/aapt/Bowl-A4.tex}
+%\input{./qbank/aapt/Bowl-A5.tex}
+%\input{./qbank/aapt/Bowl-A6.tex}
+%\input{./qbank/aapt/Bowl-A7.tex}
+%\input{./qbank/aapt/Bowl-A8.tex}
+
+%\input{./qbank/aapt/Olympiad-A1.tex}
+%\input{./qbank/aapt/Olympiad-A2.tex}
+%\input{./qbank/aapt/Olympiad-A3.tex}
+%\input{./qbank/aapt/Olympiad-A4.tex}
+%\input{./qbank/aapt/Olympiad-A5.tex}
+%\input{./qbank/aapt/Olympiad-A6.tex}
+%\input{./qbank/aapt/Olympiad-A7.tex}
+%\input{./qbank/aapt/Olympiad-A8.tex}
+
+%% Serway, 1133 Q
+%\input{./qbank/serway/ch01-mc.tex}
+%\input{./qbank/serway/ch02-mc.tex}
+%\input{./qbank/serway/ch03-mc.tex}
+%\input{./qbank/serway/ch04-mc.tex}
+%\input{./qbank/serway/ch05-mc.tex}
+%\input{./qbank/serway/ch06-mc.tex}
+%\input{./qbank/serway/ch07-mc.tex}
+%\input{./qbank/serway/ch08-mc.tex}
+%\input{./qbank/serway/ch09-mc.tex}
+%\input{./qbank/serway/ch10-mc.tex}
+%\input{./qbank/serway/ch11-mc.tex}
+%\input{./qbank/serway/ch12-mc.tex}
+%\input{./qbank/serway/ch13-mc.tex}
+%\input{./qbank/serway/ch14-mc.tex}
+%\input{./qbank/serway/ch15-mc.tex}
+%\input{./qbank/serway/ch16-mc.tex}
+%\input{./qbank/serway/ch17-mc.tex}
+%\input{./qbank/serway/ch18-mc.tex}
+%\input{./qbank/serway/ch19-mc.tex}
+%\input{./qbank/serway/ch20-mc.tex}
+%\input{./qbank/serway/ch21-mc.tex}
+%\input{./qbank/serway/ch22-mc.tex}
+
+%% Halliday, 2687 Q
+%\input{./qbank/halliday/ch01-mc.tex}
+%\input{./qbank/halliday/ch02-mc.tex}
+%\input{./qbank/halliday/ch03-mc.tex}
+%\input{./qbank/halliday/ch04-mc.tex}
+%\input{./qbank/halliday/ch05-mc.tex}
+%\input{./qbank/halliday/ch06-mc.tex}
+%\input{./qbank/halliday/ch07-mc.tex}
+%\input{./qbank/halliday/ch08-mc.tex}
+%\input{./qbank/halliday/ch09-mc.tex}
+%\input{./qbank/halliday/ch10-mc.tex}
+%\input{./qbank/halliday/ch11-mc.tex}
+%\input{./qbank/halliday/ch12-mc.tex}
+%\input{./qbank/halliday/ch13-mc.tex}
+%\input{./qbank/halliday/ch14-mc.tex}
+%\input{./qbank/halliday/ch15-mc.tex}
+%\input{./qbank/halliday/ch16-mc.tex}
+%\input{./qbank/halliday/ch17-mc.tex}
+%\input{./qbank/halliday/ch18-mc.tex}
+%\input{./qbank/halliday/ch19-mc.tex}
+%\input{./qbank/halliday/ch20-mc.tex}
+%\input{./qbank/halliday/ch21-mc.tex}
+%\input{./qbank/halliday/ch22-mc.tex}
+%\input{./qbank/halliday/ch23-mc.tex}
+%\input{./qbank/halliday/ch24-mc.tex}
+%\input{./qbank/halliday/ch25-mc.tex}
+%\input{./qbank/halliday/ch26-mc.tex}
+%\input{./qbank/halliday/ch27-mc.tex}
+%\input{./qbank/halliday/ch28-mc.tex}
+%\input{./qbank/halliday/ch29-mc.tex}
+%\input{./qbank/halliday/ch30-mc.tex}
+%\input{./qbank/halliday/ch31-mc.tex}
+%\input{./qbank/halliday/ch32-mc.tex}
+%\input{./qbank/halliday/ch33-mc.tex}
+%\input{./qbank/halliday/ch34-mc.tex}
+%\input{./qbank/halliday/ch35-mc.tex}
+%\input{./qbank/halliday/ch36-mc.tex}
+%\input{./qbank/halliday/ch37-mc.tex}
+%\input{./qbank/halliday/ch38-mc.tex}
+%\input{./qbank/halliday/ch39-mc.tex}
+%\input{./qbank/halliday/ch40-mc.tex}
+%\input{./qbank/halliday/ch41-mc.tex}
+%\input{./qbank/halliday/ch42-mc.tex}
+%\input{./qbank/halliday/ch43-mc.tex}
+%\input{./qbank/halliday/ch44-mc.tex}
+
+%% AP
+\input{./qbank/collegeBoard/calculusAB.tex}
+%\input{./qbank/collegeBoard/calculusBC.tex}
+
+%% Custom, 33 Q
+%\input{./qbank/kinematics/motion-graphs.tex}
+
+%% college Board AP Questions
+%\input{./qbank/collegeBoard/kinematics.tex}
+%\input{./qbank/collegeBoard/APC-momentum.tex}
+
+%% Schaums, 1--10: 129 Q
+%\input{./qbank/schaums-mc/ch01-useful-math.tex}
+%\input{./qbank/schaums-mc/ch02-vectors.tex}
+%\input{./qbank/schaums-mc/ch03-motion-in-a-straight-line.tex}
+%\input{./qbank/schaums-mc/ch04-motion-in-a-vertical-plane.tex}
+%\input{./qbank/schaums-mc/ch05-laws-of-motion.tex}
+%\input{./qbank/schaums-mc/ch06-friction.tex}
+%\input{./qbank/schaums-mc/ch07-energy.tex}
+%\input{./qbank/schaums-mc/ch08-momentum.tex}
+%\input{./qbank/schaums-mc/ch09-circular-motion-and-gravitation.tex}
+%\input{./qbank/schaums-mc/ch10-rotational-motion.tex}
+
+%% Project Physics, 403 Q
+%\input{./qbank/projectPhysics/testbooklet1conc.tex}
+%\input{./qbank/projectPhysics/testbooklet2moti.tex}
+%\input{./qbank/projectPhysics/testbooklet3triu.tex}
+%\input{./qbank/projectPhysics/testbooklet4ligh.tex}
+%\input{./qbank/projectPhysics/testbooklet5mode.tex}
+%\input{./qbank/projectPhysics/testbooklet6nucl.tex}
+
+%% Holt
+%\input{./qbank/holt/ch01-mc.tex}
+%\input{./qbank/holt/ch02-mc.tex}
+%\input{./qbank/holt/ch03-mc.tex}
+%\input{./qbank/holt/ch04-mc.tex}
+%\input{./qbank/holt/ch05-mc.tex}
+%\input{./qbank/holt/ch06-mc.tex}
+%\input{./qbank/holt/ch07-mc.tex}
+%\input{./qbank/holt/ch08-mc.tex}
+
+%% CPO, 733 Q
+%\input{./qbank/cpo/ch01-mc.tex}
+%\input{./qbank/cpo/ch02-mc.tex}
+%\input{./qbank/cpo/ch03-mc.tex}
+%\input{./qbank/cpo/ch04-mc.tex}
+%\input{./qbank/cpo/ch05-mc.tex}
+%\input{./qbank/cpo/ch06-mc.tex}
+%\input{./qbank/cpo/ch07-mc.tex}
+%\input{./qbank/cpo/ch08-mc.tex}
+%\input{./qbank/cpo/ch09-mc.tex}
+%\input{./qbank/cpo/ch10-mc.tex}
+%\input{./qbank/cpo/ch11-mc.tex}
+%\input{./qbank/cpo/ch12-mc.tex}
+%\input{./qbank/cpo/ch13-mc.tex}
+%\input{./qbank/cpo/ch14-mc.tex}
+%\input{./qbank/cpo/ch15-mc.tex}
+%\input{./qbank/cpo/ch16-mc.tex}
+%\input{./qbank/cpo/ch17-mc.tex}
+%\input{./qbank/cpo/ch18-mc.tex}
+%\input{./qbank/cpo/ch19-mc.tex}
+%\input{./qbank/cpo/ch20-mc.tex}
+%\input{./qbank/cpo/ch21-mc.tex}
+%\input{./qbank/cpo/ch22-mc.tex}
+%\input{./qbank/cpo/ch23-mc.tex}
+%\input{./qbank/cpo/ch24-mc.tex}
+
+%% NYSED, 1837 Q
+%\input{./qbank/nysed/NYSED-June2016.tex}
+%\input{./qbank/nysed/NYSED-June1995.tex}
+%\input{./qbank/nysed/NYSED-atomic.tex}
+%\input{./qbank/nysed/NYSED-circuit.tex}
+%\input{./qbank/nysed/NYSED-circular.tex}
+%\input{./qbank/nysed/NYSED-constantVelocity.tex}
+%\input{./qbank/nysed/NYSED-constantAcceleration.tex}
+%\input{./qbank/nysed/NYSED-current.tex}
+%\input{./qbank/nysed/NYSED-electromagneticApplications.tex}
+%\input{./qbank/nysed/NYSED-electrostatics.tex}
+%\input{./qbank/nysed/NYSED-energy.tex}
+%\input{./qbank/nysed/NYSED-estimation.tex}
+%\input{./qbank/nysed/NYSED-freeFall.tex}
+%\input{./qbank/nysed/NYSED-friction.tex}
+%\input{./qbank/nysed/NYSED-geometricOptics.tex}
+%\input{./qbank/nysed/NYSED-gravity.tex}
+%\input{./qbank/nysed/NYSED-harmonic.tex}
+%\input{./qbank/nysed/NYSED-hooke.tex}
+%\input{./qbank/nysed/NYSED-internalEnergy.tex}
+%\input{./qbank/nysed/NYSED-light.tex}
+%\input{./qbank/nysed/NYSED-magnetism.tex}
+%\input{./qbank/nysed/NYSED-mechanics.tex}
+%\input{./qbank/nysed/NYSED-modern.tex}
+%\input{./qbank/nysed/NYSED-momentum.tex}
+%\input{./qbank/nysed/NYSED-newton.tex}
+%\input{./qbank/nysed/NYSED-nuclearEnergy.tex}
+%\input{./qbank/nysed/NYSED-power.tex}
+%\input{./qbank/nysed/NYSED-physicalOptics.tex}
+%\input{./qbank/nysed/NYSED-projectiles.tex}
+%\input{./qbank/nysed/NYSED-solidState.tex}
+%\input{./qbank/nysed/NYSED-sound.tex}
+%\input{./qbank/nysed/NYSED-vectors.tex}
+%\input{./qbank/nysed/NYSED-waves.tex}
+%\input{./qbank/nysed/NYSED-work.tex}
+
+
+%% NJCTL Algebra
+
+%% NJCTL Calculus, 363 Q
+%\input{./qbank/njctl/psi-calculus/dynamics.tex}
+%\input{./qbank/njctl/psi-calculus/kinematics-1d.tex}
+%\input{./qbank/njctl/psi-calculus/kinematics-2d.tex}
+%\input{./qbank/njctl/psi-calculus/momentum.tex}
+%\input{./qbank/njctl/psi-calculus/rotational-kinematics.tex}
+%\input{./qbank/njctl/psi-calculus/rotational-dynamics.tex}
+%\input{./qbank/njctl/psi-calculus/simple-harmonic-motion.tex}
+%\input{./qbank/njctl/psi-calculus/universal-gravity.tex}
+%\input{./qbank/njctl/psi-calculus/work-algebra.tex}
+%\input{./qbank/njctl/psi-calculus/work-calculus.tex}
+
+%% AP Phyiscs: Mechanics
+%\input{./qbank/apPhysics/angular-momentum.tex}
+%\input{./qbank/apPhysics/1d-motion-algebra.tex}
+%\input{./qbank/apPhysics/1d-collisions.tex}
+%\input{./qbank/apPhysics/1d-motion-calculus.tex}
+%\input{./qbank/apPhysics/1d-motion-graphs.tex}
+%\input{./qbank/apPhysics/2d-motion-calculus.tex}
+%\input{./qbank/apPhysics/2d-collisions.tex}
+%\input{./qbank/apPhysics/2d-motion-vectors.tex}
+%\input{./qbank/apPhysics/conservation-energy-without-friction.tex}
+%\input{./qbank/apPhysics/conservation-energy-friction.tex}
+%\input{./qbank/apPhysics/definition-of-work.tex}
+%\input{./qbank/apPhysics/elastic-potential-energy.tex}
+%\input{./qbank/apPhysics/first-law-inclines.tex}
+%\input{./qbank/apPhysics/first-law-tension.tex}
+%\input{./qbank/apPhysics/gravitational-potential-energy.tex}
+%\input{./qbank/apPhysics/gravitational-force.tex}
+%\input{./qbank/apPhysics/kinetic-energy.tex}
+%\input{./qbank/apPhysics/impulse.tex}
+%\input{./qbank/apPhysics/orbits.tex}
+%\input{./qbank/apPhysics/oscillating-spring.tex}
+%\input{./qbank/apPhysics/oscillating-pendulum.tex}
+%\input{./qbank/apPhysics/projectile-motion.tex}
+%\input{./qbank/apPhysics/power.tex}
+%\input{./qbank/apPhysics/rotational-dynamics.tex}
+%\input{./qbank/apPhysics/rotational-energy.tex}
+%\input{./qbank/apPhysics/rotational-kinematics.tex}
+%\input{./qbank/apPhysics/rotational-statics.tex}
+%\input{./qbank/apPhysics/second-law-inclines.tex}
+%\input{./qbank/apPhysics/second-law.tex}
+%\input{./qbank/apPhysics/spring-constant.tex}
+%\input{./qbank/apPhysics/static-friction.tex}
+%\input{./qbank/apPhysics/third-law.tex}
+%\input{./qbank/apPhysics/work-energy-calculus.tex}
+
+%% AP Phyiscs: Electricty and Magnetism
+%\input{./qbank/apPhysics/amperes-law.tex}
+%\input{./qbank/apPhysics/biot-savart.tex}
+%\input{./qbank/apPhysics/b-field-due-to-wire.tex}
+%\input{./qbank/apPhysics/b-force-on-moving-charge.tex}
+%\input{./qbank/apPhysics/b-force-on-wire.tex}
+
+
+%% NOTE: need to set at end so each exam starts at 1
+%\setcounter{figure}{0}
+
+%% Begin Quiz
+%%------------------------------------------------
+\begin{examcopy}[1]
+
+\begin{minipage}{15.0em}
+    \vspace{-1.00\baselineskip}
+    \AMCcodeH{StudentNum}{7}
+\end{minipage}
+\setlength{\mylen}{\textwidth}
+%\addtolength{\mylen}{-12.5em}
+\addtolength{\mylen}{-15.0em}
+\begin{minipage}{\mylen}
+    \vspace{-1.00\baselineskip}
+    \textsc{Physics First Mastery Assessment}
+    \hfill
+    \textsc{Chapter 00: Filler Text} \\
+    \setlength{\fboxsep}{0.01\columnwidth}
+    \setlength{\fboxrule}{0.8pt}
+    \namefield{\fbox{
+        \begin{minipage}{0.98\columnwidth}
+            Last and First Name: \hfill Today's Date:
+            \vspace*{8mm}
+        \end{minipage}
+    }}
+    \begin{minipage}{1.00\columnwidth}
+        \small
+        \vspace{0.50\baselineskip}
+        \emph{Instructions:}
+        Enter your student number, your full name,
+            and today's date in the provided space.
+        Questions using the sign \multiSymbole{} may have
+            zero, one or several correct answers.
+        Other questions have a single correct answer.
+        Select your response by filling the appropriate box.
+        The use of an HB or \#2 pencil is preferred.
+        The use of external reference material is prohibited.
+        \emph{Good Luck!}
+    \end{minipage}
+\end{minipage}
+\begin{center}
+    \hrule
+\end{center}
+
+\cleargroup{all}
+\shufflegroup{calulusAB}
+\copygroup[12]{calculusAB}{all}
+\insertgroup{all}
+
+\begin{multicols}{2}
+    %\insertgroup{gre}
+    %\insertgroup{ADT}
+    %\insertgroup{vectors}
+    %\insertgroup{FBD}
+    %\insertgroup{sat-mc}
+    %\insertgroup{gre-mc}
+    %\insertgroup{graphs}
+    %\insertgroup{AP}
+    %\insertgroup{project}
+    %\insertgroup{schaums-mc}
+    %\insertgroup{schaums-num}
+    %\insertgroup{jpierce}
+    %\insertgroup{cpo-mc}
+    %\insertgroup{nysed}
+    %\insertgroup{holt-mc}
+    %\insertgroup{cap}
+    %\insertgroup{aapt}
+    %\insertgroup{njctl}
+    %\insertgroup{ap}
+    %\insertgroup{halliday-mc}
+    %\insertgroup{calculusAB}
+    %\insertgroup{calculusBC}
+    %\insertgroup{vectors}
+    %\insertgroup{serway-mc}
+    %\insertgroup{serway-num}
+
+%    \insertgroup{aapt-A1}
+%    \insertgroup{aapt-A2}
+%    \insertgroup{aapt-A3}
+%    \insertgroup{aapt-A4}
+%    \insertgroup{aapt-A5}
+%    \insertgroup{aapt-A6}
+%    \insertgroup{aapt-A7}
+%    \insertgroup{aapt-A8}
+%
+%    \insertgroup{aapt-B1}
+%    \insertgroup{aapt-B2}
+%    \insertgroup{aapt-B3}
+%    \insertgroup{aapt-B4}
+%    
+%    \insertgroup{aapt-C1}
+%    \insertgroup{aapt-C2}
+%    \insertgroup{aapt-C3}
+%
+%    \insertgroup{aapt-D1}
+%    \insertgroup{aapt-D2}
+%    \insertgroup{aapt-D3}
+%    \insertgroup{aapt-D4}
+%    \insertgroup{aapt-D5}
+%
+%    \insertgroup{aapt-E1}
+%    \insertgroup{aapt-E2}
+%    \insertgroup{aapt-E3}
+%
+%    \insertgroup{aapt-F1}
+%    \insertgroup{aapt-F2}
+%
+%    \insertgroup{aapt-M1}
+%    \insertgroup{aapt-M2}
+\end{multicols}
+
+
+\AMCcleardoublepage
+\end{examcopy}
+
+\end{document}
+

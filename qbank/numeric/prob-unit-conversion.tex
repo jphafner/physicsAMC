@@ -1,0 +1,260 @@
+
+%%----------------------------------------
+%% Conversion of Units
+%%----------------------------------------
+
+
+%% Word Problems
+%%----------------------------------------
+\begin{question}[ID=UC01,topic=unit-conversion,difficulty=easy]
+    The speed of light is about \SI{3.00e8}{\meter\per\second}.
+    Convert this quantity to miles per hour. 
+\end{question}
+\begin{solution}
+    $c = \SI{6.71e8}{miles per hour}$
+\end{solution}
+
+\begin{question}[ID=UC02,topic=unit-conversion,difficulty=easy]
+    A house is \SI{50}{\foot} long and \SI{26}{\foot} wide and has
+        \SI{8.0}{\foot} high ceilings.
+    What is the volume of the interior of the house in cubic
+        meters and in cubic centimeters? 
+\end{question}
+\begin{solution}
+    $V = \SI{2.95e2}{\meter\cubed}$,
+    $V = \SI{2.95e8}{\centi\meter\cubed}$
+\end{solution}
+
+\begin{question}[ID=UC03,topic=unit-conversion,difficulty=easy]
+    The amount of water in reservoirs is often measured in acre-ft.
+    One acre-ft is the volume that covers an area of one acre
+        to a depth of one foot.
+    An acre is \SI{43560}{\foot\squared}.
+    Find the volume in SI units of a reservoir containing
+        \num{25.0} acre-ft of water.
+\end{question}
+\begin{solution}
+    $V = \SI{3.1e4}{\meter\cubed}$
+\end{solution}
+
+\begin{question}[ID=UC04,topic=unit-conversion,difficulty=easy]
+    A farmer measures the perimeter of a rectangular field.
+    The length of each long side of the rectangle is found
+        to be \SI{38.25}{\foot}, and the length of each short
+        side is found to be \SI{19.5}{\foot}.
+    What is the perimeter of the field in meters?
+    What is the area of the field in meters squared?
+\end{question}
+\begin{solution}
+    $P = \SI{116}{\meter}$,
+    $A = \SI{69}{\meter\squared}$
+\end{solution}
+
+\begin{question}[ID=UC05,topic=unit-conversion,difficulty=easy]
+    A rectangular building lot measures \SI{100}{\foot} by \SI{150}{\foot}.
+    Determine the area of this lot in square meters (\si{\meter\squared}).
+\end{question}
+\begin{solution}
+    $A = \SI{1394}{\meter\squared}$
+\end{solution}
+
+\begin{question}[ID=UC05,topic=unit-conversion,difficulty=easy]
+    The base of a pyramid covers an area of \SI{13.0}{acre}
+    ($\SI{1}{acre}=\SI{43560}{\foot\squared}$)
+        and has a height of \SI{481}{\foot}.
+    If the volume of the pyramid is given by the expression
+    \begin{equation*}
+        V = \frac{bh}{3},
+    \end{equation*}
+    where $b$ is the area of the base, and $h$ is the height.
+    Find the volume of this pyramid in liters.
+\end{question}
+\begin{solution}
+    %$V = \SI{9.079356e7}{\foot\cubed}$
+    %$V = \SI{2.5729e6}{\meter\cubed}$
+    $B = \SI{2.57e9}{\liter}$, or $B = \SI{2.57}{\giga\liter}$
+\end{solution}
+
+\begin{comment}
+\begin{question}[ID=UC06,topic=unit-conversion,difficulty=easy]
+    \luaexec{
+        Q = [[
+            A shipping box measures
+                \string\SI{\%d}{inches} by
+                \string\SI{\%d}{inches} by
+                \string\SI{\%d}{inches}.
+            Calculate the volume of the box in
+            liters (\string\si{\string\liter}).
+        ]]
+        val1 = math.random(10,100)
+        val2 = math.random(10,100)
+        val3 = math.random(10,100)
+        tex.print( string.format(Q,val1,val2,val3) )
+    }
+\end{question}
+\begin{solution}
+    $f ( l_1, l_2, l_3 ) = \left( l_1 l_2 l_3 \right) \frac{2.54^3}{1000}$
+    %\SI{\directlua{tex.print(Q23val1*Q23val2*Q23val3*2.54*2.54*2.54/1000)}}{\liter}
+\end{solution}
+
+
+%% Simple Problems
+%%----------------------------------------
+
+\directlua{
+    Q21val1 = math.random(100,1000)
+    Q21val2 = math.random(100,1000)
+    Q21val3 = math.random(100,1000)
+}
+
+\begin{question}[ID=UC21,topic=unit-conversion,difficulty=easy]
+    Convert the following simple quantities.
+    %\begin{tasks}(2)
+    %\luaexec{
+    %    V = [[
+    %        \string\task \string\SI{\%d}{years} into seconds
+    %        \string\task \string\SI{\%d}{miles} into feet
+    %        \string\task \string\SI{\%d}{yards} into meters
+    %    ]]
+    %    tex.print( string.format(V,Q21val1,Q21val2,Q21val3) )
+    %}
+    %\end{tasks}
+\end{question}
+\begin{solution}
+    %\luaexec{
+    %    ans1 = Q21val1*365*24*3660
+    %    ans2 = Q21val2*5280
+    %    ans3 = Q21val3*3*12*2.54/100
+    %    A = [[
+    %        \string\SI{\%.3e}{\string\second},
+    %        \string\SI{\%.3e}{\string\feet},
+    %        \string\SI{\%.3e}{\string\meter}
+    %    ]]
+    %    tex.print( string.format(A,ans1,ans2,ans3) )
+    %}
+\end{solution}
+    
+
+\directlua{
+    Q03val1 = math.random(100,1000)
+    Q03val2 = math.random(100,1000)
+    Q03val3 = math.random(100,1000)
+}
+
+\begin{question} %[label=UC03,topic=units,difficulty=easy]
+    Convert the following simple quantities.
+    \begin{tasks}
+        \task \SI{\directlua{tex.print(Q03val1)}}{inches} into miles
+        \task \SI{\directlua{tex.print(Q03val2)}}{\centi\meter} into feet
+        \task \SI{\directlua{tex.print(Q03val3)}}{lbs} into \si{\kilo\gram}
+    \end{tasks}
+\end{question}
+\begin{solution}
+    \begin{tasks}
+        \task \SI{\directlua{tex.print(Q03val1/5280/12)}}{mile}
+        \task \SI{\directlua{tex.print(Q03val2/2.54/12)}}{feet}
+        \task \SI{\directlua{tex.print(Q03val3*0.45359237)}}{\kilo\gram}
+    \end{tasks}
+\end{solution}
+
+
+%%% Complex Unit Conversions
+%%%------------------------------------------------
+
+\directlua{
+    Q11val1 = math.random(100,1000)
+    Q11val2 = math.random(100,1000)
+    Q11val3 = math.random(100,1000)
+}
+\begin{question} %[label=UC11,topic=units,difficulty=medium]
+    Convert the following complex quantities.
+    \begin{tasks}
+        \task \SI{\directlua{tex.print(Q11val1)}}{mph} into \si{\meter\per\second}
+        \task \SI{\directlua{tex.print(Q11val2)}}{feet per second} into mph
+        \task \SI{\directlua{tex.print(Q11val3)}}{inches per second} into \si{miles per day}
+    \end{tasks}
+\end{question}
+\begin{solution}
+    \begin{tasks}
+        \task \SI{\directlua{tex.print(Q11val1*5280/3600/3.2808)}}{\meter\per\second}
+        \task \SI{\directlua{tex.print(Q11val2*3600/5280)}}{mph}
+        \task \SI{\directlua{tex.print(Q11val3*3600*24/12/5280)}}{miles per day}
+    \end{tasks}
+\end{solution}
+
+
+\directlua{
+    Q12val1 = math.random(100,1000)
+    Q12val2 = math.random(100,1000)
+    Q12val3 = math.random(100,1000)
+}
+\begin{question} %[label=UC12,topic=units,difficulty=medium]
+    Convert the following complex quantities.
+    \begin{tasks}
+        \task \SI{\directlua{tex.print(Q12val1)}}{gallons per week} into liters per hour
+        \task \SI{\directlua{tex.print(Q12val2)}}{mpg} into \si{\kilo\meter\per\liter}
+        \task \SI{\directlua{tex.print(Q12val3)}}{mph} into \si{\kilo\meter\per\second}
+    \end{tasks}
+\end{question}
+\begin{solution}
+    \begin{tasks}
+        \task \SI{\directlua{tex.print(Q12val1*3.785411784/7/24)}}{liters per hour}
+        \task \SI{\directlua{tex.print(Q12val2*5280/3280.8/3.785411784)}}{\kilo\meter\per\liter}
+        \task \SI{\directlua{tex.print(Q12val3*5280/3280.8/3600)}}{\kilo\meter\per\second}
+    \end{tasks}
+\end{solution}
+
+
+\directlua{
+    Q13val1 = math.random(100,1000)
+    Q13val2 = math.random(100,1000)
+    Q13val3 = math.random(100,1000)
+}
+\begin{question} %[label=UC13,topic=units,difficulty=medium]
+    Convert the following complex quantities.
+    \begin{tasks}
+        \task \SI{\directlua{tex.print(Q13val1)}}{lbs per week} into \si{\kilo\gram\per\second}
+        \task \SI{\directlua{tex.print(Q13val2)}}{yards per hour} into inches per second
+        \task \SI{\directlua{tex.print(Q13val3)}}{\meter\per\second} into miles per day
+    \end{tasks}
+\end{question}
+\begin{solution}
+    \begin{tasks}
+        %% CHECK
+        \task \SI{\directlua{tex.print(Q13val1*0.45359237/7/24/3600)}}{\kilo\gram\per\second}
+        \task \SI{\directlua{tex.print(Q13val2*3*12/3600)}}{inches per second}
+        \task \SI{\directlua{tex.print(Q13val3*3600*24*3.2808/5280)}}{miles per day}
+    \end{tasks}
+\end{solution}
+
+
+%%% Word Problems
+%%%------------------------------------------------
+\directlua{
+    Q21val1 = math.random(100,1000)
+    Q21val2 = math.random(100,1000)
+}
+\begin{question} %[label=UC21,topic=units,difficulty=easy]
+    A rectangular building lot measures
+        \SI{\directlua{tex.print(Q21val1)}}{feet}
+        by \SI{\directlua{tex.print(Q21val2)}}{feet}.
+    Determine the area of this lot in square meters (\si{\meter\squared}).
+\end{question}
+\begin{solution}
+    \SI{\directlua{tex.print(Q21val1*Q21val2/3.2808/3.2808)}}{\meter\squared}
+\end{solution}
+
+
+\begin{question} %[label=UC22,topic=units,difficulty=medium]
+    Suppose your hair grows at a rate of \sfrac{1}{32} inch per day.
+    Find the rate at which it grows in nanometers per second (\si{\nano\meter\per\second}).
+    Since the distance between atoms in a molecule is on the order of \SI{0.1}{\nano\meter},
+        your answer suggests how rapidly atoms are assembled in this protein synthesis.
+\end{question}
+\begin{solution}
+    \SI{9.2}{\nano\meter\per\second}
+\end{solution}
+\end{comment}
+
+\endinput
+

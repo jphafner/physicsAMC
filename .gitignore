@@ -24,13 +24,24 @@
 *.synctex.gz
 
 # Testing
+<<<<<<< HEAD
 testing.pdf
 testing.tex
 testing-numeric.tex
+=======
+test-exam.tex
+test-exam.pdf
+testing.pdf
+testing-numeric.pdf
+
+## Compiled exams
+source*pdf
+>>>>>>> develop
 
 # AMC specific
 *.amc
 
+<<<<<<< HEAD
 # Project specific
 /qbank/apPhysics/
 /qbank/astronomy/
@@ -46,3 +57,5 @@ testing-numeric.tex
 /qbank/serway/
 
 
+=======
+>>>>>>> develop

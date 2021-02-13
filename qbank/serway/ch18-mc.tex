@@ -1,0 +1,888 @@
+
+%%--------------------------------------------------
+%% Serway: Physics for Scientists and Engineers
+%%--------------------------------------------------
+
+
+%% Chapter 18: Superposition and Standing Waves
+%%--------------------------------------------------
+
+
+%% Table of Contents
+%%--------------------------------------------------
+
+%% 18.1 Superposition and Interference
+%% 18.2 Standing Waves
+%% 18.3 Standing Waves in a String Fixed at Both Ends
+%% 18.4 Resonance
+%% 18.5 Standing Waves in Air Columns
+%% 18.6 Standing Waves in Rods and Membranes
+%% 18.7 Beats: Interference in Time
+%% 18.8 Nonsinusoidal Wave Patterns
+
+
+%% Serway Multiple Choice Questions
+%%--------------------------------------------------
+\element{serway-mc}{
+\begin{question}{serway-ch18-q01}
+    Two harmonic waves are described by
+    \begin{align*}
+        y_1 &= \left(\SI{3}{\meter}\right) \sin\left(\dfrac{4}{\si{\meter}}x-\dfrac{700}{\si{\second}}t\right) \\
+        y_2 &= \left(\SI{3}{\meter}\right) \sin\left(\dfrac{4}{\si{\meter}}x-\dfrac{700}{\si{\second}}t-2\right)\,.
+    \end{align*}
+    What is the amplitude of the resultant wave?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{8.0}{\meter}}
+        \wrongchoice{\SI{4.3}{\meter}}
+        \wrongchoice{\SI{6.0}{\meter}}
+      \correctchoice{\SI{3.2}{\meter}}
+        \wrongchoice{\SI{3.0}{\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch18-q02}
+    Two harmonic waves are described by
+    \begin{align*}
+        y_1 &= \left(\SI{4}{\meter}\right) \sin\left(\dfrac{8}{\si{\meter}}x-\dfrac{300}{\si{\second}}t\right) \\
+        y_2 &= \left(\SI{4}{\meter}\right) \sin\left(\dfrac{8}{\si{\meter}}x-\dfrac{300}{\si{\second}}t-2\right)\,.
+    \end{align*}
+    What is the frequency of the resultant wave?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{300}{\hertz}}
+      \correctchoice{\SI{48}{\hertz}}
+        \wrongchoice{\SI{8}{\hertz}}
+        \wrongchoice{\SI{0.8}{\hertz}}
+        \wrongchoice{\SI{150}{\hertz}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch18-q03}
+    Two harmonic waves are described by
+    \begin{align*}
+        y_1 &= \left(\SI{5}{\meter}\right) \sin\left(\dfrac{6}{\si{\meter}}x-\dfrac{900}{\si{\second}}t\right) \\
+        y_2 &= \left(\SI{5}{\meter}\right) \sin\left(\dfrac{6}{\si{\meter}}x-\dfrac{900}{\si{\second}}t-2\right)\,.
+    \end{align*}
+    What is the wavelength of the resultant wave?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{3}{\meter}}
+        \wrongchoice{\SI{2}{\meter}}
+      \correctchoice{\SI{1}{\meter}}
+        \wrongchoice{\SI{4}{\meter}}
+        \wrongchoice{\SI{6}{\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch18-q04}
+    Two harmonic waves are described by
+    \begin{align*}
+        y_1 &= \left(\SI{7}{\meter}\right) \sin\left(\dfrac{5}{\si{\meter}}x-\dfrac{100}{\si{\second}}t\right) \\
+        y_2 &= \left(\SI{7}{\meter}\right) \sin\left(\dfrac{5}{\si{\meter}}x-\dfrac{100}{\si{\second}}t-2\right)\,.
+    \end{align*}
+    What is the phase of the resultant wave when $x=t=0$?
+    \begin{multicols}{3}
+    \begin{choices}
+        %% radian has no dimension
+        \wrongchoice{\SI{3}{\radian}}
+        \wrongchoice{\SI{0}{\radian}}
+        \wrongchoice{\SI{2}{\radian}}
+      \correctchoice{\SI{1}{\radian}}
+        \wrongchoice{\SI{4}{\radian}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch18-q05}
+    The path difference between two waves is \SI{5}{\meter}. 
+    If the wavelength of the waves emitted by the two sources is \SI{4}{\meter},
+        what is the phase difference?
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{\ang{90}}
+        \wrongchoice{\ang{400}}
+        \wrongchoice{\ang{1.57}}
+        \wrongchoice{\ang{7.85}}
+        \wrongchoice{\ang{15}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch18-q06}
+    Two harmonic waves are described by
+    \begin{align*}
+        y_1 &= \left(\SI{3}{\centi\meter}\right) \sin\left(\dfrac{8}{\si{\meter}}x-\dfrac{2}{\si{\second}}t\right) \\
+        y_2 &= \left(\SI{3}{\centi\meter}\right) \sin\left(\dfrac{8}{\si{\meter}}x-\dfrac{2}{\si{\second}}t\right)\,.
+    \end{align*}
+    What is the magnitude of the speed of the two traveling waves?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{16}{\meter\per\second}}
+        \wrongchoice{\SI{4}{\meter\per\second}}
+        \wrongchoice{\SI{8}{\meter\per\second}}
+      \correctchoice{\SI{0.25}{\meter\per\second}}
+        \wrongchoice{\SI{2}{\meter\per\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch18-q07}
+    Two harmonic waves are described by
+    \begin{align*}
+        y_1 &= \left(\SI{6}{\centi\meter}\right) \sin\left(\pi\left(\dfrac{8}{\si{\meter}}x-\dfrac{2}{\si{\second}}t\right)\right) \\
+        y_2 &= \left(\SI{6}{\centi\meter}\right) \sin\left(\pi\left(\dfrac{8}{\si{\meter}}x-\dfrac{2}{\si{\second}}t\right)\right)\,.
+    \end{align*}
+    From the choices given,
+        determine the smallest positive value of $x$ corresponding to a node of the resultant standing wave.
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{3}{\centi\meter}}
+        \wrongchoice{\SI{0.25}{\centi\meter}}
+      \correctchoice{zero}
+        \wrongchoice{\SI{6}{\centi\meter}}
+        \wrongchoice{\SI{1.5}{\centi\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch18-q08}
+    Two harmonic waves are described by
+    \begin{align*}
+        y_1 &= \left(\SI{6}{\centi\meter}\right) \sin\left(\pi\left(\dfrac{2.00}{\si{\meter}}x-\dfrac{3.00}{\si{\second}}t\right)\right) \\
+        y_2 &= \left(\SI{6}{\centi\meter}\right) \sin\left(\pi\left(\dfrac{2.00}{\si{\meter}}x-\dfrac{3.00}{\si{\second}}t\right)\right)\,.
+    \end{align*}
+    What is the magnitude of the displacement of this wave at $x=\SI{3}{\centi\meter}$ and $t=\SI{5}{\second}$?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{12.0}{\centi\meter}}
+        \wrongchoice{\SI{3.00}{\centi\meter}}
+        \wrongchoice{\SI{6.00}{\centi\meter}}
+      \correctchoice{\SI{2.25}{\centi\meter}}
+        \wrongchoice{zero}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch18-q09}
+    Two harmonic waves traveling in opposite directions interfere to produce a standing wave described by
+    \begin{equation*}
+        y = 3\sin\left(2x\right) \cos\left(5t\right)\,,
+    \end{equation*}
+        where $x$ is in \si{\meter} and $t$ is in \si{\second}.
+    What is the wavelength of the interfering waves?
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{\SI{3.14}{\meter}}
+        \wrongchoice{\SI{1.00}{\meter}}
+        \wrongchoice{\SI{6.28}{\meter}}
+        \wrongchoice{\SI{12.0}{\meter}}
+        \wrongchoice{\SI{2.00}{\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch18-q10}
+    Two harmonic waves traveling in opposite directions interfere to produce a standing wave described by
+    \begin{equation*}
+        y = 4\sin\left(5x\right) \cos\left(6t\right)\,,
+    \end{equation*}
+        where $x$ is in \si{\meter} and $t$ is in \si{\second}.
+    What is the approximate frequency of the interfering waves?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{3}{\hertz}}
+      \correctchoice{\SI{1}{\hertz}}
+        \wrongchoice{\SI{6}{\hertz}}
+        \wrongchoice{\SI{12}{\hertz}}
+        \wrongchoice{\SI{5}{\hertz}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch18-q11}
+    Two harmonic waves traveling in opposite directions interfere to produce a standing wave described by
+    \begin{equation*}
+        y = 2\sin\left(4x\right) \cos\left(3t\right)\,,
+    \end{equation*}
+        where $x$ is in \si{\meter} and $t$ is in \si{\second}.
+    What is the speed of the interfering waves?
+    \begin{multicols}{3}
+    \begin{choices}
+       \correctchoice{\SI{0.75}{\meter\per\second}}
+         \wrongchoice{\SI{0.25}{\meter\per\second}}
+         \wrongchoice{\SI{1.3}{\meter\per\second}}
+         \wrongchoice{\SI{12}{\meter\per\second}}
+         \wrongchoice{\SI{3.0}{\meter\per\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch18-q12}
+    Two harmonic waves traveling in opposite directions interfere to produce a standing wave described by
+    \begin{equation*}
+        y = 2\sin\left(\pi x\right) \cos\left(3\pi t\right)\,,
+    \end{equation*}
+        where $x$ is in \si{\meter} and $t$ is in \si{\second}.
+    What is the distance between the first two antinodes?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{8}{\meter}}
+        \wrongchoice{\SI{2}{\meter}}
+        \wrongchoice{\SI{4}{\meter}}
+      \correctchoice{\SI{1}{\meter}}
+        \wrongchoice{\SI{0.5}{\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch18-q13}
+    A string is stretched and fixed at both ends,
+        \SI{200}{\centi\meter} apart. 
+    If the density of the string is \SI{0.015}{\gram\per\centi\meter},
+        and its tension is \SI{600}{\newton},
+        what is the wavelength of the first harmonic?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{600}{\centi\meter}}
+      \correctchoice{\SI{400}{\centi\meter}}
+        \wrongchoice{\SI{800}{\centi\meter}}
+        \wrongchoice{\SI{1000}{\centi\meter}}
+        \wrongchoice{\SI{200}{\centi\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch18-q14}
+    A string is stretched and fixed at both ends,
+        \SI{200}{\centi\meter} apart. 
+    If the density of the string is \SI{0.015}{\gram\per\centi\meter},
+        and its tension is \SI{600}{\newton},
+        what is the fundamental frequency?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{316}{\hertz}}
+        \wrongchoice{\SI{632}{\hertz}}
+      \correctchoice{\SI{158}{\hertz}}
+        \wrongchoice{\SI{215}{\hertz}}
+        \wrongchoice{\SI{79}{\hertz}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch18-q15}
+    A stretched string is observed to vibrate in three equal segments when driven by a \SI{480}{\hertz} oscillator. 
+    What is the fundamental frequency of vibration for this string?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{480}{\hertz}}
+        \wrongchoice{\SI{320}{\hertz}}
+      \correctchoice{\SI{160}{\hertz}}
+        \wrongchoice{\SI{640}{\hertz}}
+        \wrongchoice{\SI{240}{\hertz}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch18-q16}
+    A clarinet behaves like a tube closed at one end. 
+    If its length is \SI{1.0}{\meter},
+        and the velocity of sound is \SI{344}{\meter\per\second},
+        what is its fundamental frequency?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{264}{\hertz}}
+        \wrongchoice{\SI{140}{\hertz}}
+      \correctchoice{\SI{86}{\hertz}}
+        \wrongchoice{\SI{440}{\hertz}}
+        \wrongchoice{\SI{172}{\hertz}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch18-q17}
+    An organ pipe open at both ends has a radius of \SI{4.0}{\centi\meter} and a length of \SI{6.0}{\meter}.
+    What is the frequency of the third harmonic? 
+    (Assume the velocity of sound is \SI{344}{\meter\per\second}.)
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{76}{\hertz}}
+      \correctchoice{\SI{86}{\hertz}}
+        \wrongchoice{\SI{54}{\hertz}}
+        \wrongchoice{\SI{28}{\hertz}}
+        \wrongchoice{\SI{129}{\hertz}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch18-q18}
+    A vertical tube one meter long is open at the top. 
+    It is filled with \SI{75}{\centi\meter} of water.
+    If the velocity of sound is \SI{344}{\meter\per\second},
+        what will the fundamental resonant frequency be?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{3.4}{\hertz}}
+        \wrongchoice{\SI{172}{\hertz}}
+      \correctchoice{\SI{344}{\hertz}}
+        \wrongchoice{\SI{1.7}{\hertz}}
+        \wrongchoice{\SI{688}{\hertz}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch18-q19}
+    A length of organ pipe is closed at one end. 
+    If the speed of sound is \SI{344}{\meter\per\second},
+        what length of pipe is needed to obtain a fundamental frequency of \SI{50}{\hertz}?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{28}{\centi\meter}}
+        \wrongchoice{\SI{86}{\centi\meter}}
+        \wrongchoice{\SI{344}{\centi\meter}}
+      \correctchoice{\SI{172}{\centi\meter}}
+        \wrongchoice{\SI{688}{\centi\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch18-q20}
+    Two tuning forks with frequencies \SI{264}{\hertz} and \SI{262}{\hertz} produce ``beats''.
+    What is the beat frequency?
+    \begin{multicols}{2}
+    \begin{choices}[o]
+        \wrongchoice{\num{4}}
+      \correctchoice{\num{2}}
+        \wrongchoice{\num{1}}
+        \wrongchoice{\num{3}}
+        \wrongchoice{zero (no beats are produced)}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch18-q21}
+    Two instruments produce a beat frequency of \SI{5}{\hertz}. 
+    If one has a frequency of \SI{264}{\hertz},
+        what could be the frequency of the other instrument?
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{\SI{269}{\hertz}}
+        \wrongchoice{\SI{254}{\hertz}}
+        \wrongchoice{\SI{264}{\hertz}}
+        \wrongchoice{\SI{5}{\hertz}}
+        \wrongchoice{\SI{274}{\hertz}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch18-q22}
+    Two waves are described by
+    \begin{align*}
+        y_1 &= \left(\SI{6}{\meter}\right) \cos\left(\dfrac{180}{\si{\second}}t\right) \\
+        y_2 &= \left(\SI{6}{\meter}\right) \cos\left(\dfrac{186}{\si{\second}}t\right)\,.
+    \end{align*}
+    With what angular frequency does the maximum amplitude
+        of the resultant wave vary with time?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{366}{\radian\per\second}}
+        \wrongchoice{\SI{6}{\radian\per\second}}
+      \correctchoice{\SI{3}{\radian\per\second}}
+        \wrongchoice{\SI{92}{\radian\per\second}}
+        \wrongchoice{\SI{180}{\radian\per\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch18-q23}
+    Two waves are described by
+    \begin{align*}
+        y_1 &= \left(\SI{6}{\meter}\right) \cos\left(\dfrac{180}{\si{\second}}t\right) \\
+        y_2 &= \left(\SI{6}{\meter}\right) \cos\left(\dfrac{186}{\si{\second}}t\right)\,.
+    \end{align*}
+    What effective frequency does the resultant vibration have at a point?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{92}{\hertz}}
+      \correctchoice{\SI{183}{\hertz}}
+        \wrongchoice{\SI{6}{\hertz}}
+        \wrongchoice{\SI{3}{\hertz}}
+        \wrongchoice{\SI{366}{\hertz}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch18-q24}
+    An organ pipe open at both ends is \SI{1.5}{\meter} long. 
+    A second organ pipe that is closed at one end and open at the other is \SI{0.75}{\meter} long. 
+    The speed of sound in the room is \SI{330}{\meter\per\second}.
+    Which of the following sets of frequencies consists of frequencies which can be produced by both pipes?
+    \begin{choices}
+        \wrongchoice{\SI{110}{\hertz}, \SI{220}{\hertz}, \SI{330}{\hertz}}
+        \wrongchoice{\SI{220}{\hertz}, \SI{440}{\hertz}, \SI{660}{\hertz}}
+      \correctchoice{\SI{110}{\hertz}, \SI{330}{\hertz}, \SI{550}{\hertz}}
+        \wrongchoice{\SI{330}{\hertz}, \SI{440}{\hertz}, \SI{550}{\hertz}}
+        \wrongchoice{\SI{220}{\hertz}, \SI{660}{\hertz}, \SI{1100}{\hertz}}
+    \end{choices}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch18-q25}
+    Two strings are respectively \SI{1.00}{\meter} and \SI{2.00}{\meter} long. 
+    Which of the following wavelengths,
+        could represent harmonics present on both strings?
+    \begin{choices}
+        \wrongchoice{\SI{0.800}{\meter}, \SI{0.670}{\meter}, \SI{0.500}{\meter}}
+        \wrongchoice{\SI{1.33}{\meter}, \SI{1.00}{\meter}, \SI{0.500}{\meter}}
+      \correctchoice{\SI{2.00}{\meter}, \SI{1.00}{\meter}, \SI{0.500}{\meter}}
+        \wrongchoice{\SI{2.00}{\meter}, \SI{1.33}{\meter}, \SI{1.00}{\meter}}
+        \wrongchoice{\SI{4.00}{\meter}, \SI{2.00}{\meter}, \SI{1.00}{\meter}}
+    \end{choices}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch18-q26}
+    Two point sources emit sound waves of \SI{1.0}{\meter} wavelength. 
+    The sources, \SI{2.0}{\meter} apart, as shown below,
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE:
+    \end{tikzpicture}
+    \end{center}
+        emit waves which are in phase with each other at the instant of emission. 
+    Where, along the line between the sources,
+        are the waves out of phase with each other by $\pi\,\si{\radian}$?
+    \begin{choices}
+        %% NOTE: format spacing
+        \wrongchoice{$x = \SI{0}{\meter}, \SI{1.0}{\meter}, \SI{2.0}{\meter}$}
+        \wrongchoice{$x = \SI{0.50}{\meter}, \SI{1.5}{\meter}$}
+        \wrongchoice{$x = \SI{0.50}{\meter}, \SI{1.0}{\meter}, \SI{1.5}{\meter}$}
+      \correctchoice{$x = \SI{0.75}{\meter}, \SI{1.25}{\meter}$}
+        \wrongchoice{$x = \SI{0.25}{\meter}, \SI{0.75}{\meter}, \SI{1.25}{\meter}, \SI{1.75}{\meter}$}
+    \end{choices}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch18-q27}
+    Two identical strings have the same length and same mass per unit length. 
+    String $B$ is stretched with four times as great a tension as that applied to string $A$.
+    Which statement is correct for all $n$ harmonics on the two strings,
+        $n = 1, 2, 3\ldots$?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{$f_{n,B} = \dfrac{1}{4} f_{n,A}$}
+        \wrongchoice{$f_{n,B} = \dfrac{1}{2} f_{n,A}$}
+        \wrongchoice{$f_{n,B} = \sqrt{2} f_{n,A}$}
+      \correctchoice{$f_{n,B} = 2 f_{n,A}$}
+        \wrongchoice{$f_{n,B} = 4 f_{n,A}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch18-q28}
+    The superposition of two waves
+    \begin{align*}
+        y_1 &= \left(\SI{0.006}{\centi\meter}\right) \cos\left[2\pi\left(\dfrac{156}{\si{\second}}t\right)\right] \\
+        y_2 &= \left(\SI{0.004}{\centi\meter}\right) \cos\left[2\pi\left(\dfrac{150}{\si{\second}}t\right)\right]\,,
+    \end{align*}
+    at the location $x=\text{zero}$ in space results in
+    \begin{choices}
+        \wrongchoice{beats at a beat frequency of \SI{3}{\hertz}.}
+        \wrongchoice{a pure tone at a frequency of \SI{153}{\hertz}.}
+        \wrongchoice{a pure tone at a frequency of \SI{156}{\hertz}.}
+        \wrongchoice{beats at a beat frequency of \SI{6}{\hertz} in a \SI{153}{\hertz} tone.}
+      \correctchoice{a tone at a frequency of \SI{156}{\hertz}, as well as beats at a beat frequency of \SI{6}{\hertz} in a \SI{153}{\hertz} tone.}
+    \end{choices}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch18-q29}
+    The superposition of two waves,
+    \begin{align*}
+        y_1 &= \left(\SI{2e-8}{\meter}\right) \sin\left[\pi\left(\dfrac{x}{\SI{2}{\meter}}-\dfrac{170}{\si{\second}}t\right)\right] \\
+        y_2 &= \left(\SI{2e-8}{\meter}\right) \sin\left[\pi\left(\dfrac{x}{\SI{2}{\meter}}-\dfrac{170}{\si{\second}}t-\dfrac{1}{2}\right)\right]\,,
+    \end{align*}
+    results in a wave with a phase angle of:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$0\,\si{\radian}$}
+        \wrongchoice{$\dfrac{1}{2}\,\si{\radian}$}
+      \correctchoice{$\dfrac{\pi}{4}\,\si{\radian}$}
+        \wrongchoice{$\dfrac{\pi}{2}\,\si{\radian}$}
+        \wrongchoice{$\pi\,\si{\radian}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch18-q30}
+    The superposition of two waves,
+    \begin{align*}
+        y_1 &= \left(\SI{2e-8}{\meter}\right) \sin\left[\pi\left(\dfrac{x}{\SI{2}{\meter}}-\dfrac{170}{\si{\second}}t\right)\right] \\
+        y_2 &= \left(\SI{2e-8}{\meter}\right) \sin\left[\pi\left(\dfrac{x}{\SI{2}{\meter}}-\dfrac{170}{\si{\second}}t-\dfrac{1}{2}\right)\right]\,,
+    \end{align*}
+    results in a wave with a wavelength of:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\dfrac{\pi}{2}\,\si{\meter}$}
+        \wrongchoice{$2\,\si{\meter}$}
+        \wrongchoice{$\pi\,\si{\meter}$}
+      \correctchoice{$4\,\si{\meter}$}
+        \wrongchoice{$4\pi\,\si{\meter}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch18-q31}
+    The superposition of two waves,
+    \begin{align*}
+        y_1 &= \left(\SI{2e-8}{\meter}\right) \sin\left[\pi\left(\dfrac{x}{\SI{2}{\meter}}-\dfrac{170}{\si{\second}}t\right)\right] \\
+        y_2 &= \left(\SI{2e-8}{\meter}\right) \sin\left[\pi\left(\dfrac{x}{\SI{2}{\meter}}-\dfrac{170}{\si{\second}}t-\dfrac{1}{2}\right)\right]\,,
+    \end{align*}
+    results in a wave with a frequency of:
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{$85\,\si{\hertz}$}
+        \wrongchoice{$170\,\si{\hertz}$}
+        \wrongchoice{$85\pi\,\si{\hertz}$}
+        \wrongchoice{$340\,\si{\hertz}$}
+        \wrongchoice{$170\pi\,\si{\hertz}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch18-q32}
+    In a standing wave, not necessarily at the fundamental frequency,
+        on a string of length $L$, the distance between nodes is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\dfrac{\lambda}{4}$}
+      \correctchoice{$\dfrac{\lambda}{2}$}
+        \wrongchoice{$\lambda$}
+        \wrongchoice{$\dfrac{L}{4}$}
+        \wrongchoice{$\dfrac{L}{2}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch18-q33}
+    Which of the following wavelengths could \emph{not} be present as a standing wave in a \SI{2}{\meter} long organ pipe open at both ends?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{4}{\meter}}
+        \wrongchoice{\SI{2}{\meter}}
+        \wrongchoice{\SI{1}{\meter}}
+      \correctchoice{\SI{0.89}{\meter}}
+        \wrongchoice{\SI{0.5}{\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch18-q34}
+    Which of the following wavelengths could \emph{not} be present as a harmonic on a \SI{2}{\meter} long string?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{4}{\meter}}
+        \wrongchoice{\SI{2}{\meter}}
+        \wrongchoice{\SI{1}{\meter}}
+      \correctchoice{\SI{0.89}{\meter}}
+        \wrongchoice{\SI{0.5}{\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch18-q35}
+    Which of the following frequencies could \emph{not} be present as a standing wave in a \SI{2}{\meter} long organ pipe open at both ends.
+    The fundamental frequency is \SI{85}{\hertz}.
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{85}{\hertz}}
+        \wrongchoice{\SI{170}{\hertz}}
+        \wrongchoice{\SI{255}{\hertz}}
+        \wrongchoice{\SI{340}{\hertz}}
+      \correctchoice{\SI{382}{\hertz}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch18-q36}
+    An observer stands \SI{3}{\meter} from speaker $A$ and \SI{4}{\meter} from speaker $B$.
+    Both speakers, oscillating in phase, produce \SI{170}{\hertz} waves. 
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE:
+    \end{tikzpicture}
+    \end{center}
+    The speed of sound in air is \SI{340}{\meter\per\second}.
+    What is the phase difference (in radians) between the waves from $A$ and $B$ at the observer’s location, point P?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$0\,\si{\radian}$}
+        \wrongchoice{$\dfrac{\pi}{2}\,\si{\radian}$}
+      \correctchoice{$\pi\,\si{\radian}$}
+        \wrongchoice{$2\pi\,\si{\radian}$}
+        \wrongchoice{$4\pi\,\si{\radian}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{questionmult}{serway-ch18-q37}
+    As shown below, a garden room has three walls,
+        a floor and a roof, but is open to the garden on one side.
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE:
+    \end{tikzpicture}
+    \end{center}
+    The wall widths are $L$ and $w$.
+    The roof height is $h$.
+    When traveling sound waves enter the room,
+        standing sound waves can be present in the room if the wavelength of the standing waves is
+    \begin{choices}
+      \correctchoice{$\dfrac{L}{n}$, where $n$ is a positive integer.}
+      \correctchoice{$\dfrac{w}{n}$, where $n$ is an odd integer.}
+        \wrongchoice{$\dfrac{h}{n}$, where $n$ is an even integer.}
+        %\wrongchoice{in all cases listed above.}
+        %\correctchoice{given by (a) or (b) above, but not by (c).}
+    \end{choices}
+\end{questionmult}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch18-q38}
+    Transverse waves $y_1 = A_1\sin\left(k_1 x - \omega_1 t\right)$
+        and $y_2 = A_2\sin\left(k_2 x + \omega_2 t\right)$,
+        with $A_2 > A_1$ start at opposite ends of a long rope when $t=0$. 
+    The magnitude of the maximum displacement, $y$,
+        of the rope at any point is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{$A_1 - A_2$}
+        \wrongchoice{$A_2 - A_1$}
+      \correctchoice{$A_1 + A_2$}
+        \wrongchoice{$\left( A_1 - A_2 \right) \dfrac{k_1}{k_2}$}
+        \wrongchoice{$\left( A_2 - A_1 \right) \dfrac{k_2}{k_1}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{questionmult}{serway-ch18-q39}
+    Two speakers in an automobile emit sound waves that are in phase at the speakers. 
+    One speaker is \SI{40}{\centi\meter} ahead of and \SI{30}{\centi\meter} to the left of the driver's left ear. 
+    The other speaker is \SI{50}{\centi\meter} ahead of and \SI{120}{\centi\meter} to the right of the driver's right ear. 
+    Which of the following wavelengths is(are) in phase at the left ear for the speaker on the left and the right ear for the speaker on the right?
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{\SI{10}{\centi\meter}}
+        \wrongchoice{\SI{20}{\centi\meter}}
+      \correctchoice{\SI{650}{\centi\meter}}
+        %\wrongchoice{All of the wavelengths listed above.}
+        %\correctchoice{Only the wavelengths listed in (a) and (c).}
+    \end{choices}
+    \end{multicols}
+\end{questionmult}
+}
+
+\element{serway-mc}{
+\begin{questionmult}{serway-ch18-q40}
+    A very long string is tied to a rigid wall at one end while the other end is attached to a simple harmonic oscillator. 
+    Which of the following can be changed by changing the frequency of the oscillator?
+    \begin{choices}
+        \wrongchoice{The speed of the waves traveling along the string.}
+        \wrongchoice{The tension in the string.}
+      \correctchoice{The wavelength of the waves on the string.}
+        %\wrongchoice{All of the above.}
+        %\wrongchoice{None of the above.}
+    \end{choices}
+\end{questionmult}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch18-q41}
+    %% Open
+    When two organ pipes open at both ends sound a perfect fifth,
+        such as two notes with fundamental frequencies at \SI{440}{\hertz} and \SI{660}{\hertz},
+        both pipes produce overtones. 
+    Which choice below correctly describes overtones present in both pipes?
+    \begin{choices}
+        \wrongchoice{\SI{440}{\hertz}, \SI{880}{\hertz} and \SI{1320}{\hertz}.}
+        \wrongchoice{\SI{660}{\hertz}, \SI{1320}{\hertz} and \SI{1980}{\hertz}.}
+        \wrongchoice{\SI{880}{\hertz}, \SI{1320}{\hertz} and \SI{1760}{\hertz}.}
+      \correctchoice{\SI{1320}{\hertz}, \SI{2640}{\hertz} and \SI{3960}{\hertz}.}
+        \wrongchoice{They have no overtones in common.}
+    \end{choices}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch18-q42}
+    %% Closed
+    When two organ pipes closed at both ends sound a perfect fifth,
+        such as two notes with fundamental frequencies at \SI{440}{\hertz} and \SI{660}{\hertz},
+        both pipes produce overtones. 
+    Which choice below correctly describes overtones present in both pipes?
+    \begin{choices}
+        \wrongchoice{\SI{440}{\hertz}, \SI{880}{\hertz} and \SI{1320}{\hertz}.}
+        \wrongchoice{\SI{660}{\hertz}, \SI{1320}{\hertz} and \SI{1980}{\hertz}.}
+        \wrongchoice{\SI{880}{\hertz}, \SI{1320}{\hertz} and \SI{1760}{\hertz}.}
+        \wrongchoice{\SI{1320}{\hertz}, \SI{2640}{\hertz} and \SI{3960}{\hertz}.}
+      \correctchoice{They have no overtones in common.}
+    \end{choices}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch18-q43}
+    Two organ pipes, a pipe of fundamental frequency \SI{440}{\hertz},
+        closed at one end, and a pipe of fundamental frequency \SI{660}{\hertz},
+        open at both ends, produce overtones. 
+    Which choice below correctly describes overtones present in both pipes?
+    \begin{choices}
+        \wrongchoice{After the first overtone of each pipe, every second overtone of the first pipe matches every second overtone of the second pipe.}
+        \wrongchoice{After the first overtone of each pipe, every second overtone of the first pipe matches every third overtone of the second pipe.}
+        \wrongchoice{After the first overtone of each pipe, every third overtone of the first pipe matches every second overtone of the second pipe.}
+        \wrongchoice{After the first overtone of each pipe, every second overtone of the first pipe matches every fourth overtone of the second pipe.}
+      \correctchoice{After the first overtone of each pipe, every third overtone of the first pipe matches every fourth overtone of the second pipe.}
+    \end{choices}
+\end{question}
+}
+
+\newcommand{\serwayChEighteenQFortyFour}{
+\begin{tikzpicture}
+    %% NOTE:
+\end{tikzpicture}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch18-q44}
+    The figure below shows wave crests after a stone is thrown into a pond.
+    \begin{center}
+        \serwayChEighteenQFortyFour
+    \end{center}
+    The phase difference in radians between points $A$ and $B$ is:
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{zero}
+        \wrongchoice{$\dfrac{\pi}{4}$}
+        \wrongchoice{$\dfrac{\pi}{2}$}
+        \wrongchoice{$\pi$}
+        \wrongchoice{$\dfrac{3\pi}{2}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch18-q45}
+    The figure below shows wave crests after a stone is thrown into a pond.
+    \begin{center}
+        \serwayChEighteenQFortyFour
+    \end{center}
+    The phase difference in radians between points $A$ and $C$ is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{zero}
+        \wrongchoice{$\dfrac{\pi}{2}$}
+        \wrongchoice{$\pi$}
+        \wrongchoice{$\dfrac{3\pi}{2}$}
+      \correctchoice{$2\pi$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch18-q46}
+    The figure below shows wave crests after a stone is thrown into a pond.
+    \begin{center}
+        \serwayChEighteenQFortyFour
+    \end{center}
+    The phase difference in radians between points $A$ and $D$ is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\pi$}
+        \wrongchoice{$2\pi$}
+      \correctchoice{$3\pi$}
+        \wrongchoice{$4\pi$}
+        \wrongchoice{$5\pi$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+\endinput
+
+

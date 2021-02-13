@@ -1,0 +1,790 @@
+
+%%--------------------------------------------------
+%% Halliday: Fundamentals of Physics
+%%--------------------------------------------------
+
+
+%% Chapter 24: Electric Potential
+%%--------------------------------------------------
+
+
+%% Learning Objectives
+%%--------------------------------------------------
+
+%% 24.01: Identify that the electric force is conservative and thus has an associated potential energy.
+%% 24.02: Identify that at every point in a charged object's electric field, the object sets up an electric potential $V$, which is a scalar quantity that can be positive or negative depending on the sign of the object's charge.
+%% 24.03: For a charged particle placed at a point in an object's electric field, apply the relationship between the object's electric potential $V$ at that point, the particle's charge $q$, and the potential energy $U$ of the particle--object system.
+%% 24.04: Convert energies between units of joules and electron-volts.
+%% 24.05: If a charged particle moves from an initial point to a final point in an electric field, apply the relationships between the change $\Delta V$ in the potential, the particle's charge $q$, the change $\Delta U$ in the potential energy, and the work $W$ done by the electric force.
+%% 24.06: If a charged particle moves between two given points in the electric field of a charged object, identify that the amount of work done by the electric force is path independent.
+%% 24.07: If a charged particle moves through a change $\Delta V$ in electric potential without an applied force acting on it, relate $\Delta V$ and the change $\Delta K$ in the particle’s kinetic energy.
+%% 24.08: If a charged particle moves through a change $\Delta V$ in electric potential while an applied force acts on it, relate $\Delta V$, the change $\Delta K$ in the particle's kinetic energy, and the work $W_{app}$ done by the applied force.
+
+
+%% Halliday Multiple Choice Questions
+%%--------------------------------------------------
+\element{halliday-mc}{
+\begin{question}{halliday-ch24-q01}
+    An electron moves from point $i$ to point $f$,
+        in the direction of a uniform electric field. 
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE:
+    \end{tikzpicture}
+    \end{center}
+    During this displacement:
+    \begin{choices}
+        \wrongchoice{the work done by the field is positive and the potential energy of the electron-field system increases}
+      \correctchoice{the work done by the field is negative and the potential energy of the electron-field system increases}
+        \wrongchoice{the work done by the field is positive and the potential energy of the electron-field system decreases}
+        \wrongchoice{the work done by the field is negative and the potential energy of the electron-field system decreases}
+        \wrongchoice{the work done by the field is positive and the potential energy of the electron-field system does not change}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch24-q02}
+    A particle with a charge of \SI{5.5e-8}{\coulomb} is \SI{3.5}{\centi\meter} from a particle with a charge of \SI{-2.3e-8}{\coulomb}.
+    The potential energy of this two-particle system,
+        relative to the potential energy at infinite separation, is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{3.2e-4}{\joule}}
+      \correctchoice{\SI{-3.2e-4}{\joule}}
+        \wrongchoice{\SI{9.3e-3}{\joule}}
+        \wrongchoice{\SI{-9.3e-3}{\joule}}
+        \wrongchoice{zero}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch24-q03}
+    A particle with a charge of \SI{5.5e-8}{\coulomb} is fixed at the origin. 
+    A particle with a charge of \SI{-2.3e-8}{\coulomb} is moved from $x=\SI{3.5}{\centi\meter}$ on the $x$ axis to $y=\SI{4.3}{\centi\meter}$ on the $y$ axis. 
+    The change in potential energy of the two-particle system is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{3.1e-3}{\joule}}
+        \wrongchoice{\SI{-3.1e-3}{\joule}}
+      \correctchoice{\SI{6.0e-5}{\joule}}
+        \wrongchoice{\SI{-6.0e-5}{\joule}}
+        \wrongchoice{zero}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch24-q04}
+    A particle with a charge of \SI{5.5e-8}{\coulomb} charge is fixed at the origin. 
+    A particle with a charge of \SI{-2.3e-8}{\coulomb} charge is moved from $x=\SI{3.5}{\centi\meter}$ on the $x$ axis to $y=\SI{3.5}{\centi\meter}$ on the $y$ axis.
+    The change in the potential energy of the two-particle system is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{3.2e-4}{\joule}}
+        \wrongchoice{\SI{-3.2e-4}{\joule}}
+        \wrongchoice{\SI{9.3e-3}{\joule}}
+        \wrongchoice{\SI{-9.3e-3}{\joule}}
+      \correctchoice{zero}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch24-q05}
+    Three particles lie on the x axis: particle 1,
+    with a charge of \SI{1e-8}{\coulomb} is at $x=\SI{1}{\centi\meter}$,
+        particle 2, with a charge of \SI{2e-8}{\coulomb}, is at $x=\SI{2}{\centi\meter}$,
+        and particle 3, with a charge of \SI{-3e-8}{\coulomb},
+        is at $x=\SI{3}{\centi\meter}$.
+    The potential energy of this arrangement,
+        relative to the potential energy for infinite separation, is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{+4.9e-4}{\joule}}
+      \correctchoice{\SI{-4.9e-4}{\joule}}
+        \wrongchoice{\SI{+8.5e-4}{\joule}}
+        \wrongchoice{\SI{-8.5e-4}{\joule}}
+        \wrongchoice{zero}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch24-q06}
+    Two identical particles, each with charge $q$, are placed on the $x$ axis,
+        one at the origin and the other at $x=\SI{5}{\centi\meter}$. 
+    A third particle, with charge $-q$,
+        is placed on the $x$ axis so the potential energy of the three-particle system is the same as the potential energy at infinite separation.
+    Its $x$ coordinate is:
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{\SI{13}{\centi\meter}}
+        \wrongchoice{\SI{2.5}{\centi\meter}}
+        \wrongchoice{\SI{7.5}{\centi\meter}}
+        \wrongchoice{\SI{10}{\centi\meter}}
+        \wrongchoice{\SI{-5}{\centi\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch24-q07}
+    Choose the correct statement:
+    \begin{choices}
+        \wrongchoice{A proton tends to go from a region of low potential to a region of high potential}
+        \wrongchoice{The potential of a negatively charged conductor must be negative}
+        \wrongchoice{If $E=0$ at a point $P$ then $V$ must be zero at $P$}
+        \wrongchoice{If $V=0$ at a point $P$ then $E$ must be zero at $P$}
+        \wrongchoice{None of the provided are correct}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch24-q08}
+    If \SI{500}{\joule} of work are required to carry a charged particle between two points with a potential difference of \SI{20}{\volt},
+        the magnitude of the charge on the particle is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{0.040}{\coulomb}}
+      \correctchoice{\SI{12.5}{\coulomb}}
+        \wrongchoice{\SI{20}{\coulomb}}
+        \wrongchoice{cannot be computed unless the path is given}
+        \wrongchoice{none of the provided}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch24-q09}
+    The potential difference between two points is \SI{100}{\volt}.
+    If a particle with a charge of \SI{2}{\coulomb} is transported from one of these points to the other,
+        the magnitude of the work done is:
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{\SI{200}{\joule}}
+        \wrongchoice{\SI{100}{\joule}}
+        \wrongchoice{\SI{50}{\joule}}
+        \wrongchoice{\SI{100}{\joule}}
+        \wrongchoice{\SI{2}{\joule}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch24-q10}
+    During a lightning discharge, \SI{30}{\coulomb} of charge move through a potential difference of \SI{1.0e8}{\volt} in \SI{2.0e-2}{\second}.
+    The energy released by this lightning bolt is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{1.5e11}{\joule}}
+      \correctchoice{\SI{3.0e9}{\joule}}
+        \wrongchoice{\SI{6.0e7}{\joule}}
+        \wrongchoice{\SI{3.3e6}{\joule}}
+        \wrongchoice{\SI{1500}{\joule}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\newcommand{\hallidayChTwentyFourQEleven}{
+\begin{tikzpicture}
+    %% NOTE:
+\end{tikzpicture}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch24-q11}
+    Points $R$ and $T$ are each a distance $d$ from each of two particles with charges of equal magnitudes and opposite signs as shown. 
+    \begin{center}
+        \hallidayChTwentyFourQEleven
+    \end{center}
+    If $k=\dfrac{1}{4\pi\epsilon_0}$,
+        the work required to move a particle with a negative charge $q$ from $R$ to $T$ is:
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{zero}
+        \wrongchoice{$\dfrac{kqQ}{d^2}$}
+        \wrongchoice{$\dfrac{kqQ}{d}$}
+        \wrongchoice{$\dfrac{kqQ}{\sqrt{2}d}$}
+        \wrongchoice{$\dfrac{kqQ}{2d}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch24-q12}
+    Points $R$ and $T$ are each a distance $d$ from each of two particles with equal positive charges as shown. 
+    \begin{center}
+        \hallidayChTwentyFourQEleven
+    \end{center}
+    If $k=\dfrac{1}{4\pi\epsilon_0}$,
+        the work required to move a particle with charge $q$ from $R$ to $T$ is:
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{zero}
+        \wrongchoice{$\dfrac{kqQ}{d^2}$}
+        \wrongchoice{$\dfrac{kqQ}{d}$}
+        \wrongchoice{$\dfrac{kqQ}{\sqrt{2}d}$}
+        \wrongchoice{$\dfrac{kqQ}{2d}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch24-q13}
+    Two particle with charges $Q$ and $-Q$ are fixed at the vertices of an equilateral triangle with sides of length $a$. 
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE:
+    \end{tikzpicture}
+    \end{center}
+    If $k=\dfrac{1}{4\pi\epsilon_0}$,
+        the work required to move a particle with charge $q$ from the other vertex to the center of the line joining the fixed particles is:
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{zero}
+        \wrongchoice{$\dfrac{kqQ}{a}$}
+        \wrongchoice{$\dfrac{kqQ}{a^2}$}
+        \wrongchoice{$\dfrac{2kqQ}{a}$}
+        \wrongchoice{$\dfrac{\sqrt{2}kqQ}{a}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch24-q14}
+    A particle with mass $m$ and charge $-q$ is projected with speed $v_0$ into the region between two parallel plates as shown.
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE:
+    \end{tikzpicture}
+    \end{center}
+    The potential difference between the two plates is $V$ and their separation is $d$. 
+    The change in kinetic energy of the particle as it traverses this region is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{$\dfrac{-qV}{d}$}
+        \wrongchoice{$\dfrac{2qV}{mv_0^2}$}
+      \correctchoice{$qV$}
+        \wrongchoice{$\dfrac{mv_0^2}{2}$}
+        \wrongchoice{none of the provided}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch24-q15}
+    An electron is accelerated from rest through a potential difference $V$. 
+    Its final speed is proportional to:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$V$}
+        \wrongchoice{$V^2$}
+      \correctchoice{$\sqrt{V}$}
+        \wrongchoice{$\dfrac{1}{V}$}
+        \wrongchoice{$\dfrac{1}{\sqrt{V}}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch24-q16}
+    In separate experiments,
+        four different particles each start from far away with the same speed and impinge directly on a gold nucleus. 
+    The masses and charges of the particles are
+    \begin{description}
+        \item[particle 1:] mass $m_0$, charge $q_0$
+        \item[particle 2:] mass $2m_0$, charge $2q_0$
+        \item[particle 3:] mass $2m_0$, charge $q_0/2$
+        \item[particle 4:] mass $m_0/2$, charge $2q_0$
+    \end{description}
+    Rank the particles according to the distance of closest approach to the gold nucleus,
+        from smallest to largest.
+    \begin{choices}
+        \wrongchoice{1, 2, 3, 4}
+        \wrongchoice{4, 3, 2, 1}
+      \correctchoice{3, 1 and 2 tie, then 4}
+        \wrongchoice{4, 1 and 2 tie, then 1}
+        \wrongchoice{1 and 2 tie, then 3, 4}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch24-q17}
+    Two large parallel conducting plates are separated by a distance $d$,
+        placed in a vacuum, and connected to a source of potential difference $V$. 
+    An oxygen ion, with charge $2e$, starts from rest on the surface of one plate and accelerates to the other. 
+    If $e$ denotes the magnitude of the electron charge,
+        the final kinetic energy of this ion is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\dfrac{eV}{2}$}
+        \wrongchoice{$\dfrac{eV}{d}$}
+        \wrongchoice{$eVd$}
+        \wrongchoice{$\dfrac{Vd}{e}$}
+      \correctchoice{$2eV$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch24-q18}
+    An electron volt is:
+    \begin{choices}
+        \wrongchoice{the force acting on an electron in a field of \SI{1}{\newton\per\coulomb}}
+        \wrongchoice{the force required to move an electron 1 meter}
+      \correctchoice{the energy gained by an electron in moving through a potential difference of 1 volt}
+        \wrongchoice{the energy needed to move an electron through 1 meter in any electric field}
+        \wrongchoice{the work done when 1 coulomb of charge is moved through a potential difference of 1 volt.}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch24-q19}
+    An electron has charge $-e$ and mass $m_e$.
+    A proton has charge $e$ and mass $1840m_e$.
+    A ``proton volt'' is equal to:
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{\SI{1}{\eV}}
+        \wrongchoice{\SI{1840}{\eV}}
+        \wrongchoice{\SI{1/1840}{\eV}}
+        \wrongchoice{$\sqrt{1840}\,\si{\eV}$}
+        \wrongchoice{$\dfrac{1}{\sqrt{1840}}\,\si{\eV}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch24-q20}
+    Two conducting spheres, one having twice the diameter of the other,
+        are separated by a distance large compared to their diameters. 
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE:
+    \end{tikzpicture}
+    \end{center}
+    The smaller sphere (1) has charge $q$ and the larger sphere (2) is uncharged. 
+    If the spheres are then connected by a long thin wire:
+    \begin{choices}
+      \correctchoice{1 and 2 have the same potential}
+        \wrongchoice{2 has twice the potential of 1}
+        \wrongchoice{2 has half the potential of 1}
+        \wrongchoice{1 and 2 have the same charge}
+        \wrongchoice{all of the charge is dissipated}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch24-q21}
+    Two conducting spheres are far apart. 
+    The smaller sphere carries a total charge $Q$. 
+    The larger sphere has a radius that is twice that of the smaller and is neutral. 
+    After the two spheres are connected by a conducting wire,
+        the charges on the smaller and larger spheres, respectively, are:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{$\dfrac{Q}{2}$ and $\dfrac{Q}{2}$}
+      \correctchoice{$\dfrac{Q}{3}$ and $\dfrac{2Q}{3}$}
+        \wrongchoice{$\dfrac{2Q}{3}$ and $\dfrac{Q}{3}$}
+        \wrongchoice{zero and $Q$}
+        \wrongchoice{$2Q$ and $-Q$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch24-q22}
+    Three possible configurations for an electron $e$ and a proton $p$ are shown below.
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE:
+    \end{tikzpicture}
+    \end{center}
+    Take the zero of potential to be at infinity and rank the three configurations according to the potential at $S$,
+        from most negative to most positive.
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{1, 2, 3}
+        \wrongchoice{3, 2, 1}
+        \wrongchoice{2, 3, 1}
+      \correctchoice{1 and 2 tie, then 3}
+        \wrongchoice{1 and 3 tie, then 2}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch24-q23}
+    Three possible configurations for an electron $e$ and a proton $p$ are shown below.
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE:
+    \end{tikzpicture}
+    \end{center}
+    A conducting sphere with radius $R$ is charged until the magnitude of the electric field just outside its surface is $E$. 
+    The electric potential of the sphere,
+        relative to the potential far away, is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{zero}
+        \wrongchoice{$\dfrac{E}{R}$}
+        \wrongchoice{$\dfrac{E}{R^2}$}
+      \correctchoice{$ER$}
+        \wrongchoice{$ER^2$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch24-q24}
+    A \SI{5}{\centi\meter} radius conducting sphere has a surface charge density of \SI{2e-6}{\coulomb\per\meter} on its surface.  
+    Its electric potential,
+        relative to the potential far away, is:
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{\SI{1.1e4}{\volt}}
+        \wrongchoice{\SI{2.2e4}{\volt}}
+        \wrongchoice{\SI{2.3e5}{\volt}}
+        \wrongchoice{\SI{3.6e5}{\volt}}
+        \wrongchoice{\SI{7.2e6}{\volt}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch24-q25}
+    A hollow metal sphere is charged to a potential $V$. 
+    The potential at its center is:
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{$V$}
+        \wrongchoice{zero}
+        \wrongchoice{$-V$}
+        \wrongchoice{$2V$}
+        \wrongchoice{$\pi V$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch24-q26}
+    Positive charge is distributed uniformly throughout a non-conducting sphere. 
+    The highest electric potential occurs:
+    \begin{choices}
+      \correctchoice{at the center}
+        \wrongchoice{at the surface}
+        \wrongchoice{halfway between the center and surface}
+        \wrongchoice{just outside the surface}
+        \wrongchoice{far from the sphere}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch24-q27}
+    A total charge of \SI{7e-8}{\coulomb} is uniformly distributed throughout a non-conducting sphere with a radius of \SI{5}{\centi\meter}. 
+    The electric potential at the surface,
+        relative to the potential far away, is about:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{-1.3e4}{\volt}}
+      \correctchoice{\SI{1.3e4}{\volt}}
+        \wrongchoice{\SI{7.0e5}{\volt}}
+        \wrongchoice{\SI{-6.3e4}{\volt}}
+        \wrongchoice{zero}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch24-q28}
+    Eight identical spherical raindrops are each at a potential $V$,
+        relative to the potential far away.
+    They coalesce to make one spherical raindrop whose potential is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\dfrac{V}{8}$}
+        \wrongchoice{$\dfrac{V}{2}$}
+        \wrongchoice{$2V$}
+      \correctchoice{$4V$}
+        \wrongchoice{$8V$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch24-q29}
+    A metal sphere carries a charge of \SI{5e-9}{\coulomb} and is at a potential of \SI{400}{\volt},
+        relative to the potential far away. 
+    The potential at the center of the sphere is:
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{\SI{400}{\volt}}
+        \wrongchoice{\SI{-400}{\volt}}
+        \wrongchoice{\SI{2e-6}{\volt}}
+        \wrongchoice{zero}
+        \wrongchoice{none of the provided}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch24-q30}
+    A \SI{5}{\centi\meter} radius isolated conducting sphere is charged so its potential is \SI{+100}{\volt},
+        relative to the potential far away. 
+    The charge density on its surface is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{+2.2e-7}{\coulomb\per\meter\squared}}
+        \wrongchoice{\SI{-2.2e-7}{\coulomb\per\meter\squared}}
+        \wrongchoice{\SI{+3.5e-7}{\coulomb\per\meter\squared}}
+        \wrongchoice{\SI{-3.5e-7}{\coulomb\per\meter\squared}}
+      \correctchoice{\SI{+1.8e-8}{\coulomb\per\meter\squared}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch24-q31}
+    A conducting sphere has charge $Q$ and its electric potential is $V$,
+        relative to the potential far away. 
+    If the charge is doubled to $2Q$, the potential is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$V$}
+      \correctchoice{$2V$}
+        \wrongchoice{$4V$}
+        \wrongchoice{$\dfrac{V}{2}$}
+        \wrongchoice{$\dfrac{V}{4}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch24-q32}
+    The potential difference between the ends of a \SI{2}{\meter} stick that is parallel to a uniform electric field is \SI{400}{\volt}. 
+    The magnitude of the electric field is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{zero}
+        \wrongchoice{\SI{100}{\volt\per\meter}}
+        \wrongchoice{\SI{200}{\volt\per\meter}}
+        \wrongchoice{\SI{400}{\volt\per\meter}}
+      \correctchoice{\SI{800}{\volt\per\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch24-q33}
+    In a certain region of space the electric potential increases uniformly from east to west and does not vary in any other direction. 
+    The electric field:
+    \begin{choices}
+        \wrongchoice{points east and varies with position}
+      \correctchoice{points east and does not vary with position}
+        \wrongchoice{points west and varies with position}
+        \wrongchoice{points west and does not vary with position}
+        \wrongchoice{points north and does not vary with position}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch24-q34}
+    If the electric field is in the positive x direction and has a magnitude given by $E=Cx^2$,
+        where $C$ is a constant, then the electric potential is given by $V=$:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$2Cx$}
+        \wrongchoice{$-2Cx$}
+        \wrongchoice{$\dfrac{Cx^3}{3}$}
+      \correctchoice{$-\dfrac{Cx^3}{3}$}
+        \wrongchoice{$-3Cx^3$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch24-q35}
+    An electron goes from one equipotential surface to another along one of the four paths shown below. 
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE:
+    \end{tikzpicture}
+    \end{center}
+    Rank the paths according to the work done by the electric field,
+        from least to greatest.
+    %\begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{1, 2, 3, 4}
+        \wrongchoice{4, 3, 2, 1}
+        \wrongchoice{1, 3, 4 and 2 tie}
+      \correctchoice{4 and 2 tie, then 3, then 1}
+        \wrongchoice{4, 3, 1, 2}
+    \end{choices}
+    %\end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch24-q36}
+    The work required to carry a particle with a charge of \SI{6.0}{\coulomb} from a \SI{5.0}{\volt} equipotential surface to a 6.0-V equipotential surface and back again to the 5.0-V surface is:
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{zero}
+        \wrongchoice{\SI{1.2e-5}{\joule}}
+        \wrongchoice{\SI{3.0e-5}{\joule}}
+        \wrongchoice{\SI{6.0e-5}{\joule}}
+        \wrongchoice{\SI{6.0e-6}{\joule}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch24-q37}
+    The equipotential surfaces associated with a charged point particles are:
+    \begin{choices}
+        \wrongchoice{radially outward from the particle}
+        \wrongchoice{vertical planes}
+        \wrongchoice{horizontal planes}
+      \correctchoice{concentric spheres centered at the particle}
+        \wrongchoice{concentric cylinders with the particle on the axis.}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch24-q38}
+    The electric field in a region around the origin is given by $E=C\left(x\hat{\imath}+y\hat{\jmath}\right)$,
+        where $C$ is a constant. 
+    The equipotential surfaces in that region are:
+    \begin{choices}
+      \correctchoice{concentric cylinders with axes along the $z$ axis}
+        \wrongchoice{concentric cylinders with axes along the $x$ axis}
+        \wrongchoice{concentric spheres centered at the origin}
+        \wrongchoice{planes parallel to the $xy$ plane}
+        \wrongchoice{planes parallel to the $yz$ plane}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch24-q39}
+    The electric potential in a certain region of space is given by $V=-7.5x^2+3x$,
+        where $V$ is in volts and $x$ is in meters. 
+    In this region the equipotential surfaces are:
+    \begin{choices}
+        \wrongchoice{planes parallel to the $x$ axis}
+      \correctchoice{planes parallel to the $yz$ plane}
+        \wrongchoice{concentric spheres centered at the origin}
+        \wrongchoice{concentric cylinders with the $x$ axis as the cylinder axis}
+        \wrongchoice{unknown unless the charge is given}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch24-q40}
+    In the diagram, the points 1, 2, and 3 are all the same very large distance from a dipole.
+    Rank the points according to the values of the electric potential at them,
+        from the most negative to the most positive.
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{1, 2, 3}
+        \wrongchoice{3, 2, 1}
+        \wrongchoice{2, 3, 1}
+      \correctchoice{1, 3, 2}
+        \wrongchoice{1 and 2 tie, then 3}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch24-q41}
+    A particle with charge $q$ is to be brought from far away to a point near an electric dipole.
+    No work is done if the final position of the particle is on:
+    \begin{choices}
+        \wrongchoice{the line through the charges of the dipole}
+      \correctchoice{a line that is perpendicular to the dipole moment}
+        \wrongchoice{a line that makes an angle of \ang{45} with the dipole moment}
+        \wrongchoice{a line that makes an angle of \ang{30} with the dipole moment}
+        \wrongchoice{none of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch24-q42}
+    Equipotential surfaces associated with an electric dipole are:
+    \begin{choices}
+        \wrongchoice{spheres centered on the dipole}
+        \wrongchoice{cylinders with axes along the dipole moment}
+        \wrongchoice{planes perpendicular to the dipole moment}
+        \wrongchoice{planes parallel to the dipole moment}
+      \correctchoice{none of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch24-q43}
+    The diagram shows four pairs of large parallel conducting plates. 
+    The value of the electric potential is given for each plate. 
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE:
+    \end{tikzpicture}
+    \end{center}
+    Rank the pairs according to the magnitude of the electric field between the plates,
+        least to greatest.
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{1, 2, 3, 4}
+        \wrongchoice{4, 3, 2, 1}
+        \wrongchoice{2, 3, 1, 4}
+      \correctchoice{2, 4, 1, 3}
+        \wrongchoice{3, 2, 4, 1}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+\endinput
+
+

@@ -1,0 +1,1181 @@
+
+%%--------------------------------------------------
+%% Halliday: Fundamentals of Physics
+%%--------------------------------------------------
+
+
+%% Chapter 36: Diffraction
+%%--------------------------------------------------
+
+
+%% Learning Objectives
+%%--------------------------------------------------
+
+%% 36.01: Describe the diffraction of light waves by a narrow opening and an edge, and also describe the resulting interference pattern.
+%% 36.02: Describe an experiment that demonstrates the Fresnel bright spot.
+%% 36.03: With a sketch, describe the arrangement for a single-slit diffraction experiment.
+%% 36.04: With a sketch, explain how splitting a slit width into equal zones leads to the equations giving the angles to the minima in the diffraction pattern.
+%% 36.05: Apply the relationships between width a of a thin, rectangular slit or object, the wavelength $\lambda$, the angle $\theta$ to any of the minima in the diffraction pattern, the distance to a viewing screen, and the distance between a minimum and the center of the pattern.
+%% 36.06: Sketch the diffraction pattern for monochromatic light, identifying what lies at the center and what the various bright and dark fringes are called (such as ``first minimum'').
+%% 36.07: Identify what happens to a diffraction pattern when the wavelength of the light or the width of the diffracting aperture or object is varied.
+
+
+%% Halliday Multiple Choice Questions
+%%--------------------------------------------------
+\element{halliday-mc}{
+\begin{question}{halliday-ch36-q01}
+    Sound differs from light in that sound:
+    \begin{choices}
+        \wrongchoice{is not subject to diffraction}
+        \wrongchoice{is a torsional wave rather than a longitudinal wave}
+        \wrongchoice{does not require energy for its origin}
+      \correctchoice{is a longitudinal wave rather than a transverse wave}
+        \wrongchoice{is always monochromatic}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch36-q02}
+    Radio waves are readily diffracted around buildings whereas light waves are negligibly diffracted around buildings. 
+    This is because radio waves:
+    \begin{choices}
+        \wrongchoice{are plane polarized}
+      \correctchoice{have much longer wavelengths than light waves}
+        \wrongchoice{have much shorter wavelengths than light waves}
+        \wrongchoice{are nearly monochromatic (single frequency)}
+        \wrongchoice{are amplitude modulated (AM).}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch36-q03}
+    Diffraction plays an important role in which of the following phenomena?
+    \begin{choices}
+        \wrongchoice{The sun appears as a disk rather than a point to the naked eye}
+        \wrongchoice{Light is bent as it passes through a glass prism}
+      \correctchoice{A cheerleader yells through a megaphone}
+        \wrongchoice{A farsighted person uses eyeglasses of positive focal length}
+        \wrongchoice{A thin soap film exhibits colors when illuminated with white light}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch36-q04}
+    The rainbow seen after a rain shower is caused by:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{diffraction}
+        \wrongchoice{interference}
+      \correctchoice{refraction}
+        \wrongchoice{polarization}
+        \wrongchoice{absorption}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch36-q05}
+    When a highly coherent beam of light is directed against a very fine wire,
+        the shadow formed behind it is not just that of a single wire but rather looks like the shadow of several parallel wires. 
+    The explanation of this involves:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{refraction}
+      \correctchoice{diffraction}
+        \wrongchoice{reflection}
+        \wrongchoice{the Doppler effect}
+        \wrongchoice{an optical illusion}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch36-q06}
+    When the atmosphere is not quite clear,
+        one may sometimes see colored circles concentric with the Sun or the Moon. 
+    These are generally not more than a few diameters of the Sun or Moon and invariably the innermost ring is blue. 
+    The explanation for this phenomena involves:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{reflection}
+        \wrongchoice{refraction}
+        \wrongchoice{interference}
+      \correctchoice{diffraction}
+        \wrongchoice{the Doppler effect}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch36-q07}
+    The shimmering or wavy lines that can often be seen near the ground on a hot day are due to:
+    \begin{choices}
+        \wrongchoice{Brownian movement}
+        \wrongchoice{reflection}
+      \correctchoice{refraction}
+        \wrongchoice{diffraction}
+        \wrongchoice{dispersion}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch36-q08}
+    A point source of monochromatic light is placed in front of a soccer ball and a screen is placed behind the ball. 
+    The light intensity pattern on the screen is best described as:
+    \begin{choices}
+        \wrongchoice{a dark disk on a bright background}
+        \wrongchoice{a dark disk with bright rings outside}
+        \wrongchoice{a dark disk with a bright spot at its center}
+      \correctchoice{a dark disk with a bright spot at its center and bright rings outside}
+        \wrongchoice{a bright disk with bright rings outside}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch36-q09}
+    In the equation $\sin\theta=\dfrac{\lambda}{a}$ for single-slit diffraction,
+        $\theta$ is:
+    \begin{choices}
+      \correctchoice{the angle to the first minimum}
+        \wrongchoice{the angle to the second maximum}
+        \wrongchoice{the phase angle between the extreme rays}
+        \wrongchoice{$N\pi$ where $N$ is an integer}
+        \wrongchoice{$\left(N + \dfrac{1}{2}\right)\pi$ where $N$ is an integer}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch36-q10}
+    In the equation $\phi=\left(\dfrac{2\pi a}{\lambda}\right)\sin\theta$ for single-slit diffraction,
+            $\phi$ is:
+    \begin{choices}
+        \wrongchoice{the angle to the first minimum}
+        \wrongchoice{the angle to the second maximum}
+      \correctchoice{the phase angle between the extreme rays}
+        \wrongchoice{$N\pi$ where $N$ is an integer}
+        \wrongchoice{$\left(N + \dfrac{1}{2}\right)\pi$ where $N$ is an integer}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch36-q11}
+    No fringes are seen in a single-slit diffraction pattern if:
+    \begin{choices}
+        \wrongchoice{the screen is far away}
+        \wrongchoice{the wavelength is less than the slit width}
+      \correctchoice{the wavelength is greater than the slit width}
+        \wrongchoice{the wavelength is less than the distance to the screen}
+        \wrongchoice{the distance to the screen is greater than the slit width}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch36-q12}
+    A student wishes to produce a single-slit diffraction pattern in a ripple tank experiment. 
+    He considers the following parameters:
+    \begin{enumerate}
+        \item frequency
+        \item wavelength
+        \item water depth
+        \item slit width
+    \end{enumerate}
+    Which two of the above should be decreased to produce more bending?
+    \begin{multicols}{3}
+    \begin{choices}
+        %% NOTE: Question mult?
+        \wrongchoice{1, 3}
+      \correctchoice{1, 4}
+        \wrongchoice{2, 3}
+        \wrongchoice{2, 4}
+        \wrongchoice{3, 4}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch36-q13}
+    A parallel beam of monochromatic light is incident on a slit of width \SI{2}{\centi\meter}. 
+    The light passing through the slit falls on a screen \SI{2}{\meter} away.
+    As the slit width is decreased:
+    \begin{choices}
+        \wrongchoice{the width of the pattern on the screen continuously decreases}
+      \correctchoice{the width of the pattern on the screen at first decreases but then increases}
+        \wrongchoice{the width of the pattern on the screen increases and then decreases}
+        \wrongchoice{the width of the pattern on the screen remains the same}
+        \wrongchoice{the pattern on the screen changes color going from red to blue}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch36-q14}
+    Monochromatic plane waves of light are incident normally on a single slit. 
+    Which one of the five figures below correctly shows the diffraction pattern observed on a distant screen?
+    \begin{choices}
+        %% NOTE: ANS is B
+        \wrongchoice{
+            \begin{tikzpicture}
+                %% NOTE:
+            \end{tikzpicture}
+        }
+    \end{choices}
+\end{question}
+}
+
+\newcommand{\hallidayChThirtSixQFifteen}{
+\begin{tikzpicture}
+    %% NOTE: Q15 is double slit, Q16 is single slit
+\end{tikzpicture}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch36-q15}
+    The diagram shows a single slit with the direction to a point $P$ on a distant screen shown. 
+    \begin{center}
+        \hallidayChThirtSixQFifteen
+    \end{center}
+    At $P$, the pattern has its second minimum (from its central maximum). 
+    If $X$ and $Y$ are the edges of the slit,
+        what is the path length difference $(PX)-(PY)$?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\dfrac{\lambda}{2}$}
+        \wrongchoice{$\lambda$}
+        \wrongchoice{$\dfrac{3\lambda}{2}$}
+      \correctchoice{$2\lambda$}
+        \wrongchoice{$\dfrac{5\lambda}{2}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch36-q16}
+    The diagram shows a single slit with the direction to a point $P$ on a distant screen shown. 
+    \begin{center}
+        \hallidayChThirtSixQFifteen
+    \end{center}
+    At $P$, the pattern has its maximum nearest the central maximum. 
+    If $X$ and $Y$ are the edges of the slit,
+        what is the path length difference $(PX)-(PY)$?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\dfrac{\lambda}{2}$}
+      \correctchoice{$\lambda$}
+        \wrongchoice{$\dfrac{3\lambda}{2}$}
+        \wrongchoice{$2\lambda$}
+        \wrongchoice{$\dfrac{5\lambda}{2}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch36-q17}
+    At the first minimum adjacent to the central maximum of a single-slit diffraction pattern the phase difference between the Huygens wavelet from the top of the slit and the wavelet from the midpoint of the slit is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{\pi/8}{\radian}}
+        \wrongchoice{\SI{\pi/4}{\radian}}
+        \wrongchoice{\SI{\pi/2}{\radian}}
+      \correctchoice{\SI{\pi}{\radian}}
+        \wrongchoice{\SI{3\pi/2}{\radian}}
+        %\wrongchoice{$\dfrac{\pi}{8}\,\si{\radian}$}
+        %\wrongchoice{$\dfrac{\pi}{4}\,\si{\radian}$}
+        %\wrongchoice{$\dfrac{\pi}{2}\,\si{\radian}$}
+        %\correctchoice{$\pi\,\si{\radian}$}
+        %\wrongchoice{$\dfrac{3\pi}{2}\,\si{\radian}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch36-q18}
+    At the second minimum adjacent to the central maximum of a single-slit diffraction pattern the Huygens wavelet from the top of the slit is \ang{180} out of phase with the wavelet from:
+    \begin{choices}
+      \correctchoice{a point one-fourth of the slit width from the top}
+        \wrongchoice{the midpoint of the slit}
+        \wrongchoice{a point one-fourth of the slit width from the bottom of the slit}
+        \wrongchoice{the bottom of the slit}
+        \wrongchoice{none of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch36-q19}
+    A plane wave with a wavelength of \SI{500}{\nano\meter} is incident normally on a single slit with a width of \SI{5.0e-6}{\meter}. 
+    Consider waves that reach a point on a far-away screen such that rays from the slit make an angle of \ang{1.0} with the normal. 
+    The difference in phase for waves from the top and bottom of the slit is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{zero}
+        \wrongchoice{\SI{0.55}{\radian}}
+      \correctchoice{\SI{1.1}{\radian}}
+        \wrongchoice{\SI{1.6}{\radian}}
+        \wrongchoice{\SI{2.2}{\radian}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch36-q20}
+    A diffraction pattern is produced on a viewing screen by illuminating a long narrow slit with light of wavelength $\lambda$. 
+    If $\lambda$ is increased and no other changes are made:
+    \begin{choices}
+        \wrongchoice{the intensity at the center of the pattern decreases and the pattern expands away from the bright center}
+        \wrongchoice{the intensity at the center of the pattern increases and the pattern contracts toward the bright center}
+      \correctchoice{the intensity at the center of the pattern does not change and the pattern expands away from the bright center}
+        \wrongchoice{the intensity at the center of the pattern does not change and the pattern contracts toward the bright center}
+        \wrongchoice{neither the intensity at the center of the pattern nor the pattern itself change}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch36-q21}
+    A diffraction pattern is produced on a viewing screen by illuminating a long narrow slit with light of wavelength $\lambda$. 
+    If the slit width is decreased and no other changes are made:
+    \begin{choices}
+      \correctchoice{the intensity at the center of the pattern decreases and the pattern expands away from the bright center}
+        \wrongchoice{the intensity at the center of the pattern increases and the pattern contracts toward the bright center}
+        \wrongchoice{the intensity at the center of the pattern does not change and the pattern expands away from the bright center}
+        \wrongchoice{the intensity at the center of the pattern does not change and the pattern contracts toward the bright center}
+        \wrongchoice{neither the intensity at the center of the pattern nor the pattern itself change}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch36-q22}
+    In order to obtain a good single-slit diffraction pattern,
+        the slit width could be:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\lambda$}
+        \wrongchoice{$\dfrac{\lambda}{10}$}
+      \correctchoice{$10\lambda$}
+        \wrongchoice{$10^4 \lambda$}
+        \wrongchoice{$\dfrac{\lambda}{10^4}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch36-q23}
+    Consider a single-slit diffraction pattern caused by a slit of width $a$.
+    There is a maximum if $\sin\theta$ is equal to:
+    \begin{choices}
+        \wrongchoice{slightly more than $\dfrac{3\lambda}{2a}$}
+      \correctchoice{slightly less than $\dfrac{3\lambda}{2a}$}
+        \wrongchoice{exactly $\dfrac{3\lambda}{2a}$}
+        \wrongchoice{exactly $\dfrac{\lambda}{2a}$}
+        \wrongchoice{very nearly $\dfrac{\lambda}{2a}$}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch36-q24}
+    Consider a single-slit diffraction pattern caused by a slit of width $a$. 
+    There is a minimum if $\sin\theta$ is equal to:
+    \begin{choices}
+      \correctchoice{exactly $\dfrac{\lambda}{a}$}
+        \wrongchoice{slightly more than $\dfrac{\lambda}{a}$}
+        \wrongchoice{slightly less than $\dfrac{\lambda}{a}$}
+        \wrongchoice{exactly $\dfrac{\lambda}{2a}$}
+        \wrongchoice{very nearly $\dfrac{\lambda}{2a}$}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch36-q25}
+    In a single-slit diffraction pattern,
+        the central maximum is about twice as wide as the other maxima. 
+    This is because:
+    \begin{choices}
+        \wrongchoice{half the light is diffracted up and half is diffracted down}
+        \wrongchoice{the central maximum has both electric and magnetic fields present}
+        \wrongchoice{the small angle approximation applies only near the central maximum}
+        \wrongchoice{the screen is flat instead of spherical}
+      \correctchoice{none of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch36-q26}
+    The intensity at a secondary maximum of a single-slit diffraction pattern is less than the intensity at the central maximum chiefly because:
+    \begin{choices}
+      \correctchoice{some Huygens wavelets sum to zero at the secondary maximum but not at the central maximum}
+        \wrongchoice{the secondary maximum is further from the slits than the central maximum and intensity decreases as the square of the distance}
+        \wrongchoice{the Huygens construction is not valid for a secondary maximum}
+        \wrongchoice{the amplitude of every Huygens wavelet is smaller when it travels to a secondary maximum than when it travels to the central maximum}
+        \wrongchoice{none of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch36-q27}
+    Figure (i) shows a double-slit pattern obtained using monochromatic light. 
+    Consider the following five possible changes in conditions:
+    \begin{enumerate}
+        \item decrease the frequency
+        \item increase the frequency
+        \item increase the width of each slit
+        \item increase the separation between the slits
+        \item decrease the separation between the slits
+    \end{enumerate}
+    Which of the above would change Figure (i) into Figure (ii)?
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: tikz
+    \end{tikzpicture}
+    \end{center}
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{3 only}
+        \wrongchoice{5 only}
+        \wrongchoice{1 and 3 only}
+        \wrongchoice{1 and 5 only}
+      \correctchoice{2 and 4 only}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch36-q28}
+    Two wavelengths, \SI{800}{\nano\meter} and \SI{600}{\nano\meter},
+        are used separately in single-slit diffraction experiments.
+    The diagram shows the intensities on a far-away viewing screen as function of the angle made by the rays with the straight-ahead direction. 
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: tikz
+    \end{tikzpicture}
+    \end{center}
+    If both wavelengths are then used simultaneously,
+        at which angle is the light on the screen purely \SI{800}{\nano\meter} light?
+    \begin{multicols}{3}
+    \begin{choices}
+        %% NOTE: IJKL??
+        \wrongchoice{$A$}
+        \wrongchoice{$B$}
+        \wrongchoice{$C$}
+        \wrongchoice{$D$}
+        \wrongchoice{$E$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch36-q29}
+    If we increase the wavelength of the light used to form a double-slit diffraction pattern:
+    \begin{choices}
+        \wrongchoice{the width of the central diffraction peak increases and the number of bright fringes within the peak increases}
+        \wrongchoice{the width of the central diffraction peak increases and the number of bright fringes within the peak decreases}
+        \wrongchoice{the width of the central diffraction peak decreases and the number of bright fringes within the peak increases}
+        \wrongchoice{the width of the central diffraction peak decreases and the number of bright fringes within the peak decreases}
+      \correctchoice{the width of the central diffraction peak increases and the number of bright fringes within the peak stays the same}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch36-q30}
+    Two slits of width a and separation $d$ are illuminated by a beam of light of wavelength $\lambda$. 
+    The separation of the interference fringes on a screen a distance $D$ away is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\dfrac{\lambda a}{D}$}
+        \wrongchoice{$\dfrac{\lambda d}{D}$}
+      \correctchoice{$\dfrac{\lambda D}{d}$}
+        \wrongchoice{$\dfrac{dD}{\lambda}$}
+        \wrongchoice{$\dfrac{\lambda D}{a}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch36-q31}
+    Two slits in an opaque barrier each have a width of \SI{0.020}{\milli\meter} and are separated by \SI{0.050}{\milli\meter}.
+    When coherent monochromatic light passes through the slits the number of interference maxima within the central diffraction maximum:
+    \begin{choices}
+        \wrongchoice{is 1}
+        \wrongchoice{is 2}
+        \wrongchoice{is 4}
+      \correctchoice{is 5}
+        \wrongchoice{cannot be determined unless the wavelength is given}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch36-q32}
+    When \SI{450}{\nano\meter} light is incident normally on a certain double-slit system the number of interference maxima within the central diffraction maximum is 5.
+    When \SI{900}{\nano\meter} light is incident on the same slit system the number is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\num{2}}
+        \wrongchoice{\num{3}}
+      \correctchoice{\num{5}}
+        \wrongchoice{\num{9}}
+        \wrongchoice{\num{10}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch36-q33}
+    In a double-slit diffraction experiment the number of interference fringes within the central diffraction maximum can be increased by:
+    \begin{choices}
+        \wrongchoice{increasing the wavelength}
+        \wrongchoice{decreasing the wavelength}
+        \wrongchoice{decreasing the slit separation}
+        \wrongchoice{increasing the slit width}
+      \correctchoice{decreasing the slit width}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch36-q34}
+    A diffraction-limited laser of length $l$ and aperture diameter $d$ generates light of wavelength $\lambda$.
+    If the beam is directed at the surface of the Moon a distance $D$ away,
+        the radius of the illuminated area on the Moon is approximately:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\dfrac{dD}{l}$}
+        \wrongchoice{$\dfrac{dD}{\lambda}$}
+        \wrongchoice{$\dfrac{D\lambda}{l}$}
+      \correctchoice{$\dfrac{D\lambda}{d}$}
+        \wrongchoice{$\dfrac{l\lambda}{d}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch36-q35}
+    Two stars that are close together are photographed through a telescope. 
+    The black and white film is equally sensitive to all colors. 
+    Which situation would result in the most clearly separated images of the stars?
+    \begin{choices}
+        \wrongchoice{Small lens, red stars}
+        \wrongchoice{Small lens, blue stars}
+        \wrongchoice{Large lens, red stars}
+      \correctchoice{Large lens, blue stars}
+        \wrongchoice{Large lens, one star red and the other blue}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch36-q36}
+    The resolving power of a telescope can be increased by:
+    \begin{choices}
+        \wrongchoice{increasing the objective focal length and decreasing the eyepiece focal length}
+      \correctchoice{increasing the lens diameters}
+        \wrongchoice{decreasing the lens diameters}
+        \wrongchoice{inserting a correction lens between objective and eyepiece}
+        \wrongchoice{none of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch36-q37}
+    In the equation $d\sin\theta=m\lambda$ for the lines of a diffraction grating $m$ is:
+    \begin{choices}
+        \wrongchoice{the number of slits}
+        \wrongchoice{the slit width}
+        \wrongchoice{the slit separation}
+      \correctchoice{the order of the line}
+        \wrongchoice{the index of refraction}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch36-q38}
+    In the equation $d\sin\theta=m\lambda$ for the lines of a diffraction grating $d$ is:
+    \begin{choices}
+        \wrongchoice{the number of slits}
+        \wrongchoice{the slit width}
+      \correctchoice{the slit separation}
+        \wrongchoice{the order of the line}
+        \wrongchoice{the index of refraction}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch36-q39}
+    As more slits with the same spacing are added to a diffraction grating the lines:
+    \begin{choices}
+        \wrongchoice{spread farther apart}
+        \wrongchoice{move closer together}
+        \wrongchoice{become wider}
+      \correctchoice{becomes narrower}
+        \wrongchoice{do not change in position or width}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch36-q40}
+    An $N$-slit system has slit separation $d$ and slit width $a$. 
+    Plane waves with intensity $I$ and wavelength $\lambda$ are incident normally on it. 
+    The angular separation of the lines depends only on:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{$a$ and $N$}
+        \wrongchoice{$a$ and $λ$}
+        \wrongchoice{$N$ and $λ$}
+      \correctchoice{$d$ and $λ$}
+        \wrongchoice{$I$ and $N$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch36-q41}
+    \SI{600}{\nano\meter} light is incident on a diffraction grating with a ruling separation of \SI{1.7e-6}{\meter}. 
+    The second order line occurs at a diffraction angle of:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\ang{0}}
+        \wrongchoice{\ang{10}}
+        \wrongchoice{\ang{21}}
+        \wrongchoice{\ang{42}}
+      \correctchoice{\ang{45}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch36-q42}
+    The widths of the lines produced by monochromatic light falling on a diffraction grating can be reduced by:
+    \begin{choices}
+        \wrongchoice{increasing the wavelength of the light}
+      \correctchoice{increasing the number of rulings without changing their spacing}
+        \wrongchoice{decreasing the spacing between adjacent rulings without changing the number of rulings}
+        \wrongchoice{decreasing both the wavelength and the spacing between rulings by the same factor}
+        \wrongchoice{increasing the number of rulings and decreasing their spacing so the length of the grating remains the same}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch36-q43}
+    Monochromatic light is normally incident on a diffraction grating that is \SI{1}{\centi\meter} wide and has \num{10 000} slits. 
+        The first order line is deviated at a \ang{30} angle. 
+    What is the wavelength of the incident light?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{300}{\nano\meter}}
+        \wrongchoice{\SI{400}{\nano\meter}}
+      \correctchoice{\SI{500}{\nano\meter}}
+        \wrongchoice{\SI{600}{\nano\meter}}
+        \wrongchoice{\SI{1000}{\nano\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch36-q44}
+    A light spectrum is formed on a screen using a diffraction grating. 
+    The entire apparatus (source, grating and screen) is now immersed in a liquid of refractive index \num{1.33}.
+    As a result, the pattern on the screen:
+    \begin{choices}
+        \wrongchoice{remains the same}
+        \wrongchoice{spreads out}
+      \correctchoice{crowds together}
+        \wrongchoice{becomes reversed, with the previously blue end becoming red}
+        \wrongchoice{disappears because the refractive index is not an integer}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch36-q45}
+    The spacing between adjacent slits on a diffraction grating is $3\lambda$. 
+    The deviation $\theta$ of the first order diffracted beam is given by:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{$\sin\left(\dfrac{θ}{2}\right) = \dfrac{1}{3}$}
+        \wrongchoice{$\sin\left(\dfrac{θ}{3}\right) = \dfrac{2}{3}$}
+      \correctchoice{$\sin\theta = \dfrac{1}{3}$}
+        \wrongchoice{$\tan\left(\dfrac{θ}{2}\right) = \dfrac{1}{3}$}
+        \wrongchoice{$\tan\theta = \dfrac{2}{3}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch36-q46}
+    When light of a certain wavelength is incident normally on a certain diffraction grating the line of order 1 is at a diffraction angle of \ang{25}.
+    The diffraction angle for the second order line is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\ang{25}}
+        \wrongchoice{\ang{42}}
+        \wrongchoice{\ang{50}}
+      \correctchoice{\ang{58}}
+        \wrongchoice{\ang{75}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch36-q47}
+    A diffraction grating of width $W$ produces a deviation $\theta$ in second order for light of wavelength $\lambda$. 
+    The total number $N$ of slits in the grating is given by:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\dfrac{2W\lambda}{\sin\theta}$}
+        \wrongchoice{$\dfrac{W\sin\theta}{\lambda}$}
+        \wrongchoice{$\dfrac{\lambda W}{2\sin\theta}$}
+      \correctchoice{$\dfrac{W\sin\theta}{2\lambda}$}
+        \wrongchoice{$\dfrac{2\lambda}{\sin\theta}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch36-q48}
+    Light of wavelength $\lambda$ is normally incident on a diffraction grating $G$. 
+    On the screen $S$,
+        the central line is at $P$ and the first order line is at $Q$,
+        as shown. 
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: tikz
+    \end{tikzpicture}
+    \end{center}
+    The distance between adjacent slits in the grating is:
+    \begin{multicols}{3}
+    \begin{choices}
+         \wrongchoice{$\dfrac{3\lambda}{5}$}
+         \wrongchoice{$\dfrac{3\lambda}{4}$}
+         \wrongchoice{$\dfrac{4\lambda}{5}$}
+         \wrongchoice{$\dfrac{5\lambda}{4}$}
+       \correctchoice{$\dfrac{5\lambda}{3}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch36-q49}
+    \SI{550}{\nano\meter} light is incident normally on a diffraction grating and exactly 6 lines are produced.
+    The ruling separation must be:
+    \begin{choices}
+        \wrongchoice{between \SI{2.75e-7}{\meter} and \SI{5.50e-7}{\meter}}
+        \wrongchoice{between \SI{5.50e-7}{\meter} and \SI{1.10e-6}{\meter}}
+        \wrongchoice{between \SI{3.30e-6}{\meter} and \SI{3.85e-6}{\meter}}
+        \wrongchoice{between \SI{3.85e-6}{\meter} and \SI{4.40e-6}{\meter}}
+      \correctchoice{greater than \SI{4.40e-6}{\meter}}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch36-q50}
+    A mixture of \SI{450}{\nano\meter} and \SI{900}{\nano\meter} light is incident on a diffraction grating. 
+    Which of the following is true?
+    \begin{choices}
+      \correctchoice{all lines of the \SI{900}{\nano\meter} light coincide with even order lines of the \SI{450}{\nano\meter} light}
+        \wrongchoice{all lines of the \SI{450}{\nano\meter} light coincide with even order lines of the \SI{900}{\nano\meter} light}
+        \wrongchoice{all lines of the \SI{900}{\nano\meter} light coincide with odd order lines of the \SI{450}{\nano\meter} light}
+        \wrongchoice{None of the lines of the \SI{450}{\nano\meter} light coincide with lines of the \SI{900}{\nano\meter} light}
+        \wrongchoice{All of the lines of the \SI{450}{\nano\meter} light coincide with lines of the \SI{900}{\nano\meter} light}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch36-q51}
+    A beam of white light (from \SI{400}{\nano\meter} for violet to \SI{700}{\nano\meter} for red) is normally incident on a diffraction grating. 
+    It produces two orders on a distant screen. 
+    Which diagram below ($R=$red, $V=$violet) correctly shows the pattern on the screen?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{
+            %% NOTE: ANS is C
+            \begin{tikzpicture}
+                %% NOTE:
+            \end{tikzpicture}
+        }
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch36-q52}
+    If white light is incident on a diffraction grating:
+    \begin{choices}
+      \correctchoice{the first order lines for all visible wavelengths occur at smaller diffraction angles than any of the second order lines}
+        \wrongchoice{some first order lines overlap the second order lines if the ruling separation is small but do not if it is large}
+        \wrongchoice{some first order lines overlap second order lines if the ruling separation is large but do not if it is small}
+        \wrongchoice{some first order lines overlap second order lines no matter what the ruling separation}
+        \wrongchoice{first and second order lines have the same range of diffraction angles}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch36-q53}
+    Light of wavelength is normally incident on some plane optical device. 
+    The intensity pattern shown is observed on a distant screen
+        ($\theta$ is the angle measured from the normal of the device).
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE:
+    \end{tikzpicture}
+    \end{center}
+    The device could be:
+    \begin{choices}
+      \correctchoice{a single slit of width $W$}
+        \wrongchoice{a single slit of width $2W$}
+        \wrongchoice{two narrow slits with separation $W$}
+        \wrongchoice{two narrow slits with separation $2W$}
+        \wrongchoice{a diffraction grating with slit separation $W$}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch36-q54}
+    A person with her eye relaxed looks through a diffraction grating at a distant monochromatic point source of light. 
+    The slits of the grating are vertical. 
+    She sees:
+    \begin{choices}
+        \wrongchoice{one point of light}
+        \wrongchoice{a hazy horizontal strip of light of the same color as the source}
+        \wrongchoice{a hazy strip of light varying from violet to red}
+      \correctchoice{a sequence of horizontal points of light}
+        \wrongchoice{a sequence of closely spaced vertical lines}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch36-q55}
+    Monochromatic light is normally incident on a diffraction grating. 
+    The $m^{th}$ order line is at a diffraction angle $\theta$ and has width $w$. 
+    A wide single slit is now placed in front of the grating and its width is then slowly reduced. 
+    As a result:
+    \begin{choices}
+        \wrongchoice{both $\theta$ and $w$ increase}
+        \wrongchoice{both $\theta$ and $w$ decrease}
+      \correctchoice{$\theta$ remains the same and $w$ increases}
+        \wrongchoice{$\theta$ remains the same and $w$ decreases}
+        \wrongchoice{$\theta$ decreases and $w$ increases}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch36-q56}
+    At a diffraction line phasors associated with waves from the slits of a multiple-slit barrier:
+    \begin{choices}
+      \correctchoice{are aligned}
+        \wrongchoice{form a closed polygon}
+        \wrongchoice{form a polygon with several sides missing}
+        \wrongchoice{are parallel but adjacent phasors point in opposite directions}
+        \wrongchoice{form the arc of a circle}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch36-q57}
+    For a certain multiple-slit barrier the slit separation is 4 times the slit width. 
+    For this system:
+    \begin{choices}
+        \wrongchoice{the orders of the lines that appear are all multiples of 4}
+        \wrongchoice{the orders of lines that appear are all multiples of 2}
+      \correctchoice{the orders of the missing lines are all multiples of 4}
+        \wrongchoice{the orders of the missing lines are all multiples of 2}
+        \wrongchoice{none of the provided are true}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch36-q58}
+    The dispersion $D$ of a grating can have units:
+    \begin{choices}
+        \wrongchoice{centimeter (\si{\centi\meter})}
+      \correctchoice{per nanometer (\si{\per\nano\meter})}
+        \wrongchoice{nanometer per centimeter (\si{\nano\meter\per\centi\meter})}
+        \wrongchoice{radian (\si{\radian})}
+        \wrongchoice{none of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch36-q59}
+    The resolving power $R$ of a grating can have units:
+    \begin{choices}
+        \wrongchoice{centimeter (\si{\centi\meter})}
+        \wrongchoice{degree per nanometer (\si{\degree\per\nano\meter})}
+        \wrongchoice{watt (\si{\watt})}
+      \correctchoice{nanometer per centimeter (\si{\nano\meter\per\centi\meter})}
+        \wrongchoice{watt per nanometer (\si{\watt\per\nano\meter})}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch36-q60}
+    The dispersion of a diffraction grating indicates:
+    \begin{choices}
+        \wrongchoice{the resolution of the grating}
+      \correctchoice{the separation of lines of the same order}
+        \wrongchoice{the number of rulings in the grating}
+        \wrongchoice{the width of the lines}
+        \wrongchoice{the separation of lines of different order for the same wavelength}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch36-q61}
+    The resolving power of a diffraction grating is defined by $R=\dfrac{\lambda}{\Delta \lambda}$.
+    Here $\lambda$ and $\lambda + \Delta \lambda$ are:
+    \begin{choices}
+        \wrongchoice{any two wavelengths}
+        \wrongchoice{any two wavelengths that are nearly the same}
+        \wrongchoice{two wavelengths for which lines of the same order are separated by $\pi$ radians}
+        \wrongchoice{two wavelengths for which lines of the same order are separated by $2\pi$ radians}
+      \correctchoice{two wavelengths for which lines of the same order are separated by half the width of a maximum}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch36-q62}
+    A light beam incident on a diffraction grating consists of waves with two different wavelengths.
+    The separation of the two first order lines is great if:
+    \begin{choices}
+      \correctchoice{the dispersion is great}
+        \wrongchoice{the resolution is great}
+        \wrongchoice{the dispersion is small}
+        \wrongchoice{the resolution is small}
+        \wrongchoice{none of the provided (line separation does not depend on either dispersion or resolution)}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch36-q63}
+    To obtain greater dispersion by a diffraction grating:
+    \begin{choices}
+        \wrongchoice{the slit width should be increased}
+        \wrongchoice{the slit width should be decreased}
+        \wrongchoice{the slit separation should be increased}
+      \correctchoice{the slit separation should be decreased}
+        \wrongchoice{more slits with the same width and separation should be added to the system}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch36-q64}
+    Two nearly equal wavelengths of light are incident on an $N$-slit grating. 
+    The two wavelengths are not resolvable.
+    When $N$ is increased they become resolvable. 
+    This is because:
+    \begin{choices}
+        \wrongchoice{more light gets through the grating}
+        \wrongchoice{the lines get more intense}
+        \wrongchoice{the entire pattern spreads out}
+        \wrongchoice{there are more orders present}
+      \correctchoice{the lines become more narrow}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch36-q65}
+    A diffraction grating just resolves the wavelengths \SI{400.0}{\nano\meter} and \SI{400.1}{\nano\meter} in first order. 
+    The number of slits in the grating is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{400}
+        \wrongchoice{1000}
+        \wrongchoice{2500}
+      \correctchoice{4000}
+        \wrongchoice{not enough information is given}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch36-q66}
+    What is the minimum number of slits required in a diffraction grating to just resolve light with wavelengths of \SI{471.0}{\nano\meter} and \SI{471.6}{\nano\meter}?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{99}
+        \wrongchoice{197}
+      \correctchoice{393}
+        \wrongchoice{786}
+        \wrongchoice{1179}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch36-q67}
+    X rays are:
+    \begin{choices}
+      \correctchoice{electromagnetic waves}
+        \wrongchoice{negatively charged ions}
+        \wrongchoice{rapidly moving electrons}
+        \wrongchoice{rapidly moving protons}
+        \wrongchoice{rapidly moving neutrons}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch36-q68}
+    Bragg's law for x-ray diffraction is $2d\sin\theta=m\lambda$,
+        where $\theta$ is the angle between the incident beam and:
+    \begin{choices}
+      \correctchoice{a reflecting plane of atoms}
+        \wrongchoice{the normal to a reflecting plane of atoms}
+        \wrongchoice{the scattered beam}
+        \wrongchoice{the normal to the scattered beam}
+        \wrongchoice{the refracted beam}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch36-q69}
+    Bragg's law for x-ray diffraction is $2d\sin\theta=m\lambda$,
+        where the quantity $d$ is:
+    \begin{choices}
+        \wrongchoice{the height of a unit cell}
+        \wrongchoice{the smallest interatomic distance}
+        \wrongchoice{the distance from detector to sample}
+      \correctchoice{the distance between planes of atoms}
+        \wrongchoice{the usual calculus symbol for a differential}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch36-q70}
+    Which of the following is true for Bragg diffraction but not for diffraction from a grating?
+    \begin{choices}
+        \wrongchoice{Two different wavelengths may be used}
+        \wrongchoice{For a given wavelength, a maximum may exist in several directions}
+        \wrongchoice{Long waves are deviated more than short ones}
+        \wrongchoice{There is only one grating spacing}
+      \correctchoice{Maxima occur only for particular angles of incidence}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch36-q71}
+    The longest x-ray wavelength that can be diffracted by crystal planes with a separation of \SI{0.316}{\nano\meter} is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{0.158}{\nano\meter}}
+        \wrongchoice{\SI{0.316}{\nano\meter}}
+        \wrongchoice{\SI{0.474}{\nano\meter}}
+      \correctchoice{\SI{0.632}{\nano\meter}}
+        \wrongchoice{\SI{1.26}{\nano\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch36-q72}
+    A beam of x-rays of wavelength \SI{0.20}{\nano\meter} is diffracted by a set of planes in a crystal whose separation is \SI{3.1e-8}{\centi\meter}. 
+    The smallest angle between the beam and the crystal planes for which a reflection occurs is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{0.70}{\radian}}
+        \wrongchoice{\SI{0.33}{\radian}}
+      \correctchoice{\SI{0.033}{\radian}}
+        \wrongchoice{\SI{0.066}{\radian}}
+        \wrongchoice{no such angle exists}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch36-q73}
+    An x-ray beam of wavelength \SI{3e-11}{\meter} is incident on a calcite crystal of lattice spacing \SI{0.3}{\nano\meter}. 
+    The smallest angle between crystal planes and the x-ray beam that will result in constructive interference is:
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{\ang{2.87}}
+        \wrongchoice{\ang{5.73}}
+        \wrongchoice{\ang{11.63}}
+        \wrongchoice{\ang{23.27}}
+        \wrongchoice{none of the provided}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch36-q74}
+    A beam of x-rays of wavelength \SI{0.10}{\nano\meter} is found to diffract in second order from the face of a LiF crystal at a Bragg angle of 30 ◦ . The distance between adjacent crystal planes is about:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{0.15}{\nano\meter}}
+      \correctchoice{\SI{0.20}{\nano\meter}}
+        \wrongchoice{\SI{0.25}{\nano\meter}}
+        \wrongchoice{\SI{0.30}{\nano\meter}}
+        \wrongchoice{\SI{0.40}{\nano\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\begin{comment}
+\end{comment}
+
+\endinput
+
+

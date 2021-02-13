@@ -1,0 +1,340 @@
+
+
+%% AP Physics MC Questions Archive
+%%----------------------------------------
+
+
+%% Second Law Horizontal and Vertical
+%%----------------------------------------
+\newcommand{\apPhysicsSecondLawQOne}{
+\begin{tikzpicture}
+    %% Floor
+    \draw (-3.5,0) -- (+4,0);
+    \node[anchor=south,fill,pattern=north east lines,minimum width=7.5cm, minimum height=0.05cm] at (0.5,0) {};
+    %% Boxes
+    \node[draw,minimum size=1cm,fill=white!90!black,anchor=south] (C) at (-2.25,0) {$C$};
+    \node[draw,minimum size=1cm,fill=white!90!black,anchor=south] (B) at (+0,0) {$B$};
+    \node[draw,minimum size=1cm,fill=white!90!black,anchor=south] (A) at (+2.25,0) {$A$};
+    %% String
+    \draw[very thick] (C.east) -- (B.west);
+    \draw[very thick] (B.east) -- (A.west);
+    %% Force
+    \draw[very thick,->] (A.east) -- ++(0:1cm) node[pos=0.5,anchor=south] {$F$};
+\end{tikzpicture}
+}
+
+\element{ap}{
+\begin{question}{second-law-q01}
+    In the frictionless system shown below,
+        all blocks have the same mass,
+        and the entire system is accelerated by an applied force of magnitude $F$.
+    \begin{center}
+        \apPhysicsSecondLawQOne
+    \end{center}
+    What is the tension in the cord between blocks $B$ and $C$?
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{$\dfrac{F}{3}$}
+        \wrongchoice{$\dfrac{F}{2}$}
+        \wrongchoice{$F$}
+        \wrongchoice{$2F$}
+        \wrongchoice{$3F$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{ap}{
+\begin{question}{second-law-q02}
+    %%Base your answers to questions 2 and 3 on the picture below,
+    In the frictionless system shown below,
+        a system of three block is accelerated by an applied force of magnitude $F$.
+    The tension in the string connecting blocks $A$ and $B$ is $\frac{1}{2}F$.
+    \begin{center}
+        \apPhysicsSecondLawQOne
+    \end{center}
+    If blocks $B$ and $C$ each have a mass $m$,
+        what is the mass of block $A$?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\dfrac{m}{3}$}
+        \wrongchoice{$\dfrac{m}{2}$}
+        \wrongchoice{$m$}
+      \correctchoice{$2m$}
+        \wrongchoice{$3m$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{ap}{
+\begin{question}{second-law-q03}
+    %%Base your answers to questions 2 and 3 on the picture below,
+    In the frictionless system shown below,
+        a system of three block is accelerated by an applied force of magnitude $F$.
+    The tension in the string connecting blocks $A$ and $B$ is $\frac{1}{2}F$.
+    \begin{center}
+        \apPhysicsSecondLawQOne
+    \end{center}
+    If blocks $B$ and $C$ each have a mass $m$,
+        what is the tension in the string connecting blocks $B$ and $C$?
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{$\dfrac{F}{4}$}
+        \wrongchoice{$\dfrac{F}{3}$}
+        \wrongchoice{$F$}
+        \wrongchoice{$2F$}
+        \wrongchoice{$3F$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{ap}{
+\begin{question}{second-law-q04}
+    %% Base your answers to questions 4 and 5 on the following situation.
+    A ball of mass $m$ is dropped down through the air in a gravitational field.
+    The magnitude of the force of air resistance is $bv^2$ where $b$ is a positive constant.
+    %% start question
+    The magnitude of the acceleration of the ball at any time is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$g - b$}
+      \correctchoice{$g - \dfrac{bv^2}{m}$}
+        \wrongchoice{$g + \dfrac{bv^2}{m}$}
+        \wrongchoice{$\dfrac{g}{b}$}
+        \wrongchoice{$bv^2 + g$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{ap}{
+\begin{question}{second-law-q05}
+    %% Base your answers to questions 4 and 5 on the following situation.
+    A ball of mass $m$ is dropped down through the air in a gravitational field.
+    The magnitude of the force of air resistance is $bv^2$ where $b$ is a positive constant.
+    %% start question
+    What is the terminal speed of the ball?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\dfrac{mg}{\sqrt{b}}$}
+      \correctchoice{$\sqrt{\dfrac{mg}{b}}$}
+        \wrongchoice{$\sqrt{mgb}$}
+        \wrongchoice{$\sqrt{\dfrac{g}{b}}$}
+        \wrongchoice{$\sqrt{\dfrac{mg}{b}}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{ap}{
+\begin{question}{second-law-q06}
+    A force $F$ gives an object with a mass $m$ an acceleration $a$.
+    If this force $F$ is applied to an object of mass $\dfrac{1}{4}m$,
+        what would the acceleration be?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\dfrac{a}{4}$}
+        \wrongchoice{$a$}
+        \wrongchoice{$2a$}
+      \correctchoice{$4a$}
+        \wrongchoice{$8a$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{ap}{
+\begin{question}{second-law-q07}
+    An elevator is moving upwards at a constant velocity of \SI{5}{\meter\per\second}.
+    What is the net acceleration the elevator experiences?
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{zero}
+        \wrongchoice{$\dfrac{g}{2}$}
+        \wrongchoice{$\dfrac{g}{4}$}
+        \wrongchoice{$g$}
+        \wrongchoice{$2$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{ap}{
+\begin{question}{second-law-q08}
+    A \SI{15}{\newton} force is applied to a \SI{12}{\kilo\gram} box for \SI{6}{\second}.
+    The box is initially at rest.
+    What is the speed of the box at the end of the \SI{6}{\second} interval?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{1.8}{\meter\per\second}}
+        \wrongchoice{\SI{3}{\meter\per\second}}
+      \correctchoice{\SI{7.5}{\meter\per\second}}
+        \wrongchoice{\SI{15}{\meter\per\second}}
+        \wrongchoice{\SI{30}{\meter\per\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{ap}{
+\begin{question}{second-law-q09}
+    A dog that weighs \SI{500}{\newton} at rest on the Earth's surface is standing on a scale on the floor of an elevator.
+    The elevator is accelerating upward in the Earth's gravitational field at a rate of \SI{9.8}{\meter\per\second\squared}.
+    What does the scale read?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{0}{\newton}}
+        \wrongchoice{\SI{250}{\newton}}
+        \wrongchoice{\SI{500}{\newton}}
+      \correctchoice{\SI{1000}{\newton}}
+        \wrongchoice{\SI{2000}{\newton}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{ap}{
+\begin{question}{second-law-q10}
+    A student that has a mass of \SI{100}{\kilo\gram} is standing on a scale in an elevator car.
+    The elevator is accelerating downward at \SI{5}{\meter\per\second\squared} in the Earth's gravitational field.
+    The reading on the scale in the elevator is most nearly:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{150}{\newton}}
+      \correctchoice{\SI{500}{\newton}}
+        \wrongchoice{\SI{1000}{\newton}}
+        \wrongchoice{\SI{1500}{\newton}}
+        \wrongchoice{\SI{50}{\newton}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{ap}{
+\begin{question}{second-law-q11}
+    A cat that weighs \SI{50}{\newton} when at rest on Earth stands on a scale in an elevator moving upward at a constant velocity of \SI{10}{\meter\per\second}.
+    What does the scale read?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{0}{\newton}}
+      \correctchoice{\SI{50}{\newton}}
+        \wrongchoice{\SI{100}{\newton}}
+        \wrongchoice{\SI{200}{\newton}}
+        \wrongchoice{\SI{1000}{\newton}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{ap}{
+\begin{question}{second-law-q12}
+    An object with mass $m$ is at rest on a frictionless horizontal surface on Earth.
+    If a horizontal force $F$ is applied to this object,
+        its resulting acceleration is $a$.
+    An identical object of mass $m$ is at rest on a frictionless horizontal surface on Planet $Y$,
+        which has a gravitational acceleration of $0.1g$.
+    If this mass is pushed on the same surface with the same horizontal force $F$,
+        what will be its resulting acceleration?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$0.1a$}
+        \wrongchoice{$0.2a$}
+        \wrongchoice{$0.5a$}
+      \correctchoice{$a$}
+        \wrongchoice{$10a$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{ap}{
+\begin{question}{second-law-q13}
+    Block $A$ of mass $m$ is at rest on a horizontal,
+        frictionless surface.
+    Block $B$ of mass $m$ is moving on a frictionless horizontal surface at constant velocity $v$.
+    When a force $F$ is applied to both blocks in the direction of $B$'s motion,
+        the resulting acceleration of Block $B$ relative to Block $A$ is:
+    \begin{choices}
+        \wrongchoice{less, and in a different direction}
+        \wrongchoice{less, and in the same direction}
+        \wrongchoice{greater, and in a different direction}
+        \wrongchoice{greater, and in the same direction}
+      \correctchoice{the same}
+    \end{choices}
+\end{question}
+}
+
+\element{ap}{
+\begin{question}{second-law-q14}
+    How much force is required to vertically lift an object of mass m with acceleration g?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$mg$}
+      \correctchoice{$2mg$}
+        \wrongchoice{$mg^2$}
+        \wrongchoice{$2mg^2$}
+        \wrongchoice{$\dfrac{m}{g}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{ap}{
+\begin{question}{second-law-q15}
+    A bullet is fired horizontally at a velocity of \SI{200}{\meter\per\second} at a height of \SI{1}{\meter}.
+    At the same time, another bullet is dropped \SI{1}{\meter} from rest.
+    The difference between $t_1$,
+        the time it takes the fired bullet to hit the ground,
+        and $t_2$, the time it takes the dropped bullet to hit the ground is:
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{\SI{0}{\second}}
+        \wrongchoice{\SI{1}{\second}}
+        \wrongchoice{\SI{2}{\second}}
+        \wrongchoice{\SI{4}{\second}}
+        \wrongchoice{\SI{8}{\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{ap}{
+\begin{question}{second-law-q16}
+    A box of mass $m$ slides along a horizontal floor with constant velocity $v$.
+    The coefficient of kinetic friction between the box and the floor is $\mu$.
+    What is the net force on the box?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\mu mgv$}
+        \wrongchoice{$mgv$}
+        \wrongchoice{$\mu mv^2$}
+      \correctchoice{zero}
+        \wrongchoice{$\dfrac{\mu mg}{v}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{ap}{
+\begin{question}{second-law-q17}
+    A wagon of mass $m$ is pulled by a string parallel to its direction of motion.
+    If there is a frictional force $F$ acting on the wagon and the tension in the string is $T$,
+        what is the acceleration of the wagon?
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{$\dfrac{T-F}{m}$}
+        \wrongchoice{$\dfrac{F-T}{m}$}
+        \wrongchoice{$\dfrac{T}{m}$}
+        \wrongchoice{$\dfrac{F+T}{m}$}
+        \wrongchoice{$\dfrac{F+T}{m}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+\endinput
+
+

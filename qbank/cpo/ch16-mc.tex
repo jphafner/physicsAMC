@@ -1,0 +1,493 @@
+
+%%--------------------------------------------------
+%% CPO: Multiple Choice Questions
+%%--------------------------------------------------
+
+
+%% Chapter 16: Magnetism
+%%--------------------------------------------------
+
+
+%% Learning Objectives
+%%--------------------------------------------------
+
+%% Recognize that magnetic poles always exist in pairs. 
+%% Decide whether two magnetic poles will attract or repel. 
+%% Describe the magnetic field and forces around a permanent magnet. 
+%% Learn how to build a simple electromagnet and change its strength. 
+%% Use the right-hand rule to locate an electromagnets poles. 
+%% Explain the source of magnetism in materials. 
+%% Explain how a compass responds to a magnetic field.
+%% Describe the cause of Earth’s magnetism. 
+%% Recognize the difference between Earth’s magnetic and geographic poles. 
+%% Explain how a compass is used to indicate direction
+
+
+%% CPO Multiple Choice Questions
+%%--------------------------------------------------
+\element{cpo-mc}{
+\begin{question}{cpo-ch16-q01}
+    Placing the north pole of a magnet near the south pole of another magnet results in:
+    \begin{choices}
+      \correctchoice{an attractive force between the magnets.}
+        \wrongchoice{a repulsive force between the magnets.}
+        \wrongchoice{an electric force between the magnets.}
+        \wrongchoice{no force between the magnets.}
+    \end{choices}
+\end{question}
+}
+
+%\element{cpo-mc}{
+%\begin{question}{cpo-ch16-q02}
+%    A student places two magnets with their north poles facing
+%        each other about \SI{70.0}{\centi\meter} apart.
+%    When she moves one magnet toward the other, the first
+%        magnet repels the second at a distance of \SI{26}{\centi\meter}.
+%    She repeats the procedure, but now places the magnets so the south pole
+%        of one faces the north pole at the other.
+%    \begin{center}
+%    \begin{tikzpicture}
+%        %% NOTE: TODO: draw tikz
+%    \end{tikzpicture}
+%    \end{center}
+%    She is likely to observe that the first magnet will:
+%    \begin{choices}
+%        \wrongchoice{again repel the second at a distance of \SI{26}{\centi\meter}.}
+%      \correctchoice{attract the second at a distance of \SI{26}{\centi\meter}.}
+%        \wrongchoice{repel the second at a distance of \SI{52}{\centi\meter}.}
+%        \wrongchoice{attract the second at a distance of \SI{52}{\centi\meter}.}
+%    \end{choices}
+%\end{question}
+%}
+
+\element{cpo-mc}{
+\begin{question}{cpo-ch16-q03}
+    If a \SI{12}{inch} long bar magnet is cut into two pieces,
+        one inch from the north pole end of the magnet:
+    \begin{choices}
+        \wrongchoice{the short piece of the magnet has a north pole on one end and no pole on the other.}
+        \wrongchoice{the long piece of the magnet has a south pole on both ends.}
+        \wrongchoice{the short piece has a north pole on both ends.}
+      \correctchoice{both pieces have a north and a south pole on each end.}
+    \end{choices}
+\end{question}
+}
+
+\tikzset{
+    north/.style={rectangle, draw=white, fill=black, minimum width=1cm, minimum height=0.5cm},
+    south/.style={rectangle, draw=black, fill=white, minimum width=1cm, minimum height=0.5cm},
+}
+
+%\element{cpo-mc}{
+%\begin{question}{cpo-ch16-q04}
+%    Which pair of objects experiences a repulsive force?
+%    \begin{center}
+%    \begin{tikzpicture}
+%        %% NOTE: TODO: draw tikz
+%    \end{tikzpicture}
+%    \end{center}
+%    \begin{multicols}{2}
+%    \begin{choices}
+%        \wrongchoice{
+%            \begin{tikzpicture}[scale=0.5]
+%                \foreach \i in {-1,1} {
+%                    \draw[fill=black] (0,0) rectangle (2cm,1cm);
+%                    \node[anchor=center,draw=white] at (1cm,0.5cm) {\bfseries N};
+%                    \draw[fill=white] (0,0) rectangle (2cm,-1cm);
+%                    \node[anchor=center,draw=black] at (1cm,-0.5cm) {\bfseries S};
+%                }
+%            \end{tikzpicture}
+%        }
+%        \wrongchoice{$A$ and $B$}
+%      \correctchoice{$A$ and $C$}
+%        \wrongchoice{$B$ and $D$}
+%        \wrongchoice{$B$ and $C$}
+%    \end{choices}
+%    \end{multicols}
+%\end{question}
+%}
+
+%\element{cpo-mc}{
+%\begin{question}{cpo-ch16-q05}
+%    Which pair of objects experiences an attractive force?
+%    \begin{center}
+%    \begin{tikzpicture}
+%        %% NOTE: TODO: draw tikz
+%    \end{tikzpicture}
+%    \end{center}
+%    \begin{multicols}{2}
+%    \begin{choices}
+%        \wrongchoice{$A$ and $B$}
+%        \wrongchoice{$A$ and $C$}
+%      \correctchoice{$B$ and $D$}
+%        \wrongchoice{$B$ and $C$}
+%    \end{choices}
+%    \end{multicols}
+%\end{question}
+%}
+
+%\element{cpo-mc}{
+%\begin{question}{cpo-ch16-q06}
+%    A magnet is shown surrounded by its magnetic field.
+%    \begin{center}
+%    \begin{tikzpicture}
+%        %% NOTE: TODO: draw tikz
+%    \end{tikzpicture}
+%    \end{center}
+%    In which area is the magnetic field strongest?
+%    \begin{multicols}{4}
+%    \begin{choices}[o]
+%        \wrongchoice{$A$}
+%        \wrongchoice{$B$}
+%        \wrongchoice{$C$}
+%      \correctchoice{$D$}
+%    \end{choices}
+%    \end{multicols}
+%\end{question}
+%}
+
+%\element{cpo-mc}{
+%\begin{question}{cpo-ch16-q07}
+%    A magnet is shown surrounded by its magnetic field.
+%    \begin{center}
+%    \begin{tikzpicture}
+%        %% NOTE: TODO: draw tikz
+%    \end{tikzpicture}
+%    \end{center}
+%    Which direction should the magnetic field lines
+%        be pointing?
+%    \begin{multicols}{2}
+%    \begin{choices}
+%        \wrongchoice{From South to North.}
+%      \correctchoice{From North to South.}
+%        \wrongchoice{From East to West.}
+%        \wrongchoice{From West to East.}
+%    \end{choices}
+%    \end{multicols}
+%\end{question}
+%}
+
+\element{cpo-mc}{
+\begin{question}{cpo-ch16-q08}
+    The magnetic field strength inside a current-carrying coil will be larger if the coil is wound around a:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{vacuum}
+        \wrongchoice{wooden rod}
+        \wrongchoice{glass rod}
+      \correctchoice{iron rod}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{cpo-mc}{
+\begin{question}{cpo-ch16-q09}
+    The source of a material's magnetism is the:
+    \begin{choices}
+        \wrongchoice{charge of its protons.}
+        \wrongchoice{mass of its neutrons.}
+      \correctchoice{spin of its electrons.}
+        \wrongchoice{density of its nucleus.}
+    \end{choices}
+\end{question}
+}
+
+\element{cpo-mc}{
+\begin{question}{cpo-ch16-q10}
+    Materials in which the magnetic fields of individual electrons in an atom cancel out so that each atom has zero net magnetic field are known as:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{ferromagnetic}
+        \wrongchoice{paramagnetic}
+      \correctchoice{diamagnetic}
+        \wrongchoice{monomagnetic}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{cpo-mc}{
+\begin{question}{cpo-ch16-q11}
+    Materials in which each atom has a tiny magnetic field,
+        but the north and south poles of atoms within the material are randomly arranged so that the magnetic fields cancel out, are known as:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{ferromagnetic}
+      \correctchoice{paramagnetic}
+        \wrongchoice{diamagnetic}
+        \wrongchoice{monomagnetic}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{cpo-mc}{
+\begin{question}{cpo-ch16-q12}
+    If you reverse the direction of current flow in an electromagnet:
+    \begin{choices}
+      \correctchoice{the north and south poles are reversed}
+        \wrongchoice{the magnet is neutralized}
+        \wrongchoice{the strength of the magnetic field increases}
+        \wrongchoice{a short circuit occurs}
+    \end{choices}
+\end{question}
+}
+
+%\element{cpo-mc}{
+%\begin{questionmult}{ch16-Q13}
+%    The diagram below represents an iron nail wrapped with
+%        a current carrying wire.
+%    \begin{center}
+%    \begin{tikzpicture}
+%        %% NOTE: TODO: draw tikz
+%    \end{tikzpicture}
+%    \end{center}
+%    What type of device does it represent?
+%    \begin{multicols}{2}
+%    \begin{choices}
+%        \wrongchoice{Permanent magnet}
+%      \correctchoice{Electromagnet}
+%        \wrongchoice{Compass}
+%        \wrongchoice{Potentiometer}
+%    \end{choices}
+%    \end{multicols}
+%\end{questionmult}
+%}
+
+%\element{cpo-mc}{
+%\begin{questionmult}{ch16-Q14}
+%    The diagram below represents an iron nail wrapped with
+%        a current carrying wire.
+%    \begin{center}
+%    \begin{tikzpicture}
+%        %% NOTE: TODO: draw tikz
+%    \end{tikzpicture}
+%    \end{center}
+%    Using the right hand rule, the magnetic poles of the
+%        devices are located:
+%    \begin{choices}
+%      \correctchoice{North at the ``head'' and South at the ``point''.}
+%        \wrongchoice{North at the ``point'' and South at the ``head''.}
+%        \wrongchoice{East at the ``point'' and West at the ``head''.}
+%        \wrongchoice{East at the ``head'' and West at the ``point''.}
+%    \end{choices}
+%\end{questionmult}
+%}
+
+\element{cpo-mc}{
+\begin{question}{cpo-ch16-q15}
+    Dani and Gina are trying to make a permanent magnet out of an iron bar.
+    Any of the following methods would permanently magnetize the iron bar \emph{except}:
+    \begin{choices}
+        \wrongchoice{stroking the iron bar with a powerful magnet.}
+        \wrongchoice{placing the iron bar in a very strong magnetic field.}
+        \wrongchoice{placing the iron bar near a very strong electromagnet.}
+      \correctchoice{placing the iron bar near a diamagnetic material.}
+    \end{choices}
+\end{question}
+}
+
+\element{cpo-mc}{
+\begin{question}{cpo-ch16-q16}
+    An example of a ferromagnetic material is a:
+    \begin{choices}
+        \wrongchoice{ceramic mug}
+      \correctchoice{nail attracted to a bar magnet}
+        \wrongchoice{penny}
+        \wrongchoice{Compact Disc (CD)}
+    \end{choices}
+\end{question}
+}
+
+%% NOTE
+\element{cpo-mc}{
+\begin{question}{cpo-ch16-q17}
+    Which of the following creates a magnetic field?
+    \begin{choices}
+        \wrongchoice{A metal ball with \SI{2}{\coulomb} of static charge on it}
+        \wrongchoice{A piece of aluminum}
+      \correctchoice{A coil of wire carrying current}
+        \wrongchoice{A diamagnetic material}
+    \end{choices}
+\end{question}
+}
+
+\element{cpo-mc}{
+\begin{questionmult}{ch16-Q18}
+    A permanent magnet can be demagnetized by:
+    \begin{choices}
+      \correctchoice{dropping it on a hard surface}
+      \correctchoice{heating it to very high temperature}
+      \correctchoice{forcing two north poles together}
+    \end{choices}
+\end{questionmult}
+}
+
+\element{cpo-mc}{
+\begin{question}{cpo-ch16-q19}
+    Three ways you can increase the strength of an electromagnet are \rule[-0.1pt]{4em}{0.1pt}, \rule[-0.1pt]{4em}{0.1pt} and add iron to the core.
+    \begin{choices}
+        \wrongchoice{decrease the number of coils; increase the current}
+      \correctchoice{increase the number of coils; increase the current}
+        \wrongchoice{increase the number of coils; decrease the current}
+        \wrongchoice{decrease the number of coils; decrease the current}
+    \end{choices}
+\end{question}
+}
+
+\element{cpo-mc}{
+\begin{question}{cpo-ch16-q20}
+    Electromagnets are generally more useful than permanent magnets for all of the following reasons \emph{except}:
+    \begin{choices}
+      \correctchoice{they are always magnetized}
+        \wrongchoice{their polarity can be changed}
+        \wrongchoice{their strength can be altered}
+        \wrongchoice{the magnetism can be turned off}
+    \end{choices}
+\end{question}
+}
+
+\element{cpo-mc}{
+\begin{question}{cpo-ch16-q21}
+    All atoms act like tiny magnets.
+    Why do only a few materials show magnetic properties?
+    \begin{choices}
+        \wrongchoice{Magnetic materials have atoms that are much stronger magnets than the atoms of other materials.}
+        \wrongchoice{Atomic magnets are magnified when combined with a rare substance.  Magnetic materials contain this rare substance.}
+        \wrongchoice{We see magnetic properties only if atomic magnets line up with Earth's geographic south and north poles. In magnetic materials this arrangement can occur.}
+      \correctchoice{We see magnetic properties only if atomic magnets line up in the same direction throughout a material. In magnetic materials, this arrangement can occur.}
+    \end{choices}
+\end{question}
+}
+
+\element{cpo-mc}{
+\begin{question}{cpo-ch16-q22}
+    If a pin is brought close to a magnet,
+        it is attracted to the magnet and attracts other pins to it.
+    If the pin is removed from the magnet, it does not attract other pins.
+    The pin might be referred to as:
+    \begin{choices}
+        \wrongchoice{a hard magnet}
+      \correctchoice{a soft magnet}
+        \wrongchoice{magnetic mono-pole}
+        \wrongchoice{diamagnetic material}
+    \end{choices}
+\end{question}
+}
+
+\element{cpo-mc}{
+\begin{question}{cpo-ch16-q23}
+    Earth's magnetic north pole is:
+    \begin{choices}
+        \wrongchoice{aligned with the north star.}
+        \wrongchoice{aligned with Earth's geographic north pole.}
+      \correctchoice{under Antarctica, near Earth's geographic south pole.}
+        \wrongchoice{at the equator.}
+    \end{choices}
+\end{question}
+}
+
+\element{cpo-mc}{
+\begin{question}{cpo-ch16-q24}
+    The earliest records of magnetically aided navigation are found in the history of the:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{Japanese}
+        \wrongchoice{Italians}
+      \correctchoice{Greeks}
+        \wrongchoice{Chinese}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{cpo-mc}{
+\begin{question}{cpo-ch16-q25}
+    The difference between true geographic north and the ``north'' indicated by a compass is the difference measured in degrees and known as:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{inclination}
+      \correctchoice{declination}
+        \wrongchoice{azimuth}
+        \wrongchoice{elevation}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{cpo-mc}{
+\begin{question}{cpo-ch16-q26}
+    According to historical data and current scientific theory,
+        the statement that is \emph{not} true concerning Earth's magnetic field is that the field:
+    \begin{choices}
+        \wrongchoice{reverses every \SI{5e5}{year}}
+        \wrongchoice{is weakening by \SI{7}{\percent} every \SI{100}{year}}
+        \wrongchoice{will reverse within the next \SI{2 000}{year}}
+      \correctchoice{will complete disappear in the future}
+    \end{choices}
+\end{question}
+}
+
+\element{cpo-mc}{
+\begin{question}{cpo-ch16-q27}
+    %% NOTE: changed wording
+    A unit used to measure the strength of a magnetic field is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{ohm (\si{\ohm})}
+      %\correctchoice{tesla (\si{\tesla})}
+      \correctchoice{gauss (\si{G})}
+        \wrongchoice{ampere (\si{\ampere})}
+        \wrongchoice{coulomb (\si{\coulomb})}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{cpo-mc}{
+\begin{question}{cpo-ch16-q28}
+    Earth behaves like a giant:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{electric circuit}
+        \wrongchoice{permanent magnet}
+        \wrongchoice{compass}
+      \correctchoice{electromagnet}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+%\element{cpo-mc}{
+%\begin{question}{cpo-ch16-q29}
+%    Which compass in the diagram below is pointing in the wrong direction?
+%    \begin{center}
+%        %% NOTE: add diagram
+%    \end{center}
+%    \begin{multicols}{2}
+%    \begin{choices}
+%        %% NOTE: change ABCD to IJKL
+%        \wrongchoice{$A$}
+%        \wrongchoice{$B$}
+%        \wrongchoice{$C$}
+%      \correctchoice{$D$}
+%    \end{choices}
+%    \end{multicols}
+%\end{question}
+%}
+
+\element{cpo-mc}{
+\begin{question}{cpo-ch16-q30}
+    Magnetic declination can best be described as the:
+    \begin{choices}
+        \wrongchoice{difference between the magnetic field and Earth's surface.}
+        \wrongchoice{magnetic field strength of Earth at the equator.}
+        \wrongchoice{tendency for the magnetic field of Earth to reverse itself.}
+      \correctchoice{difference between directions to true north and magnetic north.}
+    \end{choices}
+\end{question}
+}
+
+\endinput
+

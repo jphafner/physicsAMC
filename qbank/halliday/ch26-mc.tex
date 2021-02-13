@@ -1,0 +1,773 @@
+
+%%--------------------------------------------------
+%% Halliday: Fundamentals of Physics
+%%--------------------------------------------------
+
+
+%% Chapter 26: Current and Resistance
+%%--------------------------------------------------
+
+
+%% Learning Objectives
+%%--------------------------------------------------
+
+%% 26.01: Apply the definition of current as the rate at which charge moves through a point, including solving for the amount of charge that passes the point in a given time interval.
+%% 26.02: Identify that current is normally due to the motion of conduction electrons that are driven by electric fields (such as those set up in a wire by a battery).
+%% 26.03: Identify a junction in a circuit and apply the fact that (due to conservation of charge) the total current into a junction must equal the total current out of the junction.
+%% 26.04: Explain how current arrows are drawn in a schematic diagram of a circuit, and identify that the arrows are not vectors.
+
+
+%% Halliday Multiple Choice Questions
+%%--------------------------------------------------
+\element{halliday-mc}{
+\begin{question}{halliday-ch26-q01}
+    A car battery is rated at \SI{80}{\ampere\hour}.
+    An ampere hour (\si{\ampere\hour}) is a unit of:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{power}
+        \wrongchoice{energy}
+        \wrongchoice{current}
+      \correctchoice{charge}
+        \wrongchoice{force}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch26-q02}
+    Current has units:
+    \begin{choices}
+        \wrongchoice{kilowatt hour (\si{\kilo\watt\hour})}
+      \correctchoice{coulomb per second (\si{\coulomb\per\second})}
+        \wrongchoice{coulomb (\si{\coulomb})}
+        \wrongchoice{volt (\si{\volt})}
+        \wrongchoice{ohm (\si{\ohm})}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch26-q03}
+    Current has units:
+    \begin{choices}
+        \wrongchoice{kilowatt hour (\si{\kilo\watt\hour})}
+      \correctchoice{ampere (\si{\ampere})}
+        \wrongchoice{coulomb (\si{\coulomb})}
+        \wrongchoice{volt (\si{\volt})}
+        \wrongchoice{ohm (\si{\ohm})}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch26-q04}
+    The units of resistivity are:
+    \begin{choices}
+        \wrongchoice{ohm (\si{\ohm})}
+      \correctchoice{ohm meter (\si{\ohm\meter})}
+        \wrongchoice{ohm per meter (\si{\ohm\per\meter})}
+        \wrongchoice{ohm per meter squared (\si{\ohm\per\meter\square})}
+        \wrongchoice{none of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch26-q05}
+    The rate at which electrical energy is used may be measured in:
+    \begin{choices}
+        \wrongchoice{watt per second (\si{\watt\per\second})}
+        \wrongchoice{watt second (\si{\watt\second})}
+      \correctchoice{watt (\si{\watt})}
+        \wrongchoice{joule second (\si{\joule\second})}
+        \wrongchoice{kilowatt hour (\si{\kilo\watt\hour})}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch26-q06}
+    Energy may be measured in:
+    \begin{choices}
+        \wrongchoice{kilowatt (\si{\kilo\watt})}
+        \wrongchoice{joule second (\si{\joule\second})}
+        \wrongchoice{watt (\si{\watt})}
+      \correctchoice{watt second (\si{\watt\per\second})}
+        \wrongchoice{volt per ohm (\si{\volt\per\ohm})}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch26-q07}
+    Which one of the following quantities is correctly matched to its unit?
+    \begin{choices}
+        \wrongchoice{Power---\si{\kilo\watt\hour}}
+        \wrongchoice{Energy---\si{\kilo\watt}}
+      \correctchoice{Potential difference---\si{\joule\per\coulomb}}
+        \wrongchoice{Current---\si{\ampere\per\second}}
+        \wrongchoice{Resistance---\si{\volt\per\coulomb}}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch26-q08}
+    Current is a measure of:
+    \begin{choices}
+        \wrongchoice{force that moves a charge past a point}
+        \wrongchoice{resistance to the movement of a charge past a point}
+        \wrongchoice{energy used to move a charge past a point}
+      \correctchoice{amount of charge that moves past a point per unit time}
+        \wrongchoice{speed with which a charge moves past a point}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch26-q09}
+    A \SI{60}{\watt} light bulb carries a current of \SI{0.5}{\ampere}.
+    The total charge passing through it in one hour is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{120}{\coulomb}}
+        \wrongchoice{\SI{3600}{\coulomb}}
+        \wrongchoice{\SI{3000}{\coulomb}}
+        \wrongchoice{\SI{2400}{\coulomb}}
+      \correctchoice{\SI{1800}{\coulomb}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch26-q10}
+    A \SI{10}{\ohm} resistor has a constant current. 
+    If \SI{1200}{\coulomb} of charge flow through it in 4 minutes what is the value of the current?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{3.0}{\ampere}}
+        \wrongchoice{\SI{5.0}{\ampere}}
+        \wrongchoice{\SI{11}{\ampere}}
+      \correctchoice{\SI{15}{\ampere}}
+        \wrongchoice{\SI{20}{\ampere}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch26-q11}
+    Conduction electrons move to the right in a certain wire. 
+    This indicates that:
+    \begin{choices}
+        \wrongchoice{the current density and electric field both point right}
+      \correctchoice{the current density and electric field both point left}
+        \wrongchoice{the current density points right and the electric field points left}
+        \wrongchoice{the current density points left and the electric field points right}
+        \wrongchoice{the current density points left but the direction of the electric field is unknown}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch26-q12}
+    Two wires made of different materials have the same uniform current density. 
+    They carry the same current only if:
+    \begin{choices}
+        \wrongchoice{their lengths are the same}
+      \correctchoice{their cross-sectional areas are the same}
+        \wrongchoice{both their lengths and cross-sectional areas are the same}
+        \wrongchoice{the potential differences across them are the same}
+        \wrongchoice{the electric fields in them are the same}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch26-q13}
+    A wire with a length of \SI{150}{\meter} and a radius of \SI{0.15}{\milli\meter} carries a current with a uniform current density of \SI{2.8e7}{\ampere\per\meter\squared}.
+    The current is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{0.63}{\ampere\squared}}
+      \correctchoice{\SI{2.0}{\ampere}}
+        \wrongchoice{\SI{5.9}{\ampere\squared}}
+        \wrongchoice{\SI{296}{\ampere}}
+        \wrongchoice{\SI{400}{\ampere\squared}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch26-q14}
+    In a conductor carrying a current we expect the electron drift speed to be:
+    \begin{choices}
+        \wrongchoice{much greater than the average electron speed}
+      \correctchoice{much less than the average electron speed}
+        \wrongchoice{about the same as the average electron speed}
+        \wrongchoice{less than the average electron speed at low temperature and greater than the average electron speed at high temperature}
+        \wrongchoice{less than the average electron speed at high temperature and greater than the average electron speed at low temperature}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch26-q15}
+    Two substances are identical except that the electron mean free time for substance $A$ is twice the electron mean free time for substance $B$. 
+    If the same electric field exists in both substances the electron drift speed in $A$ is:
+    \begin{choices}
+        \wrongchoice{the same as in $B$}
+      \correctchoice{twice that in $B$}
+        \wrongchoice{half that in $B$}
+        \wrongchoice{four times that in $B$}
+        \wrongchoice{one-fourth that in $B$}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch26-q16}
+    The current is zero in a conductor when no potential difference is applied because:
+    \begin{choices}
+        \wrongchoice{the electrons are not moving}
+        \wrongchoice{the electrons are not moving fast enough}
+      \correctchoice{for every electron with a given velocity there is another with a velocity of equal magnitude and opposite direction}
+        \wrongchoice{equal numbers of electrons and protons are moving together}
+        \wrongchoice{otherwise Ohm's law would not be valid}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch26-q17}
+    The current density is the same in two wires. 
+    Wire $A$ has twice the free-electron concentration of wire $B$. 
+    The drift speed of electrons in $A$ is:
+    \begin{choices}
+        \wrongchoice{twice that of electrons in $B$}
+        \wrongchoice{four times that of electrons in $B$}
+      \correctchoice{half that of electrons in $B$}
+        \wrongchoice{one-fourth that of electrons in $B$}
+        \wrongchoice{the same as that of electrons in $B$}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch26-q18}
+    Copper contains \SI{8.4e28}{free electrons\per\meter\cubed}.
+    A copper wire of cross-sectional area \SI{7.4e-7}{\meter\squared} carries a current of \SI{1}{\ampere}.
+    The electron drift speed is approximately:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{3e8}{\meter\per\second}}
+        \wrongchoice{\SI{e3}{\meter\per\second}}
+        \wrongchoice{\SI{1}{\meter\per\second}}
+      \correctchoice{\SI{e-4}{\meter\per\second}}
+        \wrongchoice{\SI{e-23}{\meter\per\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch26-q19}
+    If $\vec{J}$ is the current density and $\mathrm{d}\vec{A}$ is a vector element of area then the integral $\int \vec{J}\cdot\mathrm{d}\vec{A}$ over an area represents:
+    \begin{choices}
+        \wrongchoice{the electric flux through the area}
+        \wrongchoice{the average current density at the position of the area}
+        \wrongchoice{the resistance of the area}
+        \wrongchoice{the resistivity of the area}
+      \correctchoice{the current through the area}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch26-q20}
+    If the potential difference across a resistor is doubled:
+    \begin{choices}
+      \correctchoice{only the current is doubled}
+        \wrongchoice{only the current is halved}
+        \wrongchoice{only the resistance is doubled}
+        \wrongchoice{only the resistance is halved}
+        \wrongchoice{both the current and resistance are doubled}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch26-q21}
+    Five cylindrical wires are made of the same material. 
+    Their lengths and radii are
+    \begin{description}
+        \item[wire 1:] length $l$, radius $r$
+        \item[wire 2:] length $l/4$, radius $r/2$
+        \item[wire 3:] length $l/2$, radius $r/2$
+        \item[wire 4:] length $l$, radius $r/2$
+        \item[wire 5:] length $5l$, radius $2r$
+    \end{description}
+    Rank the wires according to their resistances,
+        least to greatest.
+    \begin{choices}
+        \wrongchoice{1, 2, 3, 4, 5}
+        \wrongchoice{5, 4, 3, 2, 1}
+      \correctchoice{1 and 2 tie, then 5, 3, 4}
+        \wrongchoice{1, 3, 4, 2, 5}
+        \wrongchoice{1, 2, 4, 3, 5}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch26-q22}
+    Of the following, the copper conductor that has the least resistance is:
+    \begin{choices}
+        \wrongchoice{thin, long and hot}
+      \correctchoice{thick, short and cool}
+        \wrongchoice{thick, long and hot}
+        \wrongchoice{thin, short and cool}
+        \wrongchoice{thin, short and hot}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch26-q23}
+    A cylindrical copper rod has resistance $R$.
+    It is reformed to twice its original length with no change of volume. 
+    Its new resistance is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$R$}
+        \wrongchoice{$2R$}
+      \correctchoice{$4R$}
+        \wrongchoice{$8R$}
+        \wrongchoice{$\dfrac{R}{2}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch26-q24}
+    The resistance of a rod does \emph{not} depend on:
+    \begin{choices}
+        \wrongchoice{its temperature}
+        \wrongchoice{its material}
+        \wrongchoice{its length}
+        \wrongchoice{its conductivity}
+      \correctchoice{the shape of its (fixed) cross-sectional area}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch26-q25}
+    A certain wire has resistance $R$. 
+    Another wire, of the same material,
+        has half the length and half the diameter of the first wire. 
+    The resistance of the second wire is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\dfrac{R}{4}$}
+        \wrongchoice{$\dfrac{R}{2}$}
+        \wrongchoice{$R$}
+      \correctchoice{$2R$}
+        \wrongchoice{$4R$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch26-q26}
+    A nichrome wire is \SI{1}{\meter} long and \SI{1e-6}{\meter\squared} in cross-sectional area. 
+    When connected to a potential difference of \SI{2}{\volt},
+        a current of \SI{4}{\ampere} exists in the wire. 
+    The resistivity of this nichrome is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{e-7}{\ohm\meter}}
+        \wrongchoice{\SI{2e-7}{\ohm\meter}}
+        \wrongchoice{\SI{4e-7}{\ohm\meter}}
+      \correctchoice{\SI{5e-7}{\ohm\meter}}
+        \wrongchoice{\SI{8e-7}{\ohm\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch26-q27}
+    Two conductors are made of the same material and have the same length. 
+    Conductor $A$ is a solid wire of diameter \SI{1}{\meter}. 
+    Conductor $B$ is a hollow tube of inside diameter \SI{1}{\meter} and outside diameter \SI{2}{\meter}.
+    The ratio of their resistance, $R_A/R_B$, is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$1$}
+        \wrongchoice{$2$}
+        \wrongchoice{$\sqrt{2}$}
+      \correctchoice{$3$}
+        \wrongchoice{$4$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch26-q28}
+    Conductivity is:
+    \begin{choices}
+        \wrongchoice{the same as resistivity, it is just more convenient to use for good conductors}
+        \wrongchoice{expressed in \si{\per\ohm}}
+        \wrongchoice{equal to 1/resistance}
+      \correctchoice{expressed in \si{\per\ohm\per\meter}}
+        \wrongchoice{not a meaningful quantity for an insulator}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch26-q29}
+    A certain sample carries a current of \SI{4}{\ampere} when the potential difference is \SI{2}{\volt} and a current of \SI{10}{\ampere} when the potential difference is \SI{4}{\volt}.
+    This sample:
+    \begin{choices}
+        \wrongchoice{obeys Ohm's law}
+      \correctchoice{has a resistance of \SI{0.5}{\ohm} at \SI{1}{\volt}}
+        \wrongchoice{has a resistance of \SI{2.5}{\ohm} at \SI{1}{\volt}}
+        \wrongchoice{has a resistance of \SI{2.5}{\ohm} at \SI{2}{\volt}}
+        \wrongchoice{does not have a resistance}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch26-q30}
+    A current of \SI{0.5}{\ampere} exists in a \SI{60}{\ohm} lamp. 
+    The applied potential difference is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{15}{\volt}}
+      \correctchoice{\SI{30}{\volt}}
+        \wrongchoice{\SI{60}{\volt}}
+        \wrongchoice{\SI{120}{\volt}}
+        \wrongchoice{none of the provided}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch26-q31}
+    Which of the following graphs best represents the current-voltage relationship of an incandescent light bulb?
+    \begin{multicols}{2}
+    \begin{choices}
+        %% NOTE: ANS is A
+        \wrongchoice{
+            \begin{tikzpicture}
+            \end{tikzpicture}
+        }
+
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch26-q32}
+    Which of the following graphs best represents the current-voltage relationship for a device that obeys Ohm's law?
+    \begin{multicols}{2}
+    \begin{choices}
+        %% NOTE: ANS is B
+        \wrongchoice{
+            \begin{tikzpicture}
+            \end{tikzpicture}
+        }
+
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch26-q33}
+    Two wires are made of the same material and have the same length but different radii. 
+    They are joined end-to-end and a potential difference is maintained across the combination. 
+    Of the following the quantity that is the same for both wires is:
+    \begin{choices}
+        \wrongchoice{potential difference}
+      \correctchoice{current}
+        \wrongchoice{current density}
+        \wrongchoice{electric field}
+        \wrongchoice{conduction electron drift speed}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch26-q34}
+    For an ohmic substance the resistivity is the proportionality constant for:
+    \begin{choices}
+        \wrongchoice{current and potential difference}
+        \wrongchoice{current and electric field}
+        \wrongchoice{current density and potential difference}
+      \correctchoice{current density and electric field}
+        \wrongchoice{potential difference and electric field}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch26-q35}
+    For an ohmic resistor, resistance is the proportionality constant for:
+    \begin{choices}
+        \wrongchoice{potential difference and electric field}
+        \wrongchoice{current and electric field}
+        \wrongchoice{current and length}
+        \wrongchoice{current and cross-sectional area}
+      \correctchoice{current and potential difference}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch26-q36}
+    For an ohmic substance, the resistivity depends on:
+    \begin{choices}
+        \wrongchoice{the electric field}
+        \wrongchoice{the potential difference}
+        \wrongchoice{the current density}
+      \correctchoice{the electron mean free time}
+        \wrongchoice{the cross-sectional area of the sample}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch26-q37}
+    For a cylindrical resistor made of ohmic material,
+        the resistance does \emph{not} depend on:
+    \begin{choices}
+      \correctchoice{the current}
+        \wrongchoice{the length}
+        \wrongchoice{the cross-sectional area}
+        \wrongchoice{the resistivity}
+        \wrongchoice{the electron drift velocity}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch26-q38}
+    For an ohmic substance,
+        the electron drift velocity is proportional to:
+    \begin{choices}
+        \wrongchoice{the cross-sectional area of the sample}
+        \wrongchoice{the length of the sample}
+        \wrongchoice{the mass of an electron}
+      \correctchoice{the electric field in the sample}
+        \wrongchoice{none of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch26-q39}
+    You wish to triple the rate of energy dissipation in a heating device. 
+    To do this you could triple:
+    \begin{choices}
+        \wrongchoice{the potential difference keeping the resistance the same}
+        \wrongchoice{the current keeping the resistance the same}
+        \wrongchoice{the resistance keeping the potential difference the same}
+      \correctchoice{the resistance keeping the current the same}
+        \wrongchoice{both the potential difference and current}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch26-q40}
+    A student kept her \SI{60}{\watt}, \SI{120}{\volt} study lamp turned on from 2:00 PM until 2:00 AM. 
+    How many coulombs of charge went through it?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{150}{\coulomb}}
+        \wrongchoice{\SI{3 600}{\coulomb}}
+        \wrongchoice{\SI{7 200}{\coulomb}}
+        \wrongchoice{\SI{18 000}{\coulomb}}
+      \correctchoice{\SI{21 600}{\coulomb}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch26-q41}
+    A flat iron is marked ``\SI{120}{\volt}, \SI{600}{\watt}''.
+    In normal use, the current in it is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{2}{\ampere}}
+        \wrongchoice{\SI{4}{\ampere}}
+      \correctchoice{\SI{5}{\ampere}}
+        \wrongchoice{\SI{7.2}{\ampere}}
+        \wrongchoice{\SI{0.2}{\ampere}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch26-q42}
+    An certain resistor dissipates \SI{0.5}{\watt} when connected to a \SI{3}{\volt} potential difference. 
+    When connected to a \SI{1}{\volt} potential difference,
+        this resistor will dissipate:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{0.5}{\watt}}
+        \wrongchoice{\SI{0.167}{\watt}}
+        \wrongchoice{\SI{1.5}{\watt}}
+      \correctchoice{\SI{0.056}{\watt}}
+        \wrongchoice{none of the provided}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch26-q43}
+    An ordinary light bulb is marked ``\SI{60}{\watt}, \SI{120}{\volt}''.
+    Its resistance is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{60}{\ohm}}
+        \wrongchoice{\SI{120}{\ohm}}
+        \wrongchoice{\SI{180}{\ohm}}
+      \correctchoice{\SI{240}{\ohm}}
+        \wrongchoice{\SI{15}{\ohm}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch26-q44}
+    The mechanical equivalent of heat is $\SI{1}{\calorie}=\SI{4.18}{\joule}$.
+    The specific heat of water is \SI{1}{\calorie\per\gram\per\kelvin}. 
+    An electric immersion water heater, rated at \SI{400}{\watt},
+        should heat a kilogram of water from \SI{10}{\degreeCelsius} to \SI{30}{\degreeCelsius} in about:
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{\SI{3.5}{\minute}}
+        \wrongchoice{\SI{1}{\minute}}
+        \wrongchoice{\SI{15}{\minute}}
+        \wrongchoice{\SI{45}{\minute}}
+        \wrongchoice{\SI{15}{\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch26-q45}
+    It is better to send \SI{10 000}{\kilo\watt} of electric power long distances at \SI{10 000}{\volt} rather than at \SI{220}{\volt} because:
+    \begin{choices}
+        \wrongchoice{there is less heating in the transmission wires}
+        \wrongchoice{the resistance of the wires is less at high voltages}
+        \wrongchoice{more current is transmitted at high voltages}
+        \wrongchoice{the insulation is more effective at high voltages}
+        \wrongchoice{the $iR$ drop along the wires is greater at high voltage}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch26-q46}
+    Suppose the electric company charges \num{10} cents per \si{\kilo\watt\hour}. 
+    How much does it cost to use a \SI{125}{\watt} lamp \num{4} hours a day for \num{30} days?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\$1.20}
+      \correctchoice{\$1.50}
+        \wrongchoice{\$1.80}
+        \wrongchoice{\$7.20}
+        \wrongchoice{none of the provided}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch26-q47}
+    A certain x-ray tube requires a current of \SI{7}{\milli\ampere} at a voltage of \SI{80}{\kilo\volt}.
+    The rate of energy dissipation is:
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{\SI{560}{\watt}}
+        \wrongchoice{\SI{5600}{\watt}}
+        \wrongchoice{\SI{26}{\watt}}
+        \wrongchoice{\SI{11.4}{\watt}}
+        \wrongchoice{\SI{87.5}{\watt}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch26-q48}
+    The mechanical equivalent of heat is $\SI{1}{\calorie}=\SI{4.18}{\joule}$.
+    A heating coil, connected to a \SI{120}{\volt} source,
+        provides \num{60 000} calories in 10 minutes. 
+    The current in the coil is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{0.83}{\ampere}}
+        \wrongchoice{\SI{2}{\ampere}}
+      \correctchoice{\SI{3.5}{\ampere}}
+        \wrongchoice{\SI{20}{\ampere}}
+        \wrongchoice{\SI{50}{\ampere}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch26-q49}
+    You buy a ``\SI{75}{\watt}'' light bulb. 
+    The label means that:
+    \begin{choices}
+        \wrongchoice{no matter how you use the bulb, the power will be \SI{75}{\watt}}
+        \wrongchoice{the bulb was filled with \SI{75}{\watt} at the factory}
+        \wrongchoice{the actual power dissipated will be much higher than \SI{75}{\watt} since most of the power appears as heat}
+        \wrongchoice{the bulb is expected to burn out after you use up its \SI{75}{\watt}}
+      \correctchoice{none of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch26-q50}
+    A current of \SI{0.3}{\ampere} is passed through a lamp for \num{2} minutes using a \SI{6}{\volt} power supply. 
+    The energy dissipated by this lamp during the 2 minutes is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{1.8}{\joule}}
+        \wrongchoice{\SI{12}{\joule}}
+        \wrongchoice{\SI{20}{\joule}}
+        \wrongchoice{\SI{36}{\joule}}
+      \correctchoice{\SI{216}{\joule}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+\endinput
+
+

@@ -1,0 +1,180 @@
+%%--------------------------------------------------
+%% Customizations
+%%--------------------------------------------------
+
+%% http://www.texample.net/tikz/examples/periodic-table-of-chemical-elements/
+\newcommand{\CommonElementTextFormat}[4]
+{
+  \begin{minipage}{2.2cm}
+    \centering
+      {\textbf{#1} \hfill #2}%
+      \linebreak \linebreak
+      {\textbf{#3}}%
+      \linebreak \linebreak
+      {{#4}}
+  \end{minipage}
+}
+
+
+%%--------------------------------------------------
+%% CPO: AMC Open Free Response Questions
+%%--------------------------------------------------
+
+
+%% Chapter 9: The Atom
+%%--------------------------------------------------
+
+
+%% CPO Short Answer Questions
+%%--------------------------------------------------
+\element{cpo-short}{
+\begin{question}{ch09-short-q01}
+    List the four forces found within atoms and rank them in order of
+        decreasing strength.
+    \AMCOpen{lines=3}{
+        \wrongchoice[W]{w}\scoring{0}
+        \wrongchoice[P]{p}\scoring{1}
+        \correctchoice[C]{c}\scoring{2}
+    }
+\end{question}
+}
+
+\element{cpo-short}{
+\begin{question}{ch09-short-q02}
+    Describe the reason the atomic mass of magnesium is listed
+        as \SI{24.31}{\amu} when magnesium has 3 stable isotopes:
+        Mg\textsuperscript{24}, Mg\textsuperscript{25},
+        Mg\textsuperscript{26}.
+    Which isotope is the most commonly found on Earth?
+    \AMCOpen{lines=3}{
+        \wrongchoice[W]{w}\scoring{0}
+        \wrongchoice[P]{p}\scoring{1}
+        \correctchoice[C]{c}\scoring{2}
+    }
+\end{question}
+}
+
+\element{cpo-short}{
+\begin{question}{ch09-short-q03}
+    For the nucleus shown below, do the following:
+    \begin{center}
+        %% NOTE: add diagram
+    \end{center}
+    \begin{enumerate*}
+        \item Name the element.
+        \item Give the mass number.
+        \item Give the number of electrons.
+    \end{enumerate*}
+    \AMCOpen{lines=3}{
+        \wrongchoice[W]{w}\scoring{0}
+        \wrongchoice[P]{p}\scoring{1}
+        \correctchoice[C]{c}\scoring{2}
+    }
+    %% ANS: A) carbon; B) 13; C) 6
+\end{question}
+}
+
+\element{cpo-short}{
+\begin{question}{ch09-short-q04}
+    How many energy levels would be completely filled by an atom
+        of neon (Ne)?
+    \begin{center}
+        \NaturalElementTextFormat{10}{20.180}{Ne}{Neon}
+    \end{center}
+    How many electrons would be left over?
+    \AMCOpen{lines=3}{
+        \wrongchoice[W]{w}\scoring{0}
+        \wrongchoice[P]{p}\scoring{1}
+        \correctchoice[C]{c}\scoring{2}
+    }
+    %% ANS: two filled energy levels and no electrons left over
+\end{question}
+}
+
+\element{cpo-short}{
+\begin{question}{ch09-short-q05}
+    What is a quanta?
+    \AMCOpen{lines=3}{
+        \wrongchoice[W]{w}\scoring{0}
+        \wrongchoice[P]{p}\scoring{1}
+        \correctchoice[C]{c}\scoring{2}
+    }
+\end{question}
+}
+
+\element{cpo-short}{
+\begin{question}{ch09-short-q06}
+    What is the evidence that electrons in atoms are only allowed to
+        have specific amounts of energy?
+    \AMCOpen{lines=3}{
+        \wrongchoice[W]{w}\scoring{0}
+        \wrongchoice[P]{p}\scoring{1}
+        \correctchoice[C]{c}\scoring{2}
+    }
+\end{question}
+}
+
+
+%% CPO Problem Questions
+%%--------------------------------------------------
+\element{cpo-problem}{
+\begin{question}{ch09-problem-q01}
+    The figure shows a 4-sided dice, with the sides labels 1 through 4.
+    If you were to roll this dice once, what is the probability that
+        you would roll a 3?
+    If you rolled the dice 100 times, how many times would you expect
+        to roll a 3?
+    \AMCOpen{lines=3}{
+        \wrongchoice[W]{w}\scoring{0}
+        \wrongchoice[P]{p}\scoring{1}
+        \correctchoice[C]{c}\scoring{2}
+    }
+    %% ANS: \num{25}
+\end{question}
+}
+
+
+%% CPO Essay Questions
+%%--------------------------------------------------
+\element{cpo-essay}{
+\begin{question}{ch09-essay-q01}
+    Describe Ernest Rutherford's golf foil experiments and the
+        changes it led to in the model of the atom.
+    \AMCOpen{lines=3}{
+        \wrongchoice[W]{w}\scoring{0}
+        \wrongchoice[P]{p}\scoring{1}
+        \correctchoice[C]{c}\scoring{2}
+    }
+\end{question}
+}
+
+\element{cpo-essay}{
+\begin{question}{ch09-essay-q02}
+    Describe how electrons are involved in the formation of chemical bonds.
+    \AMCOpen{lines=3}{
+        \wrongchoice[W]{w}\scoring{0}
+        \wrongchoice[P]{p}\scoring{1}
+        \correctchoice[C]{c}\scoring{2}
+    }
+\end{question}
+}
+
+\element{cpo-essay}{
+\begin{question}{ch09-essay-q03}
+    Draw dot diagram for the following elements:
+    \begin{enumerate*}
+        \item Xenon (Xe) has 8 valence electron
+        \item Potassium (K) has 1 valence electron
+        \item Fluorine (F) has 7 valence electron
+    \begin{enumerate*}
+    \AMCOpen{lines=3}{
+        \wrongchoice[W]{w}\scoring{0}
+        \wrongchoice[P]{p}\scoring{1}
+        \correctchoice[C]{c}\scoring{2}
+    }
+\end{question}
+}
+
+\endinput
+
+

@@ -1,0 +1,63 @@
+
+\AMCopenOpts{
+    lineheight=1.0em,
+    dots=true,
+    hspace=0.5em,         % sets the space between boxes in the marking area
+    backgroundcol=white,  % sets the background color of the marking area.
+    foregroundcol=black,  % sets the foreground color of the marking area.
+    width=0.95\linewidth, % sets the width of the frame enclosing the answering area
+    framerule=1pt,        % sets the line width for the frame enclosing the answering area.
+    framerulecol=black,   % sets the frame color for the answering area.
+    boxmargin=0.25em,     % sets the margin around the scoring boxes.
+    boxframerule=1pt,     % sets the line width for the frame around the scoring boxes.
+    boxframerulecol=black,% sets the color of the frame around the scoring boxes.
+}
+
+\element{openNumber}{
+\begin{question}{first}
+    Suppose you are a doctor faced with a patient who has a malignant tumor in his stomach.
+    It is impossible to operate on the patient,
+         but unless the tumor is destroyed, the patient will die. 
+    There is a kind of ray that can be used to destroy the tumor.
+    If the rays reach the tumor all at once at a sufficiently high intensity,
+        the tumor will be destroyed. 
+    Unfortunately at this intensity the healthy tissue that the rays pass
+        through on the way to the tumor will also be destroyed. 
+    At lower intensities the rays are harmless to healthy tissue,
+        but they will not affect the tumor either. 
+    What type of procedure might be used to destroy the tumor with the rays,
+        and at the same time avoid destroying the healthy tissue?
+    \AMCOpen{lines=3}{
+        \wrongchoice[W]{w}\scoring{0}
+        \wrongchoice[P]{p}\scoring{1}
+        \correctchoice[C]{c}\scoring{2}
+    }
+    %% ANS: use multiple directions
+\end{question}
+}
+
+\element{openNumber}{
+\begin{question}{second}
+    A dictator ruled a small country from a fortress.
+    The fortress was situated in the middle of the country and many roads
+        radiated outward from it, like spokes on a wheel. 
+    A great general vowed to capture the fortress and free the country
+        of the dictator. 
+    The general knew that if his entire army could attack the fortress at once,
+        it could be captured. 
+    But a spy reported that the dictator had planted mines on each of the roads. 
+    The mines were set so that small bodies of men could pass over them safely,
+        since the dictator needed to be able to move troops and workers about;
+        however, any large force would detonate the mines. 
+    Not only would this blow up the road,
+        but the dictator would destroy many villages in retaliation. 
+    How could the general attack the fortress?
+    \AMCOpen{lines=2}{
+        \wrongchoice[W]{w}\scoring{0}
+        \wrongchoice[P]{p}\scoring{1}
+        \correctchoice[C]{c}\scoring{2}
+    }
+    %% ANS: use multiple fronts
+\end{question}
+}
+

@@ -1,0 +1,1154 @@
+
+%%--------------------------------------------------
+%% Halliday: Fundamentals of Physics
+%%--------------------------------------------------
+
+
+%% Chapter 40: All About Atoms
+%%--------------------------------------------------
+
+
+%% Learning Objectives
+%%--------------------------------------------------
+
+%% 40.01: Discuss the pattern that is seen in a plot of ionization energies versus atomic number $Z$.
+%% 40.02: Identify that atoms have angular momentum and magnetism.
+%% 40.03: Explain the Einstein--de Haas experiment.
+%% 40.04: Identify the five quantum numbers of an electron in an atom and the allowed values of each.
+%% 40.05: Determine the number of electron states allowed in a given shell and subshell.
+%% 40.06: Identify that an electron in an atom has an orbital angular momentum $\vec{L}$ and an orbital magnetic dipole moment $\vec{\mu}_{orb}$.
+%% 40.07: Calculate magnitudes for orbital angular momentum $\vec{L}$ and orbital magnetic dipole moment $\vec{\mu}_{orb}$ in terms of the orbital quantum number $l$.
+%% 40.08: Apply the relationship between orbital angular momentum $\vec{L}$ and orbital magnetic dipole moment $\vec{\mu}_{orb}$.
+%% 40.09: Identify that $\vec{L}$ and $\vec{\mu}_{orb}$ cannot be observed (measured) but a component on a measurement axis (usually called the $z$ axis) can.
+%% 40.10: Calculate the $z$ components $L_z$ of an orbital angular momentum $L$ using the orbital magnetic quantum number m / .
+%% 40.11: Calculate the $z$ components $\vec{\mu}_{orb,z}$ of an orbital magnetic dipole moment $\vec{\mu}_{orb}$ using the orbital magnetic quantum number $m_l$ and the Bohr magneton $m_B$.
+%% 40.12: For a given orbital state or spin state, calculate the semiclassical angle $\theta$.
+%% 40.13: Identify that a spin angular momentum $\vec{S}$ (usually simply called spin) and a spin magnetic dipole moment $\vec{\mu}_s$ are intrinsic properties of electrons (and also protons and neutrons).
+%% 40.14: Calculate magnitudes for spin angular momentum $\vec{S}$ and spin magnetic dipole moment m s in terms of the spin quantum number $s$.
+%% 40.15: Apply the relationship between the spin angular momentum $\vec{S}$ and the spin magnetic dipole moment $\vec{\mu}_s$.
+%% 40.16: Identify that $\vec{S}$ and $\vec{\mu}_s$ cannot be observed (measured) but a component on a measurement axis can.
+%% 40.17: Calculate the $z$ components $S_z$ of the spin angular momentum $\vec{S}$ using the spin magnetic quantum number $\vec{\mu}_s$.
+%% 40.18: Calculate the $z$ components $\mu_{s,z}$ of the spin magnetic dipole moment $\vec{\mu}_s$ using the spin magnetic quantum number $\vec{\mu}_s$ and the Bohr magneton $m_B$.
+%% 40.19: Identify the effective magnetic dipole moment of an atom.
+
+
+%% Halliday Multiple Choice Questions
+%%--------------------------------------------------
+\element{halliday-mc}{
+\begin{question}{halliday-ch40-q01}
+    The magnitude of the orbital angular momentum of an electron in an atom is what multiple of $\hbar$?  ($l$ is a positive integer.)
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$1$}
+        \wrongchoice{$\dfrac{1}{2}$}
+      \correctchoice{$\sqrt{l(l+1)}$}
+        \wrongchoice{$2l + 1$}
+        \wrongchoice{$l^2$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch40-q02}
+    The magnetic quantum number $m_l$ is most closely associated with what property of an electron in an atom?
+    \begin{choices}
+        \wrongchoice{Magnitude of the orbital angular momentum}
+        \wrongchoice{Energy}
+        \wrongchoice{$z$ component of the spin angular momentum}
+      \correctchoice{$z$ component of the orbital angular momentum}
+        \wrongchoice{Radius of the orbit}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch40-q03}
+    The quantum number $m_s$ is most closely associated with what property of the electron in an atom?
+    \begin{choices}
+        \wrongchoice{Magnitude of the orbital angular momentum}
+        \wrongchoice{Energy}
+      \correctchoice{$z$ component of the spin angular momentum}
+        \wrongchoice{$z$ component of the orbital angular momentum}
+        \wrongchoice{Radius of the orbit}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch40-q04}
+    Possible values of the principal quantum number $n$ for an electron in an atom are:
+    \begin{choices}
+        \wrongchoice{only $0$ and $1$}
+        \wrongchoice{only $0$, $1$, $2$, \ldots , $\infty$}
+        \wrongchoice{only $0$, $1$, \ldots , $-1$}
+        \wrongchoice{only $\dfrac{1}{2}$ and $-\dfrac{1}{2}$}
+      \correctchoice{only $1$, $2$, $3$, \ldots , $\infty$}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch40-q05}
+    The number of values of the orbital quantum number number $n=3$ is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\num{1}}
+        \wrongchoice{\num{2}}
+      \correctchoice{\num{3}}
+        \wrongchoice{\num{4}}
+        \wrongchoice{\num{7}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch40-q06}
+    The number of possible values of the magnetic quantum number $m_l$ associated with a given value of the orbital quantum number $l$ is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$1$}
+        \wrongchoice{$2$}
+        \wrongchoice{$l$}
+        \wrongchoice{$2l$}
+        \wrongchoice{$2l+1$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch40-q07}
+    An atom is in a state with orbital quantum number $l=2$.
+    Possible values of the magnetic quantum number $m_l$ are:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{$1$, $2$}
+        \wrongchoice{$0$, $1$, $2$}
+        \wrongchoice{$0$, $1$}
+        \wrongchoice{$-1$, $0$, $1$}
+      \correctchoice{$-2$, $-1$, $0$, $1$, $2$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch40-q08}
+    An electron is in a quantum state for which the magnitude of the orbital angular momentum is $6\sqrt{2}\hbar$.
+    How many allowed values of the $z$ component of the angular momentum are there?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\num{4}}
+        \wrongchoice{\num{5}}
+        \wrongchoice{\num{7}}
+      \correctchoice{\num{8}}
+        \wrongchoice{\num{9}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch40-q09}
+    An electron is in a quantum state for which there are seven allowed values of the $z$ component of the angular momentum. 
+    The magnitude of the angular momentum is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\sqrt{3}\hbar$}
+        \wrongchoice{$\sqrt{7}\hbar$}
+        \wrongchoice{$\sqrt{9}\hbar$}
+      \correctchoice{$\sqrt{12}\hbar$}
+        \wrongchoice{$\sqrt{14}\hbar$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch40-q10}
+    The number of states in a subshell with orbital quantum number $l=3$ is
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\num{2}}
+        \wrongchoice{\num{3}}
+        \wrongchoice{\num{7}}
+        \wrongchoice{\num{9}}
+      \correctchoice{\num{14}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch40-q11}
+    The number of states in a shell with principal quantum number $n=3$ is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\num{3}}
+        \wrongchoice{\num{9}}
+        \wrongchoice{\num{15}}
+      \correctchoice{\num{18}}
+        \wrongchoice{\num{25}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch40-q12}
+    An electron in an atom is in a state with principal quantum number $n=4$. 
+    The possible values of the orbital quantum number are:
+    \begin{choices}
+        \wrongchoice{$1$, $2$, $3$}
+        \wrongchoice{$1$, $2$, $3$, $4$}
+        \wrongchoice{$-3$, $-2$, $-1$, $0$, $1$, $2$, $3$}
+      \correctchoice{$0$, $1$, $2$, $3$}
+        \wrongchoice{$0$, $1$, $2$}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch40-q13}
+    Space quantization means that:
+    \begin{choices}
+        \wrongchoice{space is quantized}
+      \correctchoice{$L_z$ can have only certain discrete values}
+        \wrongchoice{$\vec{L}$ and $-\vec{μ}$ are in the same direction}
+        \wrongchoice{$\vec{L}$ and $-\vec{μ}$ are in opposite directions}
+        \wrongchoice{an electron has a magnetic dipole moment}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch40-q14}
+    An electron in an atom is in a state with $l=3$ and $m_l=2$.
+    The angle between $\vec{L}$ and the $z$ axis is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\ang{48.2}}
+        \wrongchoice{\ang{60}}
+        \wrongchoice{\ang{30}}
+        \wrongchoice{\ang{35.3}}
+      \correctchoice{\ang{54.7}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch40-q15}
+    An electron in an atom is in a state with $l=5$.
+    The minimum angle between $\vec{L}$ and the $z$ axis is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\ang{0}}
+        \wrongchoice{\ang{18.0}}
+      \correctchoice{\ang{24.1}}
+        \wrongchoice{\ang{36.7}}
+        \wrongchoice{\ang{33.6}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch40-q16}
+    In the relation $\mu_z=−m_l \mu_B$,
+        the quantity $\mu_B$ is:
+    \begin{choices}
+      \correctchoice{the Bohr magneton}
+        \wrongchoice{the component of the dipole moment along the magnetic field}
+        \wrongchoice{the permeability of the material}
+        \wrongchoice{a friction coefficient}
+        \wrongchoice{none of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch40-q17}
+    The electron states that constitute a single shell for an atom all have:
+    \begin{choices}
+      \correctchoice{the same value of $n$}
+        \wrongchoice{the same value of $l$}
+        \wrongchoice{the same value of $n$ and the same value of $l$}
+        \wrongchoice{the same value of $l$ and the same value of $m_l$}
+        \wrongchoice{the same set of all four quantum numbers}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch40-q18}
+    The electron states that constitute a single subshell for an atom all have:
+    \begin{choices}
+        \wrongchoice{the same value of $n$}
+        \wrongchoice{the same value of $l$}
+      \correctchoice{the same value of $n$ and the same value of $l$}
+        \wrongchoice{the same value of $l$ and the same value of $m_l$}
+        \wrongchoice{the same set of all four quantum numbers}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch40-q19}
+    The total number of electron states with $n=2$ and $l=1$ for an atom is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{two}
+        \wrongchoice{four}
+      \correctchoice{six}
+        \wrongchoice{eight}
+        \wrongchoice{ten}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch40-q20}
+    The possible values for the magnetic quantum number $m_s$ of an electron in an atom:
+    \begin{choices}
+        \wrongchoice{depend on $n$}
+        \wrongchoice{depend on $l$}
+        \wrongchoice{depend on both $n$ and $l$}
+        \wrongchoice{depend on whether there is an external magnetic field present}
+      \correctchoice{are $\pm\dfrac{1}{2}$}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch40-q21}
+    The Stern-Gerlach experiment makes use of:
+    \begin{choices}
+        \wrongchoice{a strong uniform magnetic field}
+      \correctchoice{a strong non-uniform magnetic field}
+        \wrongchoice{a strong uniform electric field}
+        \wrongchoice{a strong non-uniform electric field}
+        \wrongchoice{strong perpendicular electric and magnetic fields}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch40-q22}
+    The magnetic field $\vec{B}$ is along the $z$ axis in a Stern-Gerlach experiment. 
+    The force it exerts on a magnetic dipole with dipole moment $\vec{\mu}$ is proportional to:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\mu_z^2$}
+        \wrongchoice{$B^2$}
+      \correctchoice{$\dfrac{\mathrm{d}B}{\mathrm{d}z}$}
+        \wrongchoice{$\dfrac{\mathrm{d}^2B}{\mathrm{d}z^2}$}
+        \wrongchoice{$\int\,B\,\mathrm{d}z$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch40-q23}
+    A magnetic dipole $\vec{\mu}$ is placed in a strong uniform magnetic field $\vec{B}$. 
+    The associated force exerted on the dipole is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{along $\vec{\mu}$}
+        \wrongchoice{along $-\vec{\mu}$}
+        \wrongchoice{along $\vec{B}$}
+        \wrongchoice{along $\vec{\mu}\times\vec{B}$}
+      \correctchoice{zero}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch40-q24}
+    The force exerted on a magnetic dipole as it moves with velocity $v$ through a Stern-Gerlach apparatus is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{proportional to $v$}
+        \wrongchoice{proportional to $\dfrac{1}{v}$}
+        \wrongchoice{zero}
+        \wrongchoice{proportional to $v^2$}
+      \correctchoice{independent of $v$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch40-q25}
+    A magnetic dipole is placed between the poles of a magnet as shown. 
+    The direction of the associated force exerted on the dipole is:
+    \begin{choices}
+        \wrongchoice{positive $x$}
+        \wrongchoice{positive $y$}
+      \correctchoice{negative $x$}
+        \wrongchoice{negative $y$}
+        \wrongchoice{into or out of the page}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch40-q26}
+    To observe the Zeeman effect one uses:
+    \begin{choices}
+        \wrongchoice{a strong uniform magnetic field}
+      \correctchoice{a strong non-uniform magnetic field}
+        \wrongchoice{a strong uniform electric field}
+        \wrongchoice{a strong non-uniform electric field}
+        \wrongchoice{mutually perpendicular electric and magnetic fields}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch40-q27}
+    An electron in a K shell of an atom has the principal quantum number:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$n=0$}
+      \correctchoice{$n=1$}
+        \wrongchoice{$n=2$}
+        \wrongchoice{$n=3$}
+        \wrongchoice{$n=\infty$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch40-q28}
+    An electron in an L shell of an atom has the principal quantum number:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$n=0$}
+        \wrongchoice{$n=1$}
+      \correctchoice{$n=2$}
+        \wrongchoice{$n=3$}
+        \wrongchoice{$n=\infty$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch40-q29}
+    The most energetic photon in a continuous x-ray spectrum has an energy approximately equal to:
+    \begin{choices}
+        \wrongchoice{the energy of all the electrons in a target atom}
+      \correctchoice{the kinetic energy of an incident-beam electron}
+        \wrongchoice{the rest energy, $mc^2$ , of an electron}
+        \wrongchoice{the total energy of a K-electron in the target atom}
+        \wrongchoice{the kinetic energy of a K-electron in the target atom}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch40-q30}
+    Two different electron beams are incident on two different targets and both produce x rays.
+    The cutoff wavelength for target 1 is shorter than the cutoff wavelength for target 2. 
+    We can conclude that:
+    \begin{choices}
+        \wrongchoice{target 2 has a higher atomic number than target 1}
+        \wrongchoice{target 2 has a lower atomic number than target 1}
+      \correctchoice{the electrons in beam 1 have greater kinetic energy than those in beam 2}
+        \wrongchoice{the electrons in beam 1 have less kinetic energy than those in beam 2}
+        \wrongchoice{target 1 is thicker than target 2}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch40-q31}
+    A photon with the smallest wavelength in the continuous z-ray spectrum is emitted when:
+    \begin{choices}
+        \wrongchoice{an electron is knocked from a K shell}
+        \wrongchoice{a valence electron is knocked from the atom}
+        \wrongchoice{the incident electron becomes bound to the atom}
+        \wrongchoice{the atom has the greatest recoil energy}
+      \correctchoice{the incident electron loses all its energy in a single decelerating event}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch40-q32}
+    Radiation with the minimum wavelength as well as the K x-ray lines are detected for a certain target. 
+    The energy of the incident electrons is then doubled,
+        with the result that:
+    \begin{choices}
+        \wrongchoice{the minimum wavelength increases and the wavelengths of the K lines remain the same}
+      \correctchoice{the minimum wavelength decreases and the wavelengths of the K lines remain the same}
+        \wrongchoice{the minimum wavelength and the wavelengths of the K lines all increase}
+        \wrongchoice{the minimum wavelength and the wavelengths of the K lines all decrease}
+        \wrongchoice{the minimum wavelength increases and the wavelengths of the K lines all decrease}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch40-q33}
+    Characteristic K x-radiation of an element occurs when:
+    \begin{choices}
+        \wrongchoice{the incident electron is absorbed by a target nucleus}
+        \wrongchoice{the incident electron is scattered by a target atom without an energy loss}
+        \wrongchoice{an electron is ejected from an outer shell of a target atom}
+      \correctchoice{an electron in a target atom makes a transition to the lowest energy state}
+        \wrongchoice{the incident electron goes into the lowest energy state}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch40-q34}
+    The K$_{\alpha}$ x rays arising from a cobalt ($Z=27$) target have a wavelength of about \SI{179}{\pico\meter}. 
+    The atomic number of a target that gives rise to K$_{\alpha}$ x rays with a wavelength one-third as great ($\approx\SI{60}{\pico\meter}$) is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$Z = 9$}
+        \wrongchoice{$Z = 10$}
+        \wrongchoice{$Z = 12$}
+        \wrongchoice{$Z = 16$}
+      \correctchoice{$Z = 46$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch40-q35}
+    In connection with x-ray emission the symbol K$_{\alpha}$ refers to:
+    \begin{choices}
+        \wrongchoice{an alpha particle radiation}
+        \wrongchoice{an effect of the dielectric constant on energy levels}
+        \wrongchoice{x-ray radiation from potassium}
+        \wrongchoice{x-ray radiation associated with an electron going from $n=\infty$ to $n=1$}
+      \correctchoice{x-ray radiation associated with an electron going from $n=2$ to $n=1$}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch40-q36}
+    In connection with x-ray emission the symbol L$_{\beta}$ refers to:
+    \begin{choices}
+        \wrongchoice{a beta particle radiation}
+        \wrongchoice{an atomic state of angular momentum $\dfrac{h}{2\pi}$}
+        \wrongchoice{the inductance associated with an orbiting electron}
+      \correctchoice{x-radiation associated with an electron going from $n=4$ to $n=2$}
+        \wrongchoice{none of the above}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch40-q37}
+    The transition shown gives rise to an x-ray. 
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE:
+    \end{tikzpicture}
+    \end{center}
+    The correct label for this is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{K$_{\alpha}$}
+        \wrongchoice{K$_{\beta}$}
+        \wrongchoice{L$_{\alpha}$}
+        \wrongchoice{L$_{\beta}$}
+        \wrongchoice{KL}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch40-q38}
+    In a Moseley graph:
+    \begin{choices}
+        \wrongchoice{the x-ray frequency is plotted as a function of atomic number}
+        \wrongchoice{the square of the x-ray frequency is plotted as a function of atomic number}
+      \correctchoice{the square root of the x-ray frequency is plotted as a function of atomic number}
+        \wrongchoice{the x-ray frequency is plotted as a function of the square root of atomic number}
+        \wrongchoice{the square root of the x-ray frequency is plotted as a function of atomic mass}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch40-q39}
+    In calculating the x-ray energy levels the effective charge of the nucleus is taken to be $Z-b$,
+        where $Z$ is the atomic number. 
+    The parameter $b$ enters because:
+    \begin{choices}
+        \wrongchoice{an electron is removed from the inner shell}
+        \wrongchoice{a proton is removed from the nucleus}
+        \wrongchoice{the quantum mechanical force between two charges is less than the classical force}
+      \correctchoice{the nucleus is screened by electrons}
+        \wrongchoice{the Pauli exclusion principle must be obeyed}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch40-q40}
+    The ratio of the wavelength of the K$_{\alpha}$ x-ray line for Nb (Z = 41) to that of Ga (Z = 31) is:
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{$\dfrac{9}{16}$}
+        \wrongchoice{$\dfrac{16}{9}$}
+        \wrongchoice{$\dfrac{3}{4}$}
+        \wrongchoice{$\dfrac{4}{3}$}
+        \wrongchoice{$1.15$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch40-q41}
+    The Pauli exclusion principle is obeyed by:
+    \begin{choices}
+        \wrongchoice{all particles}
+        \wrongchoice{all charged particles}
+      \correctchoice{all particles with spin quantum numbers of $\dfrac{1}{2}$}
+        \wrongchoice{all particles with spin quantum numbers of $1$}
+        \wrongchoice{all particles with mass}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch40-q42}
+    No state in an atom can be occupied by more than one electron. 
+    This is most closely related to:
+    \begin{choices}
+        \wrongchoice{the wave nature of matter}
+        \wrongchoice{the finite value for the speed of light}
+        \wrongchoice{the Bohr magneton}
+      \correctchoice{the Pauli exclusion principle}
+        \wrongchoice{the Einstein-de Haas effect}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch40-q43}
+    Electrons are in a two-dimensional square potential energy well with sides of length $L$. 
+    The potential energy is infinite at the sides and zero inside. 
+    The single-particle energies are given by $\left(\dfrac{h^2}{8mL^2}\right)\left(n_x^2+n_y^2\right)$,
+        where $n_x$ and $n_y$ are integers. 
+    At most the number of electrons that can have energy $8\left(\dfrac{h^2}{8mL^2}\right)$ is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{1}
+      \correctchoice{2}
+        \wrongchoice{3}
+        \wrongchoice{4}
+        \wrongchoice{any number}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch40-q44}
+    Five electrons are in a two-dimensional square potential energy well with sides of length $L$.
+    The potential energy is infinite at the sides and zero inside. 
+    The single-particle energies are given by $\left(\dfrac{h^2}{8mL^2}\right)\left(n_x^2+n_y^2\right)$,
+        where $n_x$ and $n_y$ are integers. 
+    In units of $\left(\dfrac{h^2}{8mL^2}\right)$ the energy of the ground state of the system is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{0}
+        \wrongchoice{10}
+      \correctchoice{19}
+        \wrongchoice{24}
+        \wrongchoice{48}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch40-q45}
+    Five electrons are in a two-dimensional square potential energy well with sides of length $L$.
+    The potential energy is infinite at the sides and zero inside. 
+    The single-particle energies are given by $\left(\dfrac{h^2}{8mL^2}\right)\left(n_x^2+n_y^2\right)$,
+        where $n_x$ and $n_y$ are integers. 
+    In units of $\left(\dfrac{h^2}{8mL^2}\right)$ the energy of the first excited state of the system is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$13$}
+      \correctchoice{$22$}
+        \wrongchoice{$24$}
+        \wrongchoice{$25$}
+        \wrongchoice{$27$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch40-q46}
+    Five electrons are in a two-dimensional square potential energy well with sides of length $L$.
+    The potential energy is infinite at the sides and zero inside. 
+    The single-particle energies are given by $\left(\dfrac{h^2}{8mL^2}\right)\left(n_x^2+n_y^2\right)$,
+        where $n_x$ and $n_y$ are integers. 
+    The number of single-particle states with energy $5\left(\dfrac{h^2}{8mL^2}\right)$ is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$1$}
+      \correctchoice{$2$}
+        \wrongchoice{$3$}
+        \wrongchoice{$4$}
+        \wrongchoice{$5$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch40-q47}
+    Six electrons are in a two-dimensional square potential energy well with sides of length $L$. 
+    The potential energy is infinite at the sides and zero inside. 
+    The single-particle energies are given by $\left(\dfrac{h^2}{8mL^2}\right)\left(n_x^2+n_y^2\right)$,
+        where $n_x$ and $n_y$ are integers. 
+    If a seventh electron is added to the system when it is in its ground state the least energy the additional electron can have is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{$2\left(\dfrac{h^2}{8mL^2}\right)$}
+        \wrongchoice{$5\left(\dfrac{h^2}{8mL^2}\right)$}
+      \correctchoice{$10\left(\dfrac{h^2}{8mL^2}\right)$}
+        \wrongchoice{$13\left(\dfrac{h^2}{8mL^2}\right)$}
+        \wrongchoice{$18\left(\dfrac{h^2}{8mL^2}\right)$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch40-q48}
+    When a lithium atom is made from a helium atom by adding a proton (and neutron) to the nucleus and an electron outside,
+        the electron goes into an $n=2$, $l=0$ state rather than an $n=1$, $l=0$ state. 
+    This is an indication that electrons:
+    \begin{choices}
+      \correctchoice{obey the Pauli exclusion principle}
+        \wrongchoice{obey the minimum energy principle}
+        \wrongchoice{undergo the Zeeman effect}
+        \wrongchoice{are diffracted}
+        \wrongchoice{and protons are interchangeable}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch40-q49}
+    When a lithium atom in its ground state is made from a helium atom by adding a proton (and neutron) to the nucleus and an electron outside,
+        the electron goes into an $n=2$, $l=0$ state rather than an $n=3$, $l=0$ state. 
+    This is an indication that electrons:
+    \begin{choices}
+        \wrongchoice{obey the Pauli exclusion principle}
+      \correctchoice{obey the minimum energy principle}
+        \wrongchoice{undergo the Zeeman effect}
+        \wrongchoice{are diffracted}
+        \wrongchoice{and protons are interchangeable}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch40-q50}
+    If electrons did not have intrinsic angular momentum (spin) but still obeyed the Pauli exclusion principle,
+        the states occupied by electrons in the ground state of helium would be:
+    \begin{choices}
+        \wrongchoice{$\left(n=1, l=0\right); \left(n=1, l=0\right)$}
+        \wrongchoice{$\left(n=1, l=0\right); \left(n=1, l=1\right)$}
+      \correctchoice{$\left(n=1, l=0\right); \left(n=2, l=0\right)$}
+        \wrongchoice{$\left(n=2, l=0\right); \left(n=2, l=1\right)$}
+        \wrongchoice{$\left(n=2, l=1\right); \left(n=2, l=1\right)$}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch40-q51}
+    The minimum energy principle tells us that:
+    \begin{choices}
+        \wrongchoice{the energy of an atom with a high atomic number is less than the energy of an atom with a low atomic number}
+        \wrongchoice{the energy of an atom with a low atomic number is less than the energy of an atom with a high atomic number}
+        \wrongchoice{when an atom makes an upward transition the energy of the absorbed photon is the least possible}
+      \correctchoice{the ground state configuration of any atom is the one with the least energy}
+        \wrongchoice{the ground state configuration of any atom is the one with the least ionization energy}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch40-q52}
+    Which of the following ($n$, $l$, $m_l$, $m_s$) combinations is impossible for an electron in an atom?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{$3$, $1$, $1$, $-1/2$}
+        \wrongchoice{$6$, $2$, $0$, $1/2$}
+        \wrongchoice{$3$, $2$, $-2$, $-1/2$}
+      \correctchoice{$3$, $1$, $-2$, $1/2$}
+        \wrongchoice{$1$, $0$, $0$, $-1/2$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch40-q53}
+    Which of the following subshells cannot exist?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{3p}
+        \wrongchoice{2p}
+        \wrongchoice{4d}
+        \wrongchoice{3d}
+      \correctchoice{2d}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch40-q54}
+    For any atom other than hydrogen and helium all electrons in the same shell have:
+    \begin{choices}
+        \wrongchoice{the same energy}
+        \wrongchoice{the same magnitude of angular momentum}
+        \wrongchoice{the same magnetic quantum number}
+        \wrongchoice{the same spin quantum number}
+      \correctchoice{none of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch40-q55}
+    The states being filled from the beginning to end of the lanthanide series of atoms are:
+    \begin{choices}
+        \wrongchoice{$n=3$, $l=2$ states}
+        \wrongchoice{$n=4$, $l=1$ states}
+        \wrongchoice{$n=4$, $l=2$ states}
+      \correctchoice{$n=4$, $l=3$ states}
+        \wrongchoice{$n=5$, $l=2$ states}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch40-q56}
+    The most energetic electron in any atom at the beginning of a period of the periodic table is in:
+    \begin{choices}
+      \correctchoice{an $l=0$ state}
+        \wrongchoice{an $l=1$ state}
+        \wrongchoice{an $l=2$ state}
+        \wrongchoice{an $n=0$ state with unspecified angular momentum}
+        \wrongchoice{an $n=1$ state with unspecified angular momentum}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch40-q57}
+    The most energetic electron in any atom at the end of a period of the periodic table is in:
+    \begin{choices}
+        \wrongchoice{an $l=0$ state}
+      \correctchoice{an $l=1$ state}
+        \wrongchoice{an $l=2$ state}
+        \wrongchoice{an $n=0$ state with unspecified angular momentum}
+        \wrongchoice{an $n=1$ state with unspecified angular momentum}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch40-q58}
+    The group of atoms at the ends of periods of the periodic table are called:
+    \begin{choices}
+        \wrongchoice{alkali metals}
+        \wrongchoice{rare earths}
+        \wrongchoice{transition metal atoms}
+        \wrongchoice{alkaline atoms}
+      \correctchoice{inert gas atoms}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch40-q59}
+    The group of atoms at the beginning of periods of the periodic table are called:
+    \begin{choices}
+      \correctchoice{alkali metal atoms}
+        \wrongchoice{rare earth atoms}
+        \wrongchoice{transition metal atoms}
+        \wrongchoice{alkaline atoms}
+        \wrongchoice{inert gas atoms}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch40-q60}
+    Suppose the energy required to ionize an argon atom is $i$,
+        the energy to excite it is $e$,
+        and its thermal energy at room temperature is $t$. 
+    In increasing order, these three energies are:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$i$, $e$, $t$}
+        \wrongchoice{$t$, $i$, $e$}
+      \correctchoice{$e$, $t$, $i$}
+        \wrongchoice{$i$, $t$, $e$}
+        \wrongchoice{$t$, $e$, $i$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch40-q61}
+    The ionization energy of an atom in its ground state is:
+    \begin{choices}
+        \wrongchoice{the energy required to remove the least energetic electron}
+      \correctchoice{the energy required to remove the most energetic electron}
+        \wrongchoice{the energy difference between the most energetic electron and the least energetic electron}
+        \wrongchoice{the same as the energy of a K$_{\alpha}$ photon}
+        \wrongchoice{the same as the excitation energy of the most energetic electron}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch40-q62}
+    The effective charge acting on a single valence electron outside a closed shell is about $N_e$,
+        where $N$ is:
+    \begin{choices}
+        \wrongchoice{the atomic number of the nucleus}
+        \wrongchoice{the atomic mass of the atom}
+      \correctchoice{usually between 1 and 3}
+        \wrongchoice{half the atomic number}
+        \wrongchoice{less than 1}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch40-q63}
+    In a laser:
+    \begin{choices}
+        \wrongchoice{excited atoms are stimulated to emit photons by radiation external to the laser}
+        \wrongchoice{the transitions for laser emission are directly to the ground state}
+        \wrongchoice{the states which give rise to laser emission are usually very unstable states that decay rapidly}
+      \correctchoice{the state in which an atom is initially excited is never between two states that are involved in the stimulated emission}
+        \wrongchoice{a minimum of two energy levels are required.}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch40-q64}
+    Photons in a laser beam have the same energy,
+        wavelength, polarization direction, and phase because:
+    \begin{choices}
+      \correctchoice{each is produced in an emission that is stimulated by another}
+        \wrongchoice{all come from the same atom}
+        \wrongchoice{the lasing material has only two quantum states}
+        \wrongchoice{all photons are alike, no matter what their source}
+        \wrongchoice{none of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch40-q65}
+    A laser must be pumped to achieve:
+    \begin{choices}
+        \wrongchoice{a metastable state}
+      \correctchoice{fast response}
+        \wrongchoice{stimulated emission}
+        \wrongchoice{population inversion}
+        \wrongchoice{the same wavelength for all photons}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch40-q66}
+    Photons in a laser beam are produced by:
+    \begin{choices}
+      \correctchoice{transitions from a metastable state}
+        \wrongchoice{transitions to a metastable state}
+        \wrongchoice{transitions from a state that decays rapidly}
+        \wrongchoice{splitting of other photons}
+        \wrongchoice{pumping}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch40-q67}
+     Which of the following is essential for laser action to occur between two energy levels of an atom?
+    \begin{choices}
+        \wrongchoice{the lower level is metastable}
+      \correctchoice{the upper level is metastable}
+        \wrongchoice{the lower level is the ground state}
+        \wrongchoice{there are more atoms in the lower level than in the upper level}
+        \wrongchoice{the lasing material is a gas}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch40-q68}
+    Which of the following is essential for laser action to occur between two energy levels of an atom?
+    \begin{choices}
+        \wrongchoice{the lower level is metastable}
+      \correctchoice{there are more atoms the upper level than in the lower level}
+        \wrongchoice{there are more atoms in the lower level than in the upper level}
+        \wrongchoice{the lower level is the ground state}
+        \wrongchoice{the lasing material is a gas}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch40-q69}
+    Population inversion is important for the generation of a laser beam because it assures that:
+    \begin{choices}
+        \wrongchoice{spontaneous emission does not occur more often than stimulated emission}
+        \wrongchoice{photons do not split too rapidly}
+      \correctchoice{more photons are emitted than are absorbed}
+        \wrongchoice{photons do not collide with each other}
+        \wrongchoice{photons do not make upward transitions}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch40-q70}
+    A metastable state is important for the generation of a laser beam because it assures that:
+    \begin{choices}
+      \correctchoice{spontaneous emission does not occur more often than stimulated emission}
+        \wrongchoice{photons do not split too rapidly}
+        \wrongchoice{more photons are emitted than are absorbed}
+        \wrongchoice{photons do not collide with each other}
+        \wrongchoice{photons do not make upward transitions}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch40-q71}
+    Electrons in a certain laser make transitions from a metastable state to the ground state.
+    Initially there are \num{6e20} atoms in the metastable state and \num{2e20} atoms in the ground state. 
+    The number of photons that can be produced in a single burst is about:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\num{2e20}}
+        \wrongchoice{\num{3e20}}
+      \correctchoice{\num{4e20}}
+        \wrongchoice{\num{6e20}}
+        \wrongchoice{\num{8e20}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch40-q72}
+    In a helium-neon laser,
+        the laser light arises from a transition from a \rule[-0.1pt]{4em}{0.1pt} state to a \rule[-0.1pt]{4em}{0.1pt} state.
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{He, He}
+      \correctchoice{Ne, Ne}
+        \wrongchoice{He, Ne}
+        \wrongchoice{Ne, He}
+        \wrongchoice{N, He}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch40-q73}
+    The purpose of the mirrors at the ends of a helium-neon laser is:
+    \begin{choices}
+        \wrongchoice{to assure that no laser light leaks out}
+      \correctchoice{to increase the number of stimulated emissions}
+        \wrongchoice{to absorb some of the photons}
+        \wrongchoice{to keep the light used for pumping inside the laser}
+        \wrongchoice{to double the effective length of the laser}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch40-q74}
+    A group of electromagnetic waves might
+    \begin{itemize}
+        \item[I.]   be monochromatic
+        \item[II.]  be coherent
+        \item[III.] have the same polarization direction
+    \end{itemize}
+    %% NOTE: questionmult??
+    Which of these describe the waves from a laser?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{I only}
+        \wrongchoice{II only}
+        \wrongchoice{III only}
+        \wrongchoice{I and II only}
+      \correctchoice{I, II, and III}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch40-q75}
+    A laser beam can be sharply focused because it is:
+    \begin{choices}
+        \wrongchoice{highly coherent}
+        \wrongchoice{plane polarized}
+        \wrongchoice{intense}
+        \wrongchoice{circularly polarized}
+      \correctchoice{highly directional}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch40-q76}
+    The ``e'' in laser stands for:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{electric}
+        \wrongchoice{emf}
+        \wrongchoice{energy}
+      \correctchoice{emission}
+        \wrongchoice{entropy}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+\endinput
+
+

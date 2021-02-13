@@ -1,0 +1,1359 @@
+
+%%--------------------------------------------------
+%% Halliday: Fundamentals of Physics
+%%--------------------------------------------------
+
+
+%% Chapter 14: Fluids
+%%--------------------------------------------------
+
+
+%% Learning Objectives
+%%--------------------------------------------------
+
+%% 14.01: Distinguish fluids from solids.
+%% 14.02: When mass is uniformly distributed, relate density to mass and volume.
+%% 14.03: Apply the relationship between hydrostatic pressure, force, and the surface area over which that force acts.
+
+
+%% Halliday Multiple Choice Questions
+%%--------------------------------------------------
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q01}
+    All fluids are:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{gases}
+        \wrongchoice{liquids}
+      \correctchoice{gases or liquids}
+        \wrongchoice{non-metallic}
+        \wrongchoice{transparent}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q02}
+    Gases may be distinguished from other forms of matter by their:
+    \begin{choices}
+        \wrongchoice{lack of color}
+        \wrongchoice{small atomic weights}
+      \correctchoice{inability to form free surfaces}
+        \wrongchoice{ability to flow}
+        \wrongchoice{ability to exert a buoyant force}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q03}
+    One pascal (\SI{1}{\pascal}) is:
+    \begin{choices}
+        \wrongchoice{One newton per meter (\SI{1}{\newton\per\meter})}
+        \wrongchoice{One meter per newton (\SI{1}{\meter\per\newton})}
+        \wrongchoice{One kilogram per meter per second (\SI{1}{\kilo\gram\per\meter\per\second})}
+      \correctchoice{One kilogram per meter per second (\SI{1}{\kilo\gram\per\meter\per\second\squared})}
+        \wrongchoice{One newton per meter per second (\SI{1}{\newton\per\meter\per\second})}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q04}
+    Mercury is a convenient liquid to use in a barometer because:
+    \begin{choices}
+        \wrongchoice{it is a metal}
+        \wrongchoice{it has a high boiling point}
+        \wrongchoice{it expands little with temperature}
+      \correctchoice{it has a high density}
+        \wrongchoice{it looks silvery}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q05}
+    To obtain the absolute pressure from the gauge pressure:
+    \begin{choices}
+        \wrongchoice{subtract atmospheric pressure}
+      \correctchoice{add atmospheric pressure}
+        \wrongchoice{subtract 273}
+        \wrongchoice{add 273}
+        \wrongchoice{convert to \si{\newton\per\meter\squared}}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q06}
+    Barometers and open-tube manometers are two instruments that are used to measure pressure.
+    \begin{choices}
+        \wrongchoice{Both measure gauge pressure}
+        \wrongchoice{Both measure absolute pressure}
+        \wrongchoice{Barometers measure gauge pressure and manometers measure absolute pressure}
+      \correctchoice{Barometers measure absolute pressure and manometers measure gauge pressure}
+        \wrongchoice{Both measure an average of the absolute and gauge pressures}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q07}
+    To measure moderately low pressures oil with a density of \SI{8.5e2}{\kilo\gram\per\meter} is used in place of mercury in a barometer.
+    A change in the height of the oil column of \SI{1.0}{\milli\meter} indicates a change in pressure of about:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{1.2e-7}{\pascal}}
+        \wrongchoice{\SI{1.2e-5}{\pascal}}
+        \wrongchoice{\SI{0.85}{\pascal}}
+        \wrongchoice{\SI{1.2}{\pascal}}
+      \correctchoice{\SI{8.3}{\pascal}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q08}
+    The pressure exerted on the ground by a man is greatest when:
+    \begin{choices}
+        \wrongchoice{he stands with both feet flat on the ground}
+        \wrongchoice{he stands flat on one foot}
+      \correctchoice{he stands on the toes of one foot}
+        \wrongchoice{he lies down on the ground}
+        \wrongchoice{all of the above yield the same pressure}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q09}
+    The vessels shown below all contain water to the same height. 
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: 2 x 2 tikz
+    \end{tikzpicture}
+    \end{center}
+    Rank them according to the pressure exerted by the water on the vessel bottoms,
+        least to greatest
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{1, 2, 3, 4}
+        \wrongchoice{3, 4, 2, 1}
+        \wrongchoice{4, 3, 2, 1}
+        \wrongchoice{2, 3, 4, 1}
+      \correctchoice{All pressures are the same}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q10}
+    In a stationary homogeneous liquid:
+    \begin{choices}
+        \wrongchoice{pressure is the same at all points}
+        \wrongchoice{pressure depends on the direction}
+        \wrongchoice{pressure is independent of any atmospheric pressure on the upper surface of the liquid}
+      \correctchoice{pressure is the same at all points at the same level}
+        \wrongchoice{none of the above}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q11}
+    Which of the following five statements,
+        concerning the upper surface pressure of a liquid, is \emph{false}?
+    \begin{choices}
+        \wrongchoice{It is independent of the surface area}
+        \wrongchoice{It is the same for all points on that surface}
+        \wrongchoice{It would not increase if the liquid depth were increased}
+      \correctchoice{It would increase if the liquid density were increased}
+        \wrongchoice{It would increase if the atmospheric pressure increased}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q12}
+    Several cans of different sizes and shapes are all filled with the same liquid to the same depth.  
+    Then:
+    \begin{choices}
+        \wrongchoice{the weight of the liquid is the same for all cans}
+        \wrongchoice{the force of the liquid on the bottom of each can is the same}
+        \wrongchoice{the least pressure is at the bottom of the can with the largest bottom area}
+        \wrongchoice{the greatest pressure is at the bottom of the can with the largest bottom area}
+      \correctchoice{the pressure on the bottom of each can is the same}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q13}
+    An airtight box, having a lid of area \SI{80}{\centi\meter\squared},
+        is partially evacuated. 
+    Atmospheric pressure is \SI{1.01e5}{\pascal}. 
+    A force of \SI{600}{\newton} is required to pull the lid off the box. 
+    The pressure in the box was:
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{\SI{2.60e4}{\pascal}}
+        \wrongchoice{\SI{6.35e4}{\pascal}}
+        \wrongchoice{\SI{7.50e4}{\pascal}}
+        \wrongchoice{\SI{1.38e5}{\pascal}}
+        \wrongchoice{\SI{1.76e5}{\pascal}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q14}
+    A closed hemispherical shell of radius $R$ is filled with fluid at uniform pressure $p$. 
+    The net force of the fluid on the curved portion of the shell is given by:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{$2\pi R^2 p$}
+      \correctchoice{$\pi R^2 p$}
+        \wrongchoice{$4\pi R^2 p$}
+        \wrongchoice{$\dfrac{4}{3} \pi R^2 p$}
+        \wrongchoice{$\dfrac{4}{3} \pi R^3 p$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q15}
+    The diagram shows a $U$-tube with cross-sectional area $A$ and partially filled with oil of density $\rho$.
+    A solid cylinder, which fits the tube tightly but can slide without friction,
+        is placed in the right arm. 
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: tikz
+    \end{tikzpicture}
+    \end{center}
+    The system is in equilibrium. 
+    The weight of the cylinder is:
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{$AL \rho g$}
+        \wrongchoice{$L^3 ρg$}
+        \wrongchoice{$A\rho \left(L + h\right) g$}
+        \wrongchoice{$A\rho \left(L - h\right) g$}
+        \wrongchoice{none of the provided}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q16}
+    The density of water is \SI{1.0}{\gram\per\centi\meter\cubed}. 
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: tikz
+    \end{tikzpicture}
+    \end{center}
+    The density of the oil in the left column of the $U$-tube shown below is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{0.20}{\gram\per\centi\meter\cubed}}
+      \correctchoice{\SI{0.80}{\gram\per\centi\meter\cubed}}
+        \wrongchoice{\SI{1.0}{\gram\per\centi\meter\cubed}}
+        \wrongchoice{\SI{1.3}{\gram\per\centi\meter\cubed}}
+        \wrongchoice{\SI{5.0}{\gram\per\centi\meter\cubed}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q17}
+    A uniform $U$-tube is partially filled with water. 
+    Oil, of density \SI{0.75}{\gram\per\centi\meter\cubed},
+        is poured into the right arm until the water level in the left arm rises \SI{3}{\centi\meter}.
+    The length of the oil column is then:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{2.25}{\centi\meter}}
+      \correctchoice{\SI{8}{\centi\meter}}
+        \wrongchoice{\SI{6}{\centi\meter}}
+        \wrongchoice{\SI{4}{\centi\meter}}
+        \wrongchoice{need to know the cross-sectional area of the $U$-tube}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q18}
+    A long $U$-tube contains mercury (density = \SI{14e3}{\kilo\gram\per\meter\cubed}).
+    When \SI{10}{\centi\meter} of water (density = \SI{1.0e3}{\kilo\gram\per\meter\cubed}) is poured into the left arm,
+        the mercury in the right arm rises above its original level by:
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{\SI{0.36}{\centi\meter}}
+        \wrongchoice{\SI{0.72}{\centi\meter}}
+        \wrongchoice{\SI{14}{\centi\meter}}
+        \wrongchoice{\SI{35}{\centi\meter}}
+        \wrongchoice{\SI{70}{\centi\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q19}
+    A bucket of water is pushed from left to right with increasing speed across a horizontal surface.
+    Consider the pressure at two points at the same level in the water.
+    \begin{choices}
+        \wrongchoice{It is the same}
+      \correctchoice{It is higher at the point on the left}
+        \wrongchoice{It is higher at the point on the right}
+        \wrongchoice{At first it is higher at the point on the left but as the bucket speeds up it is lower there}
+        \wrongchoice{At first it is higher at the point on the right but as the bucket speeds up it is lower there}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q20}
+    A bucket resting on the floor of an elevator contains an incompressible fluid of density $\rho$. 
+    When the elevator has an upward acceleration of magnitude $a$ the pressure difference between two points in a fluid separated by a vertical distance $\Delta h$,
+        is given by:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{$\rho a\Delta h$}
+        \wrongchoice{$\rho g\Delta h$}
+      \correctchoice{$\rho\left(g + a\right)\Delta h$}
+        \wrongchoice{$\rho\left(g - a\right)\Delta h$}
+        \wrongchoice{$\rho ga\Delta h$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q21}
+    A bucket resting on the floor of an elevator contains an incompressible fluid of density $\rho$. 
+    When the elevator has an downward acceleration of magnitude $a$ the pressure difference between two points in a fluid separated by a vertical distance $\Delta h$,
+        is given by:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{$\rho a\Delta h$}
+        \wrongchoice{$\rho g\Delta h$}
+        \wrongchoice{$\rho\left(g + a\right)\Delta h$}
+      \correctchoice{$\rho\left(g - a\right)\Delta h$}
+        \wrongchoice{$\rho ga\Delta h$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q22}
+    ``An object completely submerged in a fluid displaces its own volume of fluid''.
+        This is:
+    \begin{choices}
+        \wrongchoice{Pascal's paradox}
+        \wrongchoice{Archimedes' principle}
+        \wrongchoice{Pascal's principle}
+      \correctchoice{true, but none of the provided}
+        \wrongchoice{false}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q23}
+    A certain object floats in fluids of density
+    \begin{enumerate}
+        \item $0.9 \rho_0$
+        \item $\rho_0$
+        \item $1.1 \rho_0$
+    \end{enumerate}
+    Which of the following statements is true?
+    \begin{choices}
+        \wrongchoice{the buoyant force of fluid 1 is greater than the buoyant forces of the other two fluids}
+        \wrongchoice{the buoyant force of fluid 3 is greater than the buoyant forces of the other two fluids}
+      \correctchoice{the three fluids exert the same buoyant force}
+        \wrongchoice{the object displace the same volume of all three fluids}
+        \wrongchoice{none of the provided are true}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q24}
+    A certain object floats in fluids of density
+    \begin{enumerate}
+        \item $0.9 \rho_0$
+        \item $\rho_0$
+        \item $1.1 \rho_0$
+    \end{enumerate}
+    Rank these fluids according to the volume displaced by the object,
+        least to greatest.
+    \begin{choices}
+        \wrongchoice{1, 2, 3}
+      \correctchoice{3, 2, 1}
+        \wrongchoice{2, 3, 1}
+        \wrongchoice{3, 1, 2}
+        \wrongchoice{All are the same}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q25}
+    Two identical blocks of ice float in water as shown. 
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: 2 x 2 tikz
+    \end{tikzpicture}
+    \end{center}
+    Then:
+    \begin{choices}
+        \wrongchoice{block $A$ displaces a greater volume of water since the pressure acts on a smaller bottom area}
+        \wrongchoice{block $B$ displaces a greater volume of water since the pressure is less on its bottom}
+      \correctchoice{the two blocks displace equal volumes of water since they have the same weight}
+        \wrongchoice{block $A$ displaces a greater volume of water since its submerged end is lower in the water}
+        \wrongchoice{block $B$ displaces a greater volume of water since its submerged end has a greater area}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q26}
+    A block of ice at \SI{0}{\degreeCelsius} is floating on the surface of ice water in a beaker. 
+    The surface of the water just comes to the top of the beaker. 
+    When the ice melts the water level will:
+    \begin{choices}
+        \wrongchoice{rise and overflow will occur}
+      \correctchoice{remain the same}
+        \wrongchoice{fall}
+        \wrongchoice{depend on the initial ratio of water to ice}
+        \wrongchoice{depend on the shape of the block of ice}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q27}
+    A block of ice at \SI{0}{\degreeCelsius} containing a piece of cork is floating on the surface of ice water in a beaker.
+    When the ice has melted the water level:
+    \begin{choices}
+        \wrongchoice{is higher}
+        \wrongchoice{is lower}
+      \correctchoice{is the same}
+        \wrongchoice{depends on the initial ratio of water to ice}
+        \wrongchoice{depends on the shape of the ice block}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q28}
+    A pirate chest rests at the bottom of an ocean. 
+    If the water is still, the net force it exerts on the chest:
+    \begin{choices}
+        \wrongchoice{is upward}
+      \correctchoice{is downward}
+        \wrongchoice{is zero}
+        \wrongchoice{depends on the mass of the chest}
+        \wrongchoice{depends on the contents of the chest}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q29}
+    A small steel ball floats in a half-full container of mercury. 
+    When water is added:
+    \begin{choices}
+        \wrongchoice{the ball will float on the water}
+      \correctchoice{the ball will rise slightly}
+        \wrongchoice{the mercury will float on the water}
+        \wrongchoice{the ball will sink to the bottom of the container}
+        \wrongchoice{the ball will lower slightly more into the mercury}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q30}
+    A cork floats on the surface of an incompressible liquid in a container exposed to atmospheric pressure. 
+    The container is then sealed and the air above the liquid is evacuated. 
+    The cork:
+    \begin{choices}
+        \wrongchoice{sinks slightly}
+        \wrongchoice{rises slightly}
+      \correctchoice{floats at the same height}
+        \wrongchoice{bobs up and down about its old position}
+        \wrongchoice{behaves erratically}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q31}
+    An object hangs from a spring balance. 
+    The balance indicates \SI{30}{\newton} in air and \SI{20}{\newton} when the object is submerged in water. 
+    What does the balance indicate when the object is submersed in a liquid with a density that is half that of water?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{20}{\newton}}
+        \wrongchoice{\SI{25}{\newton}}
+        \wrongchoice{\SI{30}{\newton}}
+        \wrongchoice{\SI{35}{\newton}}
+        \wrongchoice{\SI{40}{\newton}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q32}
+    A fir wood board floats in fresh water with \SI{60}{\percent} of its volume under water. 
+    The density of the wood in \si{\gram\per\centi\meter\cubed} is:
+    %\begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\num{0.4}}
+        \wrongchoice{\num{0.5}}
+      \correctchoice{\num{0.6}}
+        \wrongchoice{less than \num{0.4}}
+        \wrongchoice{more than \num{0.6}}
+    \end{choices}
+    %\end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q33}
+    A boat floating in fresh water displaces \SI{16 000}{\newton} of water. 
+    How many newtons of saltwater would it displace if it floats in saltwater of specific gravity \num{1.17}?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\num{14 500}}
+        \wrongchoice{\num{17 600}}
+      \correctchoice{\num{16 000}}
+        \wrongchoice{\num{284}}
+        \wrongchoice{\num{234}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q34}
+    A rock, which weighs \SI{1400}{\newton} in air,
+    has an apparent weight of \SI{900}{\newton} when submerged in fresh water (\SI{998}{\kilo\gram\per\meter\cubed}).
+    The volume of the rock is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{0.14}{\meter\cubed}}
+        \wrongchoice{\SI{0.60}{\meter\cubed}}
+        \wrongchoice{\SI{0.90}{\meter\cubed}}
+      \correctchoice{\SI{5.1e-2}{\meter\cubed}}
+        \wrongchoice{\SI{9.2e-2}{\meter\cubed}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q35}
+    A loaded ship passes from a lake (fresh water) to the ocean (saltwater). 
+    Saltwater is more dense than fresh water and as a result the ship will:
+    \begin{choices}
+      \correctchoice{ride higher in the water}
+        \wrongchoice{settle lower in the water}
+        \wrongchoice{ride at the same level in the water}
+        \wrongchoice{experience an increase in buoyant force}
+        \wrongchoice{experience a decrease in buoyant force}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q36}
+    The dimensions of a wooden raft (density = \SI{150}{\kilo\gram\per\meter\cubed}) are $\SI{3.0}{\meter}\times\SI{3.0}{\meter}\times\SI{1.0}{\meter}$.
+    What maximum load can it carry in seawater (density = \SI{1020}{\kilo\gram\per\meter\cubed})?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{1350}{\kilo\gram}}
+      \correctchoice{\SI{7800}{\kilo\gram}}
+        \wrongchoice{\SI{9200}{\kilo\gram}}
+        \wrongchoice{\SI{19 500}{\kilo\gram}}
+        \wrongchoice{\SI{24 300}{\kilo\gram}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q37}
+    A tin can has a volume of \SI{1000}{\centi\meter\cubed} and a mass of \SI{100}{\gram}.
+    Approximately what mass of lead shot can it carry without sinking in water?
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{\SI{900}{\gram}}
+        \wrongchoice{\SI{100}{\gram}}
+        \wrongchoice{\SI{1000}{\gram}}
+        \wrongchoice{\SI{1100}{\gram}}
+        \wrongchoice{\SI{980}{\gram}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q38}
+    A block of wood weighs \SI{160}{\newton} and has a specific gravity of \num{0.60}. 
+    To sink it in fresh water requires an additional downward force of:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{54}{\newton}}
+        \wrongchoice{\SI{64}{\newton}}
+        \wrongchoice{\SI{96}{\newton}}
+      \correctchoice{\SI{110}{\newton}}
+        \wrongchoice{\SI{240}{\newton}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q39}
+    A student standardizes the concentration of a saltwater solution by slowly adding salt until an egg will just float. 
+    The procedure is based on the assumption that:
+    \begin{choices}
+        \wrongchoice{all eggs have the same volume}
+        \wrongchoice{all eggs have the same weight}
+      \correctchoice{all eggs have the same density}
+        \wrongchoice{all eggs have the same shape}
+        \wrongchoice{the salt tends to neutralize the cholesterol in the egg}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q40}
+    A solid has a volume of \SI{8}{\centi\meter\cubed}.
+    When weighed on a spring scale calibrated in grams,
+        the scale indicates \SI{20}{\gram}. 
+    What does the scale indicate if the object is weighed while immersed in a liquid of density \SI{2}{\gram\per\centi\meter\cubed}?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{4}{\gram}}
+        \wrongchoice{\SI{10}{\gram}}
+        \wrongchoice{\SI{12}{\gram}}
+        \wrongchoice{\SI{16}{\gram}}
+        \wrongchoice{Zero, since the object will float}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q41}
+    A \SI{210}{\gram} object apparently loses \SI{30}{\gram} when suspended in a liquid of density \SI{2.0}{\gram\per\centi\meter\cubed}. 
+    The density of the object is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{7.0}{\gram\per\centi\meter\cubed}}
+        \wrongchoice{\SI{3.5}{\gram\per\centi\meter\cubed}}
+        \wrongchoice{\SI{1.4}{\gram\per\centi\meter\cubed}}
+      \correctchoice{\SI{14}{\gram\per\centi\meter\cubed}}
+        \wrongchoice{none of the provided}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q42}
+    A steel ax and an aluminum piston have the same apparent weight in water. 
+    When they are weighed in air:
+    \begin{choices}
+        \wrongchoice{they weigh the same}
+        \wrongchoice{the ax is heavier}
+      \correctchoice{the piston is heavier}
+        \wrongchoice{both weigh less than they did in water}
+        \wrongchoice{depends on their shapes}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q43}
+    The apparent weight of a steel sphere immersed in various liquids is measured using a spring scale. 
+    The greatest reading is obtained for that liquid:
+    \begin{choices}
+      \correctchoice{having the smallest density}
+        \wrongchoice{having the largest density}
+        \wrongchoice{subject to the greatest atmospheric pressure}
+        \wrongchoice{having the greatest volume}
+        \wrongchoice{in which the sphere was submerged deepest}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q44}
+    A \SI{0.50}{\newton} metal sinker appears (as measured using a spring scale) to have a weight of \SI{0.45}{\newton} when submerged in water. 
+    The specific gravity of the metal is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\num{6}}
+        \wrongchoice{\num{8}}
+        \wrongchoice{\num{9}}
+      \correctchoice{\num{10}}
+        \wrongchoice{\num{12}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q45}
+    An object floats on the surface of a fluid. 
+    For purposes of calculating the torque on it,
+        the buoyant force is taken to act at:
+    \begin{choices}
+        \wrongchoice{the center of the bottom surface of the object}
+        \wrongchoice{the center of gravity of the object}
+      \correctchoice{the center of gravity of the fluid that the object replaced}
+        \wrongchoice{the geometric center of the object}
+        \wrongchoice{none of the above}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q46}
+    A blast of wind tips a sailboat in the clockwise direction when viewed from the stern. 
+    When the wind ceases the boat rotates back toward the upright position if,
+        when it is tilted, the center of buoyancy:
+    \begin{choices}
+        \wrongchoice{is above the center of gravity}
+        \wrongchoice{is below the center of gravity}
+      \correctchoice{is to the right of the center of gravity}
+        \wrongchoice{is to the left of the center of gravity}
+        \wrongchoice{coincides with the center of gravity}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q47}
+    A cork floats in water in a bucket resting on the floor of an elevator. 
+    The elevator then accelerates upward. 
+    During the acceleration:
+    \begin{choices}
+        \wrongchoice{the cork is immersed more}
+        \wrongchoice{the cork is immersed less}
+        \wrongchoice{the cork is immersed the same amount}
+        \wrongchoice{at first the cork is immersed less but as the elevator speeds up it is immersed more}
+        \wrongchoice{at first the cork is immersed more but as the elevator speeds up it is immersed less}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q48}
+    Two balls have the same shape and size but one is denser than the other. 
+    If frictional forces are negligible when they are dropped in air,
+        which has the greater acceleration?
+    \begin{choices}
+      \correctchoice{The heavier ball}
+        \wrongchoice{The lighter ball}
+        \wrongchoice{They have the same acceleration}
+        \wrongchoice{The heavier ball if atmospheric pressure is high, they lighter ball if it is low}
+        \wrongchoice{The lighter ball if atmospheric pressure is high, the heavier ball if it is low}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q49}
+    The principle of fluid pressure that is used in hydraulic brakes or lifts is that:
+    \begin{choices}
+        \wrongchoice{pressure is the same at all levels in a fluid}
+      \correctchoice{increases of pressure are transmitted equally to all parts of a fluid}
+        \wrongchoice{the pressure at a point in a fluid is due to the weight of the fluid above it}
+        \wrongchoice{increases of pressure can only be transmitted through fluids}
+        \wrongchoice{the pressure at a given depth is proportional to the depth in the fluid}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q50}
+    Which of the following statements about Pascal's principle is true?
+    \begin{choices}
+        \wrongchoice{It is valid only for incompressible fluids}
+        \wrongchoice{It explains why light objects float}
+        \wrongchoice{It explains why the pressure is greater at the bottom of a lake than at the surface}
+        \wrongchoice{It is valid only for objects that are less dense than water}
+      \correctchoice{None of the provided are true}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q51}
+    The hydraulic automobile jack illustrates:
+    \begin{choices}
+        \wrongchoice{Archimedes' principle}
+      \correctchoice{Pascal's principle}
+        \wrongchoice{Hooke's law}
+        \wrongchoice{Newton's third law}
+        \wrongchoice{Newton's second law}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q52}
+    One piston in a hydraulic lift has an area that is twice the area of the other. 
+    When the pressure at the smaller piston is increased by $\Delta p$ the pressure at the larger piston:
+    \begin{choices}
+        \wrongchoice{increases by $2\Delta p$}
+        \wrongchoice{increases by $\dfrac{\Delta p}{2}$}
+      \correctchoice{increases by $\Delta p$}
+        \wrongchoice{increases by $4 \Delta p$}
+        \wrongchoice{does not change}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q53}
+    A hydraulic press has one piston of diameter \SI{2.0}{\centi\meter} and the other piston of diameter \SI{8.0}{\centi\meter}.
+    What force must be applied to the smaller piston to obtain a force of \SI{1600}{\newton} at the larger piston?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{6.25}{\newton}}
+        \wrongchoice{\SI{25}{\newton}}
+        \wrongchoice{\SI{100}{\newton}}
+        \wrongchoice{\SI{400}{\newton}}
+        \wrongchoice{\SI{1600}{\newton}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q54}
+    The two arms of a $U$-tube are not identical,
+        one having twice the diameter of the other. 
+    A cork in the narrow arm requires a force of \SI{16}{\newton} to remove it. 
+    The tube is filled with water and the wide arm is fitted with a piston. 
+    The minimum force that must be applied to the piston to push the cork out is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{4}{\newton}}
+        \wrongchoice{\SI{8}{\newton}}
+        \wrongchoice{\SI{16}{\newton}}
+        \wrongchoice{\SI{32}{\newton}}
+      \correctchoice{\SI{64}{\newton}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q55}
+    A $U$-tube has dissimilar arms,
+        one having twice the diameter of the other. 
+    It contains an incompressible fluid and is fitted with a sliding piston in each arm, with each piston in contact with the fluid.
+    When the piston in the narrow arm is pushed down a distance $d$,
+        the piston in the wide arm rises a distance:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$d$}
+        \wrongchoice{$2d$}
+        \wrongchoice{$\dfrac{d}{2}$}
+        \wrongchoice{$4d$}
+      \correctchoice{$\dfrac{d}{4}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q56}
+    A $U$-tube has dissimilar arms, one having twice the diameter of the other. 
+    It contains an incompressible fluid and is fitted with a sliding piston in each arm, with each piston in contact with the fluid.
+    When an applied force does work $W$ in pushing the piston in the narrow arm down, the fluid does work \rule[-0.1pt]{4em}{0.1pt} on the piston in the wide arm
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{$W$}
+        \wrongchoice{$2W$}
+        \wrongchoice{$\dfrac{W}{2}$}
+        \wrongchoice{$4W$}
+        \wrongchoice{$\dfrac{W}{4}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q57}
+    A fluid is undergoing ``incompressible'' flow. 
+    This means that:
+    \begin{choices}
+        \wrongchoice{the pressure at a given point cannot change with time}
+        \wrongchoice{the velocity at a given point cannot change with time}
+        \wrongchoice{the velocity must be the same everywhere}
+        \wrongchoice{the pressure must be the same everywhere}
+        \wrongchoice{the density cannot change with time or location}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q58}
+    A fluid is undergoing steady flow. 
+    Therefore:
+    \begin{choices}
+        \wrongchoice{the velocity of any given molecule of fluid does not change}
+        \wrongchoice{the pressure does not vary from point to point}
+      \correctchoice{the velocity at any given point does not vary with time}
+        \wrongchoice{the density does not vary from point to point}
+        \wrongchoice{the flow is not uphill or downhill}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q59}
+    If $p$ is a pressure and $\rho$ is a density then $\rho/p$ has units of:
+    \begin{choices}
+        \wrongchoice{meter squared (\si{\meter\squared})}
+      \correctchoice{meter squared per second squared (\si{\meter\squared\per\second\squared})}
+        \wrongchoice{newton per meter squared (\si{\newton\per\meter\squared})}
+        \wrongchoice{kilogram per meter squared (\si{\kilo\gram\per\meter\squared})}
+        \wrongchoice{meter cubed per kilogram (\si{\meter\cubed\per\kilo\gram})}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q60}
+    One end of a cylindrical pipe has a radius of \SI{1.5}{\centi\meter}.
+    Water (density = \SI{1.0e3}{\kilo\gram\per\meter\cubed}) streams steadily out at 7.0 m/s. The rate at which mass is leaving the pipe is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{2.5}{\kilo\gram\per\second}}
+      \correctchoice{\SI{4.9}{\kilo\gram\per\second}}
+        \wrongchoice{\SI{7.0}{\kilo\gram\per\second}}
+        \wrongchoice{\SI{48}{\kilo\gram\per\second}}
+        \wrongchoice{\SI{7.0e3}{\kilo\gram\per\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q61}
+    One end of a cylindrical pipe has a radius of \SI{1.5}{\centi\meter}.
+    Water (density = \SI{1.0e3}{\kilo\gram\per\meter\cubed}) streams steadily out at \SI{7.0}{\meter\per\second}.
+    The volume flow rate is:
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{\SI{4.9e-3}{\meter\cubed\per\second\squared}}
+        \wrongchoice{\SI{2.5}{\meter\cubed\per\second\squared}}
+        \wrongchoice{\SI{4.9}{\meter\cubed\per\second\squared}}
+        \wrongchoice{\SI{7.0}{\meter\cubed\per\second\squared}}
+        \wrongchoice{\SI{48}{\meter\cubed\per\second\squared}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q62}
+    The equation of continuity for fluid flow can be derived from the conservation of:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{energy}
+      \correctchoice{mass}
+        \wrongchoice{angular momentum}
+        \wrongchoice{volume}
+        \wrongchoice{pressure}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q63}
+    The diagram shows a pipe of uniform cross section in which water is flowing. 
+    The directions of flow and the volume flow rates (in \si{\centi\meter\cubed\per\second}) are shown for various portions of the pipe.
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: 2 x 2 tikz
+    \end{tikzpicture}
+    \end{center}
+    The direction of flow and the volume flow rate in the portion marked $A$ are:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{$\downarrow$ and \SI{3}{\centi\meter\cubed\per\second}}
+        \wrongchoice{$\uparrow$ and \SI{7}{\centi\meter\cubed\per\second}}
+        \wrongchoice{$\downarrow$ and \SI{9}{\centi\meter\cubed\per\second}}
+        \wrongchoice{$\uparrow$ and \SI{11}{\centi\meter\cubed\per\second}}
+      \correctchoice{$\downarrow↓$ and \SI{15}{\centi\meter\cubed\per\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q64}
+    An incompressible liquid flows along the pipe as shown. 
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: 2 x 2 tikz
+    \end{tikzpicture}
+    \end{center}
+    The ratio of the speeds $v_2/v_1$ is:
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{$\dfrac{A_1}{A_2}$}
+        \wrongchoice{$\dfrac{A_2}{A_1}$}
+        \wrongchoice{$\sqrt{\dfrac{A_1}{A_2}}$}
+        \wrongchoice{$\sqrt{\dfrac{A_2}{A_1}}$}
+        \wrongchoice{$\dfrac{v_1}{v_2}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q65}
+    Water flows through a cylindrical pipe of varying cross section. 
+    The velocity is \SI{3.0}{\meter\per\second} at a point where the pipe diameter is \SI{1.0}{\centi\meter}.
+    At a point where the pipe diameter is \SI{3.0}{\centi\meter},
+        the velocity is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{9}{\meter\per\second}}
+        \wrongchoice{\SI{3}{\meter\per\second}}
+        \wrongchoice{\SI{1}{\meter\per\second}}
+      \correctchoice{\SI{0.33}{\meter\per\second}}
+        \wrongchoice{\SI{0.11}{\meter\per\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q66}
+    A constriction in a pipe reduces its diameter from \SI{4.0}{\centi\meter} to \SI{2.0}{\centi\meter}.
+    Where the pipe is narrow the water speed is \SI{8.0}{\meter\per\second}.
+    Where it is wide the water speed is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{2.0}{\meter\per\second}}
+        \wrongchoice{\SI{4.0}{\meter\per\second}}
+      \correctchoice{\SI{8.0}{\meter\per\second}}
+        \wrongchoice{\SI{16}{\meter\per\second}}
+        \wrongchoice{\SI{32}{\meter\per\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q67}
+    Water flows from a \SI{6.0}{\centi\meter} diameter pipe into an \SI{8.0}{\centi\meter} diameter pipe.
+    The speed in the \SI{6.0}{\centi\meter} pipe is \SI{5.0}{\meter\per\second}.
+    The speed in the \SI{8.0}{\centi\meter} pipe is:
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{\SI{2.8}{\meter\per\second}}
+        \wrongchoice{\SI{3.7}{\meter\per\second}}
+        \wrongchoice{\SI{6.6}{\meter\per\second}}
+        \wrongchoice{\SI{8.8}{\meter\per\second}}
+        \wrongchoice{\SI{9.9}{\meter\per\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q68}
+    A lawn sprinkler is made of a \SI{1.0}{\centi\meter} diameter garden hose with one end closed and 25 holes,
+        each with a diameter of \SI{0.050}{\centi\meter}, cut near the closed end.
+    If water flows at \SI{2.0}{\meter\per\second} in the hose,
+        the speed of the water leaving a hole is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{2.0}{\meter\per\second}}
+      \correctchoice{\SI{32}{\meter\per\second}}
+        \wrongchoice{\SI{40}{\meter\per\second}}
+        \wrongchoice{\SI{600}{\meter\per\second}}
+        \wrongchoice{\SI{800}{\meter\per\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q69}
+    Bernoulli's equation can be derived from the conservation of:
+    \begin{choices}
+      \correctchoice{energy}
+        \wrongchoice{mass}
+        \wrongchoice{angular momentum}
+        \wrongchoice{volume}
+        \wrongchoice{pressure}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q70}
+    Which of the following assumptions is \emph{not} made in the derivation of Bernoulli's equation?
+    \begin{choices}
+        \wrongchoice{Assume streamline flow}
+        \wrongchoice{Neglect viscosity}
+        \wrongchoice{Neglect friction}
+      \correctchoice{Neglect gravity}
+        \wrongchoice{Neglect turbulence}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q71}
+    The quantity $y$ appearing in Bernoulli's equation \emph{must} be measured:
+    \begin{choices}
+        \wrongchoice{upward from the center of Earth}
+        \wrongchoice{upward from the surface of Earth}
+        \wrongchoice{upward from the lowest point in the flow}
+        \wrongchoice{downward from the highest point in the flow}
+      \correctchoice{upward from any convenient level}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q72}
+    Water flows through a constriction in a horizontal pipe. 
+    As it enters the constriction,
+        the water's:
+    \begin{choices}
+      \correctchoice{speed increases and pressure decreases}
+        \wrongchoice{speed increases and pressure remains constant}
+        \wrongchoice{speed increases and pressure increases}
+        \wrongchoice{speed decreases and pressure increases}
+        \wrongchoice{speed decreases and pressure decreases}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q73}
+    Water is pumped through the hose shown below,
+        from a lower level to an upper level. 
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: 2 x 2 tikz
+    \end{tikzpicture}
+    \end{center}
+    Compared to the water at point 1,
+        the water at point 2:
+    \begin{choices}
+        \wrongchoice{has greater speed and greater pressure}
+      \correctchoice{has greater speed and less pressure}
+        \wrongchoice{has less speed and less pressure}
+        \wrongchoice{has less speed and greater pressure}
+        \wrongchoice{has greater speed and the same pressure}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q74}
+    A non-viscous incompressible liquid is flowing through a horizontal pipe of constant cross section. 
+    Bernoulli's equation and the equation of continuity predict that the drop in pressure along the pipe:
+    \begin{choices}
+      \correctchoice{is zero}
+        \wrongchoice{depends on the length of the pipe}
+        \wrongchoice{depends on the fluid velocity}
+        \wrongchoice{depends on the cross-sectional area of the pipe}
+        \wrongchoice{depends on the height of the pipe}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q75}
+    A non-viscous incompressible fluid is pumped steadily into the narrow end of a long tapered pipe and emerges from the wide end. 
+    The pressure at the input is greater than at the output.
+    A possible explanation is:
+    \begin{choices}
+        \wrongchoice{the fluid speed increases from input to output}
+        \wrongchoice{the fluid speed is the same at the two ends}
+        \wrongchoice{the fluid is flowing uphill}
+        \wrongchoice{the fluid is flowing downhill}
+        \wrongchoice{the fluid is flowing horizontally}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q76}
+    Water is pumped into one end of a long pipe at the rate of \SI{40}{\liter\per\minute}. 
+    It emerges at the other end at \SI{24}{\liter\per\minute}. 
+    A possible reason for this decrease in flow is:
+    \begin{choices}
+        \wrongchoice{the water is being pumped uphill}
+        \wrongchoice{the water is being pumped downhill}
+        \wrongchoice{the diameter of the pipe is not the same at the two ends}
+        \wrongchoice{friction in the pipe}
+      \correctchoice{a leak in the pipe}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q77}
+    Consider a pipe containing a fluid, with the fluid being at rest. 
+    To apply Bernoulli's equation to this situation:
+    \begin{choices}
+      \correctchoice{set $v$ equal to zero because there is no motion}
+        \wrongchoice{set $g$ equal to zero because there is no acceleration}
+        \wrongchoice{set $v$ and $g$ both equal to zero}
+        \wrongchoice{set $p$ equal to the atmospheric pressure}
+        \wrongchoice{cannot be done,
+            Bernoulli’s equation applies only to fluids in motion}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q78}
+    Water (density = \SI{1.0e3}{\kilo\gram\per\meter\cubed}) flows through a horizontal tapered pipe.
+    At the wide end its speed is \SI{4.0}{\meter\per\second}. 
+    The difference in pressure between the two ends is \SI{4.5e3}{\pascal}.
+    The speed of the water at the narrow end is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{2.6}{\meter\per\second}}
+        \wrongchoice{\SI{3.4}{\meter\per\second}}
+        \wrongchoice{\SI{4.0}{\meter\per\second}}
+        \wrongchoice{\SI{4.5}{\meter\per\second}}
+      \correctchoice{\SI{5.0}{\meter\per\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q79}
+    Water is streaming downward from a faucet opening with an area of \SI{3.0e-5}{\meter\squared}.
+    It leaves the faucet with a speed of \SI{5.0}{\meter\per\second}.
+    The cross-sectional area of the stream \SI{0.50}{\meter} below the faucet is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{1.5e-5}{\meter\squared}}
+        \wrongchoice{\SI{2.0e-5}{\meter\squared}}
+      \correctchoice{\SI{2.5e-5}{\meter\squared}}
+        \wrongchoice{\SI{3.0e-5}{\meter\squared}}
+        \wrongchoice{\SI{3.5e-5}{\meter\squared}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q80}
+    A large water tank, open at the top,
+        has a small hole in the bottom. 
+    When the water level is \SI{30}{\meter} above the bottom of the tank,
+        the speed of the water leaking from the hole:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{is \SI{2.5}{\meter\per\second}}
+      \correctchoice{is \SI{24}{\meter\per\second}}
+        \wrongchoice{is \SI{44}{\meter\per\second}}
+        \wrongchoice{cannot be calculated unless the area of the hole is given}
+        \wrongchoice{cannot be calculated unless the areas of the hole and tank are given}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q81}
+    A large tank filled with water has two holes in the bottom,
+        one with twice the radius of the the speed of the water other. 
+    In steady flow the speed of water leaving the larger hole is leaving the smaller.
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{twice}
+        \wrongchoice{four times}
+        \wrongchoice{half}
+        \wrongchoice{one-fourth}
+      \correctchoice{the same as}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q82}
+    A non-viscous incompressible fluid is pumped steadily up a vertical pipe with uniform cross section. 
+    The difference in pressure between points at the top and bottom:
+    \begin{choices}
+      \correctchoice{is the same as it would be if the fluid were motionless}
+        \wrongchoice{is greater at higher flow rates than at lower flow rates}
+        \wrongchoice{is less at higher flow rates than at lower flow rates}
+        \wrongchoice{does not depend on the density of the fluid}
+        \wrongchoice{is zero}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q83}
+    A water line enters a house \SI{2.0}{\meter} below ground. 
+    A smaller diameter pipe carries water to a faucet \SI{5.0}{\meter} above ground,
+        on the second floor. 
+    Water flows at \SI{2.0}{\meter\per\second} in the main line and at \SI{7.0}{\meter\per\second} on the second floor. 
+    Take the density of water to be \SI{1.0e3}{\kilo\gram\per\meter\cubed}.
+    The difference in pressure between the main line and the second floor is:
+    \begin{choices}
+      \correctchoice{\SI{7.15e4}{\pascal} with the main line at the higher pressure}
+        \wrongchoice{\SI{2.65e4}{\pascal} with the main line at the higher pressure}
+        \wrongchoice{\SI{7.15e4}{\pascal} with the main line at the lower pressure}
+        \wrongchoice{\SI{2.65e4}{\pascal} with the main line at the lower pressure}
+        \wrongchoice{\SI{9.4e4}{\pascal} with the main line at the higher pressure}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch14-q84}
+    A person blows across the top of one arm of a $U$-tube partially filled with water.
+    The water in that arm:
+    \begin{choices}
+      \correctchoice{rises slightly}
+        \wrongchoice{drops slightly}
+        \wrongchoice{remains at the same height}
+        \wrongchoice{rises if the blowing is soft but drops if it is hard}
+        \wrongchoice{rises if the blowing is hard but drops if it is soft}
+    \end{choices}
+\end{question}
+}
+
+
+\endinput
+
+

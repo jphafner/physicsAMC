@@ -1,0 +1,748 @@
+
+%%--------------------------------------------------
+%% Halliday: Fundamentals of Physics
+%%--------------------------------------------------
+
+
+%% Chapter 41: Conduction of Electricity in Solids
+%%--------------------------------------------------
+
+
+%% Learning Objectives
+%%--------------------------------------------------
+
+
+%% 41.01: Identify the three basic properties of crystalline solids and sketch unit cells for them.
+%% 41.02: Distinguish insulators, metals, and semiconductors.
+%% 41.03: With sketches, explain the transition of an energy-level diagram for a single atom to an energy-band diagram for many atoms.
+%% 41.04: Draw a band–gap diagram for an insulator, indicating the filled and empty bands and explaining what prevents the electrons from participating in a current.
+%% 41.05: Draw a band–gap diagram for a metal, and explain what feature, in contrast to an insulator, allows electrons to participate in a current.
+%% 41.06: Identify the Fermi level, Fermi energy, and Fermi speed.
+%% 41.07: Distinguish monovalent atoms, bivalent atoms, and trivalent atoms.
+%% 41.08: For a conducting material, apply the relationships between the number density $n$ of conduction electrons and the material's density, volume $V$, and molar mass $M$.
+%% 41.09: Identify that in a metal's partially filled band, thermal agitation can jump some of the conduction electrons to higher energy levels.
+%% 41.10: For a given energy level in a band, calculate the density of states $N(E)$ and identify that it is actually a double density (per volume and per energy).
+%% 41.11: Find the number of states per unit volume in a range $E$ at height $E$ in a band by integrating $N(E)$ over that range or, if $\Delta E$ is small relative to $E$, by evaluating the product $N(E)\Delta E$.
+%% 41.12: For a given energy level, calculate the probability $P(E)$ that the level is occupied by electrons.
+%% 41.13: Identify that probability $P(E)$ is 0.5 at the Fermi level.
+%% 41.14: At a given energy level, calculate the density $N_o (E)$ of occupied states.
+%% 41.15: For a given range in energy levels, calculate the number of states and the number of occupied states.
+%% 41.16: Sketch graphs of the density of states $N(E)$, occupancy probability $P(E)$, and the density of occupied states $N_o (E)$, all versus height in a band.
+%% 41.17: Apply the relationship between the Fermi energy $E_F$ and the number density of conduction electrons $n$.
+
+
+%% Halliday Multiple Choice Questions
+%%--------------------------------------------------
+\element{halliday-mc}{
+\begin{question}{halliday-ch41-q01}
+    In a pure metal the collisions that are characterized by the mean free time $\tau$ in the expression for the resistivity are chiefly between:
+    \begin{choices}
+        \wrongchoice{electrons and other electrons}
+      \correctchoice{electrons with energy about equal to the Fermi energy and atoms}
+        \wrongchoice{all electrons and atoms}
+        \wrongchoice{electrons with energy much less than the Fermi energy and atoms}
+        \wrongchoice{atoms and other atoms}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch41-q02}
+    A certain metal has \num{5.3e29} conduction electrons/\si{\meter\cubed} and an electrical resistivity of \SI{1.9e-9}{\ohm\meter}.
+    The average time between collisions of electrons with atoms in the metal is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{5.6e-33}{\second}}
+        \wrongchoice{\SI{1.3e-31}{\second}}
+      \correctchoice{\SI{9.9e-22}{\second}}
+        \wrongchoice{\SI{4.6e-15}{\second}}
+        \wrongchoice{\SI{3.5e-14}{\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch41-q03}
+    Which one of the following statements concerning electron energy bands in solids is true?
+    \begin{choices}
+        \wrongchoice{The bands occur as a direct consequence of the Fermi-Dirac occupancy probability function}
+        \wrongchoice{Electrical conduction arises from the motion of electrons in completely filled bands}
+        \wrongchoice{Within a given band, all electron energy levels are equal to each other}
+      \correctchoice{An insulator has a large energy separation between the highest filled band and the lowest empty band}
+        \wrongchoice{Only insulators have energy bands}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch41-q04}
+    If $E_0$ and $E_T$ are the average energies of the ``free'' electrons in a metal at \SI{0}{\kelvin} and room temperature,
+        respectively, then the ratio $E_T/E_0$ is approximately:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{zero}
+      \correctchoice{one}
+        \wrongchoice{$100$}
+        \wrongchoice{$10^6$}
+        \wrongchoice{infinity}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch41-q05}
+    The energy gap (in \si{\eV}) between the valence and conduction bands of an insulator is of the order of:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$10^{-19}$}
+        \wrongchoice{$0.001$}
+        \wrongchoice{$0.1$}
+      \correctchoice{$10$}
+        \wrongchoice{$1000$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch41-q06}
+    The energy level diagram shown applies to:
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: tikz
+    \end{tikzpicture}
+    \end{center}
+    \begin{choices}
+      \correctchoice{a conductor}
+        \wrongchoice{an insulator}
+        \wrongchoice{a semiconductor}
+        \wrongchoice{an isolated molecule}
+        \wrongchoice{an isolated atom}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch41-q07}
+    The energy level diagram shown applies to:
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: tikz
+    \end{tikzpicture}
+    \end{center}
+    \begin{choices}
+        \wrongchoice{a conductor}
+      \correctchoice{an insulator}
+        \wrongchoice{a semiconductor}
+        \wrongchoice{an isolated atom}
+        \wrongchoice{a free-electron gas}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch41-q08}
+    The energy level diagram shown applies to:
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: tikz
+    \end{tikzpicture}
+    \end{center}
+    \begin{choices}
+        \wrongchoice{a conductor}
+        \wrongchoice{an insulator}
+      \correctchoice{a semiconductor}
+        \wrongchoice{an isolated molecule}
+        \wrongchoice{an isolated atom}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch41-q09}
+    Possible units for the density of states function $N(E)$ are:
+    \begin{choices}
+        \wrongchoice{joule per meter cubed (\si{\joule\per\meter\cubed})}
+        \wrongchoice{per joule (\si{\per\joule})}
+        \wrongchoice{per meter cubed (\si{\per\meter\cubed})}
+      \correctchoice{per joule per meter cubed (\si{\per\joule\per\meter\cubed})}
+        \wrongchoice{kilogram per meter cubed (\si{\kilo\gram\per\meter\cubed})}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch41-q10}
+    The density of states for a metal depends primarily on:
+    \begin{choices}
+        \wrongchoice{the temperature}
+      \correctchoice{the energy}
+        \wrongchoice{the density of the metal}
+        \wrongchoice{the volume of the sample}
+        \wrongchoice{none of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch41-q11}
+    The Fermi-Dirac occupancy probability $P(E)$ varies between:
+    \begin{choices}
+      \correctchoice{0 and 1}
+        \wrongchoice{0 and infinity}
+        \wrongchoice{1 and infinity}
+        \wrongchoice{$-1$ and 1}
+        \wrongchoice{0 and $E_F$}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch41-q12}
+    For a metal at absolute temperature $T$,
+        with Fermi energy $E_F$,
+        the occupancy probability is given by:
+    \begin{multicols}{2}
+    \begin{choices}[o]
+        \wrongchoice{$\mathrm{exp}\left(\dfrac{E-E_F}{kT}\right)$}
+        \wrongchoice{$\mathrm{exp}\left(-\dfrac{E-E_F}{kT}\right)$}
+      \correctchoice{$\dfrac{1}{\mathrm{exp}\left(\dfrac{E-E_F}{kT}\right)+1}$}
+        \wrongchoice{$\dfrac{1}{\mathrm{exp}\left(-\dfrac{E-E_F}{kT}\right)+1}$}
+        \wrongchoice{$\dfrac{1}{\mathrm{exp}\left(\dfrac{E-E_F}{kT}\right)-1}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch41-q13}
+    In a metal at \SI{0}{\kelvin},
+        the Fermi energy is:
+    \begin{choices}
+      \correctchoice{the highest energy of any electron}
+        \wrongchoice{the lowest energy of any electron}
+        \wrongchoice{the mean thermal energy of the electrons}
+        \wrongchoice{the energy of the top of the valence band}
+        \wrongchoice{the energy at the bottom of the conduction band}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch41-q14}
+    The occupancy probability for a state with energy equal to the Fermi energy is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{0}
+      \correctchoice{0.5}
+        \wrongchoice{1}
+        \wrongchoice{1.5}
+        \wrongchoice{2}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch41-q15}
+    The Fermi energy of a metal depends primarily on:
+    \begin{choices}
+        \wrongchoice{the temperature}
+        \wrongchoice{the volume of the sample}
+        \wrongchoice{the mass density of the metal}
+        \wrongchoice{the size of the sample}
+      \correctchoice{the number density of conduction electrons}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch41-q16}
+    The speed of an electron with energy equal to the Fermi energy for copper is on the order of:
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{\SI{e6}{\meter\per\second}}
+        \wrongchoice{\SI{e-6}{\meter\per\second}}
+        \wrongchoice{\SI{10}{\meter\per\second}}
+        \wrongchoice{\SI{e-1}{\meter\per\second}}
+        \wrongchoice{\SI{e9}{\meter\per\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch41-q17}
+    At $T=\SI{0}{\kelvin}$ the probability that a state \SI{0.50}{\eV} below the Fermi level is occupied is about:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{zero}
+        \wrongchoice{\num{5.0e-9}}
+        \wrongchoice{\num{5.0e-6}}
+        \wrongchoice{\num{5.0e-3}}
+      \correctchoice{one}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch41-q18}
+    At $T=\SI{0}{\kelvin}$ the probability that a state \SI{0.50}{\eV} above the Fermi level is occupied is about:
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{zero}
+        \wrongchoice{\num{5.0e-9}}
+        \wrongchoice{\num{5.0e-6}}
+        \wrongchoice{\num{5.0e-3}}
+        \wrongchoice{one}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch41-q19}
+    At room temperature $kT$ is about \SI{0.0259}{\eV}. 
+    The probability that a state \SI{0.50}{\eV} above the Fermi level is occupied at room temperature is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{one}
+        \wrongchoice{\num{0.05}}
+        \wrongchoice{\num{0.025}}
+        \wrongchoice{\num{5.0e-6}}
+      \correctchoice{\num{4.1e-9}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch41-q20}
+    At room temperature $kT$ is about \SI{0.0259}{\eV}. 
+    The probability that a state \SI{0.50}{\eV} below the Fermi level is unoccupied at room temperature is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{one}
+        \wrongchoice{\num{0.05}}
+        \wrongchoice{\num{0.025}}
+        \wrongchoice{\num{5.0e-6}}
+      \correctchoice{\num{4.1e-9}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch41-q21}
+    If the density of states is $N(E)$ and the occupancy probability is $P(E)$,
+        then the density of occupied states is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{$N(E) + P(E)$}
+        \wrongchoice{$\dfrac{N(E)}{P(E)}$}
+        \wrongchoice{$N(E) - P (E)$}
+      \correctchoice{$N(E) P(E)$}
+        \wrongchoice{$\dfrac{P(E)}{N(E)}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch41-q22}
+    A hole refers to:
+    \begin{choices}
+        \wrongchoice{a proton}
+        \wrongchoice{a positively charged electron}
+        \wrongchoice{an electron that has somehow lost its charge}
+        \wrongchoice{a microscopic defect in a solid}
+      \correctchoice{the absence of an electron in an otherwise filled band}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch41-q23}
+    Electrons in a full band do not contribute to the current when an electric field exists in a solid because:
+    \begin{choices}
+        \wrongchoice{the field cannot exert a force on them}
+      \correctchoice{the individual contributions cancel each other}
+        \wrongchoice{they are not moving}
+        \wrongchoice{they make transitions to other bands}
+        \wrongchoice{they leave the solid}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch41-q24}
+    For a pure semiconductor the Fermi level is:
+    \begin{choices}
+        \wrongchoice{in the conduction band}
+        \wrongchoice{well above the conduction band}
+        \wrongchoice{in the valence band}
+        \wrongchoice{well below the valence band}
+      \correctchoice{near the center of the gap between the valence and conduction bands}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch41-q25}
+    The number density $n$ of conduction electrons,
+        the resistivity $\rho$, and the temperature coefficient of resistivity $\alpha$ are given below for five materials. 
+    Which is a semiconductor?
+    \begin{choices}
+        \wrongchoice{$n=\SI{e29}{\per\meter\cubed}$, $\rho=\SI{e-8}{\ohm\meter}$, $\alpha=\SI{+e-3}{\per\kelvin}$}
+        \wrongchoice{$n=\SI{e28}{\per\meter\cubed}$, $\rho=\SI{e-9}{\ohm\meter}$, $\alpha=\SI{-e-3}{\per\kelvin}$}
+        \wrongchoice{$n=\SI{e28}{\per\meter\cubed}$, $\rho=\SI{e-9}{\ohm\meter}$, $\alpha=\SI{+e-3}{\per\kelvin}$}
+      \correctchoice{$n=\SI{e15}{\per\meter\cubed}$, $\rho=\SI{e3}{\ohm\meter}$,  $\alpha=\SI{-e-2}{\per\kelvin}$}
+        \wrongchoice{$n=\SI{e15}{\per\meter\cubed}$, $\rho=\SI{e-7}{\ohm\meter}$, $\alpha=\SI{+e-3}{\per\kelvin}$}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch41-q26}
+    A pure semiconductor at room temperature has:
+    \begin{choices}
+        \wrongchoice{more electrons per \si{\meter\cubed} in its conduction band than holes/\si{\meter\cubed} in its valence band}
+        \wrongchoice{more electrons per \si{\meter\cubed} in its conduction band than a typical metal}
+        \wrongchoice{more electrons per \si{\meter\cubed} in its valence band than at $T=\SI{0}{\kelvin}$}
+        \wrongchoice{more holes per \si{\meter\cubed} in its valence band than electrons/\si{\meter\cubed} in its valence band}
+      \correctchoice{none of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch41-q27}
+    For a metal at room temperature the temperature coefficient of resistivity is determined primarily by:
+    \begin{choices}
+        \wrongchoice{the number of electrons in the conduction band}
+        \wrongchoice{the number of impurity atoms}
+        \wrongchoice{the binding energy of outer shell electrons}
+      \correctchoice{collisions between conduction electrons and atoms}
+        \wrongchoice{none of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch41-q28}
+    For a pure semiconductor at room temperature the temperature coefficient of resistivity is determined primarily by:
+    \begin{choices}
+      \correctchoice{the number of electrons in the conduction band}
+        \wrongchoice{the number of replacement atoms}
+        \wrongchoice{the binding energy of outer shell electrons}
+        \wrongchoice{collisions between conduction electrons and atoms}
+        \wrongchoice{none of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch41-q29}
+    A certain material has a resistivity of \SI{7.8e3}{\ohm\meter} at room temperature and it increases as the temperature is raised by \SI{100}{\degreeCelsius}. 
+    The material is most likely:
+    \begin{choices}
+        \wrongchoice{a metal}
+        \wrongchoice{a pure semiconductor}
+      \correctchoice{a heavily doped semiconductor}
+        \wrongchoice{an insulator}
+        \wrongchoice{none of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch41-q30}
+    A certain material has a resistivity of \SI{7.8e3}{\ohm\meter} at room temperature and it decreases as the temperature is raised by \SI{100}{\degreeCelsius}. 
+    The material is most likely:
+    \begin{choices}
+        \wrongchoice{a metal}
+      \correctchoice{a pure semiconductor}
+        \wrongchoice{a heavily doped semiconductor}
+        \wrongchoice{an insulator}
+        \wrongchoice{none of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch41-q31}
+    A certain material has a resistivity of \SI{7.8e-8}{\ohm\meter} at room temperature and it increases as the temperature is raised by \SI{100}{\degreeCelsius}. 
+    The material is most likely:
+    \begin{choices}
+      \correctchoice{a metal}
+        \wrongchoice{a pure semiconductor}
+        \wrongchoice{a heavily doped semiconductor}
+        \wrongchoice{an insulator}
+        \wrongchoice{none of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch41-q32}
+    Donor atoms introduced into a pure semiconductor at room temperature:
+    \begin{choices}
+      \correctchoice{increase the number of electrons in the conduction band}
+        \wrongchoice{increase the number of holes in the valence band}
+        \wrongchoice{lower the Fermi level}
+        \wrongchoice{increase the electrical resistivity}
+        \wrongchoice{none of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch41-q33}
+    Acceptor atoms introduced into a pure semiconductor at room temperature:
+    \begin{choices}
+        \wrongchoice{increase the number of electrons in the conduction band}
+      \correctchoice{increase the number of holes in the valence band}
+        \wrongchoice{raise the Fermi level}
+        \wrongchoice{increase the electrical resistivity}
+        \wrongchoice{none of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch41-q34}
+    An acceptor replacement atom in silicon might have \rule[-0.1pt]{4em}{0.1pt} electrons in its outer shell.
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{3}
+        \wrongchoice{4}
+        \wrongchoice{5}
+        \wrongchoice{6}
+        \wrongchoice{7}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch41-q35}
+    A donor replacement atom in silicon might have \rule[-0.1pt]{4em}{0.1pt} electrons in its outer shell.
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{1}
+        \wrongchoice{2}
+        \wrongchoice{3}
+        \wrongchoice{4}
+      \correctchoice{5}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch41-q36}
+    A given doped semiconductor can be identified as $p$ or $n$ type by:
+    \begin{choices}
+        \wrongchoice{measuring its electrical conductivity}
+        \wrongchoice{measuring its magnetic susceptibility}
+        \wrongchoice{measuring its coefficient of resistivity}
+        \wrongchoice{measuring its heat capacity}
+      \correctchoice{performing a Hall effect experiment}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch41-q37}
+    The contact electric field in the depletion region of a $p$-$n$ junction is produced by:
+    \begin{choices}
+        \wrongchoice{electrons in the conduction band alone}
+        \wrongchoice{holes in the valence band alone}
+        \wrongchoice{electrons and holes together}
+      \correctchoice{charged replacement atoms}
+        \wrongchoice{an applied bias potential difference}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch41-q38}
+    For an unbiased $p$-$n$ junction,
+        the energy at the bottom of the conduction band on the $n$ side is:
+    \begin{choices}
+        \wrongchoice{higher than the energy at the bottom of the conduction band on the p side}
+      \correctchoice{lower than the energy at the bottom of the conduction band on the p side}
+        \wrongchoice{lower than the energy at the top of the valence band on the n side}
+        \wrongchoice{lower than the energy at the top of the valence band on the p side}
+        \wrongchoice{the same as the energy at the bottom of the conduction band on the p side}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch41-q39}
+    In an unbiased p-n junction:
+    \begin{choices}
+        \wrongchoice{the electric potential vanishes everywhere}
+        \wrongchoice{the electric field vanishes everywhere}
+        \wrongchoice{the drift current vanishes everywhere}
+        \wrongchoice{the diffusion current vanishes everywhere}
+      \correctchoice{the diffusion and drift currents cancel each other}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch41-q40}
+    Application of a forward bias to a $p$-$n$ junction:
+    \begin{choices}
+      \correctchoice{narrows the depletion zone}
+        \wrongchoice{increases the electric field in the depletion zone}
+        \wrongchoice{increases the potential difference across the depletion zone}
+        \wrongchoice{increases the number of donors on the n side}
+        \wrongchoice{decreases the number of donors on the n side}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch41-q41}
+    Application of a forward bias to a $p$-$n$ junction:
+    \begin{choices}
+        \wrongchoice{increases the drift current in the depletion zone}
+      \correctchoice{increases the diffusion current in the depletion zone}
+        \wrongchoice{decreases the drift current on the p side outside the depletion zone}
+        \wrongchoice{decreases the drift current on the n side outside the depletion zone}
+        \wrongchoice{does not change the current anywhere}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch41-q42}
+    When a forward bias is applied to a $p$-$n$ junction the concentration of electrons on the $p$ side:
+    \begin{choices}
+        \wrongchoice{increases slightly}
+      \correctchoice{increases dramatically}
+        \wrongchoice{decreases slightly}
+        \wrongchoice{decreases dramatically}
+        \wrongchoice{does not change}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch41-q43}
+    Which of the following is \emph{not} true when a back bias is applied to a $p$-$n$ junction?
+    \begin{choices}
+        \wrongchoice{Electrons flow from the $p$ to the $n$ side}
+      \correctchoice{Holes flow from the $p$ to the n side}
+        \wrongchoice{The electric field in the depletion zone increases}
+        \wrongchoice{The potential difference across the depletion zone increases}
+        \wrongchoice{The depletion zone narrows}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch41-q44}
+    Switch $S$ is closed to apply a potential difference $V$ across a $p$-$n$ junction as shown. 
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: circuitkz
+    \end{tikzpicture}
+    \end{center}
+    Relative to the energy levels of the n-type material,
+        with the switch open, the electron levels of the p-type material are:
+    \begin{choices}
+        \wrongchoice{unchanged}
+        \wrongchoice{lowered by the amount $\mathrm{e}^{-Ve/kT}$}
+      \correctchoice{lowered by the amount $Ve$}
+        \wrongchoice{raised by the amount $\mathrm{e}^{-Ve/kT}$}
+        \wrongchoice{raised by the amount $Ve$}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch41-q45}
+    A sinusoidal potential difference $V_{in}=V_m\sin\left(\omega t\right)$ is applied to the p-n junction as shown.
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE:
+    \end{tikzpicture}
+    \end{center}
+    Which graph correctly shows $V$ out as a function of time?
+    \begin{multicols}{2}
+    \begin{choices}
+        %% NOTE: ANS is E
+        \wrongchoice{
+            \begin{tikzpicture}
+            \end{tikzpicture}
+        }
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch41-q46}
+    In normal operation the current in a MOSFIT device is controlled by changing:
+    \begin{choices}
+        \wrongchoice{the number of donors and acceptors}
+      \correctchoice{the width of the depletion zone}
+        \wrongchoice{the size of the sample}
+        \wrongchoice{the density of electron states}
+        \wrongchoice{the temperature}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch41-q47}
+    ``LED'' stands for:
+    \begin{choices}
+        \wrongchoice{Less Energy Donated}
+        \wrongchoice{Light Energy Degrader}
+        \wrongchoice{Luminescent Energy Developer}
+        \wrongchoice{Laser Energy Detonator}
+        \wrongchoice{none of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch41-q48}
+    A light emitting diode emits light when:
+    \begin{choices}
+        \wrongchoice{electrons are excited from the valence to the conduction band}
+        \wrongchoice{electrons from the conduction band recombine with holes from the valence band}
+        \wrongchoice{electrons collide with atoms}
+        \wrongchoice{electrons are accelerated by the electric field in the depletion region}
+        \wrongchoice{the junction gets hot}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch41-q49}
+    The gap between the valence and conduction bands of a certain semiconductor is \SI{0.85}{\eV}.
+    When this semiconductor is used to form a light emitting diode,
+        the wavelength of the light emitted:
+    \begin{choices}
+        \wrongchoice{is in a range above \SI{1.5e-6}{\meter}}
+      \correctchoice{is in a range below \SI{1.5e-6}{\meter}m}
+        \wrongchoice{is always \SI{1.5e-6}{\meter}}
+        \wrongchoice{is in a range centered on \SI{1.5e-6}{\meter}}
+        \wrongchoice{has nothing to do with the gap}
+    \end{choices}
+\end{question}
+}
+
+
+\endinput
+
+

@@ -1,0 +1,366 @@
+
+%%--------------------------------------------------
+%% CPO: AMC Open Free Response Questions
+%%--------------------------------------------------
+
+
+%% Chapter 2: The Laws of Motion
+%%--------------------------------------------------
+
+
+%% CPO Short Answer Questions
+%%--------------------------------------------------
+\element{cpo-short}{
+\begin{question}{ch02-short-q01}
+    You are a passenger sitting in the right side of a traveling car.
+    The driver swerves to the left to avoid hitting a deer in the road.
+
+    What motion would you experience as the passenger in the car?
+    \AMCOpen{lines=3}{
+        \wrongchoice[W]{w}\scoring{0}
+        \wrongchoice[P]{p}\scoring{1}
+        \correctchoice[C]{c}\scoring{2}
+    }
+\end{question}
+}
+
+\element{cpo-short}{
+\begin{question}{ch02-short-q02}
+    You are a passenger sitting in the right side of a traveling car.
+    The driver swerves to the left to avoid hitting a deer in the road.
+
+    Using Newton's first law, explain your motion as a passenger in
+        the right side of the car.
+    \AMCOpen{lines=3}{
+        \wrongchoice[W]{w}\scoring{0}
+        \wrongchoice[P]{p}\scoring{1}
+        \correctchoice[C]{c}\scoring{2}
+    }
+\end{question}
+}
+
+\element{cpo-short}{
+\begin{question}{ch02-short-q03}
+    You are a passenger sitting in the right side of a traveling car.
+    The driver swerves to the left to avoid hitting a deer in the road.
+
+    Using Newton's second law, explain your motion as a passenger
+        in the right side of the car.
+    \AMCOpen{lines=3}{
+        \wrongchoice[W]{w}\scoring{0}
+        \wrongchoice[P]{p}\scoring{1}
+        \correctchoice[C]{c}\scoring{2}
+    }
+\end{question}
+}
+
+\element{cpo-short}{
+\begin{question}{ch02-short-q04}
+    Describe two ways in which the motion of a body could be changed
+        to cause it to accelerate.
+    Give an example of each.
+    \AMCOpen{lines=3}{
+        \wrongchoice[W]{w}\scoring{0}
+        \wrongchoice[P]{p}\scoring{1}
+        \correctchoice[C]{c}\scoring{2}
+    }
+\end{question}
+}
+
+\element{cpo-short}{
+\begin{question}{ch02-short-q05}
+    Describe the difference between a positive and a negative acceleration.
+    \AMCOpen{lines=3}{
+        \wrongchoice[W]{w}\scoring{0}
+        \wrongchoice[P]{p}\scoring{1}
+        \correctchoice[C]{c}\scoring{2}
+    }
+\end{question}
+}
+
+\element{cpo-short}{
+\begin{question}{ch02-short-q06}
+    When you throw a ball up in the air, it travels up and then stops
+        instantaneously before falling back down.
+    Describe its velocity and acceleration at the point where it
+        stops and changes direction to fall back down.
+    \AMCOpen{lines=3}{
+        \wrongchoice[W]{w}\scoring{0}
+        \wrongchoice[P]{p}\scoring{1}
+        \correctchoice[C]{c}\scoring{2}
+    }
+\end{question}
+}
+
+\element{cpo-short}{
+\begin{question}{ch02-short-q07}
+    When you drop a sheet of crumpled paper and a sheet of flat paper
+        off a table at the same time, why does the flat
+        sheet of paper hit the ground later?
+    \AMCOpen{lines=3}{
+        \wrongchoice[W]{w}\scoring{0}
+        \wrongchoice[P]{p}\scoring{1}
+        \correctchoice[C]{c}\scoring{2}
+    }
+\end{question}
+}
+
+\element{cpo-short}{
+\begin{question}{ch02-short-q08}
+    How can the distance a sprinter has run be determined from a graph
+        of the sprinter's speed versus time?
+    Assume the $x$-axis represents zero speed.
+    \AMCOpen{lines=3}{
+        \wrongchoice[W]{w}\scoring{0}
+        \wrongchoice[P]{p}\scoring{1}
+        \correctchoice[C]{c}\scoring{2}
+    }
+\end{question}
+}
+
+\element{cpo-short}{
+\begin{question}{ch02-short-q09}
+    The motion of a car is represented by a speed versus time graph.
+    The line of the graph slopes down from left to right.
+    What is the car doing?
+    \AMCOpen{lines=3}{
+        \wrongchoice[W]{w}\scoring{0}
+        \wrongchoice[P]{p}\scoring{1}
+        \correctchoice[C]{c}\scoring{2}
+    }
+\end{question}
+}
+
+%% CPO Problem Questions
+%%--------------------------------------------------
+\element{cpo-problem}{
+\begin{question}{ch02-problem-q01}
+    Tom pushes on a \SI{50}{\kilo\gram} box with a force of
+        \SI{25}{\newton}.
+    Assuming the surface on which the box moves is frictionless,
+        at what rate does the box accelerate?
+    \AMCOpen{lines=3}{
+        \wrongchoice[W]{w}\scoring{0}
+        \wrongchoice[P]{p}\scoring{1}
+        \correctchoice[C]{c}\scoring{2}
+    }
+    %% ANS: \SI{0.5}{\meter\per\second\squared}
+\end{question}
+}
+
+\element{cpo-problem}{
+\begin{question}{ch02-problem-q02}
+    Two body builders are involved in a weight lifting contest to
+        determine who is the stronger.
+    Ivan lifts \SI{480}{\pound}, Igor lifts \SI{2000}{\newton}.
+    Who is stronger?
+    \AMCOpen{lines=3}{
+        \wrongchoice[W]{w}\scoring{0}
+        \wrongchoice[P]{p}\scoring{1}
+        \correctchoice[C]{c}\scoring{2}
+    }
+    %% ANS: \SI{165}{\centi\meter}
+\end{question}
+}
+
+\element{cpo-problem}{
+\begin{question}{ch02-problem-q03}
+    In the graph below, the acceleration of an object is plotted against
+        the net force on the object.
+    What is the mass of the object?
+    \begin{center}
+        \begin{tikzpicture}
+            \begin{axis}[
+                axis y line=left,
+                axis x line=bottom,
+                axis line style={->},
+                ylabel={acceleration},
+                y unit=\si{\meter\per\second\squared},
+                ytick={0,1,2,3,4},
+                ymin=0,ymax=4.1,
+                xlabel={net force},
+                x unit=\si{\newton},
+                xtick={0,1,2,3,4,5,6},
+                xmin=0,xmax=6.1,
+                grid=major,
+                width=0.618\columnwidth,
+                height=0.5\columnwidth,
+                very thin,
+            ]
+            \addplot[black,line width=1pt,domain=0,6.1]{0.5 * x};
+            \end{axis}
+        \end{tikzpicture}
+    \end{center}
+    \AMCOpen{lines=3}{
+        \wrongchoice[W]{w}\scoring{0}
+        \wrongchoice[P]{p}\scoring{1}
+        \correctchoice[C]{c}\scoring{2}
+    }
+    %% ANS: \SI{2}{\kilo\gram}
+\end{question}
+}
+
+\element{cpo-problem}{
+\begin{question}{ch02-problem-q04}
+    An acorn falls from the top of an oak tree.
+    If it takes \SI{2}{\second} for the acorn to fall,
+        how tall is the tree?
+    \AMCOpen{lines=3}{
+        \wrongchoice[W]{w}\scoring{0}
+        \wrongchoice[P]{p}\scoring{1}
+        \correctchoice[C]{c}\scoring{2}
+    }
+    %% ANS: \SI{19.6}{\meter}
+\end{question}
+}
+
+\element{cpo-problem}{
+\begin{question}{ch02-problem-q05}
+    What is the average speed of a ball thrown downward with an initial
+        speed of \SI{4.9}{\meter\per\second} that falls for
+        \SI{0.5}{\second}?
+    How far does the ball fall?
+    \AMCOpen{lines=3}{
+        \wrongchoice[W]{w}\scoring{0}
+        \wrongchoice[P]{p}\scoring{1}
+        \correctchoice[C]{c}\scoring{2}
+    }
+    %% ANS: \SI{2.45}{\meter}
+\end{question}
+}
+
+\element{cpo-problem}{
+\begin{question}{ch02-problem-q06}
+    To support a mass of \SI{1.0}{\kilo\gram} on Earth
+        requires a force of \rule[-0.1pt]{4em}{0.1pt} pounds.
+    \AMCOpen{lines=3}{
+        \wrongchoice[W]{w}\scoring{0}
+        \wrongchoice[P]{p}\scoring{1}
+        \correctchoice[C]{c}\scoring{2}
+    }
+    %% ANS: \SI{1}{\mile}
+\end{question}
+}
+
+\element{cpo-problem}{
+\begin{question}{ch02-problem-q07}
+    What is the weight in newtons of a \SI{15}{\kilo\gram}
+        toddler on Earth?
+    \AMCOpen{lines=3}{
+        \wrongchoice[W]{w}\scoring{0}
+        \wrongchoice[P]{p}\scoring{1}
+        \correctchoice[C]{c}\scoring{2}
+    }
+    %% ANS: \SI{147}{\newton}
+\end{question}
+}
+
+\element{cpo-problem}{
+\begin{question}{ch02-problem-q08}
+    Use the graph representing the distance versus time for a car
+        moving in a straight line to find the speed of the car
+        from $t=\SI{2.0}{\second}$ to $t=\SI{4.0}{\second}$.
+    \begin{center}
+        \begin{tikzpicture}
+            \begin{axis}[
+                axis y line=left,
+                axis x line=bottom,
+                axis line style={->},
+                ylabel={distance},
+                y unit=\si{\meter},
+                ytick={0,10,20,30},
+                ymin=0,ymax=31,
+                xlabel={time},
+                x unit=\si{\second},
+                xtick={0,1,2,3,4,5,6},
+                xmin=0,xmax=6.1,
+                grid=major,
+                width=0.618\columnwidth,
+                height=0.5\columnwidth,
+                very thin,
+            ]
+            \addplot[black,line width=1pt,domain=0,2]{5* x};
+            \addplot[black,line width=1pt,domain=2,4]{10 + 10*(x-2)};
+            \addplot[black,line width=1pt,domain=4,6]{30};
+            \end{axis}
+        \end{tikzpicture}
+    \end{center}
+    \AMCOpen{lines=3}{
+        \wrongchoice[W]{w}\scoring{0}
+        \wrongchoice[P]{p}\scoring{1}
+        \correctchoice[C]{c}\scoring{2}
+    }
+    %% ANS: \SI{10}{\meter\per\second}
+\end{question}
+}
+
+\element{cpo-problem}{
+\begin{question}{ch02-problem-q09}
+    Below is a graph representing the distance versus time for 
+        an object moving in a straight line.
+    Identify the interval during which the car is not moving.
+    \begin{center}
+        \begin{tikzpicture}
+            \begin{axis}[
+                axis y line=left,
+                axis x line=bottom,
+                axis line style={->},
+                ylabel={position},
+                y unit=\si{\meter},
+                ytick={0,1,2,3,4},
+                ymin=0,ymax=4.1,
+                xlabel={time},
+                x unit=\si{\second},
+                xtick={0,1,2,3,4,5},
+                xmin=0,xmax=5.1,
+                grid=major,
+                width=0.618\columnwidth,
+                height=0.5\columnwidth,
+                very thin,
+            ]
+            \addplot[black,line width=1pt,domain=0,2]{x};
+            \addplot[black,line width=1pt,domain=2,4]{2};
+            \addplot[black,line width=1pt,domain=4,5]{2 - (x-4)};
+            \end{axis}
+        \end{tikzpicture}
+    \end{center}
+    \AMCOpen{lines=3}{
+        \wrongchoice[W]{w}\scoring{0}
+        \wrongchoice[P]{p}\scoring{1}
+        \correctchoice[C]{c}\scoring{2}
+    }
+    %% ANS: \SI{2}{\minute} to \SI{4}{\second}
+\end{question}
+}
+
+
+%% CPO Essay Questions
+%%--------------------------------------------------
+\element{cpo-essay}{
+\begin{question}{ch02-essay-q01}
+    Explain the difference between mass and the weight of an object.
+    \AMCOpen{lines=3}{
+        \wrongchoice[W]{w}\scoring{0}
+        \wrongchoice[P]{p}\scoring{1}
+        \correctchoice[C]{c}\scoring{2}
+    }
+\end{question}
+}
+
+\element{cpo-essay}{
+\begin{question}{ch02-essay-q02}
+    The law of inertia states that no force is required to maintain the motion
+        of a moving object.
+    Explain why you must continue to pedal your bicycle even on a level surface
+        to keep moving.
+    \AMCOpen{lines=3}{
+        \wrongchoice[W]{w}\scoring{0}
+        \wrongchoice[P]{p}\scoring{1}
+        \correctchoice[C]{c}\scoring{2}
+    }
+\end{question}
+}
+
+\endinput
+
+

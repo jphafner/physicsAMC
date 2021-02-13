@@ -1,0 +1,339 @@
+%%
+%% Copyright (C) 2014 Jeffrey P. Hafner <jphafner@buffalo.edu>
+%%  
+%%  This program is free software: you can redistribute it and/or modify
+%%  it under the terms of the GNU General Public License as published by
+%%  the Free Software Foundation, either version 3 of the License, or
+%%  (at your option) any later version.
+%%  
+%%  This program is distributed in the hope that it will be useful,
+%%  but WITHOUT ANY WARRANTY; without even the implied warranty of
+%%  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+%%  GNU General Public License for more details.
+%%  
+%%  You should have received a copy of the GNU General Public License
+%%  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+%%
+
+
+\documentclass[
+    11pt,
+]{scrartcl}
+
+\usepackage{AMCfull}
+\newlength{\mylen}
+\usepackage{fp}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+%\graphicspath{{./qbank/collegeBoard/gfx/}}
+\graphicspath{{./qbank/nysed/gfx/}}
+
+\AMCnumericOpts{
+    hspace=1ex,vspace=1ex,
+    vertical=true,reverse=false,
+}
+
+%% Begin Document
+%%------------------------------------------------
+\begin{document}
+
+%\def\AMCntextGoto{\par{\bfseries\emph{Please code the answer on the separate answer sheet.}}}
+
+\element{animals}{
+\begin{figure}[p]
+  \centering
+  %\includegraphics[width=.6\linewidth]{tiger}
+  \caption{An animal}
+  \AMClabel{tiger}
+\end{figure}
+\begin{question}{tiger}
+    Which is the animal on figure~\AMCref{tiger} page~\AMCpageref{tiger}?
+  \begin{choices}
+  \correctchoice{A tiger}
+    \wrongchoice{A giraffe}
+    \wrongchoice{An elephant}
+    \wrongchoice{A cat}
+  \end{choices}
+\end{question}
+}
+
+\element{animals}{
+\begin{questionmultx}{sqrt}
+    \FPeval\VQa{trunc(5+random*15,0)}
+    \FPeval\VQs{VQa^0.5}
+    Compute $\sqrt{\VQa}$ and round it with two digits after period.
+    \AMCnumericChoices{\VQs}{
+        digits=3,decimals=2,sign=true,
+        borderwidth=0pt,backgroundcol=lightgray,approx=5
+    }
+\end{questionmultx}
+}
+
+
+\element{animals}{
+\begin{question}{inverse}
+    \pgfmathrandominteger{\x}{1}{50}
+    How much is the reciprocal of $x=\x$?
+    \begin{choices}
+      \correctchoice{\pgfmathparse{1/\x}\pgfmathresult}
+        \wrongchoice{\pgfmathparse{1/(\x +1))}\pgfmathresult}
+        \wrongchoice{\pgfmathparse{cos(\x)} \pgfmathresult}
+        \wrongchoice{\pgfmathparse{\x^(-0.5)}\pgfmathresult}
+    \end{choices}
+\end{question}
+}
+
+\element{animals}{
+\begin{question}{inverse3}
+    \pgfmathrandominteger{\x}{1}{50}
+    \pgfkeys{/pgf/number format/.cd,fixed,fixed zerofill,precision=3,use comma}
+    How much is the reciprocal of $x=\pgfmathprintnumber{\x}$?
+    \begin{choices}
+        \correctchoice{\pgfmathparse{1/\x}\pgfmathprintnumber{\pgfmathresult}}
+        \wrongchoice{\pgfmathparse{1/(\x +1))} \pgfmathprintnumber{\pgfmathresult}}
+        \wrongchoice{\pgfmathparse{cos(\x)} \pgfmathprintnumber{\pgfmathresult}}
+        \wrongchoice{\pgfmathparse{\x^(-0.5)} \pgfmathprintnumber{\pgfmathresult}}
+    \end{choices}
+\end{question}
+}
+
+\element{animals}{
+\begin{questionmult}{graph}
+  Let us consider the three functions which graphs are plotted below:
+  \pgfmathrandominteger{\a}{2}{4}
+  \begin{center}
+  \begin{tikzpicture}[domain=0:4]
+    \draw[very thin,color=gray] (-0.1,-4.1) grid (3.9,3.9);
+    \draw[->] (-0.2,0) -- (4.2,0) node[right] {$x$};
+    \draw[->] (0,-4.2) -- (0,4.2) node[above] {$f(x)$};
+    \draw[color=red] plot (\x,{(1+\a/4)*\x-\a}) node[right] {$f_{1} (x)$};
+    \draw[color=blue] plot (\x,{\a*sin(\x r)}) node[right] {$f_{2}(x)$};
+    \draw[color=orange] plot (\x,{\a*cos(\x r)}) node[right] {$f_{3}(x)$};
+  \end{tikzpicture}
+  \end{center}
+  Then:
+  \begin{choices}
+    \pgfmathrandominteger{\x0}{2}{4}
+    \correctchoice{$f_{2}(\x0)$=\pgfmathparse{\a*sin(\x0 r)} \pgfmathprintnumber{\pgfmathresult}.}
+    \correctchoice{$f_{3}(\x0)$=\pgfmathparse{\a*cos(\x0 r)} \pgfmathprintnumber{\pgfmathresult}.}
+    \wrongchoice{La fonction $f_{1}(x)$ est une fonction linéaire.}
+  \end{choices}
+\end{questionmult}
+}
+
+\element{animals}{
+\directlua{math.randomseed (2048)}
+\directlua{a=math.random()}
+\begin{question}{square-root}
+  How much is the square root of \directlua{tex.print(a)}?
+  \begin{choices}
+  \correctchoice{\directlua{tex.print(math.sqrt(a))}}
+    \wrongchoice{\directlua{tex.print(math.sqrt(2*a))}}
+    \wrongchoice{\directlua{tex.print(math.sqrt(a*1.001))}}
+  \end{choices}
+\end{question}
+}
+
+
+%% Begin Quiz
+%%------------------------------------------------
+\begin{examcopy}[1]
+
+%\input{../qbank/motion_in_1d/ref.tex}
+
+\begin{center}
+    Physics at Mergenthaler Topic Assessment
+\end{center}
+\noindent
+\begin{minipage}{10.2em}
+    \begin{center}
+        Student ID Number:
+    \end{center}
+    \vspace{-0.50em}
+    \AMCcode{StudentNum}{7}
+\end{minipage}
+\setlength{\mylen}{\textwidth}
+\addtolength{\mylen}{-10.5em}
+\begin{minipage}{\mylen}
+    \begin{center}
+        \namefield{\fbox{
+            \begin{minipage}{0.98\mylen}
+                Last and First Name:
+                \vspace*{7mm}\dotfill
+                \vspace*{1mm}
+            \end{minipage}
+        }}
+    \end{center}
+    \begin{multicols}{2}
+        \begin{center}
+            \bfseries Instructions:
+        \end{center}
+        \vspace{-0.5\baselineskip}
+        Please use only a pencil on this form.
+        Do not make stray marks on this form.
+        Print your last and first name in the box provided above.
+        Enter your Mergenthaler student ID number by filling in
+            the appropriate ovals to the left.
+        Enter your chosen selection for each question on this
+            form by filling in your selected oval beneath each question.
+        %\indent{}\emph{Please note:} This form has a front and back side.
+        Questions using the sign \multiSymbole{} may have
+            zero, one or several correct answers.
+        Other questions have a single correct answer.
+        %You will be provided with fifteen ($15$) minutes to complete.
+        Correct answers will receive \num{5} points,
+            while incorrect answers will receive \num{-1} points.
+        It is in your best interest to not guess on any of the questions.
+        \emph{Good Luck!}
+        %\begin{center}
+        %    \bfseries Definitions of select US Customary Units
+        %\end{center}
+        %\vspace{-1.00\baselineskip}
+        %\begin{align*}
+        %        \SI{1}{lb} &\equiv \SI{0.45359237}{\kilo\gram} \\
+        %        \SI{1}{mile} &\equiv \SI{5280}{feet} \\
+        %        \SI{1}{inch} &\equiv \SI{2.54}{\centi\meter} \\
+        %        \SI{1}{gallon} &\equiv \SI{3.785 411 784}{\liter} \\
+        %\end{align*}
+    \end{multicols}
+\end{minipage}
+
+\vspace{0.5\baselineskip}
+\hrule
+\vspace{0.5\baselineskip}
+
+\begin{multicols}{2}
+    \insertgroup{animals}
+
+    \begin{question}{inverse}
+      \pgfmathrandominteger{\x}{1}{50}
+           
+      How much is the reciprocal of $x=\x$?
+
+      \begin{choices}
+        \correctchoice{\pgfmathparse{1/\x}\pgfmathresult }
+        \wrongchoice{\pgfmathparse{1/(\x +1))}\pgfmathresult}
+        \wrongchoice{\pgfmathparse{cos(\x)} \pgfmathresult}
+        \wrongchoice{\pgfmathparse{\x^(-0.5)}\pgfmathresult}
+      \end{choices}
+    \end{question}
+
+    \begin{questionmultx}{sqrt}
+        \FPeval\VQa{trunc(5+random*15,0)}
+        \FPeval\VQs{VQa^0.5}
+        %\AMCnumericChoices{\VQs}{digits=3,decimals=2,sign=true,
+        %               borderwidth=0pt,backgroundcol=lightgray,approx=5}
+        %\AMCnumericChoices{\VQs}{digits=5,decimals=2,sign=true,
+        %             borderwidth=0pt,backgroundcol=white,approx=5,vertical=true}
+       %\AMCnumericChoices{\VQs}{sign=true,digits=5,decimals=2,scoreexact=3,base=10}
+        \AMCnumericChoices{\VQs}{sign=true,digits=5,decimals=2,scoreexact=3,base=10,vertical=false}
+      \end{questionmultx}
+
+    \directlua{b=500}
+    \directlua{c=110}
+    \directlua{d=75}
+    \directlua{e=(c*b)/(d+c)}
+
+    \begin{questionmultx}{this}
+        Two cities are \SI{\directlua{tex.print(b)}}{\kilo\meter} apart.
+        Car A starts at City A and heads towards City B at a constant
+            speed of \SI{\directlua{tex.print(c)}}{\kilo\meter\per\hour}.
+        Car B starts at City B and heads towards City A at a constant
+            speed of \SI{\directlua{tex.print(d)}}{\kilo\meter\per\hour}.
+        How far are the two cars from City A when they pass each other?
+        %\directlua{tex.print(e)}
+
+        \begin{quote}
+        Please enter the significand, $a$, and exponent, $b$,
+            of your answer in normalized scientific form,
+            $a \times 10^b$, in the provided space.
+        \end{quote}
+
+        \AMCnumericChoices{\directlua{tex.print(e)}}{
+            vertical=false,
+            digits=3,decimals=2,sign=true,Tsign=\hspace{1ex}\Large a,
+            borderwidth=0pt,backgroundcol=white,approx=5}
+        \AMCnumericChoices{\directlua{tex.print(e)}}{
+            vertical=false,
+            digits=2,decimals=0,sign=true,Tsign=\hspace{1ex}\Large b,
+            borderwidth=0pt,backgroundcol=white,approx=5}
+    \end{questionmultx}
+
+    \newcommand\onegrid{
+        \begin{tikzpicture}
+            %\draw[step=0.5cm] (-3,-3) grid (5,5);
+            \draw[step=0.5cm] (0,0) grid (8,8);
+        \end{tikzpicture}
+    }
+    \begin{questionmultx}{drawing}
+       Draw something on this grid.
+       This is a lot of text.
+       This is a lot of text.
+       This is a lot of text.
+       This is a lot of text.
+       This is a lot of text.
+       \AMCOpen{contentcommand=onegrid}{\wrongchoice[F]{f}\scoring{0}\correctchoice[J]{j}\scoring{2}}
+    \end{questionmultx}
+
+    \directlua{math.randomseed (2048)}
+    \directlua{a=math.random()}
+
+    \begin{question}{square-root}
+      How much is the square root of \directlua{tex.print(a)}?
+      \begin{choices}
+      \correctchoice{\directlua{tex.print(math.sqrt(a))}} 
+        \wrongchoice{\directlua{tex.print(math.sqrt(2*a))}} 
+        \wrongchoice{\directlua{tex.print(math.sqrt(a*1.001))}} 
+      \end{choices}
+    \end{question}
+
+    \begin{question}{inf-expo-indep}
+      \FPeval\VQa{trunc(2 + random * 4,0)}
+      \FPeval\VQb{trunc(6 + random * 5,0)}
+      \FPeval\VQr{VQa/(VQa+VQb)}
+      Let $X$ and $Y$ be two independent random variables,
+         following the exponential distribution with
+         respective parameters \VQa{} et \VQb{}.
+      To which interval does the probability $\mathbb{P}[X<Y]$ belong?
+      \begin{multicols}{3}
+        \begin{choices}[o]
+          \AMCIntervals{\VQr}{0}{1}{0.3}
+          %% 1. The correct answer,
+          %% 2. The left point of the first interval,
+          %% 3. The right point of the last interval,
+          %% 4. The length of each interval.
+        \end{choices}
+      \end{multicols}
+    \end{question}
+
+    \begin{questionmult}{graph}
+      Let us consider the three functions which graphs are plotted below:
+      \pgfmathrandominteger{\a}{2}{4}  
+      \begin{center}
+        \begin{tikzpicture}[domain=0:4]
+          \draw[very thin,color=gray] (-0.1,-4.1) grid (3.9,3.9);
+          \draw[->] (-0.2,0) -- (4.2,0) node[right] {$x$};
+          \draw[->] (0,-4.2) -- (0,4.2) node[above] {$f(x)$};
+          \draw[color=red] plot (\x,{(1+\a/4)*\x-\a}) node[right] {$f_{1} (x)$};
+          \draw[color=blue] plot (\x,{\a*sin(\x r)}) node[right] {$f_{2}(x)$};
+          \draw[color=orange] plot (\x,{\a*cos(\x r)}) node[right] {$f_{3}(x)$};
+        \end{tikzpicture}
+      \end{center}
+      Then:
+      \begin{choices}
+        \pgfmathrandominteger{\x0}{2}{4}  
+        \correctchoice{$f_{2}(\x0)$=\pgfmathparse{\a*sin(\x0 r)} \pgfmathprintnumber{\pgfmathresult}.}
+        \correctchoice{$f_{3}(\x0)$=\pgfmathparse{\a*cos(\x0 r)} \pgfmathprintnumber{\pgfmathresult}.}
+        \wrongchoice{La fonction $f_{1}(x)$ est une fonction linéaire.}
+      \end{choices}
+    \end{questionmult}
+\end{multicols}
+
+\clearpage
+%%separateanswersheet
+\AMCformBegin
+\AMCform
+\end{examcopy}
+\end{document}
+

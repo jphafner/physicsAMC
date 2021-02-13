@@ -1,0 +1,671 @@
+
+%%--------------------------------------------------
+%% Halliday: Fundamentals of Physics
+%%--------------------------------------------------
+
+
+%% Chapter 23: Gauss' Law
+%%--------------------------------------------------
+
+
+%% Learning Objectives
+%%--------------------------------------------------
+
+%% 23.01: Identify that Gauss' law relates the electric field at points on a closed surface (real or imaginary, said to be a Gaussian surface) to the net charge enclosed by that surface.
+%% 23.02: Identify that the amount of electric field piercing a surface (not skimming along the surface) is the electric flux through the surface.
+%% 23.03: Identify that an area vector for a flat surface is a vector that is perpendicular to the surface and that has a magnitude equal to the area of the surface.
+%% 23.04: Identify that any surface can be divided into area elements (patch elements) that are each small enough and flat enough for an area vector $d\vec{A}$ to be assigned to it, with the vector perpendicular to the element and having a magnitude equal to the area of the element.
+%% 23.05: Calculate the flux $\Phi$ through a surface by integrating the dot product of the electric field vector $\vec{E}$ and the area vector $d\vec{A}$ (for patch elements) over the surface, in magnitude-angle notation and unit-vector notation.
+%% 23.06: For a closed surface, explain the algebraic signs associated with inward flux and outward flux.
+%% 23.07: Calculate the net flux $\Phi$ through a closed surface, algebraic sign included, by integrating the dot product of the electric field vector $\vec{E}$ and the area vector dA (for patch elements) over the full surface.
+%% 23.08: Determine whether a closed surface can be broken up into parts (such as the sides of a cube) to simplify the integration that yields the net flux through the surface.
+
+
+%% Halliday Multiple Choice Questions
+%%--------------------------------------------------
+\element{halliday-mc}{
+\begin{question}{halliday-ch23-q01}
+    A total charge of \SI{6.3e-8}{\coulomb} is distributed uniformly throughout a \SI{2.7}{\centi\meter} radius sphere. 
+    The volume charge density is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{3.7e-7}{\coulomb\per\meter\cubed}}
+        \wrongchoice{\SI{6.9e-6}{\coulomb\per\meter\cubed}}
+        \wrongchoice{\SI{6.9e-6}{\coulomb\per\meter\squared}}
+        \wrongchoice{\SI{2.5e-4}{\coulomb\per\meter\cubed}}
+      \correctchoice{\SI{7.6e-4}{\coulomb\per\meter\cubed}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch23-q02}
+    Charge is placed on the surface of a \SI{2.7}{\centi\meter} radius isolated conducting sphere. 
+    The surface charge density is uniform and has the value \SI{6.9e-6}{\coulomb\per\meter\squared}.
+    The total charge on the sphere is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{5.6e-10}{\coulomb}}
+        \wrongchoice{\SI{2.1e-8}{\coulomb}}
+        \wrongchoice{\SI{4.7e-8}{\coulomb}}
+      \correctchoice{\SI{6.3e-8}{\coulomb}}
+        \wrongchoice{\SI{9.5e-3}{\coulomb}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch23-q03}
+    A spherical shell has an inner radius of \SI{3.7}{\centi\meter} and an outer radius of \SI{4.5}{\centi\meter}. 
+    If charge is distributed uniformly throughout the shell with a volume density of \SI{6.1e-4}{\coulomb\per\meter\cubed} the total charge is:
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{\SI{1.0e-7}{\coulomb}}
+        \wrongchoice{\SI{1.3e-7}{\coulomb}}
+        \wrongchoice{\SI{2.0e-7}{\coulomb}}
+        \wrongchoice{\SI{2.3e-7}{\coulomb}}
+        \wrongchoice{\SI{4.0e-7}{\coulomb}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch23-q04}
+    A cylinder has a radius of \SI{2.1}{\centi\meter} and a length of \SI{8.8}{\centi\meter}.
+    Total charge \SI{6.1e-7}{\coulomb} is distributed uniformly throughout. 
+    The volume charge density is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{5.3e-5}{\coulomb\per\meter\cubed}}
+        \wrongchoice{\SI{5.3e-5}{\coulomb\per\meter\squared}}
+        \wrongchoice{\SI{8.5e-4}{\coulomb\per\meter\cubed}}
+      \correctchoice{\SI{5.0e-3}{\coulomb\per\meter\cubed}}
+        \wrongchoice{\SI{6.3e-2}{\coulomb\per\meter\cubed}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch23-q05}
+    When a piece of paper is held with one face perpendicular to a uniform electric field the flux through it is \SI{25}{\newton\meter\squared\per\coulomb}.
+    When the paper is turned \ang{25} with respect to the field the flux through it is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{zero}
+        \wrongchoice{\SI{12}{\newton\meter\squared\per\coulomb}}
+        \wrongchoice{\SI{21}{\newton\meter\squared\per\coulomb}}
+      \correctchoice{\SI{23}{\newton\meter\squared\per\coulomb}}
+        \wrongchoice{\SI{25}{\newton\meter\squared\per\coulomb}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch23-q06}
+    The flux of the electric field
+        $\left(\SI{24}{\newton\per\coulomb}\right)\hat{\imath} + \left(\SI{30}{\newton\per\coulomb}\right)\hat{\jmath} + \left(\SI{16}{\newton\per\coulomb}\right)\hat{k}$ through a \SI{2.0}{\meter\squared} portion of the $yz$ plane is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{32}{\newton\meter\squared\per\coulomb}}
+        \wrongchoice{\SI{34}{\newton\meter\squared\per\coulomb}}
+        \wrongchoice{\SI{42}{\newton\meter\squared\per\coulomb}}
+      \correctchoice{\SI{48}{\newton\meter\squared\per\coulomb}}
+        \wrongchoice{\SI{60}{\newton\meter\squared\per\coulomb}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch23-q07}
+    Consider Gauss’s law: $\oint \vec{E}\cdot\mathrm{d}\vec{A} = \dfrac{q}{\epsilon_0}$.
+    Which of the following is true?
+    \begin{choices}
+        \wrongchoice{$\vec{E}$ must be the electric field due to the enclosed charge}
+        \wrongchoice{If $q=0$, then $\vec{E}=0$ everywhere on the Gaussian surface}
+      \correctchoice{If the three particles inside have charges of $+q$, $+q$, and $-2q$, then the integral is zero}
+        \wrongchoice{on the surface $\vec{E}$ is everywhere parallel to $\mathrm{d}\vec{A}$}
+        \wrongchoice{If a charge is placed outside the surface, then it cannot affect $\vec{E}$ at any point on the surface}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch23-q08}
+    A charged point particle is placed at the center of a spherical Gaussian surface.
+    The electric flux $\Phi_E$ is changed if:
+    \begin{choices}
+        \wrongchoice{the sphere is replaced by a cube of the same volume}
+        \wrongchoice{the sphere is replaced by a cube of one-tenth the volume}
+        \wrongchoice{the point charge is moved off center (but still inside the original sphere)}
+      \correctchoice{the point charge is moved to just outside the sphere}
+        \wrongchoice{a second point charge is placed just outside the sphere}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch23-q09}
+    Choose the \emph{incorrect} statement:
+    \begin{choices}
+        \wrongchoice{Gauss' law can be derived from Coulomb's law}
+        \wrongchoice{Gauss' law states that the net number of lines crossing any closed surface in an outward direction is proportional to the net charge enclosed within the surface}
+        \wrongchoice{Coulomb's law can be derived from Gauss' law and symmetry}
+        \wrongchoice{Gauss' law applies to a closed surface of any shape}
+      \correctchoice{According to Gauss' law, if a closed surface encloses no charge, then the electric field must vanish everywhere on the surface}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch23-q10}
+    The outer surface of the cardboard center of a paper towel roll:
+    \begin{choices}
+        \wrongchoice{is a possible Gaussian surface}
+        \wrongchoice{cannot be a Gaussian surface because it encloses no charge}
+        \wrongchoice{cannot be a Gaussian surface since it is an insulator}
+      \correctchoice{cannot be a Gaussian surface because it is not a closed surface}
+        \wrongchoice{none of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch23-q11}
+    A physics instructor in an anteroom charges an electrostatic generator to \SI{25}{\micro\coulomb},
+        then carries it into the lecture hall. 
+    The net electric flux in N · m 2 /C through the lecture hall walls is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{zero}
+        %% changed 25e-6 to 2.5e-5
+        \wrongchoice{\SI{2.5e-5}{\newton\meter\squared\per\coulomb}}
+        \wrongchoice{\SI{2.2e5}{\newton\meter\squared\per\coulomb}}
+      \correctchoice{\SI{2.8e6}{\newton\meter\squared\per\coulomb}}
+        \wrongchoice{can not tell unless the lecture hall dimensions are given}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch23-q12}
+    A point particle with charge $q$ is placed inside the cube but not at its center. 
+    The electric flux through any one side of the cube:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{is zero}
+        \wrongchoice{is $\dfrac{q}{\epsilon_0}$}
+        \wrongchoice{is $\dfrac{q}{4\epsilon_0}$}
+        \wrongchoice{is $\dfrac{q}{6\epsilon_0}$}
+      \correctchoice{cannot be computed using Gauss' law}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch23-q13}
+    A particle with charge \SI{5.0}{\micro\coulomb} is placed at the corner of a cube. 
+    The total electric flux through all sides of the cube is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{zero}
+        \wrongchoice{\SI{7.1e4}{\newton\meter\squared\per\coulomb}}
+        \wrongchoice{\SI{9.4e4}{\newton\meter\squared\per\coulomb}}
+        \wrongchoice{\SI{1.4e5}{\newton\meter\squared\per\coulomb}}
+      \correctchoice{\SI{5.6e5}{\newton\meter\squared\per\coulomb}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch23-q14}
+    A point particle with charge $q$ is at the center of a Gaussian surface in the form of a cube. 
+    The electric flux through any one face of the cube is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\dfrac{q}{\epsilon_0}$}
+        \wrongchoice{$\dfrac{q}{4\pi\epsilon_0}$}
+        \wrongchoice{$\dfrac{q}{3\epsilon_0}$}
+      \correctchoice{$\dfrac{q}{6\epsilon_0}$}
+        \wrongchoice{$\dfrac{q}{12\epsilon_0}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch23-q15}
+    The table below gives the electric flux in N · m 2 /C through the ends and round surfaces of four Gaussian surfaces in the form of cylinders. 
+    %% Table
+    Rank the cylinders according to the charge inside,
+        from the most negative to the most positive.
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{1, 2, 3, 4}
+        \wrongchoice{4, 3, 2, 1}
+        \wrongchoice{3, 4, 2, 1}
+        \wrongchoice{3, 1, 4, 2}
+      \correctchoice{4, 3, 1, 2}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch23-q16}
+    A conducting sphere of radius \SI{0.01}{\meter} has a charge of \SI{1.0e-9}{\coulomb} deposited on it.
+    The magnitude of the electric field just outside the surface of the sphere is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{0}{\newton\per\coulomb}}
+        \wrongchoice{\SI{450}{\newton\per\coulomb}}
+      \correctchoice{\SI{900}{\newton\per\coulomb}}
+        \wrongchoice{\SI{4500}{\newton\per\coulomb}}
+        \wrongchoice{\SI{90 000}{\newton\per\coulomb}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch23-q17}
+    A round wastepaper basket with a \SI{0.15}{\meter} radius opening is in a uniform electric field of \SI{300}{\newton\per\coulomb},
+        perpendicular to the opening. 
+    The total flux through the sides and bottom is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{0}{\newton\meter\squared\per\coulomb}}
+        \wrongchoice{\SI{4.2}{\newton\meter\squared\per\coulomb}}
+      \correctchoice{\SI{21}{\newton\meter\squared\per\coulomb}}
+        \wrongchoice{\SI{280}{\newton\meter\squared\per\coulomb}}
+        \wrongchoice{can not tell without knowing the areas of the sides and bottom}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch23-q18}
+    Ten coulombs of charge are placed on a spherical conducting shell. 
+    A particle with a charge of \SI{-3}{\coulomb} is placed at the center of the cavity. 
+    The net charge on the inner surface of the shell is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{-7}{\coulomb}}
+        \wrongchoice{\SI{-3}{\coulomb}}
+        \wrongchoice{\SI{0}{\coulomb}}
+      \correctchoice{\SI{+3}{\coulomb}}
+        \wrongchoice{\SI{+7}{\coulomb}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch23-q19}
+    Ten coulombs of charge are placed on a spherical conducting shell. 
+    A particle with a charge of \SI{-3}{\coulomb} is placed at the center of the cavity. 
+    The net charge on the outer surface of the shell is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{-7}{\coulomb}}
+        \wrongchoice{\SI{-3}{\coulomb}}
+        \wrongchoice{\SI{0}{\coulomb}}
+        \wrongchoice{\SI{+3}{\coulomb}}
+      \correctchoice{\SI{+7}{\coulomb}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch23-q20}
+    A \SI{30}{\newton\per\coulomb} uniform electric field points perpendicularly toward the left face of a large neutral conducting sheet. 
+    The surface charge density on the left and right faces, respectively, are:
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{\SI{2.7e-9}{\coulomb\per\meter\squared}; \SI{+2.7e-9}{\coulomb\per\meter\squared}}
+        \wrongchoice{\SI{2.7e-9}{\coulomb\per\meter\squared}; \SI{-2.7e-9}{\coulomb\per\meter\squared}}
+        \wrongchoice{\SI{5.3e-9}{\coulomb\per\meter\squared}; \SI{+5.3e-9}{\coulomb\per\meter\squared}}
+        \wrongchoice{\SI{5.3e-9}{\coulomb\per\meter\squared}; \SI{-5.3e-9}{\coulomb\per\meter\squared}}
+        \wrongchoice{zero; zero}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch23-q21}
+    A solid insulating sphere of radius $R$ contains positive charge that is distributed with a volume charge density that does not depend on angle but does increase with distance from the sphere center. 
+    Which of the graphs below might give the magnitude $E$ of the electric field as a function of the distance $r$ from the center of the sphere?
+    \begin{multicols}{2}
+    \begin{choices}
+        %% ANS is D
+        \wrongchoice{
+            \begin{tikzpicture}
+                %% NOTE: pgfplots
+            \end{tikzpicture}
+        }
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch23-q22}
+    Which of the following graphs represents the magnitude of the electric field as a function of the distance from the center of a solid charged conducting sphere of radius $R$?
+    \begin{multicols}{2}
+    \begin{choices}
+        %% ANS is E
+        \wrongchoice{
+            \begin{tikzpicture}
+                %% NOTE: pgfplots
+            \end{tikzpicture}
+        }
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch23-q23}
+    Charge $Q$ is distributed uniformly throughout an insulating sphere of radius $R$. 
+    The magnitude of the electric field at a point $R/2$ from the center is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{$\dfrac{Q}{4\pi\epsilon_0 R^2}$}
+        \wrongchoice{$\dfrac{Q}{\pi\epsilon_0 R^2}$}
+        \wrongchoice{$\dfrac{3Q}{4\pi\epsilon_0 R^2}$}
+      \correctchoice{$\dfrac{Q}{8\pi\epsilon_0 R^2}$}
+        \wrongchoice{none of provided}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch23-q24}
+    Positive charge $Q$ is distributed uniformly throughout an insulating sphere of radius $R$,
+        centered at the origin. 
+    A particle with positive charge $Q$ is placed at $x=2R$ on the $x$ axis. 
+    The magnitude of the electric field at $x=R/2$ on the $x$ axis is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{$\dfrac{Q}{4\pi\epsilon_0 R^2}$}
+        \wrongchoice{$\dfrac{Q}{8\pi\epsilon_0 R^2}$}
+      \correctchoice{$\dfrac{Q}{72\pi\epsilon_0 R^2}$}
+        \wrongchoice{$\dfrac{17Q}{72\pi\epsilon_0 R^2}$}
+        \wrongchoice{none of provided}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch23-q25}
+    Charge $Q$ is distributed uniformly throughout a spherical insulating shell. 
+    The net electric flux, in SI units, through the inner surface of the shell is:
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{zero}
+        \wrongchoice{$\dfrac{Q}{\epsilon_0}$}
+        \wrongchoice{$\dfrac{2Q}{\epsilon_0}$}
+        \wrongchoice{$\dfrac{Q}{4\pi\epsilon_0}$}
+        \wrongchoice{$\dfrac{Q}{2\pi\epsilon_0}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch23-q26}
+    Charge $Q$ is distributed uniformly throughout a spherical insulating shell. 
+    The net electric flux, in SI units, through the outer surface of the shell is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{zero}
+      \correctchoice{$\dfrac{Q}{\epsilon_0}$}
+        \wrongchoice{$\dfrac{2Q}{\epsilon_0}$}
+        \wrongchoice{$\dfrac{Q}{4\epsilon_0}$}
+        \wrongchoice{$\dfrac{Q}{2\pi\epsilon_0}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch23-q27}
+    A \SI{3.5}{\centi\meter} radius hemisphere contains a total charge of \SI{6.6e-7}{\coulomb}.
+    The flux through the rounded portion of the surface is \SI{9.8e4}{\newton\meter\squared\per\coulomb}.
+    The flux through the flat base is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{zero}
+        \wrongchoice{\SI{+2.3e4}{\newton\meter\squared\per\coulomb}}
+        \wrongchoice{\SI{-2.3e4}{\newton\meter\squared\per\coulomb}}
+        \wrongchoice{\SI{-9.8e4}{\newton\meter\squared\per\coulomb}}
+        \wrongchoice{\SI{+9.8e4}{\newton\meter\squared\per\coulomb}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch23-q28}
+    Charge is distributed uniformly along a long straight wire. 
+    The electric field \SI{2}{\centi\meter} from the wire is \SI{20}{\newton\per\coulomb}.
+    The electric field \SI{4}{\centi\meter} from the wire is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{120}{\coulomb\per\coulomb}}
+        \wrongchoice{\SI{80}{\coulomb\per\coulomb}}
+        \wrongchoice{\SI{40}{\coulomb\per\coulomb}}
+      \correctchoice{\SI{10}{\coulomb\per\coulomb}}
+        \wrongchoice{\SI{5}{\coulomb\per\coulomb}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch23-q29}
+    Positive charge $Q$ is placed on a conducting spherical shell with inner radius $R_1$ and outer radius $R_2$. 
+    A particle with charge $q$ is placed at the center of the cavity. 
+    The magnitude of the electric field at a point in the cavity,
+        a distance $r$ from the center, is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{zero}
+        \wrongchoice{$\dfrac{Q}{4\pi\epsilon_0 R_1^2}$}
+      \correctchoice{$\dfrac{q}{4\pi\epsilon_0 r^2}$}
+        \wrongchoice{$\dfrac{q+Q}{4\pi\epsilon_0 r^2}$}
+        \wrongchoice{$\dfrac{q+Q}{4\pi\epsilon_0\left(R_1^2-r^2\right)}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch23-q30}
+    Positive charge $Q$ is placed on a conducting spherical shell with inner radius $R_1$ and outer radius $R_2$. 
+    A point charge $q$ is placed at the center of the cavity. 
+    The magnitude of the electric field at a point outside the shell,
+        a distance $r$ from the center, is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{zero}
+        \wrongchoice{$\dfrac{Q}{4\pi\epsilon_0 r^2}$}
+        \wrongchoice{$\dfrac{q}{4\pi\epsilon_0 r^2}$}
+      \correctchoice{$\dfrac{q+Q}{4\pi\epsilon_0 r^2}$}
+        \wrongchoice{$\dfrac{q+Q}{4\pi\epsilon_0\left(R_1^2-r^2\right)}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch23-q31}
+    Positive charge $Q$ is placed on a conducting spherical shell with inner radius $R_1$ and outer radius $R_2$. 
+    A point charge $q$ is placed at the center of the cavity. 
+    The magnitude of the electric field produced by the charge on the inner surface at a point in the interior of the conductor,
+        a distance $r$ from the center, is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{zero}
+        \wrongchoice{$\dfrac{Q}{4v\pi\epsilon_0 R_1^2}$}
+        \wrongchoice{$\dfrac{Q}{4\pi\epsilon_0 R_2^2}$}
+      \correctchoice{$\dfrac{q}{4\pi\epsilon_0 r^2}$}
+        \wrongchoice{$\dfrac{Q}{4\pi\epsilon_0 r^2}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch23-q32}
+    A long line of charge with $\lambda_l$ charge per unit length runs along the cylindrical axis of a cylindrical shell which carries a charge per unit length of $\lambda_c$. 
+    The charge per unit length on the inner and outer surfaces of the shell,
+        respectively are:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{$\lambda_l$ and $\lambda_c$}
+      \correctchoice{$-\lambda_l$ and $\lambda_c+\lambda_l$}
+        \wrongchoice{$-\lambda_l$ and $\lambda_c-\lambda_c$}
+        \wrongchoice{$\lambda_l+\lambda_c$ and $\lambda_c-\lambda_l$}
+        \wrongchoice{$\lambda_l-\lambda_c$ and $\lambda_c+\lambda_l$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch23-q33}
+    Charge is distributed uniformly on the surface of a large flat plate. 
+    The electric field \SI{2}{\centi\meter} from the plate is \SI{30}{\newton\per\coulomb}.
+    The electric field \SI{4}{\centi\meter} from the plate is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{120}{\newton\per\coulomb}}
+        \wrongchoice{\SI{80}{\newton\per\coulomb}}
+      \correctchoice{\SI{30}{\newton\per\coulomb}}
+        \wrongchoice{\SI{15}{\newton\per\coulomb}}
+        \wrongchoice{\SI{7.5}{\newton\per\coulomb}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch23-q34}
+    Two large insulating parallel plates carry charge of equal magnitude,
+        one positive and the other negative,
+        that is distributed uniformly over their inner surfaces. 
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE:
+    \end{tikzpicture}
+    \end{center}
+    Rank the points 1 through 5 according to the magnitude of the electric field at the points, least to greatest.
+    \begin{choices}
+        \wrongchoice{1, 2, 3, 4, 5}
+        \wrongchoice{2, then 1, 3, and 4 tied, then 5}
+      \correctchoice{1, 4, and 5 tie, then 2 and 3 tie}
+        \wrongchoice{2 and 3 tie, then 1 and 4 tie, then 5}
+        \wrongchoice{2 and 3 tie, then 1, 4, and 5 tie}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch23-q35}
+    Two large parallel plates carry positive charge of equal magnitude that is distributed uniformly over their inner surfaces. 
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE:
+    \end{tikzpicture}
+    \end{center}
+    Rank the points 1 through 5 according to the magnitude of the electric field at the points,
+        least to greatest
+    \begin{choices}
+        \wrongchoice{1, 2, 3, 4, 5}
+        \wrongchoice{5, 4, 3, 2, 1}
+        \wrongchoice{1, 4, and 5 tie, then 2 and 3 tie}
+        \wrongchoice{2 and 3 tie, then 1 and 4 tie, then 5}
+      \correctchoice{2 and 3 tie, then 1, 4, and 5 tie}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch23-q36}
+    A particle with charge Q is placed outside a large neutral conducting sheet. 
+    At any point in the interior of the sheet the electric field produced by charges on the surface is directed:
+    \begin{choices}
+        \wrongchoice{toward the surface}
+        \wrongchoice{away from the surface}
+      \correctchoice{toward $Q$}
+        \wrongchoice{away from $Q$}
+        \wrongchoice{none of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch23-q37}
+    A particle with charge Q is placed outside a large neutral conducting sheet. 
+    At any point in the interior of the sheet the electric field produced by charges on the surface is directed:
+    \begin{choices}
+        \wrongchoice{toward the surface}
+        \wrongchoice{away from the surface}
+      \correctchoice{toward $Q$}
+        \wrongchoice{away from $Q$}
+        \wrongchoice{none of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch23-q38}
+    A hollow conductor is positively charged. 
+    A small uncharged metal ball is lowered by a silk thread through a small opening in the top of the conductor and allowed to touch its inner surface. 
+    After the ball is removed, it will have:
+    \begin{choices}
+        \wrongchoice{a positive charge}
+        \wrongchoice{a negative charge}
+      \correctchoice{no appreciable charge}
+        \wrongchoice{a charge whose sign depends on what part of the inner surface it touched}
+        \wrongchoice{a charge whose sign depends on where the small hole is located in the conductor}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch23-q39}
+    A spherical conducting shell has charge $Q$. 
+    A particle with charge $q$ is placed at the center of the cavity. 
+    The charge on the inner surface of the shell and the charge on the outer surface of the shell,
+        respectively, are:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{zero, $Q$}
+        \wrongchoice{$q$, $Q-q$}
+        \wrongchoice{$Q$, zero}
+      \correctchoice{$-q$, $Q+q$}
+        \wrongchoice{$-q$, zero}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+\endinput
+
+

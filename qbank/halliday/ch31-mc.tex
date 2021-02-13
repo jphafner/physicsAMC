@@ -1,0 +1,1445 @@
+
+%%--------------------------------------------------
+%% Halliday: Fundamentals of Physics
+%%--------------------------------------------------
+
+
+%% Chapter 31: Electromagnetic Oscillations
+%%              and Alternating Current
+%%--------------------------------------------------
+
+
+%% Learning Objectives
+%%--------------------------------------------------
+
+%% 31.01: Sketch an $LC$ oscillator and explain which quantities oscillate and what constitutes one period of the oscillation.
+%% 31.02: For an $LC$ oscillator, sketch graphs of the potential difference across the capacitor and the current through the inductor as functions of time, and indicate the period $T$ on each graph.
+%% 31.03: Explain the analogy between a block--spring oscillator and an $LC$ oscillator.
+%% 31.04: For an $LC$ oscillator, apply the relationships between the angular frequency $\omega$ (and the related frequency $f$ and period $T$) and the values of the inductance and capacitance.
+%% 31.05: Starting with the energy of a block--spring system, explain the derivation of the differential equation for charge $q$ in an $LC$ oscillator and then identify the solution for $q(t)$.
+%% 31.06: For an $LC$ oscillator, calculate the charge $q$ on the capacitor for any given time and identify the amplitude $Q$ of the charge oscillations.
+%% 31.07: Starting from the equation giving the charge $q(t)$ on the capacitor in an $LC$ oscillator, find the current $i(t)$ in the inductor as a function of time.
+%% 31.08: For an $LC$ oscillator, calculate the current $i$ in the inductor for any given time and identify the amplitude $I$ of the current oscillations.
+%% 31.09: For an $LC$ oscillator, apply the relationship between the charge amplitude $Q$, the current amplitude $I$, and the angular frequency $\omega$.
+%% 31.10: From the expressions for the charge q and the current $i$ in an $LC$ oscillator, find the magnetic field energy $U_B (t)$ and the electric field energy $U_E (t)$ and the total energy.
+%% 31.11: For an $LC$ oscillator, sketch graphs of the magnetic field energy $U_B (t)$, the electric field energy $U_E (t)$, and the total energy, all as functions of time.
+%% 31.12: Calculate the maximum values of the magnetic field energy $U_B$ and the electric field energy $U_E$ and also calculate the total energy.
+
+
+%% Halliday Multiple Choice Questions
+%%--------------------------------------------------
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q01}
+    A charged capacitor and an inductor are connected in series. 
+    At time $t=0$ the current is zero,
+        but the capacitor is charged. 
+    If $T$ is the period of the resulting oscillations,
+        the next time after $t=0$ that the current is a maximum is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$T$}
+      \correctchoice{$\dfrac{T}{4}$}
+        \wrongchoice{$\dfrac{T}{2}$}
+        \wrongchoice{$T$}
+        \wrongchoice{$2T$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q02}
+    A charged capacitor and an inductor are connected in series. 
+    At time $t=0$ the current is zero,
+        but the capacitor is charged. 
+    If $T$ is the period of the resulting oscillations,
+        the next time after $t=0$ that the charge on the capacitor is a maximum is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$T$}
+        \wrongchoice{$\dfrac{T}{4}$}
+      \correctchoice{$\dfrac{T}{2}$}
+        \wrongchoice{$T$}
+        \wrongchoice{$2T$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q03}
+    A charged capacitor and an inductor are connected in series. 
+    At time $t=0$ the current is zero,
+        but the capacitor is charged. 
+    If $T$ is the period of the resulting oscillations,
+        the next time after $t=0$ that the voltage across the inductor is a maximum is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$T$}
+        \wrongchoice{$\dfrac{T}{4}$}
+      \correctchoice{$\dfrac{T}{2}$}
+        \wrongchoice{$T$}
+        \wrongchoice{$2T$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q04}
+    A charged capacitor and an inductor are connected in series. 
+    At time $t=0$ the current is zero,
+        but the capacitor is charged. 
+    If $T$ is the period of the resulting oscillations,
+        the next time after $t=0$ that the energy stored in the magnetic field of the inductor is a maximum is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$T$}
+      \correctchoice{$\dfrac{T}{4}$}
+        \wrongchoice{$\dfrac{T}{2}$}
+        \wrongchoice{$T$}
+        \wrongchoice{$2T$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q05}
+    A charged capacitor and an inductor are connected in series. 
+    At time $t=0$ the current is zero,
+        but the capacitor is charged. 
+    If $T$ is the period of the resulting oscillations,
+        the next time after $t=0$ that the energy stored in the electric field of the capacitor is a maximum is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$T$}
+        \wrongchoice{$\dfrac{T}{4}$}
+      \correctchoice{$\dfrac{T}{2}$}
+        \wrongchoice{$T$}
+        \wrongchoice{$2T$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q06}
+    A capacitor in an $LC$ oscillator has a maximum potential difference of \SI{15}{\volt} and a maximum energy of \SI{360}{\micro\joule}. 
+    At a certain instant the energy in the capacitor is \SI{40}{\micro\joule}. 
+    At that instant what is the potential difference across the capacitor?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{zero}
+      \correctchoice{\SI{5}{\volt}}
+        \wrongchoice{\SI{10}{\volt}}
+        \wrongchoice{\SI{15}{\volt}}
+        \wrongchoice{\SI{20}{\volt}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q07}
+    Which of the following has the greatest effect in decreasing the oscillation frequency of an $LC$ circuit? 
+    Using instead:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{$\dfrac{L}{2}$ and $\dfrac{C}{2}$}
+        \wrongchoice{$\dfrac{L}{2}$ and $\dfrac{2}{C}$}
+        \wrongchoice{$2L$ and $\dfrac{C}{2}$}
+      \correctchoice{$2L$ and $2C$}
+        \wrongchoice{none of the provided}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q08}
+    We desire to make an $LC$ circuit that oscillates at \SI{100}{\hertz} using an inductance of \SI{2.5}{\henry}. 
+    We also need a capacitance of:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{1}{\farad}}
+        \wrongchoice{\SI{1}{\milli\farad}}
+      \correctchoice{\SI{1}{\micro\farad}}
+        \wrongchoice{\SI{100}{\micro\farad}}
+        \wrongchoice{\SI{1}{\pico\farad}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q09}
+    An $LC$ circuit consists of a \SI{1}{\micro\farad} capacitor and a \SI{4}{\milli\henry} inductor. 
+    Its oscillation frequency is approximately:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{0.025}{\hertz}}
+        \wrongchoice{\SI{25}{\hertz}}
+        \wrongchoice{\SI{60}{\hertz}}
+      \correctchoice{\SI{2500}{\hertz}}
+        \wrongchoice{\SI{15 800}{\hertz}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q10}
+    An $LC$ circuit has an oscillation frequency of \SI{e5}{\hertz}. 
+    If $C=\SI{0.1}{\micro\farad}$, then $L$ must be about:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{10}{\milli\henry}}
+        \wrongchoice{\SI{1}{\milli\henry}}
+      \correctchoice{\SI{25}{\micro\henry}}
+        \wrongchoice{\SI{2.5}{\micro\henry}}
+        \wrongchoice{\SI{1}{\pico\henry}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q11}
+    In the circuit shown, switch $S$ is first pushed up to charge the capacitor. 
+    When $S$ is then pushed down,
+    \begin{center}
+    \begin{circuitikz}
+        %% NOTE: circuitk
+    \end{circuitikz}
+    \end{center}
+        the current in the circuit will oscillate at a frequency of:
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{\SI{318}{\hertz}}
+        \wrongchoice{\SI{0.01}{\hertz}}
+        \wrongchoice{\SI{12 500}{\hertz}}
+        \wrongchoice{\SI{2000}{\hertz}}
+        \wrongchoice{depends on $V_0$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q12}
+    Radio receivers are usually tuned by adjusting the capacitor of an $LC$ circuit. 
+    If $C=C_1$ for a frequency of \SI{600}{\kilo\hertz},
+        then for a frequency of \SI{1200}{\kilo\hertz} one must adjust $C$ to:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\dfrac{C_1}{2}$}
+      \correctchoice{$\dfrac{C 1}{4}$}
+        \wrongchoice{$2C_1$}
+        \wrongchoice{$4C_1$}
+        \wrongchoice{$\sqrt{2}C_1$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q13}
+    An $LC$ series circuit with an inductance $L$ and a capacitance $C$ has an oscillation frequency $f$.
+    Two inductors, each with inductance $L$, and two capacitors,
+        each with capacitance $C$, are all wired in series and the circuit is completed. 
+    The oscillation frequency is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\dfrac{f}{4}$}
+        \wrongchoice{$\dfrac{f}{2}$}
+      \correctchoice{$f$}
+        \wrongchoice{$2f$}
+        \wrongchoice{$4f$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q14}
+    The electrical analog of a spring constant $k$ is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$L$}
+        \wrongchoice{$\dfrac{1}{L}$}
+        \wrongchoice{$C$}
+      \correctchoice{$\dfrac{1}{C}$}
+        \wrongchoice{$R$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q15}
+    Consider the mechanical system consisting of two springs and a block,
+        as shown.
+    \begin{center}
+    \begin{circuitikz}
+        %% NOTE: tikz
+    \end{circuitikz}
+    \end{center}
+    Which one of the five electrical circuits is the analog of the mechanical system?
+    \begin{multicols}{2}
+    \begin{choices}
+        %% NOTE: ANS is A
+        \wrongchoice{
+            \begin{circuitikz}
+                %% NOTE: tikz
+            \end{circuitikz}
+        }
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q16}
+    A \SI{150}{\gram} block on the end of a spring with a spring constant of \SI{35}{\newton\per\meter} is pulled aside \SI{25}{\centi\meter} and released from rest. 
+    In the electrical analog the initial charge on the capacitor is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{0.15}{\coulomb}}
+        \wrongchoice{\SI{6.67}{\coulomb}}
+      \correctchoice{\SI{0.025}{\coulomb}}
+        \wrongchoice{\SI{40}{\coulomb}}
+        \wrongchoice{\SI{35}{\coulomb}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q17}
+    A \SI{150}{\gram} block on the end of a spring with a spring constant of \SI{35}{\newton\per\meter} is pulled aside \SI{25}{\centi\meter} and released from rest. 
+    In the electrical analog the initial charge on the capacitor is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{0.15}{\coulomb}}
+        \wrongchoice{\SI{6.67}{\coulomb}}
+      \correctchoice{\SI{0.025}{\coulomb}}
+        \wrongchoice{\SI{40}{\coulomb}}
+        \wrongchoice{\SI{35}{\coulomb}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q18}
+    A capacitor in an $LC$ oscillator has a maximum potential difference of \SI{15}{\volt} and a maximum energy of \SI{360}{\micro\joule}. 
+    At a certain instant the energy in the capacitor is \SI{40}{\micro\joule}. 
+    At that instant what is the potential difference across the capacitor?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{zero}
+      \correctchoice{\SI{5}{\volt}}
+        \wrongchoice{\SI{10}{\volt}}
+        \wrongchoice{\SI{15}{\volt}}
+        \wrongchoice{\SI{20}{\volt}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q19}
+    A capacitor in an $LC$ oscillator has a maximum potential difference of \SI{15}{\volt} and a maximum energy of \SI{360}{\micro\joule}. 
+    At a certain instant the energy in the capacitor is \SI{40}{\micro\joule}.
+    At that instant what is the emf induced in the inductor?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{zero}
+        \wrongchoice{\SI{5}{\volt}}
+      \correctchoice{\SI{10}{\volt}}
+        \wrongchoice{\SI{15}{\volt}}
+        \wrongchoice{\SI{20}{\volt}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q20}
+    In an oscillating $LC$ circuit,
+        the total stored energy is $U$.
+    The maximum energy stored in the capacitor during one cycle is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\dfrac{U}{2}$}
+        \wrongchoice{$\dfrac{U}{\sqrt{2}}$}
+      \correctchoice{$U$}
+        \wrongchoice{$\dfrac{U}{2\pi}$}
+        \wrongchoice{$\dfrac{U}{\pi}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q21}
+    In an oscillating $LC$ circuit,
+        the total stored energy is $U$ and the maximum charge on the capacitor is $Q$. 
+    When the charge on the capacitor is $Q/2$,
+        the energy stored in the inductor is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\dfrac{U}{2}$}
+        \wrongchoice{$\dfrac{U}{4}$}
+        \wrongchoice{$\dfrac{4U}{3}$}
+        \wrongchoice{$\dfrac{3U}{2}$}
+      \correctchoice{$\dfrac{3U}{4}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q22}
+    The total energy in an $LC$ circuit is \SI{5.0e-6}{\joule}.
+    If $C=\SI{15}{\micro\farad}$ the charge on the capacitor is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{0.82}{\micro\coulomb}}
+        \wrongchoice{\SI{8.5}{\micro\coulomb}}
+      \correctchoice{\SI{12}{\micro\coulomb}}
+        \wrongchoice{\SI{17}{\micro\coulomb}}
+        \wrongchoice{\SI{24}{\micro\coulomb}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q23}
+    The total energy in an $LC$ circuit is \SI{5.0e-6}{\joule}.
+    If $L=\SI{25}{\milli\henry}$ the maximum current is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{10}{\milli\ampere}}
+        \wrongchoice{\SI{14}{\milli\ampere}}
+      \correctchoice{\SI{20}{\milli\ampere}}
+        \wrongchoice{\SI{28}{\milli\ampere}}
+        \wrongchoice{\SI{40}{\milli\ampere}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q24}
+    At time $t=0$ the charge on the \SI{50}{\micro\farad} capacitor in an $LC$ circuit is \SI{15}{\micro\coulomb} and there is no current. 
+    If the inductance is \SI{20}{\milli\henry} the maximum current is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{15}{\nano\ampere}}
+        \wrongchoice{\SI{15}{\micro\ampere}}
+        \wrongchoice{\SI{6.7}{\milli\ampere}}
+      \correctchoice{\SI{15}{\ampere}}
+        \wrongchoice{\SI{15}{\ampere}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q25}
+    An $LC$ circuit has an inductance of \SI{20}{\milli\henry} and a capacitance of \SI{5.0}{\micro\farad}.
+    At time $t=0$ the charge on the capacitor is \SI{3.0}{\micro\coulomb} and the current is \SI{7.0}{\milli\ampere}.
+    The total energy is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{4.1e-7}{\joule}}
+        \wrongchoice{\SI{4.9e-7}{\joule}}
+        \wrongchoice{\SI{9.0e-7}{\joule}}
+      \correctchoice{\SI{1.4e-6}{\joule}}
+        \wrongchoice{\SI{2.8e-6}{\joule}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q26}
+    An $LC$ circuit has a capacitance of \SI{30}{\micro\farad} and an inductance of \SI{15}{\milli\henry}. 
+    At time $t=0$ the charge on the capacitor is \SI{10}{\micro\coulomb} and the current is \SI{20}{\milli\ampere}. 
+    The maximum charge on the capacitor is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{8.9}{\micro\coulomb}}
+        \wrongchoice{\SI{10}{\micro\coulomb}}
+        \wrongchoice{\SI{12}{\micro\coulomb}}
+      \correctchoice{\SI{17}{\micro\coulomb}}
+        \wrongchoice{\SI{24}{\micro\coulomb}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q27}
+    An $LC$ circuit has an inductance of \SI{15}{\milli\henry} and a capacitance of \SI{10}{\micro\farad}. 
+    At one instant the charge on the capacitor is \SI{25}{\micro\coulomb}. 
+    At that instant the current is changing at the rate of:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{zero}
+        \wrongchoice{\SI{1.7e-8}{\ampere\per\second}}
+        \wrongchoice{\SI{5.9e-3}{\ampere\per\second}}
+        \wrongchoice{\SI{3.8e-2}{\ampere\per\second}}
+      \correctchoice{\SI{170}{\ampere\per\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q28}
+    An $LC$ circuit has a capacitance of \SI{30}{\micro\farad} and an inductance of \SI{15}{\milli\henry}. 
+    At time $t=0$ the charge on the capacitor is \SI{10}{\micro\coulomb} and the current is \SI{20}{\milli\ampere}. 
+    The maximum current is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{18}{\milli\ampere}}
+        \wrongchoice{\SI{20}{\milli\ampere}}
+      \correctchoice{\SI{25}{\milli\ampere}}
+        \wrongchoice{\SI{35}{\milli\ampere}}
+        \wrongchoice{\SI{42}{\milli\ampere}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q29}
+    The graphs show the total electromagnetic energy in two $RLC$ circuits as functions of time.
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE:
+    \end{tikzpicture}
+    \end{center}
+    Which of the following statements might be true?
+    \begin{choices}
+      \correctchoice{Circuit 1 has a smaller resistance and a larger inductance}
+        \wrongchoice{Circuit 1 has a larger resistance and a smaller inductance}
+        \wrongchoice{Circuit 1 has the same resistance and a larger inductance}
+        \wrongchoice{Circuit 1 has a larger resistance and a larger capacitance}
+        \wrongchoice{Circuit 1 has the same resistance and a smaller capacitance}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q30}
+    An $RLC$ circuit has a resistance of \SI{200}{\ohm} and an inductance of \SI{15}{\milli\henry}.
+    Its oscillation frequency is \SI{7000}{\hertz}.
+    At time $t=0$ the current is \SI{25}{\milli\ampere} and there is no charge on the capacitor. 
+    After five complete cycles the current is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{zero}
+        \wrongchoice{\SI{1.8e-6}{\ampere}}
+      \correctchoice{\SI{2.1e-4}{\ampere}}
+        \wrongchoice{\SI{2.3e-3}{\ampere}}
+        \wrongchoice{\SI{2.5e-2}{\ampere}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q31}
+    An $RLC$ circuit has an inductance of \SI{25}{\milli\henry} and a capacitance of \SI{5.0}{\micro\farad}. 
+    The charge on the capacitor does \emph{not} oscillate but rather decays exponentially to zero. 
+    The resistance in the circuit must be:
+    \begin{choices}
+      \correctchoice{greater than or equal to \SI{20 000}{\ohm}}
+        \wrongchoice{less than \SI{20 000}{\ohm} but greater than \SI{10 000}{\ohm}}
+        \wrongchoice{less than \SI{10 000}{\ohm} but greater than \SI{5 000}{\ohm}}
+        \wrongchoice{less than \SI{5 000}{\ohm} but greater than zero}
+        \wrongchoice{zero}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q32}
+    A series circuit with an inductance of \SI{15}{\milli\henry},
+        a capacitance of \SI{35}{\micro\farad},
+        and a resistance of \SI{5.0}{\ohm} contains a sinusoidal source of emf with a frequency of \SI{500}{\hertz}. 
+    The frequency with which the charge on the capacitor oscillates is:
+    \begin{choices}
+      \correctchoice{\SI{500}{\hertz}}
+        \wrongchoice{\SI{1.4}{\kilo\hertz}}
+        \wrongchoice{greater than \SI{1.4}{\kilo\hertz}}
+        \wrongchoice{less than \SI{500}{\hertz}}
+        \wrongchoice{between \SI{500}{\hertz} and \SI{1.4}{\kilo\hertz}}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q33}
+    The rapid exponential decay in just a few cycles of the charge on the plates of capacitor in an $RLC$ circuit might be due to:
+    \begin{choices}
+        \wrongchoice{a large inductance}
+        \wrongchoice{a large capacitance}
+        \wrongchoice{a small capacitance}
+      \correctchoice{a large resistance}
+        \wrongchoice{a small resistance}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q34}
+    An $RLC$ circuit has a capacitance of \SI{12}{\micro\farad},
+        an inductance of \SI{25}{\milli\henry},
+        and a resistance of \SI{60}{\ohm}.  
+    The current oscillates with an angular frequency of:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{1.2e3}{\radian\per\second}}
+      \correctchoice{\SI{1.4e3}{\radian\per\second}}
+        \wrongchoice{\SI{1.8e3}{\radian\per\second}}
+        \wrongchoice{\SI{2.2e3}{\radian\per\second}}
+        \wrongchoice{\SI{2.6e3}{\radian\per\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q35}
+    The angular frequency of a certain $RLC$ series circuit is $\omega_0$. 
+    A source of sinusoidal emf,
+        with angular frequency $2\omega$,
+        is inserted into the circuit. 
+    After transients die out the angular frequency of the current oscillations is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\dfrac{\omega_0}{2}$}
+        \wrongchoice{$\omega_0$}
+      \correctchoice{$2\omega_0$}
+        \wrongchoice{$\dfrac{3\omega_0}{2}$}
+        \wrongchoice{$3\omega_0$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q36}
+    The angular frequency of a certain RLC series circuit is $\omega_0$. 
+    A source of sinusoidal emf,
+        with angular frequency $\omega$,
+        is inserted into the circuit and $\omega$ is varied while the amplitude of the source is held constant. 
+    For which of the following values of $\omega$ is the amplitude of the current oscillations the greatest?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{$\dfrac{\omega_0}{5}$}
+        \wrongchoice{$\dfrac{\omega_0}{2}$}
+      \correctchoice{$\omega_0$}
+        \wrongchoice{$2\omega_0$}
+        \wrongchoice{None of them (they all produce the same current amplitude)}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q37}
+    An $RLC$ circuit has a sinusoidal source of emf. 
+    The average rate at which the source supplies energy is \SI{5}{\nano\watt}.
+    This must also be:
+    \begin{choices}
+        \wrongchoice{the average rate at which energy is stored in the capacitor}
+        \wrongchoice{the average rate at which energy is stored in the inductor}
+      \correctchoice{the average rate at which energy is dissipated in the resistor}
+        \wrongchoice{twice the average rate at which energy is stored in the capacitor}
+        \wrongchoice{three times the average rate at which energy is stored in the inductor}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q38}
+    In a purely capacitive circuit the current:
+    \begin{choices}
+      \correctchoice{leads the voltage by one-fourth of a cycle}
+        \wrongchoice{leads the voltage by one-half of a cycle}
+        \wrongchoice{lags the voltage by one-fourth of a cycle}
+        \wrongchoice{lags the voltage by one-half of a cycle}
+        \wrongchoice{is in phase with the potential difference across the plates}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q39}
+    In a purely resistive circuit the current:
+    \begin{choices}
+        \wrongchoice{leads the voltage by one-fourth of a cycle}
+        \wrongchoice{leads the voltage by one-half of a cycle}
+        \wrongchoice{lags the voltage by one-fourth of a cycle}
+        \wrongchoice{lags the voltage by one-half of a cycle}
+      \correctchoice{is in phase with the voltage}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q40}
+    In a purely inductive circuit, the current lags the voltage by:
+    \begin{choices}
+        \wrongchoice{zero}
+      \correctchoice{one-fourth of a cycle}
+        \wrongchoice{one-half of a cycle}
+        \wrongchoice{three-fourths of a cycle}
+        \wrongchoice{one cycle}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q41}
+    A series $RL$ circuit is connected to an emf source of angular frequency $\omega$. 
+    The current:
+    \begin{choices}
+        \wrongchoice{leads the applied emf by $\tan^{-1}\left(\dfrac{\omega L}{R}\right)$}
+      \correctchoice{lags the applied emf by $\tan^{-1}\left(\dfrac{\omega L}{R}\right)$}
+        \wrongchoice{lags the applied emf by $\tan^{-1}\left(\dfrac{\omega R}{L}\right)$}
+        \wrongchoice{leads the applied emf by $\tan^{-1}\left(\dfrac{\omega R}{L}\right)$}
+        \wrongchoice{is zero}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q42}
+    A series $RC$ circuit is connected to an emf source having angular frequency $\omega$. 
+    The current:
+    \begin{choices}
+      \correctchoice{leads the source emf by $\tan^{-1}\left(\dfrac{1}{\omega CR}\right)$}
+        \wrongchoice{lags the source emf by $\tan^{-1}\left(\dfrac{1}{\omega CR}\right)$}
+        \wrongchoice{leads the source emf by $\tan^{-1}\left(\omega CR\right)$}
+        \wrongchoice{lags the source emf by $\tan^{-1}\left(\omega CR\right)$}
+        \wrongchoice{leads the source emf by $\dfrac{\pi}{4}$}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q43}
+    In an $RLC$ series circuit,
+        which is connected to a source of emf $E_m\cos\left(\omega t\right)$,
+        the current lags the voltage by \ang{45} if:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{$R = \dfrac{1}{\omega C - \omega L}$}
+        \wrongchoice{$R = \dfrac{1}{\omega L - \omega C}$}
+      \correctchoice{$R = \omega L - \dfrac{1}{\omega C}$}
+        \wrongchoice{$R = \omega C - \dfrac{1}{\omega L}$}
+        \wrongchoice{$\omega L = \dfrac{1}{\omega C}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q44}
+    A coil has a resistance of \SI{60}{\ohm} and an impedance of \SI{100}{\ohm}.
+    Its reactance is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{40}{\ohm}}
+        \wrongchoice{\SI{60}{\ohm}}
+      \correctchoice{\SI{80}{\ohm}}
+        \wrongchoice{\SI{117}{\ohm}}
+        \wrongchoice{\SI{160}{\ohm}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q45}
+    The reactance of a \SI{35}{\micro\farad} capacitor connected to a \SI{400}{\hertz} generator is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{zero}
+        \wrongchoice{\SI{0.014}{\ohm}}
+        \wrongchoice{\SI{0.088}{\ohm}}
+      \correctchoice{\SI{11}{\ohm}}
+        \wrongchoice{\SI{71}{\ohm}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q46}
+    A \SI{35}{\micro\farad} capacitor is connected to a source of sinusoidal emf with a frequency of \SI{400}{\hertz} and a maximum emf of \SI{20}{\volt}. 
+    The maximum current is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{zero}
+        \wrongchoice{\SI{0.28}{\ampere}}
+      \correctchoice{\SI{1.8}{\ampere}}
+        \wrongchoice{\SI{230}{\ampere}}
+        \wrongchoice{\SI{1400}{\ampere}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q47}
+    A \SI{45}{\milli\henry} inductor is connected to a source of sinusoidal emf with a frequency of \SI{400}{\hertz} and a maximum emf of \SI{20}{\volt}.
+    The maximum current is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{zero}
+        \wrongchoice{\SI{0.18}{\ampere}}
+        \wrongchoice{\SI{1.1}{\ampere}}
+        \wrongchoice{\SI{360}{\ampere}}
+        \wrongchoice{\SI{2300}{\ampere}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q48}
+    The impedance of an $RLC$ series circuit is definitely increased if:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{$C$ decreases}
+        \wrongchoice{$L$ increases}
+        \wrongchoice{$L$ decreases}
+      \correctchoice{$R$ increases}
+        \wrongchoice{$R$ decreases}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q49}
+    An $RLC$ series circuit has $R=\SI{4}{\ohm}$, $X_C=\SI{3}{\ohm}$, and $X_L=\SI{6}{\ohm}$. 
+    The impedance of this circuit is:
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{\SI{5}{\ohm}}
+        \wrongchoice{\SI{7}{\ohm}}
+        \wrongchoice{\SI{9.8}{\ohm}}
+        \wrongchoice{\SI{13}{\ohm}}
+        \wrongchoice{\SI{7.8}{\ohm}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q50}
+    The impedance of the circuit shown is:
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE:
+    \end{tikzpicture}
+    \end{center}
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{21}{\ohm}}
+        \wrongchoice{\SI{50}{\ohm}}
+        \wrongchoice{\SI{63}{\ohm}}
+      \correctchoice{\SI{65}{\ohm}}
+        \wrongchoice{\SI{98}{\ohm}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q51}
+    An electric motor, under load, has an effective resistance of \SI{30}{\ohm} and an inductive reactance of \SI{40}{\ohm}. 
+    When powered by a source with a maximum voltage of \SI{420}{\volt},
+        the maximum current is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{6.0}{\ampere}}
+      \correctchoice{\SI{8.4}{\ampere}}
+        \wrongchoice{\SI{10.5}{\ampere}}
+        \wrongchoice{\SI{12.0}{\ampere}}
+        \wrongchoice{\SI{14.0}{\ampere}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q52}
+    An $RL$ series circuit is connected to an ac generator with a maximum emf of \SI{20}{\volt}.
+    If the maximum potential difference across the resistor is \SI{16}{\volt},
+        then the maximum potential difference across the inductor is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{2}{\volt}}
+        \wrongchoice{\SI{4}{\volt}}
+      \correctchoice{\SI{12}{\volt}}
+        \wrongchoice{\SI{25.6}{\volt}}
+        \wrongchoice{\SI{36}{\volt}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q53}
+    When the amplitude of the oscillator in a series $RLC$ circuit is doubled:
+    \begin{choices}
+        \wrongchoice{the impedance is doubled}
+        \wrongchoice{the voltage across the capacitor is halved}
+        \wrongchoice{the capacitive reactance is halved}
+        \wrongchoice{the power factor is doubled}
+      \correctchoice{the current amplitude is doubled}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q54}
+    When the frequency of the oscillator in a series $RLC$ circuit is doubled:
+    \begin{choices}
+        \wrongchoice{the capacitive reactance is doubled}
+      \correctchoice{the capacitive reactance is halved}
+        \wrongchoice{the impedance is doubled}
+        \wrongchoice{the current amplitude is doubled}
+        \wrongchoice{the current amplitude is halved}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q55}
+    In an $RLC$ series circuit,
+        the source voltage is leading the current at a given frequency $f$. 
+    If $f$ is lowered slightly, then the circuit impedance will:
+    \begin{choices}
+        \wrongchoice{increase}
+      \correctchoice{decrease}
+        \wrongchoice{remain the same}
+        \wrongchoice{need to know the amplitude of the source voltage}
+        \wrongchoice{need to know whether the phase angle is larger or smaller than \ang{45}}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q56}
+    In the diagram, the function $y(t)=y_m\sin\left(\omega t\right)$ is plotted as a solid curve.
+    The other three curves have the form $y(t)=y_m\sin\left(\omega t + \phi\right)$,
+        where $\phi$ is between $\pi/2$ and $+\pi/2$.
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE:
+    \end{tikzpicture}
+    \end{center}
+    Rank the curves according to the value of $\phi$,
+        from the most negative to the most positive.
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{1, 2, 3}
+        \wrongchoice{2, 3, 1}
+        \wrongchoice{3, 2, 1}
+      \correctchoice{1, 3, 2}
+        \wrongchoice{2, 1, 3}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q57}
+    An $RLC$ series circuit has $L=\SI{100}{\milli\henry}$ and $C=\SI{1}{\micro\farad}$.
+    It is connected to a \SI{1000}{\hertz} source and the source emf is found to lead the current by \ang{75}.
+    The value of $R$ is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{12.6}{\ohm}}
+      \correctchoice{\SI{126}{\ohm}}
+        \wrongchoice{\SI{175}{\ohm}}
+        \wrongchoice{\SI{1750}{\ohm}}
+        \wrongchoice{\SI{1810}{\ohm}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q58}
+    An $RLC$ series circuit is driven by a sinusoidal emf with angular frequency $\omega_d$.
+    If $\omega_d$ is increased without changing the amplitude of the emf the current amplitude increases. 
+    If $L$ is the inductance, $C$ is the capacitance, and $R$ is the resistance,
+        this means that:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{$\omega_d L > \dfrac{1}{\omega_d C}$}
+      \correctchoice{$\omega_d L < \dfrac{1}{\omega_d C}$}
+        \wrongchoice{$\omega_d L = \dfrac{1}{\omega_d C}$}
+        \wrongchoice{$\omega_d L > R$}
+        \wrongchoice{$\omega_d L < R$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q59}
+    In a sinusoidally driven series $RLC$ circuit,
+        the inductive reactance is $X_L=\SI{200}{\ohm}$,
+        the capacitive reactance is $X_C=\SI{100}{\ohm}$,
+        and the resistance is $R=\SI{50}{\ohm}$.
+    The current and applied emf would be in phase if:
+    \begin{choices}
+        \wrongchoice{the resistance is increased to \SI{100}{\ohm}, with no other changes}
+        \wrongchoice{the resistance is increased to \SI{200}{\ohm}, with no other changes}
+        \wrongchoice{the inductance is reduced to zero, with no other changes}
+        \wrongchoice{the capacitance is doubled, with no other changes}
+      \correctchoice{the capacitance is halved, with no other changes}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q60}
+    In a sinusoidally driven series $RLC$ circuit the current lags the applied emf. 
+    The rate at which energy is dissipated in the resistor can be increased by:
+    \begin{choices}
+      \correctchoice{decreasing the capacitance and making no other changes}
+        \wrongchoice{increasing the capacitance and making no other changes}
+        \wrongchoice{increasing the inductance and making no other changes}
+        \wrongchoice{increasing the driving frequency and making no other changes}
+        \wrongchoice{decreasing the amplitude of the driving emf and making no other changes}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q61}
+    An $RLC$ series circuit, connected to a source $E$,
+        is at resonance. 
+    Then:
+    \begin{choices}
+        \wrongchoice{the voltage across $R$ is zero}
+      \correctchoice{the voltage across $R$ equals the applied voltage}
+        \wrongchoice{the voltage across $C$ is zero}
+        \wrongchoice{the voltage across $L$ equals the applied voltage}
+        \wrongchoice{the applied voltage and current differ in phase by \ang{90}}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q62}
+    An $RLC$ series circuit is connected to an oscillator with a maximum emf of \SI{100}{\volt}.
+    If the voltage amplitudes $V_R$, $V_L$, and $V_C$ are all equal to each other,
+        then $V_R$ must be:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{33}{\volt}}
+        \wrongchoice{\SI{50}{\volt}}
+        \wrongchoice{\SI{67}{\volt}}
+        \wrongchoice{\SI{87}{\volt}}
+      \correctchoice{\SI{100}{\volt}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q63}
+    A resistor, an inductor, and a capacitor are connected in parallel to a sinusoidal source of emf.
+    Which of the following is true?
+    \begin{choices}
+        \wrongchoice{The currents in all branches are in phase.}
+      \correctchoice{The potential differences across all branches are in phase.}
+        \wrongchoice{The current in the capacitor branch leads the current in the inductor branch by one-fourth of a cycle.}
+        \wrongchoice{The potential difference across the capacitor branch leads the potential difference across the inductor branch by one-fourth of a cycle.}
+        \wrongchoice{The current in the capacitor branch lags the current in the inductor branch by one-fourth of a cycle.}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q64}
+    The rms value of an ac current is:
+    \begin{choices}
+        \wrongchoice{its peak value}
+        \wrongchoice{its average value}
+      \correctchoice{that steady current that produces the same rate of heating in a resistor as the actual current}
+        \wrongchoice{that steady current that will charge a battery at the same rate as the actual current}
+        \wrongchoice{zero}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q65}
+    The rms value of a sinusoidal voltage is $V_0/2$,
+        where $V_0$ is the amplitude. 
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE:
+    \end{tikzpicture}
+    \end{center}
+    What is the rms value of its fully rectified wave? 
+    Recall that $V_{\text{rect}}(t)=|V(t)|$.
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\dfrac{V_0^2}{\sqrt{2}}$}
+        \wrongchoice{$\dfrac{V_0^2}{2}$}
+        \wrongchoice{$\sqrt{2}V_0$}
+      \correctchoice{$\dfrac{V_0}{\sqrt{2}}$}
+        \wrongchoice{$\dfrac{V_0}{2\sqrt{2}}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q66}
+    A sinusoidal voltage $V(t)$ has an rms value of \SI{100}{\volt}.
+    Its maximum value is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{100}{\volt}}
+        \wrongchoice{\SI{707}{\volt}}
+        \wrongchoice{\SI{70.7}{\volt}}
+      \correctchoice{\SI{141}{\volt}}
+        \wrongchoice{\SI{200}{\volt}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q67}
+    An ac generator produces \SI{10}{\volt} (rms) at \SI{400}{\radian\per\second}.
+    It is connected to a series $RL$ circuit ($R=\SI{17.3}{\ohm}$, $L=\SI{0.025}{\henry}$).
+    The rms current is:
+    \begin{choices}
+        \wrongchoice{\SI{0.50}{\ampere} and leads the emf by \ang{30}}
+        \wrongchoice{\SI{0.71}{\ampere} and lags the emf by \ang{30}}
+        \wrongchoice{\SI{1.40}{\ampere} and lags the emf by \ang{60}}
+      \correctchoice{\SI{0.50}{\ampere} and lags the emf by \ang{30}}
+        \wrongchoice{\SI{0.58}{\ampere} and leads the emf by \ang{90}}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q68}
+    An ac generator producing \SI{10}{\volt} (rms) at \SI{200}{\radian\per\second} is connected in series with a \SI{50}{\ohm} resistor, a \SI{400}{\milli\henry} inductor, and a \SI{200}{\micro\farad} capacitor.
+    The rms current is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{0.125}{\ampere}}
+        \wrongchoice{\SI{0.135}{\ampere}}
+        \wrongchoice{\SI{0.18}{\ampere}}
+        \wrongchoice{\SI{0.20}{\ampere}}
+        \wrongchoice{\SI{0.40}{\ampere}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q69}
+    An ac generator producing \SI{10}{\volt} (rms) at \SI{200}{\radian\per\second} is connected in series with a \SI{50}{\ohm} resistor,
+        a \SI{400}{\milli\henry} inductor, and a \SI{200}{\micro\farad} capacitor. 
+    The rms voltage across the resistor is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{2.5}{\volt}}
+        \wrongchoice{\SI{3.4}{\volt}}
+      \correctchoice{\SI{6.7}{\volt}}
+        \wrongchoice{\SI{10.0}{\volt}}
+        \wrongchoice{\SI{10.8}{\volt}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q70}
+    An ac generator producing \SI{10}{\volt} (rms) at \SI{200}{\radian\per\second} is connected in series with a \SI{50}{\ohm} resistor, a \SI{400}{\milli\henry} inductor, and a \SI{200}{\micro\farad} capacitor. 
+    The rms voltage across the capacitor is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{2.5}{\volt}}
+      \correctchoice{\SI{3.4}{\volt}}
+        \wrongchoice{\SI{6.7}{\volt}}
+        \wrongchoice{\SI{10.0}{\volt}}
+        \wrongchoice{\SI{10.8}{\volt}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q71}
+    An ac generator producing \SI{10}{\volt} (rms) at \SI{200}{\radian\per\second} is connected in series with a \SI{50}{\ohm} resistor, a \SI{400}{\milli\henry} inductor, and a \SI{200}{\micro\farad} capacitor.
+    The rms voltage across the inductor is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{2.5}{\volt}}
+        \wrongchoice{\SI{3.4}{\volt}}
+        \wrongchoice{\SI{6.7}{\volt}}
+        \wrongchoice{\SI{10.0}{\volt}}
+      \correctchoice{\SI{10.8}{\volt}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q72}
+    The ideal meters shown read rms current and voltage. 
+    %% nOTE: tikz
+    The average power delivered to the load is:
+    \begin{choices}
+        \wrongchoice{definitely equal to $VI$}
+        \wrongchoice{definitely more than $VI$}
+      \correctchoice{possibly equal to $VI$ even if the load contains an inductor and a capacitor}
+        \wrongchoice{definitely less than $VI$}
+        \wrongchoice{zero, as is the average of any sine wave}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q73}
+    The average power supplied to the circuit shown passes through a maximum when which one of the following is increased continuously from a very low to a very high value?
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE:
+    \end{tikzpicture}
+    \end{center}
+    \begin{choices}
+        \wrongchoice{Source emf $\varepsilon$}
+        \wrongchoice{$R$}
+        \wrongchoice{$C$}
+        \wrongchoice{Source frequency $f$}
+        \wrongchoice{None of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q74}
+    In a series $RLC$ circuit the rms value of the generator emf is $E$ and the rms value of the current is $i$. 
+    The current lags the emf by $\phi$. 
+    The average power supplied by the generator is given by:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\dfrac{iE}{2}\cos\phi$}
+        \wrongchoice{$iE$}
+        \wrongchoice{$\dfrac{i^2}{Z}$}
+        \wrongchoice{$\dfrac{i^2}{Z}$}
+      \correctchoice{$i^2 R$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q75}
+    The units of the power factor are:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{ohm}
+        \wrongchoice{watt}
+        \wrongchoice{radian}
+        \wrongchoice{ohm\textsuperscript{1/2}}
+      \correctchoice{none of the provided}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q76}
+    A series circuit consists of a \SI{15}{\ohm} resistor, a \SI{25}{\milli\henry} inductor, and a \SI{35}{\micro\farad} capacitor. 
+    If the frequency is \SI{100}{\hertz} the power factor is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{zero}
+        \wrongchoice{0.20}
+      \correctchoice{0.45}
+        \wrongchoice{0.89}
+        \wrongchoice{1.0}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q77}
+    The main reason that alternating current replaced direct current for general use is:
+    \begin{choices}
+        \wrongchoice{ac generators do not need slip rings}
+      \correctchoice{ac voltages may be conveniently transformed}
+        \wrongchoice{electric clocks do not work on dc}
+        \wrongchoice{a given ac current does not heat a power line as much as the same dc current}
+        \wrongchoice{ac minimizes magnetic effects}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q78}
+    A step-down transformer is used to:
+    \begin{choices}
+        \wrongchoice{increase the power}
+        \wrongchoice{decrease the power}
+        \wrongchoice{increase the voltage}
+      \correctchoice{decrease the voltage}
+        \wrongchoice{change ac to dc}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q79}
+    Iron, rather than copper, is used in the core of transformers because iron:
+    \begin{choices}
+        \wrongchoice{can withstand a higher temperature}
+        \wrongchoice{has a greater resistivity}
+      \correctchoice{has a very high permeability}
+        \wrongchoice{makes a good permanent magnet}
+        \wrongchoice{insulates the primary from the secondary}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q80}
+    The core of a transformer is made in a laminated form to:
+    \begin{choices}
+        \wrongchoice{facilitate easy assembly}
+        \wrongchoice{reduce $i^2 R$ losses in the coils}
+        \wrongchoice{increase the magnetic flux}
+        \wrongchoice{save weight}
+      \correctchoice{prevent eddy currents}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q81}
+    A generator supplies \SI{100}{\volt} to the primary coil of a transformer. 
+    The primary has 50 turns and the secondary has 500 turns. 
+    The secondary voltage is:
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{\SI{1000}{\volt}}
+        \wrongchoice{\SI{500}{\volt}}
+        \wrongchoice{\SI{250}{\volt}}
+        \wrongchoice{\SI{100}{\volt}}
+        \wrongchoice{\SI{10}{\volt}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q82}
+    The resistance of the primary coil of a well-designed, $1:10$ step-down transformer is \SI{1}{\ohm}. 
+    With the secondary circuit open,
+        the primary is connected to a \SI{12}{\volt} ac generator. 
+    The primary current is:
+    \begin{choices}
+      \correctchoice{essentially zero}
+        \wrongchoice{about \SI{12}{\ampere}}
+        \wrongchoice{about \SI{120}{\ampere}}
+        \wrongchoice{depends on the actual number of turns in the primary coil}
+        \wrongchoice{depends on the core material}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q83}
+    The primary of an ideal transformer has 100 turns and the secondary has 600 turns. 
+    Then:
+    \begin{choices}
+        \wrongchoice{the power in the primary circuit is less than that in the secondary circuit}
+        \wrongchoice{the currents in the two circuits are the same}
+        \wrongchoice{the voltages in the two circuits are the same}
+      \correctchoice{the primary current is six times the secondary current}
+        \wrongchoice{the frequency in the secondary circuit is six times that in the primary circuit}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q84}
+    The primary of a $3:1$ step-up transformer is connected to a source and the secondary is connected to a resistor $R$. 
+    The power dissipated by $R$ in this situation is $P$.
+    If $R$ is connected directly to the source it will dissipate a power of:
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{$\dfrac{P}{9}$}
+        \wrongchoice{$\dfrac{P}{3}$}
+        \wrongchoice{$P$}
+        \wrongchoice{$3P$}
+        \wrongchoice{$9P$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q85}
+    In an ideal $1:8$ step-down transformer,
+        the primary power is \SI{10}{\kilo\watt} and the secondary current is \SI{25}{\ampere}. 
+    The primary voltage is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{25 600}{\volt}}
+      \correctchoice{\SI{3200}{\volt}}
+        \wrongchoice{\SI{400}{\volt}}
+        \wrongchoice{\SI{50}{\volt}}
+        \wrongchoice{\SI{6.25}{\volt}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch31-q86}
+    A source with an impedance of \SI{100}{\ohm} is connected to the primary coil of a transformer and a resistance $R$ is connected to the secondary coil. 
+    If the transformer has 500 turns in its primary coil and 100 turns in its secondary coil the greatest power will be dissipated in the resistor if $R=$:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{zero}
+        \wrongchoice{\SI{0.25}{\hertz}}
+      \correctchoice{\SI{4.0}{\hertz}}
+        \wrongchoice{\SI{50}{\hertz}}
+        \wrongchoice{\SI{100}{\hertz}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+\endinput
+
+

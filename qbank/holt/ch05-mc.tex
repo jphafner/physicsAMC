@@ -1,0 +1,218 @@
+
+%%--------------------------------------------------
+%% Holt: Multiple Choice Questions
+%%--------------------------------------------------
+
+
+%% Chapter 05: Work and Energy
+%%--------------------------------------------------
+
+
+%% Holt Multiple Choice Questions
+%%--------------------------------------------------
+\element{holt-mc}{
+\begin{question}{holt-ch05-Q01}
+    In which of the following situations is work \emph{not} being done?
+    \begin{choices}
+        \wrongchoice{A chair is lifted vertically with respect to the floor}
+        \wrongchoice{A bookcase is slide across carpeting}
+        \wrongchoice{A table is dropped onto the ground}
+      \correctchoice{A stack of books is carried at waist level across a room}
+    \end{choices}
+\end{question}
+}
+
+\element{holt-mc}{
+\begin{question}{holt-ch05-Q02}
+    Which of the following equations correctly describes
+        the relation between power, work and time.
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{$W = \dfrac{P}{t}$}
+        \wrongchoice{$W = \dfrac{t}{P}$}
+      \correctchoice{$P = \dfrac{W}{t}$}
+        \wrongchoice{$P = \dfrac{t}{W}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\newcommand{\holtChFiveQThree}{
+%% NOTE:
+\begin{tikzpicture}
+    \begin{axis}[
+        axis y line=left,
+        axis x line=bottom,
+        axis line style={->},
+        xlabel={time},
+        x unit=\si{\second},
+        xtick={0,1,2,3,4,5,6,7,8},
+        minor x tick num=1,
+        ylabel={energy},
+        y unit=\si{\milli\joule},
+        ytick={0,200,400,600},
+        minor y tick num=1,
+        xmin=0,xmax=8.2,
+        ymin=0,ymax=650,
+        grid=major,
+        width=0.75\columnwidth,
+        height=0.55\columnwidth,
+        legend entries={$PE$,$KE$,$ME$},
+        legend pos=outer north east,
+        very thin,
+    ]
+    \addplot[line width=1pt,dotted,domain=0:8]{380 + (220-10*x)*cos(deg(x*2*pi/3)) - 10*x};
+    \addplot[line width=1pt,solid, domain=0:8]{220 - (220-10*x)*cos(deg(x*2*pi/3)) - 10*x};
+    \addplot[line width=1pt,dashed,domain=0:8]{600 - 20*x};
+    \end{axis}
+\end{tikzpicture}
+}
+
+\element{holt-mc}{
+\begin{question}{holt-ch05-Q03}
+    The graph shows the energy of a \SI{75}{\gram} yo-yo at different times as the yo-yo moves up and down on its string.
+    \begin{center}
+        \holtChFiveQThree
+    \end{center}
+    By what amount does the mechanical energy of the yo-yo change after \SI{6.0}{\second}?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{500}{\milli\joule}}
+        \wrongchoice{\SI{0}{\milli\joule}}
+      \correctchoice{\SI{-100}{\milli\joule}}
+        \wrongchoice{\SI{-600}{\milli\joule}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{holt-mc}{
+\begin{question}{holt-ch05-Q04}
+    The graph shows the energy of a \SI{75}{\gram} yo-yo at different times as the yo-yo moves up and down on its string.
+    \begin{center}
+        \holtChFiveQThree
+    \end{center}
+    What is the speed of the yo-yo after \SI{4.5}{\second}?
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{\SI{3.1}{\meter\per\second}}
+        \wrongchoice{\SI{2.3}{\meter\per\second}}
+        \wrongchoice{\SI{3.6}{\meter\per\second}}
+        \wrongchoice{\SI{1.6}{\meter\per\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{holt-mc}{
+\begin{question}{holt-ch05-Q05}
+    The graph shows the energy of a \SI{75}{\gram} yo-yo at different times as the yo-yo moves up and down on its string.
+    \begin{center}
+        \holtChFiveQThree
+    \end{center}
+    What is the maximum height of the yo-yo?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{0.27}{\meter}}
+        \wrongchoice{\SI{0.54}{\meter}}
+        \wrongchoice{\SI{0.75}{\meter}}
+      \correctchoice{\SI{0.82}{\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{holt-mc}{
+\begin{question}{holt-ch05-Q06}
+    A car with mass $m$ requires \SI{5.0}{\kilo\joule} of work to move from rest to a final speed $v$.
+    If this same amount of work is performed during the same amount of time on a car with a mass of $2m$,
+        what is the final speed of the car?
+    \begin{multicols}{4}
+    \begin{choices}
+        \wrongchoice{$2v$}
+        \wrongchoice{$\sqrt{2v}$}
+        \wrongchoice{$\dfrac{v}{2}$}
+      \correctchoice{$\dfrac{v}{\sqrt{2}}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{holt-mc}{
+\begin{question}{holt-ch05-Q07}
+    A \SI{70.0}{\kilo\gram} base runner moving at a speed of \SI{4.0}{\meter\per\second} begins his slide into second base.
+    The coefficient of friction between his clothes and Earth is \num{0.70}.
+    His slide lowers his speed to zero just as he reaches the base.
+    How much mechanical energy is lost because of friction acting on the runner?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{1100}{\joule}}
+      \correctchoice{\SI{560}{\joule}}
+        \wrongchoice{\SI{140}{\joule}}
+        \wrongchoice{\SI{0}{\joule}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{holt-mc}{
+\begin{question}{holt-ch05-Q08}
+    A \SI{70.0}{\kilo\gram} base runner moving at a speed of \SI{4.0}{\meter\per\second} begins his slide into second base.
+    The coefficient of friction between his clothes and Earth is \num{0.70}.
+    His slide lowers his speed to zero just as he reaches the base.
+    How far does the runner slide?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{0.29}{\meter}}
+        \wrongchoice{\SI{0.57}{\meter}}
+        \wrongchoice{\SI{0.86}{\meter}}
+      \correctchoice{\SI{1.2}{\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{holt-mc}{
+\begin{question}{holt-ch05-Q09}
+    A spring scale has a spring with a force constant of \SI{250}{\newton\per\meter} and a weighing pan with a mass of \SI{0.075}{\kilo\gram}.
+    During one weighing, the spring is stretched a distance of \SI{12}{\centi\meter} from equilibrium.
+    During a second weighing,
+        the spring is stretched a distance of \SI{18}{\centi\meter}.
+    %% Being question
+    How much greater is the elastic potential energy of the stretched spring during the second weighing than during the first weighing?
+    \begin{multicols}{4}
+    \begin{choices}
+      \correctchoice{$\dfrac{9}{4}$}
+        \wrongchoice{$\dfrac{3}{2}$}
+        \wrongchoice{$\dfrac{2}{3}$}
+        \wrongchoice{$\dfrac{4}{9}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{holt-mc}{
+\begin{question}{holt-ch05-Q10}
+    A spring scale has a spring with a force constant of \SI{250}{\newton\per\meter} and a weighing pan with a mass of \SI{0.075}{\kilo\gram}.
+    During one weighing, the spring is stretched a distance of \SI{12}{\centi\meter} from equilibrium.
+    During a second weighing,
+        the spring is stretched a distance of \SI{18}{\centi\meter}.
+    %% Being question
+    If the spring is suddenly released after each weighing,
+        the weighing pan moves back and forth through the equilibrium position.
+    What is the ratio of the pan's maximum speed after the second weighing to the pan's maximum speed after the first weighing?
+    Consider the force of gravity on the pan to be negligible.
+    \begin{multicols}{4}
+    \begin{choices}
+        \wrongchoice{$\dfrac{9}{4}$}
+      \correctchoice{$\dfrac{3}{2}$}
+        \wrongchoice{$\dfrac{2}{3}$}
+        \wrongchoice{$\dfrac{4}{9}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+\endinput
+

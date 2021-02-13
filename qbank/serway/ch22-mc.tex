@@ -1,0 +1,792 @@
+
+%%--------------------------------------------------
+%% Serway: Physics for Scientists and Engineers
+%%--------------------------------------------------
+
+
+%% Chapter 22: Heat Engines, Entropy and the Second Law of Thermodynamics
+%%--------------------------------------------------
+
+
+%% Table of Contents
+%%--------------------------------------------------
+
+%% 22.1 Heat Engines and the Second Law of Thermodynamics
+%% 22.2 Heat Pumps and Refrigerators
+%% 22.3 Reversible and Irreversible Processes
+%% 22.4 The Carnot Engine
+%% 22.5 Gasoline and Diesel Engines
+%% 22.6 Entropy 
+%% 22.7 Entropy Changes in Irreversible Processes
+%% 22.8 Entropy on a Microscopic Scale
+
+
+%% Serway Multiple Choice Questions
+%%--------------------------------------------------
+\element{serway-mc}{
+\begin{question}{serway-ch22-q01}
+    A gasoline engine absorbs \SI{2500}{\joule} of heat and performs \SI{1000}{\joule} of mechanical work in each cycle. 
+    The efficiency of the engine is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{80}{\percent}}
+      \correctchoice{\SI{40}{\percent}}
+        \wrongchoice{\SI{60}{\percent}}
+        \wrongchoice{\SI{20}{\percent}}
+        \wrongchoice{\SI{50}{\percent}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch22-q02}
+    A gasoline engine absorbs \SI{2500}{\joule} of heat and performs \SI{1000}{\joule} of mechanical work in each cycle. 
+    The amount of heat expelled in each cycle is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{1000}{\joule}}
+      \correctchoice{\SI{1500}{\joule}}
+        \wrongchoice{\SI{2000}{\joule}}
+        \wrongchoice{\SI{500}{\joule}}
+        \wrongchoice{\SI{3000}{\joule}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch22-q03}
+    A heat pump has a coefficient of performance of 4. 
+    If the heat pump absorbs \SI{20}{\calorie} of heat from the cold outdoors in each cycle,
+        the heat expelled to the warm indoors is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{34}{\calorie}}
+      \correctchoice{\SI{27}{\calorie}}
+        \wrongchoice{\SI{36}{\calorie}}
+        \wrongchoice{\SI{40}{\calorie}}
+        \wrongchoice{\SI{80}{\calorie}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch22-q04}
+    A refrigerator has a coefficient of performance of 4. 
+    If the refrigerator absorbs \SI{30}{\calorie} of heat from the cold reservoir in each cycle,
+        the heat expelled into the heat reservoir is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{40.5}{\calorie}}
+      \correctchoice{\SI{37.5}{\calorie}}
+        \wrongchoice{\SI{36.5}{\calorie}}
+        \wrongchoice{\SI{34.5}{\calorie}}
+        \wrongchoice{\SI{22.5}{\calorie}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch22-q05}
+    A lawn mower has a six horsepower engine ($\SI{1}{hp}=\SI{750}{\watt}$). 
+    If the engine has an efficiency of \SI{20}{\percent},
+        and the throttle is such that the engine cycles ten times a second,
+        the heat that is expelled in one cycle is:
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{\SI{1800}{\joule}}
+        \wrongchoice{\SI{2000}{\joule}}
+        \wrongchoice{\SI{2200}{\joule}}
+        \wrongchoice{\SI{2400}{\joule}}
+        \wrongchoice{\SI{2250}{\joule}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch22-q06}
+    A steam engine is operating at its theoretical maximum efficiency of \SI{60}{\percent}. 
+    If the waste heat has a temperature of \SI{100}{\degree\Fahrenheit} (\SI{38}{\degreeCelsius}),
+        what is the temperature of the boiler?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{350}{\degreeCelsius}}
+        \wrongchoice{\SI{94}{\degreeCelsius}}
+        \wrongchoice{\SI{225}{\degreeCelsius}}
+      \correctchoice{\SI{504}{\degreeCelsius}}
+        \wrongchoice{\SI{775}{\degreeCelsius}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch22-q07}
+    A company that produces pulsed gas heaters claims their efficiency is approximately \SI{90}{\percent}. 
+    If an engine operates between \SI{250}{\degreeCelsius} and \SI{25}{\degreeCelsius},
+        what is its maximum thermodynamic efficiency?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{83}{\percent}}
+        \wrongchoice{\SI{65}{\percent}}
+      \correctchoice{\SI{43}{\percent}}
+        \wrongchoice{\SI{90}{\percent}}
+        \wrongchoice{\SI{56}{\percent}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch22-q08}
+    A heat engine absorbs \SI{2500}{\joule} of heat from a hot reservoir and expels \SI{1000}{\joule} to a cold reservoir. 
+    When it is run in reverse, with the same reservoirs,
+        the engine pumps \SI{2500}{\joule} of heat to the hot reservoir,
+        requiring \SI{1500}{\joule} of work to do so. 
+    Find the ratio of the work done by the heat engine to the work done by the pump. 
+    Is the heat engine reversible?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{1.0 (no)}
+      \correctchoice{1.0 (yes)}
+        \wrongchoice{1.5 (yes)}
+        \wrongchoice{1.5 (no)}
+        \wrongchoice{2.5 (no)}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch22-q09}
+    %% NOTE: define COP: coefficient of performance 
+    On a cold day, a heat pump absorbs heat from the outside air at \SI{14}{\degree\Fahrenheit} (\SI{-10}{\degreeCelsius}) and transfers it into a home at a temperature of \SI{86}{\degree\Fahrenheit} (\SI{30}{\degreeCelsius}).
+    %$ NOTE: Determine the maximum COP of the heat pump.
+    Determine the maximum coefficient of performance of the heat pump.
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\num{0.2}}
+        \wrongchoice{\num{4.4}}
+        \wrongchoice{\num{0.5}}
+      \correctchoice{\num{7.6}}
+        \wrongchoice{\num{6.7}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch22-q10}
+    A new electric power plant has an efficiency of \SI{42}{\percent}.
+    For every 100 barrels of oil needed to run the turbine,
+        how many are essentially lost as waste heat
+        (in barrels of oil) to the environment?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\num{21}}
+        \wrongchoice{\num{42}}
+      \correctchoice{\num{58}}
+        \wrongchoice{\num{10}}
+        \wrongchoice{\num{79}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch22-q11}
+    An \SI{800}{\mega\watt} electric power plant has an efficiency of \SI{30}{\percent}.
+    It loses its waste heat in large cooling towers. 
+    Approximately how much waste heat is discharged to the atmosphere every second?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{1200}{\mega\joule}}
+      \correctchoice{\SI{1900}{\mega\joule}}
+        \wrongchoice{\SI{800}{\mega\joule}}
+        \wrongchoice{\SI{560}{\mega\joule}}
+        \wrongchoice{\SI{240}{\mega\joule}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch22-q12}
+    A homeowner has a new oil furnace which has an efficiency of \SI{60}{\percent}.
+    For every 100 barrels of oil needed to heat his house,
+        how much (in barrels of oil) goes up the chimney as waste heat?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\num{20}}
+        \wrongchoice{\num{60}}
+      \correctchoice{\num{40}}
+        \wrongchoice{\num{80}}
+        \wrongchoice{\num{10}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch22-q13}
+    One kilogram of chilled water at \SI{32}{\degree\Fahrenheit} (\SI{0}{\degreeCelsius}) is placed in a freezer which is kept at \SI{0}{\degree\Fahrenheit} (\SI{-18}{\degreeCelsius}).
+    Approximately how much electric energy is needed to operate the compressor to cool this water to 0°F if the room temperature is maintained at \SI{75}{\degree\Fahrenheit} (\SI{24}{\degreeCelsius})? 
+    ($L_{\text{ice}}=\SI{3.33e5}{\joule}$; $c_{\text{ice}}=\SI{2.09e3}{\joule}$)
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{13}{\kilo\calorie}}
+        \wrongchoice{\SI{1.5}{\kilo\calorie}}
+      \correctchoice{\SI{15}{\kilo\calorie}}
+        \wrongchoice{\SI{16}{\kilo\calorie}}
+        \wrongchoice{\SI{33}{\kilo\calorie}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch22-q14}
+    One kilogram of chilled water (\SI{0}{\degreeCelsius}) is placed in a freezer which is kept at \SI{0}{\degree\Fahrenheit} (\SI{-18}{\degreeCelsius}).
+    Approximately how much electric energy is needed just to freeze the water if the room temperature is maintained at \SI{75}{\degree\Fahrenheit} (\SI{24}{\degreeCelsius})?
+    ($L_{\text{ice}}=\SI{333}{\joule\per\gram}$; $c_{\text{ice}}=\SI{209}{\joule\per\gram\per\degreeCelsius}$.)
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{11}{\kilo\calorie}}
+        \wrongchoice{\SI{15}{\kilo\calorie}}
+        \wrongchoice{\SI{16}{\kilo\calorie}}
+      \correctchoice{\SI{13}{\kilo\calorie}}
+        \wrongchoice{\SI{33}{\kilo\calorie}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch22-q15}
+    An automobile engine operates with an overall efficiency of \SI{12}{\percent}.
+    How much energy is delivered as waste heat (in gallons of gasoline) for each ten gallons of fuel burned?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{1.2}{\gallon}}
+      \correctchoice{\SI{8.8}{\gallon}}
+        \wrongchoice{\SI{6.5}{\gallon}}
+        \wrongchoice{\SI{4.7}{\gallon}}
+        \wrongchoice{\SI{7.5}{\gallon}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch22-q16}
+    An engine is designed to obtain energy from the temperature gradient of the ocean. 
+    What is the thermodynamic efficiency of such an engine if the temperature of the surface of the water is \SI{59}{\degree\Fahrenheit} (\SI{15}{\degreeCelsius}) and the temperature well below the surface is \SI{41}{\degree\Fahrenheit} (\SI{5}{\degreeCelsius})?
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{\SI{3.5}{\percent}}
+        \wrongchoice{\SI{67}{\percent}}
+        \wrongchoice{\SI{31}{\percent}}
+        \wrongchoice{\SI{17}{\percent}}
+        \wrongchoice{\SI{96}{\percent}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch22-q17}
+    A vessel containing \SI{5.0}{\kilo\gram} of water at \SI{10}{\degreeCelsius} is put into a refrigerator. 
+    The \SI{1/7}{hp} motor ($\SI{1}{hp}=\SI{746}{\watt}$) runs for \SI{5.0}{\minute} to cool the liquid to the refrigerator's low temperature, \SI{0}{\degreeCelsius}. 
+    %% NOTE: define COP: coefficient of performance
+    %What is the COP of the refrigerator?
+    What is the coefficient of performance of the refrigerator?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\num{5.7}}
+        \wrongchoice{\num{4.6}}
+      \correctchoice{\num{6.5}}
+        \wrongchoice{\num{7.2}}
+        \wrongchoice{\num{3.6}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch22-q18}
+    Exactly \SI{500}{\gram} of ice are melted at a temperature of \SI{32}{\degree\Fahrenheit}. 
+    ($L_{\text{ice}}=\SI{333}{\joule\per\gram}$.)
+    The change in entropy is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{321}{\joule\per\kelvin}}
+        \wrongchoice{\SI{146}{\joule\per\kelvin}}
+        \wrongchoice{\SI{512}{\joule\per\kelvin}}
+      \correctchoice{\SI{610}{\joule\per\kelvin}}
+        \wrongchoice{\SI{5230}{\joule\per\kelvin}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch22-q19}
+    When water of mass $m$ and specific heat $c$ is heated from absolute temperature $T_1$ to absolute temperature $T_2$,
+        its change in entropy is:
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{$cm\ln\left(\dfrac{T_2}{T_1}\right)$}
+        \wrongchoice{$cm\dfrac{T_2}{T_1}$}
+        \wrongchoice{$cm\dfrac{T_2-T_1}{T_1}$}
+        \wrongchoice{$cm\dfrac{T_2-T_1}{T_2}$}
+        \wrongchoice{$cm\dfrac{T_2-T_1}{T_2+T_1}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch22-q20}
+    The change in entropy of \SI{1.00}{\kilo\gram} of water that is heated from \SI{50}{\degreeCelsius} to \SI{100}{\degreeCelsius} is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{516}{\calorie\per\kelvin}}
+        \wrongchoice{\SI{312}{\calorie\per\kelvin}}
+      \correctchoice{\SI{144}{\calorie\per\kelvin}}
+        \wrongchoice{\SI{946}{\calorie\per\kelvin}}
+        \wrongchoice{\SI{391}{\calorie\per\kelvin}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch22-q21}
+    The change in entropy of a mass $m$ of a solid substance which has a latent heat of fusion $L$ and melts at a temperature $T$ is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\dfrac{LT}{m}$}
+        \wrongchoice{$mL\,\ln\left(T\right)$}
+        \wrongchoice{$mLT$}
+      \correctchoice{$\dfrac{mL}{T}$}
+        \wrongchoice{$\dfrac{L}{mT}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch22-q22}
+    Since $L_{\text{ice}}=\SI{333}{\joule\per\gram}$,
+        the change in entropy when \SI{1.00}{\kilo\gram} of ice melts is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{144}{\calorie\per\kelvin}}
+      \correctchoice{\SI{291}{\calorie\per\kelvin}}
+        \wrongchoice{\SI{312}{\calorie\per\kelvin}}
+        \wrongchoice{\SI{516}{\calorie\per\kelvin}}
+        \wrongchoice{\SI{80}{\calorie\per\kelvin}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch22-q23}
+    If $n$ moles of an ideal gas are compressed isothermally from an initial volume $V_1$ to a final volume $V_2$,
+        the change in entropy is:
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{$nR\ln\left(\dfrac{V_2}{V_1}\right)$}
+        \wrongchoice{$nRT\ln\left(\dfrac{V_2}{V_1}\right)$}
+        \wrongchoice{$nk_B\ln\left(\dfrac{V_2}{V_1}\right)$}
+        \wrongchoice{$\displaystyle nC_v \int\;\dfrac{\mathrm{d}T}{T}$}
+        \wrongchoice{$\dfrac{nC_v}{T}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch22-q24}
+    Determine the change in entropy when \SI{5.00}{\mole} of an ideal gas at \SI{0}{\degreeCelsius} are compressed isothermally from an initial volume of \SI{100}{\centi\meter\cubed} to a final volume of \SI{20}{\centi\meter\cubed}.
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{-191}{\joule\per\kelvin}}
+        \wrongchoice{\SI{-52}{\joule\per\kelvin}}
+        \wrongchoice{\SI{-71}{\joule\per\kelvin}}
+      \correctchoice{\SI{-67}{\joule\per\kelvin}}
+        \wrongchoice{\SI{-208}{\joule\per\kelvin}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch22-q25}
+    An ideal gas is allowed to undergo a free expansion. 
+    If its initial volume is $V_1$ and its final volume is $V_2$,
+        the change in entropy is:
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{$nR\ln\left(\dfrac{V_2}{V_1}\right)$}
+        \wrongchoice{$nRT\ln\left(\dfrac{V_2}{V_1}\right)$}
+        \wrongchoice{$nk_B\ln\left(\dfrac{V_2}{V_1}\right)$}
+        \wrongchoice{zero}
+        \wrongchoice{$\dfrac{nRV_2}{V_1}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch22-q26}
+    Find the change in entropy when \SI{5.00}{\mole} of an ideal gas undergo a free expansion from an initial volume of \SI{20}{\centi\meter\cubed} to a final volume of \SI{100}{\centi\meter\cubed}.
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{71}{\joule\per\kelvin}}
+        \wrongchoice{\SI{52}{\joule\per\kelvin}}
+      \correctchoice{\SI{67}{\joule\per\kelvin}}
+        \wrongchoice{\SI{191}{\joule\per\kelvin}}
+        \wrongchoice{\SI{208}{\joule\per\kelvin}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch22-q27}
+    An ideal gas is allowed to expand adiabatically. 
+    Assume the process is reversible.
+    The change in entropy is:
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{zero}
+        \wrongchoice{$nR\ln\left(\dfrac{V_2}{V_1}\right)$}
+        \wrongchoice{$nR\ln\left(\dfrac{T_2}{T_1}\right)$}
+        \wrongchoice{$k_Bn\ln\left(\dfrac{V_2}{V_1}\right)$}
+        \wrongchoice{$k_Bn\ln\left(\dfrac{T_2}{T_1}\right)$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch22-q28}
+    Find the change in entropy when \SI{5.00}{\mole} of an ideal monatomic gas are allowed to expand isobarically from an initial volume of \SI{20}{\centi\meter\cubed} to a final volume of \SI{100}{\centi\meter\cubed}.
+    \begin{multicols}{2}
+    \begin{choices}
+       \correctchoice{\SI{167}{\joule\per\kelvin}}
+         \wrongchoice{\SI{100}{\joule\per\kelvin}}
+         \wrongchoice{\SI{67}{\joule\per\kelvin}}
+         \wrongchoice{\SI{52}{\joule\per\kelvin}}
+         \wrongchoice{\SI{152}{\joule\per\kelvin}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch22-q29}
+    Ten kilograms of water at \SI{0}{\degreeCelsius} is mixed with \SI{10}{\kilo\gram} of water at \SI{100}{\degreeCelsius}.
+    The change in entropy of the system is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{1000}{\calorie\per\kelvin}}
+        \wrongchoice{\SI{480}{\calorie\per\kelvin}}
+        \wrongchoice{\SI{-720}{\calorie\per\kelvin}}
+      \correctchoice{\SI{240}{\calorie\per\kelvin}}
+        \wrongchoice{\SI{-168}{\calorie\per\kelvin}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch22-q30}
+    A vessel containing \SI{10}{\kilo\gram} of water is left out where it evaporates. 
+    If the temperature remains constant at \SI{20}{\degreeCelsius},
+        what is the change in entropy?
+    (The latent heat of vaporization at \SI{20}{\degreeCelsius} is \SI{585}{\calorie\per\gram}.)
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{30}{\calorie\per\gram}}
+        \wrongchoice{\SI{10}{\calorie\per\gram}}
+      \correctchoice{\SI{20}{\calorie\per\gram}}
+        \wrongchoice{\SI{40}{\calorie\per\gram}}
+        \wrongchoice{\SI{290}{\calorie\per\gram}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch22-q31}
+    A gasoline engine absorbs \SI{2500}{\joule} of heat at \SI{250}{\degreeCelsius} and expels \SI{2000}{\joule} at a temperature of \SI{50}{\degreeCelsius}.
+    The change in entropy for the system is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{6.2}{\joule\per\kelvin}}
+        \wrongchoice{\SI{4.7}{\joule\per\kelvin}}
+      \correctchoice{\SI{1.4}{\joule\per\kelvin}}
+        \wrongchoice{\SI{10.9}{\joule\per\kelvin}}
+        \wrongchoice{\SI{3.2}{\joule\per\kelvin}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch22-q32}
+    \SI{100}{\gram} of molten lead (\SI{600}{\degreeCelsius}) is used to make musket balls. 
+    If the lead shot is allowed to cool to room temperature (\SI{21}{\degreeCelsius}),
+        what is the change in entropy of the lead? 
+    (For the specific heat of molten and solid lead use \SI{1.29}{\joule\per\gram\per\degreeCelsius};
+        the latent heat of fusion and the melting point of lead are \SI{2.45e4}{\joule\per\kilo\gram} and \SI{327}{\degreeCelsius}.)
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{\SI{-140}{\joule\per\kelvin}}
+        \wrongchoice{\SI{-252}{\joule\per\kelvin}}
+        \wrongchoice{\SI{-302}{\joule\per\kelvin}}
+        \wrongchoice{\SI{-429}{\joule\per\kelvin}}
+        \wrongchoice{\SI{-100}{\joule\per\kelvin}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch22-q33}
+    The reason that we can calculate the change in entropy of a system is that:
+    \begin{choices}
+        \wrongchoice{entropy always decreases.}
+        \wrongchoice{entropy always increases.}
+        \wrongchoice{the entropy of the universe always remains constant.}
+      \correctchoice{it depends only on the properties of the initial and final equilibrium states.}
+        \wrongchoice{systems always follow reversible paths.}
+    \end{choices}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch22-q34}
+    By operating a reversible heat engine with an ideal gas as the working substance in a Carnot cycle and measuring the ratio $\dfrac{Q_c}{Q_h}$,
+        we can calculate
+    \begin{choices}
+        \wrongchoice{$n$, the number of moles of the ideal gas.}
+        \wrongchoice{the ratio $\dfrac{V_c}{V_h}$ of the volumes of the ideal gas.}
+        \wrongchoice{the ratio $\dfrac{P_c}{P_h}$ of the pressures of the ideal gas.}
+      \correctchoice{the ratio $\dfrac{P_c V_c}{P_h V_h}$ of the products of volumes and pressures of the ideal gas.}
+        \wrongchoice{the value of Avogadro's number.}
+    \end{choices}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch22-q35}
+    Which of the following is an almost reversible process?
+    \begin{choices}
+        \wrongchoice{The explosion of hydrogen and oxygen to form water.}
+        \wrongchoice{Heat transfer through thick insulation.}
+        \wrongchoice{The adiabatic free expansion of a gas.}
+      \correctchoice{A slow isothermal compression of a gas.}
+        \wrongchoice{A slow leakage of gas into an empty chamber through a small hole in a membrane.}
+    \end{choices}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch22-q36}
+    The change in entropy when \SI{1}{\kilo\gram} of ice melts at \SI{0}{\degreeCelsius} is:
+    ($L_{\text{ice}}=\SI{333}{\joule\per\gram}$.)
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{335}{\joule\per\kelvin}}
+        \wrongchoice{\SI{603}{\joule\per\kelvin}}
+      \correctchoice{\SI{1220}{\joule\per\kelvin}}
+        \wrongchoice{\SI{1310}{\joule\per\kelvin}}
+        \wrongchoice{\SI{2160}{\joule\per\kelvin}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch22-q37}
+    An ideal heat engine can have an efficiency of one if the temperature of the low temperature reservoir is:
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{\SI{0}{\kelvin}}
+        \wrongchoice{\SI{0}{\degreeCelsius}}
+        \wrongchoice{\SI{0}{\degree\Fahrenheit}}
+        \wrongchoice{\SI{0}{\degree\Rankine}}
+        \wrongchoice{the same as the temperature of the heat source.}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{questionmult}{serway-ch22-q38}
+    An adiabatic free expansion of a gas in a thermally isolated container is not reversible because:
+    \begin{choices}
+      \correctchoice{work must be done on the gas to return it to its original volume.}
+        \wrongchoice{heat must be exchanged with the surroundings to return the gas to its original temperature.}
+        \wrongchoice{its internal energy has a greater value after the expanded gas is returned to its original volume and temperature.}
+        %\wrongchoice{of all of the above.}
+        %\wrongchoice{of (a) and (b) above only.}
+    \end{choices}
+\end{questionmult}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch22-q39}
+    A Carnot cycle, operating as a heat engine, consists,
+        in the order given, of
+    \begin{choices}
+        \wrongchoice{an isothermal expansion, an isothermal compression, an adiabatic expansion and an adiabatic compression.}
+        \wrongchoice{an adiabatic expansion, an adiabatic compression, an isothermal expansion and an isothermal compression.}
+        \wrongchoice{an isothermal expansion, an adiabatic compression, an isothermal compression and an adiabatic expansion.}
+        \wrongchoice{an adiabatic compression, an isothermal compression, an isothermal expansion and an adiabatic expansion.}
+      \correctchoice{an isothermal expansion, an adiabatic expansion, an isothermal compression and an adiabatic compression.}
+    \end{choices}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch22-q40}
+    All real engines are less efficient than the Carnot engine because:
+    \begin{choices}
+        \wrongchoice{they do not operate through the Otto cycle.}
+      \correctchoice{they do not operate through a reversible cycle.}
+        \wrongchoice{the working substance does not maintain a constant volume through the cycle.}
+        \wrongchoice{the working substance does not maintain a constant pressure through the cycle.}
+        \wrongchoice{the working substance does not maintain a constant temperature through the cycle.}
+    \end{choices}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch22-q41}
+    In an engine operating in the Otto cycle,
+        the final volume of the fuel-air mixture is one sixth the initial volume. 
+    Assume $\gamma=1.4$.
+    The maximum theoretical efficiency of this cycle is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{17}{\percent}}
+        \wrongchoice{\SI{49}{\percent}}
+      \correctchoice{\SI{51}{\percent}}
+        \wrongchoice{\SI{56}{\percent}}
+        \wrongchoice{\SI{83}{\percent}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch22-q42}
+    For a gas of $N$ identical molecules of molecular volume $V_m$ in total volume $V$ at temperature $T$,
+        the number of ways of locating the $N$ molecules in the volume is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\dfrac{V_m}{V}$}
+        \wrongchoice{$\dfrac{V}{V_m}$}
+        \wrongchoice{$\left(\dfrac{V}{V_m}\right)^T$}
+      \correctchoice{$\left(\dfrac{V_m}{V}\right)^N$}
+        \wrongchoice{$\ln\left(\dfrac{V}{V_m}\right)$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{questionmult}{serway-ch22-q43}
+    A violation of the second law of thermodynamics would occur if:
+    \begin{choices}
+      \correctchoice{a ball lying on the ground started to bounce.}
+      \correctchoice{transfer of energy by heat moved energy from an object at low temperature to an object at a higher temperature.}
+        \wrongchoice{a motion picture was run backwards through the projector.}
+        %\wrongchoice{any of the above occurred.}
+        %\correctchoice{(a) or (b) occurred, but not (c).}
+    \end{choices}
+\end{questionmult}
+}
+
+\element{serway-mc}{
+\begin{questionmult}{serway-ch22-q44}
+    A violation of the second law of thermodynamics would occur if:
+    \begin{choices}
+      \correctchoice{a ball lying on the ground started to bounce.}
+      \correctchoice{transfer of energy by heat moved energy from an object at low temperature to an object at a higher temperature.}
+        %% NOTE: C is different
+        \wrongchoice{a refrigerator heated the air in the room in which the refrigerator is located.}
+        %\wrongchoice{any of the above occurred.}
+        %\correctchoice{(a) or (b) occurred, but not (c).}
+    \end{choices}
+\end{questionmult}
+}
+
+\element{serway-mc}{
+\begin{questionmult}{serway-ch22-q45}
+    The thermal efficiency of a heat engine is given by:
+    \begin{choices}
+      \correctchoice{$e = \dfrac{W_{eng}}{|Q_h|}$}
+      \correctchoice{$e = \dfrac{|Q_h|-|Q_c|}{|Q_h|}$}
+        \wrongchoice{$e = 1 - \dfrac{T_h}{T_c}$}
+        %\wrongchoice{all of the formulas above.}
+        %\correctchoice{only (a) or (b) above.}
+    \end{choices}
+\end{questionmult}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch22-q46}
+    Selena states that $S_f-S_i=nR\ln\left(\dfrac{V_v}{V_i}\right)$ proves that entropy has a definite value at the beginning and end of an adiabatic free expansion. 
+    Ron says $S_f-S_i = k_B\ln\left(\dfrac{W_f}{W_i}\right)$,
+        where $W$ is the number of microstates of a given macrostate.  
+    Which one, if either, is correct?
+    \begin{choices}
+        \wrongchoice{Only Selena, because entropy can depend only on macroscopic variables.  }
+        \wrongchoice{Only Ron, because entropy can depend only on microscopic variables.}
+        \wrongchoice{Only Selena, because $\left(\dfrac{V_f}{V_i}\right)=\left(\dfrac{T_f}{T_i}\right)$ in an adibatic free expansion.}
+        \wrongchoice{Neither, because we cannot calculate changes in entropy in an adiabatic free expansion.}
+      \correctchoice{Both, because entropy, which is macroscopic is a function of microscopic disorder.}
+    \end{choices}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch22-q47}
+    Which answer below is not a statement of the second law of thermodynamics?
+    \begin{choices}
+        \wrongchoice{Real processes proceed in a preferred direction.}
+        \wrongchoice{Energy does not flow spontaneously by heat from a cold to a hot reservoir.}
+        \wrongchoice{The entropy of the universe increases in all natural processes.}
+      \correctchoice{In theory, heat engines working in a cycle employ reversible processes.}
+        \wrongchoice{You cannot construct a heat engine, operating in a cycle that does nothing but take heat from a reservoir and perform an equal amount of work.}
+    \end{choices}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch22-q48}
+    The change in entropy, $\Delta S$, is largest in a(n):
+    \begin{choices}
+        \wrongchoice{constant volume process.}
+      \correctchoice{constant pressure process.}
+        \wrongchoice{adiabatic process.}
+        \wrongchoice{process in which no heat is transferred.}
+        \wrongchoice{process in which no work is performed.}
+    \end{choices}
+\end{question}
+}
+
+
+\endinput
+
+

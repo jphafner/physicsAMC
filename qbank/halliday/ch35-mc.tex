@@ -1,0 +1,700 @@
+
+%%--------------------------------------------------
+%% Halliday: Fundamentals of Physics
+%%--------------------------------------------------
+
+
+%% Chapter 35: Interference
+%%--------------------------------------------------
+
+
+%% Learning Objectives
+%%--------------------------------------------------
+
+%% 35.01: Using a sketch, explain Huygens' principle.
+%% 35.02: With a few simple sketches, explain refraction in terms of the gradual change in the speed of a wavefront as it passes through an interface at an angle to the normal.
+%% 35.03: Apply the relationship between the speed of light in vacuum $c$, the speed of light in a material $v$, and the index of refraction of the material $n$.
+%% 35.04: Apply the relationship between a distance $L$ in a material, the speed of light in that material, and the time required for a pulse of the light to travel through $L$.
+%% 35.05: Apply Snell's law of refraction.
+%% 35.06: When light refracts through an interface, identify that the frequency does not change but the wavelength and effective speed do.
+%% 35.07: Apply the relationship between the wavelength in vacuum $\lambda$, the wavelength $\lambda_n$ in a material (the internal wavelength), and the index of refraction $n$ of the material.
+%% 35.08: For light in a certain length of a material, calculate the number of internal wavelengths that fit into the length.
+%% 35.09: If two light waves travel through different materials with different indexes of refraction and then reach a common point, determine their phase difference and interpret the resulting interference in terms of maximum brightness, intermediate brightness, and darkness.
+%% 35.10: Apply the learning objectives of Module 17-3 (sound waves there, light waves here) to find the phase difference and interference of two waves that reach a common point after traveling paths of different lengths.
+%% 35.11: Given the initial phase difference between two waves with the same wavelength, determine their phase difference after they travel through different path lengths and through different indexes of refraction.
+%% 35.12: Identify that rainbows are examples of optical interference.
+
+
+%% Halliday Multiple Choice Questions
+%%--------------------------------------------------
+\element{halliday-mc}{
+\begin{question}{halliday-ch35-q01}
+    A ``wave front'' is a surface of constant:
+    \begin{choices}
+      \correctchoice{phase}
+        \wrongchoice{frequency}
+        \wrongchoice{wavelength}
+        \wrongchoice{amplitude}
+        \wrongchoice{speed}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch35-q02}
+    Huygens' construction can be used only:
+    \begin{choices}
+        \wrongchoice{for light}
+        \wrongchoice{for an electromagnetic wave}
+        \wrongchoice{if one of the media is vacuum (or air)}
+        \wrongchoice{for transverse waves}
+      \correctchoice{for all of the provided and other situations}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch35-q03}
+    Consider (I) the law of reflection and (II) the law of refraction. 
+    Huygens’ principle can be used to derive:
+    \begin{choices}
+        \wrongchoice{only I}
+        \wrongchoice{only II}
+      \correctchoice{both I and II}
+        \wrongchoice{neither I nor II}
+        \wrongchoice{the question is meaningless because Huygens’ principle is for wave fronts whereas both I and II concern rays}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch35-q04}
+    Units of ``optical path length'' are:
+    \begin{choices}
+        \wrongchoice{per meter (\si{\per\meter})}
+      \correctchoice{meter (\si{\meter})}
+        \wrongchoice{meter per second (\si{\meter\per\second})}
+        \wrongchoice{hertz per meter (\si{\hertz\per\meter})}
+        \wrongchoice{meter per hertz (\si{\meter\per\hertz})}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch35-q05}
+    The light waves represented by the three rays shown in the diagram all have the same frequency.
+    4.7 wavelengths fit into layer 1, 3.2 wavelengths fit into layer 2, and 5.3 wavelengths fit into layer 3. 
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: tikz
+    \end{tikzpicture}
+    \end{center}
+    Rank the layers according to the speeds of the waves,
+        least to greatest.
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{1, 2, 3}
+        \wrongchoice{2, 1, 3}
+        \wrongchoice{3, 1, 2}
+      \correctchoice{3, 1, 2}
+        \wrongchoice{1, 3, 2}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch35-q06}
+    Interference of light is evidence that:
+    \begin{choices}
+        \wrongchoice{the speed of light is very large}
+        \wrongchoice{light is a transverse wave}
+        \wrongchoice{light is electromagnetic in character}
+        \wrongchoice{light is a wave phenomenon}
+        \wrongchoice{light does not obey conservation of energy}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch35-q07}
+    The reason there are two slits, rather than one,
+        in a Young's experiment is:
+    \begin{choices}
+        \wrongchoice{to increase the intensity}
+        \wrongchoice{one slit is for frequency, the other for wavelength}
+      \correctchoice{to create a path length difference}
+        \wrongchoice{one slit is for E fields, the other is for B fields}
+        \wrongchoice{two slits in parallel offer less resistance}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch35-q08}
+    In a Young's double-slit experiment the center of a bright fringe occurs wherever waves from the slits differ in the distance they travel by a multiple of:
+    \begin{choices}
+        \wrongchoice{a fourth of a wavelength}
+        \wrongchoice{a half a wavelength}
+        \wrongchoice{a wavelength}
+        \wrongchoice{three-fourths of a wavelength}
+      \correctchoice{none of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch35-q09}
+    In a Young's double-slit experiment the center of a bright fringe occurs wherever waves from the slits differ in phase by a multiple of:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\dfrac{\pi}{4}$}
+        \wrongchoice{$\dfrac{\pi}{2}$}
+        \wrongchoice{$\pi$}
+        \wrongchoice{$\dfrac{3\pi}{4}$}
+      \correctchoice{$2\pi$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch35-q10}
+    Waves from two slits are in phase at the slits and travel to a distant screen to produce the third side maximum of the interference pattern. 
+    The difference in the distance traveled by the waves is:
+    \begin{choices}
+        \wrongchoice{half a wavelength}
+        \wrongchoice{a wavelength}
+        \wrongchoice{three halves of a wavelength}
+        \wrongchoice{two wavelengths}
+      \correctchoice{three wavelengths}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch35-q11}
+    Waves from two slits are in phase at the slits and travel to a distant screen to produce the second minimum of the interference pattern. 
+    The difference in the distance traveled by the waves is:
+    \begin{choices}
+        \wrongchoice{half a wavelength}
+        \wrongchoice{a wavelength}
+      \correctchoice{three halves of a wavelength}
+        \wrongchoice{two wavelengths}
+        \wrongchoice{five halves of a wavelength}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch35-q12}
+    A monochromatic light source illuminates a double slit and the resulting interference pattern is observed on a distant screen. 
+    Let $d=$ center-to-center slit spacing, $a=$ individual slit width,
+        $D=$ screen-to-slit distance, and $l=$ adjacent dark line spacing in the interference pattern. 
+    The wavelength of the light is then:
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{$\dfrac{d}{D}$}
+        \wrongchoice{$\dfrac{Ld}{a}$}
+        \wrongchoice{$\dfrac{da}{D}$}
+        \wrongchoice{$\dfrac{D}{a}$}
+        \wrongchoice{$\dfrac{Dd}{l}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch35-q13}
+    Light from a small region of an ordinary incandescent bulb is passed through a yellow filter and then serves as the source for a Young's double-slit experiment. 
+    Which of the following changes would cause the interference pattern to be more closely spaced?
+    \begin{choices}
+        \wrongchoice{Use slits that are closer together}
+        \wrongchoice{Use a light source of lower intensity}
+        \wrongchoice{Use a light source of higher intensity}
+      \correctchoice{Use a blue filter instead of a yellow filter}
+        \wrongchoice{Move the light source further away from the slits.}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch35-q14}
+    In a Young's double-slit experiment,
+        the slit separation is doubled. 
+    To maintain the same fringe spacing on the screen,
+        the screen-to-slit distance $D$ must be changed to:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\dfrac{D}{2}$}
+        \wrongchoice{$\dfrac{D}{\sqrt{2}}$}
+        \wrongchoice{$D\sqrt{2}$}
+      \correctchoice{$2D$}
+        \wrongchoice{$4D$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch35-q15}
+    In a Young's double-slit experiment,
+        light of wavelength \SI{500}{\nano\meter} illuminates two slits that are separated by \SI{1}{\milli\meter}.
+    The separation between adjacent bright fringes on a screen \SI{5}{\meter} from the slits is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{0.10}{\centi\meter}}
+      \correctchoice{\SI{0.25}{\centi\meter}}
+        \wrongchoice{\SI{0.50}{\centi\meter}}
+        \wrongchoice{\SI{1.0}{\centi\meter}}
+        \wrongchoice{none of the provided}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch35-q16}
+    In a Young's double-slit experiment,
+        the separation between slits is $d$ and the screen is a distance $D$ from the slits. 
+    $D$ is much greater than $d$ and $\lambda$ is the wavelength of the light. 
+    The number of bright fringes per unit width on the screen is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\dfrac{Dd}{\lambda}$}
+        \wrongchoice{$\dfrac{D\lambda}{d}$}
+        \wrongchoice{$\dfrac{D}{d\lambda}$}
+        \wrongchoice{$\dfrac{\lambda}{Dd}$}
+      \correctchoice{$\dfrac{d}{D\lambda}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch35-q17}
+    In a Young’s double-slit experiment,
+        the slit separation is doubled. 
+    This results in:
+    \begin{choices}
+        \wrongchoice{an increase in fringe intensity}
+        \wrongchoice{a decrease in fringe intensity}
+        \wrongchoice{a halving of the wavelength}
+      \correctchoice{a halving of the fringe spacing}
+        \wrongchoice{a doubling of the fringe spacing}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch35-q18}
+    In an experiment to measure the wavelength of light using a double slit,
+        it is found that the fringes are too close together to easily count them. 
+    To spread out the fringe pattern, one could:
+    \begin{choices}
+      \correctchoice{decrease the slit separation}
+        \wrongchoice{increase the slit separation}
+        \wrongchoice{increase the width of each slit}
+        \wrongchoice{decrease the width of each slit}
+        \wrongchoice{none of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch35-q19}
+    The phase difference between the two waves that give rise to a dark spot in a Young's double-slit experiment is
+        (where $m=$ integer):
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{zero}
+        \wrongchoice{$2\pi m + \dfrac{\pi}{8}$}
+        \wrongchoice{$2\pi m + \dfrac{\pi}{4}$}
+        \wrongchoice{$2\pi m + \dfrac{\pi}{2}$}
+      \correctchoice{$2\pi m + \pi$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch35-q20}
+    In a Young's experiment,
+        it is essential that the two beams:
+    \begin{choices}
+        \wrongchoice{have exactly equal intensity}
+        \wrongchoice{be exactly parallel}
+        \wrongchoice{travel equal distances}
+      \correctchoice{come originally from the same source}
+        \wrongchoice{be composed of a broad band of frequencies}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch35-q21}
+    A light wave with an electric field amplitude of $E_0$ and a phase constant of zero is to be combined with one of the following waves:
+    Which of these combinations produces the greatest intensity?
+    \begin{choices}
+        %% NOTE: an amplitude of ... a a phase const ...
+        \wrongchoice{has an amplitude of $E_0$ and a phase constant of zero}
+        \wrongchoice{has an amplitude of $E_0$ and a phase constant of $\pi$}
+      \correctchoice{has an amplitude of $2E_0$ and a phase constant of zero}
+        \wrongchoice{has an amplitude of $2E_0$ and a phase constant of $\pi$}
+        \wrongchoice{has an amplitude of $3E_0$ and a phase constant of $\pi$}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch35-q22}
+    A light wave with an electric field amplitude of $2E_0$ and a phase constant of zero is to be combined with one of the following waves:
+    Which of these combinations produces the least intensity?
+    \begin{choices}
+        %% NOTE: an amplitude of ... a a phase const ...
+        \wrongchoice{has an amplitude of $E_0$ and a phase constant of zero}
+        \wrongchoice{has an amplitude of $E_0$ and a phase constant of $\pi$}
+        \wrongchoice{has an amplitude of $2E_0$ and a phase constant of zero}
+      \correctchoice{has an amplitude of $2E_0$ and a phase constant of $\pi$}
+        \wrongchoice{has an amplitude of $3E_0$ and a phase constant of $\pi$}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch35-q23}
+    One of the two slits in a Young's experiment is painted over so that it transmits only one-half the intensity of the other slit. 
+    As a result:
+    \begin{choices}
+        \wrongchoice{the fringe system disappears}
+        \wrongchoice{the bright fringes get brighter and the dark ones get darker}
+        \wrongchoice{the fringes just get dimmer}
+        \wrongchoice{the dark fringes just get brighter}
+      \correctchoice{the dark fringes get brighter and the bright ones get darker}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch35-q24}
+    In a Young's double-slit experiment,
+        a thin sheet of mica is placed over one of the two slits. 
+    As a result,
+        the center of the fringe pattern (on the screen) shifts by an amount corresponding to 30 dark bands. 
+    The wavelength of the light in this experiment is \SI{480}{\nano\meter} and the index of the mica is 1.60. 
+    The mica thickness is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{0.090}{\milli\meter}}
+        \wrongchoice{\SI{0.012}{\milli\meter}}
+        \wrongchoice{\SI{0.014}{\milli\meter}}
+      \correctchoice{\SI{0.024}{\milli\meter}}
+        \wrongchoice{\SI{0.062}{\milli\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch35-q25}
+    Light from a point source $X$ contains only blue and red components. 
+    After passing through a mysterious box,
+        the light falls on a screen. 
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: tikz
+    \end{tikzpicture}
+    \end{center}
+    Bright red and blue hands are observed as shown.
+    The box must contain:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{a lens}
+        \wrongchoice{a mirror}
+        \wrongchoice{a prism}
+      \correctchoice{a double slit}
+        \wrongchoice{a blue and red filter}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch35-q26}
+    Binoculars and microscopes are frequently made with coated optics by adding a thin layer of transparent material to the lens surface as shown. 
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: tikz
+    \end{tikzpicture}
+    \end{center}
+    One wants:
+    \begin{choices}
+        \wrongchoice{constructive interference between waves 1 and 2}
+        \wrongchoice{destructive interference between waves 3 and 4}
+      \correctchoice{constructive interference between 3 and 4}
+        \wrongchoice{the coating to be more transparent than the lens}
+        \wrongchoice{the speed of light in the coating to be less than that in the lens}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch35-q27}
+    Monochromatic light, at normal incidence, strikes a thin film in air. 
+    If $\lambda$ denotes the wavelength in the film,
+        what is the thinnest film in which the reflected light will be a maximum?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{Much less than $\lambda$}
+        \wrongchoice{$\dfrac{\lambda}{4}$}
+        \wrongchoice{$\dfrac{\lambda}{2}$}
+        \wrongchoice{$\dfrac{3\lambda}{4}$}
+        \wrongchoice{$\lambda$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch35-q28}
+    A soap film is illuminated by white light normal to its surface. 
+    The index of refraction of the film is \num{1.50}.
+    Wavelengths of \SI{480}{\nano\meter} and \SI{800}{\nano\meter} and no wavelengths between are be intensified in the reflected beam. 
+    The thickness of the film is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{1.5e-5}{\centi\meter}}
+        \wrongchoice{\SI{2.4e-5}{\centi\meter}}
+        \wrongchoice{\SI{3.6e-5}{\centi\meter}}
+      \correctchoice{\SI{4.0e-5}{\centi\meter}}
+        \wrongchoice{\SI{6.0e-5}{\centi\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch35-q29}
+    Red light is viewed through a thin vertical soap film. 
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: tikz
+    \end{tikzpicture}
+    \end{center}
+    At the third dark area shown,
+        the thickness of the film,
+        in terms of the wavelength within the film, is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\lambda$}
+        \wrongchoice{$\dfrac{3\lambda}{4}$}
+        \wrongchoice{$\dfrac{\lambda}{2}$}
+        \wrongchoice{$\dfrac{\lambda}{4}$}
+      \correctchoice{$\dfrac{5\lambda}{4}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch35-q30}
+    Yellow light is viewed by reflection from a thin vertical soap film. 
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: tikz
+    \end{tikzpicture}
+    \end{center}
+    Let $\lambda$ be the wavelength of the light within the film. 
+    Why is there a large dark space at the top of the film?
+    \begin{choices}
+        \wrongchoice{no light is transmitted through this part of the film}
+        \wrongchoice{the film thickness there is $\dfrac{\lambda}{4}$}
+      \correctchoice{the film thickness there is much less than $\lambda$}
+        \wrongchoice{the film is too thick in this region for thin film formulas to apply}
+        \wrongchoice{the reflected light is in the infrared}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch35-q31}
+    Three experiments involving a thin film (in air) are shown. 
+    If $t$ denotes the film thickness and $\lambda$ denotes the wavelength of the light in the film, which experiments will produce constructive interference as seen by the observer? 
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: tikz
+    \end{tikzpicture}
+    \end{center}
+    The incident light is nearly normal to the surface.
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{I only}
+        \wrongchoice{II only}
+        \wrongchoice{III only}
+      \correctchoice{I and III only}
+        \wrongchoice{II and III only}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch35-q32}
+    A liquid of refractive index $n=4/3$ replaces the air between a fixed wedge formed from two glass plates as shown. 
+    As a result, the spacing between adjacent dark bands in the interference pattern:
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: tikz
+    \end{tikzpicture}
+    \end{center}
+    \begin{choices}
+        \wrongchoice{increases by a factor of $4/3$}
+        \wrongchoice{increases by a factor of $3$}
+        \wrongchoice{remains the same}
+      \correctchoice{decreases to $3/4$ of its original value}
+        \wrongchoice{decreases to $1/3$ of its original value}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch35-q33}
+    A lens with a refractive index of \num{1.5} is coated with a material of refractive index \num{1.2} in order to minimize reflection.
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: tikz
+    \end{tikzpicture}
+    \end{center}
+    If $\lambda$ denotes the wavelength of the incident light in air,
+        what is the thinnest possible such coating?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$0.5\lambda$}
+        \wrongchoice{$0.416\lambda$}
+        \wrongchoice{$0.3\lambda$}
+      \correctchoice{$0.208\lambda$}
+        \wrongchoice{$0.25\lambda$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch35-q34}
+    A lens with a refractive index of \num{1.5} is coated with a material of refractive index \num{1.2} in order to minimize reflection.
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: tikz
+    \end{tikzpicture}
+    \end{center}
+    In a thin film experiment, a wedge of air is used between two glass plates. 
+    If the wavelength of the incident light in air is \SI{480}{\nano\meter},
+        how much thicker is the air wedge at the 16$^{th}$ dark fringe than it is at the 6$^{th}$?
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{\SI{2400}{\nano\meter}}
+        \wrongchoice{\SI{4800}{\nano\meter}}
+        \wrongchoice{\SI{240}{\nano\meter}}
+        \wrongchoice{\SI{480}{\nano\meter}}
+        \wrongchoice{None of the provided}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch35-q35}
+    An air wedge is formed from two glass plates that are in contact at their left edges. 
+    There are ten dark bands when viewed by reflection using monochromatic light. 
+    The left edge of the top plate is now slowly lifted until the plates are parallel. 
+    During this process:
+    \begin{choices}
+        \wrongchoice{the dark bands crowd toward the right edge}
+        \wrongchoice{the dark bands remain stationary}
+        \wrongchoice{the dark bands crowd toward the left edge}
+        \wrongchoice{the dark bands spread out, disappearing off the right edge}
+      \correctchoice{the dark bands spread out, disappearing off the left edge}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch35-q36}
+    An air wedge is formed using two glass plates that are in contact along their left edge. 
+    When viewed by highly monochromatic light,
+        there are exactly \num{4001} dark bands in the reflected light.
+    The air is now evacuated (with the glass plates remaining rigidly fixed) and the number of dark bands decreases to exactly \num{4000}.
+    The index of refraction of the air is:
+    \begin{choices}
+        \wrongchoice{0.00025}
+        \wrongchoice{0.00050}
+      \correctchoice{1.00025}
+        \wrongchoice{1.00050}
+        \wrongchoice{1.00000, by definition}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch35-q37}
+    A glass ($n=1.6$) lens is coated with a thin film ($n=1.3$) to reduce reflection of certain incident light. 
+    If $\lambda$ is the wavelength of the light in the film,
+        the least film thickness is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{less than $\dfrac{\lambda}{4}$}
+      \correctchoice{$\dfrac{\lambda}{4}$}
+        \wrongchoice{$\dfrac{\lambda}{2}$}
+        \wrongchoice{$\lambda$}
+        \wrongchoice{more than $\lambda$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch35-q38}
+    Two point sources, vibrating in phase,
+        produce an interference pattern in a ripple tank. 
+    If the frequency is increased by \SI{20}{\percent},
+        the number of nodal lines:
+    \begin{choices}
+      \correctchoice{is increased by \SI{20}{\percent}}
+        \wrongchoice{is increased by \SI{40}{\percent}}
+        \wrongchoice{remains the same}
+        \wrongchoice{is decreased by \SI{20}{\percent}}
+        \wrongchoice{is decreased by \SI{40}{\percent}}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch35-q39}
+    If two light waves are coherent:
+    \begin{choices}
+        \wrongchoice{their amplitudes are the same}
+        \wrongchoice{their frequencies are the same}
+        \wrongchoice{their wavelengths are the same}
+      \correctchoice{their phase difference is constant}
+        \wrongchoice{the difference in their frequencies is constant}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch35-q40}
+    To obtain an observable double-slit interference pattern:
+    \begin{choices}
+        \wrongchoice{the light must be incident normally on the slits}
+        \wrongchoice{the light must be monochromatic}
+        \wrongchoice{the light must consist of plane waves}
+      \correctchoice{the light must be coherent}
+        \wrongchoice{the screen must be far away from the slits}
+    \end{choices}
+\end{question}
+}
+
+
+\endinput
+
+

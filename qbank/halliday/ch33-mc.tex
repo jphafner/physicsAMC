@@ -1,0 +1,1258 @@
+
+%%--------------------------------------------------
+%% Halliday: Fundamentals of Physics
+%%--------------------------------------------------
+
+
+%% Chapter 33: Electromagnetic Waves
+%%--------------------------------------------------
+
+
+%% Learning Objectives
+%%--------------------------------------------------
+
+%% 33.01: In the electromagnetic spectrum, identify the relative wavelengths (longer or shorter) of AM radio, FM radio, television, infrared light, visible light, ultraviolet light, x rays, and gamma rays.
+%% 33.02: Describe the transmission of an electromagnetic wave by an $LC$ oscillator and an antenna.
+%% 33.03: For a transmitter with an $LC$ oscillator, apply the relationships between the oscillator's inductance $L$, capacitance $C$, and angular frequency $\omega$, and the emitted wave's frequency $f$ and wavelength $\lambda$.
+%% 33.04: Identify the speed of an electromagnetic wave in vacuum (and approximately in air).
+%% 33.05: Identify that electromagnetic waves do not require a medium and can travel through vacuum.
+%% 33.06: Apply the relationship between the speed of an electromagnetic wave, the straight-line distance traveled by the wave, and the time required for the travel.
+%% 33.07: Apply the relationships between an electromagnetic wave's frequency $f$, wavelength $\lambda$, period $T$, angular frequency $\omega$, and speed $c$.
+%% 33.08: Identify that an electromagnetic wave consists of an electric component and a magnetic component that are (a) perpendicular to the direction of travel, (b) perpendicular to each other, and (c) sinusoidal waves with the same frequency and phase.
+%% 33.09: Apply the sinusoidal equations for the electric and magnetic components of an EM wave, written as functions of position and time.
+%% 33.10: Apply the relationship between the speed of light $c$, the permittivity constant $\epsilon_0$, and the permeability constant $\mu_0$.
+%% 33.11: For any instant and position, apply the relationship between the electric field magnitude $E$, the magnetic field magnitude $B$, and the speed of light $c$.
+%% 33.12: Describe the derivation of the relationship between the speed of light $c$ and the ratio of the electric field amplitude $E$ to the magnetic field amplitude $B$.
+
+
+%% Halliday Multiple Choice Questions
+%%--------------------------------------------------
+\element{halliday-mc}{
+\begin{question}{halliday-ch33-q01}
+    Select the correct statement:
+    \begin{choices}
+        \wrongchoice{ultraviolet light has a longer wavelength than infrared}
+        \wrongchoice{blue light has a higher frequency than x rays}
+        \wrongchoice{radio waves have higher frequency than gamma rays}
+      \correctchoice{gamma rays have higher frequency than infrared waves}
+        \wrongchoice{electrons are a type of electromagnetic wave}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch33-q02}
+    Consider: radio waves (r), visible light (v), infrared light (i), x-rays (x), and ultraviolet light (u). 
+    In order of increasing frequency, they are:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{r, v, i, x, u}
+      \correctchoice{r, i, v, u, x}
+        \wrongchoice{i, r, v, u, x}
+        \wrongchoice{i, v, r, u, x}
+        \wrongchoice{r, i, v, x, u}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch33-q03}
+    The order of increasing wavelength for blue (b), green (g), red (r), and yellow (y) light is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{r, y, g, b}
+        \wrongchoice{r, g, y, b}
+        \wrongchoice{g, y, b, r}
+      \correctchoice{b, g, y, r}
+        \wrongchoice{b, y, g, r}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch33-q04}
+    Of the following human eyes are most sensitive to:
+    \begin{choices}
+        \wrongchoice{red light}
+        \wrongchoice{violet light}
+        \wrongchoice{blue light}
+      \correctchoice{green light}
+        \wrongchoice{none of these (they are equally sensitive to all colors)}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch33-q05}
+    Which of the following is \emph{not} true for electromagnetic waves?
+    \begin{choices}
+        \wrongchoice{they consist of changing electric and magnetic fields}
+      \correctchoice{they travel at different speeds in vacuum, depending on their frequency}
+        \wrongchoice{they transport energy}
+        \wrongchoice{they transport momentum}
+        \wrongchoice{they can be reflected}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch33-q06}
+    The product $\mu_0\epsilon_0$ has the same units as:
+    \begin{multicols}{2}
+    \begin{choices}
+        %% NOTE: make alt using SI units
+        \wrongchoice{$\left(\text{velocity}\right)^2$}
+        \wrongchoice{$\sqrt{\text{velocity}}$}
+        \wrongchoice{$\dfrac{1}{\text{velocity}}$}
+      \correctchoice{$\dfrac{1}{\text{velocity}^2}$}
+        \wrongchoice{$\dfrac{1}{\sqrt{\text{velocity}}}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch33-q07}
+    Maxwell's equations predict that the speed of electromagnetic waves in free space is given by:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{$\mu_0\epsilon_0$}
+        \wrongchoice{$\sqrt{\mu_0\epsilon_0}$}
+        \wrongchoice{$\dfrac{1}{\mu_0\epsilon_0}$}
+      \correctchoice{$\dfrac{1}{\sqrt{\mu_0\epsilon_0}}$}
+        \wrongchoice{$\dfrac{1}{\left(\mu_0\epsilon_0\right)^{2}}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch33-q08}
+    Maxwell's equations predict that the speed of light in free space is
+    \begin{choices}
+        \wrongchoice{an increasing function of frequency}
+        \wrongchoice{a decreasing function of frequency}
+      \correctchoice{independent of frequency}
+        \wrongchoice{a function of the distance from the source}
+        \wrongchoice{a function of the size of the source}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch33-q09}
+    The speed of light in vacuum is about:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{1100}{\foot\per\second}}
+        \wrongchoice{\SI{93e6}{\meter\per\second}}
+        \wrongchoice{\SI{6e23}{\meter\per\second}}
+      \correctchoice{\SI{3e10}{\centi\meter\per\second}}
+        \wrongchoice{\SI{186 000}{\mile\per\hour}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch33-q10}
+    The Sun is about \SI{1.5e11}{\meter} away. 
+    The time for light to travel this distance is about:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{4.5e18}{\second}}
+        \wrongchoice{\SI{8}{\second}}
+      \correctchoice{\SI{8}{\minute}}
+        \wrongchoice{\SI{8}{\hour}}
+        \wrongchoice{\SI{8}{\year}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch33-q11}
+    The time for a radar signal to travel to the Moon and back,
+        a one-way distance of about \SI{3.8e8}{\meter}, is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{1.3}{\second}}
+      \correctchoice{\SI{2.5}{\second}}
+        \wrongchoice{\SI{8}{\second}}
+        \wrongchoice{\SI{8}{\minute}}
+        \wrongchoice{\SI{1e6}{\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch33-q12}
+    Which of the following types of electromagnetic radiation travels at the greatest speed in vacuum?
+    \begin{choices}
+        \wrongchoice{Radio waves}
+        \wrongchoice{Visible light}
+        \wrongchoice{X rays}
+        \wrongchoice{Gamma rays}
+      \correctchoice{All travel at the same speed}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch33-q13}
+    Radio waves differ from visible light waves in that radio waves:
+    \begin{choices}
+        \wrongchoice{travel slower}
+        \wrongchoice{have a higher frequency}
+        \wrongchoice{travel faster}
+      \correctchoice{have a lower frequency}
+        \wrongchoice{require a material medium}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch33-q14}
+    Visible light has a frequency of about:
+    \begin{choices}
+        \wrongchoice{\SI{5e18}{\hertz}}
+        \wrongchoice{\SI{5e16}{\hertz}}
+      \correctchoice{\SI{5e14}{\hertz}}
+        \wrongchoice{\SI{5e12}{\hertz}}
+        \wrongchoice{\SI{5e10}{\hertz}}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch33-q15}
+    The theoretical upper limit for the frequency of electromagnetic waves is:
+    \begin{choices}
+        \wrongchoice{just slightly greater than that of red light}
+        \wrongchoice{just slightly less than that of blue light}
+        \wrongchoice{the greatest x-ray frequency}
+      \correctchoice{none of the provided (there is no upper limit)}
+        \wrongchoice{none of the provided (but there is an upper limit)}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch33-q16}
+    Radio waves of wavelength \SI{3}{\centi\meter} have a frequency of:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{1}{\mega\hertz}}
+        \wrongchoice{\SI{9}{\mega\hertz}}
+        \wrongchoice{\SI{100}{\mega\hertz}}
+      \correctchoice{\SI{10 000}{\mega\hertz}}
+        \wrongchoice{\SI{900}{\mega\hertz}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch33-q17}
+    Radio waves of wavelength \SI{300}{\meter} have a frequency of:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{e-3}{\kilo\hertz}}
+        \wrongchoice{\SI{500}{\kilo\hertz}}
+      \correctchoice{\SI{1}{\mega\hertz}}
+        \wrongchoice{\SI{9}{\mega\hertz}}
+        \wrongchoice{\SI{108}{\kilo\hertz}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch33-q18}
+    If the electric field in a plane electromagnetic wave is given by $E_m\sin\left[\left(\SI{3e6}{\per\meter}\right)x - \omega t\right]$,
+        the value of $\omega$ is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{0.01}{\radian\per\second}}
+        \wrongchoice{\SI{10}{\radian\per\second}}
+        \wrongchoice{\SI{100}{\radian\per\second}}
+      \correctchoice{\SI{9e14}{\radian\per\second}}
+        \wrongchoice{\SI{9e16}{\radian\per\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch33-q19}
+    An electromagnetic wave is generated by:
+    \begin{choices}
+        \wrongchoice{any moving charge}
+      \correctchoice{any accelerating charge}
+        \wrongchoice{only a charge with changing acceleration}
+        \wrongchoice{only a charge moving in a circle}
+        \wrongchoice{only a charge moving in a straight line}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch33-q20}
+    The electric field for a plane electromagnetic wave traveling in the $+y$ direction is shown.
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE:
+    \end{tikzpicture}
+    \end{center}
+    Consider a point where $\vec{E}$ is in the $+z$ direction. 
+    The $\vec{B}$ field is:
+    \begin{choices}
+      \correctchoice{in the $+x$ direction and in phase with the $\vec{E}$ field}
+        \wrongchoice{in the $-x$ direction and in phase with the $\vec{E}$ field}
+        \wrongchoice{in the $+x$ direction and one-fourth of a cycle out of phase with the $\vec{E}$ field}
+        \wrongchoice{in the $+z$ direction and in phase with the $\vec{E}$ field}
+        \wrongchoice{in the $+z$ direction and one-fourth of a cycle out of phase with the $\vec{E}$ field}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch33-q21}
+    A plane electromagnetic wave is traveling in the positive $x$ direction.
+    At the instant shown the electric field at the extremely narrow dashed rectangle is in the negative $z$ direction and its magnitude is decreasing.
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE:
+    \end{tikzpicture}
+    \end{center}
+    Which diagram correctly shows the directions and relative magnitudes of the magnetic field at the edges of the rectangle?
+    \begin{multicols}{2}
+    \begin{choices}
+        %% NOTE: ANS is B
+        \wrongchoice{
+            \begin{tikzpicture}
+                %% NOTE:
+            \end{tikzpicture}
+        }
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch33-q22}
+    In a plane electromagnetic wave in vacuum,
+        the ratio $E/B$ of the amplitudes in SI units of the two fields is:
+    \begin{choices}
+      \correctchoice{the speed of light}
+        \wrongchoice{an increasing function of frequency}
+        \wrongchoice{a decreasing function of frequency}
+        \wrongchoice{$\sqrt{2}$}
+        \wrongchoice{$\dfrac{1}{\sqrt{2}}$}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch33-q23}
+    If the magnetic field in a plane electromagnetic wave is along the $y$ axis and its component is given by $B_m\sin\left(kx-\omega t\right)$,
+        in SI units, then the electric field is along the $z$ axis and its component is given by:
+    \begin{choices}
+        \wrongchoice{$\left(cB_m\right)\cos\left(kx-\omega t\right)$}
+        \wrongchoice{$-\left(\dfrac{cB_m}{c}\right)\cos\left(kx-\omega t\right)$}
+        \wrongchoice{$-\left(\dfrac{cB_m}{c}\right)\sin\left(kx-\omega t\right)$}
+        \wrongchoice{$B_m\cos\left(kx-\omega t\right)$}
+      \correctchoice{$\left(\dfrac{cB_m}{c}\right)\sin\left(kx-\omega t\right)$}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch33-q24}
+    If the electric field in a plane electromagnetic wave is along the $y$ axis and its component is given by $E_m\sin\left(kx+\omega t\right)$,
+        in SI units, then the magnetic field is along the $z$ axis and its component is given by:
+    \begin{choices}
+        \wrongchoice{$\left(\dfrac{E_m}{c}\right)\cos\left(kx+\omega t\right)$}
+        \wrongchoice{$-\left(\dfrac{E_m}{c}\right)\cos\left(kx+\omega t\right)$}
+      \correctchoice{$-\left(\dfrac{E_m}{c}\right)\sin\left(kx+\omega t\right)$}
+        \wrongchoice{$E_m\cos\left(kx+\omega t\right)$}
+        \wrongchoice{$\left(\dfrac{E_m}{c}\right)\sin\left(kx+\omega t\right)$}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch33-q25}
+    An electromagnetic wave is traveling in the positive $x$ direction with its electric field along the $z$ axis and its magnetic field along the $y$ axis. 
+    The fields are related by:
+    \begin{choices}
+        \wrongchoice{$\dfrac{\partial E}{\partial x} = \mu_0 \epsilon_0 \dfrac{\partial B}{\partial x}$}
+        \wrongchoice{$\dfrac{\partial E}{\partial x} = \mu_0 \epsilon_0 \dfrac{\partial B}{\partial t}$}
+        \wrongchoice{$\dfrac{\partial B}{\partial x} = \mu_0 \epsilon_0 \dfrac{\partial E}{\partial x}$}
+        \wrongchoice{$\dfrac{\partial B}{\partial x} = \mu_0 \epsilon_0 \dfrac{\partial E}{\partial t}$}
+      \correctchoice{$\dfrac{\partial B}{\partial x} = -\mu_0 \epsilon_0 \dfrac{\partial E}{\partial t}$}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch33-q26}
+    If the amplitude of the electric field in a plane electromagnetic wave is \SI{100}{\volt\per\meter} then the amplitude of the magnetic field is:
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{\SI{3.3e-7}{\tesla}}
+        \wrongchoice{\SI{6.7e-7}{\tesla}}
+        \wrongchoice{\SI{0.27}{\tesla}}
+        \wrongchoice{\SI{8.0e7}{\tesla}}
+        \wrongchoice{\SI{3.0e9}{\tesla}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch33-q27}
+    For an electromagnetic wave the direction of the vector $\vec{E}\times\vec{B}$ gives:
+    \begin{choices}
+        \wrongchoice{the direction of the electric field}
+        \wrongchoice{the direction of the magnetic field}
+      \correctchoice{the direction of wave propagation}
+        \wrongchoice{the direction of the electromagnetic force on a proton}
+        \wrongchoice{the direction of the emf induced by the wave}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch33-q28}
+    The dimensions of $\vec{S} = \left(\dfrac{1}{\mu_0}\right) \vec{E}\times\vec{B}$ are:
+    \begin{choices}
+        \wrongchoice{joule per meter squared (\si{\joule\per\meter\squared})}
+        \wrongchoice{joule per second (\si{\joule\per\second})}
+        \wrongchoice{watt per second (\si{\watt\per\second})}
+      \correctchoice{watt per meter squared (\si{\watt\per\meter\squared})}
+        \wrongchoice{joule per meter cubed (\si{\joule\per\meter\cubed})}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch33-q29}
+    The time-averaged energy in a sinusoidal electromagnetic wave is:
+    \begin{choices}
+        \wrongchoice{overwhelmingly electrical}
+        \wrongchoice{slightly more electrical than magnetic}
+      \correctchoice{equally divided between the electric and magnetic fields}
+        \wrongchoice{slightly more magnetic than electrical}
+        \wrongchoice{overwhelmingly magnetic}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch33-q30}
+    At a certain point and a certain time the electric field of an electromagnetic wave is in the negative $z$ direction and the magnetic field is in the positive $y$ direction. 
+    Which of the following statements is true?
+    \begin{choices}
+        \wrongchoice{Energy is being transported in the positive $x$ direction but half a cycle later, when the electric field is in the opposite direction, it will be transported in the negative $x$ direction}
+      \correctchoice{Energy is being transported in the positive $x$ direction and half a cycle later, when the electric field is in the opposite direction, it will still be transported in the positive $x$ direction}
+        \wrongchoice{Energy is being transported in the negative $x$ direction but half a cycle later, when the electric field is in the opposite direction, it will be transported in the positive $x$ direction}
+        \wrongchoice{Energy is being transported in the negative $x$ direction and half a cycle later, when the electric field is in the opposite direction, it will still be transported in the negative $x$ direction}
+        \wrongchoice{None of the provided are true}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch33-q31}
+    An electromagnetic wave is transporting energy in the negative $y$ direction. 
+    At one point and one instant the magnetic field is in the positive $x$ direction. 
+    The electric field at that point and instant is:
+    \begin{choices}
+        \wrongchoice{positive $y$ direction}
+        \wrongchoice{negative $y$ direction}
+        \wrongchoice{positive $z$ direction}
+      \correctchoice{negative $z$ direction}
+        \wrongchoice{negative $x$ direction}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch33-q32}
+    A point source emits electromagnetic energy at a rate of \SI{100}{\watt}. 
+    The intensity \SI{10}{\meter} from the source is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{10}{\watt\per\meter\squared}}
+        \wrongchoice{\SI{1.6}{\watt\per\meter\squared}}
+        \wrongchoice{\SI{1}{\watt\per\meter\squared}}
+        \wrongchoice{\SI{0.024}{\watt\per\meter\squared}}
+      \correctchoice{\SI{0.080}{\watt\per\meter\squared}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch33-q33}
+    The light intensity \SI{10}{\meter} from a point source is \SI{1000}{\watt\per\meter}.
+    The intensity \SI{100}{\meter} from the same source is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{1000}{\watt\per\meter\squared}}
+        \wrongchoice{\SI{100}{\watt\per\meter\squared}}
+      \correctchoice{\SI{10}{\watt\per\meter\squared}}
+        \wrongchoice{\SI{1}{\watt\per\meter\squared}}
+        \wrongchoice{\SI{0.1}{\watt\per\meter\squared}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch33-q34}
+    When the distance between a point source of light and a light meter is reduced from \SI{6.0}{\meter} to \SI{2.0}{\meter},
+        the intensity of illumination at the meter will be the original value multiplied by:
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{\num{3}}
+        \wrongchoice{\num{9}}
+        \wrongchoice{\num{1/3}}
+        \wrongchoice{\num{1/9}}
+        \wrongchoice{\num{1}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch33-q35}
+    The magnetic field in a sinusoidal light wave has an amplitude of \SI{3.3e-7}{\tesla}.
+    The intensity of the wave is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{1.7e-4}{\watt\per\meter\squared}}
+      \correctchoice{\SI{13}{\watt\per\meter\squared}}
+        \wrongchoice{\SI{27}{\watt\per\meter\squared}}
+        \wrongchoice{\SI{1.0e5}{\watt\per\meter\squared}}
+        \wrongchoice{\SI{4.0e10}{\watt\per\meter\squared}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch33-q36}
+    A sinusoidal electromagnetic wave with an electric field amplitude of \SI{100}{\volt\per\meter} is incident normally on a surface with an area of 1 cm 2 and is completely absorbed. 
+    The energy absorbed in \SI{10}{\second} is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{1.3}{\milli\joule}}
+      \correctchoice{\SI{13}{\milli\joule}}
+        \wrongchoice{\SI{27}{\milli\joule}}
+        \wrongchoice{\SI{130}{\milli\joule}}
+        \wrongchoice{\SI{270}{\milli\joule}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch33-q37}
+    Evidence that electromagnetic waves carry momentum is:
+    \begin{choices}
+      \correctchoice{the tail of a comet points away from the Sun}
+        \wrongchoice{electron flow through a wire generates heat}
+        \wrongchoice{a charged particle in a magnetic field moves in a circular orbit}
+        \wrongchoice{heat can be generated by rubbing two sticks together}
+        \wrongchoice{the Doppler effect}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch33-q38}
+    Light of uniform intensity shines perpendicularly on a totally absorbing surface,
+        fully illuminating the surface. 
+    If the area of the surface is decreased:
+    \begin{choices}
+        \wrongchoice{the radiation pressure increases and the radiation force increases}
+        \wrongchoice{the radiation pressure increases and the radiation force decreases}
+        \wrongchoice{the radiation pressure stays the same and the radiation force increases}
+      \correctchoice{the radiation pressure stays the same and the radiation force decreases}
+        \wrongchoice{the radiation pressure decreases and the radiation force decreases}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch33-q39}
+    Light with an intensity of \SI{1}{\kilo\watt\per\meter\squared} falls normally on a surface and is completely absorbed.
+    The radiation pressure is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{1}{\kilo\pascal}}
+        \wrongchoice{\SI{3e11}{\pascal}}
+        \wrongchoice{\SI{1.7e-6}{\pascal}}
+      \correctchoice{\SI{3.3e-6}{\pascal}}
+        \wrongchoice{\SI{6.7e-6}{\pascal}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch33-q40}
+    Light with an intensity of \SI{1}{\kilo\watt\per\meter\squared} falls normally on a surface and is completely reflected. 
+    The radiation pressure is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{1}{\kilo\pascal}}
+        \wrongchoice{\SI{3e11}{\pascal}}
+        \wrongchoice{\SI{1.7e-6}{\pascal}}
+        \wrongchoice{\SI{3.3e-6}{\pascal}}
+      \correctchoice{\SI{6.7e-6}{\pascal}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch33-q41}
+    Light with an intensity of \SI{1}{\kilo\watt\per\meter\squared} falls normally on a surface with an area of \SI{1}{\centi\meter\squared} and is completely absorbed. 
+    The force of the radiation on the surface is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{1.0e-4}{\newton}}
+        \wrongchoice{\SI{3.3e-11}{\newton}}
+        \wrongchoice{\SI{1.7e-10}{\newton}}
+      \correctchoice{\SI{3.3e-10}{\newton}}
+        \wrongchoice{\SI{6.7e-10}{\newton}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch33-q42}
+    Light with an intensity of \SI{1}{\kilo\watt\per\meter\squared} falls normally on a surface with an area of \SI{1}{\centi\meter\squared} and is completely reflected. 
+    The force of the radiation on the surface is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{1.0e-4}{\newton}}
+        \wrongchoice{\SI{3.3e-11}{\newton}}
+        \wrongchoice{\SI{1.7e-10}{\newton}}
+        \wrongchoice{\SI{3.3e-10}{\newton}}
+      \correctchoice{\SI{6.7e-10}{\newton}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch33-q43}
+    A company claims to have developed material that absorbs light energy without a transfer of momentum. 
+    Such material is:
+    \begin{choices}
+      \correctchoice{impossible}
+        \wrongchoice{possible, but very expensive}
+        \wrongchoice{inexpensive and already in common use}
+        \wrongchoice{in use by NASA but is not commercially available}
+        \wrongchoice{a breakthrough in high technology}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch33-q44}
+    Polarization experiments provide evidence that light is:
+    \begin{choices}
+        \wrongchoice{a longitudinal wave}
+        \wrongchoice{a stream of particles}
+      \correctchoice{a transverse wave}
+        \wrongchoice{some type of wave}
+        \wrongchoice{nearly monochromatic}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch33-q45}
+    A vertical automobile radio antenna is sensitive to electric fields that are polarized:
+    \begin{choices}
+        \wrongchoice{horizontally}
+        \wrongchoice{in circles around the antenna}
+      \correctchoice{vertically}
+        \wrongchoice{normal to the antenna in the forward direction}
+        \wrongchoice{none of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch33-q46}
+    For linearly polarized light the plane of polarization is:
+    \begin{choices}
+        \wrongchoice{perpendicular to both the direction of polarization and the direction of propagation}
+        \wrongchoice{perpendicular to the direction of polarization and parallel to the direction of propagation}
+        \wrongchoice{parallel to the direction of polarization and perpendicular to the direction of propagation}
+      \correctchoice{parallel to both the direction of polarization and the direction of propagation}
+        \wrongchoice{none of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch33-q47}
+    Light from any ordinary source (such as a flame) is usually:
+    \begin{choices}
+      \correctchoice{unpolarized}
+        \wrongchoice{plane polarized}
+        \wrongchoice{circularly polarized}
+        \wrongchoice{elliptically polarized}
+        \wrongchoice{monochromatic}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch33-q48}
+    The electric field in unpolarized light:
+    \begin{choices}
+        \wrongchoice{has no direction at any time}
+        \wrongchoice{rotates rapidly}
+        \wrongchoice{is always parallel to the direction of propagation}
+      \correctchoice{changes direction randomly and often}
+        \wrongchoice{remains along the same line but reverses direction randomly and often}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch33-q49}
+    The diagrams show four pairs of polarizing sheets,
+        with the polarizing directions indicated by dashed lines. 
+    The two sheets of each pair are placed one behind the other and the front sheet is illuminated by unpolarized light. The incident intensity is the same for all pairs of sheets.
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: tikz
+    \end{tikzpicture}
+    \end{center}
+    Rank the pairs according to the intensity of the transmitted light,
+        least to greatest.
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{1, 2, 3, 4}
+        \wrongchoice{4, 2, 1, 3}
+        \wrongchoice{2, 4, 3, 1}
+      \correctchoice{2, 4, 1, 3}
+        \wrongchoice{3, 1, 4, 2}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch33-q50}
+    A clear sheet of polaroid is placed on top of a similar sheet so that their polarizing axes make an angle of \ang{30} with each other. 
+    The ratio of the intensity of emerging light to incident unpolarized light is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$1:4$}
+        \wrongchoice{$1:3$}
+        \wrongchoice{$1:2$}
+        \wrongchoice{$3:4$}
+      \correctchoice{$3:8$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch33-q51}
+    An unpolarized beam of light has intensity $I_0$.
+    It is incident on two ideal polarizing sheets.
+    The angle between the axes of polarization of these sheets is $\theta$. 
+    Find $\theta$ if the emerging light has intensity $I_0/4$:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{$\sin^{-1}\left(\dfrac{1}{2}\right)$}
+        \wrongchoice{$\sin^{-1}\left(\dfrac{1}{5}\right)$}
+        \wrongchoice{$\cos^{-1}\left(\dfrac{1}{2}\right)$}
+      \correctchoice{$\cos^{-1}\left(\dfrac{1}{2}\right)$}
+        \wrongchoice{$\tan^{-1}\left(\dfrac{1}{4}\right)$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch33-q52}
+    In a stack of three polarizing sheets the first and third are crossed while the middle one has its axis at \ang{45} to the axes of the other two.
+    The fraction of the intensity of an incident unpolarized beam of light that is transmitted by the stack is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\num{1/2}}
+        \wrongchoice{\num{1/3}}
+        \wrongchoice{\num{1/4}}
+      \correctchoice{\num{1/8}}
+        \wrongchoice{zero}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch33-q53}
+    Three polarizing sheets are placed in a stack with the polarizing directions of the first and third perpendicular to each other.
+    What angle should the polarizing direction of the middle sheet make with the polarizing direction of the first sheet to obtain maximum transmitted intensity when unpolarized light is incident on the stack?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\ang{0}}
+        \wrongchoice{\ang{30}}
+      \correctchoice{\ang{45}}
+        \wrongchoice{\ang{60}}
+        \wrongchoice{\ang{90}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch33-q54}
+    Three polarizing sheets are placed in a stack with the polarizing directions of the first and third perpendicular to each other. 
+    What angle should the polarizing direction of the middle sheet make with the polarizing direction of the first sheet to obtain zero transmitted intensity when unpolarized light is incident on the stack?
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{\ang{0}}
+        \wrongchoice{\ang{30}}
+        \wrongchoice{\ang{45}}
+        \wrongchoice{\ang{60}}
+        \wrongchoice{All angles allow light to pass through}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch33-q55}
+    The relation $\theta_{\text{incident}}=\theta_{\text{reflected}}$,
+        which applies as a ray of light strikes an interface between two media,
+        is known as:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{Faraday's law}
+        \wrongchoice{Snell's law}
+        \wrongchoice{Ampere's law}
+        \wrongchoice{Cole's law}
+        \wrongchoice{none of the provided}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch33-q56}
+    The relation $n_1\sin\theta_1=n_2\sin\theta_2$,
+        which applies as a ray of light strikes an interface between two media,
+        is known as:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{Gauss' law}
+      \correctchoice{Snell's law}
+        \wrongchoice{Faraday's law}
+        \wrongchoice{Cole's law}
+        \wrongchoice{law of sines}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch33-q57}
+    As used in the laws of reflection and refraction,
+        the ``normal'' direction is:
+    \begin{choices}
+        \wrongchoice{any convenient direction}
+        \wrongchoice{tangent to the interface}
+        \wrongchoice{along the incident ray}
+        \wrongchoice{perpendicular to the electric field vector of the light}
+      \correctchoice{perpendicular to the interface}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch33-q58}
+    When an electromagnetic wave meets a reflecting surface,
+        the direction taken by the reflected wave is determined by:
+    \begin{choices}
+        \wrongchoice{the material of the reflecting surface}
+      \correctchoice{the angle of incidence}
+        \wrongchoice{the index of the medium}
+        \wrongchoice{the intensity of the wave}
+        \wrongchoice{the wavelength}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch33-q59}
+    The index of refraction of a substance is:
+    \begin{choices}
+        \wrongchoice{the speed of light in the substance}
+        \wrongchoice{the angle of refraction}
+        \wrongchoice{the angle of incidence}
+      \correctchoice{the speed of light in vacuum divided by the speed of light in the substance}
+        \wrongchoice{measured in radians}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch33-q60}
+    The units of index of refraction are:
+    \begin{choices}
+        \wrongchoice{meter per second (\si{\meter\per\second})}
+        \wrongchoice{second per meter (\si{\second\per\meter})}
+        \wrongchoice{radian (\si{\radian})}
+        \wrongchoice{meter per second squared (\si{\meter\per\second\squared})}
+      \correctchoice{none of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch33-q61}
+    The diagram shows the passage of a ray of light from air into a substance $X$. 
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: tikz
+    \end{tikzpicture}
+    \end{center}
+    The index of refraction of $X$ is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\num{0.53}}
+        \wrongchoice{\num{0.88}}
+      \correctchoice{\num{1.9}}
+        \wrongchoice{\num{2.2}}
+        \wrongchoice{\num{3.0}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch33-q62}
+    If $n_{\text{water}}=1.33$,
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: tikz
+    \end{tikzpicture}
+    \end{center}
+        what is the angle of refraction for the ray shown?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\ang{19}}
+        \wrongchoice{\ang{22}}
+        \wrongchoice{\ang{36}}
+      \correctchoice{\ang{42}}
+        \wrongchoice{\ang{48}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch33-q63}
+    Which diagram below illustrates the path of a light ray as it travels from a given point $X$ in air to another given point $Y$ in glass?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{
+            \begin{tikzpicture}
+            \end{tikzpicture}
+        }
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch33-q64}
+    The index of refraction for diamond is \num{2.5}.
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: tikz
+    \end{tikzpicture}
+    \end{center}
+    Which of the following is correct for the situation shown?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{$\dfrac{\sin a}{\sin b} = 2.5$}
+        \wrongchoice{$\dfrac{\sin b}{\sin d} = 2.5$}
+        \wrongchoice{$\dfrac{\sin a}{\cos c} = 2.5$}
+        \wrongchoice{$\dfrac{\sin c}{\sin a} = 2.5$}
+        \wrongchoice{$\dfrac{a}{c} = 2.5$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch33-q65}
+    When light travels from medium $X$ to medium $Y$ as shown:
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: tikz
+    \end{tikzpicture}
+    \end{center}
+    \begin{choices}
+        \wrongchoice{both the speed and the frequency decrease}
+        \wrongchoice{both the speed and the frequency increase}
+      \correctchoice{both the speed and the wavelength decrease}
+        \wrongchoice{both the speed and the wavelength increase}
+        \wrongchoice{both the wavelength and the frequency are unchanged}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch33-q66}
+    A ray of light passes obliquely through a plate of glass having parallel faces. 
+    The emerging ray:
+    \begin{choices}
+        \wrongchoice{is totally internally reflected}
+        \wrongchoice{is bent more toward the normal than the incident ray}
+        \wrongchoice{is bent further away from the normal than the incident ray}
+      \correctchoice{is parallel to the incident ray but displaced sideways}
+        \wrongchoice{lies on the same straight line as the incident ray}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch33-q67}
+    When light passes from air to glass, it bends:
+    \begin{choices}
+        \wrongchoice{toward the normal without changing speed}
+      \correctchoice{toward the normal and slows down}
+        \wrongchoice{toward the normal and speeds up}
+        \wrongchoice{away from the normal and slows down}
+        \wrongchoice{away from the normal and speeds up}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch33-q68}
+    A ray of light passes through three media as shown. 
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE:
+    \end{tikzpicture}
+    \end{center}
+    The speed of light in these media obey:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{$v_1 > v_2 > v_3$}
+        \wrongchoice{$v_3 > v_2 > v_1$}
+      \correctchoice{$v_3 > v_1 > v_2$}
+        \wrongchoice{$v_2 > v_1 > v_3$}
+        \wrongchoice{$v_1 > v_3 > v_2$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch33-q69}
+    As light goes from one medium to another,
+        it is bent away from the normal. 
+    Then:
+    \begin{choices}
+      \correctchoice{the speed of the light has increased}
+        \wrongchoice{dispersion must occur}
+        \wrongchoice{the second medium has a higher index of refraction than the first}
+        \wrongchoice{no change in speed has occurred}
+        \wrongchoice{refraction has not occurred because refraction means a bending toward the normal}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch33-q70}
+    A pole stands in a river, half in and half out of the water. 
+    Another pole of the same length stands vertically on the shore at a place where the ground is level. 
+    The shadow cast by the pole in the river on the river bottom is:
+    \begin{choices}
+        \wrongchoice{slightly longer than the shadow of the pole on land}
+        \wrongchoice{much longer than the shadow of the pole on land}
+      \correctchoice{shorter than the shadow of the pole on land}
+        \wrongchoice{shorter than the shadow of the pole on land if the Sun is high and longer if the sun is low}
+        \wrongchoice{the same length as the shadow of the pole on land}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch33-q71}
+    The rectangular metal tank shown is filled with an unknown liquid. 
+    The observer, whose eye is level with the top of the tank,
+        can just see corner $E$.
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: tikz
+    \end{tikzpicture}
+    \end{center}
+    The index of refraction of this liquid is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{1.75}
+        \wrongchoice{1.67}
+        \wrongchoice{1.50}
+        \wrongchoice{1.33}
+      \correctchoice{1.25}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch33-q72}
+    The index of refraction of benzene is \num{1.80}. 
+    The critical angle for total internal reflection,
+        at a benzene-air interface, is about:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\ang{56}}
+        \wrongchoice{\ang{47}}
+      \correctchoice{\ang{34}}
+        \wrongchoice{\ang{22}}
+        \wrongchoice{\ang{18}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch33-q73}
+    The index of refraction of a certain glass is \num{1.50}. 
+    The sine of the critical angle for total internal reflection at a glass-air interface is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\num{0.50}}
+      \correctchoice{\num{0.67}}
+        \wrongchoice{\num{0.75}}
+        \wrongchoice{\num{1.00}}
+        \wrongchoice{\num{1.50}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch33-q74}
+    The illustration shows total internal reflection taking place in a piece of glass. 
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE:
+    \end{tikzpicture}
+    \end{center}
+    The index of refraction of this glass:
+    \begin{choices}
+        \wrongchoice{is at least 2.0}
+        \wrongchoice{is at most 2.0}
+      \correctchoice{is at least 1.15}
+        \wrongchoice{is at most 1.15}
+        \wrongchoice{cannot be calculated from the given data}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch33-q75}
+    The critical angle for total internal reflection at a diamond-air interface is \ang{25}. 
+    Suppose light is incident at an angle of $\theta$ with the normal. 
+    Total internal reflection will occur if the incident medium is:
+    \begin{choices}
+        \wrongchoice{air and $\theta = \ang{25}$}
+        \wrongchoice{air and $\theta > \ang{25}$}
+        \wrongchoice{air and $\theta < \ang{25}$}
+        \wrongchoice{diamond and $\theta < \ang{25}$}
+      \correctchoice{diamond and $\theta > \ang{25}$}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch33-q76}
+    If $n_{\text{water}}=1.50$ and $n_{\text{glass}}=1.33$,
+        then total internal reflection at an interface between this glass and water:
+    \begin{choices}
+        \wrongchoice{occurs whenever the light goes from glass to water}
+        \wrongchoice{occurs whenever the light goes from water to glass}
+        \wrongchoice{may occur when the light goes from glass to water}
+      \correctchoice{may occur when the light goes from water to glass}
+        \wrongchoice{can never occur at this interface}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch33-q77}
+    The separation of white light into colors by a prism is associated with:
+    \begin{choices}
+        \wrongchoice{total internal reflection}
+        \wrongchoice{partial reflection from each surface}
+      \correctchoice{variation of index of refraction with wavelength}
+        \wrongchoice{a decrease in the speed of light in the glass}
+        \wrongchoice{selective absorption of various colors}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch33-q78}
+    The diagram shows total internal reflection. 
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE:
+    \end{tikzpicture}
+    \end{center}
+    Which of the following statements is \emph{not} true?
+    \begin{choices}
+        \wrongchoice{Angle AON is the angle of incidence}
+        \wrongchoice{Angle AON = angle BON}
+      \correctchoice{Angle AON must be the critical angle}
+        \wrongchoice{The speed of light in medium II is greater than that in medium I}
+        \wrongchoice{if angle AON were increased, there would still be total internal reflection}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch33-q79}
+    A ray of light in water (index $n_1$) is incident on its surface (with air) at the critical angle for total internal reflection. 
+    Some oil (index $n_2$) is now floated on the water. 
+    The angle between the ray in the oil and the normal is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{$\sin^{-1}\left(1.00\right)$}
+        \wrongchoice{$\sin^{-1}\left(\dfrac{1}{n_1}\right)$}
+      \correctchoice{$\sin^{-1}\left(\dfrac{1}{n_2}\right)$}
+        \wrongchoice{$\sin^{-1}\left(\dfrac{n_1}{n_2}\right)$}
+        \wrongchoice{$\sin^{-1}\left(\dfrac{n_2}{n_1}\right)$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+\endinput
+
+

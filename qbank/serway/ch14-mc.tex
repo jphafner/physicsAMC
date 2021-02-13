@@ -1,0 +1,826 @@
+
+%%--------------------------------------------------
+%% Serway: Physics for Scientists and Engineers
+%%--------------------------------------------------
+
+
+%% Chapter 14: Fluid Mechanics
+%%--------------------------------------------------
+
+
+%% Table of Contents
+%%--------------------------------------------------
+
+%% 14.1 Pressure
+%% 14.2 Variation of Pressure with Depth
+%% 14.3 Pressure Measurements
+%% 14.4 Buoyant Forces and Archimedes's Principle
+%% 14.5 Fluid Dynamics
+%% 14.6 Bernoulli's Equation
+%% 14.7 Other Applications of Fluid Dynamics
+
+
+%% Serway Multiple Choice Questions
+%%--------------------------------------------------
+\element{serway-mc}{
+\begin{question}{serway-ch14-q01}
+    A stonecutter's chisel has an edge area of \SI{0.7}{\centi\meter\squared}.
+    If the chisel is struck with a force of \SI{42}{\newton},
+        what is the pressure exerted on the stone?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{600}{\newton\per\meter\squared}}
+        \wrongchoice{\SI{30 000}{\newton\per\meter\squared}}
+        \wrongchoice{\SI{300 000}{\newton\per\meter\squared}}
+      \correctchoice{\SI{600 000}{\newton\per\meter\squared}}
+        \wrongchoice{\SI{6 000}{\newton\per\meter\squared}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch14-q02}
+    When water freezes, it expands about 9 percent.
+    What would be the pressure increase inside your automobile engine block if the water in there froze?
+    The bulk modulus of ice is \SI{2.0e9}{\newton\per\meter\squared}, and \SI{1}{\atm} = \SI{e5}{\newton\per\meter\squared}.
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{18}{\atm}}
+        \wrongchoice{\SI{360}{\atm}}
+        \wrongchoice{\SI{1080}{\atm}}
+      \correctchoice{\SI{1800}{\atm}}
+        \wrongchoice{\SI{600}{\atm}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch14-q03}
+    All people come very close to being able to float in water.
+    What therefore is the volume of a \SI{50}{\kilo\gram} woman?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{0.007}{\meter\cubed}}
+        \wrongchoice{\SI{0.035}{\meter\cubed}}
+      \correctchoice{\SI{0.050}{\meter\cubed}}
+        \wrongchoice{\SI{0.070}{\meter\cubed}}
+        \wrongchoice{\SI{0.085}{\meter\cubed}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch14-q04}
+    Find the average density of a white dwarf star if it has a mass equal to that of the sun (\SI{2.0e30}{\kilo\gram}) and a radius equal to that of the Earth (6.4 × 10 6 m).
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{9.0e6}{\kilo\gram\per\meter\cubed}}
+        \wrongchoice{\SI{1.8e7}{\kilo\gram\per\meter\cubed}}
+      \correctchoice{\SI{1.8e9}{\kilo\gram\per\meter\cubed}}
+        \wrongchoice{\SI{3.6e10}{\kilo\gram\per\meter\cubed}}
+        \wrongchoice{\SI{9.0e7}{\kilo\gram\per\meter\cubed}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch14-q05}
+    Find the average density of a red giant star with a mass of \SI{20e30}{\kilo\gram} (approximately 10 solar masses) and a radius of \SI{150e9}{\meter} (equal to the Earth's distance from the sun).
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{1.41e-4}{\kilo\gram\per\meter\cubed}}
+        \wrongchoice{\SI{0.007}{\kilo\gram\per\meter\cubed}}
+        \wrongchoice{\SI{1.41}{\kilo\gram\per\meter\cubed}}
+        \wrongchoice{\SI{710}{\kilo\gram\per\meter\cubed}}
+      \correctchoice{\SI{1.41e-3}{\kilo\gram\per\meter\cubed}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch14-q06}
+    Find the pressure in atmospheres at the base of Dworshak Dam if the water in the reservoir is 200 meters deep.
+    (\SI{e5}{\newton\per\meter\squared} = \SI{1}{\atm}.)
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{\SI{9}{\atm}}
+        \wrongchoice{\SI{90}{\atm}}
+        \wrongchoice{\SI{101}{\atm}}
+        \wrongchoice{\SI{111}{\atm}}
+        \wrongchoice{\SI{130}{\atm}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch14-q07}
+    What is the total mass of the Earth's atmosphere?
+    The radius of the Earth is \SI{6.4e6}{\meter}, and \SI{1}{\atm} = \SI{e5}{\newton\per\meter\squared}.
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{20.6}{\atm}}
+        \wrongchoice{\SI{24.7}{\atm}}
+      \correctchoice{\SI{29.4}{\atm}}
+        \wrongchoice{\SI{196}{\atm}}
+        \wrongchoice{\SI{75}{\atm}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch14-q08}
+    Some species of whales can dive to depths of 1 kilometer.
+    What is the total pressure they experience at this depth?
+    ($\rho{sea} = \SI{1020}{\kilo\gram\per\meter\cubed}$ and $\SI{e5}{\newton\per\meter\squared} = \SI{1}{\atm}$.)
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{5e16}{\kilo\gram}}
+        \wrongchoice{\SI{1e18}{\kilo\gram}}
+      \correctchoice{\SI{5e18}{\kilo\gram}}
+        \wrongchoice{\SI{1e20}{\kilo\gram}}
+        \wrongchoice{\SI{5e9}{\kilo\gram}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch14-q09}
+    A blimp is filled with \SI{200}{\meter\cubed} of helium.
+    How much mass can the balloon lift?
+    The density of helium is \num{1/7} that of air,
+        and the density of air is \num{1/800} that of water.
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{115}{\kilo\gram}}
+      \correctchoice{\SI{214}{\kilo\gram}}
+        \wrongchoice{\SI{315}{\kilo\gram}}
+        \wrongchoice{\SI{415}{\kilo\gram}}
+        \wrongchoice{\SI{37}{\kilo\gram}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch14-q10}
+    What fraction of an iceberg is submerged?
+    ($\rho_{\text{ice}} = \SI{917}{\kilo\gram\per\meter\cubed}$, $\rho_{\text{sea}} = \SI{1.03e3}{\kilo\gram\per\meter\cubed}$.)
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{95}{\percent}}
+        \wrongchoice{\SI{93}{\percent}}
+        \wrongchoice{\SI{91}{\percent}}
+      \correctchoice{\SI{89}{\percent}}
+        \wrongchoice{\SI{77}{\percent}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch14-q11}
+    A supertanker filled with oil has a total mass of \SI{6.1e8}{\kilo\gram}.
+    If the dimensions of the ship are those of a rectangular box \SI{300}{\meter} long, \SI{80}{\meter} wide, and \SI{40}{\meter} high,
+        determine how far the bottom of the ship is below sea level.
+    ($\rho_{\text{sea}} = \SI{1020}{\kilo\gram\per\meter\cubed}$.)
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{10}{\meter}}
+        \wrongchoice{\SI{15}{\meter}}
+        \wrongchoice{\SI{20}{\meter}}
+      \correctchoice{\SI{25}{\meter}}
+        \wrongchoice{\SI{30}{\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch14-q12}
+    Determine the minimum area of a flat ice floe 1.0 meter thick if it is to support a \SI{2000}{\kilo\gram} car above seawater.
+    ($\rho_{\text{ice}} = \SI{920}{\kilo\gram\per\meter\cubed}$, $\rho_{\text{sea}} = \SI{1020}{\kilo\gram\per\meter\cubed}$.)
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{\SI{20}{\meter\squared}}
+        \wrongchoice{\SI{40}{\meter\squared}}
+        \wrongchoice{\SI{60}{\meter\squared}}
+        \wrongchoice{\SI{80}{\meter\squared}}
+        \wrongchoice{\SI{100}{\meter\squared}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch14-q13}
+    A hydraulic lift raises a \SI{2000}{\kilo\gram} automobile when a \SI{500}{\newton} force is applied to the smaller piston.
+    If the smaller piston has an area of \SI{10}{\centi\meter\squared},
+    what is the cross-sectional area of the larger piston?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{40}{\centi\meter\squared}}
+        \wrongchoice{\SI{80}{\centi\meter\squared}}
+        \wrongchoice{\SI{196}{\centi\meter\squared}}
+      \correctchoice{\SI{392}{\centi\meter\squared}}
+        \wrongchoice{\SI{160}{\centi\meter\squared}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch14-q14}
+    A hole is punched in a full milk carton, \SI{10}{\centi\meter} below the top.
+    What is the initial velocity of outflow?
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{\SI{1.4}{\meter\per\second}}
+        \wrongchoice{\SI{2.0}{\meter\per\second}}
+        \wrongchoice{\SI{2.8}{\meter\per\second}}
+        \wrongchoice{\SI{3.9}{\meter\per\second}}
+        \wrongchoice{\SI{2.8}{\meter\per\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch14-q15}
+    The water level in a reservoir is maintained at a constant level. 
+    What is the exit velocity in an outlet pipe \SI{3.0}{\meter} below the water surface?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{2.4}{\meter\per\second}}
+        \wrongchoice{\SI{3.0}{\meter\per\second}}
+        \wrongchoice{\SI{5.4}{\meter\per\second}}
+      \correctchoice{\SI{7.7}{\meter\per\second}}
+        \wrongchoice{\SI{49}{\meter\per\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch14-q16}
+    Water is flowing at \SI{4.0}{\meter\per\second} in a circular pipe. 
+    If the diameter of the pipe decreases to \num{1/2} its former value,
+        what is the velocity of the water downstream?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{1.0}{\meter\per\second}}
+        \wrongchoice{\SI{2.0}{\meter\per\second}}
+        \wrongchoice{\SI{8.0}{\meter\per\second}}
+      \correctchoice{\SI{16}{\meter\per\second}}
+        \wrongchoice{\SI{4.0}{\meter\per\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch14-q17}
+    Water pressurized to \SI{3.5e5}{\pascal} is flowing at \SI{5.0}{\meter\per\second} in a horizontal pipe which contracts to \num{1/3} its former area. 
+    What are the pressure and velocity of the water after the contraction?
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{\SI{2.5e5}{\pascal}, \SI{15}{\meter\per\second}}
+        \wrongchoice{\SI{3.0e5}{\pascal}, \SI{10}{\meter\per\second}}
+        \wrongchoice{\SI{3.0e5}{\pascal}, \SI{15}{\meter\per\second}}
+        \wrongchoice{\SI{4.5e5}{\pascal}, \SI{1.5}{\meter\per\second}}
+        \wrongchoice{\SI{5.5e5}{\pascal}, \SI{1.5}{\meter\per\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch14-q18}
+    A fountain sends water to a height of \SI{100}{\meter}.
+    What must be the pressurization (above atmospheric) of the water system? 
+    \SI{1}{\atm} = \SI{e5}{\newton\per\meter\squared}.
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{1.0}{\atm}}
+        \wrongchoice{\SI{4.2}{\atm}}
+        \wrongchoice{\SI{7.2}{\atm}}
+      \correctchoice{\SI{9.8}{\atm}}
+        \wrongchoice{\SI{8.2}{\atm}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch14-q19}
+    What is the total force acting inward on a spherical bathysphere of diameter \SI{2.00}{\meter} at an ocean depth of \SI{1000}{\meter}?
+    (The pressure inside the bathysphere is,
+    hopefully, \SI{1}{\atm}). $\rho_{\text{sea water}} = \SI{1.02e3}{\kilo\gram\per\meter\cubed}$.
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{1.26e4}{\newton}}
+        \wrongchoice{\SI{1.26e6}{\newton}}
+      \correctchoice{\SI{1.26e8}{\newton}}
+        \wrongchoice{\SI{1.26e10}{\newton}}
+        \wrongchoice{\SI{1.26e2}{\newton}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch14-q20}
+    The pressure inside a commercial airliner is maintained at \SI{1}{\atm} (\SI{e5}{\newton\per\meter\squared}).
+    What is the outward force exerted on a $\SI{1}{\meter}\times\SI{2}{\meter}$ cabin door if the outside pressure (at \SI{10}{\kilo\meter} height) is \SI{0.3}{\atm}?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{1.4e2}{\newton}}
+        \wrongchoice{\SI{1.4e3}{\newton}}
+        \wrongchoice{\SI{1.4e4}{\newton}}
+      \correctchoice{\SI{1.4e5}{\newton}}
+        \wrongchoice{\SI{7.0e3}{\newton}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch14-q21}
+    In a wind tunnel the pressure on the top surface of a model airplane wing is \SI{8.8e4}{\newton\per\meter} and the pressure on the bottom surface is 9.0 × 10 4 N/m 2 . 
+    If the area of the top and bottom surfaces of each wing is \SI{2.0}{\meter\squared},
+        what is the total lift on the model airplane?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{2.0e3}{\newton}}
+      \correctchoice{\SI{8.0e3}{\newton}}
+        \wrongchoice{\SI{1.6e4}{\newton}}
+        \wrongchoice{\SI{3.6e4}{\newton}}
+        \wrongchoice{\SI{1.0e3}{\newton}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch14-q22}
+    Air within the funnel of a large tornado may have a pressure of only \SI{0.2}{\atm}.
+    What is the approximate outward force on a ($\SI{5}{\meter}\times\SI{10}{\meter}$) wall if a tornado suddenly envelops the house? 
+    ($\SI{1}{\atm} = \SI{e5}{\newton\per\meter\squared}$.)
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{4e3}{\newton}}
+        \wrongchoice{\SI{4e4}{\newton}}
+        \wrongchoice{\SI{4e5}{\newton}}
+      \correctchoice{\SI{4e6}{\newton}}
+        \wrongchoice{\SI{7e5}{\newton}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch14-q23}
+    A Boeing 737 airliner has a mass of \SI{20 000}{\kilo\gram} and the total area of both wings (top or bottom) is \SI{100}{\meter\squared}. 
+    What is the pressure difference between the top and bottom surface of each wing when the airplane is in flight at a constant altitude?
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{\SI{1960}{\newton\per\meter\squared}}
+        \wrongchoice{\SI{3920}{\newton\per\meter\squared}}
+        \wrongchoice{\SI{7840}{\newton\per\meter\squared}}
+        \wrongchoice{\SI{4560}{\newton\per\meter\squared}}
+        \wrongchoice{\SI{3070}{\newton\per\meter\squared}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch14-q24}
+    The siphon shown is used to transfer liquid from a higher level to a lower level.
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: TODO: draw tikz
+    \end{tikzpicture}
+    \end{center}
+    If the fluid is drawn up and is continuous through the tube,
+        determine the velocity of flow of gasoline if the vertical distance from the liquid surface to the outlet is \SI{1.0}{\meter}.
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{1.1}{\meter\per\second}}
+        \wrongchoice{\SI{2.2}{\meter\per\second}}
+      \correctchoice{\SI{4.4}{\meter\per\second}}
+        \wrongchoice{\SI{9.8}{\meter\per\second}}
+        \wrongchoice{\SI{6.5}{\meter\per\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch14-q25}
+    A venturi tube may be used as the inlet to an automobile carburetor. 
+    If the \SI{2.0}{\centi\meter} diameter pipe narrows to a \SI{1.0}{\centi\meter} diameter,
+        what is the pressure drop in the constricted section for an airflow of \SI{3.0}{\centi\meter\per\second} in the \SI{2.0}{\centi\meter} section?
+        ($\rho = \SI{1.2}{\kilo\gram\per\meter\squared}$.)
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{70}{\pascal}}
+        \wrongchoice{\SI{85}{\pascal}}
+        \wrongchoice{\SI{100}{\pascal}}
+        \wrongchoice{\SI{115}{\pascal}}
+      \correctchoice{\SI{81}{\pascal}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch14-q26}
+    A wind of velocity \SI{10}{\meter\per\second} is blowing through a wind generator with blade radius \SI{5.0}{\meter}.
+    What is the maximum power output if \SI{30}{\percent} of the wind's energy can be extracted?
+    $\rho_{\text{air}} = \SI{1.25}{\kilo\gram\per\meter\cubed}$.
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{7.2}{\kilo\watt}}
+      \correctchoice{\SI{14.7}{\kilo\watt}}
+        \wrongchoice{\SI{21.3}{\kilo\watt}}
+        \wrongchoice{\SI{29.4}{\kilo\watt}}
+        \wrongchoice{\SI{39.6}{\kilo\watt}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch14-q27}
+    How much power is theoretically available from a mass flow of \SI{1000}{\kilo\gram\per\second} of water when it falls a vertical distance of \SI{100}{\meter}?
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{\SI{980}{\kilo\watt}}
+        \wrongchoice{\SI{98}{\kilo\watt}}
+        \wrongchoice{\SI{4900}{\watt}}
+        \wrongchoice{\SI{980}{\watt}}
+        \wrongchoice{\SI{9600}{\watt}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch14-q28}
+    Water is sent from a firehose at \SI{30.0}{\meter\per\second} at an angle of \ang{30} above the horizontal.
+    What is the maximum height reached by the water?
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{7.50}{\meter}}
+      \correctchoice{\SI{11.5}{\meter}}
+        \wrongchoice{\SI{15.0}{\meter}}
+        \wrongchoice{\SI{19.0}{\meter}}
+        \wrongchoice{\SI{30.0}{\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch14-q29}
+    A thin rectangular piece of wood floats in water. 
+    You slowly pour oil with a density equal to that of the wood on the surface of the water until the height of the oil above the water is twice the height of the piece of wood.
+    Which statement is correct?
+    \begin{choices}
+        \wrongchoice{The wood floats on top of the oil, so it sticks up in the air.}
+        \wrongchoice{The wood does not change its position}
+        \wrongchoice{The wood sinks below the surface of the water.}
+        \wrongchoice{The wood is half in the water and half in the oil.}
+      \correctchoice{The wood floats in the oil just above the water.}
+    \end{choices}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch14-q30}
+    Two identical fish, both at sea level,
+        float in two identical aquariums with identical quantities of water. 
+    Fish $A$ is in Alaska, so it weighs more than fish $B$ at the equator,
+        since $g$ is larger at sea level in Alaska. 
+    Which statement is correct.
+    \begin{choices}
+        \wrongchoice{A comparison is impossible unless they are both floating at the same level.}
+        \wrongchoice{Fish $A$ displaces a greater quantity of water than fish $B$.}
+        \wrongchoice{Fish $B$ displaces a greater quantity of water than fish $A$.}
+      \correctchoice{They both displace the same quantity of water.}
+        \wrongchoice{Fish $A$ has a smaller acceleration than Fish $B$ when equal horizontal forces are applied to each, because Fish $A$ weighs more.}
+    \end{choices}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch14-q31}
+    A waiter in a restaurant fills a pitcher full of water and ice so that water would spill out if any more were added. 
+    As the ice starts to melt:
+    \begin{choices}
+        \wrongchoice{the water level in the pitcher falls.}
+      \correctchoice{the water level in the pitcher remains the same.}
+        \wrongchoice{water starts to flow out the spout of the pitcher.}
+        \wrongchoice{the pressure on the bottom of the pitcher decreases.}
+        \wrongchoice{the pressure on the bottom of the pitcher increases.}
+    \end{choices}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch14-q32}
+    People can snorkel down to a depth of roughly one meter. 
+    This means that the maximum pressure their lungs can exert on the air they expel is roughly:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{9800}{\newton}}
+      \correctchoice{\SI{9800}{\pascal}}
+        \wrongchoice{\SI{9800}{\atm}}
+        \wrongchoice{\SI{19 600}{\newton}}
+        \wrongchoice{\SI{19 600}{\newton\per\meter\squared}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch14-q33}
+    A wood block is placed on top of the ice in a large bowl half full of ice. 
+    The bowl is then filled to the brim with water,
+        with the wood block riding on top of the ice.
+    As the ice melts,
+    \begin{choices}
+        \wrongchoice{the density of the water decreases.}
+        \wrongchoice{the water level falls below the rim.}
+        \wrongchoice{the water level rises and water spills out of the bowl.}
+      \correctchoice{the water level does not change.}
+        \wrongchoice{the wood block descends, causing water to spill out of the bowl.}
+    \end{choices}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch14-q34}
+    An empty spice bottle has an inner volume of \SI{1.31e-4}{\meter\cubed}.
+    It has a mass of \SI{112}{\gram} when filled with air,
+        and it displaces \SI{1.63e-4}{\meter\cubed} of water when fully submerged. 
+    What fraction of the total volume of the bottle will be beneath the surface when it is placed in a tank of water?
+    \begin{multicols}{3}
+    \begin{choices}
+       \correctchoice{\num{0.69}}
+         \wrongchoice{\num{0.81}}
+         \wrongchoice{\num{0.85}}
+         \wrongchoice{\num{1.00}}
+         \wrongchoice{\num{1.46}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch14-q35}
+    An empty spice bottle has an inner volume of \SI{1.31e-4}{\meter\cubed}.
+    It has a mass of \SI{112}{\gram} when filled with air,
+        and it displaces \SI{1.63e-4}{\meter\cubed} of water when fully submerged. 
+    What volume of mercury
+        ($\rho_{\ce{Hg}} = \SI{13.6e3}{\kilo\gram\per\meter\cubed}$)
+        must be added to the bottle so that it will just be submerged?
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{\SI{3.74}{\centi\meter\cubed}}
+        \wrongchoice{\SI{12.0}{\centi\meter\cubed}}
+        \wrongchoice{\SI{101}{\centi\meter\cubed}}
+        \wrongchoice{\SI{147}{\centi\meter\cubed}}
+        \wrongchoice{\SI{237}{\centi\meter\cubed}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch14-q36}
+    The figure below shows a container filled with water to the height shown. 
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: TODO: draw tikz
+    \end{tikzpicture}
+    \end{center}
+    When we compare the pressure at $A$ to the pressure at $B$,
+        we find that:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{$\rho_A = \dfrac{1}{4} \rho_B$}
+        \wrongchoice{$\rho_A = \dfrac{1}{2} \rho_B$}
+      \correctchoice{$\rho_A = \rho_B$}
+        \wrongchoice{$\rho_A = 2 \rho_B$}
+        \wrongchoice{$\rho_A = 4 \rho_B$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch14-q37}
+    The water level in identical bowls, $A$ and $B$, is exactly the same. 
+    $A$ contains only water; $B$ contains ice as well as water. 
+    When we weigh the bowls, we find that:
+    \begin{choices}
+        \wrongchoice{$W_A < W_B$}
+      \correctchoice{$W_A = W_B$}
+        \wrongchoice{$W_A > W_B$}
+        \wrongchoice{$W_B > W_A$ if the volume of the ice cubes is greater than \num{1/9} the volume of the water.}
+        \wrongchoice{$W_B > W_A$ if the volume of the ice cubes is greater than \num{9} times the volume of the water.}
+    \end{choices}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch14-q38}
+    A cube of water ice ($\rho = \SI{0.917e3}{\kilo\gram\per\meter\cubed}$)
+        is placed in mercury ($\rho = \SI{13.6e3}{\kilo\gram\per\meter\cubed}$),
+        which is liquid at \SI{0}{\degreeCelsius}. 
+    If we ignore any possible melting of the ice cube and problems with the surface tension of mercury,
+        the fraction of the ice cube that floats above the surface of the mercury is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\num{0.0674}}
+        \wrongchoice{\num{0.0735}}
+        \wrongchoice{\num{0.926}}
+      \correctchoice{\num{0.933}}
+        \wrongchoice{\num{1.00}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch14-q39}
+    A police crime lab is trying to determine whether someone was murdered or died as a result of an accident. 
+    He was struck in the temple by a \SI{4.20}{\kilo\gram} sculpture that is alleged to have fallen off a bookcase. 
+    The sculpture presumably fell a distance of \SI{1.43}{\meter} and the corner that struck him had an area of \SI{0.25}{\centi\meter\squared}. 
+    If the time for the sculpture to stop was \SI{1.00}{\milli\second},
+        the pressure on his temple was:
+    \begin{multicols}{2}
+    \begin{choices}
+        %% ORIG newton\per\meter\squared
+        \wrongchoice{\SI{8.88e4}{\pascal}}
+        \wrongchoice{\SI{1.65e5}{\pascal}}
+        \wrongchoice{\SI{1.65e6}{\pascal}}
+      \correctchoice{\SI{8.88e8}{\pascal}}
+        \wrongchoice{\SI{1.65e9}{\pascal}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch14-q40}
+    A hose has been clamped so that the area at the clamp is only one quarter the area of the rest of the hose. 
+    When we ignore the viscosity of water,
+        the ratio of the volume of water delivered per unit time when the clamp is on to the volume of water delivered per unit time without the clamp is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\num{1/16}}
+        \wrongchoice{\num{1/8}}
+        \wrongchoice{\num{1/4}}
+        \wrongchoice{\num{1/2}}
+      \correctchoice{one}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch14-q41}
+    A hose has been clamped so that the area at the clamp is only one quarter the area of the rest of the hose. 
+    When we ignore the viscosity of water,
+        the ratio of the speed of the water through the clamped area to the speed of the water when it leaves the hose is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\num{1/4}}
+        \wrongchoice{\num{1/2}}
+        \wrongchoice{one}
+        \wrongchoice{two}
+      \correctchoice{four}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\newcommand{\serwayChFourteenQFortyTwo}{
+\begin{tikzpicture}
+    %% NOTE: TODO: draw tikz
+\end{tikzpicture}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch14-q42}
+    A dictator has built a bunker for his use in emergencies. 
+    Its dimensions are shown below. 
+    \begin{center}
+        \serwayChFourteenQFortyTwo
+    \end{center}
+    When it floods during a tropical storm,
+        the gauge pressure at point $A$ is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{3.92e5}{\pascal}}
+        \wrongchoice{\SI{4.90e5}{\pascal}}
+        \wrongchoice{\SI{5.39e5}{\pascal}}
+      \correctchoice{\SI{5.88e5}{\pascal}}
+        \wrongchoice{\SI{6.89e5}{\pascal}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch14-q43}
+    A dictator has built a bunker for his use in emergencies. 
+    Its dimensions are shown below. 
+    \begin{center}
+        \serwayChFourteenQFortyTwo
+    \end{center}
+    When it floods during a tropical storm,
+        air is trapped above the dashed line in the bunker. 
+    The gauge pressure at point $A$ is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{3.92e5}{\pascal}}
+        \wrongchoice{\SI{4.90e5}{\pascal}}
+        \wrongchoice{\SI{5.39e5}{\pascal}}
+      \correctchoice{\SI{5.88e5}{\pascal}}
+        \wrongchoice{\SI{6.89e5}{\pascal}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch14-q44}
+    A dictator has built a bunker for his use in emergencies. 
+    Its dimensions are shown below. 
+    \begin{center}
+        \serwayChFourteenQFortyTwo
+    \end{center}
+    When it floods during a tropical storm,
+        air is trapped above the dashed line in the bunker. 
+    The absolute pressure at point $A$ is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{3.92e5}{\pascal}}
+        \wrongchoice{\SI{4.90e5}{\pascal}}
+        \wrongchoice{\SI{5.39e5}{\pascal}}
+        \wrongchoice{\SI{5.88e5}{\pascal}}
+      \correctchoice{\SI{6.89e5}{\pascal}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch14-q45}
+    Melanie says that when a diver enters an underwater cave of height $h$,
+        the pressure on her is no greater than $mgh$. 
+    Rosalind says that if the bottom of the cave is a distance $H$ below the water surface,
+        the pressure on the soles of the divers feet is $mgH$. 
+    Which one, if either, is correct? 
+    (The density of water is $\rho_W$.)
+    \begin{choices}
+        \wrongchoice{Melanie, because the roof of the cave absorbs the water pressure from above.}
+        \wrongchoice{Melanie, because only the fluid directly above any volume of the fluid can contribute to the pressure on that volume.}
+      \correctchoice{Rosalind, because a fluid exerts equal pressure in all directions.}
+        \wrongchoice{Rosalind, because the pressure also depends on the density, $\rho_c$, of the material above the cave roof, so that $p = \rho_c g\left(H - h\right) + \rho_W gh$.}
+        \wrongchoice{Melanie, because the pressure equals $p = \rho_W gH - \rho_c g\left(H - h\right)$.}
+    \end{choices}
+\end{question}
+}
+
+\element{serway-mc}{
+\begin{question}{serway-ch14-q46}
+    An iron block of density $\rho_{\ce{Fe}}$ and of volume $l^3$ is immersed in a fluid of density $\rho_{\text{fluid}}$. 
+    The block hangs from a scale which reads $W$ as the weight. 
+    The top of the block is a height $h$ below the surface of the fluid. 
+    The correct equation for the reading of the scale is:
+    \begin{choices}
+        \wrongchoice{$W = \left( \rho_{\ce{Fe}} - \rho_{\text{fluid}}\right) ghl^2$.}
+        \wrongchoice{$W = \left( \rho_{\text{fluid}} - \rho_{\ce{Fe}}\right) gl^3$.}
+      \correctchoice{$W = \left( \rho_{\ce{Fe}} - \rho_{\text{fluid}}\right) gl^3$.}
+        \wrongchoice{$W = \left( \rho_{\ce{Fe}} + \rho_{\text{fluid}}\right) ghl^2$.}
+        \wrongchoice{$W = \left( \rho_{\ce{Fe}} + \rho_{\text{fluid}}\right) gl^3$.}
+    \end{choices}
+\end{question}
+}
+
+
+\endinput
+
+

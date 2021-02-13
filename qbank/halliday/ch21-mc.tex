@@ -1,0 +1,766 @@
+
+%%--------------------------------------------------
+%% Halliday: Fundamentals of Physics
+%%--------------------------------------------------
+
+
+%% Chapter 21: Electric Charge
+%%--------------------------------------------------
+
+
+%% Learning Objectives
+%%--------------------------------------------------
+
+%% 21.01: Distinguish between being electrically neutral, negatively charged, and positively charged and identify excess charge.
+%% 21.02: Distinguish between conductors, nonconductors (insulators), semiconductors, and superconductors.
+%% 21.03: Describe the electrical properties of the particles inside an atom.
+%% 21.04: Identify conduction electrons and explain their role in making a conducting object negatively or positively charged.
+%% 21.05: Identify what is meant by ``electrically isolated'' and by ``grounding.''
+%% 21.06: Explain how a charged object can set up induced charge in a second object.
+%% 21.07: Identify that charges with the same electrical sign repel each other and those with opposite electrical signs attract each other.
+%% 21.08: For either of the particles in a pair of charged particles, draw a free-body diagram, showing the electrostatic force (Coulomb force) on it and anchoring the tail of the force vector on that particle.
+%% 21.09: For either of the particles in a pair of charged particles, apply Coulomb's law to relate the magnitude of the electrostatic force, the charge magnitudes of the particles, and the separation between the particles.
+%% 21.10: Identify that Coulomb's law applies only to (point-like) particles and objects that can be treated as particles.
+%% 21.11: If more than one force acts on a particle, find the net force by adding all the forces as vectors, not scalars.
+%% 21.12: Identify that a shell of uniform charge attracts or repels a charged particle that is outside the shell as if all the shell's charge were concentrated as a particle at the shell's center.
+%% 21.13: Identify that if a charged particle is located inside a shell of uniform charge, there is no net electrostatic force on the particle from the shell.
+%% 21.14: Identify that if excess charge is put on a spherical conductor, it spreads out uniformly over the external surface area.
+%% 21.15: Identify that if two identical spherical conductors touch or are connected by conducting wire, any excess charge will be shared equally.
+%% 21.16: Identify that a nonconducting object can have any given distribution of charge, including charge at interior points.
+%% 21.17: Identify current as the rate at which charge moves through a point.
+%% 21.18: For current through a point, apply the relationship between the current, a time interval, and the amount of charge that moves through the point in that time interval.
+
+
+%% Halliday Multiple Choice Questions
+%%--------------------------------------------------
+\element{halliday-mc}{
+\begin{question}{halliday-ch21-q01}
+    A coulomb is the same as:
+    \begin{choices}
+        \wrongchoice{an ampere per second (\si{\ampere\per\second})}
+        \wrongchoice{half an ampere per second squared (\SI{0.5}{\ampere\per\second\squared})}
+        \wrongchoice{an ampere per meter squared (\si{\ampere\per\meter\squared})}
+      \correctchoice{an ampere second (\si{\ampere\second})}
+        \wrongchoice{a newton meter squared (\si{\newton\meter\squared})}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch21-q02}
+    A kiloampere hour (\si{\kilo\ampere\hour}) is a unit of:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{current}
+        \wrongchoice{charge per time}
+        \wrongchoice{power}
+      \correctchoice{charge}
+        \wrongchoice{energy}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch21-q03}
+    The magnitude of the charge on an electron is approximately:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{e23}{\coulomb}}
+        \wrongchoice{\SI{e-23}{\coulomb}}
+        \wrongchoice{\SI{e19}{\coulomb}}
+      \correctchoice{\SI{e-19}{\coulomb}}
+        \wrongchoice{\SI{e9}{\coulomb}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch21-q04}
+    The total negative charge on the electrons in \SI{1}{\mole} of helium
+        (atomic number 2, molar mass 4) is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{4.8e4}{\coulomb}}
+        \wrongchoice{\SI{9.6e4}{\coulomb}}
+      \correctchoice{\SI{1.9e5}{\coulomb}}
+        \wrongchoice{\SI{3.8e5}{\coulomb}}
+        \wrongchoice{\SI{7.7e5}{\coulomb}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch21-q05}
+    The total negative charge on the electrons in \SI{1}{\kilo\gram} of helium
+        (atomic number 2, molar mass 4) is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{48}{\coulomb}}
+        \wrongchoice{\SI{2.4e7}{\coulomb}}
+      \correctchoice{\SI{4.8e7}{\coulomb}}
+        \wrongchoice{\SI{9.6e8}{\coulomb}}
+        \wrongchoice{\SI{1.9e8}{\coulomb}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch21-q06}
+    A wire carries a steady current of \SI{2}{\ampere}.
+    The charge that passes a cross section in \SI{2}{\second} is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{3.2e-19}{\coulomb}}
+        \wrongchoice{\SI{6.4e-19}{\coulomb}}
+        \wrongchoice{\SI{1}{\coulomb}}
+        \wrongchoice{\SI{2}{\coulomb}}
+      \correctchoice{\SI{4}{\coulomb}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch21-q07}
+    A wire contains a steady current of \SI{2}{\ampere}.
+    The number of electrons that pass a cross section in \SI{2}{\second} is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\num{2}}
+        \wrongchoice{\num{4}}
+        \wrongchoice{\num{6.3e18}}
+        \wrongchoice{\num{1.3e19}}
+      \correctchoice{\num{2.5e19}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch21-q08}
+    The charge on a glass rod that has been rubbed with silk is called positive:
+    \begin{choices}
+      \correctchoice{by arbitrary convention}
+        \wrongchoice{so that the proton charge will be positive}
+        \wrongchoice{to conform to the conventions adopted for $G$ and $m$ in Newton's law of gravitation}
+        \wrongchoice{because like charges repel}
+        \wrongchoice{because glass is an insulator}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch21-q09}
+    To make an uncharged object have a negative charge we must:
+    \begin{choices}
+        \wrongchoice{add some atoms}
+        \wrongchoice{remove some atoms}
+      \correctchoice{add some electrons}
+        \wrongchoice{remove some electrons}
+        \wrongchoice{write down a negative sign}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch21-q10}
+    To make an uncharged object have a positive charge:
+    \begin{choices}
+        \wrongchoice{remove some neutrons}
+        \wrongchoice{add some neutrons}
+        \wrongchoice{add some electrons}
+      \correctchoice{remove some electrons}
+        \wrongchoice{heat it to cause a change of phase}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch21-q11}
+    When a hard rubber rod is given a negative charge by rubbing it with wool:
+    \begin{choices}
+        \wrongchoice{positive charges are transferred from rod to wool}
+        \wrongchoice{negative charges are transferred from rod to wool}
+        \wrongchoice{positive charges are transferred from wool to rod}
+      \correctchoice{negative charges are transferred from wool to rod}
+        \wrongchoice{negative charges are created and stored on the rod}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch21-q12}
+    An electrical insulator is a material:
+    \begin{choices}
+        \wrongchoice{containing no electrons}
+      \correctchoice{through which electrons do not flow easily}
+        \wrongchoice{that has more electrons than protons on its surface}
+        \wrongchoice{cannot be a pure chemical element}
+        \wrongchoice{must be a crystal}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch21-q13}
+    A conductor is distinguished from an insulator with the same number of atoms by the number of:
+    \begin{choices}
+        \wrongchoice{nearly free atoms}
+        \wrongchoice{electrons}
+      \correctchoice{nearly free electrons}
+        \wrongchoice{protons}
+        \wrongchoice{molecules}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch21-q14}
+    The diagram shows two pairs of heavily charged plastic cubes.
+    Cubes 1 and 2 attract each other and cubes 1 and 3 repel each other.
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE:
+    \end{tikzpicture}
+    \end{center}
+    Which of the following illustrates the forces of cube 2 on cube 3 and cube 3 on cube 2?
+    \begin{choices}
+        %% ANS is C
+        \wrongchoice{
+            \begin{tikzpicture}
+                %% NOTE:
+            \end{tikzpicture}
+        }
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch21-q15}
+    The diagram shows a pair of heavily charged plastic cubes that attract each other.
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE:
+    \end{tikzpicture}
+    \end{center}
+    Cube 3 is a conductor and is uncharged.
+    Which of the following illustrates the forces between cubes 1 and 3 and between cubes 2 and 3?
+    \begin{choices}
+        %% ANS is C
+        \wrongchoice{
+            \begin{tikzpicture}
+                %% NOTE:
+            \end{tikzpicture}
+        }
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch21-q16}
+    A neutral metal ball is suspended by a string.
+    A positively charged insulating rod is placed near the ball,
+        which is observed to be attracted to the rod.
+    This is because:
+    \begin{choices}
+        \wrongchoice{the ball becomes positively charged by induction}
+        \wrongchoice{the ball becomes negatively charged by induction}
+        \wrongchoice{the number of electrons in the ball is more than the number in the rod}
+        \wrongchoice{the string is not a perfect insulator}
+        \wrongchoice{there is a rearrangement of the electrons in the ball}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch21-q17}
+    A positively charged insulating rod is brought close to an object that is suspended by a string.
+    If the object is attracted toward the rod we can conclude:
+    \begin{choices}
+        \wrongchoice{the object is positively charged}
+        \wrongchoice{the object is negatively charged}
+        \wrongchoice{the object is an insulator}
+        \wrongchoice{the object is a conductor}
+      \correctchoice{none of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch21-q18}
+    A positively charged insulating rod is brought close to an object that is suspended by a string.
+    If the object is repelled away from the rod we can conclude:
+    \begin{choices}
+      \correctchoice{the object is positively charged}
+        \wrongchoice{the object is negatively charged}
+        \wrongchoice{the object is an insulator}
+        \wrongchoice{the object is a conductor}
+        \wrongchoice{none of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch21-q19}
+    Two uncharged metal spheres, $L$ and $M$, are in contact.
+    A negatively charged rod is brought close to $L$, but not touching it, as shown.
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE:
+    \end{tikzpicture}
+    \end{center}
+    The two spheres are slightly separated and the rod is then withdrawn.
+    As a result:
+    \begin{choices}
+        \wrongchoice{both spheres are neutral}
+        \wrongchoice{both spheres are positive}
+        \wrongchoice{both spheres are negative}
+      \correctchoice{$L$ is negative and $M$ is positive}
+        \wrongchoice{$L$ is positive and $M$ is negative}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch21-q20}
+    A positively charged metal sphere $A$ is brought into contact with an uncharged metal sphere $B$.
+    As a result:
+    \begin{choices}
+      \correctchoice{both spheres are positively charged}
+        \wrongchoice{$A$ is positively charged and $B$ is neutral}
+        \wrongchoice{$A$ is positively charged and $B$ is negatively charged}
+        \wrongchoice{$A$ is neutral and $B$ is positively charged}
+        \wrongchoice{$A$ is neutral and $B$ is negatively charged}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch21-q21}
+    The leaves of a positively charged electroscope diverge more when an object is brought near the knob of the electroscope.
+    The object must be:
+    \begin{choices}
+        \wrongchoice{a conductor}
+        \wrongchoice{an insulator}
+      \correctchoice{positively charged}
+        \wrongchoice{negatively charged}
+        \wrongchoice{uncharged}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch21-q22}
+    A negatively charged rubber rod is brought near the knob of a positively charged electroscope.
+    The result is that:
+    \begin{choices}
+        \wrongchoice{the electroscope leaves will move farther apart}
+        \wrongchoice{the rod will lose its charge}
+      \correctchoice{the electroscope leaves will tend to collapse}
+        \wrongchoice{the electroscope will become discharged}
+        \wrongchoice{nothing noticeable will happen}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch21-q23}
+    An electroscope is charged by induction using a glass rod that has been made positive by rubbing it with silk.
+    The electroscope leaves:
+    \begin{choices}
+      \correctchoice{gain electrons}
+        \wrongchoice{gain protons}
+        \wrongchoice{lose electrons}
+        \wrongchoice{lose protons}
+        \wrongchoice{gain an equal number of protons and electrons}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch21-q24}
+    Consider the following procedural steps:
+    \begin{enumerate}
+        \item ground an electroscope
+        \item remove the ground from the electroscope
+        \item touch a charged rod to the electroscope
+        \item bring a charged rod near, but not touching, the electroscope
+        \item remove the charged rod
+    \end{enumerate}
+    To charge an electroscope by induction,
+        use the sequence:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{1, 4, 5, 2}
+      \correctchoice{4, 1, 2, 5}
+        \wrongchoice{3, 1, 2, 5}
+        \wrongchoice{4, 1, 5, 2}
+        \wrongchoice{3, 5}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch21-q25}
+    A charged insulator can be discharged by passing it just above a flame.
+    This is because the flame:
+    \begin{choices}
+        \wrongchoice{warms it}
+        \wrongchoice{dries it}
+        \wrongchoice{contains carbon dioxide}
+        \wrongchoice{contains ions}
+        \wrongchoice{contains more rapidly moving atoms}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch21-q26}
+    A small object has charge $Q$.
+    Charge $q$ is removed from it and placed on a second small object.
+    The two objects are placed \SI{1}{\meter} apart.
+    For the force that each object exerts on the other to be a maximum.
+    $q$ should be:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$2Q$}
+        \wrongchoice{$Q$}
+      \correctchoice{$\dfrac{Q}{2}$}
+        \wrongchoice{$\dfrac{Q}{4}$}
+        \wrongchoice{zero}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch21-q27}
+    Two small charged objects attract each other with a force $F$ when separated by a distance $d$.
+    If the charge on each object is reduced to one-fourth of its original value and the distance between them is reduced to $d/2$ the force becomes:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\dfrac{F}{16}$}
+        \wrongchoice{$\dfrac{F}{8}$}
+      \correctchoice{$\dfrac{F}{4}$}
+        \wrongchoice{$\dfrac{F}{2}$}
+        \wrongchoice{$F$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch21-q28}
+    Two identical conducting spheres $A$ and $B$ carry equal charge.
+    They are separated by a distance much larger than their diameters.
+    A third identical conducting sphere $C$ is uncharged.
+    Sphere $C$ is first touched to $A$, then to $B$, and finally removed.
+    As a result, the electrostatic force between $A$ and $B$,
+        which was originally $F$, becomes:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\dfrac{F}{2}$}
+        \wrongchoice{$\dfrac{F}{4}$}
+      \correctchoice{$\dfrac{3F}{8}$}
+        \wrongchoice{$\dfrac{F}{16}$}
+        \wrongchoice{zero}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch21-q29}
+    Two particles, $X$ and $Y$, are \SI{4}{\meter} apart.
+    $X$ has a charge of $2Q$ and $Y$ has a charge of $Q$.
+    The force of $X$ on $Y$:
+    \begin{choices}
+        \wrongchoice{has twice the magnitude of the force of $Y$ on $X$}
+        \wrongchoice{has half the magnitude of the force of $Y$ on $X$}
+        \wrongchoice{has four times the magnitude of the force of $Y$ on $X$}
+        \wrongchoice{has one-fourth the magnitude of the force of $Y$ on $X$}
+      \correctchoice{has the same magnitude as the force of $Y$ on $X$}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch21-q30}
+    The units of $\dfrac{1}{4\pi\epsilon_0}$ are:
+    \begin{choices}
+        \wrongchoice{newton squared coulomb squared (\si{\newton\squared\coulomb\squared})}
+        \wrongchoice{newton meter per coulomb (\si{\newton\meter\per\coulomb})}
+        \wrongchoice{newton squared meter squared per coulomb squared (\si{\newton\squared\meter\squared\per\coulomb\squared})}
+      \correctchoice{newton meter squared per coulomb squared (\si{\newton\meter\squared\per\coulomb\squared})}
+        \wrongchoice{meter squared per coulomb squared (\si{\meter\squared\per\coulomb\squared})}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch21-q31}
+    A \SI{5.0}{\coulomb} charge is \SI{10}{\meter} from a \SI{-2.0}{\coulomb} charge.
+    The electrostatic force on the positive charge is:
+    \begin{choices}
+      \correctchoice{\SI{9.0e8}{\newton} toward the negative charge}
+        \wrongchoice{\SI{9.0e8}{\newton} away from the negative charge}
+        \wrongchoice{\SI{9.0e9}{\newton} toward the negative charge}
+        \wrongchoice{\SI{9.0e9}{\newton} away from the negative charge}
+        \wrongchoice{none of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch21-q32}
+    Two identical charges, \SI{2.0}{\meter} apart,
+        exert forces of magnitude \SI{4.0}{\newton} on each other.
+    The value of either charge is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{1.8e-9}{\coulomb}}
+        \wrongchoice{\SI{2.1e-5}{\coulomb}}
+      \correctchoice{\SI{4.2e-5}{\coulomb}}
+        \wrongchoice{\SI{1.9e5}{\coulomb}}
+        \wrongchoice{\SI{3.8e5}{\coulomb}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch21-q33}
+    Two electrons ($e_1$ and $e_2$) and a proton ($p$) lie on a straight line,
+        as shown.
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: diagram
+    \end{tikzpicture}
+    \end{center}
+    The directions of the force of $e_2$ on $e_1$,
+        the force of $p$ on $e_1$, and the total force on $e_1$,
+        respectively, are:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{
+            \begin{tikzpicture}
+                %% NOTE: vector options
+            \end{tikzpicture}
+        }
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch21-q34}
+    Two protons ($p_1$ and $p_2$) and an electron ($e$) lie on a straight line,
+        as shown.
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: diagram
+    \end{tikzpicture}
+    \end{center}
+    The directions of the force of $p_1$ on $e$, the force of $p_2$ on $e$,
+        and the total force on $e$, respectively, are:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{
+            \begin{tikzpicture}
+                %% NOTE: vector options
+            \end{tikzpicture}
+        }
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch21-q35}
+    Two particles have charges $Q$ and $-Q$ (equal magnitude and opposite sign).
+    For a net force of zero to be exerted on a third charge it must be placed:
+    \begin{choices}
+        \wrongchoice{midway between $Q$ and $-Q$}
+        \wrongchoice{on the perpendicular bisector of the line joining $Q$ and $-Q$, but not on that line itself}
+        \wrongchoice{on the line joining $Q$ and $-Q$, to the side of $Q$ opposite $-Q$}
+        \wrongchoice{on the line joining $Q$ and $-Q$, to the side of $-Q$ opposite $Q$}
+      \correctchoice{at none of these places (there is no place)}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch21-q36}
+    Particles 1, with charge $q_1$, and 2, with charge $q_2$,
+        are on the $x$ axis, with particle 1 at $x=a$ and particle 2 at $x=-2a$.
+    For the net force on a third charged particle,
+        at the origin, to be zero, $q_1$ and $q_2$ must be related by $q_2=$:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$2q_1$}
+      \correctchoice{$4q_1$}
+        \wrongchoice{$-2q_1$}
+        \wrongchoice{$-4q_1$}
+        \wrongchoice{$-\dfrac{q_1}{4}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch21-q37}
+    Two particles $A$ and $B$ have identical charge $Q$.
+    For a net force of zero to be exerted on a third charged particle it must be placed:
+    \begin{choices}
+      \correctchoice{midway between $A$ and $B$}
+        \wrongchoice{on the perpendicular bisector of the line joining $A$ and $B$ but away from the line}
+        \wrongchoice{on the line joining $A$ and $B$, not between the particles}
+        \wrongchoice{on the line joining $A$ and $B$, closer to one of them than the other}
+        \wrongchoice{at none of these places (there is no place)}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch21-q38}
+    A particle with charge \SI{2}{\micro\coulomb} is placed at the origin,
+        an identical particle, with the same charge,
+        is placed \SI{2}{\meter} from the origin on the $x$ axis,
+        and a third identical particle, with the same charge,
+        is placed \SI{2}{\meter} from the origin on the $y$ axis.
+    The magnitude of the force on the particle at the origin is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{9.0e-3}{\newton}}
+        \wrongchoice{\SI{6.4e-3}{\newton}}
+      \correctchoice{\SI{1.3e-2}{\newton}}
+        \wrongchoice{\SI{1.8e-2}{\newton}}
+        \wrongchoice{\SI{3.6e-2}{\newton}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch21-q39}
+    Charge $Q$ is spread uniformly along the circumference of a circle of radius $R$.
+    A point particle with charge $q$ is placed at the center of this circle.
+    The total force exerted on the particle can be calculated by Coulomb's law:
+    \begin{choices}
+        \wrongchoice{just use $R$ for the distance}
+        \wrongchoice{just use $2R$ for the distance}
+        \wrongchoice{just use $2\pi R$ for the distance}
+      \correctchoice{the result of the calculation is zero}
+        \wrongchoice{none of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch21-q40}
+    Two particles, each with charge $Q$, and a third particle, with charge $q$,
+        are placed at the vertices of an equilateral triangle as shown. 
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE:
+    \end{tikzpicture}
+    \end{center}
+    The total force on the particle with charge $q$ is:
+    \begin{choices}
+        \wrongchoice{parallel to the left side of the triangle}
+        \wrongchoice{parallel to the right side of the triangle}
+        \wrongchoice{parallel to the bottom side of the triangle}
+      \correctchoice{perpendicular to the bottom side of the triangle}
+        \wrongchoice{perpendicular to the left side of the triangle}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch21-q41}
+    A particle with charge $Q$ is on the $y$ axis a distance a from the origin and a particle with charge $q$ is on the $x$ axis a distance $d$ from the origin. The value of $d$ for which the $x$ component of the force on the second particle is the greatest is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{zero}
+        \wrongchoice{$a$}
+        \wrongchoice{$\sqrt{2}a$}
+        \wrongchoice{$\dfrac{a}{2}$}
+      \correctchoice{$\dfrac{a}{\sqrt{2}}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch21-q42}
+    In the Rutherford model of the hydrogen atom,
+        a proton (mass $M$, charge $Q$) is the nucleus and an electron (mass $m$, charge $q$) moves around the proton in a circle of radius $r$. 
+    Let $k$ denote the Coulomb force constant ($\dfrac{1}{4\pi\epsilon_0}$) and $G$ the universal gravitational constant. 
+    The ratio of the electrostatic force to the gravitational force between electron and proton is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$\dfrac{kQq}{GM mr^2}$}
+        \wrongchoice{$\dfrac{GQq}{kM m}$}
+        \wrongchoice{$\dfrac{kMm}{GQq}$}
+        \wrongchoice{$\dfrac{GMm}{kQq}$}
+      \correctchoice{$\dfrac{kQq}{GM m}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch21-q43}
+    A particle with a charge of \SI{5e-6}{\coulomb} and a mass of \SI{20}{\gram} moves uniformly with a speed of \SI{7}{\meter\per\second} in a circular orbit around a stationary particle with a charge of \SI{-5e-6}{\coulomb}.
+    The radius of the orbit is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{zero}
+      \correctchoice{\SI{0.23}{\meter}}
+        \wrongchoice{\SI{0.62}{\meter}}
+        \wrongchoice{\SI{1.6}{\meter}}
+        \wrongchoice{\SI{4.4}{\meter}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch21-q44}
+    Charge is distributed uniformly on the surface of a spherical balloon (an insulator). 
+    A point particle with charge $q$ is inside. 
+    The electrical force on the particle is greatest when:
+    \begin{choices}
+        \wrongchoice{it is near the inside surface of the balloon}
+        \wrongchoice{it is at the center of the balloon}
+        \wrongchoice{it is halfway between the balloon center and the inside surface}
+        \wrongchoice{it is anywhere inside (the force is same everywhere and is not zero)}
+      \correctchoice{it is anywhere inside (the force is zero everywhere)}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch21-q45}
+    Charge is distributed on the surface of a spherical conducting shell. 
+    A point particle with charge $q$ is inside. 
+    If polarization effects are negligible the electrical force on the particle is greatest when:
+    \begin{choices}
+      \correctchoice{it is near the inside surface of the balloon}
+        \wrongchoice{it is at the center of the balloon}
+        \wrongchoice{it is halfway between the balloon center and the inside surface}
+        \wrongchoice{it is anywhere inside (the force is same everywhere and is not zero)}
+        \wrongchoice{it is anywhere inside (the force is zero everywhere)}
+    \end{choices}
+\end{question}
+}
+
+
+\endinput
+
+

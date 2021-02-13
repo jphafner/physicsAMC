@@ -9,9 +9,14 @@
 - [question-bank](#question-bank)
     - [master-branch](#master-branch)
     - [develop-branch](#develop-branch)
+<<<<<<< HEAD
 - [best-practices](#best-practices)
 - [style-guide](#style-guide)
 
+=======
+- [parse-qbank](#parse-qbank)
+- [best-practices](#best-practices)
+>>>>>>> develop
 
 #introduction
 
@@ -24,7 +29,11 @@ This project should be of interest to anyone who teaches a physics course,
 I am also aware that most online solutions are simply not an option for many high school teachers.
 
 My main goals are to bring some basic ideas from computer science to teaching.
+<<<<<<< HEAD
 Grading should be fast, student feedback should be lengthy.
+=======
+Grading should be fast, student feedback should be prompt and thorough.
+>>>>>>> develop
 
 This README is written with the hopes of being comprehensible to a computer literate physics teacher.
 If you describe yourself as above, and find this incomprehensible, I consider that a bug.
@@ -33,6 +42,10 @@ If you describe yourself as above, and find this incomprehensible, I consider th
 
 -[mc-project](https://github.com/jphafner/physicsAMC/tree/mc-project), this is a self contained assessment ready for import into auto multiple choice (AMC).
     If you are new to using AMC, I would recommend that you start here.
+<<<<<<< HEAD
+=======
+    I have even included an rpm package of auto-multiple-choice for convenience.
+>>>>>>> develop
     Once you get familiar, you can slowly import from the other branches to suite your needs.
 
 -[master](https://github.com/jphafner/physicsAMC/tree/master), this is the stable branch.
@@ -56,6 +69,11 @@ A good place to start is [The LaTeX Project](https://www.latex-project.org/get/)
 - [circuitikz](http://ctan.org/pkg/circuitikz) is used for all circuit diagrams.
 - [pgf/TikZ](http://ctan.org/pkg/pgf) is used extensively for all graphics.
 - [lualatex](http://luatex.org/) is used for Unicode font support and for integrating lua scripts into documents.
+<<<<<<< HEAD
+=======
+- [lua](http://lua.org/) is used for scripting and some custom questions.
+- [lpeg](http://www.inf.puc-rio.br/~roberto/lpeg/) is used for scripting, see the [scripts](./scripts) directory.
+>>>>>>> develop
 - [siunitx](http://ctan.org/pkg/siunitx) is used for typesetting all SI units and most other units and numbers.
 - [amsmath](http://ctan.org/pkg/amsmath) is used for typesetting all equations.
 - [booktabs](http://ctan.org/pkg/booktabs) is used for typesetting tables.
@@ -147,6 +165,53 @@ For instance, question 32 on the June 2012 regents exam is named _June2012-Q32_.
 
 Please refer to the headings of each file for more information.
 
+<<<<<<< HEAD
+=======
+# parse-qbank
+
+The purpose of parse-qbank is to allow fast and easy parsing from the question bank.
+This project was first organized by files,
+    this was acceptable when the project was only being used by the author.
+A more powerful manner to organize this project is to tag each question and parse the file for the desired question attributes.
+This allows a question to have multiple tags, as opposed to one directory,
+    many questions do not fit neatly into a single category.
+
+The author recommends building an exam by starting with the desired project in mc-project,
+    and then parsing the question bank for the desired questions to include.
+
+The script is very much beta, but it is currently producing usable output.
+It depends additionally on [lpeg](http://www.inf.puc-rio.br/~roberto/lpeg/lpeg.html) and [argparse](https://github.com/mpeterv/argparse).
+These can be installed either with luarocks,
+
+```bash
+$ luarocks install lpeg argparse
+```
+
+or with the fedora package manager,
+
+```bash
+$ sudo dnf install lua-argparse lua-lpeg
+```
+
+## example usage
+
+Extract all questions from the June2012 or the June2013 regents.
+
+```bash
+$ parse-qbank -q June2012,June2013 qbank/nysed/NYSED-*tex
+```
+
+Extract all one-dimensional (A1) or two-dimensional (A2) kinematics questions.
+
+```bash
+$ parse-qbank -t A1,A2 qbank/AAPT/Bowl-*tex
+```
+
+```bash
+git clone https://gitlab.com/jojo_boulix/auto-multiple-choice
+```
+
+>>>>>>> develop
 # best-practices
 
 - Do _not_ have any MC-Project directory depend on material from another directory.
@@ -154,8 +219,11 @@ Please refer to the headings of each file for more information.
 - _Always_ set all random number seeds to a fixed number.
     This allows for recompilation and will likely save you at least once.
 
+<<<<<<< HEAD
 # style-guide
 
 I use NOTE: and TODO: labels for easy access to information in files.
 
 
+=======
+>>>>>>> develop

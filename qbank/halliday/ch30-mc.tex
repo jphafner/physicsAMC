@@ -1,0 +1,1496 @@
+
+%%--------------------------------------------------
+%% Halliday: Fundamentals of Physics
+%%--------------------------------------------------
+
+
+%% Chapter 30: Induction and Inductance
+%%--------------------------------------------------
+
+
+%% Learning Objectives
+%%--------------------------------------------------
+
+%% 30.01: Identify that the amount of magnetic field piercing a surface (not skimming along the surface) is the magnetic flux  through the surface.
+%% 30.02: Identify that an area vector for a flat surface is a vector that is perpendicular to the surface and that has a magnitude equal to the area of the surface.
+%% 30.03: Identify that any surface can be divided into area elements (patch elements) that are each small enough and flat enough for an area vector $d\vec{A}$ to be assigned to it, with the vector perpendicular to the element and having a magnitude equal to the area of the element.
+%% 30.04: Calculate the magnetic flux $\Phi$  through a surface by integrating the dot product of the magnetic field vector $\vec{B}$ and the area vector $d\vec{A}$ (for patch elements) over the surface, in magnitude-angle notation and unit-vector notation.
+%% 30.05: Identify that a current is induced in a conducting loop while the number of magnetic field lines intercepted by the loop is changing.
+%% 30.06: Identify that an induced current in a conducting loop is driven by an induced emf.
+%% 30.07: Apply Faraday's law, which is the relationship between an induced emf in a conducting loop and the rate at which magnetic flux through the loop changes.
+%% 30.08: Extend Faraday's law from a loop to a coil with multiple loops.
+%% 30.09: Identify the three general ways in which the magnetic flux through a coil can change.
+%% 30.10: Use a right-hand rule for Lenz's law to determine the direction of induced emf and induced current in a conducting loop.
+%% 30.11: Identify that when a magnetic flux through a loop changes, the induced current in the loop sets up a magnetic field to oppose that change.
+%% 30.12: If an emf is induced in a conducting loop containing a battery, determine the net emf and calculate the corresponding current in the loop.  
+
+
+%% Halliday Multiple Choice Questions
+%%--------------------------------------------------
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q01}
+    The normal to a certain \SI{1}{\meter\squared} area makes an angle of \ang{60} with a uniform magnetic field.
+    The magnetic flux through this area is the same as the flux through a second area that is perpendicular to the field if the second area is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{0.866}{\meter\squared}}
+        \wrongchoice{\SI{1.15}{\meter\squared}}
+      \correctchoice{\SI{0.5}{\meter\squared}}
+        \wrongchoice{\SI{2}{\meter\squared}}
+        \wrongchoice{\SI{1}{\meter\squared}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q02}
+    Suppose this page is perpendicular to a uniform magnetic field and the magnetic flux through it is \SI{5}{\weber}. 
+    If the page is turned by \ang{30} around an edge the flux through it will be:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{2.5}{\weber}}
+      \correctchoice{\SI{4.3}{\weber}}
+        \wrongchoice{\SI{5}{\weber}}
+        \wrongchoice{\SI{5.8}{\weber}}
+        \wrongchoice{\SI{10}{\weber}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q03}
+    A \SI{2}{\tesla} uniform magnetic field makes an angle of \ang{30} with the $z$ axis. 
+    The magnetic flux through a \SI{3}{\meter\squared} portion of the $xy$ plane is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{2.0}{\weber}}
+        \wrongchoice{\SI{3.0}{\weber}}
+      \correctchoice{\SI{5.2}{\weber}}
+        \wrongchoice{\SI{6.0}{\weber}}
+        \wrongchoice{\SI{12}{\weber}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q04}
+    A uniform magnetic field makes an angle of \ang{30} with the $z$ axis. 
+    If the magnetic flux through a \SI{1}{\meter\squared} portion of the $xy$ plane is \SI{5}{\weber} then the magnetic flux through a \SI{2}{\meter\squared} portion of the same plane is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{2.5}{\weber}}
+        \wrongchoice{\SI{4.3}{\weber}}
+        \wrongchoice{\SI{5}{\weber}}
+        \wrongchoice{\SI{5.8}{\weber}}
+      \correctchoice{\SI{10}{\weber}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q05}
+    One weber is the same as:
+    \begin{choices}
+        \wrongchoice{One volt per second (\SI{1}{\volt\per\second})}
+        \wrongchoice{One telsa per second (\SI{1}{\tesla\per\second})}
+        \wrongchoice{One tesla per meter (\SI{1}{\tesla\per\meter})}
+      \correctchoice{One tesla meter squared (\SI{1}{\tesla\meter\squared})}
+        \wrongchoice{One tesla per meter squared (\SI{1}{\tesla\per\meter\squared})}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q06}
+    One weber is the same as:
+    \begin{choices}
+      \correctchoice{One volt second (\SI{1}{\volt\second})}
+        \wrongchoice{One tesla second (\SI{1}{\tesla\second})}
+        \wrongchoice{One tesla per meter (\SI{1}{\tesla\per\meter})}
+        \wrongchoice{One volt per second (\SI{1}{\volt\per\second})}
+        \wrongchoice{One tesla per meter squared (\SI{1}{\tesla\per\meter\squared})}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q07}
+    The units of motional emf are:
+    \begin{choices}
+        \wrongchoice{volt per second (\si{\volt\per\second})}
+        \wrongchoice{volt meter per second (\si{\volt\meter\per\second})}
+        \wrongchoice{volt per tesla (\si{\volt\per\tesla})}
+        \wrongchoice{tesla per second (\si{\tesla\per\second})}
+      \correctchoice{tesla meter squared per second (\si{\tesla\meter\squared\per\second})}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q08}
+    Faraday's law states that an induced emf is proportional to:
+    \begin{choices}
+        \wrongchoice{the rate of change of the magnetic field}
+        \wrongchoice{the rate of change of the electric field}
+      \correctchoice{the rate of change of the magnetic flux}
+        \wrongchoice{the rate of change of the electric flux}
+        \wrongchoice{zero}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q09}
+    The emf that appears in Faraday's law is:
+    \begin{choices}
+        \wrongchoice{around a conducting circuit}
+      \correctchoice{around the boundary of the surface used to compute the magnetic flux}
+        \wrongchoice{throughout the surface used to compute the magnetic flux}
+        \wrongchoice{perpendicular to the surface used to compute the magnetic flux}
+        \wrongchoice{none of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q10}
+    If the magnetic flux through a certain region is changing with time:
+    \begin{choices}
+        \wrongchoice{energy must be dissipated as heat}
+        \wrongchoice{an electric field must exist at the boundary}
+        \wrongchoice{a current must flow around the boundary}
+      \correctchoice{an emf must exist around the boundary}
+        \wrongchoice{a magnetic field must exist at the boundary}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q11}
+    A square loop of wire lies in the plane of the page. 
+    A decreasing magnetic field is directed into the page. 
+    The induced current in the loop is:
+    \begin{choices}
+        \wrongchoice{counterclockwise}
+      \correctchoice{clockwise}
+        \wrongchoice{zero}
+        \wrongchoice{up the left edge and from right to left along the top edge}
+        \wrongchoice{through the middle of the page}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q12}
+    As an externally generated magnetic field through a certain conducting loop increases in magnitude,
+        the field produced at points inside the loop by the current induced in the loop must be:
+    \begin{choices}
+        \wrongchoice{increasing in magnitude}
+        \wrongchoice{decreasing in magnitude}
+        \wrongchoice{in the same direction as the applied field}
+      \correctchoice{directed opposite to the applied field}
+        \wrongchoice{perpendicular to the applied field}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q13}
+    At any instant of time the total magnetic flux through a stationary conducting loop is less in magnitude than the flux associated with an externally applied field. 
+    This might occur because:
+    \begin{choices}
+      \correctchoice{the applied field is normal to the loop and increasing in magnitude}
+        \wrongchoice{the applied field is normal to the loop and decreasing in magnitude}
+        \wrongchoice{the applied field is parallel to the plane of the loop and increasing in magnitude}
+        \wrongchoice{the applied field is parallel to the plane of the loop and decreasing in magnitude}
+        \wrongchoice{the applied field is tangent to the loop}
+    \end{choices}
+\end{question}
+}
+
+\newcommand{\hallidayChThirtQForteen}{
+\begin{tikzpicture}
+    %% NOTE: tikz
+\end{tikzpicture}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q14}
+    A long straight wire is in the plane of a rectangular conducting loop. 
+    The straight wire carries a constant current $i$,
+        as shown. 
+    \begin{center}
+        \hallidayChThirtQForteen
+    \end{center}
+    While the wire is being moved toward the rectangle the current in the rectangle is:
+    \begin{choices}
+        \wrongchoice{zero}
+        \wrongchoice{clockwise}
+      \correctchoice{counterclockwise}
+        \wrongchoice{clockwise in the left side and counterclockwise in the right side}
+        \wrongchoice{counterclockwise in the left side and clockwise in the right side}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q15}
+    A long straight wire is in the plane of a rectangular conducting loop. 
+    The straight wire carries an increasing current in the direction shown. 
+    \begin{center}
+        \hallidayChThirtQForteen
+    \end{center}
+    The current in the rectangle is:
+    \begin{choices}
+        \wrongchoice{zero}
+        \wrongchoice{clockwise}
+      \correctchoice{counterclockwise}
+        \wrongchoice{clockwise in the left side and counterclockwise in the right side}
+        \wrongchoice{counterclockwise in the left side and clockwise in the right side}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q16}
+    A long straight wire is in the plane of a rectangular conducting loop. 
+    The straight wire initially carries a constant current $i$ in the direction shown. 
+    \begin{center}
+        \hallidayChThirtQForteen
+    \end{center}
+    While the current $i$ is being shut off,
+        the current in the rectangle is:
+    \begin{choices}
+        \wrongchoice{zero}
+      \correctchoice{clockwise}
+        \wrongchoice{counterclockwise}
+        \wrongchoice{clockwise in the left side and counterclockwise in the right side}
+        \wrongchoice{counterclockwise in the left side and clockwise in the right side}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q17}
+    A rectangular loop of wire is placed midway between two long straight parallel conductors as shown. 
+    The conductors carry currents $i_1$ and $i_2$,
+        as indicated. 
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: tikz
+    \end{tikzpicture}
+    \end{center}
+    If $i_1$ is increasing and $i_2$ is constant,
+        then the induced current in the loop is:
+    \begin{choices}
+        \wrongchoice{zero}
+        \wrongchoice{clockwise}
+      \correctchoice{counterclockwise}
+        \wrongchoice{depends on $i_1-i_2$}
+        \wrongchoice{depends on $i_1+i_2$}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q18}
+    You push a permanent magnet with its north pole away from you toward a loop of conducting wire in front of you. 
+    Before the north pole enters the loop the current in the loop is:
+    \begin{choices}
+        \wrongchoice{zero}
+        \wrongchoice{clockwise}
+      \correctchoice{counterclockwise}
+        \wrongchoice{to your left}
+        \wrongchoice{to your right}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q19}
+    A vertical bar magnet is dropped through the center of a horizontal loop of wire,
+        with its north pole leading. 
+    At the instant when the midpoint of the magnet is in the plane of the loop,
+        the induced current at point $P$, viewed from above, is:
+    \begin{choices}
+        \wrongchoice{maximum and clockwise}
+        \wrongchoice{maximum and counterclockwise}
+        \wrongchoice{not maximum but clockwise}
+        \wrongchoice{not maximum but counterclockwise}
+      \correctchoice{essentially zero}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q20}
+    A circular loop of wire rotates about a diameter in a magnetic field that is perpendicular to the axis of rotation.
+    Looking in the direction of the field at the loop the induced current is:
+    \begin{choices}
+        \wrongchoice{always clockwise}
+        \wrongchoice{always counterclockwise}
+        \wrongchoice{clockwise in the lower half of the loop and counterclockwise in the upper half}
+        \wrongchoice{clockwise in the upper half of the loop and counterclockwise in the lower half}
+      \correctchoice{sometimes clockwise and sometimes counterclockwise}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q21}
+    In the experiment shown:
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: tikz/circuitikz
+    \end{tikzpicture}
+    \end{center}
+    \begin{choices}
+        \wrongchoice{there is a steady reading in $G$ as long as $S$ is closed}
+        \wrongchoice{a motional emf is generated when $S$ is closed}
+        \wrongchoice{the current in the battery goes through $G$}
+      \correctchoice{there is a current in $G$ just after $S$ is opened or closed}
+        \wrongchoice{since the two loops are not connected, the current in $G$ is always zero}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q22}
+    The emf developed in a coil $X$ due to the current in a neighboring coil $Y$ is proportional to the:
+    \begin{choices}
+        \wrongchoice{magnetic field in $X$}
+      \correctchoice{rate of change of magnetic field in $X$}
+        \wrongchoice{resistance of $X$}
+        \wrongchoice{thickness of the wire in $X$}
+        \wrongchoice{current in $Y$}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q23}
+    One hundred turns of insulated copper wire are wrapped around an iron core of cross-sectional area \SI{0.100}{\meter\squared}. 
+    The circuit is completed by connecting the coil to a \SI{10}{\ohm} resistor. 
+    As the magnetic field along the coil axis changes from \SI{1.00}{\tesla} in one direction to \SI{1.00}{\tesla} in the other direction,
+        the total charge that flows through the resistor is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{e-2}{\coulomb}}
+        \wrongchoice{\SI{2e-2}{\coulomb}}
+        \wrongchoice{\SI{1}{\coulomb}}
+      \correctchoice{\SI{2}{\coulomb}}
+        \wrongchoice{\SI{0.20}{\coulomb}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q24}
+    In the circuit shown,
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: tikz
+    \end{tikzpicture}
+    \end{center}
+        there will be a non-zero reading in galvanometer $G$:
+    \begin{choices}
+        \wrongchoice{only just after $S$ is closed}
+        \wrongchoice{only just after $S$ is opened}
+        \wrongchoice{only while $S$ is kept closed}
+        \wrongchoice{never}
+      \correctchoice{only just after $S$ is opened or closed}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q25}
+    A magnet moves inside a coil. 
+    Consider the following factors:
+    \begin{itemize}
+        \item[I.] strength of the magnet
+        \item[II.] number of turns in the coil
+        \item[III.] speed at which the magnet moves
+    \end{itemize}
+    Which can affect the emf induced in the coil?
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{I only}
+        \wrongchoice{II only}
+        \wrongchoice{III only}
+        \wrongchoice{I and II only}
+      \correctchoice{I, II, III}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q26}
+    The graph shows the magnitude $B$ of a uniform magnetic field that is perpendicular to the plane of a conducting loop. 
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: tikz
+    \end{tikzpicture}
+    \end{center}
+    Rank the five regions indicated on the graph according to the magnitude of the emf induced in the loop, from least to greatest.
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{1, 2, 3, 4}
+      \correctchoice{2, 4, 3, 1}
+        \wrongchoice{4, 3, 1, 2}
+        \wrongchoice{1, 3, 4, 2}
+        \wrongchoice{4, 3, 2, 1}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q27}
+    The circuit shown is in a uniform magnetic field that is into the page. 
+    The current in the circuit is \SI{0.20}{\ampere}.
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: tikz
+    \end{tikzpicture}
+    \end{center}
+    At what rate is the magnitude of the magnetic field changing? 
+    Is it increasing or decreasing?:
+    \begin{choices}
+        \wrongchoice{zero}
+      \correctchoice{\SI{140}{\tesla\per\second}, decreasing}
+        \wrongchoice{\SI{140}{\tesla\per\second}, increasing}
+        \wrongchoice{\SI{420}{\tesla\per\second}, decreasing}
+        \wrongchoice{\SI{420}{\tesla\per\second}, increasing}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q28}
+    A changing magnetic field pierces the interior of a circuit containing three identical resistors.
+    Two voltmeters are connected to the same points, as shown. 
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: tikz
+    \end{tikzpicture}
+    \end{center}
+    $V_1$ reads \SI{1}{\milli\volt}.
+    $V_2$ reads:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{zero}
+        \wrongchoice{\SI{1/3}{\milli\volt}}
+        \wrongchoice{\SI{1/2}{\milli\volt}}
+        \wrongchoice{\SI{1}{\milli\volt}}
+      \correctchoice{\SI{2}{\milli\volt}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q29}
+    A circular loop of wire is positioned half in and half out of a square region of constant uniform magnetic field directed into the page,
+        as shown.
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: tikz
+    \end{tikzpicture}
+    \end{center}
+    To induce a clockwise current in this loop:
+    \begin{choices}
+        \wrongchoice{move it in $+x$ direction}
+        \wrongchoice{move it in $+y$ direction}
+        \wrongchoice{move it in $-y$ direction}
+        \wrongchoice{move it in $-x$ direction}
+        \wrongchoice{increase the strength of the magnetic field}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q30}
+    The four wire loops shown have edge lengths of either $L$, $2L$, or $3L$.
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: tikz
+    \end{tikzpicture}
+    \end{center}
+    They will move with the same speed into a region of uniform magnetic field $\vec{B}$,
+        directed out of the page.
+    Rank them according to the maximum magnitude of the induced emf,
+        least to greatest.
+    \begin{choices}
+        \wrongchoice{1 and 2 tie, then 3 and 4 tie}
+        \wrongchoice{3 and 4 tie, then 1 and 2 tie}
+        \wrongchoice{4, 2, 3, 1}
+      \correctchoice{1, then 2 and 3 tie, then 4}
+        \wrongchoice{1, 2, 3, 4}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q31}
+    A square loop of wire moves with a constant speed $v$ from a field-free region into a region of constant uniform magnetic field,
+        as shown. 
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: tikz
+    \end{tikzpicture}
+    \end{center}
+    Which of the five graphs correctly shows the induced current $i$ in the loop as a function of time $t$?
+    \begin{multicols}{2}
+    \begin{choices}
+        %% NOTE: ANS is C
+        \wrongchoice{
+            \begin{tikzpicture}
+            \end{tikzpicture}
+        }
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q32}
+    The figure shows a bar moving to the right on two conducting rails. 
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: tikz
+    \end{tikzpicture}
+    \end{center}
+    To make an induced current $i$ in the direction indicated,
+        a constant magnetic field in region $A$ should be in what direction?
+    \begin{choices}
+        \wrongchoice{Right}
+        \wrongchoice{Left}
+      \correctchoice{Into the page}
+        \wrongchoice{Out of the page}
+        \wrongchoice{Impossible; this cannot be done with a constant magnetic field}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q33}
+    A car travels northward at \SI{75}{\kilo\meter\per\hour} along a straight road in a region where Earth’s magnetic field has a vertical component of \SI{0.50e-4}{\tesla}. 
+    The emf induced between the left and right side,
+        separated by \SI{1.7}{\meter}, is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{zero}
+      \correctchoice{\SI{1.8}{\milli\volt}}
+        \wrongchoice{\SI{3.6}{\milli\volt}}
+        \wrongchoice{\SI{6.4}{\milli\volt}}
+        \wrongchoice{\SI{13}{\milli\volt}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q34}
+    Coils $P$ and $Q$ each have a large number of turns of insulated wire. 
+    When switch $S$ is closed,
+        the pointer of galvanometer $G$ is deflected toward the left. 
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: tikz
+    \end{tikzpicture}
+    \end{center}
+    With $S$ now closed,
+        to make the pointer of $G$ deflect toward the right one could:
+    \begin{choices}
+        \wrongchoice{move the slide of the rheostat $R$ quickly to the right}
+        \wrongchoice{move coil $P$ toward coil $Q$}
+        \wrongchoice{move coil $Q$ toward coil $P$}
+      \correctchoice{open $S$}
+        \wrongchoice{do none of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q35}
+    A rod lies across frictionless rails in a constant uniform magnetic field $\vec{B}$,
+        as shown. 
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: tikz
+    \end{tikzpicture}
+    \end{center}
+    The rod moves to the right with speed $v$.
+    In order for the emf around the circuit to be zero,
+        the magnitude of the magnetic field should:
+    \begin{choices}
+        \wrongchoice{not change}
+        \wrongchoice{increase linearly with time}
+      \correctchoice{decrease linearly with time}
+        \wrongchoice{increase quadratically with time}
+        \wrongchoice{decrease quadratically with time}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q36}
+    A rectangular loop of wire has area $A$. 
+    It is placed perpendicular to a uniform magnetic field $B$ and then spun around one of its sides at frequency $f$. 
+    The maximum induced emf is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$BAf$}
+        \wrongchoice{$BAf$}
+        \wrongchoice{$2BAf$}
+      \correctchoice{$2\pi BAf$}
+        \wrongchoice{$4\pi BAf$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q37}
+    A rectangular loop of wire is placed perpendicular to a uniform magnetic field and then spun around one of its sides at frequency $f$. 
+    The induced emf is a maximum when:
+    \begin{choices}
+      \correctchoice{the flux is zero}
+        \wrongchoice{the flux is a maximum}
+        \wrongchoice{the flux is half its maximum value}
+        \wrongchoice{the derivative of the flux with respect to time is zero}
+        \wrongchoice{none of the above}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q38}
+    The diagram shows a circular loop of wire that rotates at a steady rate about a diameter $O$ that is perpendicular to a uniform magnetic field.
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: tikz
+    \end{tikzpicture}
+    \end{center}
+    The maximum induced emf occurs when the point $X$ on the loop passes:
+    \begin{multicols}{3}
+    \begin{choices}[o]
+        \wrongchoice{$a$}
+        \wrongchoice{$b$}
+      \correctchoice{$c$}
+        \wrongchoice{$d$}
+        \wrongchoice{$e$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q39}
+    A copper hoop is held in a vertical east-west plane in a uniform magnetic field whose field lines run along the north-south direction. 
+    The largest induced emf is produced when the hoop is:
+    \begin{choices}
+        \wrongchoice{rotated about a north-south axis}
+      \correctchoice{rotated about an east-west axis}
+        \wrongchoice{moved rapidly, without rotation, toward the east}
+        \wrongchoice{moved rapidly, without rotation, toward the south}
+        \wrongchoice{moved rapidly, without rotation, toward the northwest}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q40}
+    A \num{10} turn conducting loop with a radius of \SI{3.0}{\centi\meter} spins at 60 revolutions per second in a magnetic field of \SI{0.50}{\tesla}.
+    The maximum emf generated is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{0.014}{\volt}}
+        \wrongchoice{\SI{0.53}{\volt}}
+      \correctchoice{\SI{5.3}{\volt}}
+        \wrongchoice{\SI{18}{\volt}}
+        \wrongchoice{\SI{180}{\volt}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q41}
+    A single loop of wire with a radius of \SI{7.5}{\centi\meter} rotates about a diameter in a uniform magnetic field of \SI{1.6}{\tesla}. 
+    To produce a maximum emf of \SI{1.0}{\volt},
+        it should rotate at:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{zero}
+        \wrongchoice{\SI{2.7}{\radian\per\second}}
+        \wrongchoice{\SI{5.6}{\radian\per\second}}
+      \correctchoice{\SI{35}{\radian\per\second}}
+        \wrongchoice{\SI{71}{\radian\per\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q42}
+    A merry-go-round has an area of \SI{300}{\meter\squared} and spins at \SI{2}{\rotation\per\minute} about a vertical axis at a place where Earth's magnetic field is vertical and has a magnitude of \SI{5e-5}{\tesla}. 
+    The emf around the rim is:
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{zero}
+        \wrongchoice{\SI{0.5}{\milli\volt}}
+        \wrongchoice{\SI{3.1}{\milli\volt}}
+        \wrongchoice{\SI{15}{\milli\volt}}
+        \wrongchoice{\SI{30}{\milli\volt}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q43}
+    A copper penny slides on a horizontal frictionless table. 
+    There is a square region of constant uniform magnetic field perpendicular to the table,
+        as shown.
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: tikz
+    \end{tikzpicture}
+    \end{center}
+    Which graph correctly shows the speed $v$ of the penny as a function of time $t$?
+    \begin{multicols}{2}
+    \begin{choices}
+        %% NOTE: ANS is D
+        \wrongchoice{
+            \begin{tikzpicture}
+                %% NOTE: pgfplots
+            \end{tikzpicture}
+        }
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q44}
+    A rod with resistance R lies across frictionless conducting rails in a constant uniform magnetic field $\vec{B}$,
+        as shown. 
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: tikz
+    \end{tikzpicture}
+    \end{center}
+    Assume the rails have negligible resistance. 
+    The magnitude of the force that must be applied by a person to pull the rod to the right at constant speed $v$ is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{zero}
+        \wrongchoice{$BLv$}
+        \wrongchoice{$\dfrac{BLv}{R}$}
+      \correctchoice{$\dfrac{B^2 L^2 v}{R}$}
+        \wrongchoice{$\dfrac{B^2 Lxv}{R}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q45}
+    A rod of length $L$ and electrical resistance $R$ moves through a constant uniform magnetic field $\vec{B}$, perpendicular to the rod. 
+    The force that must be applied by a person to keep the rod moving with constant velocity $\vec{v}$ is:
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{zero}
+        \wrongchoice{$BLv$}
+        \wrongchoice{$\dfrac{BLv}{R}$}
+        \wrongchoice{$\dfrac{B^2 L^2 v}{R}$}
+        \wrongchoice{$\dfrac{B^2 L^2 v^2}{R}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q46}
+    As a loop of wire with a resistance of \SI{10}{\ohm} moves in a constant non-uniform magnetic field,
+        it loses kinetic energy at a uniform rate of \SI{4.0}{\milli\joule\per\second}.
+    The induced current in the loop:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{is zero}
+        \wrongchoice{is \SI{2}{\milli\ampere}}
+        \wrongchoice{is \SI{2.8}{\milli\ampere}}
+      \correctchoice{is \SI{20}{\milli\ampere}}
+        \wrongchoice{cannot be calculated from the given data}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q47}
+    As a loop of wire with a resistance of \SI{10}{\ohm} moves in a non-uniform magnetic field,
+        it loses kinetic energy at a uniform rate of \SI{5}{\milli\joule\per\second}. 
+    The induced emf in the loop:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{is zero}
+      \correctchoice{is \SI{0.2}{\milli\ampere}}
+        \wrongchoice{is \SI{0.28}{\milli\ampere}}
+        \wrongchoice{is \SI{2}{\milli\ampere}}
+        \wrongchoice{cannot be calculated from the given data}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q48}
+    An electric field is associated with every:
+    \begin{choices}
+        \wrongchoice{magnetic field}
+      \correctchoice{time-dependent magnetic field}
+        \wrongchoice{time-dependent magnetic flux}
+        \wrongchoice{object moving in a magnetic field}
+        \wrongchoice{conductor moving in a magnetic field}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q49}
+    A cylindrical region of radius $R=\SI{3.0}{\centi\meter}$ contains a uniform magnetic field parallel to its axis. 
+    If the electric field induced at a point $R/2$ from the cylinder axis is \SI{4.5e-3}{\volt\per\meter} the magnitude of the magnetic field must be changing at the rate:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{zero}
+        \wrongchoice{\SI{0.30}{\tesla\per\second}}
+      \correctchoice{\SI{0.60}{\tesla\per\second}}
+        \wrongchoice{\SI{1.2}{\tesla\per\second}}
+        \wrongchoice{\SI{2.4}{\tesla\per\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q50}
+    A cylindrical region of radius $R$ contains a uniform magnetic field parallel to its axis.
+    The field is zero outside the cylinder. 
+    If the magnitude of the field is changing at the rate $\mathrm{d}B/\mathrm{d}t$,
+        the electric field induced at a point $2R$ from the cylinder axis is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{zero}
+        \wrongchoice{$2R \dfrac{\mathrm{d}B}{\mathrm{d}t}$}
+        \wrongchoice{$R \dfrac{\mathrm{d}B}{\mathrm{d}t}$}
+        \wrongchoice{$\dfrac{R}{2} \dfrac{\mathrm{d}B}{\mathrm{d}t}$}
+      \correctchoice{$\dfrac{R}{4} \dfrac{\mathrm{d}B}{\mathrm{d}t}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q51}
+    A cylindrical region of radius $R$ contains a uniform magnetic field,
+        parallel to its axis, with magnitude that is changing linearly with time. 
+    If $r$ is the radial distance from the cylinder axis,
+        the magnitude of the induced electric field inside the cylinder is proportional to:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$R$}
+      \correctchoice{$r$}
+        \wrongchoice{$r^2$}
+        \wrongchoice{$\dfrac{1}{r}$}
+        \wrongchoice{$\dfrac{1}{r^2}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q52}
+    A cylindrical region of radius $R$ contains a uniform magnetic field,
+        parallel to its axis, with magnitude that is changing linearly with time. 
+    If $r$ is the radial distance from the cylinder axis,
+        the magnitude of the induced electric field outside the cylinder is proportional to:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$R$}
+        \wrongchoice{$r$}
+        \wrongchoice{$r^2$}
+      \correctchoice{$\dfrac{1}{r}$}
+        \wrongchoice{$\dfrac{1}{r^2}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q53}
+    The unit ``henry'' is equivalent to:
+    \begin{choices}
+      \correctchoice{volt second per ampere (\si{\volt\second\per\ampere})}
+        \wrongchoice{volt per second (\si{\volt\per\second})}
+        \wrongchoice{ohm (\si{\ohm})}
+        \wrongchoice{ampere volt per second (\si{\ampere\volt\per\second})}
+        \wrongchoice{ampere second per volt (\si{\ampere\second\per\volt})}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q54}
+    The diagram shows an inductor that is part of a circuit. 
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE:
+    \end{tikzpicture}
+    \end{center}
+    The direction of the emf induced in the inductor is indicated. 
+    Which of the following is possible?
+    \begin{choices}
+        \wrongchoice{The current is constant and rightward}
+        \wrongchoice{The current is constant and leftward}
+        \wrongchoice{The current is increasing and rightward}
+      \correctchoice{The current is increasing and leftward}
+        \wrongchoice{None of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q55}
+    A ten turn ideal solenoid has an inductance of \SI{3.5}{\milli\henry}. 
+    When the solenoid carries a current of \SI{2.0}{\ampere} the magnetic flux through each turn is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{zero}
+        \wrongchoice{\SI{3.5e-4}{\weber}}
+      \correctchoice{\SI{7.0e-4}{\weber}}
+        \wrongchoice{\SI{7.0e-3}{\weber}}
+        \wrongchoice{\SI{7.0e-2}{\weber}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q56}
+    A ten turn ideal solenoid has an inductance of \SI{4.0}{\milli\henry}. 
+    To generate an emf of \SI{2.0}{\volt} the current should change at a rate of:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{zero}
+        \wrongchoice{\SI{5.0}{\ampere\per\second}}
+        \wrongchoice{\SI{50}{\ampere\per\second}}
+        \wrongchoice{\SI{250}{\ampere\per\second}}
+      \correctchoice{\SI{500}{\ampere\per\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q57}
+    A long narrow solenoid has length $l$ and a total number of $N$ turns,
+        each of which has a cross-sectional area $A$.
+    Its inductance is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{$\mu_0 N^2 A l$}
+      \correctchoice{$\dfrac{\mu_0 N^2 A}{l}$}
+        \wrongchoice{$\dfrac{\mu_0 N A}{l}$}
+        \wrongchoice{$\dfrac{\mu_0 N^2 l}{A}$}
+        \wrongchoice{none of the provided}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q58}
+    A flat coil of wire, having 5 turns, has an inductance $L$. 
+    The inductance of a similar coil having 20 turns is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{$4L$}
+        \wrongchoice{$\dfrac{L}{4}$}
+      \correctchoice{$16L$}
+        \wrongchoice{$\dfrac{L}{16}$}
+        \wrongchoice{$L$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q59}
+    An inductance $L$, resistance $R$, and ideal battery of emf $\varepsilon$ are wired in series. 
+    A switch in the circuit is closed at time zero,
+        at which time the current is zero. 
+    At any later time $t$ the current $i$ is given by:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{$\dfrac{\varepsilon}{R} \left(1-\mathrm{e}^{-Lt/R}\right)$}
+        \wrongchoice{$\dfrac{\varepsilon}{R} \left(\mathrm{e}^{-Lt/R}\right)$}
+        \wrongchoice{$\dfrac{\varepsilon}{R} \left(1+\mathrm{e}^{-Rt/L}\right)$}
+        \wrongchoice{$\dfrac{\varepsilon}{R} \left(\mathrm{e}^{-Rt/L}\right)$}
+      \correctchoice{$\dfrac{\varepsilon}{R} \left(1-\mathrm{e}^{-Rt/L}\right)$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q60}
+    An inductance $L$, resistance $R$, and ideal battery of emf $\varepsilon$ are wired in series. 
+    A switch in the circuit is closed at time zero,
+        at which time the current is zero.
+    At any later time $t$ the emf of the inductor is given by:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{$\varepsilon \left(1-\mathrm{e}^{-Lt/R}\right)$}
+        \wrongchoice{$\varepsilon \left(\mathrm{e}^{-Lt/R}\right)$}
+        \wrongchoice{$\varepsilon \left(1+\mathrm{e}^{-Rt/L}\right)$}
+      \correctchoice{$\varepsilon \left(\mathrm{e}^{-Rt/L}\right)$}
+        \wrongchoice{$\varepsilon \left(1-\mathrm{e}^{-Rt/L}\right)$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q61}
+    An inductance $L$, resistance $R$, and ideal battery of emf $\varepsilon$ are wired in series. 
+    A switch in the circuit is closed at time zero,
+        at which time the current is zero. 
+    At any later time $t$ the potential difference across the resistor is given by:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{$\varepsilon \left(1-\mathrm{e}^{-Lt/R}\right)$}
+        \wrongchoice{$\varepsilon \left(\mathrm{e}^{-Lt/R}\right)$}
+        \wrongchoice{$\varepsilon \left(1+\mathrm{e}^{-Rt/L}\right)$}
+        \wrongchoice{$\varepsilon \left(\mathrm{e}^{-Rt/L}\right)$}
+      \correctchoice{$\varepsilon \left(1-\mathrm{e}^{-Rt/L}\right)$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q62}
+    An \SI{8.0}{\milli\henry} inductor and a \SI{2.0}{\ohm} resistor are wired in series to an ideal battery. 
+    A switch in the circuit is closed at time zero,
+        at which time the current is zero. 
+    The current reaches half its final value at time:
+    \begin{multicols}{3}
+    \begin{choices}
+      \correctchoice{\SI{2.8}{\milli\second}}
+        \wrongchoice{\SI{4.0}{\milli\second}}
+        \wrongchoice{\SI{3}{\second}}
+        \wrongchoice{\SI{170}{\second}}
+        \wrongchoice{\SI{250}{\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q63}
+    An \SI{8.0}{\milli\henry} inductor and a \SI{2.0}{\ohm} resistor are wired in series to a \SI{20}{\volt} ideal battery. 
+    A switch in the circuit is closed at time zero,
+        at which time the current is zero. 
+    After a long time the current in the resistor and the current in the inductor are:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{zero, zero}
+      \correctchoice{\SI{10}{\ampere}, \SI{10}{\ampere}}
+        \wrongchoice{\SI{2.5}{\ampere}, \SI{2.5}{\ampere}}
+        \wrongchoice{\SI{10}{\ampere}, \SI{2.5}{\ampere}}
+        \wrongchoice{\SI{10}{\ampere}, zero}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q64}
+    An \SI{8.0}{\milli\henry} inductor and a \SI{2.0}{\ohm} resistor are wired in series to a \SI{20}{\volt} ideal battery. 
+    A switch in the circuit is closed at time zero,
+        at which time the current is zero. 
+    Immediately after the switch is thrown the potential differences across the inductor and resistor are:
+    \begin{choices}
+        \wrongchoice{zero, \SI{20}{\volt}}
+      \correctchoice{\SI{20}{\volt}, zero}
+        \wrongchoice{\SI{10}{\volt}, \SI{10}{\volt}}
+        \wrongchoice{\SI{16}{\volt}, \SI{4}{\volt}}
+        \wrongchoice{unknown since the rate of change of the current is not given}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q65}
+    An inductor with inductance $L$ resistor with resistance $R$ are wired in series to an ideal battery with emf $\varepsilon$. 
+    A switch in the circuit is closed at time zero,
+        at which time the current is zero. 
+    A long time after the switch is thrown the potential differences across the inductor and resistor:
+    \begin{choices}
+      \correctchoice{zero, $\varepsilon$}
+        \wrongchoice{$\varepsilon$, zero}
+        \wrongchoice{$\dfrac{\varepsilon}{2}$,  $\dfrac{\varepsilon}{2}$}
+        \wrongchoice{$\dfrac{L}{R}\varepsilon$, $\dfrac{R}{L}\varepsilon$}
+        \wrongchoice{cannot be computed unless the rate of change of the current is given}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q66}
+    If both the resistance and the inductance in an $LR$ series circuit are doubled the new inductive time constant will be:
+    \begin{choices}
+        \wrongchoice{twice the old}
+        \wrongchoice{four times the old}
+        \wrongchoice{half the old}
+        \wrongchoice{one-fourth the old}
+      \correctchoice{unchanged}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q67}
+    When the switch $S$ in the circuit shown is closed,
+    \begin{center}
+    \begin{circuitikz}
+        %% NOTE:
+    \end{circuitikz}
+    \end{center}
+        the time constant for the growth of current in $R_2$ is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{$\dfrac{L}{R_1}$}
+      \correctchoice{$\dfrac{L}{R_2}$}
+        \wrongchoice{$\dfrac{L}{R_1+R_2}$}
+        \wrongchoice{$\dfrac{L\left(R_1+R_2\right)}{R_1 R_2}$}
+        \wrongchoice{$\dfrac{L/R_1+L/R_2}{2}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q68}
+    The diagrams show three circuits with identical batteries,
+        identical inductors, and identical resistors. 
+    \begin{center}
+    \begin{circuitikz}
+        %% NOTE:
+    \end{circuitikz}
+    \end{center}
+    Rank them according to the current through the battery just after the switch is closed,
+        from least to greatest.
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{3, 2, 1}
+        \wrongchoice{2 and 3 ties, then 1}
+      \correctchoice{1, 3, 2}
+        \wrongchoice{1, 2, 3}
+        \wrongchoice{3, 1, 2}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q69}
+    Immediately after switch $S$ in the circuit shown is closed,
+    \begin{center}
+    \begin{circuitikz}
+        %% NOTE:
+    \end{circuitikz}
+    \end{center}
+        the current through the battery is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{zero}
+        \wrongchoice{$\dfrac{V_0}{R_1}$}
+        \wrongchoice{$\dfrac{V_0}{R_2}$}
+      \correctchoice{$\dfrac{V_0}{R_1+R_2}$}
+        \wrongchoice{$\dfrac{V_0\left(R_1+R_2\right)}{R_1 R_2}$}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q70}
+    A \SI{3.5}{\milli\henry} inductor and a \SI{4.5}{\milli\henry} inductor are connected in series.
+    The equivalent inductance is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{2.0}{\milli\henry}}
+        \wrongchoice{\SI{0.51}{\milli\henry}}
+        \wrongchoice{\SI{0.13}{\milli\henry}}
+        \wrongchoice{\SI{1.0}{\milli\henry}}
+      \correctchoice{\SI{8.0}{\milli\henry}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q71}
+    A \SI{3.5}{\milli\henry} inductor and a \SI{4.5}{\milli\henry} inductor are connected in series and a time varying current is established in them. 
+    When the total emf of the combination is \SI{16}{\volt},
+        the emf of the larger inductor is:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{7.0}{\volt}}
+      \correctchoice{\SI{9.0}{\volt}}
+        \wrongchoice{\SI{2.3}{\volt}}
+        \wrongchoice{\SI{28}{\volt}}
+        \wrongchoice{\SI{36}{\volt}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q72}
+    A \SI{3.5}{\milli\henry} inductor and a \SI{4.5}{\milli\henry} inductor are connected in parallel. 
+    The equivalent inductance is:
+    \begin{multicols}{2}
+    \begin{choices}
+      \correctchoice{\SI{2.0}{\milli\henry}}
+        \wrongchoice{\SI{0.51}{\milli\henry}}
+        \wrongchoice{\SI{0.13}{\milli\henry}}
+        \wrongchoice{\SI{1.0}{\milli\henry}}
+        \wrongchoice{\SI{8.0}{\milli\henry}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q73}
+    A \SI{3.5}{\milli\henry} inductor and a \SI{4.5}{\milli\henry} inductor are connected in parallel. 
+    When the total emf of the combination is \SI{16}{\volt},
+        the rate of change of the current in the larger inductor is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{2.0e3}{\ampere\per\second}}
+      \correctchoice{\SI{3.6e3}{\ampere\per\second}}
+        \wrongchoice{\SI{4.6e3}{\ampere\per\second}}
+        \wrongchoice{\SI{7.0e3}{\ampere\per\second}}
+        \wrongchoice{\SI{8.1e3}{\ampere\per\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q74}
+    An inductor with inductance $L$ and an inductor with inductance $2L$ are connected in parallel.
+    When the rate of change of the current in the larger inductor is \SI{1200}{\ampere\per\second} the rate of change of the current in the smaller inductor is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{400}{\ampere\per\second}}
+        \wrongchoice{\SI{1200}{\ampere\per\second}}
+        \wrongchoice{\SI{1600}{\ampere\per\second}}
+        \wrongchoice{\SI{2000}{\ampere\per\second}}
+      \correctchoice{\SI{2400}{\ampere\per\second}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q75}
+    The stored energy in an inductor:
+    \begin{choices}
+        \wrongchoice{depends, in sign, upon the direction of the current}
+        \wrongchoice{depends on the rate of change of current}
+        \wrongchoice{is proportional to the square of the inductance}
+        \wrongchoice{has units \si{\joule\per\henry}}
+      \correctchoice{none of the provided}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q76}
+    An inductance $L$ and a resistance $R$ are connected in series to an ideal battery. 
+    A switch in the circuit is closed at time zero,
+        at which time the current is zero. 
+    The energy stored in the inductor is a maximum:
+    \begin{choices}
+        \wrongchoice{just after the switch is closed}
+        \wrongchoice{at the time $t = \dfrac{L}{R}$ after the switch is closed}
+        \wrongchoice{at the time $t = \dfrac{L}{R}$ after the switch is closed}
+        \wrongchoice{at the time $t = 2\dfrac{L}{R}$ after the switch is closed}
+      \correctchoice{a long time after the switch is closed}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q77}
+    An inductance $L$ and a resistance $R$ are connected in series to an ideal battery. 
+    A switch in the circuit is closed at time zero,
+        at which time the current is zero. 
+    The rate of increase of the energy stored in the inductor is a maximum:
+    \begin{choices}
+        \wrongchoice{just after the switch is closed}
+        \wrongchoice{at the time $t = \dfrac{L}{R}$ after the switch is closed}
+        \wrongchoice{at the time $t = \dfrac{L}{R}$ after the switch is closed}
+      \correctchoice{at the time $t = \dfrac{L}{R}\ln 2$ after the switch is closed}
+        \wrongchoice{a long time after the switch is closed}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q78}
+    In each of the following operations, energy is expended. 
+    The \emph{least} percentage of returnable electrical energy will be yielded by:
+    \begin{choices}
+        \wrongchoice{charging a capacitor}
+        \wrongchoice{charging a storage battery}
+      \correctchoice{sending current through a resistor}
+        \wrongchoice{establishing a current through an inductor}
+        \wrongchoice{moving a conducting rod through a magnetic field}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q79}
+    A current of \SI{10}{\ampere} in a certain inductor results in a stored energy of \SI{40}{\joule}. 
+    When the current is changed to \SI{5}{\ampere} in the opposite direction,
+        the stored energy changes by:
+    \begin{multicols}{3}
+    \begin{choices}
+        \wrongchoice{\SI{20}{\joule}}
+      \correctchoice{\SI{30}{\joule}}
+        \wrongchoice{\SI{40}{\joule}}
+        \wrongchoice{\SI{50}{\joule}}
+        \wrongchoice{\SI{60}{\joule}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q80}
+    A \SI{6.0}{\milli\henry} inductor is in a series circuit with a resistor and an ideal battery. 
+    At the instant the current in the circuit is \SI{5.0}{\ampere} the energy stored in the inductor is:
+    \begin{choices}
+        \wrongchoice{zero}
+      \correctchoice{\SI{7.5e-2}{\joule}}
+        \wrongchoice{\SI{15e-2}{\joule}}
+        \wrongchoice{\SI{30e-2}{\joule}}
+        \wrongchoice{unknown since the rate of change of the current is not given}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q81}
+    A \SI{6.0}{\milli\henry} inductor is in a circuit. 
+    At the instant the current is \SI{5.0}{\ampere} and its rate of change is \SI{200}{\ampere\per\second},
+        the rate with which the energy stored in the inductor is increasing is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{\SI{7.5e-2}{\watt}}
+        \wrongchoice{\SI{120}{\watt}}
+        \wrongchoice{\SI{240}{\watt}}
+        \wrongchoice{\SI{3.0}{\watt}}
+      \correctchoice{\SI{6.0}{\watt}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q82}
+    A \SI{6.0}{\milli\henry} inductor and a \SI{3.0}{\ohm} resistor are wired in series to a \SI{12}{\volt} ideal battery. 
+    A switch in the circuit is closed at time zero,
+        at which time the current is zero.
+    \SI{2.0}{\milli\second} later the energy stored in the inductor is:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{zero}
+        \wrongchoice{\SI{2.5e-2}{\joule}}
+      \correctchoice{\SI{1.9e-2}{\joule}}
+        \wrongchoice{\SI{3.8e-2}{\joule}}
+        \wrongchoice{\SI{9.6e-3}{\joule}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q83}
+    The quantity $\dfrac{B^2}{\mu_0}$ has units of:
+    \begin{choices}
+        \wrongchoice{joule (\si{\joule})}
+        \wrongchoice{joule per henry (\si{\joule\per\henry})}
+        \wrongchoice{joule per meter (\si{\joule\per\meter})}
+      \correctchoice{joule per meter cubed (\si{\joule\per\meter\cubed})}
+        \wrongchoice{henry per meter cubed (\si{\henry\per\meter\cubed})}
+    \end{choices}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q84}
+    A \SI{0.20}{\centi\meter} radius cylinder, \SI{3.0}{\centi\meter} long,
+        is wrapped with wire to form an inductor. 
+    At the instant the magnetic field in the interior is \SI{5.0}{\milli\tesla} the energy stored in the field is about:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{zero}
+      \correctchoice{\SI{3.8e-6}{\joule}}
+        \wrongchoice{\SI{7.5e-6}{\joule}}
+        \wrongchoice{\SI{7.5e-4}{\joule}}
+        \wrongchoice{\SI{9.9}{\joule}}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+\element{halliday-mc}{
+\begin{question}{halliday-ch30-q85}
+    In the diagram, assume that all the magnetic field lines generated by coil 1 pass through coil 2. 
+    \begin{center}
+    \begin{tikzpicture}
+        %% NOTE: tikz/circuitkz
+    \end{tikzpicture}
+    \end{center}
+    Coil 1 has 100 turns and coil 2 has 400 turns. 
+    Then:
+    \begin{choices}
+        \wrongchoice{the power supplied to coil 1 is equal to the power delivered by coil 2}
+        \wrongchoice{the emf around coil 1 will be one-fourth the emf around coil 2}
+        \wrongchoice{the current in coil 1 will be one-fourth the current in coil 2}
+        \wrongchoice{the emfs will be the same in the two coils}
+      \correctchoice{none of the provided}
+    \end{choices}
+\end{question}
+}
+
+
+\endinput
+
+

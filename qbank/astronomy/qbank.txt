@@ -1,0 +1,864 @@
+
+%% Astronomy II Practice Exam 1
+%%--------------------------------------------------
+
+%% this section contains 50 problems
+
+\element{nysed}{
+\begin{question}{ASTRI-1-Q01}
+    Measurements made on the celestial sphere are made in units of:
+    \begin{multicols}{2}
+    \begin{choices}
+        \wrongchoice{miles.}
+        \wrongchoice{kilometers.}
+        \wrongchoice{degrees.}
+        \wrongchoice{light years.}
+    \end{choices}
+    \end{multicols}
+\end{question}
+}
+
+
+1) The light-year is a measure of
+ 
+ *)distance
+ 1)time                                       
+ 2)speed
+ 3)weight                         
+ 4)brightness           
+ 
+ 2) About how long does it take light from the Sun to reach the Earth?
+ 
+ *)About 8 minutes.
+ 1)About 8 seconds.
+ 2)No time at all.
+ 3)About 4 years.
+ 4)About a week.
+ 
+ 3) The light-second is a measure of
+ 
+ *)distance
+ 1)time                                       
+ 2)speed
+ 3)weight                         
+ 4)brightness           
+ 
+ 4) The zenith is
+ 
+ *)the point on the sky directly overhead.
+ 1)the point on the sky directly overhead from the North Pole.
+ 2)the point on the sky on the horizon to the due south.
+ 3)the point on the sky directly overhead from the Equator.
+ 4)the point on the sky the Sun occupies.
+ 
+ 5) Constellations are 
+ 
+ *)patterns of stars in the sky.
+ 1)clusters of stars very near each other in space.
+ 2)groupings of planets in the sky.
+ 3)close associations of stars and visible planets.
+ 4)non-existant.
+ 
+ 6) A star seen at the zenith from Mankato must be
+ 
+ *)north of the celestial equator
+ 1)south of the celestial equator
+ 2)east of the celestial equator
+ 3)west of the celestial equator
+ 4)exactly on the celestial equator
+ 
+ 7) The apparent magnitude of a star is a measure of its
+ 
+ *)brightness as seen from earth
+ 1)intrinsic radiance
+ 2)rate of energy output at all wavelengths
+ 3)brightness if it was at a distance of ten parsecs
+ 4)angular diameter as seen from the earth
+ 
+ 8) The absolute magnitude of a star is a measure of its
+ 
+ *)brightness if it was at a distance of ten parsecs
+ 1)brightness as seen from earth
+ 2)angular size
+ 3)rate of energy output at all wavelengths
+ 4)angular diameter as seen from the earth
+ 
+ 9) If the inclination of the Earth's rotational axis increased
+ 
+ *)winters would be cooler
+ 1)summers would be cooler
+ 2)winters would be warmer
+ 3)summers would be the same
+ 4)winters would be the same
+ 
+10) The seasons we experience on the Earth are caused by
+ 
+ *)the tilt of the Earth's axis with respect to the ecliptic pole
+ 1)the change in the Earth's distance from the sun during the year
+ 2)the change in the luminosity of the Sun during the year 
+ 3)the change in the Moon's distance from the Earth during the year
+ 4)the precession of the Earth's pole
+ 
+11) The Solar day is
+ 
+ *)about 4 minutes longer than the Sidereal day.
+ 1)about 4 minutes shorter than the Sidereal day.
+ 2)equal to the Sidereal day.
+ 3)just over 27 Sidereal days long.
+ 4)just over 29 Sidereal days long.
+ 
+12) The precession of the Earth
+ 
+ *)causes the position of the Celestial Poles to change very slowly.
+ 1)causes rapid, large changes in the position of the Celestial Poles.
+ 2)was only discovered in the last century.
+ 3)is making the Earth spiral into the Sun.
+ 4)is causing the rotation rate of the Earth to decrease.
+ 
+13) If the moon was new a week ago, what would its phase be now?
+ 
+ *)first quarter
+ 1)full
+ 2)third quarter
+ 3)waxing gibbous
+ 4)waning crescent
+ 
+14) The sidereal month is
+ 
+ *)about two days shorter than the synodic month.
+ 1)about two days longer than the synodic month.
+ 2)equal to the Solar day.
+ 3)just under 24 hours long.
+ 4)just over 29 Solar days long.
+ 
+15) If the Moon rises at sunset, what is its phase?
+ 
+ *)Full
+ 1)1st quarter
+ 2)3rd quarter
+ 3)New 
+ 4)Waning gibbous
+ 
+16) If two objects of different masses are dropped (ignoring air friction)
+ 
+ *)they will fall and accelerate at the same rate
+ 1)the more massive object will fall faster
+ 2)the less massive object will fall faster
+ 3)they will fall at the same constant rate
+ 4)the more massive object will fall at a constant speed
+ 
+17) An accelerating body must
+ 
+ *)have a changing velocity.
+ 1)always have a positive velocity.
+ 2)be changing direction.
+ 3)be changing speed.
+ 4)be falling.
+ 
+18) Spring tides occur near which lunar phases?
+ 
+ *)new and full
+ 1)first quarter and third quarter
+ 2)full and last quarter
+ 3)full and third quarter
+ 4)new and first quarter
+ 
+19) Newton's Force Law relates
+ 
+ *)1 and 2 are correct.
+ 1)the acceleration an object experiences with its mass.
+ 2)the accelaration an object experiences with the force applied to it.
+ 3)the mass of an object to its composition.
+ 4)the acceleration an object experiences with its composition.
+ 
+20) The length of the Moon's rotation period
+ 
+ *)is equal to its orbit period due to the tidal effect of the Earth.
+ 1)is gradually decreasing due to tidal drag from the Earth.
+ 2)has not changed since the Moon formed.
+ 3)is about 24 hours long.
+ 4)will eventually be equal to a Solar year.
+ 
+21) While the Moon and the Sun both exert tidal forces on the Earth
+ 
+ *)the Moon's are larger because it is so much closer to Earth than
+   the Sun is.
+ 1)the Sun's are larger because it is so much more massive than the
+   Moon is.
+ 2)the Sun's are larger because it is so much closer to Earth than the
+   Moon is.
+ 3)the Moon's are larger because it is so much more massive than the
+   Sun is.
+ 4)they are equal and opposite to one another, so cancel each other out.
+ 
+22) The acceleration due to gravity on the surface of the Moon
+ 
+ *)is less than it is on the Earth because the Moon's mass is much
+   smaller than the Earth's mass.
+ 1)is more than it is on the Earth because the Moon's mass is much
+   smaller than the Earth's mass.
+ 2)is equal to what it is on the surface of the Earth.
+ 3)is less than it is on the Earth because the Moon's mass is much
+   larger than the Earth's mass.
+ 4)is more than it is on the Earth because the Moon's mass is much
+   larger than the Earth's mass.
+ 
+23) The Dynamic Range of a detector is a measure of 
+ 
+ *)the range between the faintest and brightest sources it can measure
+ 1)the range of photon energies it can measure
+ 2)the range of motion it can withstand without breaking
+ 3)the range in quantum efficiency it provides
+ 4)the range of radial velocities it can measure
+ 
+24) The reason why new mirror designs were needed to build 8-10m 
+    telescopes is that an 8m mirror of the traditional design
+ 
+ *)is too heavy to support
+ 1)is too fragile
+ 2)is too floppy
+ 3)can't be properly polished
+ 4)is too light to control
+ 
+25) Observations of astronomical objects at wavelengths across the
+    electromagnetic spectrum are so useful because
+ 
+ *)different states of matter radiate in very different wavelengths.
+ 1)our eyes see such a large fraction of the electromagnetic spectrum.
+ 2)the only source of electromagnetic radiation is stars.
+ 3)very hot matter does not radiate.
+ 4)visible light does not tell us anything about stars.
+ 
+26) The more strongly curved a mirror is
+ 
+ *)the shorter its focal length.
+ 1)the longer its focal length.
+ 2)the bluer the reflected light.
+ 3)the redder the reflected light.
+ 4)the better it makes you look.
+ 
+27) All large telescopes built in the last hundred years have been
+    reflectors.  This is because
+ 
+ *)1 2 and 3 are all true.
+ 1)refractors suffer from chromatic aberration but reflectors do not.
+ 2)it is more challenging to make a good lens than a good mirror.
+ 3)the mass of the lens is at the top of the telescope, but the mass of
+   the mirror is at the bottom.
+ 4)reflectors suffer from chromatic aberration refractors do not.
+ 
+28) The aperture of a telescope refers to 
+ 
+ *)the diameter of its primary mirror or lens.
+ 1)the length of the telescope tube.
+ 2)the diameter of its secondary mirror.
+ 3)the size of the eye-piece lens.
+ 4)the curvature of the primary mirror or lens.
+ 
+29) Light from the optical part of the spectrum 
+ 
+ *)is mostly emitted from the surfaces of stars.
+ 1)is mostly emitted from small grains of solid matter.
+ 2)is mostly emitted from very hot gas in interstellar space.
+ 3)tells us about the nature of very cold matter.
+ 4)tells us about the nature of very hot, diffuse matter.
+ 
+31) If one person shines a flashlight (F1) at you from 10m away, and a
+    second person shines an identical flashlight (F2) at you from 20m
+    away, what is the relative amount of light you measure from the two
+    flashlights?
+ 
+ *)F1 appears 4 times brighter than F2
+ 1)F1 appears 2 times brighter than F2
+ 2)F1 appears 10 times brighter than F2
+ 3)F1 and F2 appear equally bright
+ 4)F2 appears 4 times brighter than F1
+ 
+32) The frequency of a light wave is inversely proportional to its
+ 
+ *)wavelength
+ 1)energy
+ 2)speed
+ 3)velocity
+ 4)amplitude
+ 
+33) The radial velocity of a star can be determined from its
+ 
+ *)spectral line Doppler shift                                       
+ 1)distance and luminosity                                           
+ 2)spectral type                                                     
+ 3)proper motion                                                     
+ 4)right ascension and declination
+ 
+34) If we compare two stars of different temperature, the hotter star
+ 
+ *)emits more energy from each unit area of surface
+ 1)will have a brighter absolute magnitude
+ 2)will have a brighter apparent magnitude
+ 3)will appear redder
+ 4)will be larger
+ 
+35) An absorption spectrum is caused by 
+ 
+ *)atoms in a diffuse gas absorbing photons of particular wavelengths from
+   and underlying continuum source.
+ 1)a hot diffuse gas
+ 2)completely blocking the light from a continuum source
+ 3)emission from a hot opaque object
+ 4)atoms in a diffuse gas emitting photons of particular wavelengths
+ 
+36) Neils Bohr's model of the hydrogen atom explains the observed lines
+    in the hydrogen spectrum as a consequence of 
+ 
+ *)the existence of a set of allowed orbital energies for the electron
+   in a hydrogen atom.
+ 1)the existence of a set of allowed orbital energies for the proton in
+   a hydrogen atom.
+ 2)the existence of a set of allowed orbital energies for the neutron in
+   a hydrogen atom.
+ 3)the lack of any restriction on the allowed orbital energies for the
+   electron in a hydrogen atom.
+ 4)the annhialation of electrons by antimatter.
+ 
+37) Two atoms of different elements must have
+ 
+ *)different numbers of protons.
+ 1)the same number of protons.
+ 2)the same number of neutrons.
+ 3)different numbers of neutrons.
+ 4)the same number of protons and neutrons.
+ 
+38) The electrostatic force between an neutron and a proton is
+ 
+ *)zero, because the neutron has no charge.  
+ 1)repulsive because they have opposite charges
+ 2)attractive because they have equal charges
+ 3)repulsive because they have equal charges
+ 4)zero because they have opposite charges
+ 
+39) To find the total mass of a visual binary, we need to first find its
+ 
+ *)distance from earth and the apparent orbit
+ 1)Doppler shift and proper motion
+ 2)true orbit and proper motion
+ 3)apparent magnitude and distance from earth
+ 4)space velocity and apparent orbit
+ 
+40) The spectral sequence from M to O is a sequence of
+ 
+ *)increasing temperature
+ 1)decreasing age
+ 2)decreasing mass
+ 3)decreasing temperature
+ 4)decreasing ionization
+ 
+41) The type of spectrum emitted by most stars is
+ 
+ *)continuous with absorption lines
+ 1)pure continuous
+ 2)continuous with emission lines
+ 3)pure emission
+ 4)pure absorption
+ 
+42) We know the stars called Red Giants are much larger than the Sun
+    because
+ 
+ *)they are cool and luminous, so the Stefan-Boltmann law argues they
+   must be large.
+ 1)all stars are larger than the Sun.
+ 2)they are hot and luminous, so the Stefan-Boltmann law argues they
+   must be large.
+ 3)they are cool and faint, so the Stefan-Boltmann law argues they
+   must be large.
+ 4)they are hot and faint, so the Stefan-Boltmann law argues they
+   must be large.
+ 
+43) Stars transport energy from their cores to their surfaces
+ 
+ *)1 and 2 are correct.
+ 1)by radiative diffusion.
+ 2)by convection.
+ 3)by conduction.
+ 4)1 and 3 are correct.
+ 
+44) In following the Main Sequence on the H-R diagram in the direction of
+    increasing temperature, one is also following a sequence of
+ 
+ *)increasing mass
+ 1)decreasing mass
+ 2)decreasing luminosity
+ 3)decreasing stellar diameter
+ 4)increasing age
+ 
+45) The Stefan-Boltzmann relation allows us to draw lines on the HR 
+    Diagram that are constant
+ 
+ *)in radius.
+ 1)in age.
+ 2)in mass.
+ 3)in density
+ 4)in composition
+ 
+46) The interstellar medium consists of
+ 
+ *)All of the other answers are correct
+ 1)ionized hydrogen gas
+ 2)neutral hydrogen gas
+ 3)interstellar dust grains
+ 4)interstellar molecules
+ 
+47) Why doesn't the sun presently create energy by fusing helium into
+    heavier elements?
+ 
+ *)The sun's core isn't hot and dense enough
+ 1)There's no helium in the sun's core
+ 2)When helium fuses, no energy is ever released
+ 3)Helium nuclei cannot fuse to make heavier atoms
+ 4)Neutrinos inside the sun prevent helium fusion
+ 
+48) Interstellar extinction, or reddening
+ 
+ *)is caused by small interstellar dust particles
+ 1)is caused by gas atoms and molecules
+ 2)is due to a Doppler red shift
+ 3)is a very minor and unimportant phenomenon
+ 4)is caused by golf-ball-sized particles in space
+ 
+49) Why are protostars so difficult to observe?
+ 
+ *)They emit most of their radiation in the IR.
+ 1)They do not emit photons.
+ 2)They emit most of their radiation as x-rays.
+ 3)Stars are no longer forming in our Galaxy.
+ 4)They are too small to have high luminosities.
+ 
+50) Reflection nebulae are
+ 
+ *)caused by the scattering of light off dust grains around young stars
+ 1)due to emission-line radiation from hot gas
+ 2)generally red because red light scatters more than blue light
+ 3)only seen around very old stars
+ 4)clouds of very hot, dense gas
+ 
+51) We can probe the internal structure of molecular clouds by
+ 
+ *)observing lines of many different molecules that tell us about gas
+   at a range of temperature and density.
+ 1)watching cloud cores collapse in real time.
+ 2)making visible-wavelength observations of collapsing cloud cores.
+ 3)making x-ray observations of the hot gas.
+ 4)observing thermal emission from very cold dust.
+ 
+52) The coldest phase of the interstellar medium is
+ 
+ *)molecular gas at 10 K that we detect from CO radio line emission.
+ 1)molecular gas at 10 K that we detect from hydrogen line emission.
+ 2)atomic gas at 10 K that we detect from hydrogen line emission.
+ 3)atomic gas at 100 K that we detect from hydrogen line emission.
+ 4)atomic gas at 100 K that we detect from CO radio line emission.
+ 
+53) A star cluster is a useful natural `laboratory' for studying stellar
+    evolution because the stars in a cluster all
+ 
+ *)have similar age and similar distance.
+ 1)have about the same mass.
+ 2)have similar spectral type.
+ 3)are in binary systems.
+ 4)are main-sequence stars.
+ 
+54) The elements heavier than hydrogen and helium that we find on earth
+    probably were created
+ 
+ *)inside a star that is no longer visible.
+ 1)in the sun.
+ 2)when the universe was created.
+ 3)inside the earth.
+ 4)None of the other answers is correct.
+ 
+55) Horizontal Branch stars are
+ 
+ *)roughly Solar mass stars with Helium-burning cores
+ 1)roughly Solar mass stars with Hydrogen-burning cores
+ 2)roughly Solar mass stars with inert Helium cores
+ 3)roughly Solar mass stars with inert Carbon cores
+ 4)roughly Solar mass stars with inert Hydrogen cores
+ 
+56) Red Giant Branch stars are
+ 
+ *)stars with inert Helium cores and Hydrogen-burning shells.
+ 1)stars with inert Carbon/Oxygen cores and Hydrogen and Helium-burning 
+   shells.
+ 2)stars with Helium-burning cores and Hydrogen-burning shells.
+ 3)stars with Carbon-burning cores and Hydrogen and Helium burning shells
+ 4)stars with Hydrogen-burning cores and Helium-burning shells.
+ 
+57) The triple-alpha process is
+ 
+ *)the process that evolved stars use to turn Helium into Carbon.
+ 1)the process that the Sun uses to turn Hydrogen into Helium.
+ 2)the process that evolved stars use to turn Hydrogen into Helium.
+ 3)the process that evolved stars use to turn Carbon into Hydrogen.
+ 4)the process that the Sun uses to turn Helium into Hydrogen.
+ 
+58) Mass flowing from a star to a compact object (White Dwarf, Neutron
+    Star, or Black Hole)
+ 
+ *)1 and 2 are correct.
+ 1)first forms an accretion disk around the compact object.
+ 2)is heated sufficiently to radiate in the UV or x-ray.
+ 3)falls directly onto the compact object.
+ 4)cannot ever be accreted by the compact object.
+ 
+59) Type Ia supernova explosions result from
+ 
+ *)mass transfer onto white dwarfs.
+ 1)iron core collapse.
+ 2)He-burning.
+ 3)mass loss.
+ 4)star-star collisions.
+ 
+60) White dwarfs are the remnants of low mass stars supported by
+  
+ *)degenerate electron pressure
+ 1)degenerate neutron pressure
+ 2)rapid rotation
+ 3)magnetic field pressure
+ 4)substantial thermonuclear fusion
+ 
+61) An important difference between novae and supernovae is that novae
+ 
+ *)return to their previous brightness after a few years.
+ 1)completely destroy their parent stars.
+ 2)cause neutron stars to form.
+ 3)rarely occur in close binary systems.
+ 4)expel more heavy atoms into space than supernovae do.
+ 
+62) The Schwarzschild Radius of a black hole depends only on the
+    ________ of the collapsing stellar core.
+ 
+ *)mass
+ 1)density
+ 2)temperature
+ 3)pressure
+ 4)composition 
+ 
+63) Einstein concluded that mass
+ 
+ *)causes space to curve
+ 1)increases the speed of light
+ 2)has no effect on light 
+ 3)decreases as you go faster
+ 4)has no relationship with energy
+ 
+64) Einstein concluded that an observer isolated in a small box, but
+    feeling his normal weight, could not tell if he were
+ 
+ *)on the surface of the Earth or being accelerated by a rocket in space
+ 1)on the Earth or the moon
+ 2)on a neutron star or a white dwarf
+ 3)traveleing through time
+ 4)having his clock sped up by a nearby mass
+ 
+65) Gravitational lenses occur because
+ 
+ *)gravity can bend light
+ 1)the speed of light depends on wavelength
+ 2)the interstellar medium refracts light
+ 3)glass lenses are very massive
+ 4)objects in the sky tend to be clustered
+ 
+66) The final collapse of the cores of evolved high-mass stars 
+ 
+ *)1 and 2 are correct.
+ 1)is halted by the onset of Neutron Degeneracy Pressure.
+ 2)occurs when the core reaches nuclear density.
+ 3)is halted by the onset of Electron Degeneracy Pressure.
+ 4)is halted by the onset of thermonuclear fusion.
+ 
+67) What evidence do we have that Black Holes exist?
+ 
+ *)We see binary systems in which one member produces no optical emission,
+   but appears to have too large a mass to be a neutron star.
+ 1)We see isolated black spots in space.
+ 2)We see binary systems in which one member produces no optical emission,
+   but appears to have too small a mass to be a neutron star.
+ 3)Nearby moving Black Holes are seen to produce gravitational distortions
+   in the images of background stars.
+ 4)We have no evidence to support the existence of Black Holes.
+ 
+68) Our Milky Way galaxy consists of
+ 
+ *)a disk, central bulge, and halo.
+ 1)a disk or plane only.
+ 2)a spherical distribution of stars centered on the sun.
+ 3)a disk containing gas, dust, and globular clusters.
+ 4)a sphere of stars centered on Sagittarius.
+ 
+69) Which of the following are not likely to be found in the spiral arms
+    of our Galaxy?
+ 
+ *)globular clusters
+ 1)H II regions
+ 2)young star clusters
+ 3)emission nebulae
+ 4)clouds of gas and dust
+ 
+70) The concept of stellar populations is used to show an association
+    between
+ 
+ *)location in the Galaxy, chemical composition, and age
+ 1)distance from the sun, orbital speed, and age
+ 2)distance from the Galactic Center and orbital speed
+ 3)distance from the sun, chemical composition, and age
+ 4)temperature, mass, and distance from the Galactic Center
+ 
+71) The globular clusters in our Galaxy
+ 
+ *)are spherically distributed about the galactic center.
+ 1)are concentrated in the galactic nucleus.
+ 2)are present only in our galaxy.
+ 3)are concentrated in spiral arms.
+ 4)are concentrated near the edge of the galaxy.
+ 
+72) About how many trips has the Sun made around the Galaxy since it
+    formed?
+ 
+ *)two dozen
+ 1)one tenth
+ 2)one thousand
+ 3)one million
+ 4)one billion
+ 
+73) The rotation curve of the Galaxy is flat at large radii.  This
+    means that
+ 
+ *)the mass of the Galaxy is increasing with radius out to the most
+   distant points we can measure.
+ 1)the mass of the Galaxy is entirely accounted for by the stars.
+ 2)most of the mass of the Galaxy is in the form of hydrogen gas.
+ 3)the mass of the Galaxy is nearly all at its center.
+ 4)the Sun is escaping from the Galaxy.
+ 
+74) Density Wave theory 
+ 
+ *)is an explanation of spiral structure due to waves of compression.
+ 1)is believed to explain spiral structure in all spiral galaxies.
+ 2)explains the association of spiral patterns with the distribution
+   of the oldest stars in the Galaxy.
+ 3)is not considered important for the structure of the Galactic disk.
+ 4)explains the structure of the Galactic halo.
+ 
+75) The Galactic Bulge
+ 
+ *)shows a mix of Population I, Population II, and old, metal-rich
+   stars.
+ 1)is a pure Population I system.
+ 2)is a pure Population II system.
+ 3)shows a mix of Population I, Population II and young, metal-poor
+   stars.
+ 4)is impossible to observe.
+ 
+76) Hubble discovered that spiral nebulae were outside our Galaxy by
+    observing
+ 
+ *)Cepheid variables.
+ 1)supernovae.
+ 2)novae.
+ 3)RR Lyrae stars.
+ 4)the rotation of the nebulae.
+ 
+77) A large cluster of galaxies is likely to have
+ 
+ *)hot gas between the galaxies, emitting X-rays
+ 1)cold gas between the galaxies, emitting X-rays
+ 2)cold gas between the galaxies, absorbing X-rays
+ 3)hot gas between the galaxies, absorbing radio waves
+ 4)dark matter between the galaxies absorbing visible light
+ 
+78) The key to discovering that spiral objects seen in the sky were really
+    separate galaxies was
+ 
+ *)measuring their distances
+ 1)proper motion of the objects
+ 2)radial velocity showing rotation of the objects
+ 3)measuring the parallax of the objects
+ 4)measuring their sizes
+ 
+79) The greater the distance of a galaxy away from the earth
+ 
+ *)the greater the observed red shift.
+ 1)the older it is.
+ 2)the greater the observed blue shift.
+ 3)the more massive it is.
+ 4)None of the choices given here is correct.
+ 
+80) Dark matter is known to exist because of
+ 
+ *)its gravitational influence on visible matter
+ 1)obscuration of distant galaxies
+ 2)current star formation rates in the Milky Way
+ 3)directly observable x-ray emission
+ 4)none of the other answers is correct
+ 
+81) Spiral and elliptical galaxies differ in their
+ 
+ *)All of the other answers are correct
+ 1)morphology
+ 2)gas and dust content
+ 3)stellar orbits
+ 4)internal ranges of stellar ages
+ 
+82) Some very nearby galaxies have only recently been detected because
+ 
+ *)1 and 2 are true.
+ 1)they have very low surface brightness.
+ 2)they lie behind the plane of the Milky Way.
+ 3)no one started looking until recently.
+ 4)they emit no optical photons.
+ 
+83) A major problem with current observations of high-redshift galaxies is
+    is that
+ 
+ *)all the other answers are correct.
+ 1)galaxy images are only a few pixels across with our best instruments.
+ 2)distant galaxies are very faint, and so only the brightest parts are
+   visible.
+ 3)optical images of high-redshift galaxies are showing us what they
+   look like in the ultraviolet part of the spectrum.
+ 4)near infrared images, that would show us the visible-wavelength
+   appearence of high-redshift galaxies are not sensitive enough.
+ 
+84) Evidence that quasars are far away is provided by
+ 
+ *)their large redshifts
+ 1)their strong X-ray emission
+ 2)the jets seen with radio telescopes
+ 3)their rapidly changing brightness
+ 4)the strength of their emission lines
+ 
+85) It appears that one reason different active nuclei of galaxies have
+    such a variety of spectra results from
+ 
+ *)the angle at which we view each nucleus
+ 1)the amount of dust in our Galaxy blocking the view
+ 2)the different masses of the galaxies
+ 3)whether or not the galaxy has a close companion
+ 4)how many neutron stars they contain
+ 
+86) What is the evidence that much of the light from a quasar comes
+    from a remarkably small volume?
+ 
+ *)Quasars can vary in brightness rapidly.
+ 1)Quasars can vary in position rapidly.
+ 2)Quasar redshifts can change rapidly.
+ 3)Quasars look small through a telescope.
+ 4)Quasars have a very small proper motion.
+ 
+87) Seyfert galaxies are
+ 
+ *)spiral galaxies with very bright nuclei
+ 1)exploding elliptical galaxies
+ 2)spiral galaxies which lack interstellar gas and dust
+ 3)found only in our Local Group of galaxies
+ 4)the most distant objects ever seen in the universe
+ 
+88) If quasar redshifts are interpreted with the Hubble Law for normal
+    galaxies, this implies that quasars
+ 
+ *)must be very distant and therefore very luminous
+ 1)must be very nearby and faint
+ 2)must have very large radii
+ 3)show no peculiarity except for their large distances
+ 4)do not exist
+ 
+89) Why do we conclude that the broad emission lines seen in the spectra
+    of Seyfert galaxies are caused by orbital velocities?
+ 
+ *)If the line-widths were thermal, the gas would be much too hot to
+   radiate optical emission lines.
+ 1)If the line-widths were thermal, the gas would be much too cold to
+   radiate optical emission lines.
+ 2)The required orbital velocities are about the same as the orbital
+   velocities of stars in the Galactic disk.
+ 3)We can take images that resolve the individual orbiting gas clouds.
+ 4)We can measure the proper motions of the individual orbiting gas clouds.
+ 
+90) In the 1950s, one of the really surprizing things about Cyg A was
+ 
+ *)that one of the brightest radio sources in the sky could be so far away.
+ 1)that one of the brightest radio sources in the sky could be so nearby.
+ 2)that its optical luminosity could be so large.
+ 3)that one of the brightest optical sources in the sky could be so far 
+   away.
+ 4)that it produces no radio emission.
+ 
+91) BL Lac objects are
+ 
+ *)active galaxies with featurless continuum spectra.
+ 1)a peculiar class of variable star.
+ 2)characterized by strong emission lines in their spectra.
+ 3)active galaxies that have radio jets perpendicular to our line of sight.
+ 4)not detected in visible light.
+ 
+92) If the universe is infinite and Newtonian, the sky should be uniformly
+    bright.  Clearly it is not.  The preceding is a statement of
+ 
+ *)Olbers's paradox
+ 1)the perfect cosmological principle
+ 2)Einstein's postulate
+ 3)the cosmological principle
+ 4)Hubble's paradox
+ 
+93) The distance to the most distant thing in the observable universe is
+    set by the
+ 
+ *)age of the Universe
+ 1)mass of the Universe
+ 2)effects of gravity
+ 3)most distant Cepheid variables we can see
+ 4)blockage of light by interstellar dust
+ 
+94) The Hubble constant measures the
+ 
+ *)current expansion rate of the universe
+ 1)density of the universe
+ 2)curvature of space in the universe
+ 3)temperature of the universe
+ 4)distance to galaxies in the Local Group
+ 
+95) One major success of the Big Bang Theory for the origin of the
+    universe is that it predicted the
+ 
+ *)cosmic background radiation
+ 1)existence of galaxies
+ 2)amount of iron atoms in the universe
+ 3)spin of spiral galaxies
+ 4)blueshifts of quasars
+ 
+96) Our current understanding is that the night sky is dark because
+ 
+ *)the Universe had a beginning
+ 1)there are large quantities of dust
+ 2)the light from distant stars is converted into neutrinos
+ 3)No one knows
+ 4)distant stars are gravitationally lensed
+ 
+97) To study the Universe as it was long ago, we need to
+ 
+ *)observe very distant objects
+ 1)detect neutrinos
+ 2)only observe in radio waves
+ 3)determine the composition of dark matter
+ 4)travel to the edge of the Universe
+ 
+98) One succesful test of the Big Bang model for the early Universe is
+    that it predicts
+ 
+ *)the observed abundances of helium and other light isotopes produced 
+   during the epoch of primordial nucleosynthesis
+ 1)that it predicts that all the observed helium is produced in stars
+ 2)the production of carbon and oxygen during the epoch of primordial
+   nucleosynthesis
+ 3)the existence of quasars
+ 4)the cosmic x-ray background
+ 
