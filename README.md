@@ -47,6 +47,8 @@ If you describe yourself as above, and find this incomprehensible, I consider th
     Not everything here will work, though most should.
     If you want to contribute, or use things in development, I would recommend that you start here.
 
+    This has since been  merged into master, so nothing different here.
+
 #dependencies
 
 All except automultiplechoice are included by default in most package managers.
