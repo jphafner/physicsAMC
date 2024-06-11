@@ -169,6 +169,8 @@ The script is very much beta, but it is currently producing usable output.
 It depends additionally on [lpeg](http://www.inf.puc-rio.br/~roberto/lpeg/lpeg.html) and [argparse](https://github.com/mpeterv/argparse).
 These can be installed either with luarocks,
 
+If you think you can do this better, i am all ears.
+
 ```bash
 $ luarocks install lpeg argparse
 ```
