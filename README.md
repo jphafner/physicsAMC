@@ -44,10 +44,8 @@ If you describe yourself as above, and find this incomprehensible, I consider th
     This is somewhat implied in [question-bank](#question-bank).
 
 -[develop](https://github.com/jphafner/physicsAMC/tree/develop), this is the development branch.
-    Not everything here will work, though most should.
-    If you want to contribute, or use things in development, I would recommend that you start here.
-
     This has since been  merged into master, so nothing different here.
+    I am since stopped using this branch, it is empty.
 
 #dependencies
 
