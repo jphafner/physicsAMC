@@ -8,7 +8,6 @@
 - [exam-files](#exam-files)
 - [question-bank](#question-bank)
     - [master-branch](#master-branch)
-    - [develop-branch](#develop-branch)
 - [best-practices](#best-practices)
 - [style-guide](#style-guide)
 
@@ -43,9 +42,7 @@ If you describe yourself as above, and find this incomprehensible, I consider th
     Everything should work here.
     This is somewhat implied in [question-bank](#question-bank).
 
--[develop](https://github.com/jphafner/physicsAMC/tree/develop), this is the development branch.
-    This has since been  merged into master, so nothing different here.
-    I am since stopped using this branch, it is empty.
+-[develop](https://github.com/jphafner/physicsAMC/tree/develop), this is no more in usage
 
 #dependencies
 
